@@ -1,0 +1,98 @@
+add_namespace = scripted_peace
+#
+country_event = {
+	id = scripted_peace.1
+	title = scripted_peace.1.t
+	desc = scripted_peace.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.1.a
+        annex_country = {
+            target = TRO
+            transfer_troops = no
+        }
+	}
+}
+country_event = {
+	id = scripted_peace.2
+	title = scripted_peace.2.t
+	desc = scripted_peace.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.2.a
+        annex_country = {
+            target = MIN
+            transfer_troops = no
+        }
+	}
+}
+country_event = {
+	id = scripted_peace.3
+	title = scripted_peace.3.t
+	desc = scripted_peace.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.3.a
+        annex_country = {
+            target = BAL
+            transfer_troops = no
+        }
+	}
+}
+country_event = {
+	id = scripted_peace.4
+	title = scripted_peace.4.t
+	desc = scripted_peace.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.4.a
+        annex_country = {
+            target = POP
+            transfer_troops = no
+        }
+	}
+}
+country_event = {
+	id = scripted_peace.5
+	title = scripted_peace.5.t
+	desc = scripted_peace.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.5.a
+        annex_country = {
+            target = TAG
+            transfer_troops = no
+        }
+	}
+}
+country_event = {
+	id = scripted_peace.6
+	title = scripted_peace.6.t
+	desc = scripted_peace.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    hidden = yes
+
+	option = {
+	name = scripted_peace.6.a
+        annex_country = {
+            target = ARK
+            transfer_troops = no
+        }
+	}
+}

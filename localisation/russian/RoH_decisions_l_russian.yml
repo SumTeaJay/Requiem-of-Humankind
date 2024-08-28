@@ -1,0 +1,61 @@
+﻿l_russian:
+#Объединение Кубани
+ Kuban_unification:0 "Объединение Кубани"
+ STW_unification:0 "Сформировать Южный Централ"
+ STW_unification_desc:0 "Малина для разных фраеров и прочих мутных типов окончательно завяла. Кубань наша и ни одна сука не посмеет сюда сунуть своё рыло. Ни чушкари из степений, ни краснопёрые из Адмиралтейства. \n Нужно, чтобы все окрестные паханы зарубили это себе на носу. Это наша территория и мы не позволим никому, кроме нас, с неё кормится."
+ KUH_unification:0 "Сформировать Южное Апостольство"
+ KUH_unification_desc:0 "Безбожники повержены, а паства растёт с каждым днём. Пусть ещё не все приобщились к той правде, что нам несёт сам погибающий мир, но на самом деле это лишь дело времени. нельзя противиться неизбежному, особенно когда эта самая неизбежность и есть непреклонны фатум. \n А значит, культ будет расти."
+ FSR_unification:0 "Сформировать Кубанскую Федерацию"
+ FSR_unification_desc:0 "Долгие годы мы были вынуждены сосуществовать бок о бок с бандитами, у которых нет ничего святого и сектантами, у которых лучше бы этого святого вообще не было. \n Но теперь всё кончено. Теперь именно мы являемся гегемоном в регионе. И ни дикари из Великих Степей, ни кровожадные сволочи из Адмиралтейства не смогут отобрать нашу свободу."
+
+#integration
+intergrate_core_territory: "Интеграция регионов [FROM.GetName]"
+decision_cost_400_ie_tt: "£infantry_equipment_text_icon 400"
+decision_cost_400_ie_tt_blocked: "£infantry_equipment_text_icon §R400§"
+
+#volga war
+volga_war: "Волжская война"
+volga_war_desc: "Волга – это главная артерия, связывающая остатки страны в нечто, что можно назвать “единым экономическим пространством”. Как и в старину, Русская Река стала одним из немногих доступных для торговли путей. Торговцы, которых разномастные банды подстерегают за каждым углом, предпочитают везти товар по реке.\nВойна, развязанная Нарфронтом и Смоленской конфедерацией, ставит под угрозу этот шаткий, но устоявшийся порядок. Север Родины теперь отрезан от юга и решительно непонятно, когда сообщение восстановится.\nЕсли мы хотим не подохнуть с голода, нам необходимо как можно скорее приложить все усилия для того, чтобы пересобрать логистические цепочки заново. Иначе последствия могут быть печальными.\n\nСейчас это приводит к увеличению §YТНП§! на: [?volga_war_cgf|%0-=]\n§Y$MODIFIER_CONSUMER_GOODS_FACTOR$ из-за сложных отношений не может быть ниже 0§!"
+conflict_escalation_mission: "Эскалация конфликта"
+send_trade_caravan: "Отправить торговый караван"
+establish_new_trade_connections: "Установить новые торговые связи"
+send_bandit_raid: "Организовать бандитский рейд"
+extra_shifts: "Ввести дополнительные смены"
+max_volga_war_tension_tt: "Конфликт достиг апогея, хуже уже быть не может. §Y$volga_war_cgf_modifier$§! сейчас никак не изменится."
+add_volga_war_cgf_10_tt: "§Y$volga_war_cgf_modifier$§! изменится на:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §R+10%§!"
+sub_volga_war_cgf_5_tt: "§Y$volga_war_cgf_modifier$§! изменится на:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §G-5%§!"
+sub_volga_war_cgf_10_tt: "§Y$volga_war_cgf_modifier$§! изменится на:\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §G-10%§!"
+
+#resurses_expansion
+resource_expansion_category: "Добыча Ресурсов"
+expand_steel_production: "Расширить сталелитейные производства"
+expand_strategic_material_production: "Расширить производство стратегических материалов"
+start_synthetic_oil_experiments: "Начать эксперименты с синтетической нефтью"
+continue_synthetic_oil_experiments: "Продолжить эксперименты с синтетической нефтью"
+
+#Экспансия
+expansion_category:0 "Экспансия"
+expansion_category_desc:0 "В поисках новых ресурсов мы решили начать экспансию на наших соседей. Это может не понравиться нашим конкурентам, однако они ничего не смогут сделать. \n \n§RПРЕДУПРЕЖДЕНИЕ: ЭТА МЕХАНИКА СОЗДАСТ СОБЫТИЯ, НЕ ЯВЛЯЮЩИЕСЯ КАНОНОМ ДЛЯ ВСЕЛЕННОЙ THE REQUIEM OF HUMANKIND! ВЫ НЕ СМОЖЕТЕ ПОЛНОЦЕННО ОБЪЕДИНИТЬ РОДИНУ, ИГРАЯ ЗА МИНОРА ИЛИ СТРАНУ С 1-2 ФАЗАМИ КОНТЕНТА!§!"
+start_expansion:0 "Начать экспансию"
+unite_motherland:0 "Объединить Родину"
+annex_anarchy:0 "Ввести войска на территорию анархии"
+
+#Объединение Родины
+reunification_category:0 "Объединение Родины"
+major_unite_motherland:0 "Объединить Родину"
+
+
+#decisiom_cost
+decision_cost_CP_30_pp_40: "£command_power §Y30§! £pol_power §Y40§!"
+decision_cost_CP_30_pp_40_blocked: "£command_power §R30§! £pol_power §R40§!"
+decision_cost_CP_30_pp_40_tooltip: "Стоимость принятия решения: £command_power §Y30§! £pol_power §Y40§!"
+
+decision_cost_CP_40_pp_40: "£command_power §Y40§! £pol_power §Y40§!"
+decision_cost_CP_40_pp_40_blocked: "£command_power §R40§! £pol_power §R40§!"
+decision_cost_CP_40_pp_40_tooltip: "Стоимость принятия решения: £command_power §Y40§! £pol_power §Y40§!"
+
+decision_cost_CP_50_pp_100: "£command_power §Y50§! £pol_power §Y100§!"
+decision_cost_CP_50_pp_100_blocked: "£command_power §R50§! £pol_power §R100§!"
+decision_cost_CP_50_pp_100_tooltip: "Стоимость принятия решения: £command_power §Y50§! £pol_power §Y100§!"
+
+ 

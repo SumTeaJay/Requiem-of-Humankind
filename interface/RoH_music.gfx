@@ -1,0 +1,13 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_roh_ost"
+		textureFile = "gfx//interface//topbar//musicplayer//roh_ost.dds"
+		noOfFrames = 2
+	}
+	#spriteType = {
+	#	name = "GFX_roh_superevents"
+	#	#textureFile = "gfx//interface//topbar//musicplayer//roh_superevents.dds"
+	#	textureFile = "gfx//interface//topbar//musicplayer//roh_ost.dds"
+	#	noOfFrames = 2
+	#}
+}

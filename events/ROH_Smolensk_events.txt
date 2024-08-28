@@ -1,0 +1,31 @@
+add_namespace = smolensk
+
+country_event = {#Конец войны
+	id = smolensk.1 
+	title = smolensk.1.t
+	desc = smolensk.1.d
+	#picture =  
+
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+		Smolensk_war_finished = yes
+	}
+	
+	option = {
+		name = smolensk.1.a
+		trigger = {
+			NARFRONT_win = yes
+		}
+		every_country = { news_event = { id = super.3 days = 1 } }
+	}
+	option = {
+		name = smolensk.1.b
+		trigger = {
+			SMOLENSK_win = yes
+		}	
+		every_country = { news_event = { id = super.4 days = 1 } }
+	}
+}

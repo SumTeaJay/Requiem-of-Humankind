@@ -1,0 +1,33 @@
+﻿l_russian:
+
+ PEACE_POPUP_TITLE:0 "ДИПЛОМАТИЧЕСКОЕ ИЗВЕСТИЕ"
+ PEACE_POPUP_DESCRIPTION:0 "[GetWarStatus]"
+ PEACE_POPUP_FLAVOR:0 "[GetFlavor]"
+
+ PEACE_POPUP_CLOSE:0 "ЗАКРЫТЬ"
+ 
+ PEACE_POPUP_FLAG1_TT: "§GПобедитель:§! [winning_country.GetFlag] §Y[winning_country.GetName]§!"
+ PEACE_POPUP_FLAG2_TT: "§RПроигравший:§! [losing_country.GetFlag] §Y[losing_country.GetName]§!"
+
+ PEACE_POPUP_COUNTRY_PLURAL:0 " и их союзники "
+ PEACE_POPUP_COUNTRY_SINGULAR:0 " "
+
+ PEACE_POPUP_COUNTRY_PLURAL_HAS:0 " и их союзники "
+ PEACE_POPUP_COUNTRY_SINGULAR_HAS:0 " "
+
+ #Peace event/war loc
+ PEACE_POPUP_WAR_CONCLUSION:0 "[GetWarConclusionLoc]"
+
+ PEACE_POPUP_WAR_CONCLUSION_DEFAULT:0 "[winning_country.GetFlag] §Y[winning_country.GetNameDef]§![GetWinnerAlliesWithHas]побеждает [losing_country.GetFlag] §Y[losing_country.GetNameDef]§![GetLoserAllies]в войне."
+
+ PEACE_POPUP_WAR_CONCLUSION_SMK_WIN:0 "§Y[winning_country.GetNameWithFlag]§! победила §Y[losing_country.GetNameWithFlag]§! в §YСмоленской гражданской войне§!"
+ PEACE_POPUP_WAR_CONCLUSION_NAR_WIN:0 "§Y[winning_country.GetNameWithFlag]§! освободила §Y[losing_country.GetNameWithFlag]§! в §YСмоленской гражданской войне§!"
+ 
+ #Flavor loc
+ 
+ PEACE_POPUP_FLAVOR_DEFAULT:0 "Очередная кровь была пролита на землю некогда Великой Родины."
+ 
+ PEACE_POPUP_FLAVOR_SMK:0 "Жизнь творит порядок, но порядок не творит жизни."
+ PEACE_POPUP_FLAVOR_NAR:0 "Хаос всегда побеждает порядок, поскольку лучше организован."
+ 
+ PEACE_POPUP_FLAVOR_AGE:0 "Мечта сербов о своей Родине на Балканах навсегда так и останется мечтой, погребённой вместе с ними."

@@ -1,0 +1,145 @@
+spriteTypes = {
+	#Генерируемые персонажи
+	spriteType = { name = GFX_portrait_ROH_generic_1 texturefile = "gfx/leaders/Generics/male_generic_1.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_2 texturefile = "gfx/leaders/Generics/male_generic_2.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_3 texturefile = "gfx/leaders/Generics/male_generic_3.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_4 texturefile = "gfx/leaders/Generics/male_generic_4.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_5 texturefile = "gfx/leaders/Generics/male_generic_5.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_6 texturefile = "gfx/leaders/Generics/male_generic_6.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_7 texturefile = "gfx/leaders/Generics/male_generic_7.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_8 texturefile = "gfx/leaders/Generics/male_generic_8.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_9 texturefile = "gfx/leaders/Generics/male_generic_9.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_10 texturefile = "gfx/leaders/Generics/male_generic_10.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_11 texturefile = "gfx/leaders/Generics/male_generic_11.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_12 texturefile = "gfx/leaders/Generics/male_generic_12.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_13 texturefile = "gfx/leaders/Generics/male_generic_13.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_14 texturefile = "gfx/leaders/Generics/male_generic_14.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_15 texturefile = "gfx/leaders/Generics/male_generic_15.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_16 texturefile = "gfx/leaders/Generics/male_generic_16.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_17 texturefile = "gfx/leaders/Generics/male_generic_17.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_18 texturefile = "gfx/leaders/Generics/male_generic_18.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_19 texturefile = "gfx/leaders/Generics/male_generic_19.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_20 texturefile = "gfx/leaders/Generics/male_generic_20.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_21 texturefile = "gfx/leaders/Generics/male_generic_21.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_22 texturefile = "gfx/leaders/Generics/male_generic_22.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_23 texturefile = "gfx/leaders/Generics/male_generic_23.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_24 texturefile = "gfx/leaders/Generics/male_generic_24.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_25 texturefile = "gfx/leaders/Generics/male_generic_25.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_26 texturefile = "gfx/leaders/Generics/male_generic_26.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_27 texturefile = "gfx/leaders/Generics/male_generic_27.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_28 texturefile = "gfx/leaders/Generics/male_generic_28.dds" }
+	spriteType = { name = GFX_portrait_ROH_generic_29 texturefile = "gfx/leaders/Generics/male_generic_29.dds" }
+	spriteType = { name = GFX_portrait_ODS_generic_1 texturefile = "gfx/leaders/ODS/ODS_generic_1.dds" }
+	spriteType = { name = GFX_portrait_ODS_generic_2 texturefile = "gfx/leaders/ODS/ODS_generic_2.dds" }
+	spriteType = { name = GFX_portrait_ODS_generic_3 texturefile = "gfx/leaders/ODS/ODS_generic_3.dds" }
+	spriteType = { name = GFX_portrait_ODS_generic_4 texturefile = "gfx/leaders/ODS/ODS_generic_4.dds" }
+       
+
+    spriteType = { name = GFX_ZAK_Sergey_Surovov texturefile = "gfx/leaders/ZAK/ZAK_Sergey_Surovov.dds" }
+
+	spriteType = { name = GFX_portrait_VLC_Lyutsifer texturefile = "gfx/leaders/VLC/VLC_Lyutsifer.dds" }
+
+	spriteType = { name = GFX_SI1_Nepristupnoe_molchanie texturefile = "gfx/leaders/SI1/SI1_Nepristupnoe_molchanie.dds" }
+
+	spriteType = { name = GFX_WTR_Povolzhskaya_anarkhia texturefile = "gfx/leaders/WTR/WTR_Povolzhskaya_anarkhia.dds" }
+
+    spriteType = { name = GFX_portrait_SBT_Dmitriy_Gusev texturefile = "gfx/leaders/SBT/SBT_Dmitriy_Gusev.dds" }
+	spriteType = { name = GFX_portrait_ASR_The_Council_of_Four texturefile = "gfx/leaders/ASR/ASR_The_Council_of_Four.dds" }
+
+	spriteType = { name = GFX_portrait_ZAN_Provisional_Parliament texturefile = "gfx/leaders/ZAN/ZAN_Provisional_Parliament.dds" }
+
+	spriteType = { name = GFX_portrait_NFL_Northern_Omut texturefile = "gfx/leaders/NFL/NFL_Northern_Omut.dds" }
+
+	spriteType = { name = GFX_portrait_SFL_Southern_Omut texturefile = "gfx/leaders/SFL/SFL_Southern_Omut.dds" }
+
+	spriteType = { name = GFX_portrait_TAR_Military_Council texturefile = "gfx/leaders/TAR/TAR_Military_Council.dds" }
+
+	spriteType = { name = GFX_portrait_WPK_Regional_Parliament texturefile = "gfx/leaders/WPK/WPK_Regional_Parliament.dds" }
+
+	spriteType = { name = GFX_portrait_EDM_High_Science_Council texturefile = "gfx/leaders/EDM/EDM_High_Science_Council.dds" }
+
+	spriteType = { name = GFX_portrait_OCH_Okhva texturefile = "gfx/leaders/OCH/OCH_Okhva.dds" }
+
+	spriteType = { name = GFX_portrait_IRT_Mikhail_Zheleznyakov texturefile = "gfx/leaders/IRT/IRT_Mikhail_Zheleznyakov.dds" } 
+
+	spriteType = { name = GFX_portrait_TTL_Robert_Zaynetdinov texturefile = "gfx/leaders/TTL/TTL_Robert_Zaynetdinov.dds" }
+
+	spriteType = { name = GFX_portrait_PLC_Simon_Kirilenko texturefile = "gfx/leaders/PLC/PLC_Simon_Kirilenko.dds" }
+
+	spriteType = { name = GFX_portrait_URC_urals_parliament texturefile = "gfx/leaders/URC/URC_urals_parliament.dds" }
+
+	spriteType = { name = GFX_portrait_DIS_distorted_pool texturefile = "gfx/leaders/DIS/DIS_distorted_pool.dds" }
+
+	spriteType = { name = GFX_portrait_MKS_Varvara_Ivanova texturefile = "gfx/leaders/MKS/MKS_Varvara_Ivanova.dds" }
+
+	spriteType = { name = GFX_portrait_SMX_nikita_ramin texturefile = "gfx/leaders/SMX/SMX_nikita_ramin.dds" }
+
+	spriteType = { name = GFX_portrait_MAZ_Evgeniy_Primakov texturefile = "gfx/leaders/MAZ/MAZ_evgeniy_primakov.dds" }
+
+	spriteType = { name = GFX_portrait_MSH_Mikhail_Mishustov texturefile = "gfx/leaders/MSH/MSH_mikhail_mishustov.dds" }
+
+	spriteType = { name = GFX_portrait_BGR_Danil_Borisenko texturefile = "gfx/leaders/BGR/BGR_Danil_Borisenko.dds"}
+
+	spriteType = { name = GFX_portrait_ECD_Cult_leader texturefile = "gfx/leaders/ECD/Cult_leader.dds"}
+
+	spriteType = { name = GFX_portrait_MUC_Denis_Kinolog texturefile = "gfx/leaders/MUC/MUC_Denis_Kinolog.dds"}
+
+	spriteType = { name = GFX_portrait_OLD_Daniil_Koreniev texturefile = "gfx/leaders/OLD/Daniil_Koreniev.dds"}
+
+	spriteType = { name = GFX_portrait_MAP_sam texturefile = "gfx/leaders/MAP/MAP_sam.dds"}
+
+	#Персонажи ORL
+	spriteType = { name = GFX_portrait_ORL_evgeniy_prihozhiy texturefile = "gfx/leaders/ORL/ORL_evgeniy_prihozhiy.dds"}
+	spriteType = { name = GFX_portrait_ORL_Anton_Elizarin texturefile = "gfx/leaders/ORL/ORL_Anton_Elizarin.dds"}
+	spriteType = { name = GFX_portrait_ORL_Michail_Mizinov texturefile = "gfx/leaders/ORL/ORL_Michail_Mizinov.dds"}
+	spriteType = { name = GFX_portrait_ORL_Davor_Sadrich texturefile = "gfx/leaders/ORL/ORL_Davor_Sadrich.dds"}
+
+	#Персонажи SDC
+	spriteType = { name = GFX_portrait_SDC_Alexander_Lapinov texturefile = "gfx/leaders/SDC/Alexander_Lapinov.dds"}
+	spriteType = { name = GFX_portrait_SDC_Pautov texturefile = "gfx/leaders/SDC/Pautov.dds"}
+	spriteType = { name = GFX_portrait_SDC_Sergey_Shoigov texturefile = "gfx/leaders/SDC/Sergey_Shoigov.dds"}
+	spriteType = { name = GFX_portrait_SDC_Valeriy_Gerasov texturefile = "gfx/leaders/SDC/Valeriy_Gerasov.dds"}
+	spriteType = { name = GFX_portrait_SDC_Martin_Dugin texturefile = "gfx/leaders/SDC/Martin_Dugin.dds"}
+
+	#Пресонажи ARM#
+	spriteType = { name = GFX_portrait_ARM_Onufrenko texturefile = "gfx/leaders/ARM/michael_onufrenko.dds" }
+	spriteType = { name = GFX_portrait_ARM_Pavlik_Morozov texturefile = "gfx/leaders/ARM/ARM_Pavlik_Morozov.dds" }
+
+	#Персонажи IMP#
+	spriteType = { name = GFX_portrait_IMP_Dmitriy_Milenin texturefile = "gfx/leaders/IMP/Dmitriy_Milenin.dds" }	
+	spriteType = { name = GFX_portrait_IMP_Grigoriy_Reznov texturefile = "gfx/leaders/IMP/Grigoriy_Reznov.dds" }	
+	spriteType = { name = GFX_portrait_IMP_Aleksey_Dorog texturefile = "gfx/leaders/IMP/Aleksey_Dorog.dds" }	
+	spriteType = { name = GFX_portrait_IMP_Michail_Orlov texturefile = "gfx/leaders/IMP/Michail_Orlov.dds" }
+	spriteType = { name = GFX_portrait_IMP_Nikita_Bartonov texturefile = "gfx/leaders/IMP/Nikita_Bartonov.dds" }
+	spriteType = { name = GFX_portrait_IMP_Council_generals_consulate texturefile = "gfx/leaders/IMP/Council_generals_consulate.dds" }
+
+	#Персонажи UKR#
+	spriteType = { name = GFX_portrait_UKR_Petro_Prokopenko texturefile = "gfx/leaders/UKR/UKR_Petro_Prokopenko.dds" }
+	spriteType = { name = GFX_portrait_UKR_Anton_Hudayshenko texturefile = "gfx/leaders/UKR/UKR_Anton_Hudayshenko.dds" }
+
+	#Персонажи AGE#
+	spriteType = { name = GFX_AGE_Alexander_Lazarevich texturefile = "gfx/leaders/AGE/Alexander_Lazarevich.dds" }
+	spriteType = { name = GFX_AGE_Roki texturefile = "gfx/leaders/AGE/Roki.dds" }
+	spriteType = {  name = GFX_AGE_Deki texturefile = "gfx/leaders/AGE/Deki.dds" }
+	spriteType = { name = GFX_AGE_Novik_Dzhekovich texturefile = "gfx/leaders/AGE/Novik_Dzhekovich.dds" }
+	
+	#Персонажи GLS#
+	spriteType = { name = GFX_portrait_GLS_Iron_Dimon texturefile = "gfx/leaders/GLS/Iron_Dimon.dds" }
+	spriteType = { name = GFX_portrait_GLS_Anarchy texturefile = "gfx/leaders/GLS/Anarchy.dds" }
+	spriteType = { name = GFX_portrait_GLS_Airat_Kabirov texturefile = "gfx/leaders/GLS/Airat_Kabirov.dds" }
+	spriteType = { name = GFX_portrait_GLS_Almaz_Gabbasin texturefile = "gfx/leaders/GLS/Almaz_Gabbasin.dds" }
+	spriteType = { name = GFX_portrait_GLS_Ivan_Sykhoy texturefile = "gfx/leaders/GLS/Ivan_Sykhoy.dds" }
+	spriteType = { name = GFX_portrait_GLS_Victor_Ryaznov texturefile = "gfx/leaders/GLS/Victor_Ryaznov.dds" }
+	spriteType = { name = GFX_portrait_GLS_Vladimir_Astafiev texturefile = "gfx/leaders/GLS/Vladimir_Astafiev.dds" }
+	spriteType = { name = GFX_portrait_GLS_Chiro texturefile = "gfx/leaders/GLS/GLS_Chiro.dds" }
+	spriteType = { name = GFX_portrait_GLS_Mandate_Parliament texturefile = "gfx/leaders/URC/URC_urals_parliament.dds" }
+
+	#Персонажи ODS#
+	spriteType = { name = GFX_portrait_ODS_Vladislav_Vasserman texturefile = "gfx/leaders/ODS/Vladislav_Vasserman.dds" }
+	spriteType = { name = GFX_portrait_ODS_Roman_Xan texturefile = "gfx/leaders/ODS/Roman_Xan.dds" }
+	spriteType = { name = GFX_portrait_ODS_Artem_Chigirov texturefile = "gfx/leaders/ODS/Artem_Chigirov.dds" }
+	spriteType = { name = GFX_portrait_ODS_Vitalyi_Stoyanov texturefile = "gfx/leaders/ODS/Vitalyi_Stoyanov.dds" }
+	spriteType = { name = GFX_portrait_ODS_Egor_Nikitin texturefile = "gfx/leaders/ODS/Egor_Nikitin.dds"} 
+	spriteType = { name = GFX_portrait_ODS_Audit_of_exploitation texturefile = "gfx/leaders/ODS/Audit_of_exploitation.dds"} 
+
+}

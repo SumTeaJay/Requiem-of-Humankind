@@ -1,0 +1,10 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_economy_button"
+		texturefile = "gfx/interface/economy/economy_button.dds"
+	}	
+	spriteType = {
+		name = "GFX_economy_scrollbar"
+		texturefile = "gfx/interface/economy/economy_scrollbar.dds"
+	}
+}

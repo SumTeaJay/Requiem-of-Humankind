@@ -1,0 +1,95 @@
+﻿add_namespace = ROH_debug
+
+#Дебаг ивент для проверки механики Божьего Надела
+country_event = {
+	id = ROH_debug.1
+	title = ROH_debug.1.t
+	desc = ROH_debug.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROH_debug.1.a
+		set_power_balance = {
+			id = LWV_power_balance
+			left_side = LWV_kanat_okhlostenko_influence
+			right_side = LWV_kanat_markov_influence
+		}
+	}
+	option = {
+		name = ROH_debug.1.b
+		add_power_balance_value = {
+			id = LWV_power_balance
+			value = -0.2
+			tooltip_side = LWV_kanat_okhlostenko_influence
+		}
+	}
+	option = {
+		name = ROH_debug.1.c
+		add_power_balance_value = {
+			id = LWV_power_balance
+			value = 0.2
+			tooltip_side = LWV_kanat_markov_influence
+		}
+	}
+}
+#Режим резни. После каждого нового ветка резни нужно заного вызывать ивент.
+country_event = {
+	id = ROH_debug.2
+	title = ROH_debug.2.t
+	desc = ROH_debug.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROH_debug.2.a
+		every_country = {
+			set_country_flag = ROH_rez_nya
+		}
+	}
+}
+
+
+#Ивент на проверку работоспособности механики Святости БНГВ
+country_event = {
+	id = ROH_debug.5
+	title = ROH_debug.5.t
+	desc = ROH_debug.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROH_debug.5.a
+		LWV = { 
+			annex_country = {
+    			target = COA
+    			transfer_troops = no
+			}	
+			annex_country = {
+    			target = SWR
+    			transfer_troops = no
+			}	
+			annex_country = {
+    			target = BGD
+    			transfer_troops = no
+			}	
+			set_country_flag = decision_for_holiness 
+		}
+	}
+}
+
+#Ивент на проверку работоспособности ачивок
+country_event = {
+	id = ROH_debug.6
+	title = ROH_debug.6.t
+	desc = ROH_debug.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+		name = ROH_debug.6.a
+		set_country_flag = enemies_of_humanity_achievement
+		set_country_flag = take_the_greatcoat_achievement
+		set_country_flag = king_of_mountain_achievement
+	}
+}

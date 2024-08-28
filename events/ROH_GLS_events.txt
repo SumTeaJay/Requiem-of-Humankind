@@ -1,0 +1,932 @@
+add_namespace = GLS_phase_one
+add_namespace = GLS
+country_event = {
+ 	id = GLS_phase_one.1
+ 	title = GLS_phase_one.1.t
+ 	desc = GLS_phase_one.1.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+		name = GLS_phase_one.1.a	
+		country_event = {
+			id = GLS_phase_one.2
+			days = 1
+		}
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.2
+ 	title = GLS_phase_one.2.t
+ 	desc = GLS_phase_one.2.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.2.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.3
+ 	title = GLS_phase_one.3.t
+ 	desc = GLS_phase_one.3.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.3.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.4
+ 	title = GLS_phase_one.4.t
+ 	desc = GLS_phase_one.4.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.4.a	
+		 country_event = {
+			id = GLS_phase_one.20
+			days = 1
+		}
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.5
+ 	title = GLS_phase_one.5.t
+ 	desc = GLS_phase_one.5.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.5.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.6
+ 	title = GLS_phase_one.6.t
+ 	desc = GLS_phase_one.6.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.6.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.7
+ 	title = GLS_phase_one.7.t
+ 	desc = GLS_phase_one.7.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.7.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.8
+ 	title = GLS_phase_one.8.t
+ 	desc = GLS_phase_one.8.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.8.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.9
+ 	title = GLS_phase_one.9.t
+ 	desc = GLS_phase_one.9.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.9.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.10
+ 	title = GLS_phase_one.10.t
+ 	desc = GLS_phase_one.10.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.10.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.11
+ 	title = GLS_phase_one.11.t
+ 	desc = GLS_phase_one.11.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.11.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.12
+ 	title = GLS_phase_one.12.t
+ 	desc = GLS_phase_one.12.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.12.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.13
+ 	title = GLS_phase_one.13.t
+ 	desc = GLS_phase_one.13.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.13.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.14
+ 	title = GLS_phase_one.14.t
+ 	desc = GLS_phase_one.14.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.14.a	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.15
+ 	title = GLS_phase_one.15.t
+ 	desc = GLS_phase_one.15.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.15.a
+		country_event = {
+			id = GLS_phase_one.16
+			days = 1
+		}	
+ 	}
+}
+country_event = {
+ 	id = GLS_phase_one.16
+ 	title = GLS_phase_one.16.t
+ 	desc = GLS_phase_one.16.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS_phase_one.16.a	
+ 	}
+}
+country_event = {
+	id = GLS_phase_one.17
+	title = GLS_phase_one.17.t
+	desc = GLS_phase_one.17.d
+	picture = GFX_ropot_razv
+	is_triggered_only = yes
+	option = {
+		name = GLS_phase_one.17.a	
+	}
+}
+country_event = {
+	id = GLS_phase_one.18
+	title = GLS_phase_one.18.t
+	desc = GLS_phase_one.18.d
+	picture = GFX_ropot_razv
+	is_triggered_only = yes
+	option = {
+		name = GLS_phase_one.18.a	
+		country_event = {
+			id = GLS_phase_one.19
+			days = 1
+		}	
+	}
+}
+country_event = {
+   id = GLS_phase_one.19
+   title = GLS_phase_one.19.t
+   desc = GLS_phase_one.19.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS_phase_one.19.a	
+   }
+}
+country_event = {
+	id = GLS_phase_one.20
+	title = GLS_phase_one.20.t
+	desc = GLS_phase_one.20.d
+	picture = GFX_ropot_razv
+	is_triggered_only = yes
+	option = {
+		name = GLS_phase_one.20.a	
+	}
+ }
+
+ #####################
+ #S E C O N D F A Z A#
+ #####################
+#2 фаза
+country_event = {
+ 	id = GLS.21
+ 	title = GLS.21.t
+ 	desc = GLS.21.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.21.a
+		set_country_flag = start_mobilisation
+	}
+	option = {
+ 		name = GLS.21.b
+		set_country_flag = continue_practice
+	}
+}
+country_event = {
+	id = GLS.22
+	title = GLS.22.t
+	desc = GLS.22.d
+	picture = GFX_ropot_razv
+	is_triggered_only = yes
+	option = {
+		name = GLS.22.a	
+	}
+}
+country_event = {
+ 	id = GLS.23
+ 	title = GLS.23.t
+ 	desc = GLS.23.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.23.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.24
+ 	title = GLS.24.t
+ 	desc = GLS.24.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.24.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.25
+ 	title = GLS.25.t
+ 	desc = GLS.25.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.25.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.26
+ 	title = GLS.26.t
+ 	desc = GLS.26.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.26.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.27
+ 	title = GLS.27.t
+ 	desc = GLS.27.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.27.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.28
+ 	title = GLS.28.t
+ 	desc = GLS.28.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.28.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.29
+ 	title = GLS.29.t
+ 	desc = GLS.29.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.29.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.30
+ 	title = GLS.30.t
+ 	desc = GLS.30.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.30.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.31
+ 	title = GLS.31.t
+ 	desc = GLS.31.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.31.a	
+ 	}
+}
+country_event = {
+ 	id = GLS.32
+ 	title = GLS.32.t
+ 	desc = GLS.32.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+		name = GLS.32.a	
+ 	}
+}
+country_event = {
+   id = GLS.35
+   title = GLS.35.t
+   desc = GLS.35.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.35.a	
+	   country_event = {
+		   id = GLS.39
+		   days = 1
+	   }
+   }
+}
+country_event = {
+   id = GLS.36
+   title = GLS.36.t
+   desc = GLS.36.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.36.a	
+	   country_event = {
+		   id = GLS.41
+		   days = 1
+	   }
+   }
+}
+country_event = {
+   id = GLS.37
+   title = GLS.37.t
+   desc = GLS.37.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.37.a
+	   country_event = {
+		   id = GLS.42
+		   days = 1
+	   }
+   }
+}
+country_event = {
+   id = GLS.38
+   title = GLS.38.t
+   desc = GLS.38.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.38.a	
+	   country_event = {
+		   id = GLS.40
+		   days = 1
+	   }
+   }
+}
+country_event = {
+   id = GLS.39
+   title = GLS.39.t
+   desc = GLS.39.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.39.a	
+   }
+}
+country_event = {
+   id = GLS.40
+   title = GLS.40.t
+   desc = GLS.40.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.40.a	
+   }
+}
+country_event = {
+   id = GLS.41
+   title = GLS.41.t
+   desc = GLS.41.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.41.a	
+   }
+}
+
+country_event = {
+   id = GLS.42
+   title = GLS.42.t
+   desc = GLS.42.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.42.a	
+	   country_event = {
+		   id = GLS.43
+		   days = 1
+	   }
+   }
+}
+country_event = {
+   id = GLS.43
+   title = GLS.43.t
+   desc = GLS.43.d
+   picture = GFX_ropot_razv
+   is_triggered_only = yes
+   option = {
+	   name = GLS.43.a	
+   }
+}
+ ###################
+ #D O P E V E N T S#
+ ###################
+ country_event = {
+	id = GLS.332
+	title = GLS.332.t
+	desc = GLS.332.d
+	picture = GFX_ropot_razv
+    is_triggered_only = no
+    fire_only_once = yes
+    hidden = yes
+    trigger = {	
+		GLS_defeated_ASR = yes
+    }
+	option = {
+		name = GLS.332.a
+	    GLS = { country_event = { id = GLS.33 hours = 1 } }		
+	}
+}
+country_event = {
+	id = GLS.33
+	title = GLS.33.t
+	desc = GLS.33.d
+	picture = GFX_ropot_razv
+	is_triggered_only = yes
+	option = {
+		name = GLS.33.a
+	    hidden_effect = { 
+		    GLS = { 
+			   load_focus_tree = state_liquidation_board_phase_two
+		    } 
+	    }
+	}
+}
+country_event = {
+ 	id = GLS.34
+ 	title = GLS.34.t
+ 	desc = GLS.34.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.34.a	
+ 	}
+}
+
+######################################
+
+country_event = {
+ 	id = GLS.111
+ 	title = GLS.111.t
+ 	desc = GLS.111.d
+ 	picture = GFX_gls_negotiation_process
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.111.a	
+ 	}
+}
+
+country_event = {
+ 	id = GLS.222
+ 	title = GLS.222.t
+ 	desc = GLS.222.d
+ 	picture = GFX_gls_negotiation_process
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.222.a	
+ 	}
+}
+
+country_event = {
+ 	id = GLS.333 #Удаление Альянса
+ 	title = GLS.333.t
+ 	desc = GLS.333.d
+ 	picture = GFX_gls_negotiation_process
+ 	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+		UralTreaty_defeated_GLS = yes
+	}
+ 	option = {
+ 		name = GLS.333.a
+		URC = { dismantle_faction = yes }
+ 	}
+}
+
+######################################
+ 
+country_event = {
+ 	id = GLS.1111 #Order = 100%
+ 	title = GLS.1111.t
+ 	desc = GLS.1111.d
+ 	picture = GFX_gls_the_end
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.1111.a	
+ 	}
+}
+
+country_event = {
+ 	id = GLS.2222 #Freedom = 100%
+ 	title = GLS.2222.t
+ 	desc = GLS.2222.d
+ 	picture = GFX_gls_the_end
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.2222.a	
+ 	}
+} 
+ 
+country_event = {
+ 	id = GLS.1100 #Order = 0%
+ 	title = GLS.1100.t
+ 	desc = GLS.1100.d
+ 	picture = GFX_gls_the_end
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.1100.a	
+ 	}
+} 
+
+country_event = {
+ 	id = GLS.2200 #Freedom = 0%
+ 	title = GLS.2200.t
+ 	desc = GLS.2200.d
+ 	picture = GFX_gls_the_end
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.2200.a	
+ 	}
+}  
+ 
+######################################
+
+country_event = {
+ 	id = GLS.666 #Нанесён ядерный удар (объект удара)
+ 	title = GLS.666.t
+ 	desc = GLS.666.d
+ 	picture = GFX_nuclear_strike
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.666.a	
+ 	}
+} 
+ 
+country_event = {
+ 	id = GLS.777 #Нанесён ядерный удар (ГЛК)
+ 	title = GLS.777.t
+ 	desc = GLS.777.d
+ 	picture = GFX_nuclear_strike
+ 	is_triggered_only = yes
+ 	option = {
+ 		name = GLS.777.a	
+ 	}
+} 
+ 
+country_event = {
+ 	id = GLS.888 #Снятие флага
+ 	title = GLS.888.t
+ 	desc = GLS.888.d
+ 	picture = GFX_nuclear_strike
+ 	is_triggered_only = yes
+	hidden = yes
+ 	option = {
+ 		name = GLS.888.a
+	ROOT = { clr_country_flag = nuclear_strike_has_been_launched_against_you_lol}
+ 	}
+} 
+ 
+###################################### 
+ 
+country_event = {
+ 	id = GLS.750 #+4% каждую неделю через флаг
+ 	title = GLS.750.t
+ 	desc = GLS.750.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+	hidden = yes
+ 	option = {
+ 		name = GLS.750.a
+		GLS = { 
+			set_country_flag = gls_2_percent_additive_for_kurchatov_project
+			country_event = { id = GLS.760 days = 80 }
+		}
+ 	}
+}
+
+country_event = {
+ 	id = GLS.760 #Снятие флага
+ 	title = GLS.760.t
+ 	desc = GLS.760.d
+ 	picture = GFX_ropot_razv
+ 	is_triggered_only = yes
+	hidden = yes
+ 	option = {
+ 		name = GLS.760.a
+		GLS = { clr_country_flag = gls_2_percent_additive_for_kurchatov_project}
+ 	}
+}
+
+################Третья фаза#####################
+
+################Восставшие деревни###############
+
+country_event = {
+	id = GLS.2000
+	title = GLS.2000.t
+	desc = GLS.2000.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+	option = {
+		name = GLS.2000.a
+		hidden_effect = {
+			GLS = {
+				397 = { transfer_state_to = REV }
+			}
+			REV = {
+				397 = { 
+					add_core_of = REV 
+                	remove_core_of = GLS
+				}
+				country_event = {
+					id = GLS.2100
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = GLS.2100
+	title = GLS.2100
+	desc = GLS.2100
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2100.a
+		declare_war_on = {
+			type = civil_war
+			target = GLS
+		}
+		add_civil_war_target = GLS
+		add_manpower = 32000
+		load_oob = "GLS_civil_war"
+	}
+}
+
+############Обычные ивенты#############
+
+country_event = { #Смена 2-й фазы на 3-ю фазу
+	id = GLS.1999
+	title = GLS.1999.t
+	desc = GLS.1999.d
+	#picture = 
+	is_triggered_only = no
+
+	trigger = {
+		GLS_chasing_a_dream_trigger = yes
+	}
+	fire_only_once = yes
+
+	option = {
+		name = GLS.1999.a
+	    hidden_effect = { 
+		    GLS = { 
+			   load_focus_tree = state_liquidation_board_phase_three
+		    } 
+	    }
+	}
+}
+
+country_event = { #Наше имя?
+	id = GLS.2001
+	title = GLS.2001.t
+	desc = GLS.2001.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2001.a
+	}
+}
+
+country_event = { #Цензура
+	id = GLS.2002
+	title = GLS.2002.t
+	desc = GLS.2002.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2002.a
+	}
+}
+
+country_event = { #Мозги
+	id = GLS.2003
+	title = GLS.2003.t
+	desc = GLS.2003.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2003.a
+	}
+}
+
+country_event = { #Игнор Астафьева
+	id = GLS.2004
+	title = GLS.2004.t
+	desc = GLS.2004.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2004.a
+	}
+}
+
+country_event = { #Игнор Рязнова
+	id = GLS.2005
+	title = GLS.2005.t
+	desc = GLS.2005.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2005.a
+	}
+}
+
+country_event = { #Наследие инициативы
+	id = GLS.2006
+	title = GLS.2006.t
+	desc = GLS.2006.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2006.a
+	}
+}
+
+country_event = { #Воспоминания о будущем ч.1
+	id = GLS.2007
+	title = GLS.2007.t
+	desc = GLS.2007.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2007.a
+		hidden_effect = {
+			country_event = {
+				id = GLS.2015
+			}
+		}
+	}
+}
+
+country_event = { #Воспоминания о будущем ч.2
+	id = GLS.2015
+	title = GLS.2015.t
+	desc = GLS.2015.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2015.a
+	}
+}
+
+country_event = { #Во весь голос
+	id = GLS.2008
+	title = GLS.2008.t
+	desc = GLS.2008.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2008.a
+	}
+}
+
+country_event = { #Заминируйте тропы
+	id = GLS.2009
+	title = GLS.2009.t
+	desc = GLS.2009.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2009.a
+	}
+}
+
+country_event = { #Директива №1
+	id = GLS.2010
+	title = GLS.2010.t
+	desc = GLS.2010.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2010.a
+	}
+}
+
+country_event = { #Помните о Ямантау
+	id = GLS.2011
+	title = GLS.2011.t
+	desc = GLS.2011.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2011.a
+	}
+}
+
+country_event = { #Столичный вопрос
+	id = GLS.2012
+	title = GLS.2012.t
+	desc = GLS.2012.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2012.a
+	}
+}
+
+country_event = { #Следуйте приказам
+	id = GLS.2013
+	title = GLS.2013.t
+	desc = GLS.2013.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2013.a
+	}
+}
+
+country_event = { #Сохраняйте статус-кво
+	id = GLS.2014
+	title = GLS.2014.t
+	desc = GLS.2014.d
+	#picture = 
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = GLS.2014.a
+	}
+}

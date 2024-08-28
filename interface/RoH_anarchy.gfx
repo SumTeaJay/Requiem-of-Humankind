@@ -1,0 +1,31 @@
+spriteTypes = {	
+	##Anarchy shit
+	spriteType = {
+		name = "GFX_Anarchy_Relations_Block"
+		textureFile = "gfx/interface/anarchy/relations_block.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_SIL"
+		textureFile = "gfx/interface/anarchy/Anarchy_SIL.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_BLS"
+		textureFile = "gfx/interface/anarchy/Anarchy_BLS.dds"
+	}
+	spriteType = {
+		name = "GFX_Anarchy_WTR"
+		textureFile = "gfx/interface/anarchy/Anarchy_WTR.dds"
+	}	
+	spriteType = {
+		name = "GFX_Anarchy_diplo"
+		textureFile = "gfx/interface/anarchy/Anarchy_diplo.dds"
+	}	
+	frameAnimatedSpriteType = {
+		name = "GFX_Anarchy_diplo_animation"
+		textureFile = "gfx/interface/anarchy/Anarchy_diplo_animation.dds"
+		noOfFrames = 17
+		animation_rate_fps = 2
+		looping = yes
+		play_on_show = yes
+	}
+}

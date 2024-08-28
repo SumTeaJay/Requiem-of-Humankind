@@ -1,0 +1,278 @@
+add_namespace = roh_karel_crisis
+
+country_event = {
+	
+	id = roh_karel_crisis.1 #появление и первая волна
+	title = roh_karel_crisis.1.t 
+	desc = roh_karel_crisis.1.d 
+	
+	fire_only_once = yes
+	hidden = yes
+	
+	trigger = {
+		OR = {
+			date > 2025.07.31
+			AND = {
+				SDC = {
+					has_completed_focus = SDC_facility
+				}
+				OR = {
+					SDC = {
+						has_capitulated = yes
+					}
+					VOZ = {
+						has_capitulated = yes
+					}
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = roh_karel_crisis.1.a 
+		custom_effect_tooltip = ROH_karel_horde
+		hidden_effect = {
+			KRT = {
+                set_country_flag = karel_crisis_flag
+				set_cosmetic_tag = KRT_crisis
+				add_ideas = KRT_karelian_horde
+				set_popularities = {
+					statesmen = 100
+				}
+				add_equipment_to_stockpile = {
+    				type = infantry_equipment
+    				amount = 80000
+    				producer = KRT
+				}
+				add_equipment_to_stockpile = {
+    				type = support_equipment_1
+    				amount = 20000
+    				producer = KRT
+				}
+				declare_war_on = {
+					target = BSL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = LKV
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = KSK
+					type = annex_everything
+				}
+				division_template = {
+    				name = "Малая орда"
+    				division_names_group = TVARI_INF_01
+    				is_locked = no
+    				priority = 1
+    				regiments = {
+       					infantry = { x = 0 y = 0}
+        				infantry = { x = 0 y = 1}
+       					infantry = { x = 1 y = 0}
+        				infantry = { x = 1 y = 1}
+    				}
+				}
+				division_template = {
+    				name = "Большая орда"
+    				division_names_group = TVARI_INF_01
+    				is_locked = no
+    				priority = 1
+    				regiments = {
+        				infantry = { x = 0 y = 0}
+        				infantry = { x = 0 y = 1}
+						infantry = { x = 0 y = 2}
+       				infantry = { x = 1 y = 0}
+        				infantry = { x = 1 y = 1}
+						infantry = { x = 1 y = 2}
+						infantry = { x = 2 y = 0}
+        				infantry = { x = 2 y = 1}
+						infantry = { x = 2 y = 2}
+    				}
+				}
+				capital_scope = {
+                    create_unit = {
+                    	division = "name = \"Малая орда\" division_template = \"Малая орда\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = KRT
+                		count = 12
+					}
+					create_unit = {
+                    	division = "name = \"Большая орда\" division_template = \"Большая орда\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = KRT
+                		count = 6
+					}
+            	}
+			}
+		}
+	}
+}
+
+country_event = {
+	
+	id = roh_karel_crisis.2 # вторая волна
+	title = roh_karel_crisis.2.t 
+	desc = roh_karel_crisis.2.d 
+	
+	fire_only_once = yes
+    hidden = yes
+	
+	trigger = {
+        KRT = {
+            has_country_flag = karel_crisis_flag
+        }
+		NOT = {
+			country_exists = BSL
+			country_exists = LKV
+			country_exists = KSK
+		}
+	}
+	
+	option = {
+		name = roh_karel_crisis.2.a
+        KRT = {
+			declare_war_on = {
+				target = TTS
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ZLG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PMD
+				type = annex_everything
+			}
+		}
+    }
+}
+
+country_event = {
+	
+	id = roh_karel_crisis.3 # третья волна
+	title = roh_karel_crisis.3.t 
+	desc = roh_karel_crisis.3.d 
+	
+	fire_only_once = yes
+    hidden = yes
+	
+	trigger = {
+        KRT = {
+            has_country_flag = karel_crisis_flag
+        }
+		NOT = {
+			country_exists = TTS
+			country_exists = ZLG
+			country_exists = PMD
+		}
+	}
+	
+	option = {
+		name = roh_karel_crisis.3.a
+        KRT = {
+			declare_war_on = {
+				target = NMG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PLD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SFR
+				type = annex_everything
+			}
+        	declare_war_on = {
+				target = DRG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MGL
+				type = annex_everything
+			}
+		}
+    }
+}
+
+country_event = {
+	
+	id = roh_karel_crisis.4 #четвертая волна
+	title = roh_karel_crisis.4.t 
+	desc = roh_karel_crisis.4.d 
+	
+	fire_only_once = yes
+    hidden = yes
+	
+	trigger = {
+        KRT = {
+            has_country_flag = karel_crisis_flag
+        }
+		NOT = {
+			country_exists = NMG
+			country_exists = PLD
+			country_exists = SFR
+			country_exists = DRG
+			country_exists = MGL
+		}
+	}
+	
+	option = {
+		name = roh_karel_crisis.4.a
+        KRT = {
+			declare_war_on = {
+				target = SDC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = VOZ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAG
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ARK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = UFV
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SDI
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ODJ
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = REN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TRO
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = MIN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SOC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SAC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WEC
+				type = annex_everything
+			}
+		}
+    }
+}
+            
+			
+				

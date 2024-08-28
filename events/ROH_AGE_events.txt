@@ -1,0 +1,906 @@
+add_namespace = AGE
+add_namespace = AGE_baltic_terror
+add_namespace = AGE_clandestine_cells
+add_namespace = AGE_baltics_are_probing
+add_namespace = AGE_border_conflict
+add_namespace = AGE.technical
+#Кладбища балтийских народов
+country_event = {
+	id = AGE.1
+	title = AGE.1.t
+	desc = AGE.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.1.a	
+	}
+}
+#Балтский вопрос
+country_event = {
+	id = AGE.2
+	title = AGE.2.t
+	desc = AGE.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.2.a	
+	}
+}
+#Разделяй
+country_event = {
+	id = AGE.3
+	title = AGE.3.t
+	desc = AGE.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.3.a	
+	}
+}
+#Балтийский вопрос
+country_event = {
+	id = AGE.4
+	title = AGE.4.t
+	desc = AGE.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.4.a	
+	}
+}
+#Дом...
+country_event = {
+	id = AGE.5
+	title = AGE.5.t
+	desc = AGE.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.5.a	
+	}
+}
+#Склоним их…
+country_event = {
+	id = AGE.6
+	title = AGE.6.t
+	desc = AGE.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.6.a	
+	}
+}
+#Прекрасный сон
+country_event = {
+	id = AGE.7
+	title = AGE.7.t
+	desc = AGE.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.7.a	
+	}
+}
+#Празднование дня единства
+country_event = {
+	id = AGE.8
+	title = AGE.8.t
+	desc = AGE.8.d
+    fire_only_once = no
+	is_triggered_only = yes
+
+	option = {
+		name = AGE.8.a
+		add_timed_idea = {
+			idea = AGE_day_of_unity_celebration
+			days = 30
+		}
+	}
+}
+#Обратный результат
+country_event = {
+	id = AGE.9
+	title = AGE.9.t
+	desc = AGE.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.9.a
+	}
+}
+
+#Произошло нападение прибалтов! #фабрика
+country_event = {
+	id = AGE_baltic_terror.1
+	title = AGE_baltic_terror.1.t
+	desc = AGE_baltic_terror.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { has_completed_focus = AGE_not_their_land }
+		name = AGE_baltic_terror.1.a
+		add_political_power = -15
+	}
+	option = {
+		trigger = { has_completed_focus = AGE_still_their_land }
+		name = AGE_baltic_terror.1.b
+		add_political_power = -15
+	}
+}
+
+#Произошло нападение прибалтов! #военный завод
+country_event = {
+	id = AGE_baltic_terror.2
+	title = AGE_baltic_terror.2.t
+	desc = AGE_baltic_terror.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { has_completed_focus = AGE_not_their_land }
+		name = AGE_baltic_terror.1.a
+		add_political_power = -15
+	}
+	option = {
+		trigger = { has_completed_focus = AGE_still_their_land }
+		name = AGE_baltic_terror.1.b
+		add_political_power = -15
+	}
+}
+
+#Произошло нападение прибалтов! #инфраструктура
+country_event = {
+	id = AGE_baltic_terror.3
+	title = AGE_baltic_terror.3.t
+	desc = AGE_baltic_terror.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { has_completed_focus = AGE_not_their_land }
+		name = AGE_baltic_terror.1.a
+		add_political_power = -15
+	}
+	option = {
+		trigger = { has_completed_focus = AGE_still_their_land }
+		name = AGE_baltic_terror.1.b
+		add_political_power = -15
+	}
+}
+
+#Произошло нападение прибалтов! #пункт снабжения
+country_event = {
+	id = AGE_baltic_terror.4
+	title = AGE_baltic_terror.4.t
+	desc = AGE_baltic_terror.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { has_completed_focus = AGE_not_their_land }
+		name = AGE_baltic_terror.1.a
+		add_political_power = -15
+	}
+	option = {
+		trigger = { has_completed_focus = AGE_still_their_land }
+		name = AGE_baltic_terror.1.b
+		add_political_power = -15
+	}
+}
+
+#Произошло нападение прибалтов! #авиабаза
+country_event = {
+	id = AGE_baltic_terror.5
+	title = AGE_baltic_terror.5.t
+	desc = AGE_baltic_terror.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		trigger = { has_completed_focus = AGE_not_their_land }
+		name = AGE_baltic_terror.1.a
+		add_political_power = -15
+	}
+	option = {
+		trigger = { has_completed_focus = AGE_still_their_land }
+		name = AGE_baltic_terror.1.b
+		add_political_power = -15
+	}
+}
+
+#Произошло нападение прибалтов! #предотвращено
+country_event = {
+	id = AGE_baltic_terror.6
+	title = AGE_baltic_terror.6.t
+	desc = AGE_baltic_terror.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AGE_baltic_terror.6.a
+		add_political_power = 15
+	}
+}
+
+#Результаты операции по окончательной зачистке
+country_event = {
+	id = AGE_clandestine_cells.1
+	title = AGE_clandestine_cells.1.t
+	desc = AGE_clandestine_cells.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AGE_clandestine_cells.1.a
+		custom_effect_tooltip = AGE_modify_baltic_separatism_ns_intro
+		add_to_variable = { AGE_baltic_separatism_political_power_factor = 0.04 tooltip = political_power_factor_tt }
+		add_to_variable = { AGE_baltic_separatism_monthly_population = 0.05 tooltip = monthly_population_tt }
+		add_to_variable = { AGE_baltic_separatism_conscription_factor = 0.04 tooltip = conscription_factor_tt }
+		add_to_variable = { AGE_baltic_separatism_consumer_goods_factor = -0.03 tooltip = consumer_goods_factor_tt }
+		add_to_variable = { AGE_baltic_separatism_stability_factor = 0.12 tooltip = stability_factor_tt }
+		add_to_variable = { AGE_baltic_separatism_industry_free_repair_factor = 0.15 tooltip = industry_free_repair_factor_tt }		
+	}
+}
+
+#Православные беженцы
+country_event = {
+	id = AGE_baltics_are_probing.1
+	title = AGE_baltics_are_probing.1.t
+	desc = AGE_baltics_are_probing.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = AGE_baltics_are_probing.1.a
+		add_political_power = -200
+		add_manpower = -674
+		add_stability = -0.1
+		808 = { add_manpower = -21463 }
+		809 = { add_manpower = -4788 }
+		12 = { add_manpower = -43479 }
+		13 = { add_manpower = -5344 }
+		911 = { add_manpower = -3918 }
+		hidden_effect = {
+			set_variable = { var_terrorist_attack = 0 }
+			set_variable = { var_preventing_terrorist_attack = 100 }			
+		}
+	}
+}
+
+#Мечты о доме
+country_event = {
+	id = AGE.10
+	title = AGE.10.t
+	desc = AGE.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.10.a
+	}
+}
+
+#Обстановка вокруг нас
+country_event = {
+	id = AGE.11
+	title = AGE.11.t
+	desc = AGE.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.11.a
+	country_event = AGE.12
+	}
+}
+
+#Обстановка вокруг нас ч. 2
+country_event = {
+	id = AGE.12
+	title = AGE.12.t
+	desc = AGE.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.12.a
+	}
+}
+
+#Воинская повинность
+country_event = {
+	id = AGE.13
+	title = AGE.13.t
+	desc = AGE.13.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.13.a
+	}
+}
+
+#Трудовая повинность
+country_event = {
+	id = AGE.14
+	title = AGE.14.t
+	desc = AGE.14.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.13.a
+	}
+}
+
+#Казнь
+country_event = {
+	id = AGE.15
+	title = AGE.15.t
+	desc = AGE.15.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.15.a
+	}
+}
+
+#Бывшие друзья
+country_event = {
+	id = AGE.16
+	title = AGE.16.t
+	desc = AGE.16.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.16.a
+	country_event = AGE.28
+	}
+}
+#Бывшие друзья 
+country_event = { 
+	id = AGE.28 #Слишком поздно понял, что ивент слишком большой
+	title = AGE.28.t
+	desc = AGE.28.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.2.a
+	}
+}
+
+#План военных действий
+country_event = {
+	id = AGE.17
+	title = AGE.17.t
+	desc = AGE.17.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.17.a
+	}
+}
+#Настоящий учёный
+country_event = {
+	id = AGE.18
+	title = AGE.18.t
+	desc = AGE.18.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.18.a
+		add_timed_idea = {
+			idea = AGE_funding_for_research
+			days = 220
+		}
+		hidden_effect = {
+			country_event = {
+    		id = AGE.technical.1
+    		days = 220
+			}
+		}
+	}
+}
+#Разумный выбор
+country_event = {
+	id = AGE.19
+	title = AGE.19.t
+	desc = AGE.19.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.19.a
+	}
+}
+#Проблемы объединяют
+country_event = {
+	id = AGE.20
+	title = AGE.20.t
+	desc = AGE.20.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.20.a
+		set_technology = {
+   	 		basic_MLRS = 1
+		}
+	}
+}
+
+#Обстановка вокруг нас Славянизация
+country_event = {
+	id = AGE.21
+	title = AGE.21.t
+	desc = AGE.21.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.21.a
+	country_event = AGE.22
+	}
+}
+
+#Обстановка вокруг нас Славянизация ч. 2
+country_event = {
+	id = AGE.22
+	title = AGE.22.t
+	desc = AGE.22.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.22.a
+	}
+}
+
+#Старая проблема на новый лад
+country_event = {
+	id = AGE.23
+	title = AGE.23.t
+	desc = AGE.23.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.23.a
+	}
+}
+
+#Чётче, лучше, грамотней
+country_event = {
+	id = AGE.24
+	title = AGE.24.t
+	desc = AGE.24.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.24.a
+	}
+}
+
+#План войны
+country_event = {
+	id = AGE.25
+	title = AGE.25.t
+	desc = AGE.25.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.25.a
+	}
+}
+
+
+#Бывшие товарищи
+country_event = {
+	id = AGE.26
+	title = AGE.26.t
+	desc = AGE.26.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.26.a
+		country_event = AGE.27
+	}
+}
+
+#Бывшие товарищи ч.2
+country_event = {
+	id = AGE.27
+	title = AGE.27.t
+	desc = AGE.27.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.27.a
+		set_division_template_lock = {
+    		division_template = "Сумрачный дивизион"
+    		is_locked = no
+		}
+	}
+}
+
+
+
+###Технические ивенты
+
+#Техический ивент для идеи
+country_event = {
+	id = AGE.technical.1
+	title = AGE.technical.1.t
+	desc = AGE.technical.1.d
+    fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.technical.1.a
+	add_ideas = AGE_scientists_of_complex
+	}
+}
+#Технический ивент для атаки на кордон
+country_event = {
+	id = AGE.technical.2
+	title = AGE.technical.2.t
+	desc = AGE.technical.2.d
+    fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE.technical.2.a
+		TWD = {
+			declare_war_on = {
+           		target = CHU
+            	type = annex_everything
+        	}
+		}
+	}
+}
+#Технический ивент-таймер
+country_event = {
+	id = AGE.technical.3
+	title = AGE.technical.3.t
+	desc = AGE.technical.3.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		original_tag = AGE
+		CHU = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = AGE.technical.3.a
+		country_event = {
+			id = AGE.technical.4
+			days = 80
+		}
+	}
+}
+
+country_event = {
+	id = AGE.technical.4
+	title = AGE.technical.4.t
+	desc = AGE.technical.4.d
+    fire_only_once = yes
+	hidden = yes
+	is_triggered_only = yes
+
+	option = {
+		name = AGE.technical.4.a
+		TWD = {
+			add_ideas = AGE_revenge
+			declare_war_on = {
+           		target = AGE
+            	type = annex_everything
+        	}
+		}
+	}
+}
+
+#Захват Сумрачного дивизиона
+country_event = {
+	id = AGE.technical.5
+	title = AGE.technical.5.t
+	desc = AGE.technical.5.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = AGE
+		has_country_flag = slavicization_flag
+		TWD = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = AGE.technical.5.a
+		country_event = {
+			id = AGE.26
+			days = 14
+		}
+		812 = {
+			transfer_state_to = AGE
+			add_core_of = AGE
+			remove_core_of = TWD
+			set_state_name = STATE_812_age
+			set_province_name = {
+    			id = 3152
+    			name = VICTORY_POINTS_3152_age
+			}
+		}
+		811 = {
+			transfer_state_to = AGE
+			add_core_of = AGE
+			remove_core_of = TWD
+			set_state_name = STATE_811_age
+			set_province_name = {
+    			id = 185
+    			name = VICTORY_POINTS_185_age
+			}
+		}
+		927 = {
+			transfer_state_to = CHU
+			add_core_of = CHU
+			remove_core_of = TWD
+			set_state_name = STATE_927_age
+			set_province_name = {
+    			id = 11127
+    			name = VICTORY_POINTS_11127_age
+			}
+		}
+	}
+}
+
+#Захват Балтосферы
+country_event = {
+	id = AGE.technical.6
+	title = AGE.technical.6.t
+	desc = AGE.technical.6.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = AGE
+		has_country_flag = slavicization_flag
+		BTC = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = AGE.technical.6.a
+		189 = {
+			transfer_state_to = AGE
+			set_state_name = STATE_189_age
+			set_province_name = {
+    			id = 6314
+    			name = VICTORY_POINTS_6314_age
+			}
+		}
+		190 = {
+			transfer_state_to = AGE
+			set_state_name = STATE_190_age
+			set_province_name = {
+    			id = 9262
+    			name = VICTORY_POINTS_9262_age
+			}
+		}
+	}
+}
+
+#Захват  Симоновы чащи
+country_event = {
+	id = AGE.technical.7
+	title = AGE.technical.7.t
+	desc = AGE.technical.7.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = AGE
+		has_country_flag = slavicization_flag
+		SIM = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = AGE.technical.7.a
+		908 = {
+			transfer_state_to = HAR
+			add_core_of = HAR
+			remove_core_of = SIM
+			set_state_name = STATE_908_age
+		}
+		784 = {
+			transfer_state_to = HAR
+			add_core_of = HAR
+			remove_core_of = SIM
+		}
+		810 = {
+			transfer_state_to = HAR
+			add_core_of = HAR
+			remove_core_of = SIM
+		}
+	}
+}
+
+#Захват ОМК
+country_event = {
+	id = AGE.technical.7
+	title = AGE.technical.7.t
+	desc = AGE.technical.7.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = AGE
+		has_country_flag = slavicization_flag
+		LPC = {
+			has_capitulated = yes
+		}
+	}
+
+	option = {
+		name = AGE.technical.7.a
+		763 = {
+			transfer_state_to = AGE
+			set_state_name = STATE_763_age
+			set_province_name = {
+    			id = 6332
+    			name = VICTORY_POINTS_9262_age
+			}
+		}
+		188 = {
+			transfer_state_to = AGE
+			set_state_name = STATE_188_age
+			set_province_name = {
+    			id = 3288
+    			name = VICTORY_POINTS_9262_age
+			}
+		}
+		5 = {
+			transfer_state_to = AGE
+		}
+		915 = {
+			transfer_state_to = AGE
+		}
+		814 = {
+			transfer_state_to = AGE
+			set_state_name = STATE_814_age
+			set_province_name = {
+    			id = 3254
+    			name = VICTORY_POINTS_3254_age
+			}
+			set_province_name = {
+    			id = 11312
+    			name = VICTORY_POINTS_11312_age
+			}
+			set_province_name = {
+    			id = 3272
+    			name = VICTORY_POINTS_3272_age
+			}
+		}
+	}
+}
+#Удаление нацдухов
+country_event = {
+	id = AGE.technical.8
+	title = AGE.technical.8.t
+	desc = AGE.technical.7.d
+    fire_only_once = yes
+	hidden = yes
+	trigger = {
+		country_exists = AGE
+		NOT = {
+			country_exists = LPC
+		}
+	}
+
+	option = {
+		name = AGE.technical.8.a
+		AGE = {
+			remove_ideas = {
+				AGE_protective_shaft_idea
+				AGE_powerful_onslaught_idea
+				AGE_cold_blooded_defense_idea
+				AGE_decisive_assault_idea
+			}
+		}
+	}
+}
+
+#Мы прогнали сектантов!
+country_event = {
+	id = AGE_border_conflict.1
+	title = AGE_border_conflict.1.t
+	desc = AGE_border_conflict.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE_border_conflict.1.a
+		add_stability = 0.03
+		add_war_support = 0.03
+		add_political_power = 50
+		set_country_flag = AGE_recapture_flag
+		IF = {
+			limit = {
+				815 = {
+					is_controlled_by = SIM
+				}
+			}
+			815 = {
+				transfer_state_to = AGE
+				add_core_of = AGE
+				remove_core_of = BLZ
+			}
+		}
+		else_if = {
+			limit = {
+				815 = {
+					is_controlled_by = AGE
+				}
+			}
+			11 = {
+				transfer_state_to = AGE
+				add_core_of = AGE
+				remove_core_of = BLZ
+			}
+		}
+		hidden_effect = {
+			country_event = {
+    			id = AGE_border_conflict.3
+    			days = 10
+			}
+		}
+	}
+}
+
+#Сектанты отбили нашу атаку
+country_event = {
+	id = AGE_border_conflict.2
+	title = AGE_border_conflict.2.t
+	desc = AGE_border_conflict.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = AGE_border_conflict.2.a
+	add_stability = -0.03
+	add_war_support = -0.03
+	add_political_power = -50
+	}
+}
+
+country_event = { #на обьявление войны через 10 дней
+	id = AGE_border_conflict.3
+	title = AGE_border_conflict.3.t
+	desc = AGE_border_conflict.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+
+	option = {
+	name = AGE_border_conflict.3.a
+		SIM = {
+			declare_war_on = {
+				target = AGE
+				type = annex_everything
+			}
+		}
+	}
+}

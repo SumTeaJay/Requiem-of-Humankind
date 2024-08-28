@@ -1,0 +1,332 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_group_infantry_icon"
+		textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_group_mobile_icon"
+		textureFile = "gfx/interface/counters/divisions_large/motopechotanagruzovikah_icon.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_group_armor_icon"
+		textureFile = "gfx/interface/counters/divisions_large/unit_medium_tank_icon.dds"
+		noOfFrames = 2
+	}
+
+   spriteType = { 
+     name = "GFX_unit_infantry_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_infantry_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_infantry_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_infantry_icon.dds"
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_light_infantry_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/light_infantry_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_light_infantry_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_infantry_icon.dds"
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_rcbd_troop_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/rcbd_troop_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_rcbd_troop_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rcbd_troop_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = {
+		name = "GFX_unit_opolchenie_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_opolchenie_icon.dds"
+		noOfFrames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_opolchenie_icon_medium_white"
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_opolchenie_icon.dds"
+		noOfFrames = 2
+	}
+
+
+   spriteType = { 
+     name = "GFX_unit_motopechotanagruzovikah_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/motopechotanagruzovikah_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_motopechotanagruzovikah_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motopechotanagruzovikah_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_motopechotanabtr_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/motopechotanabtr_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_motopechotanabtr_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_motopechotanabtr_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_stvol_art_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/stvol_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_stvol_art_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_stvol_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_stvol_art_sup_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/stvol_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+ 
+   spriteType = { 
+     name = "GFX_unit_stvol_art_sup_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_stvol_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_towed_art_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/towed_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_towed_art_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_towed_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_towed_art_sup_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/towed_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_towed_art_sup_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_towed_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_antiair_art_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/antiair_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_antiair_art_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_antiair_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_anti_air_art_sup_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/anti_air_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_anti_air_art_sup_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_anti_air_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_mlrs_art_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/mlrs_art_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_mlrs_art_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mlrs_art_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_mlrs_art_sup_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/mlrs_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_mlrs_art_sup_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_mlrs_art_sup_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_OPF_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/OPF_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_OPF_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_OPF_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_specialized_OPF_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/specialized_OPF_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_specialized_OPF_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_specialized_OPF_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_ai_OPF_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/ai_OPF_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_ai_OPF_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ai_OPF_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_drg_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/drg_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_drg_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_drg_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_rhbz_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/rhbz_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_rhbz_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_rhbz_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_standard_bearer_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/standard_bearer_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_standard_bearer_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_standard_bearer_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_pulse_jammers_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/pulse_jammers_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_pulse_jammers_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_pulse_jammers_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   spriteType = { 
+     name = "GFX_unit_field_hospital_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/support_unit_field_hospital_icon.dds" 
+     noOfFrames = 2
+   }
+   	
+   spriteType = { 
+     name = "GFX_unit_field_hospital_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_field_hospital_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+   spriteType = { 
+     name = "GFX_unit_ghounds_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/ghounds_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_ghounds_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ghounds_icon.dds" 
+     noOfFrames = 2
+   }
+
+   
+    spriteType = { 
+      name = "GFX_unit_engineer_icon_medium"				
+      textureFile = "gfx/interface/counters/divisions_large/unit_engineer_icon.dds" 
+      noOfFrames = 2
+    }	
+
+   spriteType = { 
+     name = "GFX_unit_engineer_icon_medium_white"					
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_engineer_icon.dds" 
+     noOfFrames = 2
+   }
+
+
+   
+}
+

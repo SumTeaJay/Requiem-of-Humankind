@@ -1,0 +1,81 @@
+﻿l_russian:
+
+##############################
+#### List of achievements ####
+####    by Daniel_Letov   ####
+##############################
+
+# Игровые правила #
+RULE_ALLOW_ROH_CUSTOM_ACHIEVEMENTS: "Внутриигровые достижения"
+RULE_ALLOW_ROH_CUSTOM_ACHIEVEMENTS_ENABLED: "Включены"
+RULE_ALLOW_ROH_CUSTOM_ACHIEVEMENTS_ENABLED_DESC: "Мод §YThe Requeim of Humankind§! отключает достижения стима, но также имеет при себе собственные внутриигровые достижения. С §Gвключенным§! внутриигровымим достижениями, все игроки §Gсмогут§! выполнять достижения, созданные специально для The Requeim of Humankind."
+RULE_ALLOW_ROH_CUSTOM_ACHIEVEMENTS_DISABLED: "Отключены"
+RULE_ALLOW_ROH_CUSTOM_ACHIEVEMENTS_DISABLED_DESC: "Мод §YThe Requeim of Humankind§! отключает достижения стима, но также имеет при себе собственные внутриигровые достижения. §RОтключив§! эту функцию, игроки §Rне смогут§! выполнять достижения."
+
+# Категории достижений #
+01_roh_achievements_plot: "The Requeim of Humankind: §gСюжетные Достижения§!"
+02_roh_achievements_easy: "The Requeim of Humankind: §GЛёгкие Достижения§!"
+03_roh_achievements_medium: "The Requeim of Humankind: §YСредние Достижения§!"
+04_roh_achievements_hard: "The Requeim of Humankind: §RСложные Достижения§!"
+05_roh_achievements_requiem: "The Requeim of Humankind: §0REAL REQUIEM§!"
+
+# Сюжетные Достижения #
+roh_achievement_from_ashes_of_nuclear_fire_NAME: "Из пепла ядерного огня..."
+roh_achievement_from_ashes_of_nuclear_fire_DESC: "...восстанет Родина моя"
+roh_achievement_from_ashes_of_nuclear_fire_tt: "Объедините §YРодину§! за любую доступную страну."
+ 
+roh_achievement_big_bookworm_NAME: "Изрядный книголюб"
+roh_achievement_big_bookworm_DESC: "Я это в книге прочитал!"
+roh_achievement_big_bookworm_tt: "Выйдите на каноничную концовку истории §Y???§! как в §YThe Requiem: Willuiem§!."
+
+#roh_achievement_mare_nostrum_NAME: "Mare Nostrum"
+#roh_achievement_mare_nostrum_DESC: "Обратно в родную гавань"
+#roh_achievement_mare_nostrum_tt: "При игре за §YЧерноморское Адмиралтейство§!, владейте каждым регионом, прилежащим к §YЧёрному морю§!."
+
+roh_achievement_guarding_the_ancients_NAME: "На страже древних"
+roh_achievement_guarding_the_ancients_DESC: "Кто сунется в горы, полностью кишащие монстрами, кроме нас?"
+roh_achievement_guarding_the_ancients_tt: "Играя за §YГосударственный Ликвидационный Комитет§!, владейте каждой провинцией §YУральских Гор§!."
+
+#roh_achievement__NAME: ""
+#roh_achievement__DESC: ""
+#roh_achievement__tt: ""
+
+# Лёгкие Достижения #
+roh_achievement_apocalyptic_economist_NAME: "Апокалиптичный Экономист"
+roh_achievement_apocalyptic_economist_DESC: "Деньги никогда не меняются"
+roh_achievement_apocalyptic_economist_tt: "Накопите §Y10000§! Чёрных рублей."
+
+#roh_achievement__NAME: ""
+#roh_achievement__DESC: ""
+#roh_achievement__tt: ""
+
+# Средние Достижения #
+roh_achievement_it_was_at_poltava_NAME: "Было дело под Полтавой"
+roh_achievement_it_was_at_poltava_DESC: "Дело славное, Друзья!"
+roh_achievement_it_was_at_poltava_tt: "Играя за §Y35-ю Бригаду§!, перегрызите всех в §YСобачьем Лязге§!."
+
+roh_achievement__NAME: ""
+roh_achievement__DESC: "Русы, пейте воду из Байкала!"
+roh_achievement__tt: "Играя за §YСвяторусов§!, захватите §YБожий Надел Галиции и Волыни§!."
+
+#roh_achievement__NAME: ""
+#roh_achievement__DESC: ""
+#roh_achievement__tt: ""
+
+# Сложные Достижения #
+roh_achievement_the_requiem_of_humankind_NAME: "The Requiem of Humankind"
+roh_achievement_the_requiem_of_humankind_DESC: "Дамы и господа, только что взорвался компьютер разработчиков" #Как будто сам Бог фотографировал
+roh_achievement_the_requiem_of_humankind_tt: "Используйте §Yядерную бомбу§! на любом регионе."
+
+#roh_achievement__NAME: ""
+#roh_achievement__DESC: ""
+#roh_achievement__tt: ""
+
+# REAL REQUIEM #
+roh_achievement_a_dying_message_NAME: "Предсмертное послание"
+roh_achievement_a_dying_message_DESC: "Это ещё не конец..."
+roh_achievement_a_dying_message_tt: "Объединив §YРодину§! и высадившись на §YАмериканский Континент§!, отключите §YСистему AVENGER§! до того, как вы окажетесь в каменном веке."
+
+#roh_achievement__NAME: ""
+#roh_achievement__DESC: ""
+#roh_achievement__tt: ""

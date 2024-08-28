@@ -1,0 +1,191 @@
+add_namespace = super
+
+news_event = { #Собачий Лязг
+	id = super.1
+	title = super.1.t
+	desc = super.1.d
+	picture = GFX_news_event_dog_clanging
+
+	is_triggered_only = yes
+
+    	option = {
+		name = super.1.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = Dog_Clanging
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "Dog_Clanging"
+			}
+		}
+   	}
+}
+
+news_event = { #Бессознательное бегство
+	id = super.2
+	title = super.2.t
+	desc = super.2.d
+	picture = GFX_news_event_unconscious_flight
+
+	is_triggered_only = yes
+
+    	option = {
+		name = super.2.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = Unconscious_Flight
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "Unconscious_Flight"
+			}
+		}
+   	}
+}
+
+news_event = { #Красные знамена
+	id = super.3
+	title = super.3.t
+	desc = super.3.d
+	picture = GFX_news_event_red_banners
+
+	is_triggered_only = yes
+
+    	option = {
+		name = super.3.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = Dynamics_of_Life
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "Dynamics_of_Life"
+			}
+		}
+	}
+}
+
+news_event = { #Воскресший колосс
+	id = super.4
+	title = super.4.t
+	desc = super.4.d
+	picture = GFX_news_event_resurrected_colossus
+
+	is_triggered_only = yes
+
+    	option = {
+		name = super.4.a
+		ai_chance = { factor = 1 }
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = Stability_of_Being
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "Stability_of_Being"
+			}
+		}
+   	}
+}
+
+news_event = {	#Объединение Родины за ГЛК
+	id = super.5
+	title = super.5.t
+	desc = super.5.d
+	picture = GFX_news_event_gls_unite_motherland
+
+	is_triggered_only = yes
+
+    option = {
+		name = super.5.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = GLS_Unite_the_Motherland
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "GLS_unite_motherland"
+			}
+		}
+   	}
+}
+
+news_event = {	#Объединение Родины за Адмиралтейство
+	id = super.6
+	title = super.6.t
+	desc = super.6.d
+	picture = GFX_news_event_ods_unite_motherland
+
+	is_triggered_only = yes
+
+    option = {
+		name = super.6.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = ODS_Unite_the_Motherland
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "ODS_unite_motherland"
+			}
+		}
+   	}
+}
+
+news_event = {	#Объединение Родины за Армию Возрождения
+	id = super.7
+	title = super.7.t
+	desc = super.7.d
+	picture = GFX_news_event_arm_unite_motherland
+
+	is_triggered_only = yes
+
+    option = {
+		name = super.7.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = ARM_Unite_the_Motherland
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "ARM_unite_motherland"
+			}
+		}
+   	}
+}
+
+news_event = {	#Объединение Родины за БНГВ
+	id = super.8
+	title = super.8.t
+	desc = super.8.d
+	picture = GFX_news_event_lwv_unite_motherland
+
+	is_triggered_only = yes
+
+    option = {
+		name = super.8.a
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_global_flag = LWV_Unite_the_Motherland
+			set_global_flag = super_Event_Visible	
+			hidden_effect = {	
+				play_song = "LWV_unite_motherland"
+			}
+		}
+   	}
+}
+
+

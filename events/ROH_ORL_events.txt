@@ -1,0 +1,112 @@
+add_namespace = ORL
+
+country_event = {
+    id = ORL.1 #Лучшие в аду
+	title = ORL.1.t
+	desc = ORL.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.1.a
+    }
+}
+country_event = {
+    id = ORL.2 #Отряды ветеранов
+	title = ORL.2.t
+	desc = ORL.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.2.a
+    }
+}
+country_event = {
+    id = ORL.3 #То, что мы не можем забыть
+	title = ORL.3.t
+	desc = ORL.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.3.a
+    }
+}
+country_event = {
+    id = ORL.4 #Первосвященник
+	title = ORL.4.t
+	desc = ORL.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.4.a
+    }
+}
+country_event = {
+    id = ORL.5 #Первый среди равных
+	title = ORL.5.t
+	desc = ORL.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.5.a
+    }
+}
+country_event = {
+    id = ORL.6 #Молодая кровь
+	title = ORL.6.t
+	desc = ORL.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.6.a
+    }
+}
+country_event = {
+    id = ORL.7 #Новое начало
+	title = ORL.7.t
+	desc = ORL.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.7.a
+    }
+}
+country_event = {
+    id = ORL.8 #Культ
+	title = ORL.8.t
+	desc = ORL.8.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.8.a
+    }
+}
+country_event = {
+    id = ORL.9 #Первоогонь
+	title = ORL.9.t
+	desc = ORL.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.9.a
+    }
+}
+country_event = {
+    id = ORL.10 #Только вперед!
+	title = ORL.10.t
+	desc = ORL.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.10.a
+    }
+}
+country_event = {
+    id = ORL.11 #Наша судьба
+	title = ORL.11.t
+	desc = ORL.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = ORL.11.a
+    }
+}

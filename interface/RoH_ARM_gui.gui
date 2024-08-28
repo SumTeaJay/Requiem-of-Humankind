@@ -1,0 +1,24 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ARM_second_middle_russian"
+		size = { width = 482 height = 120 }
+		position = { x = 0 y = 0 }
+		containerWindowType = {
+			name = "top_bar"
+			size = { width = 482 height = 50 }
+			position = { x = 15 y = -3 }
+			iconType = {
+				name = "top_bar_coalition_power"
+				position = { x = 0 y = 10 }
+				spriteType = "GFX_gls_order_top_bar"
+				pdx_tooltip = arm_coalition_power_tt
+			}
+			iconType = {
+				name = "top_bar_consulate_power"
+				position = { x = 0 y = 70 }
+				spriteType = "GFX_gls_freedom_top_bar"
+				pdx_tooltip = arm_consulate_power_tt
+			}
+		}
+	}
+}

@@ -1,0 +1,410 @@
+add_namespace = ARM_middle_russian_war
+
+country_event = {
+	id = ARM_middle_russian_war.1 #Победа консульства 1 фаза
+	title = middle_russian_war.1.t
+	desc = middle_russian_war.1.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes
+	trigger = {
+        ARM = {
+            check_variable = {
+                consulate_power > 99
+            }
+            has_country_flag = ARM_first_phase_flag
+        }
+	}
+    option = {
+        name = middle_russian_war.1.a
+        IMP = {
+            declare_war_on = {
+                target = ARM
+                type = annex_everything
+            }
+            add_ideas = IMP_annoying_mistake
+        }
+        BSO = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        NOR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        COR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        PLR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        ARM = {
+            country_event = ARMnew.36
+            clr_country_flag = ARM_first_phase_flag
+            clr_country_flag = ARM_middle_russian_war_flag
+            add_ideas = ARM_insufficient_preparation
+        }
+    }
+}
+
+country_event = {
+	id = ARM_middle_russian_war.2 #Победа Коалиции 1 фаза
+	title = middle_russian_war.2.t
+	desc = middle_russian_war.2.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+	trigger = {
+        ARM = {
+            check_variable = {
+                coalition_power > 99
+            }
+            has_country_flag = ARM_first_phase_flag
+        }
+	}
+    option = {
+        name = middle_russian_war.2.a
+        ARM = {
+            country_event = ARMnew.37
+            clr_country_flag = ARM_first_phase_flag
+        }
+        880 = {
+            remove_building = {
+                type = bunker
+                province = 3568
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 546
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 9506
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 3542
+                level = 10
+            }
+        }
+        834 = {
+            remove_building = {
+                type = bunker
+                province = 9566
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 6565
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 9328
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 6304
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 6254
+                level = 10
+            }
+            remove_building = {
+                type = bunker
+                province = 9260
+                level = 10
+            }
+        }
+    }
+}
+
+country_event = {
+	id = ARM_middle_russian_war.3 #Победа консульства 2 фаза
+	title = middle_russian_war.3.t
+	desc = middle_russian_war.3.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+	trigger = {
+        ARM = {
+            check_variable = {
+                consulate_power > 99
+            }
+            has_country_flag = ARM_second_phase_flag
+        }
+	}
+    option = {
+        name = middle_russian_war.3.a
+        IMP = {
+            declare_war_on = {
+                target = ARM
+                type = annex_everything
+            }
+            add_ideas = IMP_second_central_russian_war_idea
+        }
+        BSO = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        NOR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        COR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        PLR = {
+            add_to_war = {
+                targeted_alliance = IMP
+                enemy = ARM
+                hostility_reason = asked_to_join
+            }
+        }
+        ARM = {
+            country_event = ARMnew.38
+            clr_country_flag = ARM_second_phase_flag
+            clr_country_flag = ARM_middle_russian_war_flag
+            add_ideas = ARM_second_central_russian_war_idea
+        }
+    }
+}
+
+country_event = {
+	id = ARM_middle_russian_war.4 #Победа Коалиции 2 фаза
+	title = middle_russian_war.4.t
+	desc = middle_russian_war.4.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+	trigger = {
+        ARM = {
+            check_variable = {
+                coalition_power > 99
+            }
+            has_country_flag = ARM_second_phase_flag
+        }
+	}
+    option = {
+        name = middle_russian_war.4.a
+        IF = {
+                limit = {
+                    has_completed_focus = ARM_talk_to_mercenaries
+                }
+                ARM = {
+                    transfer_state = 834
+                    transfer_state = 880
+                }
+                BRD = {
+                    transfer_state = 899
+                }
+            }
+        else = {
+            ARM = {
+                annex_country = {
+                    target = BSO
+                    transfer_troops = no
+                }
+            }
+        }
+        ARM = {
+            country_event = ARMnew.39
+            clr_country_flag = ARM_second_phase_flag
+        }
+    }
+}
+
+country_event = {
+	id = ARM_middle_russian_war.5 #Победа Консульства 3 фаза
+	title = middle_russian_war.5.t
+	desc = middle_russian_war.5.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+    trigger = {
+        ARM = {
+            has_country_flag = ARM_failed_mission_flag
+        }
+    }
+    option = {
+        name = middle_russian_war.5.a
+        IMP = {
+            declare_war_on = {
+                target = ARM
+                type = annex_everything
+            }
+            add_ideas = IMP_desparate_situation
+        }
+        IF = {
+            limit = {
+                NOR = {
+                    is_puppet_of = IMP
+                }
+            }
+            NOR = {
+                add_to_war = {
+                 targeted_alliance = IMP
+                    enemy = ARM
+                    hostility_reason = asked_to_join
+                }
+            }
+        }
+        IF = {
+            limit = {
+                COR = {
+                    is_puppet_of = IMP
+                }
+            }
+            COR = {
+                add_to_war = {
+                 targeted_alliance = IMP
+                    enemy = ARM
+                    hostility_reason = asked_to_join
+                }
+            }
+        }
+        IF = {
+            limit = {
+                PLR = {
+                    is_puppet_of = IMP
+                }
+            }
+            PLR = {
+                add_to_war = {
+                 targeted_alliance = IMP
+                    enemy = ARM
+                    hostility_reason = asked_to_join
+                }
+            }
+        }
+        ARM = {
+            country_event = ARMnew.40
+            clr_country_flag = ARM_third_phase_flag
+            clr_country_flag = ARM_middle_russian_war_flag
+            add_ideas = ARM_in_breach
+        }
+    }
+}
+
+country_event = {
+	id = ARM_middle_russian_war.6 #Победа Коалиции 3 фаза
+	title = middle_russian_war.6.t
+	desc = middle_russian_war.6.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+    trigger = {
+        PLR = {
+            is_puppet_of = ARM
+        }
+        COR = {
+            is_puppet_of = ARM
+        }
+        NOR = {
+            is_puppet_of = ARM
+        }
+    }
+    option = {
+        name = middle_russian_war.6.a
+        
+        ARM = {
+            country_event = ARMnew.41
+            clr_country_flag = ARM_third_phase_flag
+            clr_country_flag = ARM_middle_russian_war_flag
+            set_country_flag = ARM_all_phases_flag
+        }
+    }
+}
+
+
+country_event = {
+	id = ARM_middle_russian_war.7 #Победа Консульства в войне
+	title = middle_russian_war.7.t
+	desc = middle_russian_war.7.d 
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+	trigger = {
+        country_exists = IMP
+        ARM = {
+            has_capitulated = yes
+        }
+        225 = {
+            is_controlled_by = IMP
+        }
+	}
+    option = {
+        name = middle_russian_war.7.a
+        879 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        202 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        878 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        193 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        203 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        197 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        876 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        259 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        225 = {
+            add_core_of = UKR
+            remove_core_of = ARM
+        }
+        IMP = {
+            release_puppet_on_controlled = UKR
+        }
+    }
+}
+
+

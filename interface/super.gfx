@@ -1,0 +1,56 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_sp_event_window"
+		textureFile = "gfx/interface/sp_events/Super_Event_Window.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_close_button"
+		textureFile = "gfx/interface/sp_events/Super_Event_Close_Button.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_underlay"
+		textureFile = "gfx/interface/sp_events/Super_Event_Underlay.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Dog_Clanging"
+		textureFile = "gfx/sp_events/Super_Event_Dog_Clanging.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Unconscious_Flight"
+		textureFile = "gfx/sp_events/Super_Event_Unconscious_Flight.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_sp_event_Dynamics_of_Life"
+		textureFile = "gfx/sp_events/Super_Event_Dynamics_of_Life.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_Stability_of_Being"
+		textureFile = "gfx/sp_events/Super_Event_Stability_of_Being.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_sp_event_GLS_Unite_the_Fatherland"
+		textureFile = "gfx/sp_events/Super_Event_GLS_Unite_the_Fatherland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_ODS_Unite_the_Fatherland"
+		textureFile = "gfx/sp_events/Super_Event_ODS_Unite_the_Fatherland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_ARM_Unite_the_Fatherland"
+		textureFile = "gfx/sp_events/Super_Event_ARM_Unite_the_Fatherland.dds"
+	}
+
+	spriteType = {
+		name = "GFX_sp_event_LWV_Unite_the_Fatherland"
+		textureFile = "gfx/sp_events/Super_Event_LWV_Unite_the_Fatherland.dds"
+	}
+}

@@ -1,0 +1,104 @@
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "loadscreen_header"
+#		path = "gfx/fonts/hoi_30header"
+		fontfiles = { 
+			"gfx/fonts/hoi_30header"
+#			"gfx/fonts/hoi_20bs"
+#			"gfx/fonts/hoi_20bs_cryllic"
+		}		
+		color = 0xffffffff
+
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = { 
+			"gfx/fonts/hoi_20bs"
+			"gfx/fonts/hoi_20bs_cryllic"
+		}
+		languages = { "l_russian" "l_polish" } 
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = {
+			"gfx/fonts/japanese/hoi_30header"
+		}
+		languages = { "l_japanese" }
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_header"
+		fontfiles = {
+			"gfx/fonts/chinese/hoi_30header_1of4"
+			"gfx/fonts/chinese/hoi_30header_2of4"
+			"gfx/fonts/chinese/hoi_30header_3of4"
+			"gfx/fonts/chinese/hoi_30header_4of4"
+		}
+		languages = { "l_simp_chinese" }
+	}
+
+	bitmapfont = {
+		name = "loadscreen_tip"
+#		path = "gfx/fonts/console_36"
+		fontfiles = { 	
+			"gfx/fonts/console_36"
+		}		
+		cursor_offset = { 0 4 }
+		color = 0xffffffff
+
+
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }	
+		}
+	}
+	
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = { 
+			"gfx/fonts/console_36"
+		}
+		languages = { "l_russian" "l_english" } 
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = {
+			"gfx/fonts/japanese/hoi_24header"
+		}
+		languages = { "l_japanese" }
+	}
+
+	bitmapfont_override = {
+		name = "loadscreen_tip"
+		fontfiles = {
+			"gfx/fonts/chinese/hoi_24header_1of4"
+			"gfx/fonts/chinese/hoi_24header_2of4"
+			"gfx/fonts/chinese/hoi_24header_3of4"
+			"gfx/fonts/chinese/hoi_24header_4of4"
+		}
+		languages = { "l_simp_chinese" }
+	}
+	
+}

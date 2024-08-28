@@ -1,0 +1,495 @@
+spriteTypes = {	
+	spriteType = { name = "GFX_idea_yantarnaya_plesen" texturefile = "gfx/interface/ideas/lenin.dds" }
+	spriteType = { name = "GFX_idea_kopatel_offline" texturefile = "gfx/interface/ideas/DOM_kopatel_offline.dds"}
+	spriteType = { name = "GFX_idea_prek" texturefile = "gfx/interface/ideas/Prekrasnoe_dalekoe.dds" }
+	spriteType = { name = "GFX_idea_winners_of_the_first_central_Russian" texturefile = "gfx/interface/ideas/Nepreklonniy_militarizm.dds" }
+	spriteType = { name = "GFX_idea_splinter_administration" texturefile = "gfx/interface/ideas/Uzhas_neizbezhnogo.dds" }
+	spriteType = { name = "GFX_idea_aoaoa" texturefile = "gfx/interface/ideas/aoaoa.dds" }
+	spriteType = { name = "GFX_idea_bagrovy_moleben" texturefile = "gfx/interface/ideas/bagrovy_moleben.dds" }
+	spriteType = { name = "GFX_idea_besplatnyye_stepi" texturefile = "gfx/interface/ideas/besplatnyye_stepi.dds" }
+	spriteType = { name = "GFX_idea_black_guard" texturefile = "gfx/interface/ideas/black_guard.dds" }
+	spriteType = { name = "GFX_idea_blazh_warriors" texturefile = "gfx/interface/ideas/blazh_warriors.dds" }
+	spriteType = { name = "GFX_idea_chaos_and_awe" texturefile = "gfx/interface/ideas/chaos_and_awe.dds" }
+	spriteType = { name = "GFX_idea_cult_iskazheniya" texturefile = "gfx/interface/ideas/KUH/cult_iskazheniya.dds" }
+	spriteType = { name = "GFX_idea_depressed" texturefile = "gfx/interface/ideas/depressed.dds" }
+	spriteType = { name = "GFX_idea_expluatatsiya_selkhoza" texturefile = "gfx/interface/ideas/expluatatsiya_selkhoza.dds" }
+	spriteType = { name = "GFX_idea_expluatatsiya_syryevykh_pridatkov" texturefile = "gfx/interface/ideas/expluatatsiya_syryevykh_pridatkov.dds" }
+	spriteType = { name = "GFX_idea_expluatatsyya_prom_obyedkov" texturefile = "gfx/interface/ideas/expluatatsyya_prom_obyedkov.dds" }
+	spriteType = { name = "GFX_idea_gnil_klin" texturefile = "gfx/interface/ideas/gnil_klin.dds" }
+	spriteType = { name = "GFX_idea_gubit_izobiliye" texturefile = "gfx/interface/ideas/gubit_izobiliye.dds" }
+	spriteType = { name = "GFX_idea_infinity_bzdeniye" texturefile = "gfx/interface/ideas/infinity_bzdeniye.dds" }
+	spriteType = { name = "GFX_idea_krugom_vragi" texturefile = "gfx/interface/ideas/STW/krugom_vragi.dds" }
+	spriteType = { name = "GFX_idea_land_of_war" texturefile = "gfx/interface/ideas/land_of_war.dds" }
+	spriteType = { name = "GFX_idea_lost_cities" texturefile = "gfx/interface/ideas/lost_cities.dds" }
+	spriteType = { name = "GFX_idea_red_forest" texturefile = "gfx/interface/ideas/red_forest.dds" }
+	spriteType = { name = "GFX_idea_rostik" texturefile = "gfx/interface/ideas/FSR/rostik.dds" }
+	spriteType = { name = "GFX_idea_satkovian" texturefile = "gfx/interface/ideas/satkovian.dds" }
+	spriteType = { name = "GFX_idea_slavianoshiz" texturefile = "gfx/interface/ideas/slavianoshiz.dds" }
+	spriteType = { name = "GFX_idea_tlya_sviat" texturefile = "gfx/interface/ideas/tlya_sviat.dds" }
+	spriteType = { name = "GFX_idea_zerno_bessarabii" texturefile = "gfx/interface/ideas/zerno_bessarabii.dds" }
+	spriteType = { name = "GFX_idea_zhest_polnaya" texturefile = "gfx/interface/ideas/zhest_polnaya.dds" }
+	spriteType = { name = "GFX_idea_free_merc" texturefile = "gfx/interface/ideas/free_merc.dds" }
+	spriteType = { name = "GFX_idea_heart_of_darkness" texturefile = "gfx/interface/ideas/heart_of_darkness.dds" }
+	spriteType = { name = "GFX_idea_holy_nadely" texturefile = "gfx/interface/ideas/holy_nadely.dds" }
+	spriteType = { name = "GFX_idea_holy_nadely_2" texturefile = "gfx/interface/ideas/LWV/holy_nadely.dds" }
+	spriteType = { name = "GFX_idea_holy_nadely_3" texturefile = "gfx/interface/ideas/LWV/holy_nadely.dds" }
+	spriteType = { name = "GFX_idea_holy_nadely_4" texturefile = "gfx/interface/ideas/LWV/holy_nadely.dds" }
+	spriteType = { name = "GFX_idea_moral_niggilism" texturefile = "gfx/interface/ideas/moral_niggilism.dds" }
+	spriteType = { name = "GFX_idea_ochag_kholery" texturefile = "gfx/interface/ideas/ochag_kholery.dds" }
+	spriteType = { name = "GFX_idea_otchayaniy_obrechonnykh" texturefile = "gfx/interface/ideas/otchayaniy_obrechonnykh.dds" }
+	spriteType = { name = "GFX_idea_powers_of_ZVPK" texturefile = "gfx/interface/ideas/powers_of_ZVPK.dds" }
+	spriteType = { name = "GFX_idea_uniat_nationalists" texturefile = "gfx/interface/ideas/uniat_nationalists.dds" }
+	spriteType = { name = "GFX_idea_godsdl" texturefile = "gfx/interface/ideas/godsdl.dds" }
+	spriteType = { name = "GFX_idea_ARM_crimson_fury" texturefile = "gfx/interface/ideas/crimson_fury.dds" }
+	spriteType = { name = "GFX_idea_ARM_punitive_fervor" texturefile = "gfx/interface/ideas/punitive_fury.dds" }
+	spriteType = { name = "GFX_idea_ARM_ripped_veins" texturefile = "gfx/interface/ideas/vyrv_vieny.dds" }
+ 	spriteType = { name = "GFX_idea_dog_clanging" texturefile = "gfx/interface/ideas/dog_clanging.dds" }		
+	spriteType = { name = "GFX_idea_okhl" texturefile = "gfx/interface/bop/okhl.dds" }
+	spriteType = { name = "GFX_idea_mark" texturefile = "gfx/interface/bop/mark.dds" }
+	spriteType = { name = "GFX_idea_zapoved" texturefile = "gfx/interface/ideas/идея_Заповедь_трудолюбия.dds" }
+	spriteType = { name = "GFX_idea_blagoslavleny" texturefile = "gfx/interface/ideas/Благославлены.dds" }
+	spriteType = { name = "GFX_idea_brother" texturefile = "gfx/interface/ideas/Братья.dds" }
+	spriteType = { name = "GFX_idea_GLS_1" texturefile = "gfx/interface/ideas/Razbitye_nadezhdy.dds" }
+	spriteType = { name = "GFX_idea_GLS_2" texturefile = "gfx/interface/ideas/ebengradskiy_obed.dds" }
+	spriteType = { name = "GFX_idea_GLS_3" texturefile = "gfx/interface/ideas/Bubnovy_tuz.dds" }
+	
+	spriteType = {
+		name = "GFX_idea_Padshie_bogi"
+		texturefile = "gfx/interface/ideas/Padshie_bogi.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Opustevshee_bratstvo1"
+		texturefile = "gfx/interface/ideas/Opustevshee_bratstvo.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Blazhennaya_bratia"
+		texturefile = "gfx/interface/ideas/Blazhennaya_bratia.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Da_osvetitsya_imya_tvoe"
+		texturefile = "gfx/interface/ideas/Da_osvetitsya_imya_tvoe.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Dukh_voinov"
+		texturefile = "gfx/interface/ideas/Dukh_voinov.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Svetoch_normalnosti"
+		texturefile = "gfx/interface/ideas/Svetoch_normalnosti.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Otravlennoe_boloto"
+		texturefile = "gfx/interface/ideas/Otravlennoe_boloto.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Padshiy_idol"
+		texturefile = "gfx/interface/ideas/Padshiy_idol.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Zhizn_po_ponyatiam"
+		texturefile = "gfx/interface/ideas/Zhizn_po_ponyatiam.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Poteryanny_chelovek"
+		texturefile = "gfx/interface/ideas/Poteryanny_chelovek.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_fathers_and_not_fathers"
+		texturefile = "gfx/interface/ideas/fathers_and_not_fathers.dds" 
+	}	
+	spriteType = {
+		name = "GFX_idea_memories_of_rodina"
+		texturefile = "gfx/interface/ideas/memories_of_rodina.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kotly"
+		texturefile = "gfx/interface/ideas/kotly.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_place_under_sun"
+		texturefile = "gfx/interface/ideas/place_under_sun.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_ural_company"
+		texturefile = "gfx/interface/ideas/ural_company.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_mint_gingerbread"
+		texturefile = "gfx/interface/ideas/mint_gingerbread.dds" 
+	}	
+	spriteType = {
+		name = "GFX_idea_freedom"
+		texturefile = "gfx/interface/ideas/freedom.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_order"
+		texturefile = "gfx/interface/ideas/order.dds" 
+	}
+	spriteType = {	
+		name = "GFX_idea_death_of_gods"
+		texturefile = "gfx/interface/ideas/death_of_gods.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_dead_dream"
+		texturefile = "gfx/interface/ideas/dead_dream.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_cute_knightboy"
+		texturefile = "gfx/interface/ideas/cute_knightboy.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_OKO"
+		texturefile = "gfx/interface/ideas/OKO.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Dikarstvo"
+		texturefile = "gfx/interface/ideas/Dikarstvo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Veny_reshima"
+		texturefile = "gfx/interface/ideas/Veny_rezhima.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_doverie"
+		texturefile = "gfx/interface/ideas/Doverie_nizkoe.dds"
+		
+	}
+	spriteType = {
+		name = "GFX_idea_black_berets"
+		texturefile = "gfx/interface/ideas/Chyornye_berety.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_black_perimetr"
+		texturefile = "gfx/interface/ideas/Chyorny_perimetr.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Plan_Platsdarm"
+		texturefile = "gfx/interface/ideas/Plan_Platsdarm.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_blood_on_snow_idea"
+		texturefile = "gfx/interface/ideas/ARM/ARM_blood_on_snow_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_hearts_idea"
+		texturefile = "gfx/interface/ideas/ARM/ARM_hearts_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_united_views_idea"
+		texturefile = "gfx/interface/ideas/ARM/ARM_united_views_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_delegate_authority_idea"
+		texturefile = "gfx/interface/ideas/ARM/ARM_delegate_authority_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ARM_officer_schools_idea"
+		texturefile = "gfx/interface/ideas/ARM/ARM_officer_schools_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_Borders_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_Borders_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_faith_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_faith_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_general_staff_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_general_staff_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_KBG_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_KBG_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_labour_and_capital_idea_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_labour_and_capital_idea_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_our_starvation_pic_idea"
+		textureFile = "gfx/interface/ideas/GLS/GLS_our_starvation_pic_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GLS_through_fire_idea_pic"
+		textureFile = "gfx/interface/ideas/GLS/GLS_through_fire_idea_pic.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_bejinsy_from_holy_land"
+		textureFile = "gfx/interface/ideas/bejinsy_from_holy_land.dds"
+	}
+	spriteType = {
+		name = "GFX_unite_will_of_the_world"
+		textureFile = "gfx/interface/ideas/unite_will_of_the_world.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_knife_at_throat"
+		textureFile = "gfx/interface/ideas/AGE/AGE_knife_at_throat.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_time_wasted"
+		textureFile = "gfx/interface/ideas/AGE/AGE_time_wasted.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_land_for_baltics"
+		textureFile = "gfx/interface/ideas/AGE/AGE_land_for_baltics.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_red_sabres"
+		textureFile = "gfx/interface/ideas/AGE/AGE_red_sabres.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_red_sabres_second"
+		textureFile = "gfx/interface/ideas/AGE/AGE_red_sabres.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_AGE_another_way"
+		textureFile = "gfx/interface/ideas/AGE/AGE_another_way.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_by_ourself"
+		textureFile = "gfx/interface/ideas/AGE/AGE_by_ourself.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_balts_in_army"
+		textureFile = "gfx/interface/ideas/AGE/AGE_balts_in_army.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_balts_in_factories"
+		textureFile = "gfx/interface/ideas/AGE/AGE_balts_in_factories.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_Strong_growth_in_production"
+		textureFile = "gfx/interface/ideas/AGE/AGE_Strong_growth_in_production.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_protective_shaft_idea"
+		textureFile = "gfx/interface/ideas/AGE/AGE_protective_shaft_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_powerful_onslaught_idea"
+		textureFile = "gfx/interface/ideas/AGE/AGE_powerful_onslaught_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_resistance_everywhere"
+		textureFile = "gfx/interface/ideas/AGE/AGE_resistance_everywhere.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_revenge"
+		textureFile = "gfx/interface/ideas/AGE/AGE_revenge.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SIM_amber_harvest"
+		textureFile = "gfx/interface/ideas/AGE/SIM_amber_harvest.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_funding_for_research"
+		textureFile = "gfx/interface/ideas/AGE/AGE_funding_for_research.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_scientists_of_complex"
+		textureFile = "gfx/interface/ideas/AGE/AGE_scientists_of_complex.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_Baltic_economy"
+		textureFile = "gfx/interface/ideas/AGE/AGE_Baltic_economy.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_cold_blooded_defense_idea"
+		textureFile = "gfx/interface/ideas/AGE/AGE_cold_blooded_defense_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_AGE_decisive_assault_idea"
+		textureFile = "gfx/interface/ideas/AGE/AGE_decisive_assault_idea.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_idea_ORL_chance_for_everyone"
+		textureFile = "gfx/interface/ideas/ORL/ORL_chance_for_everyone_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORL_corporative_ethics"
+		textureFile = "gfx/interface/ideas/ORL/ORL_corporative_ethics_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORL_corporative_ethics_2"
+		textureFile = "gfx/interface/ideas/ORL/ORL_corporative_ethics_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORL_victory_cult"
+		textureFile = "gfx/interface/ideas/ORL/ORL_victory_cult_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORL_idiots_and_idealists_idea"
+		textureFile = "gfx/interface/ideas/ORL/ORL_idiots_and_idealists_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ORL_sectarians_and_traitors_idea"
+		textureFile = "gfx/interface/ideas/ORL/ORL_sectarians_and_traitors_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_FSR_against_Leviathan_idea"
+		textureFile = "gfx/interface/ideas/FSR/FSR_against_Leviathan_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_STW_mine_idea"
+		textureFile = "gfx/interface/ideas/STW/STW_mine_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_KUH_death_to_atheists_idea"
+		textureFile = "gfx/interface/ideas/KUH/KUH_death_to_atheists_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Golod"
+		textureFile = "gfx/interface/ideas/SDC/Golod.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Kontseptsia_obschestvennoy_bezopasnosti"
+		textureFile = "gfx/interface/ideas/SDC/Kontseptsia_obschestvennoy_bezopasnosti.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Kordonniki"
+		textureFile = "gfx/interface/ideas/SDC/Kordonniki.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Vlianie_villuimov"
+		textureFile = "gfx/interface/ideas/SDC/Vlianie_villuimov.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_blood_cordon"
+		texturefile = "gfx/interface/ideas/MUC/blood_cordon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_red_paths"
+		texturefile = "gfx/interface/ideas/BGR/red_paths.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_shadows_of_past"
+		texturefile = "gfx/interface/ideas/URC/shadows_of_past.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_MOT_engine_roars"
+		texturefile = "gfx/interface/ideas/MOT/MOT_engine_roars.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_not_of_this_world"
+		texturefile = "gfx/interface/ideas/OCH/not_of_this_world.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_divided_by_war"
+		texturefile = "gfx/interface/ideas/ASR/divided_by_war.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_century_old_enmity"
+		texturefile = "gfx/interface/ideas/TAR/century_old_enmity.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_days_of_blood"
+		texturefile = "gfx/interface/ideas/TTL/days_of_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_honest_bandits_noble_thiefs"
+		texturefile = "gfx/interface/ideas/URA/honest_bandits_noble_thiefs.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_thirst_for_blood"
+		texturefile = "gfx/interface/ideas/SFL/thirst_for_blood.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_city_made_of_steel"
+		texturefile = "gfx/interface/ideas/IRT/city_made_of_steel.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_fantoms"
+		texturefile = "gfx/interface/ideas/NFL/fantoms.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_another_mind"
+		texturefile = "gfx/interface/ideas/DIS/another_mind.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_with_blood_and_flesh"
+		texturefile = "gfx/interface/ideas/ISK/with_blood_and_flesh.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_ZAN_last_chance"
+		texturefile = "gfx/interface/ideas/ZAN/ZAN_last_chance.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_human_or_nature"
+		texturefile = "gfx/interface/ideas/EDM/human_or_nature.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_BL1_true_purpose"
+		texturefile = "gfx/interface/ideas/BL1/BL1_true_purpose.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_state_forge"
+		texturefile = "gfx/interface/ideas/WPK/state_forge.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Moblization"
+		texturefile = "gfx/interface/ideas/SDC/Moblization.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_accumulation_forces_Idea"
+		texturefile = "gfx/interface/ideas/SDC/accumulation_forces_Idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_paying_debt"
+		texturefile = "gfx/interface/ideas/SDC/paying_debt.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_paying_large_debt"
+		texturefile = "gfx/interface/ideas/SDC/paying_large_debt.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_trick"
+		texturefile = "gfx/interface/ideas/SDC/trick.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Low_eastern_territories_integration"
+		texturefile = "gfx/interface/ideas/SDC/Low_eastern_territories_integration.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Middle_eastern_territories_integration"
+		texturefile = "gfx/interface/ideas/SDC/Middle_eastern_territories_integration.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_High_eastern_territories_integration"
+		texturefile = "gfx/interface/ideas/SDC/High_eastern_territories_integration.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Control_eastern_territories_integrated"
+		texturefile = "gfx/interface/ideas/SDC/Control_eastern_territories_integrated.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_Martin_eastern_territories_integrated"
+		texturefile = "gfx/interface/ideas/SDC/Martin_eastern_territories_integrated.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Critical_arrhythmia_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Critical_arrhythmia_idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Rusted_mechanism_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Rusted_mechanism_idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Cybernetic_soul_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Cybernetic_soul_idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Toothless_monolith_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Toothless_monolith_idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Guard_of_progress_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Guard_of_progress_idea.dds" 
+	}
+	spriteType = {
+		name = "GFX_idea_MGL_Grasping_for_life_idea"
+		texturefile = "gfx/interface/ideas/MGL/MGL_Grasping_for_life_idea.dds" 
+	}
+}

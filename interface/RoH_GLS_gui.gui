@@ -1,0 +1,40 @@
+guiTypes = {
+	containerWindowType = {
+		name = "GLS_freedom_and_order"
+		size = { width = 482 height = 120 }
+		position = { x = 0 y = 0 }
+		containerWindowType = {
+			name = "top_bar"
+			size = { width = 482 height = 50 }
+			position = { x = 15 y = -3 }
+			iconType = {
+				name = "top_bar_order"
+				position = { x = 0 y = 10 }
+				spriteType = "GFX_gls_order_top_bar"
+				pdx_tooltip = gls_order_top_bar
+			}
+			iconType = {
+				name = "top_bar_freedom"
+				position = { x = 0 y = 70 }
+				spriteType = "GFX_gls_freedom_top_bar"
+				pdx_tooltip = gls_freedom_top_bar
+			}
+		}
+	}
+	containerWindowType = {
+		name = "GLS_kurchatov_project"
+		size = { width = 482 height = 65 }
+		position = { x = 0 y = 0 }
+		containerWindowType = {
+			name = "bar_of_charge"
+			size = { width = 482 height = 50 }
+			position = { x = 15 y = -3 }
+			iconType = {
+				name = "bar_of_charge"
+				position = { x = 0 y = 10 }
+				spriteType = "GFX_gls_bar_of_charge"
+				pdx_tooltip = gls_bar_of_charge
+			}
+		}
+	}	
+}

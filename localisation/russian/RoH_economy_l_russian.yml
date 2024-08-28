@@ -1,0 +1,47 @@
+﻿l_russian:
+#main titles
+ECO_MAIN_TITLE: "Микроэкономика"
+ECO_MAIN_TITLE_tt: "На данный момент §OМикроэкономика§! [economic_effects]"
+ECO_PRODUCTION_TITLE: "ВПК"
+ECO_CIVIL_TITLE: "Социальный Cектор"
+ECO_ARMY_TITLE: "Армия"
+#stats
+category_production_cost_text: "Расходы ВПК: [?production_expenses]"
+category_production_finances_text: "Финансирование ВПК: [?production_finances]"
+category_civil_cost_text: "Расходы социального сектора: [?civil_expenses]"
+category_civil_finances_text: "Финансирование социального сектора: [?civil_finances]"
+category_army_cost_text: "Расходы армии: [?army_expenses]"
+category_army_finances_text: "Финансирование армии: [?army_finances]"
+total_economy_stats_text: "Бюджет: [?black_rubles_budget]\nДоходы: [?economic_income]\nРасходы: [?economic_expenses]"
+#global economy effects:
+no_economic_effect: "не оказывает на нас эффекты"
+has_some_economic_effects: "имеет следующие эффекты:[eco_mod_gpm_loc][eco_mod_pfsef_sf_loc][eco_mod_cgf_loc][eco_mod_psbf_mp_loc][eco_mod_od_loc][eco_mod_asif_loc][eco_mod_aof_loc][eco_mod_ppg_loc]"
+eco_mod_gpm_effects: "\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$: [?eco_mod_gpm|-=%1]\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: [?eco_mod_gpm|+=%1]\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: [?eco_mod_gpm|+=%1]"
+eco_mod_pfsef_sf_effects: "\n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: [?eco_mod_pfsef_sf|+=%1]\n$MODIFIER_STABILITY_FACTOR$: [?eco_mod_pfsef_sf|+=%1]"
+eco_mod_cgf_effects: "\n$MODIFIER_CONSUMER_GOODS_FACTOR$: [?eco_mod_cgf|Y=%1]"
+eco_mod_psbf_mp_effects: "\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: [?eco_mod_psbf_mp|+=%1]\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: [?eco_mod_psbf_mp|+=%1]"
+eco_mod_od_effects: "\n$MODIFIER_OFFENCE$: [?eco_mod_od|+=%1]\n$MODIFIER_DEFENCE$: [?eco_mod_od|+=%1]"
+eco_mod_asif_effects: "\n$MODIFIER_ARMY_SPEED_FACTOR$: [?eco_mod_asif|+=%1]\n$MODIFIER_INITIATIVE_FACTOR$: [?eco_mod_asif|+=%1]"
+eco_mod_ppg_effects: "\n$MODIFIER_POLITICAL_POWER_GAIN$: [?eco_mod_ppg|+=2]"
+#tooltips
+economy_button_tt: "Открыть панель управления экономикой"
+decrease_production_financing_tt: "[!decrease_production_financing_click_enabled]\n[!decrease_production_financing_click]"
+increase_production_financing_tt: "[!increase_production_financing_click_enabled]\n[!increase_production_financing_click]"
+decrease_civil_financing_tt: "[!decrease_civil_financing_click_enabled]\n[!decrease_civil_financing_click]"
+increase_civil_financing_tt: "[!increase_civil_financing_click_enabled]\n[!increase_civil_financing_click]"
+decrease_army_financing_tt: "[!decrease_army_financing_click_enabled]\n[!decrease_army_financing_click]"
+increase_army_financing_tt: "[!increase_army_financing_click_enabled]\n[!increase_army_financing_click]"
+budget_pos_change_tt: "Бюджет пополнится на §G$RIGHT$§! валюты"
+budget_neg_change_tt: "Бюджет опустеет на §R$RIGHT$§! валюты"
+emergency_finacial_situation_tt: "§YОтчаянная ситуация§!:\n  Мы не в состоянии удержать текущий финансирования, мы должны снизить цены без тщательной проработки последствий"
+production_finances_dec_tt: "Финансирование ВПК снизится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$: §G-2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §R-2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: §R-2.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-4.0%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+2.0%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+2.0%§!"
+production_finances_inc_tt: "Финансирование ВПК увеличится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$: §R+2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: §G+2.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y+4.0%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §R-2.0%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §R-2.0%§!"
+civil_finances_dec_tt: "Финансирование социального сектора снизится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$: §R+2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §G+2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: §G+2.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-2.0%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §R-2.0%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §R-2.0%§!"
+civil_finances_inc_tt: "Финансирование социального сектора увеличится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_PRODUCTION_LACK_OF_RESOURCE_PENALTY_FACTOR$: §G-2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_EFFICIENCY_GAIN_FACTOR$: §R-2.0%§!\n$MODIFIER_PRODUCTION_FACTORY_MAX_EFFICIENCY_FACTOR$: §R-2.0%§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y+2.0%§!\n$MODIFIER_PRODUCTION_SPEED_BUILDINGS_FACTOR$: §G+2.0%§!\n$MODIFIER_GLOBAL_MONTHLY_POPULATION$: §G+2.0%§!"
+army_finances_dec_tt: "Финансирование армии снизится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_OFFENCE$: §R-2.0%§!\n$MODIFIER_DEFENCE$: §R-2.0%§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §R-1.0%§!\n$MODIFIER_ARMY_ORG_FACTOR$: §R-4.0%§!\n$MODIFIER_INITIATIVE_FACTOR$: §R-1.0%§!\n$MODIFIER_STABILITY_FACTOR$: §G+10.0%§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §G+0.05§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y-5.0%§!\n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §G+10.0%§!"
+army_finances_inc_tt: "Финансирование армии снизится на §Y1§! уровень, что скажется следущим образом:\n$MODIFIER_OFFENCE$: §G+2.0%§!\n$MODIFIER_DEFENCE$: §G+2.0%§!\n$MODIFIER_ARMY_SPEED_FACTOR$: §G+1.0%§!\n$MODIFIER_ARMY_ORG_FACTOR$: §G+4.0%§!\n$MODIFIER_INITIATIVE_FACTOR$: §G+1.0%§!\n$MODIFIER_STABILITY_FACTOR$: §R-10.0%§!\n$MODIFIER_POLITICAL_POWER_GAIN$: §R-0.05§!\n$MODIFIER_CONSUMER_GOODS_FACTOR$: §Y+5.0%§!\n$MODIFIER_PRODUCTION_FACTORY_START_EFFICIENCY_FACTOR$: §R-10.0%§!"
+#parameter tooltips
+has_positive_budget_growth_tt: "Обладает положительными поступлениями в бюджет"
+
+#values limits
+has_5000_rubles_tt: "В бюджете не менее §Y5000§! черных рублей"

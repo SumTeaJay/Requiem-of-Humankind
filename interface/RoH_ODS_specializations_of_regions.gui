@@ -1,0 +1,62 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ODS_specializations_of_regions_gui"
+		position = { x = 0 y = 0 }
+
+		containerWindowType = {
+			name = "ods_specializations_of_regions_main_button"
+			position = { x = 0 y = 0 }
+			
+			iconType = {
+				name = "background_1x1"
+				quadTextureSprite = "GFX_background_1x1"
+				position = { x = 18 y = -45 }
+			}
+				
+			buttonType = {
+				name = "ods_specializations_of_regions_button"
+				position = { x = 25 y = -40 }
+				quadTextureSprite = "GFX_specializations_of_regions_icon"	
+				pdx_tooltip = ods_specializations_of_regions_button_tt
+				pdx_tooltip_delayed = ods_specializations_of_regions_button_delayed_tt
+			}
+		}
+
+		containerWindowType = {
+			name = "ods_specializations_of_regions_option_buttons"
+			position = { x = 0 y = 0 }
+			#show_position = { x = 0 y = 0 }
+			
+			iconType = {
+				name = "background_4x1"
+				quadTextureSprite = "GFX_background_4x1"
+				position = { x = 93 y = -45 }
+			}
+			
+			buttonType = {
+				name = "ods_industrial_region_button"
+				position = { x = 100 y = -40 }
+				quadTextureSprite = "GFX_industrial_region_icon"
+				pdx_tooltip = "ods_industrial_region_button_tt"
+			}
+			buttonType = {
+				name = "ods_resource_region_button"
+				position = { x = 155 y = -40 }
+				quadTextureSprite = "GFX_resource_region_icon"	
+				pdx_tooltip = "ods_resource_region_button_tt"
+			}
+			buttonType = {
+				name = "ods_agricultural_region_button"
+				position = { x = 210 y = -40 }
+				quadTextureSprite = "GFX_agricultural_region_icon"	
+				pdx_tooltip = "ods_agricultural_region_button_tt"
+			}
+			buttonType = {
+				name = "ods_research_region_button"
+				position = { x = 265 y = -40 }
+				quadTextureSprite = "GFX_research_region_icon"	
+				pdx_tooltip = "ods_research_region_button_tt"
+			}
+		}
+	}
+}

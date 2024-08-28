@@ -1,0 +1,102 @@
+spriteTypes = {
+	corneredTileSpriteType = {
+		name = "GFX_frontend_bg"
+		texturefile = "gfx/load_main.dds"
+		borderSize = { x=0 y=0 }
+		size = { x=1920 y=1440 }
+		tilingCenter = no
+		effectFile = "gfx/FX/buttonstate.shader"
+	}
+	spriteType = {
+		name = "GFX_bottom_bar"
+		texturefile = "gfx/interface/bottom_bar.dds"
+	}
+	spriteType = {
+		name = "GFX_alpha_version_bar"
+		texturefile = "gfx/interface/alpha_version_bar.dds"
+	}	
+	textSpriteType = {
+		name = "GFX_single_player_button"
+		textureFile = "gfx/interface/single_player_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_multiplayer_button"
+		textureFile = "gfx/interface/multiplayer_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_settings_button"
+		textureFile = "gfx/interface/settings_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_career_profile_button"
+		textureFile = "gfx/interface/career_profile_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_authors_of_modification_button"
+		textureFile = "gfx/interface/authors_of_modification_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}	
+	textSpriteType = {
+		name = "GFX_nudge_button"
+		textureFile = "gfx/interface/nudge_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_bugreports_button"
+		textureFile = "gfx/interface/bugreports_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_developers_button"
+		textureFile = "gfx/interface/developers_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}	
+	textSpriteType = {
+		name = "GFX_exit_button"
+		textureFile = "gfx/interface/exit_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_continue_button"
+		textureFile = "gfx/interface/continue_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_new_button"
+		textureFile = "gfx/interface/new_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_load_button"
+		textureFile = "gfx/interface/load_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_tutorial_button"
+		textureFile = "gfx/interface/tutorial_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}
+	textSpriteType = {
+		name = "GFX_back_button"
+		textureFile = "gfx/interface/back_button.dds"
+		noOfFrames = 3
+		effectFile = "gfx/FX/buttonstate_onlydisable.lua"
+	}	
+}

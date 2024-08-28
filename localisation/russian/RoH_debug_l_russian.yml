@@ -1,0 +1,6 @@
+﻿l_russian:
+feature_disabled:0 "§RДанная функция отключена в модификации The Requiem of Humankind§!"
+focus_disabled:0 "§RФункция оправдания войн будет доступна при изучении определенных национальных фокусов§!"
+can_declare_war_tt:0 "§RПоявится функция оправдания войн§!"
+no_proxy_war:0 "§RФункция прокси-войн отключена в модификации The Requiem of Humankind§!"
+RoH_version_label_text:0 "§G0.0.1 Альфа-версия | 4dd7§!" # НЕ ЗАБЫВАЙТЕ ОБНОВЛЯТЬ ЧЕКСУММУ - Ural_Letov

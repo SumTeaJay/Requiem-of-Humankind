@@ -1,0 +1,257 @@
+add_namespace = expedition
+add_namespace = expedition_raid
+
+country_event = { #Untouchable reserve
+	id = expedition.1
+	title = expedition.1.t
+	desc = expedition.1.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.1.a
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda
+				amount = 200
+			}
+		}
+	}
+}
+
+country_event = { #Empty shelves
+	id = expedition.2
+	title = expedition.2.t
+	desc = expedition.2.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.2.a
+	}
+}
+
+country_event = { #Papers, papers, papers...
+	id = expedition.3
+	title = expedition.3.t
+	desc = expedition.3.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.3.a
+	}
+}
+
+country_event = { #This could be interesting
+	id = expedition.4
+	title = expedition.4.t
+	desc = expedition.4.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.4.a
+		ROOT = {
+			random_list = {
+				25 = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = industry
+					}
+				}
+				25 = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = electronics
+					}				
+				}
+				25 = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = infantry_weapons
+					}				
+				}
+				25 = {
+					add_tech_bonus = {
+						bonus = 0.5
+						uses = 1
+						category = support_tech
+					}				
+				}
+			}
+		}
+	}
+}
+
+country_event = { #It's best not to talk about it...
+	id = expedition.5
+	title = expedition.5.t
+	desc = expedition.5.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.5.a
+		ROOT = { add_manpower = -200 }
+	}
+}
+
+country_event = { #Black gold
+	id = expedition.6
+	title = expedition.6.t
+	desc = expedition.6.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.6.a
+		custom_effect_tooltip = add_500_rubles_tt
+		hidden_effect = { 
+			ROOT = { add_to_variable = { black_rubles_budget = 500 } }
+		}		
+	}
+}
+
+country_event = { #Absolute zero
+	id = expedition.7
+	title = expedition.7.t
+	desc = expedition.7.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.7.a
+	}
+}
+
+country_event = { #Technical illiteracy
+	id = expedition.8
+	title = expedition.8.t
+	desc = expedition.8.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.8.a
+		ROOT = { add_manpower = -100 }
+	}
+}
+
+country_event = { #Production facilities
+	id = expedition.9
+	title = expedition.9.t
+	desc = expedition.9.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.9.a
+		random_owned_state = {
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #Mechanism of war
+	id = expedition.10
+	title = expedition.10.t
+	desc = expedition.10.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition.10.a
+		ROOT = {
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Successful raid
+	id = expedition_raid.1
+	title = expedition_raid.1.t
+	desc = expedition_raid.1.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition_raid.1.a
+		ROOT = {
+			random_list = {
+				25 = {
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 250
+					}
+				}
+				25 = {
+					add_equipment_to_stockpile = {
+						type = infantry_odejda
+						amount = 150
+					}
+				}
+				25 = {
+					add_manpower = 500
+				}
+				25 = {
+					add_political_power = 50	
+				}
+			}
+		}
+	}
+}
+country_event = { #Unfortunate raid
+	id = expedition_raid.2
+	title = expedition_raid.2.t
+	desc = expedition_raid.2.d
+	#picture = 
+
+	is_triggered_only = yes
+
+	option = {
+		name = expedition_raid.2.a
+		ROOT = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -250
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda
+				amount = -150
+			}
+			add_manpower = -500 
+			add_political_power = -50
+		}
+	}
+}

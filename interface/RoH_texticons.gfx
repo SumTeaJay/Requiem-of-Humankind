@@ -1,0 +1,177 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_unity_in_holiness"
+		texturefile = "gfx/texticons/texticons_unity_in_holiness.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+     name = "GFX_unit_infantry_icon_small"
+     texturefile = "gfx/texticons/unit_infantry_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_light_infantry_icon_small"
+     texturefile = "gfx/texticons/unit_light_infantry_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_rcbd_troop_icon_small"
+     texturefile = "gfx/texticons/unit_rcbd_troop_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_motopechotanagruzovikah_icon_small"
+     texturefile = "gfx/texticons/unit_motopechotanagruzovikah_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_motopechotanabtr_icon_small"
+     texturefile = "gfx/texticons/unit_motopechotanabtr_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_stvol_art_icon_small"
+     texturefile = "gfx/texticons/unit_stvol_art_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_stvol_art_sup_icon_small"
+     texturefile = "gfx/texticons/unit_stvol_art_sup_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_towed_art_icon_small"
+     texturefile = "gfx/texticons/unit_towed_art_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_towed_art_sup_icon_small"
+     texturefile = "gfx/texticons/unit_towed_art_sup_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_antiair_art_icon_small"
+     texturefile = "gfx/texticons/unit_antiair_art_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_anti_air_art_sup_icon_small"
+     texturefile = "gfx/texticons/unit_anti_air_art_sup_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_mlrs_art_icon_small"
+     texturefile = "gfx/texticons/unit_mlrs_art_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_mlrs_art_sup_icon_small"
+     texturefile = "gfx/texticons/unit_mlrs_art_sup_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_OPF_icon_small"
+     texturefile = "gfx/texticons/unit_OPF_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_specialized_OPF_icon_small"
+     texturefile = "gfx/texticons/unit_specialized_OPF_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_ai_OPF_icon_small"
+     texturefile = "gfx/texticons/unit_ai_OPF_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_drg_icon_small"
+     texturefile = "gfx/texticons/unit_drg_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_rhbz_icon_small"
+     texturefile = "gfx/texticons/unit_rhbz_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_standard_bearer_icon_small"
+     texturefile = "gfx/texticons/unit_standard_bearer_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_pulse_jammers_icon_small"
+     texturefile = "gfx/texticons/unit_pulse_jammers_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_field_hospital_icon_small"
+     texturefile = "gfx/texticons/support_field_hospital_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_ghounds_icon_small"
+     texturefile = "gfx/texticons/unit_ghounds_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_engineer_icon_small"
+     texturefile = "gfx/texticons/support_engineer_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+
+   spriteType = {
+     name = "GFX_unit_opolchenie_icon_small"
+     texturefile = "gfx/texticons/unit_opolchenie_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		
+   }
+	
+}

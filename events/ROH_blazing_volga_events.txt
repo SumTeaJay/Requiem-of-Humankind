@@ -1,0 +1,160 @@
+add_namespace = Blazing_Volga
+
+country_event = {
+	id = Blazing_Volga.1 #Начало войны
+	title = Blazing_Volga.1.t
+	desc = Blazing_Volga.1.d
+    picture = GFX_start_war_volga
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+		Blazing_Volga_has_not_begun = yes
+	}
+    option = {
+        name = Blazing_Volga.1.a
+        MSH = {
+            declare_war_on = {
+                target = BGR
+                type = annex_everything
+            }
+            add_dynamic_modifier = {
+                modifier = MSH_no_surrender #нужно, чтобы капнуть не успел
+            }
+            news_event = worldnews.5
+        }
+    }
+}
+
+country_event = {
+	id = Blazing_Volga.2 #Альтернативный сценарий 1
+	title = Blazing_Volga.2.t
+	desc = Blazing_Volga.2.d
+	#picture =  
+
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+		Blazing_Volga_alternative_one = yes
+	}
+    option = {
+        name = Blazing_Volga.2.a
+        MKS = {
+            add_to_war = {
+                targeted_alliance = BGR
+                enemy = MSH
+                hostility_reason = asked_to_join
+            }
+            news_event = worldnews.6
+        }
+    }
+}
+
+country_event = {
+	id = Blazing_Volga.3 #Альтернативный сценарий 2
+	title = Blazing_Volga.3.t
+	desc = Blazing_Volga.3.d
+	#picture =  
+
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+		Blazing_Volga_alternative_two = yes
+	}
+    option = {
+        name = Blazing_Volga.3.a
+        MKS = {
+            add_to_war = {
+                targeted_alliance = BGR
+                enemy = MSH
+                hostility_reason = asked_to_join
+            }
+            news_event = worldnews.7
+        }
+    }
+}
+
+country_event = {
+	id = Blazing_Volga.4 #Победа BGR
+	title = Blazing_Volga.4.t
+	desc = Blazing_Volga.4.d
+	picture = GFX_win_borisenko
+
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+        Blazing_Volga_BGR_wins = yes
+	}
+    option = {
+        name = Blazing_Volga.4.a
+        set_global_flag = volga_don_is_over
+        MSH = {
+            white_peace = every_enemy_country
+        }
+        BGR = {
+            annex_country = {
+                target = MSH
+                transfer_troops = no
+            }
+            puppet = {
+				target = KMN
+				end_wars = yes
+			}
+            news_event = worldnews.8
+        }
+        KMN = {
+            white_peace = every_enemy_country
+            set_popularities = {
+                bandits = 50
+                free_people = 50
+            }
+            set_cosmetic_tag = KMN_economis_zone
+            set_country_leader_description = {
+	            ideology = bandits
+	            desc = KMN_Viktor_Kaminskiy_alternative_desc
+            }
+        }
+    }
+}
+
+country_event = {
+	id = Blazing_Volga.5 #Победа MSH
+	title = Blazing_Volga.5.t
+	desc = Blazing_Volga.5.d
+	picture = GFX_win_ganze
+
+	is_triggered_only = no
+	fire_only_once = yes
+	hidden = yes	
+
+	trigger = {
+        Blazing_Volga_MSH_win = yes
+	}
+    option = {
+        name = Blazing_Volga.5.a
+        set_global_flag = volga_don_is_over
+        MSH = {
+            annex_country = {
+                target = KMN
+                transfer_troops = yes
+            }
+            annex_country = {
+                target = MKS
+                transfer_troops = no
+            }
+            set_cosmetic_tag = MSH_volga_don
+            remove_dynamic_modifier = {
+                modifier = MSH_no_surrender
+            }
+            news_event = worldnews.9
+        }
+    }
+}
+

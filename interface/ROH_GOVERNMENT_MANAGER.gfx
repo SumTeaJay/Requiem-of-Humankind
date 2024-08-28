@@ -1,0 +1,644 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_govenrment_upgrade_overlay"
+		textureFile = "gfx/interface/MEHANIKI/government_manager/govenrment_upgrade_overlay.dds"
+	}
+
+	SpriteType = {
+		name = "Samoylov_Path"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Path.dds"
+	}
+	SpriteType = {
+		name = "Menshikov_Path"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Path.dds"
+	}
+	SpriteType = {
+		name = "Naumov_Path"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Path.dds"
+	}	
+
+	SpriteType = {
+		name = "Menshikov_on"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_on.dds"
+	}
+	SpriteType = {
+		name = "Menshikov_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_off.dds"
+	}
+	SpriteType = {
+		name = "Naumov_on"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_on.dds"
+	}
+	SpriteType = {
+		name = "Naumov_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_off.dds"
+	}
+	SpriteType = {
+		name = "Samoylov_on"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_on.dds"
+	}
+	SpriteType = {
+		name = "Samoylov_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_off.dds"
+	}
+	
+	#######################
+	####Menshikov Icons####
+	#######################
+	SpriteType = {
+		name = "Materialovedenie"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Materialovedenie.dds"
+	}
+	SpriteType = {
+		name = "Plotnaya_komponovka"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Plotnaya_komponovka.dds"
+	}
+	SpriteType = {
+		name = "Niskhodyaschie_potoki"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Niskhodyaschie_potoki.dds"
+	}
+	SpriteType = {
+		name = "Voskhodyaschie_potoki"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Voskhodyaschie_potoki.dds"
+	}
+	SpriteType = {
+		name = "Nashe_buduschee"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Nashe_buduschee.dds"
+	}
+	SpriteType = {
+		name = "ProfTekhUchilischa"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/ProfTekhUchilischa.dds"
+	}
+	SpriteType = {
+		name = "RabFakultety"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/RabFakultety.dds"
+	}
+	SpriteType = {
+		name = "Veterany_Truda"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Veterany_Truda.dds"
+	}
+	SpriteType = {
+		name = "Geroi_Truda"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Geroi_Truda.dds"
+	}
+	SpriteType = {
+		name = "Kooperatsia_industrii"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Kooperatsia_industrii.dds"
+	}
+	SpriteType = {
+		name = "Razrabotano_dlya_zhizni"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Razrabotano_dlya_zhizni.dds"
+	}
+	SpriteType = {
+		name = "Vozlyubi_blizhnego_svoego"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Vozlyubi_blizhnego_svoego.dds"
+	}
+	SpriteType = {
+		name = "Mestnoe_krylo"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Mestnoe_krylo.dds"
+	}
+	SpriteType = {
+		name = "Strogiy_reglament"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Strogiy_reglament.dds"
+	}
+	SpriteType = {
+		name = "Gibkiy_reglament"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Gibkiy_reglament.dds"
+	}
+	SpriteType = {
+		name = "Sadovodcheskie_Tovarischestva"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Sadovodcheskie_Tovarischestva.dds"
+	}
+	SpriteType = {
+		name = "SelOtryady"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/SelOtryady.dds"
+	}
+	SpriteType = {
+		name = "Sostyazatelnoe_pravo"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Sostyazatelnoe_pravo.dds"
+	}
+	SpriteType = {
+		name = "Kodex_chestnoy_konkurentsii"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Kodex_chestnoy_konkurentsii.dds"
+	}
+	SpriteType = {
+		name = "Autsorsing"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Autsorsing.dds"
+	}
+	SpriteType = {
+		name = "Torgovaya_initsiativa"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Torgovaya_initsiativa.dds"
+	}
+	SpriteType = {
+		name = "GOST"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/GOST.dds"
+	}
+	SpriteType = {
+		name = "Vsyo_v_oborot"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Vsyo_v_oborot.dds"
+	}
+	SpriteType = {
+		name = "Oplot_gumanizma"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Oplot_gumanizma.dds"
+	}
+
+	####Off-Icons####
+	
+	SpriteType = {
+		name = "Materialovedenie_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Materialovedenie_off.dds"
+	}
+	SpriteType = {
+		name = "Plotnaya_komponovka_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Plotnaya_komponovka_off.dds"
+	}
+	SpriteType = {
+		name = "Niskhodyaschie_potoki_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Niskhodyaschie_potoki_off.dds"
+	}
+	SpriteType = {
+		name = "Voskhodyaschie_potoki_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Voskhodyaschie_potoki_off.dds"
+	}
+	SpriteType = {
+		name = "Nashe_buduschee_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Nashe_buduschee_off.dds"
+	}
+	SpriteType = {
+		name = "ProfTekhUchilischa_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/ProfTekhUchilischa_off.dds"
+	}
+	SpriteType = {
+		name = "RabFakultety_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/RabFakultety_off.dds"
+	}
+	SpriteType = {
+		name = "Veterany_Truda_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Veterany_Truda_off.dds"
+	}
+	SpriteType = {
+		name = "Geroi_Truda_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Geroi_Truda_off.dds"
+	}
+	SpriteType = {
+		name = "Kooperatsia_industrii_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Kooperatsia_industrii_off.dds"
+	}
+	SpriteType = {
+		name = "Razrabotano_dlya_zhizni_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Razrabotano_dlya_zhizni_off.dds"
+	}
+	SpriteType = {
+		name = "Vozlyubi_blizhnego_svoego_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Vozlyubi_blizhnego_svoego_off.dds"
+	}
+	SpriteType = {
+		name = "Mestnoe_krylo_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Mestnoe_krylo_off.dds"
+	}
+	SpriteType = {
+		name = "Strogiy_reglament_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Strogiy_reglament_off.dds"
+	}
+	SpriteType = {
+		name = "Gibkiy_reglament_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Gibkiy_reglament_off.dds"
+	}
+	SpriteType = {
+		name = "Sadovodcheskie_Tovarischestva_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Sadovodcheskie_Tovarischestva_off.dds"
+	}
+	SpriteType = {
+		name = "SelOtryady_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/SelOtryady_off.dds"
+	}
+	SpriteType = {
+		name = "Sostyazatelnoe_pravo_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Sostyazatelnoe_pravo_off.dds"
+	}
+	SpriteType = {
+		name = "Kodex_chestnoy_konkurentsii_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Kodex_chestnoy_konkurentsii_off.dds"
+	}
+	SpriteType = {
+		name = "Autsorsing_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Autsorsing_off.dds"
+	}
+	SpriteType = {
+		name = "Torgovaya_initsiativa_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Torgovaya_initsiativa_off.dds"
+	}
+	SpriteType = {
+		name = "GOST_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/GOST_off.dds"
+	}
+	SpriteType = {
+		name = "Vsyo_v_oborot_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Vsyo_v_oborot_off.dds"
+	}
+	SpriteType = {
+		name = "Oplot_gumanizma_off"
+		texturefile = "gfx/interface/MEHANIKI/Menshikov_Icons/Oplot_gumanizma_off.dds"
+	}	
+	
+	#######################
+	####Samoylov Icons####
+	#######################
+
+	SpriteType = {
+		name = "Fundament_proshlogo"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Fundament_proshlogo.png"
+	}
+	SpriteType = {
+		name = "Za_semyu_pechatyami"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Za_semyu_pechatyami.png"
+	}
+	SpriteType = {
+		name = "Bez_lishnikh_khlopot"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Bez_lishnikh_khlopot.png"
+	}
+	SpriteType = {
+		name = "Nash_dom_-_nasha_krepost"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Nash_dom_-_nasha_krepost.png"
+	}
+	SpriteType = {
+		name = "Selskoe_opolchenie"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Selskoe_opolchenie.png"
+	}
+	SpriteType = {
+		name = "Zavodskoe_opolchenie"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Zavodskoe_opolchenie.png"
+	}
+	SpriteType = {
+		name = "Rezka_zemli"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Rezka_zemli.png"
+	}
+	SpriteType = {
+		name = "Skrebya_po_susekam"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Skrebya_po_susekam.png"
+	}
+	SpriteType = {
+		name = "V_odin_mig"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/V_odin_mig.png"
+	}
+	SpriteType = {
+		name = "Oprichnaya_dlan"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Oprichnaya_dlan.png"
+	}
+	SpriteType = {
+		name = "Ochischenie_periferii"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Ochischenie_periferii.png"
+	}
+	SpriteType = {
+		name = "Anomalii_-_k_chyortu"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Anomalii_-_k_chyortu.png"
+	}
+	SpriteType = {
+		name = "Bitva_za_semyu"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Bitva_za_semyu.png"
+	}SpriteType = {
+		name = "Voennye_zaymy"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Voennye_zaymy.png"
+	}
+	SpriteType = {
+		name = "Iz_kamney_i_palok"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Iz_kamney_i_palok.png"
+	}
+	SpriteType = {
+		name = "Avtonomnye_batarei"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Avtonomnye_batarei.png"
+	}
+	SpriteType = {
+		name = "Podkontrolnye_batarei"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Podkontrolnye_batarei.png"
+	}
+	SpriteType = {
+		name = "Perventsy_Sparty"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Perventsy_Sparty.png"
+	}
+	SpriteType = {
+		name = "Nervy_na_predele"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Nervy_na_predele.png"
+	}
+	SpriteType = {
+		name = "Stalnaya_khvatka"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Stalnaya_khvatka.png"
+	}
+	SpriteType = {
+		name = "Potom_i_krovyu"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Potom_i_krovyu.png"
+	}
+
+	####Off-Icons####
+
+	SpriteType = {
+		name = "Fundament_proshlogo_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Fundament_proshlogo_off.png"
+	}
+	SpriteType = {
+		name = "Za_semyu_pechatyami_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Za_semyu_pechatyami_off.png"
+	}
+	SpriteType = {
+		name = "Bez_lishnikh_khlopot_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Bez_lishnikh_khlopot_off_off.png"
+	}
+	SpriteType = {
+		name = "Nash_dom_-_nasha_krepost_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Nash_dom_-_nasha_krepost_off.png"
+	}
+	SpriteType = {
+		name = "Selskoe_opolchenie_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Selskoe_opolchenie_off.png"
+	}
+	SpriteType = {
+		name = "Zavodskoe_opolchenie_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Zavodskoe_opolchenie_off.png"
+	}
+	SpriteType = {
+		name = "Rezka_zemli_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Rezka_zemli_off.png"
+	}
+	SpriteType = {
+		name = "Skrebya_po_susekam_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Skrebya_po_susekam_off.png"
+	}
+	SpriteType = {
+		name = "V_odin_mig_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/V_odin_mig_off.png"
+	}
+	SpriteType = {
+		name = "Oprichnaya_dlan_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Oprichnaya_dlan_off.png"
+	}
+	SpriteType = {
+		name = "Ochischenie_periferii_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Ochischenie_periferii_off.png"
+	}
+	SpriteType = {
+		name = "Anomalii_-_k_chyortu_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Anomalii_-_k_chyortu_off.png"
+	}
+	SpriteType = {
+		name = "Bitva_za_semyu_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Bitva_za_semyu_off.png"
+	}SpriteType = {
+		name = "Voennye_zaymy_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Voennye_zaymy_off.png"
+	}
+	SpriteType = {
+		name = "Iz_kamney_i_palok_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Iz_kamney_i_palok_off.png"
+	}
+	SpriteType = {
+		name = "Avtonomnye_batarei_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Avtonomnye_batarei_off.png"
+	}
+	SpriteType = {
+		name = "Podkontrolnye_batarei_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Podkontrolnye_batarei_off.png"
+	}
+	SpriteType = {
+		name = "Perventsy_Sparty_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Perventsy_Sparty_off.png"
+	}
+	SpriteType = {
+		name = "Nervy_na_predele_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Nervy_na_predele_off.png"
+	}
+	SpriteType = {
+		name = "Stalnaya_khvatka_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Stalnaya_khvatka_off.png"
+	}
+	SpriteType = {
+		name = "Potom_i_krovyu_off"
+		texturefile = "gfx/interface/MEHANIKI/Samoylov_Icons/Potom_i_krovyu_off.png"
+	}
+
+	#######################
+	####Naumov Icons####
+	#######################
+
+	SpriteType = {
+		name = "Obschiy_dolg_-_obschee_pravo"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Obschiy_dolg_-_obschee_pravo.png"
+	}	
+	SpriteType = {
+		name = "Sut_bytia"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Sut_bytia.png"
+	}
+	SpriteType = {
+		name = "Uzhas_bytia"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Uzhas_bytia.png"
+	}	
+	SpriteType = {
+		name = "Zabotlivoe_Oko"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Zabotlivoe_Oko.png"
+	}
+	SpriteType = {
+		name = "Zanimatelnoe_nablyudeni"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Zanimatelnoe_nablyudenie.png"
+	}	
+	SpriteType = {
+		name = "Tekhnicheskaya_revolyutsia"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Tekhnicheskaya_revolyutsia.png"
+	}	
+	SpriteType = {
+		name = "Kulturnaya_revolyutsia"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Kulturnaya_revolyutsia.png"
+	}	
+	SpriteType = {
+		name = "Vyzhivanie_obespecheno"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Vyzhivanie_obespecheno.png"
+	}	
+	SpriteType = {
+		name = "Sorazmernaya_plata"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Sorazmernaya_plata.png"
+	}	
+	SpriteType = {
+		name = "Soldat_bez_upreka"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Soldat_bez_upreka.png"
+	}	
+	SpriteType = {
+		name = "Formuly_dlya_vsego"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Formuly_dlya_vsego.png"
+	}	
+	SpriteType = {
+		name = "Pervichny_bulion"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Pervichny_bulion.png"
+	}	
+	SpriteType = {
+		name = "Tsvety_zhizni"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Tsvety_zhizni.png"
+	}	
+	SpriteType = {
+		name = "Plany_Ikh_Zhizni"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Plany_Ikh_Zhizni.png"
+	}	
+	SpriteType = {
+		name = "Otrinte_somnenia"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Otrinte_somnenia.png"
+	}	
+	SpriteType = {
+		name = "Realizatsia_potentsiala"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Realizatsia_potentsiala.png"
+	}	
+	SpriteType = {
+		name = "Poryadok_v_myslyakh"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Poryadok_v_myslyakh.png"
+	}	
+	SpriteType = {
+		name = "Edinstvo_krovyu"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Edinstvo_krovyu.png"
+	}	
+	SpriteType = {
+		name = "Chelovek-Soznanie"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Chelovek-Soznanie.png"
+	}	
+	SpriteType = {
+		name = "Kognitivnaya_voyna"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Kognitivnaya_voyna.png"
+	}	
+	SpriteType = {
+		name = "Granitsy_tela"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Granitsy_tela.png"
+	}		
+
+	####Off-Icons####
+
+	SpriteType = {
+		name = "Obschiy_dolg_-_obschee_pravo_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Obschiy_dolg_-_obschee_pravo_off.png"
+	}	
+	SpriteType = {
+		name = "Sut_bytia_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Sut_bytia_off.png"
+	}
+	SpriteType = {
+		name = "Uzhas_bytia_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Uzhas_bytia_off.png"
+	}	
+	SpriteType = {
+		name = "Zabotlivoe_Oko_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Zabotlivoe_Oko_off.png"
+	}
+	SpriteType = {
+		name = "Zanimatelnoe_nablyudenie_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Zanimatelnoe_nablyudeni_off.png"
+	}	
+	SpriteType = {
+		name = "Tekhnicheskaya_revolyutsia_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Tekhnicheskaya_revolyutsia_off.png"
+	}	
+	SpriteType = {
+		name = "Kulturnaya_revolyutsia_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Kulturnaya_revolyutsia_off.png"
+	}	
+	SpriteType = {
+		name = "Vyzhivanie_obespecheno_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Vyzhivanie_obespecheno_off.png"
+	}	
+	SpriteType = {
+		name = "Sorazmernaya_plata_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Sorazmernaya_plata_off.png"
+	}	
+	SpriteType = {
+		name = "Soldat_bez_upreka_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Soldat_bez_upreka_off.png"
+	}	
+	SpriteType = {
+		name = "Formuly_dlya_vsego_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Formuly_dlya_vsego_off.png"
+	}	
+	SpriteType = {
+		name = "Pervichny_bulion_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Pervichny_bulion_off.png"
+	}	
+	SpriteType = {
+		name = "Tsvety_zhizni_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Tsvety_zhizni_off.png"
+	}	
+	SpriteType = {
+		name = "Plany_Ikh_Zhizni_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Plany_Ikh_Zhizni_off.png"
+	}	
+	SpriteType = {
+		name = "Otrinte_somnenia_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Otrinte_somnenia_off.png"
+	}	
+	SpriteType = {
+		name = "Realizatsia_potentsiala_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Realizatsia_potentsiala_off.png"
+	}	
+	SpriteType = {
+		name = "Poryadok_v_myslyakh_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Poryadok_v_myslyakh_off.png"
+	}	
+	SpriteType = {
+		name = "Edinstvo_krovyu_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Edinstvo_krovyu_off.png"
+	}	
+	SpriteType = {
+		name = "Chelovek-Soznanie_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Chelovek-Soznanie_off.png"
+	}	
+	SpriteType = {
+		name = "Kognitivnaya_voyna_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Kognitivnaya_voyna_off.png"
+	}	
+	SpriteType = {
+		name = "Granitsy_tela_off"
+		texturefile = "gfx/interface/MEHANIKI/Naumov_Icons/Granitsy_tela_off.png"
+	}	
+
+	########################################################################
+
+	SpriteType = {
+		name = "GFX_liniagorizontal"
+		texturefile = "gfx/interface/MEHANIKI/liniagorizontal.dds"
+	}
+	SpriteType = {
+		name = "GFX_liniavertikal"
+		texturefile = "gfx/interface/MEHANIKI/liniavertikal.dds"
+	}
+	SpriteType = {
+		name = "GFX_liniagorizontalLLLLLLL"
+		texturefile = "gfx/interface/MEHANIKI/liniagorizontalLong.dds"
+	}
+	SpriteType = {
+		name = "GFX_liniavertikalLLLLL"
+		texturefile = "gfx/interface/MEHANIKI/liniavertikalLong.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fonovayaiconkamenshikov"
+		texturefile = "gfx/interface/MEHANIKI/fonovayaiconkamenshikov.dds"
+	}
+		
+	SpriteType = {
+		name = "GFX_fonovayaiconkasamoilov"
+		texturefile = "gfx/interface/MEHANIKI/fonovayaiconkasamoilov.dds"
+	}
+	SpriteType = {
+		name = "GFX_fonovayaiconkasamoilovdvav"
+		texturefile = "gfx/interface/MEHANIKI/fonovayaiconkasamoilovdva.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_fonovayaiconkanaumov"
+		texturefile = "gfx/interface/MEHANIKI/fonovayaiconkanaumov.dds"
+	}
+	SpriteType = {
+		name = "GFX_fonovayaiconkanaumovdva"
+		texturefile = "gfx/interface/MEHANIKI/fonovayaiconkanaumovdva.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_vzaimoiskuchenie"
+		texturefile = "gfx/interface/MEHANIKI/vzaimoiskuchenie.dds"
+	}
+	SpriteType = {
+		name = "GFX_vzaimoiskuchenieX"
+		texturefile = "gfx/interface/MEHANIKI/vzaimoiskuchenieX.dds"
+	}
+}

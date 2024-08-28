@@ -1,0 +1,271 @@
+guiTypes = {
+	containerWindowType = {
+		name = "economy_view"
+		position = { x = 0 y = 0 }
+		size = { width = 400 height = 400 }
+		
+		buttonType = {
+			name = "economy_button" 
+			position = { x = 505 y = 270 }
+			quadTextureSprite = "GFX_economy_button"
+			clicksound = click_default
+			pdx_tooltip = "economy_button_tt"
+		}	
+	}
+	
+	containerWindowType = {
+		name = "economy_container"
+		size = { width = 400 height = 460 }
+		position = { x = 543 y = 0  } 
+		fade_time = 300
+		fade_type = linear
+		show_sound = menu_open_window
+        		
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_window"
+		}
+		
+		####################################################################
+		containerWindowType = {
+			size = { width = 100%% height = 50 }
+			position = { x = 2 y = 2  }
+			name = "economy_name_window_title_bg"
+			background = {
+				name = "background"
+				quadTextureSprite = "GFX_tiled_plain_bg_small"
+			}			
+		}
+
+		containerWindowType = {
+			name = "picker_controlers_container"
+			position = {
+				x = 16
+				y = 132
+			}
+			buttonType = { 
+				name = "decrease_production_financing"
+				spriteType = "GFX_scroll_left"
+				pdx_tooltip = "decrease_production_financing_tt"
+			}
+			buttonType = { 
+				name = "increase_production_financing"
+				spriteType = "GFX_scroll_right"
+				position = { 
+					x = 352
+					y = 0
+				}
+				pdx_tooltip = "increase_production_financing_tt"
+			}
+			buttonType = { 
+				name = "decrease_civil_financing"
+				spriteType = "GFX_scroll_left"
+				position = {
+					x = 0 
+					y = 100 
+				}
+				pdx_tooltip = "decrease_civil_financing_tt"
+			} 
+			buttonType = { 
+				name = "increase_civil_financing"
+				spriteType = "GFX_scroll_right"
+				position = {
+					x = 352
+					y = 100
+				}
+				pdx_tooltip = "increase_civil_financing_tt"
+			}
+			buttonType = { 
+				name = "decrease_army_financing"
+				spriteType = "GFX_scroll_left"
+				position = {
+					x = 0
+					y = 200 
+				}
+				pdx_tooltip = "decrease_army_financing_tt"
+			}
+			buttonType = { 
+				name = "increase_army_financing"
+				spriteType = "GFX_scroll_right"
+				position = { 
+					x = 352
+					y = 200 
+				}
+				pdx_tooltip = "increase_army_financing_tt"
+			}
+		}
+		containerWindowType = {
+			name = "scroll_bar_container"
+			position = {
+				x = 28
+				y = 130
+			}
+			iconType = { 
+				name = "scroll_bar_production"
+				spriteType = "GFX_economy_scrollbar"
+			}
+			iconType = { 
+				name = "scroll_bar_civil"
+				spriteType = "GFX_economy_scrollbar"
+				position = { 
+					x = 0
+					y = 100 
+				}
+			}
+			iconType = { 
+				name = "scroll_bar_army"
+				spriteType = "GFX_economy_scrollbar"
+				position = { 
+					x = 0
+					y = 200 
+				}
+			}
+		}
+		containerWindowType = {
+			name = "picker_container"
+			position = { 
+				x = 32
+				y = 132 
+			}
+			iconType = { 
+				name = "picker_production"
+				spriteType = "GFX_scroll_drager"
+			}
+			iconType = { 
+				name = "picker_civil"
+				spriteType = "GFX_scroll_drager"
+				position = { 
+					x = 0 
+					y = 100 
+				}
+			}
+			iconType = { 
+				name = "picker_army"
+				spriteType = "GFX_scroll_drager"
+				position = { 
+					x = 0 
+					y = 200
+				}
+			}
+		}
+		containerWindowType = {
+			name = "category_title_container"
+			position = { 
+				x = 50
+				y = 55
+			}
+			instantTextBoxType = {
+				name = "production_title"
+				font = "3270_18_outline"
+				text = "ECO_PRODUCTION_TITLE"
+				maxWidth = 300
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextBoxType = {
+				name = "civil_title"
+				position = { 
+					x = 0 
+					y = 100 
+				}
+				font = "3270_18_outline"
+				text = "ECO_CIVIL_TITLE"
+				maxWidth = 300
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+			instantTextBoxType = {
+				name = "army_title"
+				position = { 
+					x = 0 
+					y = 200 
+				}
+				font = "3270_18_outline"
+				text = "ECO_ARMY_TITLE"
+				maxWidth = 300
+				maxHeight = 20
+				format = center
+				vertical_alignment = center
+			}
+		}
+		containerWindowType = {
+			name = "category_stats_container"
+			position = { 
+				x = 35
+				y = 80
+			}
+			instantTextBoxType = {
+				name = "category_production_cost"
+				position = { x = 0 y = 27 }
+				font = "3270_16_outline"
+				text = "category_production_cost_text"
+				maxWidth = 300
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "category_production_finances"
+				font = "3270_16_outline"
+				text = "category_production_finances_text" 
+				maxWidth = 300
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "category_civil_cost"
+				position = { x = 0 y = 127 }
+				font = "3270_16_outline"
+				text = "category_civil_cost_text"
+				maxWidth = 300
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "category_civil_finances"
+				position = { x = 0 y = 100 }
+				font = "3270_16_outline"
+				text = "category_civil_finances_text"
+				maxWidth = 300
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "category_army_cost"
+				position = { x = 0 y = 227 }
+				font = "3270_16_outline"
+				text = "category_army_cost_text"
+				maxWidth = 300
+				maxHeight = 20
+			}
+			instantTextBoxType = {
+				name = "category_army_finances"
+				position = { x = 0 y = 200 }
+				font = "3270_16_outline"
+				text = "category_army_finances_text" 
+				maxWidth = 300
+				maxHeight = 20
+			}
+		}
+		instantTextBoxType = {
+			name = "total_economy_stats"
+			position = {
+				x = 25
+				y = 390 
+			}
+			font = "3270_16_outline"
+			text = "total_economy_stats_text"
+			maxWidth = 350
+			maxHeight = 40	
+		}
+		instantTextBoxType = {
+			name = "main_title"
+			position = { 
+				x = 78
+				y = 11
+			}
+			font = "3270_36_outline"
+			text = "ECO_MAIN_TITLE"
+			maxWidth = 260
+			maxHeight = 40
+			pdx_tooltip = "ECO_MAIN_TITLE_tt"
+		}
+	}
+}

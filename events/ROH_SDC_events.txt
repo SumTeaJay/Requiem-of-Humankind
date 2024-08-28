@@ -1,0 +1,365 @@
+add_namespace = pautov
+
+#Несмотря ни на что
+country_event = {
+    id = pautov.3
+	title = pautov.3.t
+	desc = pautov.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.3.a
+    }
+}
+
+#Концепция общественной безопасности
+country_event = {
+    id = pautov.4
+	title = pautov.4.t
+	desc = pautov.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.4.a
+    }
+}
+
+#Искоренить виллуимов
+country_event = {
+    id = pautov.5
+	title = pautov.5.t
+	desc = pautov.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.5.a
+    }
+}
+
+#Нефтяная игла
+country_event = {
+    id = pautov.6
+	title = pautov.6.t
+	desc = pautov.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.6.a
+    }
+}
+
+#Стабилизация Фронта
+country_event = {
+    id = pautov.7
+	title = pautov.7.t
+	desc = pautov.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.7.a
+    }
+}
+
+#Эндшпиль
+country_event = {
+    id = pautov.8
+	title = pautov.8.t
+	desc = pautov.8.d
+    fire_only_once = yes
+	is_triggered_only = no
+	trigger = {
+		tag = SDC
+		NOT = {
+			country_exists = VOZ
+		}
+	}
+    option = { 
+        name = pautov.8.a
+    }
+}
+
+#День зарплаты
+country_event = {
+    id = pautov.9
+	title = pautov.9.t
+	desc = pautov.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = { 
+        name = pautov.9.a
+		if = {
+			limit = {
+				has_country_flag = big_debt_flag
+			}
+			country_event = pautov.10
+		}
+		else = {
+			country_event = pautov.11
+		}
+    }
+	option = { 
+        name = pautov.9.b
+		country_event = pautov.12
+    }
+}
+
+#Напряжение сил
+country_event = { 
+    id = pautov.10
+	title = pautov.10.t
+	desc = pautov.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = { 
+        name = pautov.10.a
+		clr_country_flag = payment_flag
+		add_timed_idea = {
+			idea = SDC_pay_big_debt
+			days = 60
+		}
+    }
+}
+
+#Своевременная уплата
+country_event = { 
+    id = pautov.11
+	title = pautov.11.t
+	desc = pautov.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = { 
+        name = pautov.11.a
+		clr_country_flag = payment_flag
+		add_timed_idea = {
+			idea = SDC_pay_debt
+			days = 45
+		}
+    }
+}
+
+#Обман!
+country_event = { 
+    id = pautov.12
+	title = pautov.12.t
+	desc = pautov.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = { 
+        name = pautov.12.a
+		clr_country_flag = payment_flag
+		set_country_flag = we_payed_flag
+		add_timed_idea = {
+			idea = SDC_deception
+			days = 80
+		}
+    }
+}
+
+#Добровольцы согашаются
+country_event = { 
+    id = pautov.13
+	title = pautov.13.t
+	desc = pautov.13.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = { 
+        name = pautov.13.a
+		add_days_mission_timeout = {
+			mission = SDC_pay_mission
+			days = 50
+		}
+    }
+}
+#Установка
+country_event = {
+    id = pautov.14
+	title = pautov.14.t
+	desc = pautov.14.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.14.a
+    }
+}
+#Превентивный удар
+country_event = {
+    id = pautov.15
+	title = pautov.15.t
+	desc = pautov.15.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.15.a
+    }
+}
+#Великая шахматная игра
+country_event = {
+    id = pautov.16
+	title = pautov.16.t
+	desc = pautov.16.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.16.a
+    }
+}
+#Академия наук
+country_event = {
+    id = pautov.17
+	title = pautov.17.t
+	desc = pautov.17.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.17.a
+    }
+}
+#Связи Мартина
+country_event = {
+    id = pautov.18
+	title = pautov.18.t
+	desc = pautov.18.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.18.a
+    }
+}
+#Специальная военная операция
+country_event = {
+    id = pautov.19
+	title = pautov.19.t
+	desc = pautov.19.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.19.a
+
+    }
+}
+#Ликвидаторы
+country_event = {
+    id = pautov.20
+	title = pautov.20.t
+	desc = pautov.20.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.20.a
+		add_manpower = 10
+    }
+}
+#Офицерский состав
+country_event = {
+    id = pautov.21
+	title = pautov.21.t
+	desc = pautov.21.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.21.a
+		add_manpower = 100
+    }
+}
+#Опалённые местью
+country_event = {
+    id = pautov.22
+	title = pautov.22.t
+	desc = pautov.22.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.22.a
+		add_manpower = 500
+    }
+}
+#Сербские добровольцы
+country_event = {
+    id = pautov.23
+	title = pautov.23.t
+	desc = pautov.23.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.23.a
+		add_manpower = 1000
+    }
+}
+#Страшный час
+country_event = {
+    id = pautov.24
+	title = pautov.24.t
+	desc = pautov.24.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.24.a
+        if = {
+            limit = { has_completed_focus = SDC_integration }
+            add_manpower = -1
+            add_popularity = {
+                ideology = statesmen
+                popularity = -0.19
+            }
+            add_popularity = {
+                ideology = sacraments
+                popularity = -0.01
+            }
+            add_popularity = {
+                ideology = chthonism
+                popularity = 0.2
+            }
+            promote_character = {
+			    character = SDC_Putin_evil
+			    ideology = chthonism_subideology
+            }
+		    set_party_name = {
+                ideology = chthonism
+                long_name = SDC_Despair_long
+                name = SDC_Despair
+            }
+        }
+        else_if = {
+            limit = { has_completed_focus = SDC_peacification }
+            add_popularity = {
+                ideology = sacraments
+                popularity = -0.01
+            }
+            add_popularity = {
+                ideology = chthonism
+                popularity = 0.2
+            }
+            promote_character = {
+			    character = SDC_Putin_evil
+			    ideology = chthonism_subideology
+            }
+		    set_party_name = {
+                ideology = chthonism
+                long_name = SDC_Despair_long
+                name = SDC_Despair
+            }
+        }
+    }
+}
+#КС-3
+country_event = {
+    id = pautov.25
+	title = pautov.25.t
+	desc = pautov.25.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.25.a
+    }
+}
+#Перерождение
+country_event = {
+    id = pautov.26
+	title = pautov.26.t
+	desc = pautov.26.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = pautov.26.a
+    }
+}

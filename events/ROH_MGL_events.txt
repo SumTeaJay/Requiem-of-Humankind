@@ -1,0 +1,155 @@
+add_namespace = MGL
+
+country_event = {
+    id = MGL.1
+    title = MGL.1
+    desc = MGL.1
+    #picture = 
+
+    is_triggered_only = no
+    fire_only_once = yes
+    hidden = yes
+    trigger = {
+        date > 2032.02.01
+    }
+
+    option = {
+        name = MGL.1
+        add_country_leader_role = {
+            character = MGL_Exclusion_zone  #Пока такой фейлстейт
+            promote_leader = yes
+            country_leader = {
+                ideology = technocracy_subideology
+                expire = "1965.1.1.1"
+                traits = { exclusion_zone_trait }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = MGL.2 #Цитадель
+	title = MGL.2.t
+	desc = MGL.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.2.a
+    }
+}
+country_event = {
+    id = MGL.3 #Солдаты Удачи
+	title = MGL.3.t
+	desc = MGL.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.3.a
+        country_event = {
+            id = MGL.4
+            days = 1
+		}
+    }
+}
+country_event = {
+    id = MGL.4 #Наша служба и опасна, и трудна
+	title = MGL.4.t
+	desc = MGL.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.4.a
+        country_event = {
+            id = MGL.5
+            days = 1
+		}
+    }
+}
+country_event = {
+    id = MGL.5 #Проникая в неизвестность
+	title = MGL.5.t
+	desc = MGL.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.5.a
+        country_event = {
+            id = MGL.6
+            days = 1
+		}
+    }
+}
+country_event = {
+    id = MGL.6 #Самоубийство по заявкам
+	title = MGL.6.t
+	desc = MGL.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.6.a
+        country_event = {
+            id = MGL.7
+            days = 1
+		}
+    }
+}
+country_event = {
+    id = MGL.7 #Спектакль окончен
+	title = MGL.7.t
+	desc = MGL.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.7.a
+    }
+}
+country_event = {
+    id = MGL.8 #Успешная реанимация
+	title = MGL.8.t
+	desc = MGL.8.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.8.a
+    }
+}
+country_event = {
+    id = MGL.9 #Прах к праху
+	title = MGL.9.t
+	desc = MGL.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.9.a
+    }
+}
+country_event = {
+    id = MGL.10 #Отчёт о проведении восстановительных работах #12
+	title = MGL.10.t
+	desc = MGL.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.10.a
+    }
+}
+country_event = {
+    id = MGL.11 #"Дорогие товарищи!"
+	title = MGL.11.t
+	desc = MGL.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.11.a
+    }
+}
+country_event = {
+    id = MGL.12 #Очная ставка
+	title = MGL.12.t
+	desc = MGL.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+    option = {
+        name = MGL.12.a
+    }
+}

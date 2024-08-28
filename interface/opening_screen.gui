@@ -1,0 +1,119 @@
+guiTypes = {
+	containerWindowType = {
+		name = "opening_screen_button"
+		position = { x=200 y=38 }
+		size = { width=100%% height=100%% }
+
+		buttonType = {
+			name = "topbar_button"
+			position = { x = -33 y = 60 }
+			quadTextureSprite ="GFX_star_button"
+			Orientation = "UPPER_RIGHT"
+			pdx_tooltip = opening_screen_button_tt
+		}
+	}
+
+	containerWindowType = {
+		name = "opening_screen_main"
+		size = { width = 600 height = 600 }
+		position = { x=600 y=300 }
+		moveable = yes
+		clipping = no
+
+		background = {
+			name = "BG"
+			quadTextureSprite= "GFX_opening_bg"
+		}
+		
+		iconType = {
+			name = "posters"
+			spriteType ="GFX_opening_posters"
+			position = { x=-182 y=-42 }
+			allwaystransparent = yes
+		}	
+
+		iconType = {
+			name = "banner"
+			spriteType ="GFX_opening_banner"
+			position = { x=60 y=-200 }
+			allwaystransparent = yes
+		}		
+		
+		iconType = {
+			name = "Background"
+			spriteType ="GFX_opening_bg"
+			allwaystransparent = yes
+		}
+
+		containerWindowType = {
+			name = "opening_screen_main_main"
+			size = { width = 650 height = 510 }
+			position = { x=80 y=12 }
+			moveable = no
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 3 left = 0 bottom = 3 right = 0}
+
+			background = {
+				name = "BG2"
+				quadTextureSprite= "GFX_opening_blank_bg"
+			} 
+
+			iconType = {
+				name = "Logo"
+				spriteType ="GFX_opening_logo"
+				position = { x = 210 y = 15 }
+				allwaystransparent = yes
+			}
+
+			instantTextBoxType = {
+				name = "opening_title"
+				position = { x = 60 y = 155 }
+				font = "3270_24_outline"
+				borderSize = {x = 0 y = 0}
+				text = "OPENING_TITLE"	
+				maxWidth = 450
+				maxHeight = 200
+				format = center
+			}
+
+			instantTextBoxType = {
+				name = "opening_desc"
+				position = { x = 0 y = 190 }
+				font = "3270_22_outline"
+				borderSize = {x = 0 y = 0}
+				text = "OPENING_DESC"	
+				maxWidth = 580
+				maxHeight = 500
+				format = left
+			}	
+		}
+		
+		iconType = {
+			name = "Obvodka"
+			spriteType ="GFX_opening_obvodka"
+			position = { x=0 y=0 }
+			allwaystransparent = yes
+		}			
+
+		buttonType = {
+			name = "opening_screen_button"
+			quadTextureSprite ="GFX_button_221x34"
+			buttonFont = "3270_22_outline"
+			position = { x=245 y=540 }
+			shortcut = "ESCAPE"
+		}
+
+		instantTextBoxType = {
+			name = "opening_screen_button_text"
+			position = { x = 260 y = 548 }
+			font = "3270_22_outline"
+			borderSize = {x = 0 y = 0}
+			text = "OPENING_SCREEN_BUTTON_TEXT"	
+			maxWidth = 200
+			maxHeight = 200
+			format = center
+			allwaystransparent = yes
+		}
+	}
+}

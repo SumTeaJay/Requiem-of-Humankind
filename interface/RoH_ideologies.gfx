@@ -1,0 +1,53 @@
+spriteTypes = {
+	#Идеологии
+	spriteType = {
+		name = "GFX_ideology_bandits_group"
+		texturefile = "gfx/interface/ideologies/bandits_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_chthonism_group"
+		texturefile = "gfx/interface/ideologies/chthonism_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_free_people_group"
+		texturefile = "gfx/interface/ideologies/free_people_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_humanists_group"
+		texturefile = "gfx/interface/ideologies/humanists_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_militarists_group"
+		texturefile = "gfx/interface/ideologies/militarists_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_sacraments_group"
+		texturefile = "gfx/interface/ideologies/sacraments_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_statesmen_group"
+		texturefile = "gfx/interface/ideologies/statesmen_group.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_technocracy_group"
+		texturefile = "gfx/interface/ideologies/technocracy_group.dds"
+	}
+
+	#Сабидеологии
+	spriteType = {
+		name = "GFX_ideology_conception_subideology"
+		texturefile = "gfx/interface/ideologies/subideologies/conception_subideology.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_primitivists"
+		texturefile = "gfx/interface/ideologies/subideologies/primitivists.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_peacemakers"
+		texturefile = "gfx/interface/ideologies/subideologies/peacemakers.dds"
+	}
+	spriteType = {
+		name = "GFX_ideology_colloborators"
+		texturefile = "gfx/interface/ideologies/subideologies/colloborators.dds"
+	}
+}

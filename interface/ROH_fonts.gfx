@@ -1,0 +1,280 @@
+bitmapfonts = {
+
+	bitmapfont = {
+		name = "bender_54_bold"
+		path = "gfx/fonts/bender_54_bold"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "bender_54"
+		path = "gfx/fonts/bender_54"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			O = { 187 112 6 }			
+		}
+	}	
+	
+	bitmapfont = {
+		name = "bender_42"
+		path = "gfx/fonts/bender_42"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "bender_18"
+		path = "gfx/fonts/bender_18"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			G = { 67 67 67 }
+			O = { 187 112 6 }			
+		}
+	}	
+	
+	bitmapfont = {
+		name = "3270_36_outline"
+		path = "gfx/fonts/3270_36_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}	
+	
+	bitmapfont = {
+		name = "3270_24_outline"
+		path = "gfx/fonts/3270_24_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "3270_22_outline"
+		path = "gfx/fonts/3270_22_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "3270_20_outline"
+		path = "gfx/fonts/3270_20_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "3270_18_outline"
+		path = "gfx/fonts/3270_18_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}
+
+	bitmapfont = {
+		name = "3270_16_outline"
+		path = "gfx/fonts/3270_16_outline"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }			
+		}
+	}	
+
+	bitmapfont = {
+		name = "console_36"
+		path = "gfx/fonts/console_36"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }
+			0 = { 88 0 126 }
+			c = { 245 66 66 }
+			s = { 69 66 245 }			
+		}
+	}
+	
+	bitmapfont = {
+		name = "console_24"
+		path = "gfx/fonts/console_24"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }	
+			0 = { 88 0 126 }
+			c = { 245 66 66 }
+			s = { 69 66 245 }			
+		}
+	}
+	
+	bitmapfont = {
+		name = "console_16"
+		path = "gfx/fonts/console_16"
+		color = 0xffffffff
+		textcolors = {
+			M = { 35 206 255 }
+			L = { 195 176 145 }
+			W = { 255 255 255 }
+			B = { 47 138 135 }
+			G = { 133 234 142 }
+			R = { 224 130 130 }
+			b = { 0 0 0 }
+			g = { 176 176 176 }
+			Y = { 220 218 80 }
+			H = { 220 218 80 }
+			T = { 47 138 135 }
+			p = { 204 0 204 }
+			O = { 187 112 6 }
+			0 = { 88 0 126 }
+			c = { 245 66 66 }
+			s = { 69 66 245 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "RoH_typewriter_22"
+		path = "gfx/fonts/RoH_typewriter_22"
+		color = 0xffffffff
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 192 14 14 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "RoH_typewriter_16"
+		path = "gfx/fonts/RoH_typewriter_16"
+		color = 0xffffffff
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 192 14 14 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "RoH_typewriter_20"
+		path = "gfx/fonts/RoH_typewriter_20"
+		color = 0xffffffff
+		textcolors = {
+			G = { 86 172 91 }
+			R = { 192 14 14 }
+			Y = { 238 201 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+		}
+	}
+}

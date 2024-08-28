@@ -1,0 +1,884 @@
+add_namespace = LWV
+add_namespace = unity_in_holiness
+#READ ME: some events were removed (see by "missing")
+#Сень Господня
+country_event = {
+	id = LWV.1
+	title = LWV.1.t
+	desc = LWV.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.1.a	
+	}
+}
+#Абсолютная святость
+country_event = {
+	id = LWV.2
+	title = LWV.2.t
+	desc = LWV.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.2.a	
+	}
+}
+#Истинная Церковь
+country_event = {
+	id = LWV.3
+	title = LWV.3.t
+	desc = LWV.3.d
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.3.a	
+	}
+}
+#Истинный Бог
+country_event = {
+	id = LWV.4
+	title = LWV.4.t
+	desc = LWV.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.4.a	
+	}
+}
+#Труд Праведный 
+country_event = {
+	id = LWV.5
+	title = LWV.5.t
+	desc = LWV.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.5.a	
+	}
+}
+#Бог велел делиться 
+country_event = {
+	id = LWV.6
+	title = LWV.6.t
+	desc = LWV.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.6.a	
+	}
+}
+#Рабочий молебен 
+country_event = {
+	id = LWV.7
+	title = LWV.7.t
+	desc = LWV.7.d 
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.7.a	
+	}
+}
+#Мечи Господни 
+country_event = {
+	id = LWV.8
+	title = LWV.8.t
+	desc = LWV.8.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.8.a	
+	}
+}
+#Заслужить милость Господа
+country_event = {
+	id = LWV.9
+	title = LWV.9.t
+	desc = LWV.9.d
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.9.a	
+	}
+}
+#Лучшие Его дети 
+country_event = {
+	id = LWV.10
+	title = LWV.10.t
+	desc = LWV.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.10.a	
+	}
+}
+#Гнев Господень №1
+country_event = {
+	id = LWV.11
+	title = LWV.11.t
+	desc = LWV.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.11.a	
+	country_event = {
+		id = LWV.12
+	}	
+	}
+}
+#Гнев Господень №2
+country_event = {
+	id = LWV.12
+	title = LWV.12.t
+	desc = LWV.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.12.a	
+	}
+}
+#Против Лжепророков 
+country_event = {
+	id = LWV.13
+	title = LWV.13.t
+	desc = LWV.13.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.13.a	
+	}
+}
+#Волею Господа 
+country_event = {
+	id = LWV.14
+	title = LWV.14.t
+	desc = LWV.14.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.14.a	
+	}
+}
+country_event = {
+	id = LWV.15
+	title = LWV.15.t
+	desc = LWV.15.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = LWV.15.a2
+		complete_national_focus = LWV_nozhi
+	}
+	option = {
+		name = LWV.15.a1
+		complete_national_focus = LWV_oralo
+	}
+}
+
+country_event = {
+	id = LWV.16
+	title = LWV.16.t
+	desc = LWV.16.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.16.a
+	}
+}
+country_event = {
+	id = LWV.17
+	title = LWV.17.t
+	desc = LWV.17.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.17.a
+	}
+}
+country_event = {
+	id = LWV.18
+	title = LWV.18.t
+	desc = LWV.18.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.18.a
+	}
+}
+country_event = {
+	id = LWV.19
+	title = LWV.19.t
+	desc = LWV.19.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.19.a
+	}
+}
+country_event = {
+	id = LWV.20
+	title = LWV.20.t
+	desc = LWV.20.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.20.a
+	}
+}
+country_event = {
+	id = LWV.21
+	title = LWV.21.t
+	desc = LWV.21.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.21.a
+	}
+}
+country_event = {
+	id = LWV.22
+	title = LWV.22.t
+	desc = LWV.22.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.22.a
+	}
+}
+country_event = {
+	id = LWV.23
+	title = LWV.23.t
+	desc = LWV.23.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.23.a
+	}
+}
+country_event = {
+	id = LWV.24
+	title = LWV.24.t
+	desc = LWV.24.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.24.a
+	}
+}
+country_event = {
+	id = LWV.25
+	title = LWV.25.t
+	desc = LWV.25.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.25.a
+	}
+}
+country_event = {
+	id = LWV.26
+	title = LWV.26.t
+	desc = LWV.26.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.26.a
+	}
+}
+country_event = {
+	id = LWV.27
+	title = LWV.27.t
+	desc = LWV.27.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.27.a
+	}
+}
+country_event = {
+	id = LWV.28
+	title = LWV.28.t
+	desc = LWV.28.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.28.a
+	}
+}
+country_event = {
+	id = LWV.29
+	title = LWV.29.t
+	desc = LWV.29.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = LWV.29.a
+	}
+}
+country_event = {
+	id = LWV.30
+	title = LWV.30.t
+	desc = LWV.30.d
+	fire_only_once = yes
+	trigger = {
+		original_tag = LWV
+		NOT = {
+			country_exists = SIL
+		}
+	}
+	
+	option = {
+	name = LWV.30.a
+	}
+}
+
+
+######################### 3 FAZA ###############################
+country_event = {
+	id = LWV.31
+	title = LWV.31.t
+	desc = LWV.31.d
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = LWV.31.a
+		ai_chance = {
+			factor = 90	
+		}
+		add_ideas = LWV_bejinsy_from_holy_land	
+		add_opinion_modifier = {
+			target = LWV
+			modifier = accepted_refugees
+		}
+		LWV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = accepted_refugees
+			}
+		}
+	}
+
+
+	option = {
+		name = LWV.31.b
+		ai_chance = {
+			factor = 10	
+		}
+		add_opinion_modifier = {
+			target = LWV
+			modifier = returned_refugees 
+		}
+		LWV = {
+			add_opinion_modifier = {
+				target = ROOT
+				modifier = returned_refugees 
+			}
+		}
+	}
+}
+	
+country_event = {
+	id = LWV.32
+	title = LWV.32.t
+	desc = LWV.32.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+
+	option = {
+		name = LWV.32.a
+		ai_chance = {
+			factor = 90	
+		}
+		add_stability = -0.1
+		add_political_power = -100		
+		remove_opinion_modifier = {
+			target = LWV
+			modifier = accepted_refugees
+		}
+		LWV = {
+			remove_opinion_modifier = {
+				target = ROOT
+				modifier = accepted_refugees
+			}
+		}
+	}
+
+	option = {
+		name = LWV.32.b
+		ai_chance = {
+			factor = 10	
+		}
+		add_war_support = 0.05
+		LWV = {
+			create_wargoal = {
+			type = annex_everything
+			target = ROOT
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+country_event = {
+	id = LWV.33
+	title = LWV.33.t
+	desc = LWV.33.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.33.a
+	}
+}
+country_event = {
+	id = LWV.34
+	title = LWV.34.t
+	desc = LWV.34.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.34.a
+	}
+}
+country_event = {
+	id = LWV.35
+	title = LWV.35.t
+	desc = LWV.35.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.35.a
+	}
+}
+
+country_event = {
+	id = LWV.36
+	title = LWV.36.t
+	desc = LWV.36.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.36.a
+	}
+}
+country_event = {
+	id = LWV.37
+	title = LWV.37.t
+	desc = LWV.37.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.37.a
+	}
+}
+country_event = {
+	id = LWV.38
+	title = LWV.38.t
+	desc = LWV.38.d
+	fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = LWV.38.a	
+	}
+}
+country_event = {
+	id = LWV.39
+	title = LWV.39.t
+	desc = LWV.39.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.39.a
+	}
+}
+country_event = {
+	id = LWV.40
+	title = LWV.40.t
+	desc = LWV.40.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.40.a
+	}
+}
+country_event = {
+	id = LWV.41
+	title = LWV.41.t
+	desc = LWV.41.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.41.a
+	}
+}
+
+country_event = {
+	id = LWV.42
+	title = LWV.42.t
+	desc = LWV.42.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.42.a
+	}
+}
+country_event = {
+	id = LWV.43
+	title = LWV.43.t
+	desc = LWV.43.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.43.a
+	}
+}
+country_event = {
+	id = LWV.44
+	title = LWV.44.t
+	desc = LWV.44.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.44.a
+	}
+}
+country_event = {
+	id = LWV.45
+	title = LWV.45.t
+	desc = LWV.45.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.45.a
+	}
+}
+country_event = {
+	id = LWV.46
+	title = LWV.46.t
+	desc = LWV.46.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.46.a
+	}
+}
+country_event = {
+	id = unity_in_holiness.1
+	title = unity_in_holiness.1.t
+	desc = unity_in_holiness.1.d
+	picture = GFX_gg
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = unity_in_holiness.1.a
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = LWV
+		}
+	}
+	option = {
+		name = unity_in_holiness.1.b
+		add_equipment_to_stockpile = {
+			type = artillery_equipment
+			amount = 120
+			producer = LWV
+		}		
+	}
+	option = {
+		name = unity_in_holiness.1.c
+		add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 120
+			producer = LWV
+		}		
+	}
+}
+#47-61 missing
+country_event = {
+	id = LWV.62
+	title = LWV.62.t
+	desc = LWV.62.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = LWV.62.a
+	}
+}
+#63, 64 missing
+country_event = {
+	id = LWV.65
+	title = LWV.65.t
+	desc = LWV.65.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = LWV.65.a
+	}
+}
+#66-75 missing
+country_event = {
+	id = LWV.76
+	title = LWV.76.t
+	desc = LWV.76.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+		name = LWV.76.a
+		country_event = {
+			id = LWV.77
+			days = 1
+		}
+	}
+}
+country_event = {
+	id = LWV.77
+	title = LWV.77.t
+	desc = LWV.77.d
+	picture = GFX_news_event_001
+	fire_only_once = yes	
+	is_triggered_only = yes
+	option = {
+	name = LWV.77.a
+	}
+}
+country_event = {
+	id = LWV.78
+	title = LWV.78.t
+	desc = LWV.78.d
+	picture = GFX_news_event_001
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = { 
+		name = LWV.78.a
+	}
+}
+
+country_event = {
+	id = LWV.79
+	title = LWV.79.t
+	desc = LWV.79.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.79.a
+		every_controlled_state = {
+			limit = {
+				has_state_flag = widespread_holiness
+			}
+			add_core_of = LWV
+		}
+	}
+}
+#Неожиданное убийство
+country_event = {
+	id = LWV.80
+	title = LWV.80.t
+	desc = LWV.80.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.80.a
+		clr_country_flag =  LWV_war_in_the_shadows_flag
+		kill_country_leader = yes
+		LWV_andrey_markov = {
+			set_nationality = WOW
+		}
+		WOW = {
+			add_country_leader_role = {
+				character = LWV_andrey_markov
+				promote_leader = yes
+				country_leader = {
+					ideology = sacraments_subideology
+					expire = "2050.1.1.1"
+					traits = {}
+				}
+			}
+		}
+		every_controlled_state = {
+			add_core_of = WOW
+			set_state_owner_to = WOW
+		}
+	}
+}
+#Сектантский реванш
+country_event = {
+	id = LWV.81
+	title = LWV.81.t
+	desc = LWV.81.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.81.a
+		trigger = {
+			any_controlled_state = {
+				is_in_array = { PREV.transfer_states_from_LWV_to_WOW = THIS }
+			}
+			any_controlled_state = {
+				NOT = {
+					is_in_array = { PREV.transfer_states_from_LWV_to_WOW = THIS }
+				}
+			}
+		}
+		clr_country_flag =  LWV_war_in_the_shadows_flag
+		LWV_andrey_markov = {
+			set_nationality = WOW
+		}
+		for_each_scope_loop = {
+			array = transfer_states_from_LWV_to_WOW
+			if = {
+				limit = {
+					is_controlled_by = ROOT
+				}
+				transfer_state_to = WOW
+			}
+		}
+		custom_effect_tooltip = WOW_gets_states_in_civ_war
+		WOW = {
+			add_country_leader_role = {
+				character = LWV_andrey_markov
+				promote_leader = yes
+				country_leader = {
+					ideology = sacraments_subideology
+					expire = "2050.1.1.1"
+					traits = {}
+				}
+			}
+			for_loop_effect = {
+				end = 10
+				random_controlled_state = {
+					create_unit = {
+						division = "name = \"Sectants\" division_template = \"Sectants\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = WOW
+					}
+				}
+			}
+			custom_effect_tooltip = WOW_gets_10_divisions
+			declare_war_on = {
+				target = LWV
+				type = civil_war
+			}
+		}
+		clear_array = transfer_states_from_LWV_to_WOW
+	}
+	option = {
+		name = LWV.81.b
+		trigger = {
+			NOT = {
+				AND = {
+					any_controlled_state = {
+						is_in_array = { PREV.transfer_states_from_LWV_to_WOW = THIS }
+					}
+					any_controlled_state = {
+						NOT = {
+							is_in_array = { PREV.transfer_states_from_LWV_to_WOW = THIS }
+						}
+					}
+				}
+			}
+		}
+		custom_effect_tooltip = poluchi_jope
+	}
+}
+#Сектанты
+country_event = {
+	id = LWV.82
+	title = LWV.82.t
+	desc = LWV.82.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.82.a
+	}
+}
+#Милость, подкреплённая гневом
+country_event = {
+	id = LWV.83
+	title = LWV.83.t
+	desc = LWV.83.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.83.a
+	}
+}
+#Падение “Сознающего”
+country_event = {
+	id = LWV.84
+	title = LWV.84.t
+	desc = LWV.84.d
+	picture = GFX_news_event_001
+	fire_only_once = no
+	is_triggered_only = yes
+	option = {
+		name = LWV.84.a
+	}
+}
+
+
+
+
+
+

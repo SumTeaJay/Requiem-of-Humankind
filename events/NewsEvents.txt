@@ -1,0 +1,392 @@
+﻿add_namespace = worldnews
+
+news_event = { # Новость об объединении после Собачего лязга
+	id = worldnews.1
+	title = worldnews.1.t
+	desc = {
+		text = worldnews.1.d_WAC_unified_Black_Junta
+		trigger = {
+			WAC = { has_cosmetic_tag = WAC_unified_Black_Junta }
+		}
+	}
+	desc = {
+		text = worldnews.1.d_HAN_unified_Black_Junta
+		trigger = {
+			HAN = { has_cosmetic_tag = HAN_unified_Black_Junta }
+		}
+	}
+	desc = {
+		text = worldnews.1.d_BRI_unified_Black_Junta
+		trigger = {
+			BRI = { has_cosmetic_tag = BRI_unified_Black_Junta }
+		}
+	}
+	desc = {
+		text = worldnews.1.d_BRD_unified_Black_Junta
+		trigger = {
+			BRD = { has_cosmetic_tag = BRD_unified_Black_Junta }
+		}
+	}
+	picture = GFX_news_event_dog_clanging
+
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.1.a
+	}
+}
+
+#Council_newsevent
+news_event = {
+	id = worldnews.3
+	title = worldnews.3.t
+	desc = worldnews.3.d
+	picture = GFX_news_event_council_war_on_mad
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = worldnews.3.a
+	}
+}
+
+#Blazing_Volga_newsevent
+news_event = { #Пылающая Волга
+	id = worldnews.5
+	title = worldnews.5.t
+	desc = worldnews.5.d
+	picture = GFX_start_war_volga
+	
+	major = yes
+	is_triggered_only = yes
+	
+	option = {
+		name = worldnews.5.a
+	}
+}
+
+news_event = { #Коммерческий союз вступает в войну
+	id = worldnews.6
+	title = worldnews.6.t
+	desc = worldnews.6.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = worldnews.6.a
+	}
+}
+
+news_event = { #Последние дни Борисенко
+	id = worldnews.7
+	title = worldnews.7.t
+	desc = worldnews.7.d
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = worldnews.7.a
+	}
+}
+
+news_event = { #Решение ганзейского вопроса
+	id = worldnews.8
+	title = worldnews.8.t
+	desc = worldnews.8.d
+	picture = GFX_win_borisenko
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = worldnews.8.a
+	}
+}
+
+news_event = { #Объединение Волго-Донского Рога
+	id = worldnews.9
+	title = worldnews.9.t
+	desc = worldnews.9.d
+	picture = GFX_win_ganze
+
+	major = yes
+	is_triggered_only = yes
+
+	option = {
+		name = worldnews.9.a
+	}
+}
+
+news_event = { #Яркий свет надежды
+	id = worldnews.10
+	title = worldnews.10.t
+	desc = worldnews.10.d
+	picture = GFX_news_event_comet
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.10.a
+	}
+}
+
+news_event = { #Неизвестный радиосигнал!
+	id = worldnews.11
+	title = worldnews.11.t
+	desc = worldnews.11.d
+	picture = GFX_news_event_unknown_signal
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.11.a
+	}
+}
+
+news_event = { #Выход на связь Хаббла!
+	id = worldnews.12
+	title = worldnews.12.t
+	desc = worldnews.12.d
+	picture = GFX_news_event_hubble
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.12.a
+	}
+}
+
+news_event = { #Замечено НЛО!
+	id = worldnews.13
+	title = worldnews.13.t
+	desc = worldnews.13.d
+	picture = GFX_news_event_ufo
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.13.a
+	}
+}
+
+news_event = { #Открыт бозон Никольского!
+	id = worldnews.14
+	title = worldnews.14.t
+	desc = worldnews.14.d
+	picture = GFX_news_event_boson
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.14.a
+	}
+}
+
+news_event = { #Радиопереговоры?
+	id = worldnews.15
+	title = worldnews.15.t
+	desc = worldnews.15.d
+	picture = GFX_news_event_radio_conversations
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.15.a
+	}
+}
+
+news_event = { #Падение спутника!
+	id = worldnews.16
+	title = worldnews.16.t
+	desc = worldnews.16.d
+	picture = GFX_news_event_spuntnik_falls
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.16.a
+	}
+}
+
+news_event = { #Слухи о новой болезни!
+	id = worldnews.17
+	title = worldnews.17.t
+	desc = worldnews.17.d
+	picture = GFX_news_event_disease
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.17.a
+	}
+}
+
+news_event = { #Распространение новой религии!
+	id = worldnews.18
+	title = worldnews.18.t
+	desc = worldnews.18.d
+	picture = GFX_news_event_new_religion
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.18.a
+	}
+}
+
+news_event = { #Обнаружение архивов “Ленинки”!
+	id = worldnews.19
+	title = worldnews.19.t
+	desc = worldnews.19.d
+	picture = GFX_news_event_library
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.19.a
+	}
+}
+
+news_event = { #Обнаружена новая экзопланета!
+	id = worldnews.20
+	title = worldnews.20.t
+	desc = worldnews.20.d
+	picture = GFX_news_event_exoplanet
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.20.a
+	}
+}
+
+news_event = { #Аномальные бури!
+	id = worldnews.21
+	title = worldnews.21.t
+	desc = worldnews.21.d
+	picture = GFX_news_event_anomalous_storms
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.21.a
+	}
+}
+
+news_event = { #Восстановление Москвы!
+	id = worldnews.22
+	title = worldnews.22.t
+	desc = worldnews.22.d
+	picture = GFX_news_event_moscow_rebuilt
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.22.a
+	}
+}
+
+news_event = { #Падение метеорита!
+	id = worldnews.23
+	title = worldnews.23.t
+	desc = worldnews.23.d
+	picture = GFX_news_event_meteorite
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.23.a
+	}
+}
+
+news_event = { #Открытие нового элемента!
+	id = worldnews.24
+	title = worldnews.24.t
+	desc = worldnews.24.d
+	picture = GFX_news_event_new_element
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.24.a
+	}
+}
+
+news_event = { #Найден “Черный принц”!
+	id = worldnews.25
+	title = worldnews.25.t
+	desc = worldnews.25.d
+	picture = GFX_news_event_black_prince
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.25.a
+	}
+}
+
+news_event = { #Конец близко?
+	id = worldnews.26
+	title = worldnews.26.t
+	desc = worldnews.26.d
+	picture = GFX_news_event_end_is_near
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.26.a
+	}
+}
+
+news_event = { #Бесславный финал.
+	id = worldnews.27
+	title = worldnews.27.t
+	desc = worldnews.27.d
+	picture = GFX_news_event_end
+
+	major = yes
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = worldnews.27.a
+	}
+}
+

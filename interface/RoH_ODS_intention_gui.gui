@@ -1,0 +1,16 @@
+guiTypes = {
+	containerWindowType = {
+		name = "ODS_intention_gui"
+		size = { width = 300 height = 65 }
+		position = { x = 0 y = 0 }
+		orientation = center
+		origo = center
+		#moveable = no
+		iconType = {
+			name = "ODS_intention_scale"
+			position = { x = 20 y = 10 }
+			spriteType = "GFX_intention_scale"
+			pdx_tooltip = "information_about_intention_point_tt"
+		}
+	}	
+}

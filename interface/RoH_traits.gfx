@@ -1,0 +1,8 @@
+spriteTypes = {	
+    				
+	spriteType = {
+		name = "GFX_trait_medal_of_honor_great_motherland"
+		texturefile = "gfx/interface/traits/personal/trait_hero_of_great_motherland_medal.dds"
+		legacy_lazy_load = no
+	}
+}

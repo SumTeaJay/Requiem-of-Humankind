@@ -1,0 +1,540 @@
+add_namespace = ODS
+
+country_event = {
+	id = ODS.1
+	title = ODS.1.t
+	desc = ODS.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = ODS.1.a	
+	}
+}
+country_event = {
+	id = ODS.2
+	title = ODS.2.t
+	desc = ODS.2.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.2.a	
+	}
+}
+country_event = {
+	id = ODS.3
+	title = ODS.3.t
+	desc = ODS.3.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = ODS.3.a	
+	}
+}
+country_event = {
+	id = ODS.4
+	title = ODS.4.t
+	desc = ODS.4.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.4.a	
+	}
+}
+country_event = {
+	id = ODS.5
+	title = ODS.5.t
+	desc = ODS.5.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.5.a	
+	}
+}
+country_event = {
+	id = ODS.6
+	title = ODS.6.t
+	desc = ODS.6.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.6.a	
+	}
+}
+country_event = {
+	id = ODS.7
+	title = ODS.7.t
+	desc = ODS.7.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.7.a	
+	}
+}
+country_event = {
+	id = ODS.8
+	title = ODS.8.t
+	desc = ODS.8.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.8.a	
+	country_event = { id = ODS.31
+					}
+	}
+}
+country_event = {
+	id = ODS.9
+	title = ODS.9.t
+	desc = ODS.9.d
+    fire_only_once = yes
+	is_triggered_only = yes
+	
+	option = {
+	name = ODS.9.a	
+	country_event = { id = ODS.32
+					}
+	}
+}
+country_event = {
+	id = ODS.10
+	title = ODS.10.t
+	desc = ODS.10.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.10.a	
+	}
+}
+country_event = {
+	id = ODS.11
+	title = ODS.11.t
+	desc = ODS.11.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.11.a	
+	}
+}
+country_event = {
+	id = ODS.12
+	title = ODS.12.t
+	desc = ODS.12.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.12.a	
+	}
+}
+country_event = {
+	id = ODS.13
+	title = ODS.13.t
+	desc = ODS.13.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.13.a	
+	}
+}
+country_event = {
+	id = ODS.14
+	title = ODS.14.t
+	desc = ODS.14.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.14.a	
+	}
+}
+country_event = {
+	id = ODS.15
+	title = ODS.15.t
+	desc = ODS.15.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.15.a
+	}
+}
+country_event = {
+	id = ODS.16
+	title = ODS.16.t
+	desc = ODS.16.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.16.a
+	}
+}
+country_event = {
+	id = ODS.17
+	title = ODS.17.t
+	desc = ODS.17.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.17.a
+	}
+}
+country_event = {
+	id = ODS.18
+	title = ODS.18.t
+	desc = ODS.18.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.18.a
+	}
+}
+country_event = {
+	id = ODS.19
+	title = ODS.19.t
+	desc = ODS.19.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.19.a
+	}
+}
+country_event = {
+	id = ODS.20
+	title = ODS.20.t
+	desc = ODS.20.d
+    fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.20.a
+	}
+}
+country_event = {
+	id = ODS.21
+	title = ODS.21.t
+	desc = ODS.21.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.21.a
+	}
+}
+country_event = {
+	id = ODS.22
+	title = ODS.22.t
+	desc = ODS.22.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.22.a
+	custom_effect_tooltip = ODS_access_to_specialization_of_regions_tt
+	}
+}
+country_event = {
+	id = ODS.23
+	title = ODS.23.t
+	desc = ODS.23.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.23.a
+	}
+}
+country_event = {
+	id = ODS.24
+	title = ODS.24.t
+	desc = ODS.24.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.24.a
+	}
+}
+country_event = {
+	id = ODS.25
+	title = ODS.25.t
+	desc = ODS.25.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.25.a
+	}
+}
+country_event = {
+	id = ODS.26
+	title = ODS.26.t
+	desc = ODS.26.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.26.a
+	}
+}
+country_event = {
+	id = ODS.27
+	title = ODS.27.t
+	desc = ODS.27.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.27.a
+	}
+}
+country_event = {
+	id = ODS.28
+	title = ODS.28.t
+	desc = ODS.28.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	country_event = { id = ODS.33
+					}
+	name = ODS.28.a
+	}
+}
+country_event = {
+	id = ODS.29
+	title = ODS.29.t
+	desc = ODS.29.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.29.a
+	}
+}
+country_event = {
+	id = ODS.30
+	title = ODS.30.t
+	desc = ODS.30.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.30.a
+	}
+}
+country_event = {
+	id = ODS.31
+	title = ODS.31.t
+	desc = ODS.31.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.31.a
+	}
+}
+country_event = {
+	id = ODS.32
+	title = ODS.32.t
+	desc = ODS.32.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.32.a
+	}
+}
+country_event = {
+	id = ODS.33
+	title = ODS.33.t
+	desc = ODS.33.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.33.a
+	}
+}
+country_event = { #На руинах мира старого
+	id = ODS.34 
+	title = ODS.34.t
+	desc = ODS.34.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.34.a
+	}
+}
+country_event = { #Понимание
+	id = ODS.35 
+	title = ODS.35.t
+	desc = ODS.35.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.35.a
+	}
+}
+country_event = { #Смысл
+	id = ODS.36 
+	title = ODS.36.t
+	desc = ODS.36.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.36.a
+	add_manpower = -10
+	}
+}
+country_event = { #Пожар
+	id = ODS.37 
+	title = ODS.37.t
+	desc = ODS.37.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.37.a
+	}
+}
+country_event = { #Вначале было слово
+	id = ODS.38 
+	title = ODS.38.t
+	desc = ODS.38.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.38.a
+	}
+}
+country_event = { #Раздача
+	id = ODS.39 
+	title = ODS.39.t
+	desc = ODS.39.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.39.a
+	}
+}
+country_event = { #100 метров под землёй
+	id = ODS.40 
+	title = ODS.40.t
+	desc = ODS.40.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.40.a
+	}
+}
+country_event = { #Поймите же!
+	id = ODS.41 
+	title = ODS.41.t
+	desc = ODS.41.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.41.a
+	}
+}
+country_event = { #Ты не застрахован
+	id = ODS.42 
+	title = ODS.42.t
+	desc = ODS.42.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.42.a
+	}
+}
+country_event = { #Движимый ненавистью
+	id = ODS.43 
+	title = ODS.43.t
+	desc = ODS.43.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.43.a
+	}
+}
+country_event = { #Энергетические артерии
+	id = ODS.44
+	title = ODS.44.t
+	desc = ODS.44.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.44.a
+	}
+}
+country_event = { #Дневник профессора Александра Васильевича Зимовского. Часть 1
+	id = ODS.45
+	title = ODS.45.t
+	desc = ODS.45.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.45.a
+	}
+}
+country_event = { # Дневник профессора Александра Васильевича Зимовского. Часть 2
+	id = ODS.46
+	title = ODS.46.t
+	desc = ODS.46.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.46.a
+	add_manpower = -1
+	}
+}
+country_event = { #Хранитель покоя
+	id = ODS.47 
+	title = ODS.47.t
+	desc = ODS.47.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.47.a
+	}
+}
+country_event = { #Одинокий разум
+	id = ODS.48 
+	title = ODS.48.t
+	desc = ODS.48.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = ODS.48.a
+	}
+}

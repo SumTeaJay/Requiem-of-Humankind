@@ -1,0 +1,48 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_specializations_of_regions_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/specializations_of_regions.dds"
+	}
+	spriteType = {
+		name = "GFX_specializations_of_regions_industrial_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/industrial_region.dds"
+	}
+	spriteType = {
+		name = "GFX_specializations_of_regions_resource_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/resource_region.dds"
+	}
+	spriteType = {
+		name = "GFX_specializations_of_regions_agricultural_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/agricultural_region.dds"
+	}
+	spriteType = {
+		name = "GFX_specializations_of_regions_research_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/research_region.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_industrial_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/industrial_region.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/resource_region.dds"
+	}
+	spriteType = {
+		name = "GFX_agricultural_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/agricultural_region.dds"
+	}
+	spriteType = {
+		name = "GFX_research_region_icon"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/research_region.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_background_1x1"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/background_1x1.dds"
+	}
+	spriteType = {
+		name = "GFX_background_4x1"
+		texturefile = "gfx/interface/ODS/ODS_specializations_of_regions/background_4x1.dds"
+	}
+}

@@ -1,0 +1,23 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_gls_order_top_bar"
+		textureFile1 = "gfx/interface/GLS/freedom_and_order/top_bar_order_full.dds"
+		textureFile2 = "gfx/interface/GLS/freedom_and_order/top_bar_order_empty.dds"
+		size = { x = 466 y = 50 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_gls_freedom_top_bar"
+		textureFile1 = "gfx/interface/GLS/freedom_and_order/top_bar_freedom_full.dds"
+		textureFile2 = "gfx/interface/GLS/freedom_and_order/top_bar_freedom_empty.dds"
+		size = { x = 466 y = 50 }
+		effectFile = "gfx/FX/progress.lua"
+	}	
+	progressbartype = {
+		name = "GFX_gls_bar_of_charge"
+		textureFile1 = "gfx/interface/GLS/kurchatov_project/bar_of_charge_full.dds"
+		textureFile2 = "gfx/interface/GLS/kurchatov_project/bar_of_charge_empty.dds"
+		size = { x = 466 y = 50 }
+		effectFile = "gfx/FX/progress.lua"
+	}	
+}

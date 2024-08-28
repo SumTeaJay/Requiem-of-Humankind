@@ -1,0 +1,61 @@
+﻿l_russian:
+ engineer:0 "Саперы"
+
+ gamekeepers:0 "Егеря"
+
+ field_hospital:0 "Поддержка егерей"
+ field_hospital_desc:0 "Помогают войскам бороться с тварями и сектантами на териториях."
+ 
+ standard_bearer:0 "Знаменосцы"
+ standard_bearer_desc:0 "Лучшие из наших воинов. Они прекрасно знакомы с линей партии и подобно римским центурионам поддерживают боевой дух и дисциплину в войске."
+
+ rhbz:0 "Поддержка РХБЗ"
+ rhbz_desc:0 "Эксперты по борьбе с химическим биологическим и радиационным заражением."
+
+ infantry:0 "Батальон линейной пехоты"
+ infantry_desc:0 ""
+ 
+ light_infantry:0 "Батальон легкой пехоты"
+ light_infantry_desc:0 ""
+
+ rcbd_troop:0 "Батальон РХБЗ"
+ rcbd_troop_desc:0 ""
+
+ motopechotanagruzovikah:0 "Моторизованный пехотный батальон"
+ motopechotanagruzovikah_desc:0 ""
+
+ motopechotanabtr:0 "Механизированный пехотный батальон"
+ motopechotanabtr_desc:0 ""
+
+ stvol_art:0 "Батальон ствольной артиллерии"
+ stvol_art_desc:0 ""
+
+ towed_art:0 "Батальон буксируемой артиллерии"
+ towed_art_desc:0 ""
+
+ antiair_art:0 "Батальон ПВО"
+ antiair_art_desc:0 ""
+
+ mlrs_art:0 "Батальон РСЗО"
+ mlrs_art_desc:0 ""
+
+ stvol_art_sup:0 "Рота ствольной артиллерии"
+ stvol_art_sup_desc:0 ""
+
+ towed_art_sup:0 "Рота буксируемой артиллерии "
+ towed_art_sup_desc:0 ""
+
+ anti_air_art_sup:0 "Рота ПВО"
+ anti_air_art_sup_desc:0 ""
+
+ mlrs_art_sup:0 "Рота РСЗО"
+ mlrs_art_sup_desc:0 ""
+
+ OPF:0 "Танковый батальон"
+ OPF_desc:0 ""
+
+ specialized_OPF:0 "Специализированный танковый батальон"
+ specialized_OPF_desc:0 ""
+
+ ai_OPF:0 "ИИ танковый батальон"
+ ai_OPF_desc:0 ""

@@ -1,0 +1,35 @@
+﻿l_russian:
+
+ PMD:0 "Заполярный Военный Округ"
+ PMD_DEF:0 "Заполярный Военный Округ"
+ PMD_ADJ:0 "Округ."
+
+#Персонажи
+
+PMD_danila_popadeikin:0 "Данила Попадейкин"
+PMD_fiodr_kuznecov:0 "Федор Кузнецов"
+PMD_roza_shanina:0 "Роза Шанина"
+PMD_nikolai_gulaev:0 "Николай Гулаев"
+
+ #Партии
+
+PMD_technocracy_party:0 "§R[ЛИКВИДИРОВАНО]§!"
+PMD_statesmen_party:0 "Военный Союз - ликвидаторы"
+PMD_chthonism_party:0 "§R[ЛИКВИДИРОВАНО]§!"
+PMD_sacraments_party:0 "§R[ЛИКВИДИРОВАНО]§!"
+PMD_militarists_party:0 "Военный Союз - патриоты"
+PMD_bandits_party:0 "§R[ЛИКВИДИРОВАНО]§!"
+PMD_free_people_party:0 "§R[ЛИКВИДИРОВАНО]§!"
+PMD_humanists_party:0 "Военный Союз - гуманисты"
+
+ #Нацдцхи
+
+ PMD_preparations_for_war:0 "Подготовка к Последней Войне"
+ PMD_hunger:0 "Голод"
+
+#Модификаторы Мнения
+ american_interventionists:0 "Американские интервенты"
+ brother_in_arms:0 "Товарищи по оружию"
+ warlords:0 "Варлорды"
+
+ 

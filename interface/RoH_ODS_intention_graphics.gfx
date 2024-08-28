@@ -1,0 +1,9 @@
+spriteTypes = {
+	progressbartype = {
+		name = "GFX_intention_scale"
+		textureFile1 = "gfx/interface/ODS/ODS_intention/intention_scale_full_bar.dds"
+		textureFile2 = "gfx/interface/ODS/ODS_intention/intention_scale_empty_bar.dds"
+		size = { x = 466 y = 50 }
+		effectFile = "gfx/FX/progress.lua"
+	}
+}

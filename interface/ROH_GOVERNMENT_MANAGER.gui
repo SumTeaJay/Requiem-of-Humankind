@@ -1,0 +1,2898 @@
+#x pos constants for upgrade-buttons
+#there is 5 pos types:
+# left | left_center | center | right_center | right
+@left = 150
+@left_center = 250
+@center = 350
+@right_center = 450
+@right = 550
+#y start position is 
+#y is also constant - next layer is 200px lower
+guiTypes = {
+	containerWindowType = {
+		name = "government_manager_handler" 
+		position = {
+			x = 0
+			y = 383
+		}		   
+		size = {
+			width = 550
+			height = 55
+		}
+		buttonType = { 
+			name = "government_manager_toggle"
+			position = { 
+				x = 285
+				y = 9
+			}
+			quadTextureSprite = "GFX_button_221x34"
+			buttonFont = "3270_20_outline"
+			format = center
+			text = "government_manager_toggle_text"
+			clicksound = click_close
+		}
+		buttonType = { 
+			name = "laws_toggle"
+			position = { 
+				x = 40
+				y = 9
+			}
+			quadTextureSprite = "GFX_button_221x34"
+			buttonFont = "3270_20_outline"
+			format = center
+			text = "laws_toggle_text"
+			clicksound = click_close
+		}		
+	}
+    containerWindowType = {
+        name = "government_manager_container" 
+        position = { 
+			x = 0 
+			y = 424 
+		}		   
+		size = { 
+			width = 550 
+			height = 581 
+		}
+		background = {
+			name = "background"	
+			spriteType = "GFX_tiled_window"
+		}
+		instantTextBoxType = {
+			name = "reform_points_text"
+			position = { 
+				x = 80 
+				y = 20 
+			}
+			font = "3270_20_outline"
+			text = "reform_points_balance"
+			format = center
+			maxWidth = 400
+			maxHeight = 20
+			pdx_tooltip = "reform_points_growth_tt"
+			pdx_tooltip_delayed = "reform_points_desc_tt"
+		}
+		instantTextBoxType = {
+			name = "choice_advise"
+			orientation = LOWER_LEFT
+			position = { 
+				x = 25 
+				y = -69 
+			}
+			font = "3270_22_outline"
+			text = "choice_advise_text"
+			format = center
+			maxWidth = 500
+			maxHeight = 44
+		}	
+		iconType = {
+			name = "l44ya1"
+			position = { 
+				x = 155 
+				y = 120 
+			}
+			quadTextureSprite = "GFX_vzaimoiskuchenieX"
+		}
+		containerWindowType = {
+			name = "samoylov_system_toggle_container"
+			position = {
+				x = 125
+				y = 80
+			}
+			buttonType = { 
+				name = "BUTTON_Open_okno_civil_system"
+				quadTextureSprite = "Samoylov_on"
+				clicksound = click_close
+			}
+			instantTextboxType = {
+				name = "samoylov_system_text"
+				position = {
+					x = 3
+					y = 55
+				}
+				font = "3270_18_outline"
+				format = center
+				text = "smoilov_system_title"
+				maxWidth = 94
+				maxHeight = 50
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "menshikov_system_toggle_container"
+			position = {
+				x = 325 
+				y = 80 
+			}
+			buttonType = { 
+				name = "BUTTON_Open_okno_military_system"
+				quadTextureSprite = "Menshikov_on"
+				clicksound = click_close
+			}
+			instantTextboxType = {
+				name = "menshikov_system_text"
+				position = { 
+					x = 3 
+					y = 55 
+				}
+				font = "3270_18_outline"
+				format = center
+				text = "menshikov_system_title"
+				maxWidth = 94
+				maxHeight = 50
+				fixedsize = yes
+				alwaystransparent = yes
+			}
+		}
+		containerWindowType = {
+			name = "naumov_system_toggle_container"
+			position = { 
+				x = 225
+				y = 253 
+			}
+			buttonType = { 
+				name = "BUTTON_Open_okno_ststegos_system"
+				quadTextureSprite = "Naumov_on" 
+				clicksound = click_close
+			}
+			instantTextboxType = {
+				name = "military_sfera_text"
+				position = { 
+					x = 3 
+					y = 55 
+				}
+				font = "3270_18_outline"
+				format = center
+				text = "naumov_system_title"
+				maxWidth = 94
+				maxHeight = 50
+				fixedsize = yes
+				alwaystransparent = yes
+			}	
+		}  
+	}
+	containerWindowType = {
+		name = "menshikov_system_outer_handler"
+		position = { 
+			x = 543 
+			y = 0
+		}
+		containerWindowType = {
+			name = "menshikov_system_header"
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}
+			size = { 
+				width = 800
+				height = 80
+			}
+			instantTextboxType = {
+				name = "menshikov_system_tree_header"
+				position = { 
+					x = 190 
+					y = 16 
+				}
+				font = "3270_36_outline"
+				format = center
+				text = "menshikov_system"
+				maxWidth = 550
+				maxHeight = 50
+				fixedsize = yes
+			}
+			buttonType = { 
+				name = "select_model_button"
+				position = { 
+					x = 15 
+					y = 16 
+				}
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonFont = "3270_28_outline"
+				text = "select_model_text"
+				format = center   
+				clicksound = click_close
+				pdx_tooltip_delayed = "select_model_tt"
+			}
+			buttonType = {
+				name = "close_button"
+				position = { 
+					x = -51 
+					y = 18
+				}
+				quadTextureSprite = "GFX_closebutton"
+				buttonFont = "3270_16_outline"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		}
+		containerWindowType = {
+			name = "menshikov_system_inner_handler"
+			position = { 
+				x = 0
+				y = 50
+			}
+			size = { 
+				width = 800
+				height = 955
+			}
+			margin = {
+				top = 15
+				bottom = 15
+			}
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}
+			verticalScrollbar = "right_vertical_slider"
+			containerWindowType = {
+				name = "menshikov_system_tree"
+				size = { 
+					width = 800 
+					height = 1650 
+				}
+				background = {
+					name = "background"	
+					spriteType = "Menshikov_Path"
+					position = { x = 199 y = 98 }
+				}				
+				#TO DO (background connections)
+				#GFX_liniagorizontalLLLLLLL
+				#GFX_liniavertikal
+				#GFX_vzaimoiskuchenie
+				#GFX_fonovayaiconkamenshikov
+				containerWindowType = {
+					name = "materials_science_container"
+					position = { 
+						x = @left_center
+						y = 50
+					}
+					iconType = {
+						name = "materials_science_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = {
+						name = "materials_science_button"
+						quadTextureSprite = "Materialovedenie"
+						pdx_tooltip = "materials_science_tt"
+						pdx_tooltip_delayed = "materials_science_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "materials_science_text"
+						position = {
+							x = 3
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "materials_science_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "dense_layout_container"
+					position = { 
+						x = @right_center
+						y = 50 
+					}
+					iconType = {
+						name = "dense_layout_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "dense_layout_button"
+						quadTextureSprite = "Plotnaya_komponovka"
+						pdx_tooltip = "dense_layout_tt"
+						pdx_tooltip_delayed = "dense_layout_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "dense_layout_text"
+						position = {
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "dense_layout_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "lower_streams_container"
+					position = { 
+						x = @left_center
+						y = 160 
+					}
+					iconType = {
+						name = "lower_streams_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "lower_streams_button"
+						quadTextureSprite = "Niskhodyaschie_potoki"
+						pdx_tooltip = "lower_streams_tt"
+						pdx_tooltip_delayed = "lower_streams_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "lower_streams_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "lower_streams_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "upper_streams_container"
+					position = { 
+						x = @right_center
+						y = 160 
+					}
+					iconType = {
+						name = "upper_streams_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "upper_streams_button"
+						quadTextureSprite = "Voskhodyaschie_potoki"
+						pdx_tooltip = "upper_streams_tt"
+						pdx_tooltip_delayed = "upper_streams_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "upper_streams_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "upper_streams_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "our_future_container"
+					position = { 
+						x = @center
+						y = 350 
+					}
+					iconType = {
+						name = "our_future_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "our_future_button"
+						quadTextureSprite = "Nashe_buduschee"
+						pdx_tooltip = "our_future_tt"
+						pdx_tooltip_delayed = "our_future_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "our_future_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "our_future_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "vocational_technical_schools_container"
+					position = { 
+						x = @left_center
+						y = 480 
+					}
+					iconType = {
+						name = "vocational_technical_schools_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "vocational_technical_schools_button"
+						quadTextureSprite = "ProfTekhUchilischa"
+						pdx_tooltip = "vocational_technical_schools_tt"
+						pdx_tooltip_delayed = "vocational_technical_schools_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "vocational_technical_schools_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "vocational_technical_schools_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "working_faculties_container"
+					position = {
+						x = @right_center
+						y = 480 
+					}
+					iconType = {
+						name = "working_faculties_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "working_faculties_button"
+						quadTextureSprite = "RabFakultety"
+						pdx_tooltip = "working_faculties_tt"
+						pdx_tooltip_delayed = "working_faculties_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "working_faculties_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "working_faculties_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "labor_veterans_container"
+					position = { 
+						x = @left_center
+						y = 620 
+					}
+					iconType = {
+						name = "labor_veterans_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "labor_veterans_button"
+						quadTextureSprite = "Veterany_Truda"
+						pdx_tooltip = "labor_veterans_tt"
+						pdx_tooltip_delayed = "labor_veterans_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "labor_veterans_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "labor_veterans_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "labor_heros_container"
+					position = { 
+						x = @right_center
+						y = 620 
+					}
+					iconType = {
+						name = "labor_heros_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "labor_heros_button"
+						quadTextureSprite = "Geroi_Truda"
+						pdx_tooltip = "labor_heros_tt"
+						pdx_tooltip_delayed = "labor_heros_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "labor_heros_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "labor_heros_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "industrial_cooperation_container"
+					position = { 
+						x = @center 
+						y = 730 
+					}
+					iconType = {
+						name = "industrial_cooperation_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "industrial_cooperation_button"
+						quadTextureSprite = "Kooperatsia_industrii"
+						pdx_tooltip = "industrial_cooperation_tt"
+						pdx_tooltip_delayed = "industrial_cooperation_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "industrial_cooperation_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "industrial_cooperation_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "constructed_for_life_container"
+					position = { 
+						x = @left
+						y = 850 
+					}
+					iconType = {
+						name = "constructed_for_life_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "constructed_for_life_button"
+						quadTextureSprite = "Razrabotano_dlya_zhizni"
+						pdx_tooltip = "constructed_for_life_tt"
+						pdx_tooltip_delayed = "constructed_for_life_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "constructed_for_life_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "constructed_for_life_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "love_thy_neighbour_container"
+					position = { 
+						x = @center 
+						y = 850 
+					}
+					iconType = {
+						name = "love_thy_neighbour_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "love_thy_neighbour_button"
+						quadTextureSprite = "Vozlyubi_blizhnego_svoego"
+						pdx_tooltip = "love_thy_neighbour_tt"
+						pdx_tooltip_delayed = "love_thy_neighbour_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "love_thy_neighbour_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "love_thy_neighbour_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "local_wing_container"
+					position = { 
+						x = @right
+						y = 850 
+					}
+					iconType = {
+						name = "local_wing_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "local_wing_button"
+						quadTextureSprite = "Mestnoe_krylo"
+						pdx_tooltip = "local_wing_tt"
+						pdx_tooltip_delayed = "local_wing_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "local_wing_text"
+						position = { 
+							x = 3
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "local_wing_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "strict_regulations_container"
+					position = { 
+						x = @left_center 
+						y = 960 
+					}
+					iconType = {
+						name = "strict_regulations_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "strict_regulations_button"
+						quadTextureSprite = "Strogiy_reglament"
+						pdx_tooltip = "strict_regulations_tt"
+						pdx_tooltip_delayed = "strict_regulations_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "strict_regulations_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "strict_regulations_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "flexible_regulations_container"
+					position = { 
+						x = @right_center
+						y = 960 
+					}
+					iconType = {
+						name = "flexible_regulations_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "flexible_regulations_button"
+						quadTextureSprite = "Gibkiy_reglament"
+						pdx_tooltip = "flexible_regulations_tt"
+						pdx_tooltip_delayed = "flexible_regulations_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "flexible_regulations_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "flexible_regulations_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "gardening_partnerships_container"
+					position = { 
+						x = @left_center
+						y = 1070 
+					}
+					iconType = {
+						name = "gardening_partnerships_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "gardening_partnerships_button"
+						quadTextureSprite = "Sadovodcheskie_Tovarischestva"
+						pdx_tooltip = "gardening_partnerships_tt"
+						pdx_tooltip_delayed = "gardening_partnerships_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "gardening_partnerships_text"
+						position = { 
+							x = -10 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "gardening_partnerships_idea"
+						maxWidth = 120
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "rural_units_container"
+					position = { 
+						x = @right_center
+						y = 1070 
+					}
+					iconType = {
+						name = "rural_units_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "rural_units_button"
+						quadTextureSprite = "SelOtryady"
+						pdx_tooltip = "rural_units_tt"
+						pdx_tooltip_delayed = "rural_units_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "rural_units_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "rural_units_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "adversarial_law_container"
+					position = { 
+						x = @left_center
+						y = 1180 
+					}
+					iconType = {
+						name = "adversarial_law_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "adversarial_law_button"
+						quadTextureSprite = "Sostyazatelnoe_pravo"
+						pdx_tooltip = "adversarial_law_tt"
+						pdx_tooltip_delayed = "adversarial_law_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "adversarial_law_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "adversarial_law_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "fair_competition_codex_container"
+					position = { 
+						x = @right_center
+						y = 1180 
+					}
+					iconType = {
+						name = "fair_competition_codex_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "fair_competition_codex_button"
+						quadTextureSprite = "Kodex_chestnoy_konkurentsii"
+						pdx_tooltip = "fair_competition_codex_tt"
+						pdx_tooltip_delayed = "fair_competition_codex_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "fair_competition_codex_text"
+						position = { 
+							x = -10 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "fair_competition_codex_idea"
+						maxWidth = 120
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "outsourcing_container"
+					position = { 
+						x = @center
+						y = 1290 
+					}
+					iconType = {
+						name = "outsourcing_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "outsourcing_button"
+						quadTextureSprite = "Autsorsing"
+						pdx_tooltip = "outsourcing_tt"
+						pdx_tooltip_delayed = "outsourcing_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "outsourcing_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						vertical_alignment = center
+						text = "outsourcing_idea"
+						maxWidth = 94
+						maxHeight = 36
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "trade_initiative_container"
+					position = { 
+						x = @left
+						y = 1400 
+					}
+					iconType = {
+						name = "trade_initiative_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "trade_initiative_button"
+						quadTextureSprite = "Torgovaya_initsiativa"
+						pdx_tooltip = "trade_initiative_tt"
+						pdx_tooltip_delayed = "trade_initiative_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "trade_initiative_text"
+						position = { 
+							x = 3
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "trade_initiative_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+				}
+				containerWindowType = {
+					name = "GOST_container"
+					position = { 
+						x = @center 
+						y = 1400 
+					}
+					iconType = {
+						name = "GOST_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "GOST_button"
+						quadTextureSprite = "GOST"
+						pdx_tooltip = "GOST_tt"
+						pdx_tooltip_delayed = "GOST_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "GOST_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						vertical_alignment = center
+						text = "GOST_idea"
+						maxWidth = 94
+						maxHeight = 36
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "fullstack_consumtion_container"
+					position = { 
+						x = @right
+						y = 1400 
+					}
+					iconType = {
+						name = "fullstack_consumtion_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "fullstack_consumtion_button"	
+						quadTextureSprite = "Vsyo_v_oborot"
+						pdx_tooltip = "fullstack_consumtion_tt"
+						pdx_tooltip_delayed = "fullstack_consumtion_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "fullstack_consumtion_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						vertical_alignment = center
+						text = "fullstack_consumtion_idea"
+						maxWidth = 94
+						maxHeight = 36
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+				}
+				containerWindowType = {
+					name = "humanism_stronghold_container"
+					position = { 
+						x = @center
+						y = 1510 
+					}
+					iconType = {
+						name = "humanism_stronghold_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "humanism_stronghold_button"
+						quadTextureSprite = "Oplot_gumanizma"
+						pdx_tooltip = "humanism_stronghold_tt"
+						pdx_tooltip_delayed = "humanism_stronghold_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "humanism_stronghold_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "humanism_stronghold_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+			}
+		}
+	}
+	containerWindowType = {
+		name = "smoilov_system_outer_handler"
+		position = { 
+			x = 543 
+			y = 0
+		}
+		containerWindowType = {
+			name = "smoilov_system_header"
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}
+			size = { 
+				width = 800
+				height = 80
+			}
+			instantTextboxType = {
+				name = "smoilov_system_tree_header"
+				position = { 
+					x = 190 
+					y = 16
+				}
+				font = "3270_36_outline"
+				format = center
+				text = "smoilov_system"
+				maxWidth = 550
+				maxHeight = 50
+				fixedsize = yes
+			}
+			buttonType = { 
+				name = "select_model_button"
+				position = { 
+					x = 15 
+					y = 16 
+				}
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonFont = "3270_28_outline"
+				text = "select_model_text"
+				format = center   
+				clicksound = click_close
+				pdx_tooltip_delayed = "select_model_tt"
+			}
+			buttonType = {
+				name = "close_button"
+				position = { 
+					x = -51 
+					y = 18
+				}
+				quadTextureSprite = "GFX_closebutton"
+				buttonFont = "3270_16_outline"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		}
+		containerWindowType = {
+			name = "smoilov_system_inner_handler"
+			position = { 
+				x = 0
+				y = 50
+			}
+			size = { 
+				width = 800
+				height = 955
+			}
+			margin = {
+				top = 15
+				bottom = 15
+			}
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}
+			verticalScrollbar = "right_vertical_slider"
+			containerWindowType = {
+				name = "smoilov_system_tree"
+				size = { 
+					width = 800 
+					height = 1810 
+				}
+				background = {
+					name = "background"	
+					spriteType = "Samoylov_Path"
+					position = { x = 199 y = 119 }
+				}
+				#GFX_fonovayaiconkasamoilov
+				#GFX_fonovayaiconkasamoilovdvav
+				containerWindowType = {
+					name = "foundation_of_the_past_container"
+					position = { 
+						x = @center 
+						y = 50 
+					}
+					iconType = {
+						name = "foundation_of_the_past_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "foundation_of_the_past_button"
+						quadTextureSprite = "Fundament_proshlogo"
+						pdx_tooltip = "foundation_of_the_past_tt"
+						pdx_tooltip_delayed = "foundation_of_the_past_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "foundation_of_the_past_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "foundation_of_the_past_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "behind_the_scenes_container"
+					position = { 
+						x = @left 
+						y = 180 
+					}
+					iconType = {
+						name = "behind_the_scenes_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "behind_the_scenes_button"
+						quadTextureSprite = "Za_semyu_pechatyami"  
+						pdx_tooltip = "behind_the_scenes_tt"
+						pdx_tooltip_delayed = "behind_the_scenes_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "behind_the_scenes_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "behind_the_scenes_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+				}
+				containerWindowType = {
+					name = "without_any_hassle_container"
+					position = { 
+						x = @center 
+						y = 180 
+					}
+					iconType = {
+						name = "without_any_hassle_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "without_any_hassle_button"
+						quadTextureSprite = "Bez_lishnikh_khlopot" 
+						pdx_tooltip = "without_any_hassle_tt"
+						pdx_tooltip_delayed = "without_any_hassle_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "without_any_hassle_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "without_any_hassle_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "our_home_is_our_fortress_container"
+					position = { 
+						x = @right
+						y = 180 
+					}
+					iconType = {
+						name = "our_home_is_our_fortress_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "our_home_is_our_fortress_button"
+						quadTextureSprite = "Nash_dom_-_nasha_krepost"  
+						pdx_tooltip = "our_home_is_our_fortress_tt"
+						pdx_tooltip_delayed = "our_home_is_our_fortress_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "our_home_is_our_fortress_text"
+						position = { 
+							x = -5 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "our_home_is_our_fortress_idea"
+						maxWidth = 110
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "rural_militia_container"
+					position = { 
+						x = @left_center 
+						y = 330 
+					}
+					iconType = {
+						name = "rural_militia_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "rural_militia_button"
+						quadTextureSprite = "Selskoe_opolchenie"  
+						pdx_tooltip = "rural_militia_tt"
+						pdx_tooltip_delayed = "rural_militia_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "rural_militia_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "rural_militia_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "industrial_militia_container"
+					position = { 
+						x = @right_center 
+						y = 330 
+					}
+					iconType = {
+						name = "industrial_militia_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "industrial_militia_button"
+						quadTextureSprite = "Zavodskoe_opolchenie"
+						pdx_tooltip = "industrial_militia_tt"
+						pdx_tooltip_delayed = "industrial_militia_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "industrial_militia_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "industrial_militia_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "land_river_container"
+					position = { 
+						x = @right_center 
+						y = 480 
+					}
+					iconType = {
+						name = "land_river_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "land_river_button"
+						quadTextureSprite = "Rezka_zemli"  
+						pdx_tooltip = "land_river_tt"
+						pdx_tooltip_delayed = "land_river_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "land_river_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "land_river_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "scraping_down_the_bottom_container"
+					position = { 
+						x = @left_center 
+						y = 480 
+					}
+					iconType = {
+						name = "scraping_down_the_bottom_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "scraping_down_the_bottom_button"
+						quadTextureSprite = "Skrebya_po_susekam" 
+						pdx_tooltip = "scraping_down_the_bottom_tt"
+						pdx_tooltip_delayed = "scraping_down_the_bottom_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "scraping_down_the_bottom_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "scraping_down_the_bottom_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "in_a_blink_container"
+					position = { 
+						x = @center
+						y = 630 
+					}
+					iconType = {
+						name = "in_a_blink_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "in_a_blink_button"
+						quadTextureSprite = "V_odin_mig"
+						pdx_tooltip = "in_a_blink_tt"
+						pdx_tooltip_delayed = "in_a_blink_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "in_a_blink_text"
+						position = { 
+							x = 3
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "in_a_blink_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "oprichnina_hand_container"
+					position = { 
+						x = @left_center 
+						y = 780 
+					}
+					iconType = {
+						name = "oprichnina_hand_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "oprichnina_hand_button"
+						quadTextureSprite = "Oprichnaya_dlan" 
+						pdx_tooltip = "oprichnina_hand_tt"
+						pdx_tooltip_delayed = "oprichnina_hand_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "oprichnina_hand_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "oprichnina_hand_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "peripheral_cleansing_container"
+					position = { 
+						x = @right_center 
+						y = 780 
+					}
+					iconType = {
+						name = "peripheral_cleansing_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "peripheral_cleansing_button"
+						quadTextureSprite = "Ochischenie_periferii" 
+						pdx_tooltip = "peripheral_cleansing_tt"
+						pdx_tooltip_delayed = "peripheral_cleansing_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "peripheral_cleansing_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "peripheral_cleansing_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "destroy_anomalies_container"
+					position = { 
+						x = @center 
+						y = 930 
+					}
+					iconType = {
+						name = "destroy_anomalies_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "destroy_anomalies_button"
+						quadTextureSprite = "Anomalii_-_k_chyortu" 
+						pdx_tooltip = "destroy_anomalies_tt"
+						pdx_tooltip_delayed = "destroy_anomalies_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "destroy_anomalies_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "destroy_anomalies_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "fighting_for_families_container"
+					position = { 
+						x = @left
+						y = 1080 
+					}
+					iconType = {
+						name = "fighting_for_families_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "fighting_for_families_button"
+						quadTextureSprite = "Bitva_za_semyu"
+						pdx_tooltip = "fighting_for_families_tt"
+						pdx_tooltip_delayed = "fighting_for_families_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "fighting_for_families_text"
+						position = { 
+							x = 3 
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "fighting_for_families_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+				}
+				containerWindowType = {
+					name = "military_loans_container"
+					position = { 
+						x = @center
+						y = 1080 
+					}
+					iconType = {
+						name = "military_loans_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "military_loans_button"		
+						quadTextureSprite = "Voennye_zaymy"  
+						pdx_tooltip = "military_loans_tt"
+						pdx_tooltip_delayed = "military_loans_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "military_loans_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "military_loans_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "from_stones_and_sticks_container"
+					position = { 
+						x = @right 
+						y = 1080
+					}
+					iconType = {
+						name = "from_stones_and_sticks_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "from_stones_and_sticks_button"
+						quadTextureSprite = "Iz_kamney_i_palok"
+						pdx_tooltip = "from_stones_and_sticks_tt"
+						pdx_tooltip_delayed = "from_stones_and_sticks_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "from_stones_and_sticks_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "from_stones_and_sticks_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "autonomius_bataries_container"
+					position = { 
+						x = @left_center 
+						y = 1230 
+					}
+					iconType = {
+						name = "autonomius_bataries_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "autonomius_bataries_button"
+						quadTextureSprite = "Avtonomnye_batarei"
+						pdx_tooltip = "autonomius_bataries_tt"
+						pdx_tooltip_delayed = "autonomius_bataries_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "autonomius_bataries_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "autonomius_bataries_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "controlled_bataries_container"
+					position = { 
+						x = @right_center 
+						y = 1230
+					}
+					iconType = {
+						name = "controlled_bataries_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "controlled_bataries_button"
+						quadTextureSprite = "Podkontrolnye_batarei"
+						pdx_tooltip = "controlled_bataries_tt"
+						pdx_tooltip_delayed = "controlled_bataries_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "controlled_bataries_text"
+						position = { 
+							x = 0
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "controlled_bataries_idea"
+						maxWidth = 100
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "firstborn_of_sparta_container"
+					position = { 
+						x = @center 
+						y = 1380 
+					}
+					iconType = {
+						name = "firstborn_of_sparta_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "firstborn_of_sparta_button"
+						quadTextureSprite = "Perventsy_Sparty"
+						pdx_tooltip = "firstborn_of_sparta_tt"
+						pdx_tooltip_delayed = "firstborn_of_sparta_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "firstborn_of_sparta_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "firstborn_of_sparta_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "nerves_to_the_limit_container"
+					position = { 
+						x = @left_center 
+						y = 1530 
+					}
+					iconType = {
+						name = "nerves_to_the_limit_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "nerves_to_the_limit_button"
+						quadTextureSprite = "Nervy_na_predele"
+						pdx_tooltip = "nerves_to_the_limit_tt"
+						pdx_tooltip_delayed = "nerves_to_the_limit_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "nerves_to_the_limit_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "nerves_to_the_limit_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "steel_grip_container"
+					position = { 
+						x = @right_center 
+						y = 1530 
+					}
+					iconType = {
+						name = "steel_grip_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "steel_grip_button"
+						quadTextureSprite = "Stalnaya_khvatka"
+						pdx_tooltip = "steel_grip_tt"
+						pdx_tooltip_delayed = "steel_grip_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "steel_grip_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "steel_grip_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "sweat_and_blood_container"
+					position = { 
+						x = @center 
+						y = 1680 
+					}
+					iconType = {
+						name = "sweat_and_blood_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "sweat_and_blood_button"
+						quadTextureSprite = "Potom_i_krovyu"  
+						pdx_tooltip = "sweat_and_blood_tt"
+						pdx_tooltip_delayed = "sweat_and_blood_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "samoilov21_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "sweat_and_blood_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+			}
+		}
+	}
+	containerWindowType = {
+		name = "naumov_system_outer_handler"
+		position = { 
+			x = 543 
+			y = 0
+		}
+		containerWindowType = {
+			name = "naumov_system_header"
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}
+			size = { 
+				width = 800
+				height = 80
+			}
+			instantTextboxType = {
+				name = "naumov_system_tree_header"
+				position = { 
+					x = 190 
+					y = 16 
+				}
+				font = "3270_36_outline"
+				format = center
+				text = "naumov_system"
+				maxWidth = 550
+				maxHeight = 50
+				fixedsize = yes
+			}
+			buttonType = { 
+				name = "select_model_button"
+				position = { 
+					x = 15 
+					y = 16
+				}
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonFont = "3270_28_outline"
+				text = "select_model_text"
+				format = center   
+				clicksound = click_close
+				pdx_tooltip_delayed = "select_model_tt"
+			}
+			buttonType = {
+				name = "close_button"
+				position = { 
+					x = -51 
+					y = 18
+				}
+				quadTextureSprite = "GFX_closebutton"
+				buttonFont = "3270_16_outline"
+				shortcut = "ESCAPE"
+				Orientation = "UPPER_RIGHT"
+				clicksound = click_close
+				pdx_tooltip = "CLOSE"
+			}
+		}
+		containerWindowType = {
+			name = "naumov_system_inner_handler"
+			position = { 
+				x = 0
+				y = 50
+			}
+			size = { 
+				width = 800
+				height = 955
+			}
+			margin = {
+				top = 15
+				bottom = 15
+			}
+			background = {
+				name = "background"	
+				spriteType = "GFX_tiled_window"
+			}				
+			verticalScrollbar = "right_vertical_slider"
+			containerWindowType = {
+				name = "naumov_system_tree"
+				size = { 
+					width = 800 
+					height = 1810 
+				}
+				background = {
+					name = "background"	
+					spriteType = "Naumov_Path"
+					position = { x = 102 y = 116 }
+				}	
+				#GFX_fonovayaiconkanaumov
+				#GFX_fonovayaiconkanaumovdva
+				containerWindowType = {
+					name = "common_duty_common_law_container"
+					position = { 
+						x = @center 
+						y = 50 
+					}
+					iconType = {
+						name = "common_duty_common_law_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "common_duty_common_law_button"
+						quadTextureSprite = "Obschiy_dolg_-_obschee_pravo"
+						pdx_tooltip = "common_duty_common_law_tt"
+						pdx_tooltip_delayed = "common_duty_common_law_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "common_duty_common_law_text"
+						position = { 
+							x = 0 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "common_duty_common_law_idea"
+						maxWidth = 100
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "existence_essence_container"
+					position = { 
+						x = @left_center 
+						y = 180 
+					}
+					iconType = {
+						name = "existence_essence_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "existence_essence_button"
+						quadTextureSprite = "Sut_bytia"  
+						pdx_tooltip = "existence_essence_tt"
+						pdx_tooltip_delayed = "common_duty_common_law_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "existence_essence_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						vertical_alignment = center
+						text = "existence_essence_idea"
+						maxWidth = 94
+						maxHeight = 36
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "existence_horror_container"
+					position = { 
+						x = @right_center 
+						y = 180 
+					}
+					iconType = {
+						name = "existence_horror_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = {
+						name = "existence_horror_button"
+						quadTextureSprite = "Uzhas_bytia"  
+						pdx_tooltip = "existence_horror_tt"
+						pdx_tooltip_delayed = "existence_horror_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "existence_horror_text"
+						position = { 
+							x = 3 
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						vertical_alignment = center
+						text = "existence_horror_idea"
+						maxWidth = 94
+						maxHeight = 36
+						fixedsize = yes
+						alwaystransparent = yes
+					}			
+				}
+				containerWindowType = {
+					name = "caring_eye_container"
+					position = { 
+						x = 50 
+						y = 330 
+					}
+					iconType = {
+						name = "caring_eye_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "caring_eye_button"
+						quadTextureSprite = "Zabotlivoe_Oko" 
+						pdx_tooltip = "caring_eye_tt"
+						pdx_tooltip_delayed = "caring_eye_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "caring_eye_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "caring_eye_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "interesting_observation_container"
+					position = { 
+						x = @left_center 
+						y = 330 
+					}
+					iconType = {
+						name = "interesting_observation_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "interesting_observation_button"
+						quadTextureSprite = "Zanimatelnoe_nablyudeni"
+						pdx_tooltip = "interesting_observation_tt"
+						pdx_tooltip_delayed = "interesting_observation_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "interesting_observation_text"
+						position = { 
+							x = -10 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "interesting_observation_idea"
+						maxWidth = 120
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "technological_revolution_container"
+					position = { 
+						x = @right_center 
+						y = 330 
+					}
+					iconType = {
+						name = "technological_revolution_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "technological_revolution_button"
+						quadTextureSprite = "Tekhnicheskaya_revolyutsia"
+						pdx_tooltip = "technological_revolution_tt"
+						pdx_tooltip_delayed = "technological_revolution_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "technological_revolution_text"
+						position = { 
+							x = 3 
+							y = 55
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "technological_revolution_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "cultural_revolution_container"
+					position = { 
+						x = 650 
+						y = 330 
+					}
+					iconType = {
+						name = "cultural_revolution_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "cultural_revolution_button"
+						quadTextureSprite = "Kulturnaya_revolyutsia"  
+						pdx_tooltip = "cultural_revolution_tt"
+						pdx_tooltip_delayed = "cultural_revolution_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "cultural_revolution_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "cultural_revolution_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "assured_survival_container"
+					position = { 
+						x = @left 
+						y = 480 
+					}
+					iconType = {
+						name = "assured_survival_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "assured_survival_button"
+						quadTextureSprite = "Vyzhivanie_obespecheno"
+						pdx_tooltip = "assured_survival_tt"
+						pdx_tooltip_delayed = "assured_survival_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "assured_survival_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "assured_survival_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "proportionate_fee_container"
+					position = { 
+						x = @right 
+						y = 480 
+					}
+					iconType = {
+						name = "proportionate_fee_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "proportionate_fee_button"
+						quadTextureSprite = "Sorazmernaya_plata"
+						pdx_tooltip = "proportionate_fee_tt"
+						pdx_tooltip_delayed = "proportionate_fee_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "proportionate_fee_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "proportionate_fee_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "flawless_soldier_container"
+					position = { 
+						x = @center 
+						y = 630 
+					}
+					iconType = {
+						name = "flawless_soldier_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "flawless_soldier_button"
+						quadTextureSprite = "Soldat_bez_upreka" 
+						pdx_tooltip = "flawless_soldier_tt"
+						pdx_tooltip_delayed = "flawless_soldier_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "flawless_soldier_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "flawless_soldier_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "all_describing_formula_container"
+					position = { 
+						x = @left_center 
+						y = 780 
+					}
+					iconType = {
+						name = "all_describing_formula_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "all_describing_formula_button"
+						quadTextureSprite = "Formuly_dlya_vsego"
+						pdx_tooltip = "all_describing_formula_tt"
+						pdx_tooltip_delayed = "all_describing_formula_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "all_describing_formula_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "all_describing_formula_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "primary_broth_container"
+					position = { 
+						x = @right_center 
+						y = 780 
+					}
+					iconType = {
+						name = "primary_broth_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "primary_broth_button"
+						quadTextureSprite = "Pervichny_bulion"
+						pdx_tooltip = "primary_broth_tt"
+						pdx_tooltip_delayed = "primary_broth_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "primary_broth_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "primary_broth_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "flowers_of_life_container"
+					position = { 
+						x = @center 
+						y = 930 
+					}
+					iconType = {
+						name = "flowers_of_life_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "flowers_of_life_button"
+						quadTextureSprite = "Tsvety_zhizni" 
+						pdx_tooltip = "flowers_of_life_tt"
+						pdx_tooltip_delayed = "flowers_of_life_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "flowers_of_life_text"
+						position = { 
+							x = 0 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "flowers_of_life_idea"
+						maxWidth = 100
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}
+				}
+				containerWindowType = {
+					name = "their_life_plans_container"
+					position = { 
+						x = @center
+						y = 1080 
+					}
+					iconType = {
+						name = "their_life_plans_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "their_life_plans_button"
+						quadTextureSprite = "Plany_Ikh_Zhizni" 
+						pdx_tooltip = "their_life_plans_tt"
+						pdx_tooltip_delayed = "their_life_plans_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "their_life_plans_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "their_life_plans_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "cast_aside_doubts_container"
+					position = { 
+						x = @right_center 
+						y = 1230 
+					}
+					iconType = {
+						name = "cast_aside_doubts_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "cast_aside_doubts_button"
+						quadTextureSprite = "Otrinte_somnenia" 
+						pdx_tooltip = "cast_aside_doubts_tt"
+						pdx_tooltip_delayed = "cast_aside_doubts_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "cast_aside_doubts_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "cast_aside_doubts_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "potential_realization_container"
+					position = { 
+						x = @left_center 
+						y = 1230 
+					}
+					iconType = {
+						name = "potential_realization_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "potential_realization_button"
+						quadTextureSprite = "Realizatsia_potentsiala" 
+						pdx_tooltip = "potential_realization_tt"
+						pdx_tooltip_delayed = "potential_realization_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "potential_realization_text"
+						position = { 
+							x = 3
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "potential_realization_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "order_in_mind_container"
+					position = { 
+						x = @right_center 
+						y = 1380 
+					}
+					iconType = {
+						name = "order_in_mind_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "order_in_mind_button"
+						quadTextureSprite = "Poryadok_v_myslyakh" 
+						pdx_tooltip = "order_in_mind_tt"
+						pdx_tooltip_delayed = "order_in_mind_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "order_in_mind_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "order_in_mind_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "unity_by_blood_container"
+					position = { 
+						x = @left_center
+						y = 1380 
+					}
+					iconType = {
+						name = "unity_by_blood_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "unity_by_blood_button"
+						quadTextureSprite = "Edinstvo_krovyu" 
+						pdx_tooltip = "unity_by_blood_tt"
+						pdx_tooltip_delayed = "unity_by_blood_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "unity_by_blood_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "unity_by_blood_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "man_and_consciousness_container"
+					position = { 
+						x = @left_center 
+						y = 1530 
+					}
+					iconType = {
+						name = "man_and_consciousness_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "man_and_consciousness_button"
+						quadTextureSprite = "Chelovek-Soznanie" 
+						pdx_tooltip = "man_and_consciousness_tt"
+						pdx_tooltip_delayed = "man_and_consciousness_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "man_and_consciousness_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "man_and_consciousness_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+				containerWindowType = {
+					name = "cognitive_warfare_container"
+					position = { 
+						x = @right_center 
+						y = 1530 
+					}
+					iconType = {
+						name = "cognitive_warfare_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "cognitive_warfare_button"
+						quadTextureSprite = "Kognitivnaya_voyna" 
+						pdx_tooltip = "cognitive_warfare_tt"
+						pdx_tooltip_delayed = "cognitive_warfare_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "cognitive_warfare_text"
+						position = { 
+							x = 3 
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "cognitive_warfare_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}		
+				}
+				containerWindowType = {
+					name = "body_limits_container"
+					position = { 
+						x = @center 
+						y = 1680 
+					}
+					iconType = {
+						name = "body_limits_overlay"
+						position = { 
+							x = -50
+							y = -50
+						}
+						spriteType = "GFX_govenrment_upgrade_overlay"
+						scale = 2
+					}
+					buttonType = { 
+						name = "body_limits_button"
+						quadTextureSprite = "Granitsy_tela" 
+						pdx_tooltip = "body_limits_tt"
+						pdx_tooltip_delayed = "body_limits_desc"
+						clicksound = click_close
+					}
+					instantTextboxType = {
+						name = "body_limits_text"
+						position = { 
+							x = 3
+							y = 55 
+						}
+						font = "3270_18_outline"
+						format = center
+						text = "body_limits_idea"
+						maxWidth = 94
+						maxHeight = 50
+						fixedsize = yes
+						alwaystransparent = yes
+					}	
+				}
+			}
+		}
+	}
+}

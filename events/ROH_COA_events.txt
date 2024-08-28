@@ -1,0 +1,19 @@
+add_namespace = COA
+
+country_event = {
+	id = COA.1
+	title = COA.1.t
+	desc = COA.1.d
+    fire_only_once = yes
+	is_triggered_only = yes
+
+	option = {
+	name = COA.1.a
+	add_stability = -0.15
+	add_popularity = {
+		ideology = sacraments
+		popularity = -0.2
+	}
+	add_war_support = -0.2
+	}
+}

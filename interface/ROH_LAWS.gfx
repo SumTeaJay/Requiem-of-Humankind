@@ -1,0 +1,158 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_idea_free_recruting"
+		textureFile = "gfx/interface/ideas/LAWS/free_recruting.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_limited_recruting"
+		textureFile = "gfx/interface/ideas/LAWS/limited_recruting.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_mass_recruting"
+		textureFile = "gfx/interface/ideas/LAWS/mass_recruting.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_total_recruting"
+		textureFile = "gfx/interface/ideas/LAWS/total_recruting.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_admiral_recruting"
+		textureFile = "gfx/interface/ideas/LAWS/admiral_recruting.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_hired_labor"
+		textureFile = "gfx/interface/ideas/LAWS/hired_labor.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_labor_service"
+		textureFile = "gfx/interface/ideas/LAWS/labor_service.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_slaves_labour"
+		textureFile = "gfx/interface/ideas/LAWS/slaves_labour.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_mixed_labour"
+		textureFile = "gfx/interface/ideas/LAWS/mixed_labour.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_automated_labor"
+		textureFile = "gfx/interface/ideas/LAWS/automated_labor.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_classic_faith"
+		textureFile = "gfx/interface/ideas/LAWS/classic_faith.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_cultism"
+		textureFile = "gfx/interface/ideas/LAWS/cultism.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_atheism"
+		textureFile = "gfx/interface/ideas/LAWS/atheism.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_free_faith"
+		textureFile = "gfx/interface/ideas/LAWS/free_faith.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_truthfighters"
+		textureFile = "gfx/interface/ideas/LAWS/truthfighters.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_villiums"
+		textureFile = "gfx/interface/ideas/LAWS/villiums.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_papers"
+		textureFile = "gfx/interface/ideas/LAWS/papers.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_radio"
+		textureFile = "gfx/interface/ideas/LAWS/radio.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_television"
+		textureFile = "gfx/interface/ideas/LAWS/television.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_internet_law"
+		textureFile = "gfx/interface/ideas/LAWS/internet.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_closed_borders"
+		textureFile = "gfx/interface/ideas/LAWS/closed_borders.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_opend_borders"
+		textureFile = "gfx/interface/ideas/LAWS/opend_borders.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_border_control"
+		textureFile = "gfx/interface/ideas/LAWS/border_control.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_checkpoint"
+		textureFile = "gfx/interface/ideas/LAWS/checkpoint.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_migration_selection"
+		textureFile = "gfx/interface/ideas/LAWS/migration_selection.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ignore_distortions"
+		textureFile = "gfx/interface/ideas/LAWS/ignore_distortions.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_restrain_distortions"
+		textureFile = "gfx/interface/ideas/LAWS/restrain_distortions.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_extensive_research_of_distortions"
+		textureFile = "gfx/interface/ideas/LAWS/extensive_research_of_distortions.dds"
+	}	
+    spriteType = {
+		name = "GFX_idea_liquidation_of_distortions"
+		textureFile = "gfx/interface/ideas/LAWS/liquidation_of_distortions.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_limited_research_of_distortions"
+		textureFile = "gfx/interface/ideas/LAWS/limited_research_of_distortions.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_mixed_mode"
+		textureFile = "gfx/interface/ideas/LAWS/mixed_mode.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_long_shift"
+		textureFile = "gfx/interface/ideas/LAWS/long_shift.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_daily_work"
+		textureFile = "gfx/interface/ideas/LAWS/daily_work.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_unstopble_work"
+		textureFile = "gfx/interface/ideas/LAWS/unstopble_work.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_blood_and_sweat"
+		textureFile = "gfx/interface/ideas/LAWS/blood_and_sweat.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_ignore_social"
+		textureFile = "gfx/interface/ideas/LAWS/ignore_social.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_restrain_social"
+		textureFile = "gfx/interface/ideas/LAWS/restrain_social.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_suppression_social"
+		textureFile = "gfx/interface/ideas/LAWS/suppression_social.dds"
+	}
+    spriteType = {
+		name = "GFX_idea_genocide"
+		textureFile = "gfx/interface/ideas/LAWS/genocide.dds"
+	}
+}
