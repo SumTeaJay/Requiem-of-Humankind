@@ -1,0 +1,34 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "roh_akm_mesh"
+		file = "gfx/models/units/ROHAK74.mesh" #roh_akm
+	}
+	
+	pdxmesh = {
+		name = "roh_aks74u_mesh"
+		file = "gfx/models/units/ROH_AKS74U.mesh" #roh_aks74u
+	}	
+	
+	pdxmesh = {
+		name = "roh_ppsh_ak_mesh"
+		file = "gfx/models/units/PPSH-AK.mesh" #roh_ppsh_ak
+	}
+	pdxmesh = {
+		name = "roh_ak74_mesh"
+		file = "gfx/models/units/AK-74M.mesh" #roh_ak74
+	}
+	pdxmesh = {
+		name = "roh_av_mesh"
+		file = "gfx/models/units/AV.mesh" #roh_av
+	}
+	pdxmesh = {
+		name = "roh_avm_mesh"
+		file = "gfx/models/units/AVM.mesh" #roh_avm
+	}
+	pdxmesh = {
+		name = "geo_m16a2_mesh"
+		file = "gfx/models/units/ROH_m16a2.mesh" #geo_m16a2
+	}	
+
+}

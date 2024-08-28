@@ -1,0 +1,10 @@
+entity = {
+	name = "kremlin"
+	pdxmesh = "kremlin_mesh"
+	scale = 2.0
+}
+entity = {
+	name = "silence"
+	pdxmesh = "silence_mesh"
+	scale = 2.0
+}

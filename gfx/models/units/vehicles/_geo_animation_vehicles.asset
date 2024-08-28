@@ -1,0 +1,51 @@
+##based for motorized 
+
+animation = {
+	name = "geo_motorized_frame_attack_animation"
+	file = "geo_motorized_frame_attack.anim" #geo_motorized_frame_both_attack
+}
+
+##bmp1
+
+animation = {
+	name = "geo_bmp1_attack_animation"
+	file = "geo_bmp1_attack.anim"
+}
+
+animation = {
+	name = "geo_bmp1_idle_animation"
+	file = "geo_bmp1_idle.anim"
+}
+
+animation = {
+	name = "geo_bmp1_move_animation"
+	file = "geo_bmp1_move.anim"
+}
+
+##btr80
+
+animation = {
+	name = "geo_btr80_attack_animation"
+	file = "geo_btr80_attack.anim"
+}
+
+animation = {
+	name = "geo_btr80_idle_animation"
+	file = "geo_btr80_idle.anim"
+}
+
+animation = {
+	name = "geo_btr80_move_animation"
+	file = "geo_btr80_move.anim"
+}
+
+##ural-375d
+animation = {
+	name = "generic_motorized_01_idle_animation"
+	file = "generic_motorized_01_idle.anim"
+}
+
+animation = {
+	name = "generic_motorized_01_moving_animation"
+	file = "generic_motorized_01_moving.anim"
+}

@@ -1,0 +1,220 @@
+#generic
+
+#########
+##Калаш##
+#########
+entity = {
+	name = "geo_aks74_left_entity"
+	pdxmesh = "geo_aks74_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "geo_aks74_right_entity"
+	pdxmesh = "geo_aks74_mesh"
+	scale = 1.0
+
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+
+	state = { name = "attack"	animation = "attack"
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+
+	state = {
+	name = "support_attack"	animation = "support_attack"
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+	event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "geo_aks74_long_idle_entity"
+	pdxmesh = "geo_aks74_mesh"
+	scale = 1.0
+}
+
+###AKM
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_akm_right_entity"
+	pdxmesh = "roh_akm_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_akm_long_idle_entity"
+	pdxmesh = "roh_akm_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_akm_left_entity"
+	pdxmesh = "roh_akm_mesh"
+}
+
+###AKS74U
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_aks74u_right_entity"
+	pdxmesh = "roh_aks74u_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_aks74u_long_idle_entity"
+	pdxmesh = "roh_aks74u_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_aks74u_left_entity"
+	pdxmesh = "roh_aks74u_mesh"
+}
+###AK 47 ww2
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_ppsh_ak_right_entity"
+	pdxmesh = "roh_ppsh_ak_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_ppsh_ak_long_idle_entity"
+	pdxmesh = "roh_ppsh_ak_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_ppsh_ak_left_entity"
+	pdxmesh = "roh_ppsh_ak_mesh"
+}
+###AK 47 pre ww3
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_ak74_right_entity"
+	pdxmesh = "roh_ak74_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_ak74_long_idle_entity"
+	pdxmesh = "roh_ak74_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_ak74_left_entity"
+	pdxmesh = "roh_ak74_mesh"
+}
+###AV
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_av_right_entity"
+	pdxmesh = "roh_av_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_av_long_idle_entity"
+	pdxmesh = "roh_av_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_av_left_entity"
+	pdxmesh = "roh_av_mesh"
+}
+###AVM
+entity = {
+	clone = "geo_aks74_right_entity"
+	name = "roh_avm_right_entity"
+	pdxmesh = "roh_avm_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_long_idle_entity"
+	name = "roh_avm_long_idle_entity"
+	pdxmesh = "roh_avm_mesh"
+}
+
+entity = {
+	clone = "geo_aks74_left_entity"
+	name = "roh_avm_left_entity"
+	pdxmesh = "roh_avm_mesh"
+}
+
+########
+##Эмка##
+########
+entity = {
+	name = "geo_type89_left_entity"
+	pdxmesh = "geo_type89_mesh"
+	scale = 1.0
+}
+
+entity = {
+	name = "geo_type89_right_entity"
+	pdxmesh = "geo_type89_mesh"
+	scale = 1.0
+
+	get_state_from_parent = yes
+	default_state = "idle"
+	state = { name = "idle" }
+	state = { name = "move"	}
+
+	state = { name = "attack"	animation = "attack"
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0.5 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0.5 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+
+	state = { name = "defend"
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes   light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+		event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+
+	state = {
+	name = "support_attack"	animation = "support_attack"
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+	event = { time = 0 node="muzzle" particle = "mg_muzzle_smoke_particle"  keep_particle = yes light = "mg_muzzle_flash" sound = { soundeffect = infantry_mg_attack } }
+	event = { time = 0 node="cartridge" particle = "mg_cartridge_particle"  keep_particle = yes }
+	}
+}
+
+entity = {
+	name = "geo_type89_long_idle_entity"
+	pdxmesh = "geo_type89_mesh"
+	scale = 1.0
+}
+
+###M16A2
+entity = {
+	clone = "geo_type89_right_entity"
+	name = "geo_m16a2_right_entity"
+	pdxmesh = "geo_m16a2_mesh"
+}
+
+entity = {
+	clone = "geo_type89_long_idle_entity"
+	name = "geo_m16a2_long_idle_entity"
+	pdxmesh = "geo_m16a2_mesh"
+}
+
+entity = {
+	clone = "geo_type89_left_entity"
+	name = "geo_m16a2_rifle_left_entity"
+	pdxmesh = "geo_m16a2_mesh"
+}
