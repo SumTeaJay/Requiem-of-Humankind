@@ -1,0 +1,15 @@
+scripted_gui = { 
+	arm_middle_russian_war_gui = {
+		context_type = decision_category
+		window_name = "ARM_second_middle_russian"
+		visible = { always = yes }
+		properties = {
+			top_bar_coalition_power = { frame = coalition_power }
+			top_bar_consulate_power = { frame = consulate_power }
+		}
+		effects = {
+		}
+		triggers = {
+		}
+	}
+}

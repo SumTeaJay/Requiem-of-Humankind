@@ -1,0 +1,252 @@
+focus_tree = {
+	id = FSR_focus
+	country = {
+		factor = 0
+		modifier = {
+            add = 100
+            tag = FSR
+        }
+	}
+	default = no
+
+	focus = {
+		id = FSR_free_city
+		icon = GFX_FSR_free_city
+		cost = 3.00
+		x = 2
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 70
+		}
+	}
+	focus = {
+		id = FSR_borders_of_freedom
+		icon = GFX_FSR_borders_of_freedom
+		cost = 3.00
+		x = 2
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_free_city }
+		completion_reward = {
+			218 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 11559
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 585
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 9417
+				}
+			}
+		}
+	}
+	focus = {
+		id = FSR_rostov_tractors
+		icon = GFX_FSR_rostov_tractors
+		cost = 3.00
+		x = 0
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_borders_of_freedom }
+		completion_reward = {
+			218 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					 type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FSR_skills_not_number
+		icon = GFX_FSR_skills_not_number
+		cost = 3.00
+		x = 2
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_borders_of_freedom }
+		completion_reward = {
+						add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda
+				amount = 1000
+			}
+		}
+	}
+	focus = {
+		id = FSR_arsenal_of_independence
+		icon = GFX_FSR_arsenal_of_independence
+		cost = 3.00
+		x = 4
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_borders_of_freedom }
+		completion_reward = {
+			218 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = FSR_protect_your_home
+		icon = GFX_FSR_protect_your_home
+		cost = 3.00
+		x = 2
+		y = 3
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = FSR_rostov_tractors
+			focus = FSR_skills_not_number
+			focus = FSR_arsenal_of_independence
+		}
+		available = {
+			custom_trigger_tooltip = {
+  				tooltip = kuban_crisis_tt
+				NOT = {
+					has_global_flag = kuban_crisis
+				}
+			}
+		}
+		will_lead_to_war_with = STW
+		will_lead_to_war_with = KUH
+		completion_reward = {
+			news_event = super.2
+			set_global_flag = kuban_crisis
+			declare_war_on = {
+				target = STW
+				type = annex_everything	
+			}
+			declare_war_on = {
+				target = KUH
+				type = annex_everything	
+			}
+			KUH = {
+				declare_war_on = {
+					target = STW
+					type = annex_everything	
+				}
+			}
+		}
+	}
+	focus = {
+		id = FSR_kuban_problem
+		icon = GFX_FSR_kuban_problem
+		cost = 3.00
+		x = 8
+		y = 0
+		ai_will_do = { factor = 10 }
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = KUH
+				country_exists = STW
+			}
+		}
+		completion_reward = {
+			add_stability = 0.2
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = FSR_against_Leviathan 
+		icon = GFX_FSR_against_Leviathan
+		cost = 3.00
+		x = 6
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_kuban_problem }
+		completion_reward = {
+			add_ideas = FSR_against_Leviathan_idea
+			unlock_decision_category_tooltip = expansion_category
+			set_country_flag = end_of_phase_two
+		}
+	}
+	focus = {
+		id = FSR_send_diplomates
+		icon = GFX_FSR_send_diplomates
+		cost = 3.00
+		x = 8
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_kuban_problem }
+		completion_reward = {
+			annex_country = {
+				target = ECD
+				transfer_troops = yes
+			}
+			add_state_core = 234
+		}
+	}
+	focus = {
+		id = FSR_mutual_integration
+		icon = GFX_FSR_mutual_integration
+		cost = 3.00
+		x = 10
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = FSR_kuban_problem }
+		available = {
+			has_completed_focus = FSR_send_diplomates
+		}
+		completion_reward = {
+			234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			850 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			218 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

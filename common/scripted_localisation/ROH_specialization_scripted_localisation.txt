@@ -1,0 +1,54 @@
+defined_text = {
+    name = garnizon
+    text = {
+        localization_key = "special_garnizon"
+    }
+}
+defined_text = {
+    name = garnizont
+    text = {
+        localization_key = "special_garnizon_text"
+    }
+}
+defined_text = {
+    name = promishleni
+    text = {
+        localization_key = "special_promishleni"
+    }
+}
+defined_text = {
+    name = promishlenit
+    text = {
+        localization_key = "special_promishleni_text"
+    }
+}
+defined_text = {
+    name = sirevoi
+    text = {
+        localization_key = "special_sirevoi"
+    }
+}
+defined_text = {
+    name = sirevoit
+    text = {
+        localization_key = "special_sirevoi_text"
+    }
+}
+defined_text = {
+    name = pereferia
+    text = {
+        localization_key = "special_pereferia"
+    }
+}
+defined_text = {
+    name = pereferiat
+    text = {
+        localization_key = "special_pereferia_text"
+    }
+}
+defined_text = {
+    name = dddd
+    text = {
+        localization_key = "special_dddd_text"
+    }
+}

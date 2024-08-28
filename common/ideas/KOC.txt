@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		KOC_fallen_gods = {		#Падшие боги
+			picture = Padshie_bogi		
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				monthly_population = 0.35
+				research_speed_factor = -0.1
+				stability_factor = 0.15
+				war_support_factor = 0.15
+				production_speed_buildings_factor = -0.15
+				
+			}
+		}
+	}
+}

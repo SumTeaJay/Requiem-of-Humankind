@@ -1,0 +1,14 @@
+RoH_anarchy_visible = {
+	OR = {
+		original_tag = BLS
+		original_tag = WTR
+		has_country_flag = no_war_with_LWV
+	}
+}
+#ROH_anarchy_TAG = {
+#	original_tag = TAG
+#	has_country_leader = {
+#		character = TAG_Anarchic
+#		ruling_only = yes
+#	}
+#}

@@ -1,0 +1,15 @@
+characters = {
+	egor_alifenko = {
+		portraits={
+			civilian={
+				large="gfx/leaders/POP/egor_alifenko.dds"
+			}
+		}
+		country_leader={
+			ideology=humanists_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = egor_alifenko_desc_desc
+		}
+	}
+}

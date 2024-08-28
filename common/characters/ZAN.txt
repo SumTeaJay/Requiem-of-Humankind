@@ -1,0 +1,16 @@
+characters = {
+	ZAN_Provisional_Parliament= {
+		name = ZAN_Provisional_Parliament
+		portraits={
+			civilian={
+				large="GFX_portrait_ZAN_Provisional_Parliament"
+			}
+		}
+		country_leader={
+			ideology=humanists_subideology
+			desc = ZAN_Provisional_Parliament_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

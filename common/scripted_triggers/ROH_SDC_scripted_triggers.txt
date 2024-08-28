@@ -1,0 +1,7 @@
+Pautov_unite_pomorie = {
+	SDC = {
+		exists = yes
+		has_war = no
+	}
+	date > 2024.05.9
+}

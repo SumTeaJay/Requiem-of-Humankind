@@ -1,0 +1,481 @@
+technologies = {
+	#Ветка электроники
+	prewar_electronic_systems = {
+		research_speed_factor = 0.02	
+		path = {
+			leads_to_tech = computer_development
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = radio_enhancement
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	computer_development = {
+		research_speed_factor = 0.03
+		path = {
+			leads_to_tech = automation_of_production_facilities
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = software_development
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	automation_of_production_facilities = {
+		production_factory_start_efficiency_factor = 0.05
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = electronics_folder
+			position = { x = -3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	software_development = {
+		research_speed_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		path = {
+			leads_to_tech = internet
+			research_cost_coeff = 1
+		}	
+		research_cost = 1
+		start_year = 2040
+		folder = {
+			name = electronics_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+
+	radio_enhancement  = {
+		on_research_complete = {
+			custom_effect_tooltip = radio_enhancement_tt
+		}
+		path = {
+			leads_to_tech = improved_radio_communication
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = EMI
+			research_cost_coeff = 1
+		}
+		research_cost = 1
+		start_year = 2030
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	improved_radio_communication = {
+		start_year = 2040
+		on_research_complete = {
+			custom_effect_tooltip = improved_radio_communication_tt
+		}
+		enable_building = {
+			building = radar_station
+			level = 6
+		}
+		path = {
+			leads_to_tech = internet
+			research_cost_coeff = 1
+		}	
+		research_cost = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	EMI = {
+		start_year = 2030
+		category_army = {
+			defense = 0.1
+		}
+		path = {
+			leads_to_tech = stationary_EMI_systems
+			research_cost_coeff = 1
+		}	
+		research_cost = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	stationary_EMI_systems = {
+		start_year = 2040
+		category_army = {
+			soft_attack = 0.05
+		}
+		path = {
+			leads_to_tech = portable_EMI_systems
+			research_cost_coeff = 1
+		}	
+		research_cost = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	portable_EMI_systems = {
+		start_year = 2050
+		on_research_complete = {
+			custom_effect_tooltip = portable_EMI_systems_tt
+			set_country_flag = acess_to_pulse_jammers
+		}
+		research_cost = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 5 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	internet = {
+		on_research_complete = {
+			custom_effect_tooltip = internet_tt
+		}
+		start_year = 2050
+		research_speed_factor = 0.1
+		path = {
+			leads_to_tech = quantum_internet
+			research_cost_coeff = 1
+		}	
+		research_cost = 1
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	quantum_internet = {
+		start_year = 2060
+		research_cost = 1
+		research_speed_factor = 0.2
+		folder = {
+			name = electronics_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			electronics
+		}
+	}
+
+	#Ветка атомных исследований
+	renewed_atomic_research = {
+		path = {
+			leads_to_tech = peaceful_applications_of_nuclear_technology
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = laser_design
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = nuclear_weapon
+			research_cost_coeff = 1
+		}	
+		research_cost =  2
+		start_year = 2020
+		folder = {
+			name = electronics_folder
+			position = { x = 10 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	peaceful_applications_of_nuclear_technology = {
+		research_speed_factor = 0.1
+		path = {
+			leads_to_tech = nuclear_fusion
+			research_cost_coeff = 1
+		}	
+		research_cost =  2
+		start_year = 2030
+		folder = {
+			name = electronics_folder
+			position = { x = 10 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	laser_design = {
+		category_tanks = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		start_year = 2030
+		path = {
+			leads_to_tech = nuclear_fusion
+			research_cost_coeff = 1
+		}	
+		research_cost =  2
+		folder = {
+			name = electronics_folder
+			position = { x = 8 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	nuclear_fusion = {
+		research_cost =  2
+		local_resources_factor = 0.1
+		start_year = 2040
+		folder = {
+			name = electronics_folder
+			position = { x = 9 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+
+	nuclear_weapon = {
+		category_tanks = {
+			defense = 0.05
+		}
+		path = {
+			leads_to_tech = nuclear_rockets
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = radioactive_weapons
+			research_cost_coeff = 1
+		}
+		research_cost =  2
+		start_year = 2030
+		enable_building = {
+			building = nuclear_reactor
+			level = 1
+		}
+		folder = {
+			name = electronics_folder
+			position = { x = 14 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	nuclear_rockets = {
+		category_fighter = {
+			air_attack = 0.05
+		}
+		research_cost =  2
+		start_year = 2040
+		folder = {
+			name = electronics_folder
+			position = { x = 13 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+
+	radioactive_weapons = {
+		army_attack_factor = 0.05
+		path = {
+			leads_to_tech = remote_exposure_systems
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = radioactive_bombs
+			research_cost_coeff = 1
+		}
+		research_cost =  2
+		start_year = 2040
+		folder = {
+			name = electronics_folder
+			position = { x = 17 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	remote_exposure_systems = {
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+		research_cost =  2
+		start_year = 2050
+		army_infantry_attack_factor = 0.05
+		folder = {
+			name = electronics_folder
+			position = { x = 16 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+
+	radioactive_bombs = {
+		start_year = 2050
+		category_fighter = {
+			air_attack = 0.1
+		}
+		research_cost =  2
+		folder = {
+			name = electronics_folder
+			position = { x = 18 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 30
+		}
+		
+		categories = {
+			nuclear
+		}
+	}
+}

@@ -1,0 +1,66 @@
+on_actions = {
+	on_startup = {	
+		effect = {
+			set_global_flag = { 
+				flag = ELI_not_appears_yet
+				value = 1
+				days = 1850
+			}
+			set_global_flag = { 
+				flag = BMB_not_appears_yet
+				value = 1
+				days = 1460
+			}
+			
+			clear_array = ELI.elimination_targets 
+			add_to_array = { ELI.elimination_targets = RIK }
+			add_to_array = { ELI.elimination_targets = SMX }
+			add_to_array = { ELI.elimination_targets = SBT }
+			add_to_array = { ELI.elimination_targets = VLC }
+			add_to_array = { ELI.elimination_targets = MUC }
+			add_to_array = { ELI.elimination_targets = VOU }
+			add_to_array = { ELI.elimination_targets = NAR }
+			add_to_array = { ELI.elimination_targets = SMK }
+			add_to_array = { ELI.elimination_targets = OCH }
+			add_to_array = { ELI.elimination_targets = MSH }
+			add_to_array = { ELI.elimination_targets = TAB }
+			add_to_array = { ELI.elimination_targets = MAZ }
+			add_to_array = { ELI.elimination_targets = ORL }
+			add_to_array = { ELI.elimination_targets = ZAK }
+			add_to_array = { ELI.elimination_targets = TAR }
+			add_to_array = { ELI.elimination_targets = IMP }
+			add_to_array = { ELI.elimination_targets = ARM }
+			add_to_array = { ELI.elimination_targets = BRD }
+			add_to_array = { ELI.elimination_targets = OLD }
+			add_to_array = { ELI.elimination_targets = OKS }
+			add_to_array = { ELI.elimination_targets = BLT }
+			add_to_array = { ELI.elimination_targets = NVC }
+			
+			clear_array = BMB.elimination_targets
+			add_to_array = { BMB.elimination_targets = YJY }
+			add_to_array = { BMB.elimination_targets = ADT }
+			add_to_array = { BMB.elimination_targets = FHS }
+			add_to_array = { BMB.elimination_targets = PLC }
+			add_to_array = { BMB.elimination_targets = DRW }
+			add_to_array = { BMB.elimination_targets = PVS }
+			add_to_array = { BMB.elimination_targets = OBS }
+			add_to_array = { BMB.elimination_targets = BLT }
+			add_to_array = { BMB.elimination_targets = BRB }
+			add_to_array = { BMB.elimination_targets = KHU }
+			add_to_array = { BMB.elimination_targets = URA }
+			add_to_array = { BMB.elimination_targets = MOT }
+			add_to_array = { BMB.elimination_targets = TTL }
+			add_to_array = { BMB.elimination_targets = GLS }
+			add_to_array = { BMB.elimination_targets = ASR }
+			add_to_array = { BMB.elimination_targets = SII }
+			add_to_array = { BMB.elimination_targets = EDM }
+			add_to_array = { BMB.elimination_targets = BGR }
+			add_to_array = { BMB.elimination_targets = SFL }
+			add_to_array = { BMB.elimination_targets = NFL }
+			add_to_array = { BMB.elimination_targets = IRT }
+			add_to_array = { BMB.elimination_targets = WPK }
+			add_to_array = { BMB.elimination_targets = URC }
+			add_to_array = { BMB.elimination_targets = ZAN }
+		}
+	}
+}

@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		BL1_true_purpose = {
+            picture = BL1_true_purpose
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				monthly_population =0.15
+				surrender_limit =0.1
+				offence =0.15
+				defence =0.15
+			}
+		}
+	}
+}

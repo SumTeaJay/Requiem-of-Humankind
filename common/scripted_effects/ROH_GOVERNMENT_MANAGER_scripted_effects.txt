@@ -1,0 +1,7 @@
+use_goverment_upgrade = {
+	subtract_from_variable = {
+		var = ochki_gos_progressa
+		value = 1
+		tooltip = use_goverment_upgrade_tt
+	}
+}

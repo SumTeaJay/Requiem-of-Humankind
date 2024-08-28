@@ -1,0 +1,18 @@
+resource_expansion_category = {
+	icon = GFX_decision_category_expedition
+	priority = 10
+	visible = {
+		NOT = {
+			tag = WEC
+			tag = SAC
+			tag = SOC
+			tag = BLS
+			tag = SFL
+			tag = NFL
+			tag = SIL
+			tag = WTR
+			tag = MOS
+			tag = KRT
+		}
+	}
+}

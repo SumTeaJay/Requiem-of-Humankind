@@ -1,0 +1,16 @@
+characters = {
+	PLC_Simon_Kirilenko = {
+        name = PLC_Simon_Kirilenko
+		portraits = {
+			civilian = {
+				large = GFX_portrait_PLC_Simon_Kirilenko
+			}
+		}
+		country_leader = {
+			ideology = free_people_subideology
+			expire = "2090.1.1.1"
+			id = -1
+			desc = PLC_Simon_Kirilenko_desc
+		}
+	}
+}

@@ -1,0 +1,663 @@
+focus_tree = {
+    id = ARM_phase_two
+    
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 400
+            tag = ARM
+        }
+    }
+    default = no
+
+    focus = {
+        id = ARM_our_by_rights
+        icon = GFX_ARM_our_by_rights
+        available = { has_war = no }
+        x = 10
+        y = 0
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.22
+                days = 1
+            }
+            876 = { 
+                add_core_of = ARM 
+                remove_core_of = BIH
+            }
+            202 = { 
+                add_core_of = ARM 
+                remove_core_of = BIH
+            }
+            878 = { 
+                add_core_of = ARM 
+                remove_core_of = DIB
+            }
+            879 = { 
+                add_core_of = ARM 
+                remove_core_of = BAG
+            }
+            set_cosmetic_tag = ARM_KGS_cosmetic
+            add_stability = 0.05
+            set_capital = {
+				state = 202
+				province = 13350
+				remember_old_capital = no
+			}
+        }
+    }
+    focus = {
+        id = ARM_second_middle_russian
+        icon = GFX_ARM_second_middle_russian
+        prerequisite = { focus = ARM_our_by_rights }
+        x = 10
+        y = 1
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.23
+                days = 1
+            }
+            add_political_power = 100  
+        }
+    }
+
+    focus = {
+        id = ARM_delegate_authority
+        icon = GFX_ARM_delegate_authority
+        prerequisite = { focus = ARM_second_middle_russian }
+        x = 6
+        y = 2
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.24
+            }
+            add_ideas = ARM_delegate_authority_idea
+        }
+    }
+    focus = {
+        id = ARM_civil_branch
+        icon = GFX_ARM_civil_branch
+        prerequisite = { focus = ARM_delegate_authority }
+        x = 5
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_manpower = 1000
+        }
+    }
+    focus = {
+        id = ARM_command_unity
+        icon = GFX_ARM_command_unity
+        prerequisite = { focus = ARM_delegate_authority }
+        x = 7
+        y = 3
+        cost = 5 
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_ideas = ARM_officer_schools_idea
+        }
+    }
+    focus = {
+        id = ARM_chance_for_redemption
+        icon = GFX_ARM_chance_for_redemption
+        prerequisite = { focus = ARM_command_unity focus = ARM_civil_branch }
+        mutually_exclusive = { focus = ARM_no_mercy_for_traitors }
+        x = 5
+        y = 5
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+                division_template = {
+                    name = "Disciplinaries"
+                    is_locked = no
+                    priority = 1
+                    regiments = {
+                        light_infantry = { x = 0 y = 0 }
+                        light_infantry = { x = 0 y = 1 }
+                        light_infantry = { x = 1 y = 0 }
+                    }
+                }
+            random_owned_state = {
+                create_unit = {
+                    division = "name = \"1. Disciplinaries\" division_template = \"Disciplinaries\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1. Disciplinaries\" division_template = \"Disciplinaries\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1. Disciplinaries\" division_template = \"Disciplinaries\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+            swap_ideas = {
+                remove_idea = ARM_views_united
+                add_idea = ARM_views_united_2
+            }
+        }
+    }
+    focus = {
+        id = ARM_no_mercy_for_traitors
+        icon = GFX_ARM_no_mercy_for_traitors
+        prerequisite = { focus = ARM_command_unity focus = ARM_civil_branch }
+        mutually_exclusive = { focus = ARM_chance_for_redemption }
+        x = 7
+        y = 5
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+             random_owned_state = {
+                create_unit = {
+                    division = "name = \"1. Crimson beams\" division_template = \"Crimson beams\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"1. Crimson beams\" division_template = \"Crimson beams\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+             }
+        add_manpower = -1000
+        }
+    }
+    focus = {
+        id = ARM_coalition_potential
+       icon = GFX_ARM_coalition_potential
+        prerequisite = { focus = ARM_second_middle_russian }
+        x = 10
+        y = 2
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.25
+            }
+            #каждый стейт +1 инфранструктура
+        }
+    }
+    focus = {
+        id = ARM_do_not_flash
+        icon = GFX_ARM_do_not_flash
+        prerequisite = { focus = ARM_coalition_potential }
+        x = 10
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            202 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            225 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = ARM_supply_for_rear
+        icon = GFX_ARM_supply_for_rear
+        prerequisite = { focus = ARM_do_not_flash }
+        x = 10
+        y = 4
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            203 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            225 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = ARM_reforging
+        icon = GFX_ARM_reforging
+        prerequisite = { focus = ARM_second_middle_russian }
+        x = 14
+        y = 2
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.26
+                days = 1
+            }
+            army_experience = 25
+            hidden_effect = {
+                remove_ideas = ARM_hearts
+                add_dynamic_modifier = {
+                    modifier = ARM_hearts_dynamic
+                }
+                set_variable = { offence_hearts = 0.05 }
+                set_variable = { defence_hearts = 0.05 }
+                set_variable = { surrender_limit_hearts = 0.2 }
+                set_variable = { army_org_factor_hearts = 0 }
+            }
+        }
+    }
+    focus = {
+        id = ARM_cultivate_fanatism
+        icon = GFX_ARM_cultivate_fanatism
+        prerequisite = { focus = ARM_reforging }
+        mutually_exclusive = { focus = ARM_attract_people }
+        x = 12
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            custom_effect_tooltip = change_hearts_tt
+            custom_effect_tooltip = change_hearts_1_tt
+            add_to_variable = { offence_hearts = 0.02 } 
+            add_to_variable = { defence_hearts = 0.02 }
+            add_to_variable = { army_org_factor_hearts = 0.1 }
+        }
+    }
+    focus = {
+        id = ARM_attract_people
+        icon = GFX_ARM_attract_people
+        prerequisite = { focus = ARM_reforging }
+        mutually_exclusive = { focus = ARM_cultivate_fanatism }
+        x = 16
+        y = 3
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_manpower = 2000
+        }
+    }
+    focus = {
+        id = ARM_Tough_guys
+        icon = GFX_ARM_Tough_guys
+        prerequisite = { focus = ARM_attract_people focus = ARM_cultivate_fanatism }
+        mutually_exclusive = { focus = ARM_excellent_discipline }
+        x = 12
+        y = 4
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_manpower = 5000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -2000
+                producer = ARM
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_odejda_0
+                amount = -3000
+                producer = ARM
+            }
+        }
+    }
+    focus = {
+        id = ARM_excellent_discipline
+        icon = GFX_ARM_excellent_discipline
+        prerequisite = { focus = ARM_attract_people focus = ARM_cultivate_fanatism }
+        mutually_exclusive = { focus = ARM_Tough_guys }
+        x = 16
+        y = 4
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_manpower = -2000
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 2000
+                producer = ARM
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_odejda_0
+                amount = 2000
+                producer = ARM
+            }
+            capital_scope = {
+                create_unit = {
+                division = "name = \"1. Alpha\" division_template = \"Alpha\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                owner = ROOT
+                }
+            }
+        }
+    }
+    focus = {
+        id = ARM_dark_clouds
+        icon = GFX_ARM_dark_clouds
+        prerequisite = { focus = ARM_excellent_discipline focus = ARM_Tough_guys }
+        x = 14
+        y = 5
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_to_variable = { army_org_factor_hearts = 0.15 }
+            custom_effect_tooltip = change_hearts_tt
+            custom_effect_tooltip = change_hearts_2_tt
+        }
+    }
+    focus = {
+        id = ARM_central_army_group
+        icon = GFX_ARM_central_army_group
+        prerequisite = { focus = ARM_no_mercy_for_traitors focus = ARM_chance_for_redemption }
+        prerequisite = { focus = ARM_dark_clouds }
+        prerequisite = { focus = ARM_supply_for_rear }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = we_won_tt
+                hidden_trigger = {
+                    ARM = {
+                        has_completed_focus = ARM_first_phase
+                    }
+                    NOT = {
+                        country_exists = IMP
+                    }
+                }
+            }
+        }
+        x = 10
+        y = 6
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            IMP = {
+                every_core_state = {
+                    add_core_of = CAR
+                    remove_core_of = IMP
+                }
+            }
+            NOR = {
+                every_core_state = {
+                    add_core_of = CAR
+                    remove_core_of = IMP
+                }
+            }
+            PLR = {
+                every_core_state = {
+                    add_core_of = CAR
+                    remove_core_of = IMP
+                }
+            }
+            COR = {
+                every_core_state = {
+                    add_core_of = CAR
+                    remove_core_of = IMP
+                }
+            }
+            ARM = {
+                release_autonomy = {
+                    target = CAR
+                    autonomy_state = autonomy_puppet
+                    freedom_level = 0.1
+                }
+            }
+            CAR = {
+                set_politics = {
+                    ruling_party = statesmen
+                    elections_allowed = no
+                }
+                promote_character = CAR_Pavlik_Morozov
+                set_popularities = {
+                    statesmen = 100
+                }
+            }
+            hidden_effect = {
+                load_focus_tree = ARM_phase_three
+                CAR = {
+                    if = { limit = { country_exists = NOR } annex_country = { target = NOR } }
+                    if = { limit = { country_exists = PLR } annex_country = { target = PLR } }
+                    if = { limit = { country_exists = COR } annex_country = { target = COR } }
+                }
+            }
+        }
+    }
+    focus = {
+        id = ARM_first_phase
+        icon = GFX_ARM_first_phase
+        x = 20
+        y = 0
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            add_political_power = 100
+            set_country_flag = ARM_middle_russian_war_flag
+            set_country_flag = ARM_first_phase_flag
+            set_variable = { consulate_power = 0 }
+            set_variable = { coalition_power = 0 }
+        }
+    }
+    focus = {
+        id = ARM_use_our_strength
+        icon = GFX_ARM_use_our_strength
+        prerequisite = { focus = ARM_first_phase }
+        mutually_exclusive = { focus = ARM_donot_check_looses }
+        x = 19
+        y = 1
+        cost = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.27
+                days = 1
+            }
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = 1000
+                producer = ARM
+            }
+            add_to_variable = { coalition_power = 10}
+            custom_effect_tooltip = coalition_power_plus_10_tt
+        }
+    }
+    focus = {
+        id = ARM_donot_check_looses
+        icon = GFX_ARM_donot_check_looses
+        prerequisite = { focus = ARM_first_phase }
+        mutually_exclusive = { focus = ARM_use_our_strength }
+        x = 21
+        y = 1
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.28
+                days = 1
+            }
+            add_manpower = 1000
+            add_to_variable = { coalition_power = 10 }
+            custom_effect_tooltip = coalition_power_plus_10_tt
+        }
+    }
+    focus = {
+        id = ARM_second_phase
+        icon = GFX_ARM_second_phase
+        prerequisite = { focus = ARM_donot_check_looses focus = ARM_use_our_strength }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = 1_phase_finished_tt
+                hidden_trigger = {
+                    has_country_flag = ARM_middle_russian_war_flag
+				    NOT = {
+					    has_country_flag = ARM_first_phase_flag
+				    }
+			    }
+            }
+		}
+        x = 20
+        y = 2
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.29
+                days = 1
+            }
+            add_political_power = 150
+            set_country_flag = ARM_second_phase_flag
+            clr_country_flag = ARM_first_phase_flag
+            set_variable = { consulate_power = 20 }
+            set_variable = { coalition_power = 0 }
+        }
+    }
+    focus = {
+        id = ARM_talk_to_mercenaries
+        icon = GFX_ARM_talk_to_mercenaries
+        prerequisite = { focus = ARM_second_phase }
+        mutually_exclusive = { focus = ARM_group_alpha }
+        available = {
+            hidden_trigger = {
+                has_country_flag = ARM_middle_russian_war_flag
+            }
+        }
+        x = 19
+        y = 3
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.30
+                days = 1
+            }
+            add_to_variable = { coalition_power = 10 }
+            custom_effect_tooltip = coalition_power_plus_10_tt
+            add_political_power = -20
+            add_to_variable = { black_rubles_budget = -3000 }
+        }
+    }
+    focus = {
+        id = ARM_group_alpha
+        icon = GFX_ARM_group_alpha
+        prerequisite = { focus = ARM_second_phase }
+        mutually_exclusive = { focus = ARM_talk_to_mercenaries }
+        available = {
+            hidden_trigger = {
+                has_country_flag = ARM_middle_russian_war_flag
+            }
+        }
+        x = 21
+        y = 3
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.31
+                days = 1
+            }
+            unlock_decision_tooltip = ARM_send_the_Alpha
+        }
+    }
+    focus = {
+        id = ARM_third_phase
+        icon = ARM_third_phase
+        prerequisite = { focus = ARM_group_alpha focus = ARM_talk_to_mercenaries }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = 2_phase_finished_tt
+                hidden_trigger = {
+                    has_country_flag = ARM_middle_russian_war_flag
+			        NOT = {
+				        has_country_flag = ARM_second_phase_flag
+			        } 
+                }
+            }
+		}
+        x = 20
+        y = 4
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.32
+                days = 1
+            }
+            add_political_power = 200
+            clr_country_flag = ARM_second_phase_flag
+            set_country_flag = ARM_third_phase_flag
+        }
+    }
+    focus = {
+        id = ARM_no_innocents
+        icon = GFX_ARM_no_innocents 
+        prerequisite = { focus = ARM_third_phase }
+        available ={
+            hidden_trigger = {
+                has_country_flag = ARM_middle_russian_war_flag
+            }
+        }
+        x = 19
+        y = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.33
+                days = 1
+            }
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = ARM_connect_with_patriots
+        icon = GFX_ARM_connect_with_patriots
+        prerequisite = { focus = ARM_third_phase }
+        available ={
+            hidden_trigger = {
+                has_country_flag = ARM_middle_russian_war_flag
+            }
+        }
+        x = 21
+        y = 5
+        ai_will_do = { factor = 10 }
+        completion_reward = {
+            country_event = {
+                id = ARMnew.34
+                days = 1
+            }
+            add_manpower = 2000
+        }
+    }
+    focus = {
+        id = ARM_burn_everything
+        icon = GFX_ARM_burn_everything
+        prerequisite = { focus = ARM_connect_with_patriots focus = ARM_no_innocents }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = 3_phase_finished_tt
+                hidden_trigger = {
+                    has_country_flag = ARM_all_phases_flag
+                }
+            }
+        }
+        x = 20
+        y = 6
+        ai_will_do = { factor = 10 }
+        will_lead_to_war_with = IMP
+        completion_reward = {
+            declare_war_on = {
+                type = annex_everything
+                target = IMP
+            }
+            add_ideas = ARM_in_three_days
+            IMP = {
+                add_ideas = IMP_in_ring_of_enemies
+            }
+        }
+    }
+}

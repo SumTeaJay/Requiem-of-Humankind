@@ -1,0 +1,27 @@
+ideas = {
+
+	country = {
+		PAPIN_KURS = {		#БАЦЬКА
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.15
+				consumer_goods_factor = 0.05
+				monthly_population = 0.15
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				
+			}
+		}
+	}
+}

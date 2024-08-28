@@ -1,0 +1,47 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = { 
+				limit = {
+					FROM.FROM = { state = 188 }
+					188 = {
+						is_owned_by = AGE
+						NOT = { has_dynamic_modifier = { modifier = open_opposition } } 
+					} 
+				}
+				188 = { add_dynamic_modifier = { modifier = open_opposition } }
+			}
+			else_if = { 
+				limit = { 
+					FROM.FROM = { state = 814 }
+					814 = { 
+						is_owned_by = LPC
+						has_dynamic_modifier = { modifier = open_opposition }
+					} 
+				}
+				814 = { remove_dynamic_modifier = { modifier = open_opposition } }
+			}
+		}
+	}
+	on_monthly_AGE = {
+		effect = {
+			add_to_variable = { monthly_counter_AGE = 1 }
+			if = {
+				limit = { check_variable = { monthly_counter_AGE = 13 } }
+				set_variable = { monthly_counter_AGE = 1 }
+			}
+			else_if = {
+				limit = {
+					check_variable = { monthly_counter_AGE = 10 }
+					AGE = { has_completed_focus = AGE_day_of_unity }
+				}
+				AGE = {
+					country_event = {
+						id = AGE.8
+						random_hours = 24
+					}
+				}
+			}
+		}
+	}
+}

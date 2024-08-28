@@ -1,0 +1,33 @@
+scripted_gui = {
+	opening_screen_button = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "opening_screen_button"
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			topbar_button_click = {
+				set_country_flag = opening_screen_show
+			}
+		}
+	}
+	
+	opening_screen_main = {
+		context_type = player_context
+		parent_window_token = top_bar
+		window_name = "opening_screen_main"
+
+		visible = {
+			has_country_flag = opening_screen_show
+		}
+
+		effects = {
+			opening_screen_button_click = {
+				clr_country_flag = opening_screen_show
+			}
+		}
+	}
+}

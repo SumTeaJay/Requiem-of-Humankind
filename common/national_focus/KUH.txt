@@ -1,0 +1,252 @@
+focus_tree = {
+	id = KUH_focus
+	country = {
+		factor = 0
+		modifier = {
+            add = 100
+            tag = KUH
+        }
+	}
+	default = no
+
+	focus = {
+		id = KUH_our_way
+		icon = GFX_KUH_Our_way
+		cost = 3.00
+		x = 2
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 70
+		}
+	}
+	focus = {
+		id = KUH_explan_to_flock
+		cost = 3.00
+		icon = GFX_KUH_Explain_to_flock
+		x = 2
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_our_way }
+		completion_reward = {
+			add_war_support = 0.2
+		}
+	}
+	focus = {
+		id = KUH_persistent_one
+		cost = 3.00
+		icon = GFX_KUH_Persistent_one
+		x = 0
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_explan_to_flock }
+		completion_reward = {
+			853 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					 type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = KUH_loyal_one
+		cost = 3.00
+		icon = GFX_KUH_Loyal_one
+		x = 2
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_explan_to_flock }
+		completion_reward = {
+			853 = {
+				create_unit = {
+					division = "name = \"Punishers\" division_template = \"Punishers\" start_experience_factor = 0.1 start_equipment_factor = 0.2 start_manpower_factor = 0.2"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Punishers\" division_template = \"Punishers\" start_experience_factor = 0.1 start_equipment_factor = 0.2 start_manpower_factor = 0.2"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"Punishers\" division_template = \"Punishers\" start_experience_factor = 0.1 start_equipment_factor = 0.2 start_manpower_factor = 0.2"
+					owner = ROOT
+				}
+			}
+		}
+	}
+	focus = {
+		id = KUH_strong_one
+		cost = 3.00
+		icon = GFX_KUH_Strong_one
+		x = 4
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_explan_to_flock }
+		completion_reward = {
+			854 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = KUH_trample_heretics
+		cost = 3.00
+		icon = GFX_KUH_Trample_heretics
+		x = 2
+		y = 3
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = KUH_persistent_one
+			focus = KUH_loyal_one
+			focus = KUH_strong_one
+		}
+		available = {
+			custom_trigger_tooltip = {
+  				tooltip = kuban_crisis_tt
+				NOT = {
+					has_global_flag = kuban_crisis
+				}
+			}
+		}
+		will_lead_to_war_with = FSR
+		will_lead_to_war_with = STW
+		completion_reward = {
+			news_event = super.2
+			set_global_flag = kuban_crisis
+			declare_war_on = {
+				target = FSR
+				type = annex_everything	
+			}
+			declare_war_on = {
+				target = STW
+				type = annex_everything	
+			}
+			STW = {
+				declare_war_on = {
+					target = FSR
+					type = annex_everything	
+				}
+			}
+		}
+	}
+	focus = {
+		id = KUH_new_parish
+		cost = 3.00
+		icon = GFX_KUH_New_parish
+		x = 8
+		y = 0
+		ai_will_do = { factor = 10 }
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = STW
+				country_exists = FSR
+			}
+		}
+		completion_reward = {
+			add_manpower = 3000
+		}
+	}
+	focus = {
+		id = KUH_death_to_atheists 
+		cost = 3.00
+		icon = GFX_KUH_death_to_atheists
+		x = 6
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_new_parish }
+		completion_reward = {
+			add_ideas = KUH_death_to_atheists_idea
+			unlock_decision_category_tooltip = expansion_category
+			set_country_flag = end_of_phase_two
+		}
+	}
+	focus = {
+		id = KUH_revive_cults
+		cost = 3.00
+		icon = GFX_KUH_Revive_cults
+		x = 8
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_new_parish }
+		completion_reward = {
+			puppet = {
+				target = ECD
+				end_wars = no
+			}
+			ECD = {
+				set_politics = {
+					ruling_party = sacraments
+					elections_allowed = no
+				}
+				set_cosmetic_tag = ECD_Krasnodar_cult
+				hidden_effect = {
+					set_popularities = {
+						sacraments = 100
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = KUH_united_ring
+		cost = 3.00
+		icon = GFX_KUH_United_ring
+		x = 10
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = KUH_new_parish }
+		available = {
+			has_completed_focus = KUH_revive_cults
+		}
+		completion_reward = {
+			234 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			850 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			218 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

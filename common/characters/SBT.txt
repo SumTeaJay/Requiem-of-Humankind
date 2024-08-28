@@ -1,0 +1,38 @@
+characters = {
+	SBT_Dmitriy_Gusev = {
+		name = SBT_Dmitriy_Gusev
+		portraits = {
+			civilian = {
+				large = GFX_portrait_SBT_Dmitriy_Gusev
+			}
+		}
+		country_leader = {
+			ideology = militarists_subideology
+			desc = SBT_Dmitriy_Gusev_desc
+			expire = "2090.1.1.1"
+			id = -1
+		}
+		field_marshal = { 
+			skill = 1
+			attack_skill = 4
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 4
+			desc = SBT_Dmitriy_Gusev_desc
+		}
+	}
+	SBT_generic_general = {
+		portraits = {
+			army = {
+				large = GFX_portrait_ROH_generic_6
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

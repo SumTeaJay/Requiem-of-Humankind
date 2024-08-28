@@ -1,0 +1,17 @@
+characters = {
+	BRD_mikhail_tolstoy = {
+		name = Mikhail_Tolstoy
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BRD/Mikhail_Tolstoy.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader = {
+			desc = "Mikhail_Tolstoy_desc" #use standart desc key pls!
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

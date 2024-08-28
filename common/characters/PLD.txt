@@ -1,0 +1,31 @@
+characters = {
+	PLD_anton_kitsenko = {
+		portraits={
+			civilian={
+				large="gfx/leaders/PLD/anton_kitsenko.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = PLD_anton_kitsenko_DESC
+		}
+	}	
+
+	PLD_nikita_rakossovsky = {
+	portraits={
+			name = PLD_nikita_rakossovsky
+			civilian ={
+					large ="gfx/leaders/PLD/PLD_nikita_rakossovsky.dds"
+				}
+		}
+			country_leader={
+			ideology=humanists_subideology   
+			expire="2100.1.1.1"
+			id=-1
+			desc = PLD_nikita_rakossovsky_DESC
+				}
+		
+ 	}
+}

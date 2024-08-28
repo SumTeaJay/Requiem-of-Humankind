@@ -1,0 +1,25 @@
+SIL_total_anti_goyda = {
+	total_anti_goyda = {
+		allowed = {
+			original_tag = SIL
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_war_with = LWV
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		timeout_effect = {
+			every_neighbor_country = {
+				declare_war_on = {
+					target = SIL
+					type = annex_everything
+				}
+			}
+		}
+	}
+}

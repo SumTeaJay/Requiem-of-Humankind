@@ -1,0 +1,148 @@
+characters={
+	IMP_Dmitry_Milenin={
+		name=IMP_Dmitry_Milenin
+		portraits={
+			army={
+				large = GFX_portrait_IMP_Dmitriy_Milenin
+			}
+			civilian={
+				large = GFX_portrait_IMP_Dmitriy_Milenin
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1
+		}
+		country_leader={
+			ideology = colloborators
+			expire="2090.1.1"
+			id=-1
+			desc = Dmitry_Milenin_desc
+		}
+	}
+	IMP_Grigoriy_Reznov={
+		name=IMP_Grigoriy_Reznov
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Grigoriy_Reznov
+			}
+		}
+		field_marshal={
+			traits={ }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=1
+		}
+	}
+	IMP_Aleksey_Dorog={
+		name=IMP_Aleksey_Dorog
+		portraits={
+			army={
+				large = GFX_portrait_IMP_Aleksey_Dorog
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1
+		}
+	}
+	IMP_Michail_Orlov={
+		name=IMP_Michail_Orlov
+		portraits={
+			army={
+				large = GFX_portrait_IMP_Michail_Orlov
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=1
+		}
+	}
+	IMP_Nikita_Bartonov={
+		name=IMP_Nikita_Bartonov
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Nikita_Bartonov
+			}
+		}
+		corps_commander={
+			traits={ }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1
+		}
+	}
+	BSO_Council_generals_consulate = {
+		name=BSO_Council_generals_consulate
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Council_generals_consulate
+			}
+		}
+		country_leader={
+			ideology = colloborators
+			expire="2090.1.1"
+			id=-1
+		}
+	}
+	COR_Council_generals_consulate = {
+		name=COR_Council_generals_consulate
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Council_generals_consulate
+			}
+		}
+		country_leader={
+			ideology = colloborators
+			expire="2090.1.1"
+			id=-1
+		}
+	}
+	NOR_Council_generals_consulate = {
+		name=NOR_Council_generals_consulate
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Council_generals_consulate
+			}
+		}
+		country_leader={
+			ideology = colloborators
+			expire="2090.1.1"
+			id=-1
+		}
+	}
+	PLR_Council_generals_consulate = {
+		name=PLR_Council_generals_consulate
+		portraits={
+			army={
+				large=GFX_portrait_IMP_Council_generals_consulate
+			}
+		}
+		country_leader={
+			ideology = colloborators
+			expire="2090.1.1"
+			id=-1
+		}
+	}
+}

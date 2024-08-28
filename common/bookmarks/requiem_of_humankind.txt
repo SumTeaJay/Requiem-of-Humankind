@@ -1,0 +1,214 @@
+bookmarks = {
+	bookmark = {
+		name = "REQUIEM_NAME"
+		desc = "REQUIEM_DESC"
+		date = 2022.1.1.12
+		picture = "GFX_select_date_2022"
+		default_country = "GLS"
+		default = yes
+		
+		#МАЖОРЫ
+
+		"GLS"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_GLS"
+			ideology = statesmen
+			ideas = {				
+				GLS_fathers_and_not_fathers
+				GLS_memories_of_rodina
+				GLS_kotly			
+			}
+			focuses = {
+				GLS_old_friends
+				GLS_young_blood
+				GLS_fall_of_rodina
+			}
+		}
+
+
+		"ARM"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_ARM"
+			ideology = statesmen
+			ideas = {
+				ARM_blood_on_snow
+			}
+			focuses = {
+				ARM_frozen_hopes
+				ARM_dog_death
+				ARM_first_among_equals
+			}
+		}
+
+		"ODS"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_ODS"
+			ideology = chthonism
+			ideas = {				
+				dicarstvo
+				doverie_1
+				black_beret		
+			}
+			focuses = {			
+				ODS_perv
+				ODS_clear_perimetr
+				ODS_garantii_bez
+			}
+		}
+
+		"ORL"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_ORL"
+			ideology = militarists
+			ideas = {				
+				ORL_corporative_ethics
+				ORL_chance_for_everyone
+				ORL_victory_cult			
+			}
+			focuses = {
+				ORL_best_in_hell
+				ORL_first_among_equals
+				ORL_young_blood
+			}
+		}
+
+		"SDC"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_SDC"
+			ideology = statesmen
+			ideas = {
+				SDC_Willuem_influese1
+				SDC_Korodonniki1
+				SDC_hunger1
+			}
+			focuses = {
+				SDC_Visit
+				SDC_public_safety_concept
+				SDC_stabilization_situation
+			}
+		}
+
+		"AGE"={																	     																
+			history = "REQUIEM_OF_HUMANKIND_condition_of_AGE"			
+			ideology = statesmen														
+			ideas = {		
+				AGE_time_wasted
+			}																		
+			focuses = {																
+				AGE_blood_on_hands
+				AGE_seek_for_peace
+				AGE_red_sables
+			}																		
+		}	
+		
+		"LWV"={
+			history = "REQUIEM_OF_HUMANKIND_condition_of_LWV"
+			ideology = sacraments
+			ideas = {
+				godsdl 
+				holy_nadely 
+				uniat_nationalists
+			}
+			focuses = {
+				LWV_Absol_svyatost
+				LWV_Skrepit_veru_klinkom
+				LWV_Net_yaz
+			}
+		}
+
+		"MGL"={
+			history = "REQUIEM_OF_HUMANKIND_condition_not_ready"
+			ideology = sacraments
+			ideas = {
+				MGL_Critical_arrhythmia 
+				MGL_Cybernetic_soul 
+				MGL_Rusted_mechanism_1
+			}
+			focuses = {
+				MGL_cybernetic_mind
+				MGL_plutonium_cardiology
+				MGL_create_safezone
+			}
+		}
+
+		# "---"={
+		# 	history = "REQUIEM_OF_HUMANKIND_condition_OTHER"
+		# }
+
+
+		#Миноры																															
+
+		"IMP"={
+			minor = yes
+			history = "REQUIEM_OF_HUMANKIND_condition_of_IMP"
+			ideology = humanists
+			ideas = {				
+				IMP_winners_of_the_first_central_Russian
+				IMP_splinter_administration
+			}
+			focuses = {			
+				IMP_risen_from_the_ashes
+				IMP_clean_up
+				IMP_we_are_invincible
+			}
+		}
+
+		"FSR"={
+			minor = yes
+			history = "REQUIEM_OF_HUMANKIND_condition_of_FSR"
+			ideology = free_people
+			ideas = {				
+				rostik
+			}
+			focuses = {		
+				FSR_free_city	
+				FSR_kuban_problem
+				FSR_protect_your_home
+			}
+		}
+
+		"KUH"={
+			minor = yes
+			history = "REQUIEM_OF_HUMANKIND_condition_of_KUH"
+			ideology = sacraments
+			ideas = {				
+				cult_iskazheniya
+			}
+			focuses = {		
+				KUH_our_way	
+				KUH_new_parish
+				KUH_trample_heretics
+			}
+		}
+
+		"STW"={
+			minor = yes
+			history = "REQUIEM_OF_HUMANKIND_condition_of_STW"
+			ideology = bandits
+			ideas = {				
+				krugom_vragi
+			}
+			focuses = {		
+				STW_big_meeting
+				STW_rostov_father
+				STW_become_people
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+			GLS = {
+				set_variable = { freedom = 50 } 
+				set_variable = { order = 50 } 
+			}
+			AGE = {
+				set_variable = { monthly_counter_AGE = 1 }
+				add_dynamic_modifier = { modifier = AGE_baltic_separatism }
+				set_variable = { AGE_baltic_separatism_political_power_factor = -0.2 }
+				set_variable = { AGE_baltic_separatism_monthly_population = -0.25 }
+				set_variable = { AGE_baltic_separatism_conscription_factor = -0.2 }
+				set_variable = { AGE_baltic_separatism_consumer_goods_factor = 0.15 }
+				set_variable = { AGE_baltic_separatism_stability_factor = -0.6 }
+				set_variable = { AGE_baltic_separatism_industry_free_repair_factor = -0.8 }
+				set_variable = { var_terrorist_attack = 20 }
+				set_variable = { var_preventing_terrorist_attack = 0 }
+			}
+		}
+	}
+}

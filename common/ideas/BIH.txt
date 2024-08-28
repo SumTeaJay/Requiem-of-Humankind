@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+		God_with_us = {	
+		
+			picture = got_miit_uns
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.5				
+			}
+		}
+		Gods_protection = {	
+		
+			picture = zashita_boga
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_defence_factor = 0.5 		
+			}
+		}	
+	}
+}

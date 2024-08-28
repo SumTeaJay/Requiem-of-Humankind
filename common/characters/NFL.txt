@@ -1,0 +1,16 @@
+characters = {
+	NFL_Northern_Omut = {
+		name = NFL_Northern_Omut
+		portraits={
+			civilian={
+				large="GFX_portrait_NFL_Northern_Omut"
+			}
+		}
+		country_leader={
+			ideology=chthonism_subideology
+			desc = NFL_Northern_Omut_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

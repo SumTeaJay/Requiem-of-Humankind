@@ -1,0 +1,713 @@
+focus_tree = {
+	id = generic_focus
+	country = { factor = 1 }
+	default = yes
+
+	focus = {
+		id = source_of_order
+		icon = GFX_goal_source_of_order
+		cost = 5.00
+		x = 7
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = lot_of_life
+		icon = GFX_goal_lot_of_life
+		cost = 5.00
+		x = 9
+		y = 1
+		prerequisite = { focus = source_of_order }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_dynamic_modifier = {
+				modifier = apocaliptic_realism
+			}
+			set_variable = {
+				var = generic_production_speed_buildings_factor
+				value = 0.15
+				tooltip = lot_of_life_tt 
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = safety_and_protection
+		icon = GFX_goal_safety_and_protection
+		cost = 5.00
+		x = 3
+		y = 1
+		prerequisite = { focus = source_of_order }
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_war_support = 0.10
+			army_experience = 15
+			add_dynamic_modifier = {
+				modifier = apocaliptic_march
+			}
+			set_variable = {
+				var = generic_production_factory_max_efficiency_factor
+				value = 0.10
+				tooltip = safety_and_protection_tt
+			}
+		}
+	}
+	focus = {
+		id = laws_and_order
+		icon = GFX_goal_laws_and_order
+		cost = 5.00
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = source_of_order
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_stability = 0.10
+			add_dynamic_modifier = {
+				modifier = juridical_anomaly
+			}
+			set_variable = {
+				var = generic_research_speed_factor
+				value = 0.05
+				tooltip = laws_and_order_tt
+			}
+			set_variable = {
+				var = generic_political_power_factor
+				value = 0.05
+				tooltip = laws_and_order_2_tt
+			}
+		}
+	}
+	focus = {
+		id = take_a_stance
+		icon = GFX_goal_take_a_stance
+		cost = 5.00
+		x = 2
+		y = 2
+		prerequisite = { 
+			focus = safety_and_protection
+		}
+		mutually_exclusive = {
+			focus = weapons_at_ready
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_march_tt
+			set_variable = {
+				var = generic_recruitable_population_factor
+				value = 0.05
+				tooltip = take_a_stance_tt
+			}
+			set_variable = {
+				var = generic_mobilization_speed 
+				value = 0.15
+				tooltip =  take_a_stance_2_tt
+			}
+			set_variable = {
+				var = generic_offence
+				value = 0.00
+			}
+		}
+	}
+	focus = {
+		id = weapons_at_ready
+		icon = GFX_goal_weapons_at_ready
+		cost = 5.00
+		x = 4
+		y = 2
+		prerequisite = { 
+			focus = safety_and_protection
+		}
+		mutually_exclusive = {
+			focus = take_a_stance
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_march_tt
+			set_variable = {
+				var = generic_offence
+				value = 0.05
+				tooltip = weapons_at_ready_tt
+			}
+			set_variable = {
+				var = generic_recruitable_population_factor
+				value = 0.05
+				tooltip = weapons_at_ready_2_tt
+			}
+		}
+	}
+	focus = {
+		id = rules_of_war
+		icon = GFX_goal_rules_of_war
+		cost = 5.00
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = weapons_at_ready
+			focus = take_a_stance
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			army_experience = 50
+			air_experience = 50
+		}
+	}
+
+	focus = {
+		id = gods_of_war
+		icon = GFX_goal_gods_of_war
+		cost = 5.00
+		x = 1
+		y = 4
+		prerequisite = { 
+			focus = rules_of_war
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}
+		}
+	}
+
+	focus = {
+		id = hell_on_wheels
+		icon = GFX_goal_hell_on_wheels
+		cost = 5.00
+		x = 3
+		y = 4
+		prerequisite = { 
+			focus = rules_of_war
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = armor
+			}
+		}
+	}
+
+	focus = {
+		id = unbending_bayonets
+		icon = GFX_goal_unbending_bayonets
+		cost = 5.00
+		x = 5
+		y = 4
+		prerequisite = { 
+			focus = rules_of_war
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+		}
+	}
+
+	focus = {
+		id = death_from_skyes
+		icon = GFX_goal_death_from_skyes
+		cost = 5.00
+		x = 3
+		y = 5
+		prerequisite = { 
+			focus = gods_of_war
+			focus = hell_on_wheels
+			focus = unbending_bayonets
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category =  jet_technology
+			}
+		}
+	}
+
+	focus = {
+		id = shadow_hit
+		icon = GFX_goal_shadow_hit
+		cost = 5.00
+		x = 1
+		y = 6
+		prerequisite = { 
+			focus = death_from_skyes
+		}
+		mutually_exclusive = {
+			focus = throught_storm_eye
+			focus = scourge_of_god
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_march_tt
+			set_variable = {
+				var = generic_army_speed_factor
+				value = 0.05
+				tooltip = shadow_hit_tt
+			}
+			set_variable = {
+				var = generic_army_org_regain
+				value = 0.20
+				tooltip = shadow_hit_2_tt
+			}
+			set_variable = {
+				var = generic_initiative_factor 
+				value = 0.02
+				tooltip = shadow_hit_3_tt
+			}
+		}
+	}
+
+	focus = {
+		id = throught_storm_eye
+		icon = GFX_goal_Strengthen_the_Capital
+		cost = 5.00
+		x = 3
+		y = 6
+		prerequisite = { 
+			focus = death_from_skyes
+		}
+		mutually_exclusive = {
+			focus = shadow_hit
+			focus = scourge_of_god
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_march_tt
+			set_variable = {
+				var = generic_army_core_attack_factor
+				value = 0.10
+				tooltip = throught_storm_eye_tt
+			}
+			set_variable = {
+				var = generic_command_power_gain
+				value = 0.20
+				tooltip = throught_storm_eye_2_tt
+			}
+			set_variable = {
+				var = generic_supply_factor
+				value = 0.05
+				tooltip = throught_storm_eye_3_tt
+			}
+		}
+	}
+
+	focus = {
+		id = scourge_of_god
+		icon = GFX_goal_scourge_of_god
+		cost = 5.00
+		x = 5
+		y = 6
+		prerequisite = { 
+			focus = death_from_skyes
+		}
+		mutually_exclusive = {
+			focus = throught_storm_eye
+			focus = shadow_hit
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_march_tt
+			set_variable = {
+				var = generic_army_org
+				value = 0.20
+				tooltip = scourge_of_god_tt
+			}
+			set_variable = {
+				var = generic_experience_loss_factor
+				value = -0.15
+				tooltip =  scourge_of_god_2_tt
+			}
+			add_to_variable = {
+				var = generic_offence
+				value = 0.05
+				tooltip =  scourge_of_god_3_tt
+			}
+		}
+	}
+
+	focus = {
+		id = our_breadbasket
+		icon = GFX_goal_our_breadbasket
+		cost = 5.00
+		x = 7
+		y = 2
+		prerequisite = { 
+			focus = lot_of_life
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_monthly_population
+				value = 0.30
+				tooltip = our_breadbasket_tt
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+
+		}
+	}
+
+	focus = {
+		id = our_factories
+		icon = GFX_goal_our_factories
+		cost = 5.00
+		x = 9
+		y = 2
+		prerequisite = { 
+			focus = lot_of_life
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_production_factory_efficiency_gain_factor
+				value = 0.10
+				tooltip = our_factories_tt
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = our_homes
+		icon = GFX_goal_our_homes
+		cost = 5.00
+		x = 11
+		y = 2
+		prerequisite = { 
+			focus = lot_of_life
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_local_resourses_factor
+				value = 0.12
+				tooltip = our_homes_tt
+			}
+			set_variable = {
+				var = generic_stability_weekly_factor
+				value = 0.002
+				tooltip = our_homes_2_tt
+			}
+		}
+	}
+
+
+	focus = {
+		id = industry_of_peace
+		icon = GFX_goal_industry_of_peace
+		cost = 5.00
+		x = 10
+		y = 3
+		prerequisite = { 
+			focus = our_breadbasket
+			focus = our_factories
+			focus = our_homes
+		}
+		mutually_exclusive = {
+			focus = industry_of_war
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = shirt_for_naked
+		icon = GFX_goal_shirt_for_naked
+		cost = 5.00
+		x = 10
+		y = 4
+		prerequisite = { 
+			focus = industry_of_peace
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			add_to_variable = {
+				var = generic_production_factory_efficiency_gain_factor
+				value = 0.10
+				tooltip = shirt_for_naked_tt
+			}
+		}
+	}
+	focus = {
+		id = economy_for_country
+		icon = GFX_goal_economy_for_country
+		cost = 5.00
+		x = 10
+		y = 5
+		prerequisite = { 
+			focus = shirt_for_naked
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_consumer_goods_factor
+				value = -0.20
+				tooltip = economy_for_country_tt
+			}
+		}
+	}
+	focus = {
+		id = industry_of_war
+		icon = GFX_goal_industry_of_war
+		cost = 5.00
+		x = 8
+		y = 3
+		prerequisite = { 
+			focus = our_breadbasket
+			focus = our_factories
+			focus = our_homes
+		}
+		mutually_exclusive = {
+			focus = industry_of_peace
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = riffle_for_everyone
+		icon = GFX_goal_riffle_for_everyone
+		cost = 5.00
+		x = 8
+		y = 4
+		prerequisite = { 
+			focus = industry_of_war
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+    				type = arms_factory
+    				level = 2
+    				instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = economy_for_politics
+		icon = GFX_goal_economy_for_politics
+		cost = 5.00
+		x = 8
+		y = 5
+		prerequisite = { 
+			focus = riffle_for_everyone
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_production_factory_max_efficiency_factor_2
+				value = 0.20
+				tooltip = economy_for_politics_tt
+			}
+		}
+	}
+
+	focus = {
+		id = clearing_territory
+		icon = GFX_goal_clearing_territory
+		cost = 5.00
+		x = 9
+		y = 6
+		prerequisite = { 
+			focus = economy_for_politics
+			focus = economy_for_country
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_realism_tt
+			set_variable = {
+				var = generic_base_fuel_gain 
+				value = 0.25
+				tooltip = clearing_territory_tt
+			}
+			add_to_variable = {
+				var = generic_local_resourses_factor
+				value = 0.08
+				tooltip = clearing_territory_2_tt
+			}
+			random_controlled_state = {
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = tough_politics
+		icon = GFX_goal_tough_politics
+		cost = 5.00
+		x = 14
+		y = 2
+		prerequisite = { 
+			focus = laws_and_order
+		}
+		mutually_exclusive = {
+			focus = realpolitics
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_anomaly_tt
+			set_variable = {
+				var = generic_generate_wargoal_tension
+				value = -0.75
+				tooltip = tough_politics_tt
+			}
+			set_variable = {
+				var = generic_war_support_weekly
+				value = 0.005
+				tooltip = tough_politics_2_tt
+			}
+			add_to_variable = {
+				var = generic_political_power_factor
+				value = 0.25
+				tooltip = tough_politics_3_tt
+			}
+		}
+	}
+
+	focus = {
+		id = realpolitics
+		icon = GFX_goal_realpolitics
+		cost = 5.00
+		x = 16
+		y = 2
+		prerequisite = { 
+			focus = laws_and_order
+		}
+		mutually_exclusive = {
+			focus = tough_politics
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			custom_effect_tooltip = add_to_anomaly_tt
+			set_variable = {
+				var = generic_enemy_justify_war_goal_time
+				value = -0.75
+				tooltip = realpolitics_tt
+			}
+			set_variable = {
+				var = generic_defensive_war_stability_factor
+				value = 0.30
+				tooltip = realpolitics_2_tt
+			}
+			add_to_variable = {
+				var = generic_political_power_factor
+				value = 0.25
+				tooltip = realpolitics_3_tt
+			}
+			set_variable = {
+				var = generic_war_support_weekly
+				value = 0.00
+			}
+		}
+	}
+
+	focus = {
+		id = enmity_with_neighbors
+		icon = GFX_goal_Strengthen_the_Capital
+		cost = 5.00
+		x = 15
+		y = 3
+		prerequisite = { 
+			focus = realpolitics
+			focus = tough_politics
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			unlock_decision_category_tooltip = expansion_category
+			custom_effect_tooltip = add_to_anomaly_tt
+			set_variable = {
+				var = generic_enemy_declare_war_tension
+				value = -0.75
+				tooltip = enmity_with_neighbors_tt
+			}
+			set_variable = {
+				var = generic_mobilization_speed_2
+				value = 0.15
+				tooltip = enmity_with_neighbors_2_tt
+			}
+			add_to_variable = {
+				var = generic_war_support_weekly
+				value = 0.005
+				tooltip = enmity_with_neighbors_3_tt
+			}
+		}
+	}
+
+	focus = {
+		id = step_to_unknown
+		icon = GFX_goal_Strengthen_the_Capital
+		cost = 5.00
+		x = 9
+		y = 8
+		prerequisite = { 
+			focus = clearing_territory
+			focus = shadow_hit
+			focus = throught_storm_eye
+			focus = scourge_of_god
+		}
+		prerequisite = { 
+			focus = enmity_with_neighbors
+		}
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_ideas = blood_bath
+		}
+	}
+}

@@ -1,0 +1,775 @@
+focus_tree = {
+	id = state_liquidation_board_phase_two
+		country = {
+		factor = 0
+		modifier = {
+		add = 100
+		tag = GLS
+		}
+	}
+	default = no
+
+	focus = {
+		id = GLS_lawmaking
+		icon = GFX_lawmaking
+		x = 6
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.22
+				days = 1
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GLS_process
+		icon = GFX_process
+		x = 6
+		y = 1
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = { focus = GLS_lawmaking }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.21
+				days = 1
+			}
+			add_stability = 0.05
+			set_country_flag = GLS_freedom_and_order_start
+			custom_effect_tooltip = unlock_freedom_and_order			
+		}
+	}
+	focus = {
+		id = GLS_cursed
+		icon = GFX_cursed
+		x = 8
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = { focus = GLS_process }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_clicked_continue_practice
+				hidden_trigger = {
+					has_country_flag = continue_practice
+				}	
+			}
+		}
+		completion_reward = { 
+			country_event = {
+				id = GLS.23
+				days = 1
+			}
+			swap_ideas = {
+				remove_idea = GLS_fathers_and_not_fathers_1
+				add_idea = GLS_fathers_and_not_fathers_31
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = continue_practice
+		}
+	}
+	focus = {
+		id = GLS_romance
+		icon = GFX_romance
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_clicked_start_mobilisation
+				hidden_trigger = {
+					has_country_flag = start_mobilisation
+				}	
+			}
+		}
+		prerequisite = {focus = GLS_process}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.24
+				days = 1
+			}
+			swap_ideas = {
+				remove_idea = GLS_fathers_and_not_fathers_1
+				add_idea = GLS_fathers_and_not_fathers_3
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			clr_country_flag = start_mobilisation
+		}
+	}
+	focus = {
+		id = GLS_pereputie
+		icon = GFX_pereputie
+		x = 6
+		y = 5
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = { focus = GLS_romance focus = GLS_cursed }
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.25
+				days = 1
+			}
+			set_country_flag = GLS_negotiation_process_start
+			custom_effect_tooltip = unlock_negotiation_process
+		} 
+	}
+	focus = {
+		id = GLS_south
+		icon = GFX_south
+		x = 0
+		y = 6
+		#relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_pereputie}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_war_support = 0.15
+			add_political_power = 100
+			every_owned_state = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = GLS_chess
+		icon = GFX_chess
+		x = 0
+		y = 3
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_south}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_doctrine_cost_reduction = {
+				cost_reduction = 0.15
+				uses = 1
+				category = land_doctrine
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+	focus = {
+		id = GLS_madness
+		icon = GFX_madness
+		x = 0
+		y = 4
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_chess}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = MOT
+		completion_reward = { 
+			declare_war_on = {
+				target = MOT
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_the_weakest_sex
+		icon = GFX_the_weakest_sex
+		x = 0
+		y = 5
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_madness}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = URA
+		completion_reward = { 
+			declare_war_on = {
+				target = URA
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_sufferers
+		icon = GFX_sufferers
+		x = 0
+		y = 6
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_the_weakest_sex}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = ISK
+		completion_reward = { 
+			declare_war_on = {
+				target = ISK
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_The_Thing
+		icon = GFX_The_Thing
+		x = 0
+		y = 7
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_sufferers}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = BL1
+		completion_reward = { 
+			country_event = {
+				id = GLS.26
+				days = 1
+			}
+			declare_war_on = {
+				target = BL1
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_zhukov
+		icon = GFX_zhukov
+		x = 0
+		y = 8
+		relative_position_id = GLS_south
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_The_Thing}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			652 = { 
+				add_manpower = 7000
+			}
+			251 = { 
+				add_manpower = 7000
+			}
+			401 = { 
+				add_manpower = 7000
+			}
+			407 = { 
+				add_manpower = 7000
+			}
+			994 = { 
+				add_manpower = 7000
+			}
+			406 = { 
+				add_manpower = 7000
+			}
+			999 = { 
+				add_manpower = 7000
+			}
+			if = {
+				limit = {
+					has_idea = GLS_memories_of_rodina_2
+				}
+				swap_ideas = {
+					remove_idea = GLS_memories_of_rodina_2
+					add_idea = GLS_memories_of_rodina_3
+				}
+			}
+			else_if = {
+				limit = {
+					has_idea = GLS_memories_of_rodina_4
+				}
+				swap_ideas = {
+					remove_idea = GLS_memories_of_rodina_4
+					add_idea = GLS_memories_of_rodina_6
+				}
+			}
+		}
+	}
+	focus = {
+		id = GLS_power_and_love
+		icon = GFX_power_and_love
+		x = 6
+		y = 6
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_pereputie}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.27
+				days = 1
+			}
+			swap_ideas = {
+				remove_idea = GLS_kotly
+				add_idea =  GLS_kotly_1
+			}
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GLS_hell
+		icon = GFX_hell
+		x = 4
+		y = 7
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = { focus = GLS_holy_book}
+		prerequisite = {focus = GLS_power_and_love}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_war_support = 0.05
+			add_stability = -0.05
+			add_to_variable = { freedom = 10 }
+			custom_effect_tooltip = get_ten_percent_of_freedom
+		}
+	}
+	focus = {
+		id = GLS_holy_book
+		icon = GFX_holy_book
+		x = 8
+		y = 7
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {focus = GLS_hell}
+		prerequisite = {focus = GLS_power_and_love}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_war_support = -0.05
+			add_stability = 0.05
+			add_tech_bonus = {
+				bonus = 1
+				uses = 1
+				category = military_police_tech
+			}
+			add_to_variable = { order = 10 } 
+			custom_effect_tooltip = get_ten_percent_of_order
+		}
+	}
+	focus = {
+		id = GLS_KALASH
+		icon = GFX_KALASH
+		x = 4
+		y = 8
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {focus = GLS_mascs}
+		prerequisite = {focus = GLS_hell focus = GLS_holy_book}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.28
+				days = 1
+			}
+			add_to_variable = { order = 10 } 
+			custom_effect_tooltip = get_ten_percent_of_order
+			if = {
+				limit = { has_idea = GLS_fathers_and_not_fathers_3 }
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_3
+					add_idea = GLS_fathers_and_not_fathers_7
+				}
+			}
+			else_if = {
+				limit =  {has_idea = GLS_fathers_and_not_fathers_4 }
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_4
+					add_idea = GLS_fathers_and_not_fathers_8
+				}
+			}
+
+			else_if = {
+				limit = { has_idea = GLS_fathers_and_not_fathers_5 }
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_5
+					add_idea = GLS_fathers_and_not_fathers_9
+				}
+			}
+
+			else_if = {
+				limit = { has_idea = GLS_fathers_and_not_fathers_6 }
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_6
+					add_idea = GLS_fathers_and_not_fathers_10
+				}
+			}
+		}
+	}
+	focus = {
+		id = GLS_mascs
+		icon = GFX_mascs
+		x = 8
+		y = 8
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {focus = GLS_KALASH }
+		prerequisite = {focus = GLS_hell focus = GLS_holy_book}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.29
+				days = 1
+			}
+			add_to_variable = { freedom = 10 } 
+			custom_effect_tooltip = get_ten_percent_of_freedom
+			if = {
+				limit = {has_idea = GLS_fathers_and_not_fathers_3}
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_3
+					add_idea = GLS_fathers_and_not_fathers_11
+				}
+			}
+			if = {
+				limit = {has_idea = GLS_fathers_and_not_fathers_31}
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_31
+					add_idea = GLS_fathers_and_not_fathers_111
+				}
+			}
+			else_if = {
+				limit = {has_idea = GLS_fathers_and_not_fathers_4}
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_4
+					add_idea = GLS_fathers_and_not_fathers_12
+				}
+			}
+
+			else_if = {
+				limit = {has_idea = GLS_fathers_and_not_fathers_5}
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_5
+					add_idea = GLS_fathers_and_not_fathers_13
+				}
+			}
+
+			else_if = {
+				limit = {has_idea = GLS_fathers_and_not_fathers_6}
+				swap_ideas = {
+					remove_idea = GLS_fathers_and_not_fathers_6
+					add_idea = GLS_fathers_and_not_fathers_14
+				}
+			}
+		}
+	}
+	focus = {
+		id = GLS_kurchatov
+		icon = GFX_kurchatov
+		x = 6
+		y = 9
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_mascs focus = GLS_KALASH}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.30
+				days = 1
+			}
+			add_research_slot = 1
+			clamp_variable = {
+    			var = ready_charge
+    			min = 0
+   				max = 100
+			}
+			set_country_flag = GLS_kurchatov_project_start
+			custom_effect_tooltip = unlock_kurchatov_project
+		}
+	}
+	focus = {
+		id = GLS_sharashki
+		icon = GFX_sharashki
+		x = 4
+		y = 10
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {focus = GLS_free_mind}
+		prerequisite = {focus = GLS_kurchatov}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_stability = -0.15
+			add_to_variable = { order = 10 } 
+			custom_effect_tooltip = get_ten_percent_of_order
+			custom_effect_tooltip = get_one_percent_of_ready_charge_weekly
+		}
+	}
+	focus = {
+		id = GLS_free_mind
+		icon = GFX_free_mind
+		x = 8
+		y = 10
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		mutually_exclusive = {focus = GLS_sharashki}
+		prerequisite = {focus = GLS_kurchatov}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			add_stability = 0.1
+			add_to_variable = { freedom = 10 } 
+			custom_effect_tooltip = get_ten_percent_of_freedom
+			if = {
+				limit = { 
+					has_idea = GLS_memories_of_rodina_2
+				}
+				swap_ideas = {
+					remove_idea = GLS_memories_of_rodina_2
+					add_idea = GLS_memories_of_rodina_4
+				}
+			}
+			else_if = {
+				limit = { 
+					has_idea = GLS_memories_of_rodina_3
+				}
+				swap_ideas = {
+					remove_idea = GLS_memories_of_rodina_3
+					add_idea = GLS_memories_of_rodina_5
+				}
+			}
+		}
+	}
+	focus = {
+		id = GLS_nibelungs
+		icon = GFX_nibelungs
+		x = 6
+		y = 11
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_free_mind focus = GLS_sharashki}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.32
+				days = 1
+			}
+			set_country_flag = GLS_nuclear_strike_start
+			custom_effect_tooltip = unlock_nuclear_strike
+			custom_effect_tooltip = adds_one_nuclear_charge
+			add_to_variable = { nuclear_charges = 1 }
+		}
+	}
+	
+	focus = {
+		id = GLS_expedition
+		icon = GFX_expedition
+		x = 12
+		y = 6
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		available = {
+			NOT = { country_exists = MOT }
+		}
+		prerequisite = {focus = GLS_pereputie}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		country_event = {
+				id = GLS.31
+				days = 1
+			}
+			add_manpower = -1
+		}
+	}
+	focus = {
+		id = GLS_marouders
+		icon = GFX_marouders
+		relative_position_id = GLS_expedition
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_expedition}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		country_event = {
+				id = GLS.35
+				days = 1
+			}
+			add_manpower = -2
+		}
+	}
+	focus = {
+		id = GLS_punisher
+		icon = GFX_punisher
+		relative_position_id = GLS_expedition
+		x = 0
+		y = 5
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_marouders}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+		country_event = {
+				id = GLS.38
+				days = 1
+			}
+			add_manpower = -3
+		}
+	}
+	focus = {
+		id = GLS_prayers
+		icon = GFX_prayers
+		relative_position_id = GLS_expedition
+		x = 0
+		y = 6
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_punisher}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.36
+				days = 1
+			}
+			add_manpower = -4
+		}
+	}
+	focus = {
+		id = GLS_clear
+		icon = GFX_clear
+		relative_position_id = GLS_expedition
+		x = 0
+		y = 8
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_prayers}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS.37
+				days = 1
+			}
+			annex_country = {
+				target = SI1
+				transfer_troops = yes
+			}
+			993 = {
+				add_core_of = GLS
+				remove_core_of = SI1
+			}
+		}
+	}
+	focus = {
+		id = GLS_chasing_a_dream
+		icon = GFX_chasing_a_dream
+		x = 6
+		y = 15
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		prerequisite = {focus = GLS_nibelungs}
+		prerequisite = {focus = GLS_zhukov}
+		prerequisite = {focus = GLS_clear}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		will_lead_to_war_with = EDM
+		will_lead_to_war_with = WPK
+		will_lead_to_war_with = URC
+		will_lead_to_war_with = ZAN
+		will_lead_to_war_with = TAR
+		will_lead_to_war_with = OCH
+		will_lead_to_war_with = DIS
+		completion_reward = { 
+			declare_war_on = {
+				target = EDM
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = WPK
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = URC
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = ZAN
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = TAR
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = OCH
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = DIS
+				type = annex_everything
+			}
+		}
+	}
+}

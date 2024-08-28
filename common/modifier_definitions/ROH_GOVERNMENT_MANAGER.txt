@@ -1,0 +1,7 @@
+reform_point_income = {
+	color_type = good
+	value_type = number
+	precision = 0
+	category = country
+	category = politics
+}

@@ -1,0 +1,24 @@
+scripted_gui = { 
+	roh_expedition= {
+		window_name = "roh_expedition"
+        	context_type = decision_category
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			expedition_progressbar = {
+				frame = profesionalzm_oriada 
+			}
+		}
+
+		triggers = { 
+
+		}
+
+		effects = {	
+
+		}	
+	}
+}

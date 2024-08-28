@@ -1,0 +1,15 @@
+characters = {
+	DRG_pavel_glin = {
+		portraits={
+			civilian={
+				large="gfx/leaders/DRG/pavel_glin.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = DRG_pavel_glin_desc
+		}
+	}
+}

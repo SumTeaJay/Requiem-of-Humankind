@@ -1,0 +1,9 @@
+on_actions = {
+	on_weekly = {
+		effect = {
+			add_to_variable = {
+				ochki_gos_progressa = modifier@reform_point_income
+			}
+		}
+	}
+}

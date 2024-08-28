@@ -1,0 +1,15 @@
+characters = {
+	TTS_cord_corp = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TTS/cord_corp.dds"
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = TTS_cord_corp_DESC
+		}
+	}	
+}

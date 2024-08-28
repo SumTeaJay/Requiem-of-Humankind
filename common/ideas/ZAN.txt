@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		ZAN_last_chance = {
+                        picture = ZAN_last_chance
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				defence = 0.1
+				political_power_factor = -0.2
+				war_support_factor = -0.2
+
+			}
+		}
+	}
+}

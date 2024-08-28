@@ -1,0 +1,312 @@
+focus_tree = {
+	id = AGE_phase_1
+	country = {
+		factor = 0
+        modifier = {
+            add = 10
+            tag = AGE
+        }		
+	}
+	default = no
+
+	focus = {
+		id = AGE_blood_on_hands
+		icon = GFX_AGE_Blood_on_hands
+		cost = 5.00
+		x = 7
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = AGE.1
+			custom_effect_tooltip = AGE_blood_on_hands_tt
+		}
+	}
+	focus = {
+		id = AGE_seek_for_peace
+		icon = GFX_AGE_Seek_for_peace
+		cost = 5.00
+		x = 6
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_still_their_land }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = -50
+			add_manpower = 1000
+			country_event = AGE.2
+			custom_effect_tooltip = AGE_seek_for_peace_tt
+		}
+	}
+	focus = {
+		id = AGE_still_their_land
+		icon = GFX_AGE_Still_their_land
+		cost = 5.00
+		x = 6
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_blood_on_hands }
+		mutually_exclusive = { focus = AGE_not_their_land }
+		completion_reward = {
+			add_stability = 0.05
+			remove_ideas = AGE_time_wasted
+			add_ideas = AGE_land_for_baltics
+			country_event = AGE.3
+			custom_effect_tooltip = AGE_still_their_land_tt
+			set_country_flag = still_their_land_flag
+		}
+	}
+	focus = {
+		id = AGE_red_sables
+		icon = GFX_AGE_Red_sables
+		cost = 5.00
+		x = 8
+		y = 2		
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_not_their_land }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			add_manpower = -1000
+			army_experience = -5
+			remove_ideas = AGE_time_wasted
+			add_ideas = AGE_red_sabres
+			country_event = AGE.4
+			custom_effect_tooltip = AGE_red_sables_tt
+			set_country_flag = red_sabres_flag
+			if = {
+				limit = { has_idea = AGE_red_sabres }
+				add_to_variable = { var_terrorist_attack = -2 tooltip = var_terrorist_attack_minus_2_tt }
+				add_to_variable = { var_preventing_terrorist_attack = 10 tooltip = var_preventing_terrorist_attack_plus_10_tt }		
+			}
+		}
+	}
+	focus = {
+		id = AGE_not_their_land
+		icon = GFX_AGE_Not_their_land
+		cost = 5.00
+		x = 8
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_blood_on_hands }
+		mutually_exclusive = { focus = AGE_still_their_land }
+		completion_reward = {
+			add_stability = -0.05
+			country_event = AGE.6
+			set_country_flag = not_their_land_anymore_flag
+			set_country_flag = baltic_terror_activation
+			custom_effect_tooltip = not_their_land_tt
+			hidden_effect = {
+				911 = {
+					set_state_name = STATE_911_age
+					set_province_name = {
+    					id = 3296
+    					name = VICTORY_POINTS_3296_age
+					}
+				}
+				809 = {
+					set_state_name = STATE_809_age
+					set_province_name = {
+    					id = 6222
+    					name = VICTORY_POINTS_6222_age
+					}
+				}
+				12 = {
+					set_state_name = STATE_12_age
+					set_province_name = {
+    					id = 9501
+    					name = VICTORY_POINTS_9501_age
+					}
+				}
+				13 = {
+					set_state_name = STATE_13_age
+					set_province_name = {
+    					id = 3174
+    					name = VICTORY_POINTS_3174_age
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = AGE_our_motherland
+		icon = GFX_AGE_Our_motherland
+		cost = 5.00
+		x = 7
+		y = 3
+		ai_will_do = { factor = 10 }
+		prerequisite = {
+			focus = AGE_seek_for_peace
+			focus = AGE_red_sables
+		}
+		completion_reward = {
+			army_experience = 5
+			air_experience = 5
+			add_stability = 0.02
+			country_event = AGE.5
+
+		}
+	}
+	focus = {
+		id = AGE_give_mercy
+		icon = GFX_AGE_Give_mercy
+		cost = 5.00
+		x = 5
+		y = 3
+		ai_will_do = { factor = 10 }
+		available = {
+			has_completed_focus = AGE_seek_for_peace
+		}
+		completion_reward = {
+			add_political_power = -100
+			set_country_flag = ba_their_freedoms_loyalty_country_flag
+		}
+	}
+	focus = {
+		id = AGE_night_when_wolfs_keep_silent
+		icon = GFX_AGE_Night_when_wolfs
+		cost = 5.00
+		x = 9
+		y = 3
+		ai_will_do = { factor = 10 }
+		available = {
+			has_completed_focus = AGE_red_sables
+		}
+		completion_reward = {
+			add_political_power = 50
+			every_owned_state = {
+				add_manpower = -500
+			}
+			add_stability = -0.05
+		}
+	}
+	focus = {
+		id = AGE_we_are_not_alone
+		icon = GFX_AGE_We_are_not_alone
+		cost = 5.00
+		x = 6
+		y = 4
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_give_mercy }
+		prerequisite = { focus = AGE_our_motherland}
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = AGE_old_friendship
+		icon = GFX_AGE_Old_friendship
+		cost = 5.00
+		x = 6
+		y = 5
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_we_are_not_alone }
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 20
+		}
+	}
+	focus = {
+		id = AGE_day_of_unity
+		icon = GFX_AGE_Day_of_unity
+		cost = 5.00
+		x = 6
+		y = 6
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_old_friendship }
+		completion_reward = {
+			add_timed_idea = {
+				idea = AGE_day_of_unity_celebration
+				days = 30
+			}
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = AGE_we_are_here_for_long
+		icon = GFX_AGE_We_are_here_for_long
+		cost = 5.00
+		x = 8
+		y = 4
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_night_when_wolfs_keep_silent }
+		prerequisite = { focus = AGE_our_motherland }
+		completion_reward = {
+			add_political_power = 50
+			add_war_support = 0.02
+			set_country_flag =  ba_their_freedoms_loyalty_country_flag
+			add_stability = -0.02
+		}
+	}
+	focus = {
+		id = AGE_southern_ortodoxians
+		icon = GFX_AGE_Southern_ortodoxians
+		cost = 5.00
+		x = 8
+		y = 5
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_we_are_here_for_long }
+		completion_reward = {
+			every_owned_state = {
+				add_manpower = 250
+			}
+			add_political_power = -20
+		}
+	}
+	focus = {
+		id = AGE_day_of_freedom
+		icon = GFX_AGE_Day_of_freedom
+		cost = 5.00
+		x = 8
+		y = 6
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = AGE_southern_ortodoxians }
+		completion_reward = {
+			add_stability =-0.1
+		}
+	}
+	focus = {
+		id = AGE_once_we_will_be_there
+		icon = GFX_AGE_Once_we_will_be_there
+		cost = 5.00
+		x = 7
+		y = 7
+		ai_will_do = { factor = 10 }
+		prerequisite = { 
+			focus = AGE_day_of_unity
+			focus = AGE_day_of_freedom
+		}
+		completion_reward = {
+			country_event = AGE.7
+			add_stability = 0.1
+			hidden_effect = {
+				911 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				809 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				808 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				12 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				13 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				191 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				927 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				812 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				910 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				909 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				190 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				189 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				815 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				11 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				814 = { remove_dynamic_modifier = { modifier = clandestine_cells } }
+				IF = {
+					limit = { has_completed_focus = AGE_still_their_land }
+					load_focus_tree = AGE_phase_2_reconciliation
+					set_country_flag = war_with_baltosphere_flag
+				}
+				else_if = {
+					limit = { has_completed_focus = AGE_not_their_land }
+					load_focus_tree = AGE_phase_2_slavicization
+				}
+			}
+		}
+	}
+}

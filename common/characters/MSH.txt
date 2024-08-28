@@ -1,0 +1,37 @@
+characters = {
+	MSH_Mikhail_Mishustov = {
+        name = MSH_Mikhail_Mishustov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MSH_Mikhail_Mishustov
+			}
+		}
+		country_leader = {
+			ideology = bandits_subideology
+			expire = "2090.1.1.1"
+			id = -1
+			desc = MSH_Mikhail_Mishustov_desc
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	MSH_generic_general = {
+		portraits = {
+			army = {
+				large = GFX_portrait_ROH_generic_5
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

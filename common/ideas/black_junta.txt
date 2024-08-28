@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		dog_clanging = {
+			modifier = {
+				enemy_justify_war_goal_time = 2
+				production_factory_efficiency_gain_factor = 0.1
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}

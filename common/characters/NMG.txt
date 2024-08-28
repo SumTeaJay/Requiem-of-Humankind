@@ -1,0 +1,15 @@
+characters = {
+    NMG_Yens_Stoltenberg = {
+        name = NMG_Yens_Stoltenberg
+        portraits={
+			civilian = {
+				large="gfx/leaders/NMG/NMG_Yens_Stoltenberg.dds"
+			}
+		}
+        country_leader = {
+			ideology = militarists_subideology
+			expire = "2050.1.1.1"
+			id = -1
+		}
+    }
+}

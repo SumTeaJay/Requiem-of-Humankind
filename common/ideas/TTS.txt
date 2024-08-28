@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		TTS_mutual_cooperation = {			#Взаимовыгодное сотрудничество
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_lack_of_resource_penalty_factor = 0.1
+				monthly_population = -0.05
+				acclimatization_cold_climate_gain_factor = 0.15
+				army_speed_factor = -0.1
+				attrition = 0.15			
+			}
+		}
+	}
+}

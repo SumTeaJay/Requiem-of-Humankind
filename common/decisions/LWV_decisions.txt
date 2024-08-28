@@ -1,0 +1,883 @@
+ LWV_boji_perst = {
+	upgrade = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			original_tag = LWV
+		}
+		available = {
+			has_idea = LWV_boji_perst_cut 	
+		}
+		cost = 100
+		days_remove = 100
+		complete_effect = {	
+		}
+
+		remove_effect = {
+			swap_ideas ={
+				remove_idea = LWV_boji_perst_cut
+				add_idea = LWV_boji_perst_full
+			}
+		}		
+	}
+		
+	downgrade = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			original_tag = LWV
+		}
+		available = {
+			has_idea = LWV_boji_perst_full 	
+		}
+		cost = 5
+		days_remove = 7
+		complete_effect = {	
+
+		}
+		remove_effect = {
+			swap_ideas ={
+				remove_idea = LWV_boji_perst_full
+				add_idea = LWV_boji_perst_cut
+			}
+		}		
+	}
+}
+
+#####  ####    ####  #####  #####  #####  #####  #
+#      #   #  #   #    #    #   #  #        #    #
+#      ####    ####    #    #   #  #        #    ####
+#      #   #   #  #    #    #   #  #        #    #   #
+#####  ####   #   #    #    #####  #####    #    ####
+
+LWV_holiness = {
+	stage_1 = {
+		icon = GFX_decision_holiness_integration_one
+		target_trigger = {
+			FROM = {
+				any_neighbor_state = {
+					is_core_of = LWV
+				}
+				NOT = {
+					is_core_of = LWV
+					state = 88
+					state = 46
+					state = 79
+					state = 76
+					state = 154
+					state = 664
+					state = 71
+					state = 90
+					state = 10
+					state = 921
+					state = 807
+					state = 85
+					state = 811
+					state = 146
+					state = 111
+					state = 149
+					state = 148
+					state = 722
+					state = 824
+					state = 516
+					state = 576
+					state = 568
+					state = 329
+					state = 818
+					state = 618
+					state = 617
+					state = 619
+					state = 267
+					state = 415
+					state = 416
+					state = 266
+					state = 826
+					state = 233
+					state = 235
+					state = 237
+					state = 827
+					state = 987
+				}
+			}
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+		fire_only_once = yes
+		days_remove = 10
+		cost = 15
+		complete_effect = {}
+		remove_effect = {
+			FROM ={
+				set_state_flag = widespread_holiness
+			}
+			add_to_variable = { unity_in_holiness = 1 }
+		}
+	}
+	
+	stage_2 = {
+		icon = GFX_decision_holiness_integration_two
+		target_trigger = {
+			FROM = {
+				has_state_flag = widespread_holiness
+				NOT = {
+					is_core_of = LWV
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 20
+		cost = 25
+		complete_effect = {
+		}
+		remove_effect = {
+			FROM = {
+				clr_state_flag = widespread_holiness
+				set_state_flag = sent_missionaries
+			}
+			add_to_variable = { unity_in_holiness = 1 }
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+	
+	stage_3 = {
+		icon = GFX_decision_holiness_integration_three
+		target_trigger = {
+			FROM = {
+				has_state_flag = sent_missionaries
+				NOT = {
+					is_core_of = LWV
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 60
+		complete_effect = {}
+		remove_effect = {
+			FROM = {
+				add_core_of = LWV
+				clr_state_flag = sent_missionaries
+			}
+			add_to_variable = { unity_in_holiness = 1 }
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+
+	stage_4 = {
+		icon = GFX_decision_holiness_integration_three
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			LWV = {
+				has_completed_focus = LWV_rasprostraniat_religiu
+				NOT = {
+					has_country_flag = holy_step_flag
+					has_country_flag = sudni_den_flag
+				}
+			}
+			FROM = {
+				OR = {
+					has_state_flag = sent_missionaries
+					is_core_of = LWV
+				}
+				NOT = {
+					is_owned_by = LWV
+				}
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = holy_step
+					}
+				}
+			}
+		}
+		available = {
+			LWV = {
+				has_completed_focus = LWV_rasprostraniat_religiu
+				NOT = {
+					has_country_flag = holy_step_flag
+					has_country_flag = judgment_day_flag
+				}
+			}
+			FROM = {
+				OR = {
+					has_state_flag = sent_missionaries
+					is_core_of = LWV
+				}
+				NOT = {
+					is_owned_by = LWV
+				}
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = holy_step
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 10
+		cost = 5
+		complete_effect = {
+			LWV = {
+				set_country_flag = holy_step_flag
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = holy_step
+ 					days = 30
+				}
+				owner = {
+					country_event = LWV.3333
+				}
+			}
+			LWV = {
+				clr_country_flag = holy_step_flag
+			}
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+	stage_5 = {
+		icon = GFX_decision_holiness_integration_three
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			LWV = {
+				NOT = {
+					has_country_flag = judgment_day_flag
+				}
+			}
+			FROM = {
+				has_dynamic_modifier = {
+					modifier = holy_step
+				}
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = judgment_day
+					}
+				}
+			}
+		}
+		available = {
+			LWV = {
+				NOT = {
+					has_country_flag = judgment_day_flag
+				}
+			}
+			FROM = {
+				has_dynamic_modifier = {
+					modifier = holy_step
+				}
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = judgment_day
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 5
+		cost = 100
+		complete_effect = {
+			LWV = {
+				clr_country_flag = holy_step_flag
+				set_country_flag = judgment_day_flag
+			}
+		}
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = {
+					modifier = holy_step
+				}
+				add_dynamic_modifier = {
+					modifier = judgment_day
+ 					days = 20
+				}
+			}
+			LWV = {
+				clr_country_flag = judgment_day_flag
+			}
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+	stage_6 = {
+		icon = GFX_decision_holiness_integration_three
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			LWV = {
+				has_completed_focus = LWV_podgotovit_pochvu
+				NOT = {
+					has_country_flag = prepare_the_ground_flag
+				}
+			}
+			FROM = {
+				is_core_of = LWV
+				is_owned_by = LWV
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = prepare_the_ground
+					}
+				}
+			}
+		}
+		available = {
+			LWV = {
+				has_completed_focus = LWV_podgotovit_pochvu
+				NOT = {
+					has_country_flag = prepare_the_ground_flag
+				}
+			}
+			FROM = {
+				is_core_of = LWV
+				is_owned_by = LWV
+			}
+			NOT = {
+				any_state = {
+					has_dynamic_modifier = {
+						modifier = prepare_the_ground
+					}
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 10
+		cost = 10
+		complete_effect = {
+			LWV = {
+				set_country_flag = prepare_the_ground_flag
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = prepare_the_ground
+ 					days = 50
+				}
+			}
+			LWV = {
+				clr_country_flag = prepare_the_ground_flag
+			}
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+	stage_7 = {
+		icon = GFX_decision_holiness_integration_three
+		allowed = {
+			original_tag = LWV
+		}
+		visible = {
+			LWV = {
+				has_completed_focus = LWV_zaseet_semena_pravednosti
+				NOT = {
+					has_country_flag = sow_the_seeds_flag
+				}
+			}
+			FROM = {
+				is_core_of = LWV
+				is_owned_by = LWV
+			}
+		}
+		available = {
+			LWV = {
+				has_completed_focus = LWV_zaseet_semena_pravednosti
+				NOT = {
+					has_country_flag = sow_the_seeds_flag
+				}
+			}
+			FROM = {
+				is_core_of = LWV
+				is_owned_by = LWV
+				has_dynamic_modifier = {
+					modifier = prepare_the_ground
+				}
+			}
+		}
+		fire_only_once = yes
+		days_remove = 30
+		cost = 50
+		complete_effect = {
+			LWV = {
+				clr_country_flag = prepare_the_ground_flag
+				set_country_flag = sown_seeds_flag
+			}
+		}
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = {
+					modifier = sow_the_seeds
+ 					days = 30
+				}
+				remove_dynamic_modifier = {
+					modifier = prepare_the_ground
+ 					days = 30
+				}
+			}
+			LWV = {
+				clr_country_flag = sow_the_seeds_flag
+			}
+		}
+		state_target = yes
+		target_array = global.states
+		on_map_mode = map_only
+	}
+}
+
+                        
+#####   #####   #   #  #   #  #####  #####  ####   #####
+#       #   #   #  ##  #   #  #        #    #   #  #   #
+#####   #   #   # # #  #####  #        #    ####   #   #
+#      #######  ##  #  #   #  #        #    #   #  #   #
+#####  #     #  #   #  #   #  #####    #    ####   #####
+
+####
+#   #
+####
+#   #
+####
+
+#####  ####    ####  #####  #####  #####  #####  #   #
+#      #   #  #   #    #    #   #  #        #    #  ##
+#      ####    ####    #    #   #  #        #    # # #
+#      #   #   #  #    #    #   #  #        #    ##  #
+#####  ####   #   #    #    #####  #####    #    #   #
+
+
+LWV_unity_in_holiness = {
+	collect_the_swords = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = { 
+			check_variable = { unity_in_holiness > 2} 
+		}
+		custom_cost_text = decision_cost_UH_2
+		days_re_enable = 30
+		complete_effect = {
+			country_event = { id = unity_in_holiness.1 }
+			subtract_from_variable = { unity_in_holiness = 2 }
+		}
+	}
+	blessing_for_labor = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 3 }
+		}
+		custom_cost_text = decision_cost_UH_3
+		days_re_enable = 60
+		complete_effect = {
+			add_timed_idea = {
+				idea = LWV_blessing_for_labor
+				days = 60
+			}
+		}
+	}
+	forge_the_iron = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = { 
+			check_variable = { unity_in_holiness > 5 }
+		}
+		custom_cost_text = decision_cost_UH_5
+		days_re_enable = 120
+		complete_effect = {
+			random_owned_controlled_state = {
+                add_resource = {
+                    type = steel
+                    amount = 5
+                }
+            }
+		}
+	}
+	stone_skin = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 3 }
+		}
+		custom_cost_text = decision_cost_UH_3
+		days_re_enable = 60
+		complete_effect = {
+			add_timed_idea = {
+				idea = LWV_stone_skin
+				days = 30
+			}
+		}
+	}
+	ascetism = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 7 }
+		}
+		custom_cost_text = decision_cost_UH_7
+		days_re_enable = 70
+		complete_effect = {
+				random_owned_controlled_state = {
+			    	add_extra_state_shared_building_slots = 1
+			    	add_building_construction = {
+				    	type = industrial_complex
+				    	level = 1
+				    	instant_build = yes
+			    }
+		    }
+		}
+	}
+	blessed_provision = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 3 }
+		}
+		custom_cost_text = decision_cost_UH_3
+		days_re_enable = 30
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1
+				amount = 35
+				producer = LWV
+			}
+			add_equipment_to_stockpile = {
+				type = train_equipment_1
+				amount = 3
+				producer = LWV
+			}
+		}
+	}
+	prepare_the_provision = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 3 }
+		}
+		custom_cost_text = decision_cost_UH_3
+		days_re_enable = 30
+		complete_effect = {
+			add_timed_idea = {
+				idea = LWV_prepare_the_provision
+				days = 30
+			}
+		}
+	}
+	collect_the_sheeps = {
+		visible = {
+		}
+		available = {
+		}
+		custom_cost_trigger = {
+			check_variable = { unity_in_holiness > 2 }
+		}
+		custom_cost_text = decision_cost_UH_2
+		days_re_enable = 20
+		complete_effect = {
+			add_manpower = 5000
+		}
+	}
+	debug_hollines = {
+		visible = {
+			is_debug = yes
+		}
+		complete_effect = {
+			add_to_variable = { unity_in_holiness = 100 }
+		}
+	}
+}
+#Война в тени
+LWV_war_in_the_shadows = {
+	#missions
+	whisper_in_the_shadows = {
+		allowed = {
+			original_tag = LWV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_completed_focus = LWV_otkrovenie
+		}
+		cancel_trigger = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		fire_only_once = yes
+		days_mission_timeout = 45
+		timeout_effect = {
+			country_event = {
+				id = LWV.80
+			}
+		}
+	}
+	revenge_of_the_sectarians = {
+		allowed = {
+			original_tag = LWV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		fire_only_once = yes
+		days_mission_timeout = 60
+		timeout_effect = {
+			add_to_array = { transfer_states_from_LWV_to_WOW = 73.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 78.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 80.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 91.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 93.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 198.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 199.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 201.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 882.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 883.id }
+			add_to_array = { transfer_states_from_LWV_to_WOW = 889.id }
+			country_event = {
+				id = LWV.81
+			}
+		}
+	}
+	markovtsi_seize_weapons_warehouses = {
+		allowed = {
+			original_tag = LWV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					has_active_mission = revenge_of_the_sectarians
+				}
+				has_war_with = WOW
+			}
+		}
+		activation = {
+			hidden_trigger = {
+				has_active_mission = revenge_of_the_sectarians
+			}
+		}
+		days_mission_timeout = 7
+		days_re_enable = 7
+		timeout_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -1000
+			}
+			add_to_variable = {
+				WOW.infantry_for_civil_war_var = 1000
+				tooltip = WOW_gets_1000_inf_eq_for_civil_war_var
+			}
+		}
+	}
+	truth_in_the_shadows = {
+		allowed = {
+			original_tag = LWV
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		cancel_trigger = {
+			NOT = {
+				has_active_mission = revenge_of_the_sectarians
+			}
+		}
+		activation = {
+			always = no
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		is_good = yes
+		timeout_effect = {
+			remove_mission = revenge_of_the_sectarians
+		}
+	}
+	#decisions
+	hide_weapons_warehouses = {
+		custom_cost_trigger = {
+			has_political_power > 9
+			has_army_experience > 0
+		}
+		custom_cost_text = decision_cost_army_xp_1_pp_10
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_active_mission = markovtsi_seize_weapons_warehouses
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_political_power = -10
+				army_experience = -1
+			}
+			add_days_mission_timeout = {
+				mission = markovtsi_seize_weapons_warehouses
+				days = 7
+			}
+		}
+	}
+	illuminate_the_shadow = {
+		cost = 100
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		complete_effect = {
+			activate_mission = truth_in_the_shadows
+		}
+	}
+	find_30_silversmiths = {
+		cost = 10
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = silversmiths_are_found
+			add_days_mission_timeout = {
+				mission = truth_in_the_shadows
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = revenge_of_the_sectarians
+				days = 10
+			}
+			country_event = {
+				id = LWV.82
+			}
+		}
+	}
+	punish_the_traitors = {
+		cost = 20
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_country_flag = silversmiths_are_found
+		}
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = silversmiths_are_found
+			set_country_flag = traitors_are_punished
+			add_days_mission_timeout = {
+				mission = truth_in_the_shadows
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = revenge_of_the_sectarians
+				days = 10
+			}
+			country_event = {
+				id = LWV.83
+			}
+		}
+	}
+	guide_the_faithful = {
+		cost = 30
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_country_flag = traitors_are_punished
+		}
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = traitors_are_punished
+			set_country_flag = faithful_are_guided
+			add_days_mission_timeout = {
+				mission = truth_in_the_shadows
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = revenge_of_the_sectarians
+				days = 10
+			}
+		}
+	}
+	crush_markov = {
+		cost = 50
+		visible = {
+			has_completed_focus = LWV_shadow_warrior
+		}
+		available = {
+			has_country_flag = faithful_are_guided
+		}
+		fire_only_once = yes
+		complete_effect = {
+			clr_country_flag = faithful_are_guided
+			add_days_mission_timeout = {
+				mission = truth_in_the_shadows
+				days = -10
+			}
+			add_days_mission_timeout = {
+				mission = revenge_of_the_sectarians
+				days = 10
+			}
+			country_event = {
+				id = LWV.84
+			}
+		}
+	}
+}

@@ -1,0 +1,410 @@
+ideas = {
+	country = {  
+		SDC_Willuem_influese1 = {                           #Влияние Виллуимовv1
+			picture = Vlianie_villuimov
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.7
+				war_support_factor = -0.5
+				surrender_limit = -0.4
+				weekly_manpower = -10
+			}
+		} 
+		SDC_Willuem_influese2 = {                           #Влияние Виллуимовv2
+			picture = Vlianie_villuimov
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = -0.6
+				war_support_factor = -0.5
+				surrender_limit = -0.4
+				weekly_manpower = -10
+			}
+		} 
+		SDC_Willuem_influese3 = {                           #Влияние Виллуимовv3
+			picture = Vlianie_villuimov
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.5
+				surrender_limit = -0.4
+				weekly_manpower = -10
+			}
+		}
+		SDC_Willuem_influese4 = {                           #Влияние Виллуимовv4
+			picture = Vlianie_villuimov
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = -0.5
+			}
+		}
+		SDC_Korodonniki1 = {                  #Короднникиv1      
+			picture = Kordonniki
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.001
+				army_org_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_defence_factor = 0.1
+				army_attack_factor = -0.1
+		
+			}
+		}
+		SDC_Korodonniki2 = {					#Короднникиv2
+			picture = Kordonniki
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = -0.001
+				army_org_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_defence_factor = 0.1		
+			}
+		}
+		SDC_Korodonniki3 = {					#Короднникиv3
+			picture = Kordonniki
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.2
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_defence_factor = 0.1	
+			}
+		}
+		SDC_Korodonniki4 = {					#Короднникиv4
+			picture = Kordonniki
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.1
+				acclimatization_cold_climate_gain_factor = 0.1
+				army_defence_factor = 0.1	
+			}
+		}
+		SDC_hunger1 = {           #Голодv1
+			picture = Golod
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -15
+				recruitable_population_factor = -0.15
+			}
+		}
+		SDC_public_safety_concept1 = {            #Концепция общественной безопасностиv1
+			picture = Kontseptsia_obschestvennoy_bezopasnosti
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				political_power_gain = 0.02
+			}
+		}
+		SDC_mobilisation_idea = {            #Мобилизация
+			picture = Moblization
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				NOT = {
+					country_exists = VOZ
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.005
+				weekly_manpower = 50
+				mobilization_speed = 0.1
+			}
+		}
+		SDC_accumulation_of_forces = {            #Накопление сил
+		picture = accumulation_forces_Idea
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				offence = -0.25
+				weekly_manpower = 150
+				conscription = 0.01
+			}
+		}
+		SDC_pay_debt = {            #Уплата долга
+		picture = paying_debt
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_factory_efficiency_gain_factor = -0.5
+				production_factory_max_efficiency_factor = -0.5
+				army_speed_factor = -0.05
+			}
+		}
+		SDC_pay_big_debt = {            #Уплата большого долга
+		picture = paying_large_debt
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				consumer_goods_factor = 0.75
+				production_factory_efficiency_gain_factor = -0.75
+				production_factory_max_efficiency_factor = -0.75
+				army_speed_factor = -0.1
+			}
+		}
+		SDC_deception = {            #Обман
+		picture = trick
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cancel = {
+				has_war = yes
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				weekly_manpower = -150
+				army_speed_factor = -0.25
+				army_org = -0.8
+				acclimatization_cold_climate_gain_factor = -0.5
+			}
+		}
+		SDC_Weak_eastern_idea = {             #Слабая интеграция восточных территорий
+		picture = Low_eastern_territories_integration
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+    			has_war = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -300
+				power_balance_daily = 0.03
+				consumer_goods_factor = 0.15
+				stability_factor = -0.3
+				production_factory_start_efficiency_factor = -0.3
+			}
+		}
+		SDC_midle_eastern_idea = {             #Средняя интеграция восточных территорий
+		picture = Middle_eastern_territories_integration
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+    			has_war = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -200
+				power_balance_daily = 0.02
+				consumer_goods_factor = 0.1
+				stability_factor = -0.2
+				production_factory_start_efficiency_factor = -0.2
+			}
+		}
+		SDC_hight_eastern_idea = {             #Высокая интеграция восточных территорий
+		picture = High_eastern_territories_integration
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+    			has_war = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -100
+				power_balance_daily = 0.01
+				consumer_goods_factor = 0.05
+				stability_factor = -0.1
+				production_factory_start_efficiency_factor = -0.1
+			}
+		}
+		SDC_Control_integration_eastern_idea = {             #Восточные территории интегрированы ПРПЯМОЕ УПРАВЛЕНИЕ
+		picture = Control_eastern_territories_integrated
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+    			has_war = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.07
+				offence = -0.07
+			}
+		}
+		SDC_Martin_integration_eastern_idea = {             #Восточные территории интегрированы МАРТИН
+		picture = Martin_eastern_territories_integrated
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+    			has_war = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = 0.07
+				offence = -0.07
+			}
+		}
+	}
+}

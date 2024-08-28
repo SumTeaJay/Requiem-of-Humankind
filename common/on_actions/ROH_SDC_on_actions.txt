@@ -1,0 +1,58 @@
+on_actions = {
+	on_weekly_VOZ = {
+		effect ={
+			if = {
+				limit = {
+					SDC = {
+						has_country_flag = chess_game_flag
+					}
+				}
+				set_variable = {
+					var = Voz_divisions_var
+					value = num_divisions
+				}
+			}
+		}
+	}
+	on_weekly_SDC = {
+		effect ={
+			if = {
+				limit = {
+					SDC = {
+						has_country_flag = chess_game_flag
+					}
+				}
+				set_variable = {
+					var = SDC_divisions_var
+					value = num_divisions
+				}
+				set_variable = {
+					var = Voz_divisions_var
+					value = VOZ.Voz_divisions_var
+				}
+				add_to_variable = {
+					var = Voz_divisions_var
+					value = SDC_divisions_var
+				}
+				divide_variable = {
+					var = SDC_divisions_var
+					value = Voz_divisions_var
+				}
+				multiply_variable = {
+					var = SDC_divisions_var
+					value = 100
+				}
+				round_variable = SDC_divisions_var
+			}
+			if = {
+				limit = {
+					has_war_with = VOZ
+					NOT = {
+						has_completed_focus = SDC_special_military_operation
+					}
+				}
+				complete_national_focus = SDC_special_military_operation
+			}
+		}
+	}
+}

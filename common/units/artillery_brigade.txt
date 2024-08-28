@@ -1,0 +1,319 @@
+sub_units = {
+
+	stvol_art = {
+		abbreviation = "STV"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+
+		essential = {
+            artillery_equipment
+			infantry_odejda_0
+			infantry_equipment_0
+        }
+		need = {
+			artillery_equipment = 12
+			infantry_equipment_0 = 84
+			infantry_odejda_0 = 42
+		}
+		manpower = 84
+
+		default_morale = 0.1
+		weight = 0.5
+		supply_consumption = 0.21
+		initiative = 0.2
+		experience_loss_factor = 0.001
+		training_time = 100
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	towed_art = {
+		abbreviation = "STV"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+
+		transport = motorized_equipment
+
+		essential = {
+            artillery_equipment
+			motorized_equipment
+			infantry_equipment_0
+			infantry_odejda_0
+        }
+		need = {
+			artillery_equipment = 12
+			motorized_equipment = 12
+			infantry_equipment_0 = 186
+			infantry_odejda_0 = 144
+		}
+		manpower = 196
+
+		default_morale = 0.1
+		weight = 0.5
+		supply_consumption = 0.25
+		initiative = 0.2
+		experience_loss_factor = 0.001
+		training_time = 120
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	antiair_art = {
+		abbreviation = "STV"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+
+		transport = motorized_equipment
+
+		essential = {
+            anti_air_equipment
+			infantry_equipment_0
+			infantry_odejda_0
+        }
+		need = {
+			anti_air_equipment = 12
+			infantry_equipment_0 = 48
+			infantry_odejda_0 = 24
+		}
+
+		manpower = 48
+
+		default_morale = 0.1
+		weight = 0.5
+		supply_consumption = 0.15
+		initiative = 0.2
+		experience_loss_factor = 0.001
+		training_time = 100
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+
+	mlrs_art = {
+		abbreviation = "MLSR"
+		sprite = artillery
+		map_icon_category = infantry
+		priority = 1198
+		ai_priority = 100
+		active = yes
+		
+		type = {
+			infantry
+			artillery
+		}
+
+		group = combat_support
+		
+		categories = {
+			category_army
+			category_line_artillery
+			category_artillery
+		}
+
+
+		transport = motorized_equipment
+
+		essential = {
+            anti_tank_equipment
+			infantry_equipment_0
+			infantry_odejda_0
+        }
+		need = {
+			anti_tank_equipment = 12
+			infantry_equipment_0 = 48
+			infantry_odejda_0 = 24
+		}
+		manpower = 48
+
+		default_morale = 0.1
+		weight = 0.5
+		supply_consumption = 0.25
+		initiative = 0.2
+		experience_loss_factor = 0.001
+		training_time = 100
+		forest = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		hills = {
+			movement = -0.05
+		}
+
+		mountain = {
+			movement = -0.2
+		}
+
+		jungle = {
+			attack = -0.25
+			movement = -0.2
+		}
+
+		marsh = {
+			attack = -0.2
+			movement = -0.3
+		}
+
+		fort = {
+			attack = 0.1
+		}
+
+		river = {
+			attack = -0.2
+			movement = -0.2
+		}
+
+		amphibious = {
+			attack = -0.4
+		}
+	}
+}

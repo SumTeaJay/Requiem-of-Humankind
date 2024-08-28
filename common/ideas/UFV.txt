@@ -1,0 +1,27 @@
+ideas = {
+
+	country = {
+		POLPULI = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.3
+				army_org -50%
+				production_factory_max_efficiency_factor = -0.75
+				production_speed_buildings_factor = -0.75
+				monthly_population = -0.55
+				research_speed_factor = -0.95
+		
+			}
+		}
+	}
+}

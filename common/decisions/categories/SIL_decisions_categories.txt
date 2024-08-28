@@ -1,0 +1,10 @@
+SIL_total_anti_goyda = {
+	icon = saf_anti_colonialist_crusade
+	allowed = {
+		original_tag = SIL
+	}
+	visible = {
+		original_tag = SIL
+	}
+	priority = 85
+}

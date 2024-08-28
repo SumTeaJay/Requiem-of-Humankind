@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+		POP_total_terror = {		#ТОТАЛЬНЫЙ террор
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.1
+				defensive_war_stability_factor = 0.35
+				war_support_factor = 0.25
+				offence = -0.05
+				defence = -0.05
+				army_org = -0.1
+				production_speed_buildings_factor = -0.1
+				max_commander_army_size = -14
+				max_army_group_size = -3				
+			}
+		}
+	}
+}

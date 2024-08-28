@@ -1,0 +1,740 @@
+ideas = {
+	hidden_ideas = {
+		#menshikov system
+		materials_science_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		dense_layout_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_factories = 0.1
+			}
+		}
+		lower_streams_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		upper_streams_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.075
+			}
+		}
+		our_future_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.1
+			}
+		}
+		vocational_technical_schools_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.075
+			}
+		}
+		working_faculties_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.05
+			}
+		}
+		labor_veterans_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		labor_heros_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.075
+			}
+		}
+		industrial_cooperation_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.075
+			}
+		}
+		constructed_for_life_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.12
+			}
+		}
+		love_thy_neighbour_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+		local_wing_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		strict_regulations_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		flexible_regulations_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.1
+				production_speed_buildings_factor = -0.1
+			}
+		}
+		gardening_partnerships_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+			}
+		}
+		rural_units_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		adversarial_law_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				trade_opinion_factor = 0.05
+				faction_trade_opinion_factor = 0.05
+				extra_trade_to_overlord_factor = 0.05
+			}
+		}
+		fair_competition_codex_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.03
+			}
+		}
+		outsourcing_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_start_efficiency_factor = 0.075
+			}
+		}
+		trade_initiative_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				trade_influence_factor = 0.15
+			}
+		}
+		GOST_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.1
+			}
+		}
+		fullstack_consumtion_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				trade_influence_factor = 0.25
+			}
+		}
+		humanism_stronghold_idea = {
+			traits = {
+				menshikov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_core_defence_factor = 0.15
+            	surrender_limit = 0.03
+			}
+		}
+		#smoilov system
+		foundation_of_the_past_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		behind_the_scenes_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				drift_defence_factor = 0.1
+			}
+		}
+		without_any_hassle_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				reform_point_income = 5
+			}
+		}
+		our_home_is_our_fortress_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_bunker_factor = 0.15
+			}
+		}
+		rural_militia_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		industrial_militia_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		land_river_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		scraping_down_the_bottom_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor  = -0.05
+			}
+		}
+		in_a_blink_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.07
+			}
+		}
+		oprichnina_hand_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				surrender_limit = 0.03
+			}
+		}
+		peripheral_cleansing_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		destroy_anomalies_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		fighting_for_families_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+		military_loans_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		from_stones_and_sticks_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_lack_of_resource_penalty_factor = -0.07
+			}
+		}
+		autonomius_bataries_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = -0.1
+				army_artillery_attack_factor = 0.05
+			}
+		}
+		controlled_bataries_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_attack_factor = -0.075
+				army_org_factor = 0.075
+				army_artillery_defence_factor = 0.075
+			}
+		}
+		firstborn_of_sparta_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				initiative_factor = 0.075
+			}
+		}
+		nerves_to_the_limit_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		steel_grip_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		sweat_and_blood_idea = {
+			traits = {
+				smoilov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				justify_war_goal_time = -0.3
+			}
+		}
+		#naumov system
+		naumov_system_idea = {
+			#we already has var to check selected model, but naumov system selection has modifier
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				reform_point_income = 5
+			}
+		}
+		common_duty_common_law_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+		}
+		existence_essence_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = 0.02
+			}
+		}
+		existence_horror_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.05
+				production_speed_buildings_factor = 0.02
+			}
+		}
+		caring_eye_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.05
+				drift_defence_factor = 0.7
+			}
+		}
+		interesting_observation_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				stability_factor = -0.1
+			}
+		}
+		technological_revolution_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.075
+			}
+		}
+		cultural_revolution_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.175
+				war_support_factor = 0.175
+			}
+		}
+		assured_survival_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.225
+			}
+		}
+		proportionate_fee_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = 0.02
+			}
+		}
+		flawless_soldier_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.05
+			}
+		}
+		all_describing_formula_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.15
+			}
+		}
+		primary_broth_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
+		flowers_of_life_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				monthly_population = 0.15
+			}
+		}
+		their_life_plans_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.075
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+		cast_aside_doubts_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		potential_realization_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.075
+				production_factory_max_efficiency_factor = 0.075
+			}
+		}
+		order_in_mind_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.05
+				army_speed_factor = 0.05
+			}
+		}
+		unity_by_blood_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				stability_factor = -0.075
+				offence = 0.05
+			}
+		}
+		man_and_consciousness_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				research_speed_factor = 0.075
+			}
+		}
+		cognitive_warfare_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				mobilization_speed = 0.1
+			}
+		}
+		body_limits_idea = {
+			traits = {
+				naumov_system_trait
+			}
+			allowed = {
+				always = no
+			}
+			modifier = {
+				army_org_factor = 0.05
+				army_org_regain = 0.075
+				land_night_attack = 0.15
+				initiative_factor = 0.075
+			}
+		}
+	}
+}

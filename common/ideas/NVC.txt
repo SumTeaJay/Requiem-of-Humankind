@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		NVC_light_of_normality = {			#Светоч нормальности
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = -0.1
+				surrender_limit = 0.1
+				research_speed_factor = 0.05
+				monthly_population = -0.15
+				army_core_attack_factor = 0.1				
+			}
+		}
+	}
+}

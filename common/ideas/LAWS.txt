@@ -1,0 +1,696 @@
+ideas = {
+	roh_military_draft = {
+		law = yes
+		use_list_view = yes
+		
+		free_recruting = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				conscription = 0.015
+				command_power_gain_mult = 0.05
+				land_doctrine_cost_factor = -0.05
+			}		
+			cancel_if_invalid = yes 		
+		}
+		limited_recruting = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				conscription = 0.025
+				command_power_gain_mult = 0.03
+			}		
+			cancel_if_invalid = yes 	
+		}
+		mass_recruting = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				has_war = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				conscription = 0.05
+				command_power_gain_mult = -0.02
+			}		
+			cancel_if_invalid = yes 	
+		}
+		total_recruting = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				has_war = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				conscription = 0.1
+				command_power_gain_mult = -0.03
+				industrial_capacity_factory = -0.05
+			}		
+			cancel_if_invalid = yes 			
+		}
+		admiral_recruting = {
+			allowed = {
+				tag = ODS
+			}
+			available = {
+				has_war = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 5
+			modifier = {
+				conscription = 0.15
+				command_power_gain_mult = 0.05
+				max_commander_army_size = 30
+				mobilization_speed = 0.05
+			}		
+			cancel_if_invalid = yes 	
+		}
+	}
+	
+	roh_labour = {
+		law = yes
+		use_list_view = yes
+		
+		hired_labor = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				production_factory_start_efficiency_factor = 0.05
+			}		
+			cancel_if_invalid = yes 		
+		}
+		labor_service = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 
+				stability_factor = -0.03
+			}		
+			cancel_if_invalid = yes 	
+		}
+		slaves_labour = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				stability_factor = -0.07
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			cancel_if_invalid = yes 	
+		}
+		mixed_labour = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.03
+				stability_factor = 0.03
+			}		
+			cancel_if_invalid = yes 			
+		}
+		automated_labor = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 5
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.05 
+				production_factory_start_efficiency_factor = 0.05
+				conscription_factor = 0.02
+			}		
+			cancel_if_invalid = yes 	
+		}
+	}
+		
+	roh_religion = {
+		law = yes
+		use_list_view = yes
+				
+		classic_faith = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = 0.03
+			}		
+			cancel_if_invalid = yes 		
+		}
+		cultism = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				experience_loss_factor = 0.05
+				initiative_factor = 0.03	
+			}		
+			cancel_if_invalid = yes 	
+		}
+		atheism = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				stability_factor = -0.05
+				research_speed_factor = 0.02
+			}
+			cancel_if_invalid = yes 	
+		}
+		free_faith = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				surrender_limit = -0.05
+				political_power_factor = 0.04	
+			}		
+			cancel_if_invalid = yes 			
+		}
+		truthfighters = {
+			allowed = {
+				original_tag = LWV 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 5
+			modifier = {
+				offensive_war_stability_factor = 0.1
+				weekly_casualties_war_support = 0.1
+				justify_war_goal_time = -0.1
+			}		
+			cancel_if_invalid = yes 	
+		}
+		villiums = {
+			allowed = {
+				OR = {
+					tag = VOZ
+					has_country_flag = not_human
+				}
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 6
+			modifier = {
+				research_speed_factor = 0.05
+				initiative_factor = 0.03	
+			}		
+			cancel_if_invalid = yes 	
+		}
+	}
+	
+	roh_mass_media ={
+		law = yes
+		use_list_view = yes
+		
+		papers = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				political_power_factor = 0.02
+				stability_factor = 0.03
+			}		
+			cancel_if_invalid = yes 		
+		}
+		radio = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				has_tech = radio_enhancement
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				political_power_factor = 0.03
+				stability_factor = 0.03
+				war_support_weekly = 0.01
+			}		
+			cancel_if_invalid = yes 	
+		}
+		television = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_tech = improved_radio_communication
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				war_support_weekly = 0.02
+			}
+			cancel_if_invalid = yes 	
+		}
+		internet_law = {
+			allowed = {
+				always = yes
+			}
+			available = {
+				has_tech = internet
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = -0.05
+			}		
+			cancel_if_invalid = yes 			
+		}
+	}
+	
+	roh_migration ={
+		law = yes
+		use_list_view = yes
+		
+		closed_borders = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				research_speed_factor = -0.01
+				stability_factor = 0.07			
+			}		
+			cancel_if_invalid = yes 		
+		}
+		opend_borders = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				research_speed_factor = 0.02
+				stability_factor = -0.07			
+				monthly_population = 0.04		
+			}		
+			cancel_if_invalid = yes 	
+		}
+		border_control = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				monthly_population = 0.01
+			}
+			cancel_if_invalid = yes 	
+		}
+		checkpoint = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				research_speed_factor = 0.01			
+				monthly_population = 0.02		
+				political_power_factor = -0.05
+			}		
+			cancel_if_invalid = yes 			
+		}
+		migration_selection = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 5
+			modifier = {
+				political_power_factor = -0.05
+				research_speed_factor = 0.03
+				production_factory_max_efficiency_factor = 0.05 
+			}		
+			cancel_if_invalid = yes 	
+		}
+	}
+	
+	roh_study_of_distortions ={
+		law = yes
+		use_list_view = yes
+		ignore_distortions = {
+			level = 1
+			allowed = {
+				always = yes 
+			}
+			available = {
+				NOT = {
+					has_idea = destroy_anomalies_idea
+				}
+			}
+			cost = 100
+			removal_cost = -1		
+			default = yes 	
+			modifier = {
+				monthly_population = -0.09	
+			}		
+			cancel_if_invalid = no		
+		}
+		limited_research_of_distortions = {
+			level = 2
+			allowed = {
+				always = yes 
+			}
+			available = {
+				NOT = {
+					has_idea = destroy_anomalies_idea
+				}
+			}
+			cost = 100
+			modifier = {
+				research_speed_factor = 0.02
+				monthly_population = -0.03
+				political_power_factor = -0.05
+			}		
+			cancel_if_invalid = no 			
+		}
+		extensive_research_of_distortions = {
+			level = 3
+			allowed = {
+				always = yes 
+			}
+			available = {
+				has_idea = body_limits_idea
+			}
+			cost = 100
+			modifier = {
+				research_speed_factor = 0.05
+				monthly_population = -0.05
+				stability_factor = -0.05
+				political_power_factor = -0.07
+			}		
+			cancel_if_invalid = no 			
+		}
+		restrain_distortions = {
+			level = 4
+			allowed = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.03
+			}		
+			cancel_if_invalid = no 	
+		}
+		liquidation_of_distortions = {
+			level = 5
+			allowed = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			modifier = {
+				political_power_factor = -0.05
+				monthly_population = 0.03	
+				production_speed_infrastructure_factor = 0.07		
+			}
+			cancel_if_invalid = no	
+		}
+	}
+	
+	roh_exploitation ={
+		law = yes
+		use_list_view = yes
+		
+		mixed_mode = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+			}		
+			cancel_if_invalid = yes 		
+		}
+		long_shift = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05 
+			}		
+			cancel_if_invalid = yes 	
+		}
+		daily_work = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = -0.03		
+			}
+			cancel_if_invalid = yes 	
+		}
+		unstopble_work = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = -0.05	
+				production_factory_start_efficiency_factor = 0.05
+			}		
+			cancel_if_invalid = yes 			
+		}
+		blood_and_sweat = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 5
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				production_lack_of_resource_penalty_factor = -0.1
+			}		
+			cancel_if_invalid = yes 	
+		}
+	}
+	
+	roh_extermination ={
+		law = yes
+		use_list_view = yes
+		
+		ignore_social = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes
+			}
+			cost = 100
+			removal_cost = -1
+			level = 1			
+			default = yes 	
+			modifier = {
+				stability_factor = -0.07
+				production_speed_buildings_factor = 0.03
+				local_resources_factor = 0.03			
+			}		
+			cancel_if_invalid = yes 		
+		}
+		restrain_social = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 2
+			modifier = {
+				local_resources_factor = 0.03			
+			}		
+			cancel_if_invalid = yes 	
+		}
+		suppression_social = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 3
+			modifier = {
+				stability_factor = 0.03
+				political_power_factor = -0.02	
+			}
+			cancel_if_invalid = yes 	
+		}
+		genocide = {
+			allowed = {
+				always = yes 
+			}
+			available = {
+				always = yes 
+			}
+			cost = 100
+			removal_cost = -1
+			level = 4
+			modifier = {
+				stability_factor = 0.07
+				monthly_population = -0.03
+			}		
+			cancel_if_invalid = yes 			
+		}
+	}
+}

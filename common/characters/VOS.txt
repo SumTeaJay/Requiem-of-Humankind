@@ -1,0 +1,15 @@
+characters = {
+	VOS_vostochni_lug = {
+		portraits={
+			civilian={
+				large="gfx/leaders/VOS/vostochni_lug.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = VOS_vostochni_lug_DESC
+		}
+	}	
+}

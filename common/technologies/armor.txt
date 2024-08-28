@@ -1,0 +1,590 @@
+technologies = {
+	pre_war_OPV = {	
+		start_year = 2010
+		enable_equipments = { pre_war_OPV_equipment }
+		
+		enable_subunits = {
+			OPF
+		}
+		path = {
+			leads_to_tech = basic_specialized_OPF
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_mass_OPF
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_ai_OPF
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	#Подветка специализированных танков
+	
+	basic_specialized_OPF = {	
+		start_year = 2020
+		enable_equipments = { basic_specialized_OPF_equipment }
+		enable_subunits = {
+			specialized_OPF
+		}
+		path = {
+			leads_to_tech = improved_specialized_OPF
+			research_cost_coeff = 1
+		}
+
+		XOR = { basic_mass_OPF basic_ai_OPF }
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	improved_specialized_OPF = {	
+		start_year = 2025
+		enable_equipments = { improved_specialized_OPF_equipment }
+		path = {
+		 	leads_to_tech = advanced_specialized_OPF
+		 	research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_specialized_OPF = {	
+		start_year = 2030
+		enable_equipments = { advanced_specialized_OPF_equipment }
+		path = {
+			leads_to_tech = specialized_OPF_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	specialized_OPF_of_the_future = {	
+		start_year = 2040
+		enable_equipments = { specialized_OPF_of_the_future_equipment }
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	#Подветка массовых танков
+	basic_mass_OPF = {	
+		start_year = 2020
+		enable_equipments = { basic_mass_OPF_equipment }
+		path = {
+			leads_to_tech = improved_mass_OPF
+			research_cost_coeff = 1
+		}
+		XOR = { basic_specialized_OPF basic_ai_OPF }
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 2 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	improved_mass_OPF = {	
+		start_year = 2025
+		enable_equipments = { improved_mass_OPF_equipment }
+		path = {
+		 	leads_to_tech = advanced_mass_OPF
+		 	research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 4 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_mass_OPF = {	
+		start_year = 2030
+		enable_equipments = { advanced_mass_OPF_equipment }
+		path = {
+			leads_to_tech = mass_OPF_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 6 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	mass_OPF_of_the_future = {	
+		start_year = 2040
+		enable_equipments = { mass_OPF_of_the_future_equipment }
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -4 y = 8 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	#Подветка ИИ - танков
+	basic_ai_OPF = {	
+		start_year = 2020
+		enable_equipments = { basic_ai_OPF_equipment }
+		enable_subunits = {
+			ai_OPF
+		}
+		path = {
+			leads_to_tech = improved_ai_OPF
+			research_cost_coeff = 1
+		}
+
+		XOR = { basic_specialized_OPF basic_mass_OPF }
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	improved_ai_OPF = {	
+		start_year = 2025
+		enable_equipments = { improved_ai_OPF_equipment }
+		path = {
+		 	leads_to_tech = advanced_ai_OPF
+		 	research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 4 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_ai_OPF = {	
+		start_year = 2030
+		enable_equipments = { advanced_ai_OPF_equipment }
+		path = {
+			leads_to_tech = ai_OPF_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 6 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	ai_OPF_of_the_future = {	
+		start_year = 2040
+		enable_equipments = { ai_OPF_of_the_future_equipment }
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 4 y = 8 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	#Подветка брони
+	armor_1 = {	
+		start_year = 2010
+		category_tanks = {
+			defense = 0.02
+			breakthrough = 0.03
+		}
+		path = {
+			leads_to_tech = armor_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 0 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	armor_2 = {	
+		start_year = 2020
+		category_tanks = {
+			defense = 0.02
+			breakthrough = 0.03
+		}
+		path = {
+		 	leads_to_tech = armor_3
+		 	research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 2 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	armor_3 = {	
+		start_year = 2025
+		category_tanks = {
+			defense = 0.02
+			breakthrough = 0.03
+		}
+		path = {
+			leads_to_tech = armor_4
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 4 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	armor_4 = {	
+		start_year = 2030
+		category_tanks = {
+			defense = 0.02
+			breakthrough = 0.03
+		}
+		path = {
+			leads_to_tech = armor_5
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 6 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	armor_5 = {	
+		start_year = 2040
+		category_tanks = {
+			defense = 0.02
+			breakthrough = 0.03
+		} 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = 8 y = 8 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	#Подветка двигателей
+	engine_1 = {
+		start_year = 2010
+		category_tanks = {
+			maximum_speed = 0.05
+			breakthrough = 0.02
+		}	
+		path = {
+			leads_to_tech = engine_2
+			research_cost_coeff = 1
+		}
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 0 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	engine_2 = {	
+		start_year = 2020
+		category_tanks = {
+			maximum_speed = 0.05
+			breakthrough = 0.02
+		}
+		path = {
+		 	leads_to_tech = engine_3
+		 	research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 2 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	engine_3 = {	
+		start_year = 2025
+		category_tanks = {
+			maximum_speed = 0.05
+			breakthrough = 0.02
+		}
+		path = {
+			leads_to_tech = engine_4
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 4 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	engine_4 = {
+		start_year = 2030
+		category_tanks = {
+			maximum_speed = 0.05
+			breakthrough = 0.02
+		}	
+		path = {
+			leads_to_tech = engine_5
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 6 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	engine_5 = {	
+		start_year = 2040
+		category_tanks = {
+			maximum_speed = 0.05
+			breakthrough = 0.02
+		} 
+		research_cost = 2.5
+
+		folder = {
+			name = armour_folder
+			position = { x = -8 y = 8 }
+		}
+
+		categories = {
+			armor
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}

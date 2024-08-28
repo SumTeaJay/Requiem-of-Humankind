@@ -1,0 +1,261 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			#log = "[GetDateText]: FROM: [From.GetName] ROOT: [Root.GetName] on_capitulation"
+			
+			set_global_flag = show_peace_popup_alert
+
+			FROM = {
+				save_global_event_target_as = winning_country
+			}
+			ROOT = {
+				save_global_event_target_as = losing_country
+			}
+			if = {
+				limit = {
+					event_target:losing_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:losing_country
+						}
+					}
+				}
+				set_global_flag = losing_country_multiple
+			}
+
+			if = {
+				limit = {
+					event_target:winning_country = {
+						any_allied_country = {
+							has_war_together_with = event_target:winning_country
+						}
+					}
+				}
+				set_global_flag = winning_country_multiple
+			}
+
+			#log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+			
+			#add_to_variable = { global.peace_popup_dirty = 1 }
+
+			################################
+
+			if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = MOT
+							original_tag = URA
+							original_tag = EDM
+							original_tag = URC
+							original_tag = WPK
+							original_tag = ZAN
+							original_tag = OCH
+							original_tag = TAR
+						}
+						AND = {
+							is_in_faction = yes
+							is_in_faction_with = URC
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = GLS
+							has_country_flag = GLS_negotiation_process_fail
+						}
+					}
+				}
+				
+				GLS = {
+					white_peace = ROOT
+					annex_country = {
+						target = ROOT
+						transfer_troops = no
+					}
+					every_state = {
+						remove_core_of = ROOT
+					}
+					clr_country_flag = GLS_negotiation_process_fail
+				}
+				set_global_flag = skip_default_capitulation
+			}
+
+			else_if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = GLS
+							has_country_flag = GLS_negotiation_process_fail
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = MOT
+							original_tag = URA
+							original_tag = EDM
+							original_tag = URC
+							original_tag = WPK
+							original_tag = ZAN
+							original_tag = OCH
+							original_tag = TAR
+						}
+						AND = {
+							is_in_faction = yes
+							is_in_faction_with = URC
+						}						
+					}
+				}
+
+				ROOT = {
+					GLS = {
+						clr_country_flag = GLS_negotiation_process_fail
+						set_cosmetic_tag = GLS_URAL_MANDATE
+						load_focus_tree = anarchy_focus_tree
+						kill_country_leader = yes
+						set_party_name = {
+							ideology = statesmen
+							long_name = GLS_statesmen_party_MANDATE_long
+							name = GLS_statesmen_party_MANDATE
+						}
+						set_party_name = {
+							ideology = humanists
+							long_name = GLS_humanists_party_MANDATE_long
+							name = GLS_humanists_party_MANDATE
+						}
+						set_rule = {
+							can_not_declare_war = yes
+						}
+						country_lock_all_division_template = yes
+					}
+				}
+				
+				FROM = {
+					white_peace = ROOT
+					WPK = {
+						transfer_state = 398
+						transfer_state = 1003
+						transfer_state = 1000
+						transfer_state = 573
+						transfer_state = 729
+						set_capital = {
+							state = 398
+							remember_old_capital = no
+						}
+					}
+					MOT = {
+						transfer_state = 251
+						transfer_state = 652
+						transfer_state = 582
+					}
+					BL1 = {
+						transfer_state = 406
+						transfer_state = 994
+					}		
+					URA = {
+						transfer_state = 407
+					}	
+					ISK = {
+						transfer_state = 999
+					}
+					SI1 = {
+						transfer_state = 993
+					}				
+					URC = {
+						set_autonomy = {
+							target = GLS
+							autonomy_state = autonomy_puppet
+						}
+					}
+					GLS = {
+						set_political_party = {
+							ideology = humanists
+							popularity = 100
+						}
+					}	
+					every_state = {
+						remove_core_of = ROOT
+					}
+				}
+				set_global_flag = skip_default_capitulation
+			}
+
+			else_if = {
+				limit = {
+					ROOT = {
+						OR = {
+							original_tag = UFV
+						}
+					}
+					FROM = {
+						OR = {
+							original_tag = SDC
+							original_tag = VOZ
+						}
+					}
+				}
+				
+				FROM = {
+					white_peace = ROOT
+					SDC = {
+						transfer_state = 262
+					}
+					VOZ = {
+						transfer_state = 947
+					}
+					every_state = {
+						remove_core_of = ROOT
+					}
+				}
+			}
+
+			##########################
+			###Default Capitulation###
+			##########################
+
+			else_if = {
+				limit = {
+					OR = {
+						ROOT = { is_in_faction = no }
+						ROOT = {
+							all_allied_country = {
+								if = {
+									limit = {
+										has_war_with = FROM
+										is_major = yes
+									}
+									has_capitulated = yes
+								}
+							}
+						}
+					}
+				}
+				#log = "war_won"
+				set_global_flag = war_won
+				
+				if = {
+					limit = { NOT = { has_global_flag = skip_default_capitulation } }
+					#log = "Default Capitulation"
+					FROM = {
+						every_enemy_country = {
+							limit = {
+								OR = {
+									original_tag = ROOT
+									is_in_faction_with = ROOT
+									is_puppet_of = ROOT
+								}
+							}
+							FROM = {
+								white_peace = PREV
+								annex_country = {
+									target = PREV
+									transfer_troops = no
+								}
+							}
+						}
+					}
+					set_global_flag = skip_default_capitulation
+				}				
+			}
+			clr_global_flag = skip_default_capitulation
+		}
+	}
+}

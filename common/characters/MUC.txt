@@ -1,0 +1,16 @@
+characters = {
+	MUC_Denis_Kinolog = {
+		name = MUC_Denis_Kinolog
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MUC_Denis_Kinolog
+			}
+		}
+		country_leader = {
+			ideology = bandits_subideology
+			desc = MUC_Denis_Kinolog_desc
+			id = -1
+			expire = "2090.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,32 @@
+#ODS_consciousness triggers
+has_no_consciousness_action_active = {
+	custom_trigger_tooltip = {
+		tooltip = has_no_consciousness_action_active_tt
+		NOT = {
+			has_decision = consciousness_special_forces
+			has_decision = consciousness_goods_for_everyone
+			has_decision = consciousness_collective_hand_settings
+			has_decision = consciousness_break_mental_limits
+			has_decision = consciousness_cutting_heads
+			has_decision = consciousness_mind_instead_of_blood
+			has_decision = consciousness_self_interest_suffocation
+			has_decision = consciousness_imperfection_in_us
+			has_decision = consciousness_central_propaganda
+			has_decision = consciousness_state_propaganda
+		}
+	}
+}
+has_any_points_consciousness = {
+	custom_trigger_tooltip = {
+		tooltip = has_any_points_consciousness_tt
+		check_variable = {
+			points_consciousness > 0
+		}
+	}
+}
+has_no_points_consciousness = {
+	custom_trigger_tooltip = {
+		tooltip = has_no_points_consciousness_tt
+		has_any_points_consciousness = no
+	}
+}

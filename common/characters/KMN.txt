@@ -1,0 +1,37 @@
+characters = {
+	KMN_Viktor_Kaminskiy = {
+		name = KMN_Viktor_Kaminskiy
+		portraits={
+			civilian={
+				large="gfx/leaders/KMN/Viktor_Kaminskiy.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			desc = KMN_Viktor_Kaminskiy_desc
+			expire="2965.1.1.1"
+			id=-1
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 2
+			logistics_skill = 2
+		}
+	}
+	KMN_generic_general = {
+		portraits = {
+			army = {
+				large = GFX_portrait_ROH_generic_3
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

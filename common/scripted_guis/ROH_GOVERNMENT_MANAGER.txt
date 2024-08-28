@@ -1,0 +1,3990 @@
+scripted_gui = {
+	government_manager_handler = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "government_manager_handler"
+		effects = {
+			government_manager_toggle_click = {
+				if = {
+					limit = {
+						NOT = { has_variable = gos_usroistvo }
+					} 
+					set_variable = {
+						gos_usroistvo = 0 
+					}
+				}
+			}
+			laws_toggle_click = {
+				if = {
+					limit = {
+						has_variable = gos_usroistvo
+					} 
+					clear_variable = gos_usroistvo
+				}
+			}
+		}
+	}
+	Okno_gosustroistva = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "government_manager_container"
+		visible = {
+			has_variable = gos_usroistvo
+		}	
+		triggers = {		
+			BUTTON_Open_okno_military_system_click_enabled = {
+				OR = {
+					check_variable = { selected_government_system = 1 }
+					check_variable = { selected_government_system = 0 }
+				}
+			}
+			BUTTON_Open_okno_civil_system_click_enabled = {
+				OR = {
+					check_variable = { selected_government_system = 2 }
+					check_variable = { selected_government_system = 0 }
+				}
+			}
+			BUTTON_Open_okno_ststegos_system_click_enabled = {
+				OR = {
+					check_variable = { selected_government_system = 3 }
+					check_variable = { selected_government_system = 0 }
+				}
+			}
+		}
+		effects = {	
+			BUTTON_Open_okno_military_system_click = {	
+				if = {
+					limit = { 
+						check_variable = {
+							gos_usroistvo = 1 
+						}
+					}
+					set_variable = { 
+						gos_usroistvo = 0
+					}
+				}
+				else = {
+					set_variable = {
+						gos_usroistvo = 1 
+					}
+				}	
+			}			
+			BUTTON_Open_okno_civil_system_click = {	
+				if = {
+					limit = { 
+						check_variable = { 
+							gos_usroistvo = 2 
+						}
+					}
+					set_variable = { 
+						gos_usroistvo = 0
+					}
+				}
+				else = {
+					set_variable = {
+						gos_usroistvo = 2 
+					}
+				}	
+			}	
+			BUTTON_Open_okno_ststegos_system_click = {	
+				if = {
+					limit = { 
+						check_variable = { 
+							gos_usroistvo = 3 
+						}
+					}
+					set_variable = { 
+						gos_usroistvo = 0
+					}
+				}
+				else = {
+					set_variable = {
+						gos_usroistvo = 3 
+					}
+				}	
+			}				
+		}
+	}
+	#vars: ochki_gos_progressa
+	menshikov_system_tree = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "menshikov_system_outer_handler"
+		visible = {
+			check_variable = { 
+				gos_usroistvo = 1 
+			}
+		}		
+		triggers = {
+			select_model_button_visible = {
+				NOT = {
+					check_variable = {
+						selected_government_system = 1
+					}
+				}
+			}
+			select_model_button_click_enabled = {
+				goverment_system_can_be_upgraded_20 = yes
+			}
+			materials_science_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = materials_science_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					NOT = {
+						has_idea = dense_layout_idea
+					}
+				}
+			}
+			dense_layout_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = dense_layout_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					NOT = {
+						has_idea = materials_science_idea
+					}
+				}
+			}
+			lower_streams_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = lower_streams_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = materials_science_idea
+				}
+			}
+			upper_streams_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = upper_streams_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = dense_layout_idea
+				}
+			}
+			our_future_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = our_future_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					OR = {
+						has_idea = lower_streams_idea
+						has_idea = upper_streams_idea
+					}
+				}
+			}
+			vocational_technical_schools_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = vocational_technical_schools_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = our_future_idea
+					NOT = {
+						has_idea = working_faculties_idea
+					}
+				}
+			}
+			working_faculties_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = working_faculties_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = our_future_idea
+					NOT = {
+						has_idea = vocational_technical_schools_idea
+					}
+				}
+			}
+			labor_veterans_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = labor_veterans_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = vocational_technical_schools_idea
+				}
+			}
+			labor_heros_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = labor_heros_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = working_faculties_idea
+				}
+			}
+			industrial_cooperation_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = industrial_cooperation_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = vocational_technical_schools_idea
+						has_idea = working_faculties_idea
+					}
+				}
+			}
+			constructed_for_life_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = constructed_for_life_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = industrial_cooperation_idea
+				}
+			}
+			love_thy_neighbour_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = love_thy_neighbour_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = industrial_cooperation_idea
+				}
+			}
+			local_wing_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = local_wing_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = industrial_cooperation_idea
+					any_controlled_state = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+			strict_regulations_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = strict_regulations_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = constructed_for_life_idea
+					has_idea = industrial_cooperation_idea
+					has_idea = local_wing_idea
+					NOT = {
+						has_idea = flexible_regulations_idea
+					}
+				}
+			}
+			flexible_regulations_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = flexible_regulations_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = constructed_for_life_idea
+					has_idea = industrial_cooperation_idea
+					has_idea = local_wing_idea
+					NOT = {
+						has_idea = strict_regulations_idea
+					}
+				}
+			}
+			gardening_partnerships_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = gardening_partnerships_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = flexible_regulations_idea
+						has_idea = strict_regulations_idea
+					}
+					NOT = {
+						has_idea = rural_units_idea
+					}
+				}
+			}
+			rural_units_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = rural_units_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_45 = yes
+					OR = {
+						has_idea = flexible_regulations_idea
+						has_idea = strict_regulations_idea
+					}
+					NOT = {
+						has_idea = gardening_partnerships_idea
+					}
+					any_controlled_state = {
+						is_owned_by = ROOT
+					}
+				}
+			}
+			adversarial_law_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = adversarial_law_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = gardening_partnerships_idea
+						has_idea = rural_units_idea
+					}
+					NOT = {
+						has_idea = fair_competition_codex_idea
+					}
+				}
+			}
+			fair_competition_codex_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = fair_competition_codex_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = gardening_partnerships_idea
+						has_idea = rural_units_idea
+					}
+					NOT = {
+						has_idea = adversarial_law_idea
+					}
+				}
+			}
+			outsourcing_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = outsourcing_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = adversarial_law_idea
+						has_idea = fair_competition_codex_idea
+					}
+				}
+			}
+			trade_initiative_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = trade_initiative_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_45 = yes
+					has_idea = outsourcing_idea
+				}
+			}
+			GOST_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = GOST_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_60 = yes
+					has_idea = outsourcing_idea
+				}
+			}
+			fullstack_consumtion_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = fullstack_consumtion_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_60 = yes
+					has_idea = outsourcing_idea
+				}
+			}
+			humanism_stronghold_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = humanism_stronghold_idea
+						}
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					goverment_system_can_be_upgraded_90 = yes
+					has_idea = trade_initiative_idea
+					has_idea = GOST_idea
+					has_idea = fullstack_consumtion_idea
+				}
+			}
+			materials_science_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = materials_science_idea
+					has_idea = dense_layout_idea
+				}
+			}
+			dense_layout_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = dense_layout_idea
+					has_idea = materials_science_idea
+				}
+			}
+			lower_streams_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = lower_streams_idea
+				}
+				has_idea = materials_science_idea
+			}
+			upper_streams_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = upper_streams_idea
+				}
+				has_idea = dense_layout_idea
+			}
+			our_future_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = our_future_idea
+				}
+				OR = {
+					has_idea = lower_streams_idea
+					has_idea = upper_streams_idea
+				}
+			}
+			vocational_technical_schools_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = working_faculties_idea
+					has_idea = vocational_technical_schools_idea
+				}
+				has_idea = our_future_idea
+			}
+			working_faculties_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = working_faculties_idea
+					has_idea = vocational_technical_schools_idea
+				}
+				has_idea = our_future_idea
+			}
+			labor_veterans_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = labor_veterans_idea
+				}
+				has_idea = vocational_technical_schools_idea
+			}
+			labor_heros_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = labor_heros_idea
+				}
+				has_idea = working_faculties_idea
+			}
+			industrial_cooperation_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = industrial_cooperation_idea
+				}
+				OR = {
+					has_idea = labor_veterans_idea
+					has_idea = labor_heros_idea
+				}
+			}
+			constructed_for_life_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = constructed_for_life_idea
+				}
+				has_idea = industrial_cooperation_idea
+			}
+			love_thy_neighbour_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = love_thy_neighbour_idea
+				}
+				has_idea = industrial_cooperation_idea
+			}
+			local_wing_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = local_wing_idea
+				}
+				has_idea = industrial_cooperation_idea
+			}
+			strict_regulations_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = strict_regulations_idea
+					has_idea = flexible_regulations_idea
+				}
+				has_idea = constructed_for_life_idea
+				has_idea = industrial_cooperation_idea
+				has_idea = local_wing_idea
+			}
+			flexible_regulations_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = strict_regulations_idea
+					has_idea = flexible_regulations_idea
+				}
+				has_idea = constructed_for_life_idea
+				has_idea = industrial_cooperation_idea
+				has_idea = local_wing_idea
+			}
+			gardening_partnerships_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = gardening_partnerships_idea
+					has_idea = rural_units_idea
+				}
+				OR = {
+					has_idea = strict_regulations_idea
+					has_idea = flexible_regulations_idea
+				}
+			}
+			rural_units_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = rural_units_idea
+					has_idea = gardening_partnerships_idea
+				}
+				OR = {
+					has_idea = strict_regulations_idea
+					has_idea = flexible_regulations_idea
+				}
+			}
+			adversarial_law_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = adversarial_law_idea
+					has_idea = fair_competition_codex_idea
+				}
+				OR = {
+					has_idea = rural_units_idea
+					has_idea = gardening_partnerships_idea
+				}
+			}
+			fair_competition_codex_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = adversarial_law_idea
+					has_idea = fair_competition_codex_idea
+				}
+				OR = {
+					has_idea = rural_units_idea
+					has_idea = gardening_partnerships_idea
+				}
+			}
+			outsourcing_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = outsourcing_idea
+				}
+				OR = {
+					has_idea = adversarial_law_idea
+					has_idea = fair_competition_codex_idea
+				}
+			}
+			trade_initiative_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = trade_initiative_idea
+				}
+				has_idea = outsourcing_idea
+			}
+			GOST_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = GOST_idea
+				}
+				has_idea = outsourcing_idea
+			}
+			fullstack_consumtion_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = fullstack_consumtion_idea
+				}
+				has_idea = outsourcing_idea
+			}
+			humanism_stronghold_overlay_visible = {
+				check_variable = {
+					selected_government_system = 1
+				}
+				NOT = {
+					has_idea = humanism_stronghold_idea
+				}
+				has_idea = trade_initiative_idea
+				has_idea = GOST_idea
+				has_idea = fullstack_consumtion_idea
+			}
+		}
+		effects = {		
+			select_model_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 0
+						}
+					}
+					add_to_variable = { 
+						ochki_gos_progressa_growth = 5 
+					}
+					add_political_power = 100
+				}
+				else = {
+					remove_ideas_with_trait = smoilov_system_trait
+					remove_ideas_with_trait = naumov_system_trait
+				}
+				set_variable = {
+					var = selected_government_system
+					value = 1
+					tooltip = select_menshikov_system_tt
+				}
+				subtract_from_variable = {
+					var = ochki_gos_progressa
+					value = 20
+					tooltip = goverment_system_upgrade_20_tt
+				}
+			}
+			close_button_click = {
+				set_variable = {
+					gos_usroistvo = 0
+				}
+			}
+			materials_science_button_click = {
+				if = {
+					limit = {
+						has_idea = materials_science_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = materials_science_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+				}
+				custom_effect_tooltip = materials_science_reform_tt
+			}
+			dense_layout_button_click = {
+				if = {
+					limit = {
+						has_idea = dense_layout_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = dense_layout_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = dense_layout_reform_tt
+			}
+			lower_streams_button_click = {
+				if = {
+					limit = {
+						has_idea = lower_streams_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = lower_streams_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = lower_streams_reform_tt
+			}
+			upper_streams_button_click = {
+				if = {
+					limit = {
+						has_idea = upper_streams_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = upper_streams_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = upper_streams_reform_tt
+			}
+			our_future_button_click = {
+				if = {
+					limit = {
+						has_idea = our_future_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = our_future_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = our_future_reform_tt
+			}
+			vocational_technical_schools_button_click = {
+				if = {
+					limit = {
+						has_idea = vocational_technical_schools_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = vocational_technical_schools_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = vocational_technical_schools_reform_tt
+			}
+			working_faculties_button_click = {
+				if = {
+					limit = {
+						has_idea = working_faculties_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = working_faculties_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = working_faculties_reform_tt
+			}
+			labor_veterans_button_click = {
+				if = {
+					limit = {
+						has_idea = labor_veterans_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = labor_veterans_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = labor_veterans_reform_tt
+			}
+			labor_heros_button_click = {
+				if = {
+					limit = {
+						has_idea = labor_heros_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = labor_heros_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = labor_heros_reform_tt
+			}
+			industrial_cooperation_button_click = {
+				if = {
+					limit = {
+						has_idea = industrial_cooperation_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = industrial_cooperation_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = industrial_cooperation_reform_tt
+			}
+			constructed_for_life_button_click = {
+				if = {
+					limit = {
+						has_idea = constructed_for_life_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = constructed_for_life_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = constructed_for_life_reform_tt
+			}
+			love_thy_neighbour_button_click = {
+				if = {
+					limit = {
+						has_idea = love_thy_neighbour_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = love_thy_neighbour_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = love_thy_neighbour_reform_tt
+			}
+			local_wing_button_click = {
+				if = {
+					limit = {
+						has_idea = local_wing_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = local_wing_idea
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = local_wing_reform_tt
+			}
+			strict_regulations_button_click = {
+				if = {
+					limit = {
+						has_idea = strict_regulations_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = strict_regulations_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = strict_regulations_reform_tt
+			}
+			flexible_regulations_button_click = {
+				if = {
+					limit = {
+						has_idea = flexible_regulations_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = flexible_regulations_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = flexible_regulations_reform_tt
+			}
+			gardening_partnerships_button_click = {
+				if = {
+					limit = {
+						has_idea = gardening_partnerships_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = gardening_partnerships_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = gardening_partnerships_reform_tt
+			}
+			rural_units_button_click = {
+				if = {
+					limit = {
+						has_idea = rural_units_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = rural_units_idea
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 1
+							add_building_construction = {
+								type = infrastructure
+								level = 1
+							}
+						}
+						every_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+							}
+							random_select_amount = 4
+							add_extra_state_shared_building_slots = 1
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 45
+						tooltip = goverment_system_upgrade_45_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_45_tt
+				}
+				custom_effect_tooltip = rural_units_reform_tt
+			}
+			adversarial_law_button_click = {
+				if = {
+					limit = {
+						OR = {
+							has_idea = adversarial_law_idea
+							check_variable = {
+								selected_government_system = 0
+							}
+						}
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = adversarial_law_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = adversarial_law_reform_tt
+			}
+			fair_competition_codex_button_click = {
+				if = {
+					limit = {
+						has_idea = fair_competition_codex_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = fair_competition_codex_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = fair_competition_codex_reform_tt
+			}
+			outsourcing_button_click = {
+				if = {
+					limit = {
+						has_idea = outsourcing_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = outsourcing_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = outsourcing_reform_tt
+			}
+			trade_initiative_button_click = {
+				if = {
+					limit = {
+						has_idea = trade_initiative_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = trade_initiative_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 45
+						tooltip = goverment_system_upgrade_45_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_45_tt
+				}
+				custom_effect_tooltip = trade_initiative_reform_tt
+			}
+			GOST_button_click = {
+				if = {
+					limit = {
+						has_idea = GOST_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = GOST_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 60
+						tooltip = goverment_system_upgrade_60_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_60_tt
+				}
+				custom_effect_tooltip = GOST_reform_tt
+			}
+			fullstack_consumtion_button_click = {
+				if = {
+					limit = {
+						has_idea = fullstack_consumtion_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = fullstack_consumtion_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 60
+						tooltip = goverment_system_upgrade_60_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_60_tt
+				}
+				custom_effect_tooltip = fullstack_consumtion_reform_tt
+			}
+			humanism_stronghold_button_click = {
+				if = {
+					limit = {
+						has_idea = humanism_stronghold_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 1
+						}
+					}
+					hidden_effect = {
+						add_ideas = humanism_stronghold_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 90
+						tooltip = goverment_system_upgrade_90_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_90_tt
+				}
+				custom_effect_tooltip = humanism_stronghold_reform_tt
+			}
+		}
+	}
+	smoilov_system_tree = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "smoilov_system_outer_handler"
+		visible = {
+			check_variable = { 
+				gos_usroistvo = 2 
+			}
+		}		
+		triggers = {
+			select_model_button_visible = {
+				NOT = {
+					check_variable = {
+						selected_government_system = 2
+					}
+				}
+			}
+			select_model_button_click_enabled = {
+				goverment_system_can_be_upgraded_20 = yes
+			}
+			foundation_of_the_past_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = foundation_of_the_past_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+				}
+			}
+			behind_the_scenes_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = behind_the_scenes_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					has_idea = foundation_of_the_past_idea
+				}
+			}
+			without_any_hassle_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = without_any_hassle_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					has_idea = foundation_of_the_past_idea
+				}
+			}
+			our_home_is_our_fortress_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = our_home_is_our_fortress_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = foundation_of_the_past_idea
+				}
+			}
+			rural_militia_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = rural_militia_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_40 = yes
+					NOT = {
+						has_idea = industrial_militia_idea
+					}
+					has_idea = behind_the_scenes_idea
+					has_idea = without_any_hassle_idea
+					has_idea = our_home_is_our_fortress_idea
+				}
+			}
+			industrial_militia_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = industrial_militia_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_40 = yes
+					NOT = {
+						has_idea = rural_militia_idea
+					}
+					has_idea = behind_the_scenes_idea
+					has_idea = without_any_hassle_idea
+					has_idea = our_home_is_our_fortress_idea
+				}
+			}
+			land_river_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = land_river_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = industrial_militia_idea
+				}
+			}
+			scraping_down_the_bottom_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = scraping_down_the_bottom_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					has_idea = rural_militia_idea
+				}
+			}
+			in_a_blink_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = in_a_blink_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_20 = yes
+					OR = {
+						has_idea = land_river_idea
+						has_idea = scraping_down_the_bottom_idea
+					}
+				}
+			}
+			oprichnina_hand_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = oprichnina_hand_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = in_a_blink_idea
+				}
+			}
+			peripheral_cleansing_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = peripheral_cleansing_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_40 = yes
+					has_idea = in_a_blink_idea
+				}
+			}
+			destroy_anomalies_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = destroy_anomalies_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = oprichnina_hand_idea
+					has_idea = peripheral_cleansing_idea
+				}
+			}
+			fighting_for_families_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = fighting_for_families_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = destroy_anomalies_idea
+				}
+			}
+			military_loans_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = military_loans_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = destroy_anomalies_idea
+				}
+			}
+			from_stones_and_sticks_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = from_stones_and_sticks_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = destroy_anomalies_idea
+				}
+			}
+			autonomius_bataries_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = autonomius_bataries_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_50 = yes
+					NOT = {
+						has_idea = controlled_bataries_idea
+					}
+					has_idea = fighting_for_families_idea
+					has_idea = military_loans_idea
+					has_idea = from_stones_and_sticks_idea
+				}
+			}
+			controlled_bataries_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = controlled_bataries_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_50 = yes
+					NOT = {
+						has_idea = autonomius_bataries_idea
+					}
+					has_idea = fighting_for_families_idea
+					has_idea = military_loans_idea
+					has_idea = from_stones_and_sticks_idea
+				}
+			}
+			firstborn_of_sparta_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = firstborn_of_sparta_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_50 = yes
+					OR = {
+						has_idea = autonomius_bataries_idea
+						has_idea = controlled_bataries_idea
+					}
+				}
+			}
+			nerves_to_the_limit_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = nerves_to_the_limit_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_50 = yes
+					has_idea = firstborn_of_sparta_idea
+				}
+			}
+			steel_grip_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = steel_grip_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_50 = yes
+					has_idea = firstborn_of_sparta_idea
+				}
+			}
+			sweat_and_blood_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = sweat_and_blood_idea
+						}
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					goverment_system_can_be_upgraded_60 = yes
+					has_idea = nerves_to_the_limit_idea
+					has_idea = steel_grip_idea
+				}
+			}
+			foundation_of_the_past_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = foundation_of_the_past_idea
+				}
+			}
+			behind_the_scenes_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = behind_the_scenes_idea
+				}
+				has_idea = foundation_of_the_past_idea
+			}
+			without_any_hassle_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = without_any_hassle_idea
+				}
+				has_idea = foundation_of_the_past_idea
+			}
+			our_home_is_our_fortress_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = our_home_is_our_fortress_idea
+				}
+				has_idea = foundation_of_the_past_idea
+			}
+			rural_militia_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = rural_militia_idea
+					has_idea = industrial_militia_idea
+				}
+				has_idea = behind_the_scenes_idea
+				has_idea = without_any_hassle_idea
+				has_idea = our_home_is_our_fortress_idea
+			}
+			industrial_militia_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = rural_militia_idea
+					has_idea = industrial_militia_idea
+				}
+				has_idea = behind_the_scenes_idea
+				has_idea = without_any_hassle_idea
+				has_idea = our_home_is_our_fortress_idea
+			}
+			land_river_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = land_river_idea
+				}
+				has_idea = industrial_militia_idea
+			}
+			scraping_down_the_bottom_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = scraping_down_the_bottom_idea
+				}
+				has_idea = rural_militia_idea
+			}
+			in_a_blink_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = in_a_blink_idea
+				}
+				OR = {
+					has_idea = land_river_idea
+					has_idea = scraping_down_the_bottom_idea
+				}
+			}
+			oprichnina_hand_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = oprichnina_hand_idea
+				}
+				has_idea = in_a_blink_idea
+			}
+			peripheral_cleansing_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = peripheral_cleansing_idea
+				}
+				has_idea = in_a_blink_idea
+			}
+			destroy_anomalies_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = destroy_anomalies_idea
+				}
+				has_idea = oprichnina_hand_idea
+				has_idea = peripheral_cleansing_idea
+			}
+			fighting_for_families_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = fighting_for_families_idea
+				}
+				has_idea = destroy_anomalies_idea
+			}
+			military_loans_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = military_loans_idea
+				}
+				has_idea = destroy_anomalies_idea
+			}
+			from_stones_and_sticks_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = from_stones_and_sticks_idea
+				}
+				has_idea = destroy_anomalies_idea
+			}
+			autonomius_bataries_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = autonomius_bataries_idea
+					has_idea = controlled_bataries_idea
+				}
+				has_idea = fighting_for_families_idea
+				has_idea = military_loans_idea
+				has_idea = from_stones_and_sticks_idea
+			}
+			controlled_bataries_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = autonomius_bataries_idea
+					has_idea = controlled_bataries_idea
+				}
+				has_idea = fighting_for_families_idea
+				has_idea = military_loans_idea
+				has_idea = from_stones_and_sticks_idea
+			}
+			firstborn_of_sparta_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = firstborn_of_sparta_idea
+				}
+				OR = {
+					has_idea = autonomius_bataries_idea
+					has_idea = controlled_bataries_idea
+				}
+			}
+			nerves_to_the_limit_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = nerves_to_the_limit_idea
+				}
+				has_idea = firstborn_of_sparta_idea
+			}
+			steel_grip_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = steel_grip_idea
+				}
+				has_idea = firstborn_of_sparta_idea
+			}
+			sweat_and_blood_overlay_visible = {
+				check_variable = {
+					selected_government_system = 2
+				}
+				NOT = {
+					has_idea = sweat_and_blood_idea
+				}
+				has_idea = nerves_to_the_limit_idea
+				has_idea = steel_grip_idea
+			}
+		}
+		effects = {
+			select_model_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 0
+						}
+					}
+					add_to_variable = { 
+						ochki_gos_progressa_growth = 5 
+					}
+					add_political_power = 100
+				}
+				else = {
+					remove_ideas_with_trait = menshikov_system_trait
+					remove_ideas_with_trait = naumov_system_trait
+				}
+				set_variable = {
+					var = selected_government_system
+					value = 2
+					tooltip = select_smoilov_system_tt
+				}
+				subtract_from_variable = {
+					var = ochki_gos_progressa
+					value = 20
+					tooltip = goverment_system_upgrade_20_tt
+				}
+			}
+			close_button_click = {
+				set_variable = {
+					gos_usroistvo = 0
+				}
+			}
+			foundation_of_the_past_button_click = {
+				if = {
+					limit = {
+						has_idea = foundation_of_the_past_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = foundation_of_the_past_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+				}
+				custom_effect_tooltip = foundation_of_the_past_reform_tt
+			}
+			behind_the_scenes_button_click = {
+				if = {
+					limit = {
+						has_idea = behind_the_scenes_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = behind_the_scenes_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+				}
+				custom_effect_tooltip = behind_the_scenes_reform_tt
+			}
+			without_any_hassle_button_click = {
+				if = {
+					limit = {
+						has_idea = without_any_hassle_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = without_any_hassle_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+				}
+				custom_effect_tooltip = without_any_hassle_reform_tt
+			}
+			our_home_is_our_fortress_button_click = {
+				if = {
+					limit = {
+						has_idea = our_home_is_our_fortress_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = our_home_is_our_fortress_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = our_home_is_our_fortress_reform_tt
+			}
+			rural_militia_button_click = {
+				if = {
+					limit = {
+						has_idea = rural_militia_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = rural_militia_idea
+						load_oob = "rural_militia"
+						capital_scope = {
+							create_unit = {
+								division = "division_name = { is_name_ordered = yes } division_template = \"Rural Militia\" start_experience_factor = 0.2 start_equipment_factor = 0.8 start_manpower_factor = 1"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 40
+						tooltip = goverment_system_upgrade_40_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_40_tt
+				}
+				custom_effect_tooltip = rural_militia_reform_tt
+			}
+			industrial_militia_button_click = {
+				if = {
+					limit = {
+						has_idea = industrial_militia_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = industrial_militia_idea
+						load_oob = "industrial_militia"
+						capital_scope = {
+							create_unit = {
+								division = "division_name = { is_name_ordered = yes } division_template = \"Industrial Militia\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+								owner = ROOT
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 40
+						tooltip = goverment_system_upgrade_40_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_40_tt
+				}
+				custom_effect_tooltip = industrial_militia_reform_tt
+			}
+			land_river_button_click = {
+				if = {
+					limit = {
+						has_idea = land_river_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = land_river_idea
+						every_owned_state = {
+							limit = {
+								is_controlled_by = ROOT
+							}
+							random_select_amount = 2
+							add_extra_state_shared_building_slots = 1
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = land_river_reform_tt
+			}
+			scraping_down_the_bottom_button_click = {
+				if = {
+					limit = {
+						has_idea = scraping_down_the_bottom_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = scraping_down_the_bottom_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = scraping_down_the_bottom_reform_tt
+			}
+			in_a_blink_button_click = {
+				if = {
+					limit = {
+						has_idea = in_a_blink_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = in_a_blink_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 20
+						tooltip = goverment_system_upgrade_20_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = in_a_blink_reform_tt
+			}
+			oprichnina_hand_button_click = {
+				if = {
+					limit = {
+						has_idea = oprichnina_hand_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = oprichnina_hand_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = oprichnina_hand_reform_tt
+			}
+			peripheral_cleansing_button_click = {
+				if = {
+					limit = {
+						has_idea = peripheral_cleansing_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = peripheral_cleansing_idea
+						load_oob = "liquidation_corps"
+						capital_scope = {
+							create_unit = {
+								division = "division_name = { is_name_ordered = yes } division_template = \"Liquidation Corps\" start_experience_factor = 0.8 start_equipment_factor = 1 start_manpower_factor = 1"
+								owner = ROOT
+								count = 2
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 40
+						tooltip = goverment_system_upgrade_40_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_40_tt
+				}
+				capital_scope = {
+					create_unit = {
+						division = "division_name = { is_name_ordered = yes } division_template = \"Liquidation Corps\" start_experience_factor = 0.8 start_equipment_factor = 1 start_manpower_factor = 1"
+						owner = ROOT
+						count = 2
+					}
+				}
+				custom_effect_tooltip = peripheral_cleansing_reform_tt
+			}
+			destroy_anomalies_button_click = {
+				if = {
+					limit = {
+						has_idea = destroy_anomalies_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = destroy_anomalies_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+					if = {
+						limit = {
+							has_idea = ignore_distortions
+						}
+						swap_ideas = {
+							remove_idea = ignore_distortions
+							add_idea = restrain_distortions
+						}
+					}
+					else_if = {
+						limit = {
+							has_idea = limited_research_of_distortions
+						}
+						swap_ideas = {
+							remove_idea = limited_research_of_distortions
+							add_idea = restrain_distortions
+						}
+					}
+					else_if = {
+						limit = {
+							has_idea = extensive_research_of_distortions
+						}
+						swap_ideas = {
+							remove_idea = extensive_research_of_distortions
+							add_idea = restrain_distortions
+						}
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					effect_tooltip = {
+						if = {
+							limit = {
+								has_idea = ignore_distortions
+							}
+							swap_ideas = {
+								remove_idea = ignore_distortions
+								add_idea = restrain_distortions
+							}
+						}
+						else_if = {
+							limit = {
+								has_idea = limited_research_of_distortions
+							}
+							swap_ideas = {
+								remove_idea = limited_research_of_distortions
+								add_idea = restrain_distortions
+							}
+						}
+						else_if = {
+							limit = {
+								has_idea = extensive_research_of_distortions
+							}
+							swap_ideas = {
+								remove_idea = extensive_research_of_distortions
+								add_idea = restrain_distortions
+							}
+						}
+					}
+				}
+				custom_effect_tooltip = destroy_anomalies_reform_tt
+			}
+			fighting_for_families_button_click = {
+				if = {
+					limit = {
+						has_idea = fighting_for_families_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = fighting_for_families_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = fighting_for_families_reform_tt
+			}
+			military_loans_button_click = {
+				if = {
+					limit = {
+						has_idea = military_loans_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = military_loans_idea
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 2
+								instant_build = yes
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = military_loans_reform_tt
+			}
+			from_stones_and_sticks_button_click = {
+				if = {
+					limit = {
+						has_idea = from_stones_and_sticks_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = from_stones_and_sticks_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+				}
+				custom_effect_tooltip = from_stones_and_sticks_reform_tt
+			}
+			autonomius_bataries_button_click = {
+				if = {
+					limit = {
+						has_idea = autonomius_bataries_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = autonomius_bataries_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 50
+						tooltip = goverment_system_upgrade_50_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_50_tt
+				}
+				custom_effect_tooltip = autonomius_bataries_reform_tt
+			}
+			controlled_bataries_button_click = {
+				if = {
+					limit = {
+						has_idea = controlled_bataries_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = controlled_bataries_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 50
+						tooltip = goverment_system_upgrade_50_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_50_tt
+				}
+				custom_effect_tooltip = controlled_bataries_reform_tt
+			}
+			firstborn_of_sparta_button_click = {
+				if = {
+					limit = {
+						has_idea = firstborn_of_sparta_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = firstborn_of_sparta_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 50
+						tooltip = goverment_system_upgrade_50_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_50_tt
+				}
+				custom_effect_tooltip = firstborn_of_sparta_reform_tt
+			}
+			nerves_to_the_limit_button_click = {
+				if = {
+					limit = {
+						has_idea = nerves_to_the_limit_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = nerves_to_the_limit_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 50
+						tooltip = goverment_system_upgrade_50_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_50_tt
+				}
+				custom_effect_tooltip = nerves_to_the_limit_reform_tt
+			}
+			steel_grip_button_click = {
+				if = {
+					limit = {
+						has_idea = steel_grip_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = steel_grip_idea
+						random_owned_controlled_state = {
+							add_extra_state_shared_building_slots = 2
+							add_building_construction = {
+								type = arms_factory
+								level = 1
+								instant_build = yes
+							}
+							add_building_construction = {
+								type = industrial_complex
+								level = 1
+								instant_build = yes
+							}
+						}
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 50
+						tooltip = goverment_system_upgrade_50_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_50_tt
+				}
+				custom_effect_tooltip = steel_grip_reform_tt
+			}
+			sweat_and_blood_button_click = {
+				if = {
+					limit = {
+						has_idea = sweat_and_blood_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 2
+						}
+					}
+					hidden_effect = {
+						add_ideas = sweat_and_blood_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 60
+						tooltip = goverment_system_upgrade_60_tt
+					}
+					add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 5000
+						producer = ROOT
+					}
+				}
+				else = {
+					custom_effect_tooltip = model_is_not_selected_tt
+					custom_effect_tooltip = goverment_system_upgrade_60_tt
+					effect_tooltip = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment
+							amount = 5000
+							producer = ROOT
+						}
+					}
+				}
+				custom_effect_tooltip = sweat_and_blood_reform_tt
+			}
+		}
+	}
+	naumov_system_tree = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "naumov_system_outer_handler"
+		visible = {
+			check_variable = { 
+				gos_usroistvo = 3
+			}
+		}		
+		triggers = {			
+			select_model_button_visible = {
+				NOT = {
+					check_variable = {
+						selected_government_system = 3
+					}
+				}
+			}
+			select_model_button_click_enabled = {
+				goverment_system_can_be_upgraded_20 = yes
+			}
+			common_duty_common_law_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = common_duty_common_law_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+				}
+			}
+			existence_essence_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = existence_essence_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					NOT = {
+						has_idea = existence_horror_idea
+					}
+					has_idea = common_duty_common_law_idea
+				}
+			}
+			existence_horror_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = existence_horror_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					NOT = {
+						has_idea = existence_essence_idea
+					}
+					has_idea = common_duty_common_law_idea
+				}
+			}
+			caring_eye_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = caring_eye_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					NOT = {
+						has_idea = interesting_observation_idea
+					}
+					has_idea = existence_essence_idea
+				}
+			}
+			interesting_observation_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = interesting_observation_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					NOT = {
+						has_idea = caring_eye_idea
+					}
+					has_idea = existence_essence_idea
+				}
+			}
+			technological_revolution_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = technological_revolution_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					NOT = {
+						has_idea = cultural_revolution_idea
+					}
+					has_idea = existence_horror_idea
+				}
+			}
+			cultural_revolution_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = cultural_revolution_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					NOT = {
+						has_idea = technological_revolution_idea
+					}
+					has_idea = existence_horror_idea
+				}
+			}
+			assured_survival_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = assured_survival_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					OR = {
+						has_idea = caring_eye_idea
+						has_idea = interesting_observation_idea
+					}
+				}
+			}
+			proportionate_fee_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = proportionate_fee_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					OR = {
+						has_idea = technological_revolution_idea
+						has_idea = cultural_revolution_idea
+					}
+				}
+			}
+			flawless_soldier_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = flawless_soldier_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					OR = {
+						has_idea = assured_survival_idea
+						has_idea = proportionate_fee_idea
+					}
+				}
+			}
+			all_describing_formula_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = all_describing_formula_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_45 = yes
+					has_idea = flawless_soldier_idea
+				}
+			}
+			primary_broth_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = primary_broth_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					has_idea = flawless_soldier_idea
+				}
+			}
+			flowers_of_life_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = flowers_of_life_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					has_idea = all_describing_formula_idea
+					has_idea = primary_broth_idea
+				}
+			}
+			their_life_plans_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = their_life_plans_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = flowers_of_life_idea
+				}
+			}
+			cast_aside_doubts_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = cast_aside_doubts_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = their_life_plans_idea
+				}
+			}
+			potential_realization_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = potential_realization_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = their_life_plans_idea
+				}
+			}
+			order_in_mind_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = order_in_mind_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_60 = yes
+					has_idea = cast_aside_doubts_idea
+				}
+			}
+			unity_by_blood_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = unity_by_blood_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_15 = yes
+					has_idea = potential_realization_idea
+				}
+			}
+			man_and_consciousness_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = man_and_consciousness_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_30 = yes
+					has_idea = unity_by_blood_idea
+				}
+			}
+			cognitive_warfare_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = cognitive_warfare_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_60 = yes
+					has_idea = order_in_mind_idea
+				}
+			}
+			body_limits_button_click_enabled = {
+				if = {
+					limit = {
+						NOT = {
+							has_idea = body_limits_idea
+						}
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					goverment_system_can_be_upgraded_90 = yes
+					has_idea = cognitive_warfare_idea
+					has_idea = man_and_consciousness_idea
+				}
+			}
+			common_duty_common_law_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = common_duty_common_law_idea
+				}
+			}
+			existence_essence_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = existence_essence_idea
+					has_idea = existence_horror_idea
+				}
+				has_idea = common_duty_common_law_idea
+			}
+			existence_horror_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = existence_essence_idea
+					has_idea = existence_horror_idea
+				}
+				has_idea = common_duty_common_law_idea
+			}
+			caring_eye_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = caring_eye_idea
+					has_idea = interesting_observation_idea
+				}
+				has_idea = existence_essence_idea
+			}
+			interesting_observation_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = caring_eye_idea
+					has_idea = interesting_observation_idea
+				}
+				has_idea = existence_essence_idea
+			}
+			technological_revolution_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = technological_revolution_idea
+					has_idea = cultural_revolution_idea
+				}
+				has_idea = existence_horror_idea
+			}
+			cultural_revolution_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = technological_revolution_idea
+					has_idea = cultural_revolution_idea
+				}
+				has_idea = existence_horror_idea
+			}
+			assured_survival_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = assured_survival_idea
+				}
+				OR = {
+					has_idea = caring_eye_idea
+					has_idea = interesting_observation_idea
+				}
+			}
+			proportionate_fee_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = proportionate_fee_idea
+				}
+				OR = {
+					has_idea = technological_revolution_idea
+					has_idea = cultural_revolution_idea
+				}
+			}
+			flawless_soldier_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = flawless_soldier_idea
+				}
+				OR = {
+					has_idea = assured_survival_idea
+					has_idea = proportionate_fee_idea
+				}
+			}
+			all_describing_formula_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = all_describing_formula_idea
+				}
+				has_idea = flawless_soldier_idea
+			}
+			primary_broth_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = primary_broth_idea
+				}
+				has_idea = flawless_soldier_idea
+			}
+			flowers_of_life_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = flowers_of_life_idea
+				}
+				has_idea = all_describing_formula_idea
+				has_idea = primary_broth_idea
+			}
+			their_life_plans_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = their_life_plans_idea
+				}
+				has_idea = flowers_of_life_idea
+			}
+			cast_aside_doubts_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = cast_aside_doubts_idea
+				}
+				has_idea = their_life_plans_idea
+			}
+			potential_realization_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = potential_realization_idea
+				}
+				has_idea = their_life_plans_idea
+			}
+			order_in_mind_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = order_in_mind_idea
+				}
+				has_idea = cast_aside_doubts_idea
+			}
+			unity_by_blood_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = unity_by_blood_idea
+				}
+				has_idea = potential_realization_idea
+			}
+			man_and_consciousness_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = man_and_consciousness_idea
+				}
+				has_idea = unity_by_blood_idea
+			}
+			cognitive_warfare_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = cognitive_warfare_idea
+				}
+				has_idea = order_in_mind_idea
+			}
+			body_limits_overlay_visible = {
+				check_variable = {
+					selected_government_system = 3
+				}
+				NOT = {
+					has_idea = body_limits_idea
+				}
+				has_idea = man_and_consciousness_idea
+				has_idea = cognitive_warfare_idea
+			}
+		}
+		effects = {		
+			select_model_button_click = {
+				if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 0
+						}
+					}
+					add_to_variable = { 
+						ochki_gos_progressa_growth = 5 
+					}
+					add_political_power = 100
+				}
+				else = {
+					remove_ideas_with_trait = menshikov_system_trait
+					remove_ideas_with_trait = naumov_system_trait
+				}
+				set_variable = {
+					var = selected_government_system
+					value = 3
+					tooltip = select_naumov_system_tt
+				}
+				subtract_from_variable = {
+					var = ochki_gos_progressa
+					value = 20
+					tooltip = goverment_system_upgrade_20_tt
+				}
+				custom_effect_tooltip = select_naumov_system_idea_tt
+			}
+			close_button_click = {
+				set_variable = {
+					gos_usroistvo = 0
+				}
+			}
+			common_duty_common_law_button_click = {
+				if = {
+					limit = {
+						has_idea = common_duty_common_law_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = common_duty_common_law_idea
+						add_political_power = 150
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = common_duty_common_law_reform_tt
+				effect_tooltip = {
+					add_political_power = 150
+				}
+			}
+			existence_essence_button_click = {
+				if = {
+					limit = {
+						has_idea = existence_essence_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = existence_essence_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = existence_essence_reform_tt
+			}
+			existence_horror_button_click = {
+				if = {
+					limit = {
+						has_idea = existence_horror_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = existence_horror_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = existence_horror_reform_tt
+			}
+			caring_eye_button_click = {
+				if = {
+					limit = {
+						has_idea = caring_eye_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = caring_eye_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = caring_eye_reform_tt
+			}
+			interesting_observation_button_click = {
+				if = {
+					limit = {
+						has_idea = interesting_observation_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = interesting_observation_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = interesting_observation_reform_tt
+			}
+			technological_revolution_button_click = {
+				if = {
+					limit = {
+						has_idea = technological_revolution_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = technological_revolution_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = technological_revolution_reform_tt
+			}
+			cultural_revolution_button_click = {
+				if = {
+					limit = {
+						has_idea = cultural_revolution_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = cultural_revolution_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = cultural_revolution_reform_tt
+			}
+			assured_survival_button_click = {
+				if = {
+					limit = {
+						has_idea = assured_survival_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = assured_survival_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = assured_survival_reform_tt
+			}
+			proportionate_fee_button_click = {
+				if = {
+					limit = {
+						has_idea = proportionate_fee_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = proportionate_fee_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = proportionate_fee_reform_tt
+			}
+			flawless_soldier_button_click = {
+				if = {
+					limit = {
+						has_idea = flawless_soldier_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = flawless_soldier_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = flawless_soldier_reform_tt
+			}
+			all_describing_formula_button_click = {
+				if = {
+					limit = {
+						has_idea = all_describing_formula_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = all_describing_formula_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 45
+						tooltip = goverment_system_upgrade_45_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_45_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = all_describing_formula_reform_tt
+			}
+			primary_broth_button_click = {
+				if = {
+					limit = {
+						has_idea = primary_broth_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = primary_broth_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = primary_broth_reform_tt
+			}
+			flowers_of_life_button_click = {
+				if = {
+					limit = {
+						has_idea = flowers_of_life_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = flowers_of_life_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = flowers_of_life_reform_tt
+			}
+			their_life_plans_button_click = {
+				if = {
+					limit = {
+						has_idea = their_life_plans_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = their_life_plans_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = their_life_plans_reform_tt
+			}
+			cast_aside_doubts_button_click = {
+				if = {
+					limit = {
+						has_idea = cast_aside_doubts_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = cast_aside_doubts_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = cast_aside_doubts_reform_tt
+			}
+			potential_realization_button_click = {
+				if = {
+					limit = {
+						has_idea = potential_realization_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = potential_realization_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = potential_realization_reform_tt
+			}
+			order_in_mind_button_click = {
+				if = {
+					limit = {
+						has_idea = order_in_mind_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = order_in_mind_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 60
+						tooltip = goverment_system_upgrade_60_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_60_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = order_in_mind_reform_tt
+			}
+			unity_by_blood_button_click = {
+				if = {
+					limit = {
+						has_idea = unity_by_blood_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = unity_by_blood_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 15
+						tooltip = goverment_system_upgrade_15_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_15_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = unity_by_blood_reform_tt
+			}
+			man_and_consciousness_button_click = {
+				if = {
+					limit = {
+						has_idea = man_and_consciousness_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = man_and_consciousness_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 30
+						tooltip = goverment_system_upgrade_30_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_30_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = man_and_consciousness_reform_tt
+			}
+			cognitive_warfare_button_click = {
+				if = {
+					limit = {
+						has_idea = cognitive_warfare_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = cognitive_warfare_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 60
+						tooltip = goverment_system_upgrade_60_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_60_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = cognitive_warfare_reform_tt
+			}
+			body_limits_button_click = {
+				if = {
+					limit = {
+						has_idea = body_limits_idea
+					}
+					custom_effect_tooltip = reform_researched_tt
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							selected_government_system = 3
+						}
+					}
+					hidden_effect = {
+						add_ideas = body_limits_idea
+					}
+					subtract_from_variable = {
+						var = ochki_gos_progressa
+						value = 90
+						tooltip = goverment_system_upgrade_90_tt
+					}
+				}
+				else = {
+					custom_effect_tooltip = goverment_system_upgrade_90_tt
+					custom_effect_tooltip = model_is_not_selected_tt
+				}
+				custom_effect_tooltip = body_limits_reform_tt
+			}
+		}
+	}
+}

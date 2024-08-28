@@ -1,0 +1,9 @@
+ARM_middle_russian_war = {
+	icon = saf_anti_colonialist_crusade
+	#picture =
+	scripted_gui = arm_middle_russian_war_gui
+	allowed = { original_tag = ARM }
+	visible = { has_country_flag = ARM_middle_russian_war_flag }
+	visible_when_empty = yes
+	priority = { base = 5 }
+}

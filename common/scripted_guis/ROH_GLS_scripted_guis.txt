@@ -1,0 +1,27 @@
+scripted_gui = { 
+	gls_freedom_and_order = {
+		context_type = decision_category
+		window_name = "GLS_freedom_and_order"
+		visible = { always = yes }
+		properties = {
+			top_bar_order = { frame = order }
+			top_bar_freedom = { frame = freedom }
+		}
+		effects = {
+		}
+		triggers = {
+		}
+	}
+	gls_kurchatov_project = {
+		context_type = decision_category
+		window_name = "GLS_kurchatov_project"
+		visible = { always = yes }
+		properties = {
+			bar_of_charge = { frame = ready_charge }
+		}
+		effects = {
+		}
+		triggers = {
+		}
+	}
+}

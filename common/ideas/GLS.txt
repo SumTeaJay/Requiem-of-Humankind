@@ -1,0 +1,740 @@
+ideas = {
+	country = {
+		GLS_order = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.02
+				monthly_population = 0.25
+				stability_weekly = 0.03
+				production_factory_efficiency_gain_factor = 0.03
+				production_speed_buildings_factor = 0.03
+				enemy_justify_war_goal_time = 0.05 
+				offence = -0.02
+				defence = -0.02
+			}
+		}
+		GLS_order_2 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.04
+				monthly_population = 0.5
+				stability_weekly = 0.06
+				production_factory_efficiency_gain_factor = 0.06
+				production_speed_buildings_factor = 0.06
+				enemy_justify_war_goal_time = 0.1 
+				offence = -0.04
+				defence = -0.04
+			}
+		}
+		GLS_order_3 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.06
+				monthly_population = 0.75
+				stability_weekly = 0.09
+				production_factory_efficiency_gain_factor = 0.09
+				production_speed_buildings_factor = 0.09
+				enemy_justify_war_goal_time = 0.15 
+				offence = -0.06
+				defence = -0.06
+			}
+		}
+		GLS_order_4 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.08
+				monthly_population = 1.0
+				stability_weekly = 0.12
+				production_factory_efficiency_gain_factor = 0.12
+				production_speed_buildings_factor = 0.12
+				enemy_justify_war_goal_time = 0.2
+				offence = -0.08
+				defence = -0.08
+			}
+		}
+		GLS_order_5 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.1
+				monthly_population = 1.25
+				stability_weekly = 0.15
+				production_factory_efficiency_gain_factor = 0.15
+				production_speed_buildings_factor = 0.15
+				enemy_justify_war_goal_time = 0.25 
+				offence = -0.1
+				defence = -0.1
+			}
+		}
+		GLS_order_6 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.12
+				monthly_population = 1.5
+				stability_weekly = 0.18
+				production_factory_efficiency_gain_factor = 0.18
+				production_speed_buildings_factor = 0.18
+				enemy_justify_war_goal_time = 0.3 
+				offence = -0.12
+				defence = -0.12
+			}
+		}
+		GLS_order_7 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.14
+				monthly_population = 1.75
+				stability_weekly = 0.21
+				production_factory_efficiency_gain_factor = 0.21
+				production_speed_buildings_factor = 0.21
+				enemy_justify_war_goal_time = 0.35 
+				offence = -0.14
+				defence = -0.14
+			}
+		}
+		GLS_order_8 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.16
+				monthly_population = 2.0
+				stability_weekly = 0.24
+				production_factory_efficiency_gain_factor = 0.24
+				production_speed_buildings_factor = 0.24
+				enemy_justify_war_goal_time = 0.4 
+				offence = -0.16
+				defence = -0.16
+			}
+		}
+		GLS_order_9 = {
+			picture = order
+			modifier = {
+				research_speed_factor = 0.18
+				monthly_population = 2.25
+				stability_weekly = 0.27
+				production_factory_efficiency_gain_factor = 0.27
+				production_speed_buildings_factor = 0.27
+				enemy_justify_war_goal_time = 0.45 
+				offence = -0.18
+				defence = -0.18
+			}
+		}
+		GLS_freedom = {
+			picture = freedom
+			modifier = {
+				offence = 0.02
+				defence = 0.02
+				enemy_justify_war_goal_time = -0.1
+				army_org = 1
+				army_speed_factor = 0.02
+				research_speed_factor = -0.02
+				monthly_population = -0.15
+				production_factory_efficiency_gain_factor = -0.03
+			}
+		}
+		GLS_freedom_2 = {
+			picture = freedom
+			modifier = {
+				offence = 0.04
+				defence = 0.04
+				enemy_justify_war_goal_time = -0.2
+				army_org = 2
+				army_speed_factor = 0.04
+				research_speed_factor = -0.04
+				monthly_population = -0.3
+				production_factory_efficiency_gain_factor = -0.06
+			}
+		}
+		GLS_freedom_3 = {
+			picture = freedom
+			modifier = {
+				offence = 0.06
+				defence = 0.06
+				enemy_justify_war_goal_time = -0.3
+				army_org = 3
+				army_speed_factor = 0.06
+				research_speed_factor = -0.6
+				monthly_population = -0.45
+				production_factory_efficiency_gain_factor = -0.09
+			}
+		}
+		GLS_freedom_4 = {
+			picture = freedom
+			modifier = {
+				offence = 0.08
+				defence = 0.08
+				enemy_justify_war_goal_time = -0.4
+				army_org = 4
+				army_speed_factor = 0.08
+				research_speed_factor = -0.08
+				monthly_population = -0.6
+				production_factory_efficiency_gain_factor = -0.12
+			}
+		}
+		GLS_freedom_5 = {
+			picture = freedom
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				enemy_justify_war_goal_time = -0.5
+				army_org = 5
+				army_speed_factor = 0.1
+				research_speed_factor = -0.1
+				monthly_population = -0.75
+				production_factory_efficiency_gain_factor = -0.15
+			}
+		}
+		GLS_freedom_6 = {
+			picture = freedom
+			modifier = {
+				offence = 0.12
+				defence = 0.12
+				enemy_justify_war_goal_time = -0.6
+				army_org = 6
+				army_speed_factor = 0.12
+				research_speed_factor = -0.12
+				monthly_population = -1.0
+				production_factory_efficiency_gain_factor = -0.18
+			}
+		}
+		GLS_freedom_7 = {
+			picture = freedom
+			modifier = {
+				offence = 0.14
+				defence = 0.14
+				enemy_justify_war_goal_time = -0.7
+				army_org = 7
+				army_speed_factor = 0.14
+				research_speed_factor = -0.14
+				monthly_population = -1.15
+				production_factory_efficiency_gain_factor = -0.21
+			}
+		}
+		GLS_freedom_8 = {
+			picture = freedom
+			modifier = {
+				offence = 0.16
+				defence = 0.16
+				enemy_justify_war_goal_time = -0.8
+				army_org = 8
+				army_speed_factor = 0.16
+				research_speed_factor = -0.16
+				monthly_population = -1.3
+				production_factory_efficiency_gain_factor = -0.24
+			}
+		}
+		GLS_freedom_9 = {
+			picture = freedom
+			modifier = {
+				offence = 0.18
+				defence = 0.18
+				enemy_justify_war_goal_time = -0.9
+				army_org = 9
+				army_speed_factor = 0.18
+				research_speed_factor = -0.18
+				monthly_population = -1.45
+				production_factory_efficiency_gain_factor = -0.27
+			}
+		}
+		GLS_death_of_gods = {
+			picture = death_of_gods
+			modifier = {
+				war_support_factor = -0.35
+				production_lack_of_resource_penalty_factor = 0.3
+				supply_factor = -0.5
+				production_factory_efficiency_gain_factor = -0.25
+				army_speed_factor = -0.25
+				army_core_defence_factor = -0.2
+				army_core_attack_factor = -0.2
+				army_org_factor = -0.3
+			}		
+		}
+		GLS_fathers_and_not_fathers = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.05
+				offence = 0.05
+				defence = 0.05
+			}
+		}
+		GLS_fathers_and_not_fathers_1 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.06
+				offence = 0.05
+				defence = 0.05
+			}
+		}
+		GLS_fathers_and_not_fathers_3 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.07
+			}
+		}
+		GLS_fathers_and_not_fathers_31 = {	#<- вот эта идея добавляется в фокусе 'Прокляты и забыты'
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.02
+				offence = 0.1
+				defence = 0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_4 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.05
+			}
+		}
+		GLS_fathers_and_not_fathers_5 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.07
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_6 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.05
+				army_speed_factor = 0.05
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+			}
+		}
+		#...заменил “Калаш” семью
+		GLS_fathers_and_not_fathers_7 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.069
+				experience_loss_factor = -0.15
+			}
+		}
+		GLS_fathers_and_not_fathers_8 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.049
+				experience_loss_factor = -0.15
+			}
+		}
+
+		GLS_fathers_and_not_fathers_9 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.069
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+				experience_loss_factor = -0.15
+			}
+		}
+		GLS_fathers_and_not_fathers_10 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.049
+				army_speed_factor = 0.05
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+				experience_loss_factor = -0.15
+			}
+		}
+		##############
+
+		#Маски сброшены
+		GLS_fathers_and_not_fathers_11 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.07
+				weekly_manpower = 10
+				army_org_factor = -0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_111 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.02
+				offence = 0.1
+				defence = 0.1
+				weekly_manpower = 10
+				army_org_factor = -0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_12 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.05
+				weekly_manpower = 10
+				army_org_factor = -0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_13 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				conscription = 0.07
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 10
+				army_org_factor = -0.1
+			}
+		}
+		GLS_fathers_and_not_fathers_14 = {
+			picture = fathers_and_not_fathers
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				conscription = 0.05
+				army_speed_factor = 0.05
+				mobilization_speed = 0.05
+				production_factory_efficiency_gain_factor = 0.07
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 10
+				army_org_factor = -0.1
+			}
+		}
+
+		
+		GLS_memories_of_rodina = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.05
+				research_speed_factor = -0.05
+			}
+		}
+		GLS_memories_of_rodina_1 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.09
+				research_speed_factor = -0.05
+			}
+		}
+		GLS_memories_of_rodina_2 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.09
+				research_speed_factor = -0.05
+				weekly_manpower = 350
+			}
+		}
+
+		#Наследие Жукова
+		GLS_memories_of_rodina_3 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.16
+				production_factory_start_efficiency_factor = 0.1
+				research_speed_factor = -0.05
+				weekly_manpower = 350
+				mobilization_speed = 0.05
+			}
+		}
+		GLS_memories_of_rodina_6 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.16
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 350
+			}
+		}
+		#Свободный разум - свободен во всем
+		GLS_memories_of_rodina_4 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.09
+				weekly_manpower = 350
+			}
+		}
+		GLS_memories_of_rodina_5 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.16
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 350
+				mobilization_speed = 0.05
+			}
+		}
+		GLS_memories_of_rodina_7 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.16
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 350
+				research_speed_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		GLS_memories_of_rodina_8 = {
+			picture = memories_of_rodina
+			modifier = {
+				offensive_war_stability_factor = 0.25
+				production_factory_efficiency_gain_factor = 0.16
+				production_factory_start_efficiency_factor = 0.1
+				weekly_manpower = 350
+				research_speed_factor = 0.05
+				mobilization_speed = 0.05
+			}
+		}
+		############
+		GLS_kotly = {
+			picture = kotly
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = -0.05
+			}
+		}
+		GLS_kotly_1 = {
+			picture = kotly
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = 0.05
+			}
+		}
+		GLS_kotly_2 = {
+			picture = kotly
+			modifier = {
+				war_support_factor = -0.1
+				political_power_gain = 0.1
+			}
+		}
+		GLS_kotly_3 = {
+			picture = kotly
+			modifier = {
+				war_support_factor = 0.1
+				political_power_gain = 0.1
+			}
+		}
+		GLS_place_under_sun = {
+			picture = place_under_sun
+			modifier = {
+				army_speed_factor = 0.07
+			}
+		}
+		GLS_ural_company = {
+			picture = ural_company
+			modifier = {
+				army_infantry_attack_factor = 0.15
+				special_forces_attack_factor = 0.15
+			}
+		}
+		GLS_our_starvation_idea = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.5
+				war_support_factor = -0.6
+				research_speed_factor = -0.1
+				surrender_limit = -0.3
+				political_power_cost = 0.05
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea2 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.6
+				research_speed_factor = -0.1
+				surrender_limit = -0.3
+				political_power_cost = 0.05
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea3 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.6
+				research_speed_factor = -0.1
+				surrender_limit = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Astafev = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.6
+				research_speed_factor = -0.1
+				surrender_limit = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Ryaznov = { #Полная Зачистка
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				research_speed_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Astafev2 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.6
+				surrender_limit = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Ryaznov2 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				production_factory_efficiency_gain_factor = -0.1
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Astafev3 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.6
+				surrender_limit = -0.3
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Ryaznov3 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Astafev4 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.5
+				surrender_limit = -0.3
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Ryaznov4 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.2
+			}
+		}
+		GLS_our_starvation_idea_Astafev5 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.4
+				war_support_factor = -0.3
+				conscription = -0.05
+			}
+		}
+		GLS_our_starvation_idea_Ryaznov5 = {
+			picture = GLS_our_starvation_pic_idea
+			modifier = {
+				stability_factor = -0.2
+				war_support_factor = -0.6
+				surrender_limit = -0.3
+				conscription = -0.05
+			}
+		}
+		GLS_general_staff = {
+			picture = GLS_general_staff_pic
+			modifier = {
+				experience_gain_army = 0.3
+				experience_gain_air = 0.3
+				command_power_gain = 0.05
+				max_planning = 0.1
+				planning_speed = 0.1
+				justify_war_goal_time = -0.4
+				army_leader_start_logistics_level = 1 
+			}
+		}
+		GLS_KGB = {
+			picture = GLS_KBG_pic
+			modifier = {
+				political_power_gain = 0.05
+				production_lack_of_resource_penalty_factor = -0.2
+			}
+		}
+		GLS_through_fire_idea = {
+			picture = GLS_through_fire_idea_pic
+			modifier = {
+				offence = 0.05
+			}
+		}
+		GLS_through_fire_idea2 = {
+			picture = GLS_through_fire_idea_pic
+			modifier = {
+				offence = 0.05
+				defence = 0.05 
+				army_speed_factor = 0.05
+				army_org_regain = 0.1
+			}
+		}
+		GLS_faith1 = {
+			picture = GLS_faith_pic
+			modifier = {
+				political_power_factor = -0.15
+				research_speed_factor = 0.05
+			}
+		}
+		GLS_faith2 = {
+			picture = GLS_faith_pic
+			modifier = {
+				political_power_factor = 0.15
+				research_speed_factor = -0.05
+			}
+		}
+		GLS_labour_and_capital_idea1 = {
+			picture = GLS_labour_and_capital_idea_pic
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				stability_factor = 0.1
+			}
+		}
+		GLS_labour_and_capital_idea2 = {
+			picture = GLS_labour_and_capital_idea_pic
+			modifier = {
+				production_factory_max_efficiency_factor = 0.1
+				stability_factor = -0.1
+			}
+		}
+		GLS_Borders = {
+			picture = GLS_Borders_pic
+			modifier = {
+				weekly_manpower = 100
+				consumer_goods_factor = 0.05
+			}
+		}
+		GLS_Borders2 = {
+			picture = GLS_Borders_pic
+			modifier = {
+				weekly_manpower = -100
+				consumer_goods_factor = -0.05
+			}
+		}
+	}
+}

@@ -1,0 +1,156 @@
+characters={
+	GLS_Iron_Dimon = {
+		name = GLS_Iron_Dimon
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Iron_Dimon
+			}
+			civilian={
+				large = GFX_portrait_GLS_Iron_Dimon
+			}
+		}
+		field_marshal = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 5
+			logistics_skill = 2
+			legacy_id = 1
+		}
+		country_leader = {
+			ideology = liquidators
+			expire="3333.1.1.1"
+			id=-1
+			desc = GLS_Iron_Dimon_desc
+		}	
+	}
+
+	GLS_anarchy = {
+		name = GLS_anarchy
+		portraits = {
+			civilian={
+				large = GFX_portrait_GLS_Anarchy
+			}
+		}
+		country_leader = {
+			ideology = liquidators
+			traits={ GLS_dead_dream }
+			expire="3333.1.1.1"
+			id=-1
+			desc = GLS_anarchy_desc
+		}
+	}
+
+	GLS_Mandate_Parliament = {
+		name = GLS_Mandate_Parliament
+		portraits = {
+			civilian={
+				large = GFX_portrait_GLS_Mandate_Parliament
+			}
+		}
+		country_leader = {
+			ideology = colloborators
+			expire="3333.1.1.1"
+			id=-1
+			desc = GLS_Mandate_Parliament_desc
+		}
+	}
+
+	GLS_Chiro = {
+		name = GLS_Chiro
+		portraits = {
+			civilian={
+				large = GFX_portrait_GLS_Chiro
+			}
+		}
+		country_leader = {
+			ideology = free_people_subideology
+			traits={ GLS_fucking_dog }
+			expire="3333.1.1.1"
+			id=-1
+			desc = GLS_Chiro_desc
+		}	
+	}
+				
+				
+	GLS_Victor_Ryaznov={
+		name = GLS_Victor_Ryaznov
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Victor_Ryaznov
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1
+		}
+	}
+	GLS_Vladimir_Astafiev={
+		name = GLS_Vladimir_Astafiev
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Vladimir_Astafiev
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=1
+		}
+	}	
+	GLS_Ivan_Sykhoy={
+		name = GLS_Ivan_Sykhoy
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Ivan_Sykhoy
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=3
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=1
+		}
+	}
+	GLS_Airat_Kabirov={
+		name = GLS_Airat_Kabirov
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Airat_Kabirov
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=1
+		}
+	}
+	GLS_Almaz_Gabbasin={
+		name = GLS_Almaz_Gabbasin
+		portraits = {
+			army={
+				large = GFX_portrait_GLS_Almaz_Gabbasin
+			}
+		}
+		corps_commander={
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=1
+		}
+	}
+}

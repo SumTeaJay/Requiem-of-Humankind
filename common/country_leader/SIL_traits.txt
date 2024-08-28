@@ -1,0 +1,18 @@
+leader_traits = {
+	pastor = {
+        random = no
+        stability_factor = 0.2
+        recruitable_population_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	pastor_zaglushka = {
+		random = no
+		stability_factor = 0.2
+		recruitable_population_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

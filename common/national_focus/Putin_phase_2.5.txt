@@ -1,0 +1,29 @@
+focus_tree = {
+    id = SDC_phase_two_five
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 100
+            tag = SDC
+        }
+    }
+    default = no
+
+    focus = {
+        id = SDC_Indocrination
+        icon = GFX_Indocrination
+        cost = 5
+        x = 6
+        y = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            country_event = pautov.26
+            custom_effect_tooltip = SDC_Indocrination_tt
+			set_country_flag = end_of_phase_two
+        }
+    }
+}

@@ -1,0 +1,17 @@
+characters = {
+	AZB_aleksander_zonder = {
+		name = aleksander_zonder
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/AZB/aleksander_zonder.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_aleksander_zonder_DESC" #use standart keys pls
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

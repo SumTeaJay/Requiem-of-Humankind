@@ -1,0 +1,16 @@
+characters = {
+	TAR_Military_Council = {
+		name = TAR_Military_Council
+		portraits={
+			civilian={
+				large="GFX_portrait_TAR_Military_Council"
+			}
+		}
+		country_leader={
+			ideology=humanists_subideology
+			desc = TAR_Military_Council_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

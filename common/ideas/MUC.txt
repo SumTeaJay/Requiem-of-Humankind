@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		MUC_blood_cordon = {
+            picture = blood_cordon
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				defence =0.3
+				stability_factor =-0.25
+				war_support_factor =-0.25
+				monthly_population =-0.75
+				research_speed_factor =-0.5
+			}
+		}
+	}
+}

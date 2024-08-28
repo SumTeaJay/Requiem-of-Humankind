@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		mnimaya_zashita = {	
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.15
+				production_factory_max_efficiency_factor = 0.15
+				production_lack_of_resource_penalty_factor = 0.1
+				consumer_goods_factor = -0.1			
+			}
+		}
+	}
+}

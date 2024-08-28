@@ -1,0 +1,15 @@
+characters = {
+	KSK_izgnanie = {
+		portraits={
+			civilian={
+				large="gfx/leaders/KSK/izgnanie.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = KSK_izgnanie_DESC
+		}
+	}	
+}

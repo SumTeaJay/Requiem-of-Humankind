@@ -1,0 +1,99 @@
+focus_tree = {
+    id = Zeruil_placeholder
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 100
+            tag = VOZ
+        }
+    }
+    default = no
+
+    focus = {
+        id = VOZ_focus_placeholder_1                 
+        icon = GFX_Stabilizatsia_fronta
+        cost = 10
+        x = 6
+        y = 0
+        ai_will_do = {
+            factor = 10
+        }
+        will_lead_to_war_with = TRO
+        completion_reward ={
+            declare_war_on = {
+                target = TRO
+                type = annex_everything
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {
+                      is_ai = yes
+                    }
+                    country_event = {
+                        id = scripted_peace.1
+                        days = 200
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = VOZ_focus_placeholder_2                 
+        icon = GFX_Stabilizatsia_fronta
+        prerequisite = { focus = VOZ_focus_placeholder_1 }
+        cost = 10
+        x = 6
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+
+        }
+    }
+    focus = {
+        id = VOZ_focus_placeholder_3                 
+        icon = GFX_Stabilizatsia_fronta
+        prerequisite = { focus = VOZ_focus_placeholder_2 }
+        cost = 10
+        x = 6
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+
+        }
+    }
+    focus = {
+        id = VOZ_focus_placeholder_4                 
+        icon = GFX_Stabilizatsia_fronta
+        prerequisite = { focus = VOZ_focus_placeholder_3 }
+        cost = 10
+        x = 6
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        will_lead_to_war_with = MIN
+        completion_reward ={
+            declare_war_on = {
+                target = MIN
+                type = annex_everything
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {
+                      is_ai = yes
+                    }
+                    country_event = {
+                        id = scripted_peace.2
+                        days = 100
+                    }
+                }
+            }
+        }
+    }
+}

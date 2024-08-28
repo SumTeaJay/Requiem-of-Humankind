@@ -1,0 +1,14 @@
+leader_traits = {
+	ODS_consciousness_idea = {
+		random = no
+	}
+	menshikov_system_trait = {
+		random = no
+	}
+	smoilov_system_trait = {
+		random = no
+	}
+	naumov_system_trait = {
+		random = no
+	}
+}

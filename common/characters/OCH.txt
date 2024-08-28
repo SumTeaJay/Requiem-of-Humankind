@@ -1,0 +1,16 @@
+characters = {
+	OCH_Okhva = {
+		name = OCH_Okhva
+		portraits = {
+			civilian = {
+				large = GFX_portrait_OCH_Okhva
+			}
+		}
+		country_leader = {
+			ideology = free_people_subideology
+			desc = OCH_Okhva_desc
+			id = -1
+			expire = "2090.1.1.1"
+		}
+	}
+}

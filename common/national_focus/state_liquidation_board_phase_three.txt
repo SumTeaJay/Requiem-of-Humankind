@@ -1,0 +1,1332 @@
+focus_tree = {
+	id = state_liquidation_board_phase_three
+	country = {
+		factor = 0
+		modifier = {
+		add = 100
+		tag = GLS
+		}
+	}
+	continuous_focus_position = { x = 50 y = 4000 }
+	default = no
+
+    focus = {
+        id = GLS_questions_without_answers
+		icon = GFX_GLS_questions_without_answers_pic
+		x = 10
+		y = 0
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = GLS_our_name
+        icon = GFX_GLS_our_name_pic
+        prerequisite = { focus = GLS_questions_without_answers }
+        x = 10
+        y = 1
+        cost = 5
+        ai_will_do ={
+            base = 10
+        }
+        completion_reward = {
+            country_event = {
+                id = GLS.2001
+                days = 1
+            }
+            set_cosmetic_tag = GLS_new_name
+        }
+    }
+    focus = {
+        id = GLS_new_flag
+        icon = GFX_GLS_new_flag_pic
+        prerequisite = { focus = GLS_our_name }
+        x = 10
+        y = 2
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            add_stability = 0.05
+        }
+    }
+    focus = {
+        id = GLS_remember_the_roots
+        icon = GFX_GLS_remember_the_roots_pic
+        prerequisite = { focus = GLS_new_flag }
+        mutually_exclusive = { focus = GLS_donot_forget }
+        x = 9
+        y = 3
+        cost = 5
+        ai_will_do = {
+            factor = 50
+        }
+        completion_reward = {
+            set_cosmetic_tag = GLS_remember_the_roots_cosmetic
+        }
+    }
+    focus = {
+        id = GLS_donot_forget
+        icon = GFX_GLS_donot_forget_pic
+        prerequisite = { focus = GLS_new_flag }
+        mutually_exclusive = { focus = GLS_remember_the_roots }
+        x = 11
+        y = 3
+        cost = 5
+        ai_will_do = {
+            factor = 50
+        }
+        completion_reward = {
+            set_cosmetic_tag = GLS_donot_forget_cosmetic
+        }
+    }
+    focus = {
+        id = GLS_our_mans
+        icon = GFX_GLS_our_mans_pic
+        prerequisite = { focus = GLS_donot_forget focus = GLS_remember_the_roots }
+        x = 10
+        y = 4
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            add_manpower = 10000
+            set_country_flag = rebels_villages_flag
+        }
+    }
+    focus = {
+        id = GLS_our_starvation
+        icon = GFX_GLS_our_starvation_pic
+        prerequisite = { focus = GLS_our_mans }
+        x = 10
+        y = 5
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            country_event = {
+                id = GLS.2000
+                days = 1
+            }
+            hidden_effect = {
+                add_ideas = GLS_our_starvation_idea 
+            }
+            add_manpower = -15000
+        }
+    }
+    focus = {
+        id = GLS_our_meausers
+        icon = GFX_GLS_our_meausers_pic
+        prerequisite = { focus = GLS_our_starvation }
+        available = { has_war = no }
+        x = 10
+        y = 6
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea
+                    add_idea = GLS_our_starvation_idea2
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_censorship
+        icon = GFX_GLS_censorship_pic
+        prerequisite = { focus = GLS_our_meausers }
+        x = 10
+        y = 7
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            country_event = {
+                id = GLS.2002
+                days = 1
+            }
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea2 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea2
+                    add_idea = GLS_our_starvation_idea3
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_ancap_judge
+        icon = GFX_GLS_ancap_judge_pic
+        prerequisite = { focus = GLS_censorship }
+        mutually_exclusive = { focus = GLS_total_massacre}
+        x = 9
+        y = 8
+        cost = 5
+        ai_will_do = {
+            factor = 50
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea3 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea3
+                    add_idea = GLS_our_starvation_idea_Astafev
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_total_massacre
+        icon = GFX_GLS_total_massacre_pic
+        prerequisite = { focus = GLS_censorship }
+        mutually_exclusive = { focus = GLS_ancap_judge }
+        x = 11
+        y = 8
+        cost = 5
+        ai_will_do = {
+            factor = 50
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea3 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea3
+                    add_idea = GLS_our_starvation_idea_Ryaznov
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_no_proofs
+        icon = GFX_GLS_no_proofs_pic
+        prerequisite = { focus = GLS_total_massacre focus = GLS_ancap_judge }
+        x = 10
+        y = 9
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea_Astafev }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Astafev
+                    add_idea = GLS_our_starvation_idea_Astafev2
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Ryaznov }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Ryaznov
+                    add_idea = GLS_our_starvation_idea_Ryaznov2
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_partition_rations
+        icon = GFX_GLS_partition_rations_pic
+        prerequisite = { focus = GLS_no_proofs }
+        x = 10
+        y = 10
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            add_manpower = 5000
+        }
+    }
+    focus = {
+        id = GLS_for_people
+        icon = GFX_GLS_for_people_pic
+        prerequisite = { focus = GLS_partition_rations }
+        mutually_exclusive = { focus = GLS_for_army }
+        x = 9
+        y = 11
+        cost = 5
+        ai_will_do = {
+            factor = 50
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea_Astafev2 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Astafev2
+                    add_idea = GLS_our_starvation_idea_Astafev3
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Ryaznov2 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Ryaznov2
+                    add_idea = GLS_our_starvation_idea_Astafev5
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_for_army
+        icon = GFX_GLS_for_army_pic
+        prerequisite = { focus = GLS_partition_rations }
+        mutually_exclusive = { focus = GLS_for_people }
+        x = 11
+        y = 11
+        cost = 5
+        ai_will_do = {
+            factor = 11
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea_Astafev2 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Astafev2
+                    add_idea = GLS_our_starvation_idea_Astafev3
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Ryaznov2 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Ryaznov2
+                    add_idea = GLS_our_starvation_idea_Ryaznov3
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_Our_Land
+        icon = GFX_GLS_Our_Land_pic
+        prerequisite = { focus = GLS_for_army focus = GLS_for_people }
+        x = 10
+        y = 12
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_our_starvation_idea_Astafev3 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Astafev3
+                    add_idea = GLS_our_starvation_idea_Astafev4
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Astafev5 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Astafev5
+                    add_idea = GLS_our_starvation_idea_Ryaznov4
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Ryaznov3 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Ryaznov3
+                    add_idea = GLS_our_starvation_idea_Ryaznov4
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_our_starvation_idea_Ryaznov5 }
+                swap_ideas = {
+                    remove_idea = GLS_our_starvation_idea_Ryaznov5
+                    add_idea = GLS_our_starvation_idea_Astafev4
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_final_solution
+        icon = GFX_GLS_final_solution_pic
+        prerequisite = { focus = GLS_Our_Land }
+        x = 10
+        y = 13
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            hidden_effect = {
+                remove_ideas = GLS_our_starvation_idea_Astafev4 
+                remove_ideas = GLS_our_starvation_idea_Ryaznov4 
+            }
+            custom_effect_tooltip = GLS_starvation_ended
+            create_wargoal = {
+                type = annex_everything
+                target = PVS
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = PLC
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = DRW
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = FHS
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = ADT
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = OBS
+            }
+            create_wargoal = {
+                type = annex_everything
+                target = YJY
+            }
+        }
+    }
+    focus = {
+        id = GLS_Our_army
+        icon = GFX_GLS_Our_army_pic
+        prerequisite = { focus = GLS_our_starvation}
+        available = { has_war = no }
+        x = 6
+        y = 6
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            army_experience = 20
+            custom_effect_tooltip = ochki_gos_progress_5_tooltip
+            set_country_flag = ochki_gos_progress_5
+        }
+    }
+    focus = {
+        id = GLS_Brains
+        icon = GFX_GLS_Brains_pic
+        prerequisite = { focus = GLS_Our_army}
+        available = { has_country_flag = GLS_VOICE }
+        x = 6
+        y = 7
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            country_event = {
+                id = GLS.2003
+                days = 1
+            }
+            add_to_variable = { freedom = 5 }
+            add_ideas = GLS_general_staff
+            set_country_flag = access_to_justifications_of_war
+            hidden_effect = { add_ideas = lower_time_for_justification_of_wargoal }    
+            custom_effect_tooltip = GLS_diplomacy_allowed
+        }
+    }
+    focus = {
+        id = GLS_eyes
+        icon = GFX_GLS_eyes_pic
+        prerequisite = { focus = GLS_Brains }
+        x = 6
+        y = 8
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            add_manpower = 5000
+            add_ideas = GLS_KGB
+        }
+    }
+    focus = {
+        id = GLS_Hammer
+        icon = GFX_GLS_Hammer_pic
+        prerequisite = { focus = GLS_eyes }
+        x = 6
+        y = 9
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            custom_effect_tooltip = GLS_Hammer_tooltip
+            add_to_variable = { nuclear_charges = 1 }
+        }
+    }
+    focus = {
+        id = GLS_ignore_astafev
+        icon = GFX_GLS_ignore_astafev_pic
+        prerequisite = { focus = GLS_Hammer }
+        mutually_exclusive = { focus = GLS_ignore_ryaznov }
+        x = 5
+        y = 10
+        cost = 5
+        ai_will_do = {
+            base = 10
+        }
+        completion_reward = {
+            country_event = {
+                id = GLS.2004
+                days = 1
+            }
+            custom_effect_tooltip = GLS_ignore_astafev_tooltip
+            add_to_variable = { freedom = 10 }
+            add_to_variable = { order = -10 }
+            if = {
+                limit = { has_idea = limited_recruting }
+                swap_ideas = {
+                    remove_idea = limited_recruting
+                    add_idea = free_recruting
+                }
+            }
+            else_if = {
+                limit = { has_idea = mass_recruting }
+                swap_ideas = {
+                    remove_idea = mass_recruting
+                    add_idea = free_recruting
+                }
+            }
+            else_if = {
+                limit = { has_idea = total_recruting }
+                swap_ideas = {
+                    remove_idea = total_recruting
+                    add_idea = free_recruting
+                } 
+            }
+            else_if = {
+                limit = { has_idea = admiral_recruting }
+                swap_ideas = {
+                    remove_idea = admiral_recruting
+                    add_idea = free_recruting
+                } 
+            }
+        }
+    }
+    focus = {
+        id = GLS_ignore_ryaznov
+        icon = GFX_GLS_ignore_ryaznov_pic
+        prerequisite = { focus = GLS_Hammer }
+        mutually_exclusive = { focus = GLS_ignore_astafev }
+        x = 7
+        y = 10
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2005
+                days = 1
+            }
+            custom_effect_tooltip = GLS_ignore_ryaznov_tooltip
+            add_to_variable = { freedom = -10 }
+            add_to_variable = { order = 10 }
+            if = {
+                limit = { has_idea = free_recruting }
+                swap_ideas = {
+                    remove_idea = free_recruting
+                    add_idea = limited_recruting
+                }
+            }
+            else_if = {
+                limit = { has_idea = mass_recruting }
+                swap_ideas = {
+                    remove_idea = mass_recruting
+                    add_idea = limited_recruting
+                }
+            }
+            else_if = {
+                limit = { has_idea = total_recruting }
+                swap_ideas = {
+                    remove_idea = total_recruting
+                    add_idea = limited_recruting
+                } 
+            }
+            else_if = {
+                limit = { has_idea = admiral_recruting }
+                swap_ideas = {
+                    remove_idea = admiral_recruting
+                    add_idea = limited_recruting
+                } 
+            }
+        }
+    }
+    focus = {
+        id = GLS_initiative_legacy
+        icon = GFX_GLS_initiative_legacy_pic
+        prerequisite = { focus = GLS_ignore_astafev focus = GLS_ignore_ryaznov }
+        x = 6
+        y = 11
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2006
+                days = 1
+            }
+            custom_effect_tooltip = GLS_legacy_of_the_initiative
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 2000
+                }
+                add_equipment_to_stockpile = {
+                    type = infantry_odejda_0
+                    amount = 1000
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment_1
+                    amount = 300
+                    producer = GLS
+                }
+                add_equipment_to_stockpile = {
+                    type = pre_war_artillery_equipment
+                    amount = 500
+                    producer = GLS
+                }
+                add_equipment_to_stockpile = {
+                   type = pre_war_OPV_equipment
+                   amount = 600
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_through_fire
+        icon = GFX_GLS_through_fire_pic
+        prerequisite = { focus = GLS_initiative_legacy }
+        x = 6
+        y = 13
+        cost = 5
+        completion_reward = {
+            add_ideas = GLS_through_fire_idea
+        }
+    }
+    focus = {
+        id = GLS_our_fear
+        icon = GFX_GLS_our_fear_pic
+        prerequisite = { focus = GLS_our_starvation }
+        available = { has_war = no }
+        x = 3
+        y = 6
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = ochki_gos_progress_10_tooltip
+            set_country_flag = ochki_gos_progress_10
+        }
+    }
+    focus = {
+        id = GLS_memories_of_future
+        icon = GFX_GLS_memories_of_future_pic
+        prerequisite = { focus = GLS_our_fear }
+        x = 3
+        y = 9
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2007
+                days = 1
+            }
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = GLS_our_voice
+        icon = GFX_GLS_our_voice_pic
+        prerequisite = { focus = GLS_memories_of_future }
+        x = 3
+        y = 13
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2008
+                days = 1
+            }
+            custom_effect_tooltip = GLS_American_strike
+            hidden_effect = {
+                set_country_flag = GLS_VOICE
+            }
+        }
+    }
+    focus = {
+        id = GLS_our_choices
+        icon = GFX_GLS_our_choices_pic
+        prerequisite = { focus = GLS_our_starvation }
+        available = { has_war = no }
+        x = 14
+        y = 6
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = ochki_gos_progress_20_tooltip
+            set_country_flag = ochki_gos_progress_20
+        }
+    }
+    focus = {
+        id = GLS_our_faith
+        icon = GFX_GLS_our_faith_pic
+        prerequisite = { focus = GLS_our_choices }
+        x = 14
+        y = 7
+        cost = 5
+        completion_reward = {
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = GLS_new_exp
+        icon = GFX_GLS_new_exp_pic
+        prerequisite = { focus = GLS_our_faith }
+        mutually_exclusive = { focus = GLS_tradition_faith }
+        x = 13
+        y = 8
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = classic_faith }
+                swap_ideas = {
+                    remove_idea = classic_faith
+                    add_idea = atheism
+                }
+            }
+            else_if = {
+                limit = { has_idea = cultism }
+                swap_ideas = {
+                    remove_idea = cultism
+                    add_idea = atheism
+                }
+            }
+            else_if = {
+                limit = { has_idea = free_faith }
+                swap_ideas = {
+                    remove_idea = free_faith
+                    add_idea = atheism
+                } 
+            }
+            else_if = {
+                limit = { has_idea = truthfighters }
+                swap_ideas = {
+                    remove_idea = truthfighters
+                    add_idea = atheism
+                } 
+            }
+            else_if = {
+                limit = { has_idea = villiums }
+                swap_ideas = {
+                    remove_idea = villiums
+                    add_idea = atheism
+                }
+            }
+            add_ideas = GLS_faith1
+        }
+    }
+    focus = {
+        id = GLS_tradition_faith
+        icon = GFX_GLS_tradition_faith_pic
+        prerequisite = { focus = GLS_our_faith }
+        mutually_exclusive = { focus = GLS_new_exp }
+        x = 15
+        y = 8
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = atheism }
+                swap_ideas = {
+                    remove_idea = atheism
+                    add_idea = classic_faith
+                }
+            }
+            else_if = {
+                limit = { has_idea = cultism }
+                swap_ideas = {
+                    remove_idea = cultism
+                    add_idea = classic_faith
+                }
+            }
+            else_if = {
+                limit = { has_idea = free_faith }
+                swap_ideas = {
+                    remove_idea = free_faith
+                    add_idea = classic_faith
+                } 
+            }
+            else_if = {
+                limit = { has_idea = truthfighters }
+                swap_ideas = {
+                    remove_idea = truthfighters
+                    add_idea = classic_faith
+                } 
+            }
+            else_if = {
+                limit = { has_idea = villiums }
+                swap_ideas = {
+                    remove_idea = villiums
+                    add_idea = classic_faith
+                }
+            }
+            add_ideas = GLS_faith2
+        }
+    }
+    focus = {
+        id = GLS_labour_and_capital
+        icon = GFX_GLS_labour_and_capital_pic
+        prerequisite = { focus = GLS_tradition_faith focus = GLS_new_exp }
+        x = 14
+        y = 9
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = GLS_labour_and_capital_tooltip
+            add_to_variable = { black_rubles_budget = 3000 }
+        }
+    }
+    focus = {
+        id = GLS_needs
+        icon = GFX_GLS_needs_pic
+        prerequisite = { focus = GLS_labour_and_capital }
+        mutually_exclusive = { focus = GLS_obligations }
+        x = 13
+        y = 10
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = labor_service }
+                swap_ideas = {
+                    remove_idea = labor_service
+                    add_idea = hired_labor
+                }
+            }
+            else_if = {
+                limit = { has_idea = slaves_labour }
+                swap_ideas = {
+                    remove_idea = slaves_labour
+                    add_idea = hired_labor
+                }
+            }
+            else_if = {
+                limit = { has_idea = mixed_mode }
+                swap_ideas = {
+                    remove_idea = mixed_mode
+                    add_idea = hired_labor
+                } 
+            }
+            else_if = {
+                limit = { has_idea = automated_labor }
+                swap_ideas = {
+                    remove_idea = automated_labor
+                    add_idea = hired_labor
+                } 
+            }
+            add_ideas = GLS_labour_and_capital_idea1
+
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_obligations
+        icon = GFX_GLS_obligations_pic
+        prerequisite = { focus = GLS_labour_and_capital }
+        mutually_exclusive = { focus = GLS_needs }
+        x = 15
+        y = 10
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = hired_labor }
+                swap_ideas = {
+                    remove_idea = hired_labor
+                    add_idea = labor_service
+                }
+            }
+            else_if = {
+                limit = { has_idea = slaves_labour }
+                swap_ideas = {
+                    remove_idea = slaves_labour
+                    add_idea = labor_service
+                }
+            }
+            else_if = {
+                limit = { has_idea = mixed_mode }
+                swap_ideas = {
+                    remove_idea = mixed_mode
+                    add_idea = labor_service
+                } 
+            }
+            else_if = {
+                limit = { has_idea = automated_labor }
+                swap_ideas = {
+                    remove_idea = automated_labor
+                    add_idea = labor_service
+                } 
+            }
+            add_ideas = GLS_labour_and_capital_idea2
+
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_Kordon
+        icon = GFX_GLS_Kordon_pic
+        prerequisite = { focus = GLS_obligations focus = GLS_needs }
+        x = 14
+        y = 11
+        cost = 5
+        completion_reward = {
+            add_manpower = 2000
+        }
+    }
+    focus = {
+        id = GLS_without_fear
+        icon = GFX_GLS_without_fear_pic
+        prerequisite = { focus = GLS_Kordon }
+        mutually_exclusive = { focus = GLS_sanity_move }
+        x = 13
+        y = 12
+        cost = 5
+        completion_reward = {
+            add_ideas = GLS_Borders
+            if = {
+                limit = { has_idea = closed_borders }
+                swap_ideas = {
+                    remove_idea = closed_borders
+                    add_idea = opend_borders
+                }
+            }
+            else_if = {
+                limit = { has_idea = border_control }
+                swap_ideas = {
+                    remove_idea = border_control
+                    add_idea = opend_borders
+                } 
+            }
+            else_if = {
+                limit = { has_idea = propusk_punkt }
+                swap_ideas = {
+                    remove_idea = propusk_punkt
+                    add_idea = opend_borders
+                } 
+            }
+            else_if = {
+                limit = { has_idea = migration_selection }
+                swap_ideas = {
+                    remove_idea = migration_selection
+                    add_idea = opend_borders
+                } 
+            }
+        }
+    }
+    focus = {
+        id = GLS_sanity_move
+        icon = GFX_GLS_sanity_move_pic
+        prerequisite = { focus = GLS_Kordon }
+        mutually_exclusive = { focus = GLS_without_fear }
+        x = 15
+        y = 12
+        cost = 5
+        completion_reward = {
+            add_ideas = GLS_Borders2
+            if = {
+                limit = { has_idea = opend_borders }
+                swap_ideas = {
+                    remove_idea = opend_borders
+                    add_idea = closed_borders
+                }
+            }
+            else_if = {
+                limit = { has_idea = border_control }
+                swap_ideas = {
+                    remove_idea = border_control
+                    add_idea = closed_borders
+                } 
+            }
+            else_if = {
+                limit = { has_idea = propusk_punkt }
+                swap_ideas = {
+                    remove_idea = propusk_punkt
+                    add_idea = closed_borders
+                } 
+            }
+            else_if = {
+                limit = { has_idea = migration_selection }
+                swap_ideas = {
+                    remove_idea = migration_selection
+                    add_idea = closed_borders
+                } 
+            }
+        }
+    }
+    focus = {
+        id = GLS_mine_the_path
+        icon = GFX_GLS_mine_the_path_pic
+        prerequisite = { focus = GLS_sanity_move focus = GLS_without_fear }
+        x = 14
+        y = 13
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2009
+                days = 1
+            }
+            if = {
+                limit = { has_idea = ignore_distortions }
+                swap_ideas = {
+                    remove_idea = ignore_distortions
+                    add_idea = liquidation_of_distortions
+                }
+            }
+            else_if = {
+                limit = { has_idea = restrain_distortions }
+                swap_ideas = {
+                    remove_idea = restrain_distortions
+                    add_idea = liquidation_of_distortions
+                } 
+            }
+            else_if = {
+                limit = { has_idea = limited_research_of_distortions }
+                swap_ideas = {
+                    remove_idea = limited_research_of_distortions
+                    add_idea = liquidation_of_distortions
+                } 
+            }
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = GLS_legitimacy
+        icon = GFX_GLS_legitimacy_pic
+        prerequisite = { focus = GLS_our_starvation }
+        available = { has_war = no }
+        x = 18
+        y = 6
+        cost = 5
+        completion_reward = {
+            custom_effect_tooltip = ochki_gos_progress_30_tooltip
+            set_country_flag = ochki_gos_progress_30
+        }
+    }
+    focus = {
+        id = GLS_Number_one
+        icon = GFX_GLS_Number_one_pic
+        prerequisite = { focus = GLS_legitimacy }
+        x = 18
+        y = 7
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2010
+                days = 1
+            }
+            if = {
+                limit = { has_idea = GLS_kotly_1 }
+                swap_ideas = {
+                    remove_idea = GLS_kotly_1
+                    add_idea =  GLS_kotly_2
+			    }
+            }
+            else_if = {
+                limit = { has_idea = GLS_kotly_2 }
+                swap_ideas = {
+				remove_idea = GLS_kotly_2
+				add_idea =  GLS_kotly_3
+			    }
+            }
+        }
+    }
+    focus = {
+        id = GLS_Yamantau
+        icon = GFX_GLS_Yamantau_pic
+        prerequisite = { focus = GLS_Number_one }
+        x = 18
+        y = 8
+        cost = 5
+        completion_reward = {
+            1002 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = arms_factory
+                    level = 3
+                    instant_build = yes
+                }
+            }
+            country_event = {
+                id = GLS.2011
+            }
+            if = {
+                limit = { has_idea = GLS_memories_of_rodina_5 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_5
+                    add_idea = GLS_memories_of_rodina_7
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_memories_of_rodina_6 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_6
+                    add_idea = GLS_memories_of_rodina_7
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_memories_of_rodina_7 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_7
+                    add_idea = GLS_memories_of_rodina_8
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_question_about_capital
+        icon = GFX_GLS_question_about_capital_pic
+        prerequisite = { focus = GLS_Yamantau }
+        x = 18
+        y = 9
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2012
+                days = 1
+            }
+            add_political_power = 20
+        }
+    }
+    focus = {
+        id = GLS_follow_orders
+        icon = GFX_GLS_follow_orders_pic
+        prerequisite = { focus = GLS_question_about_capital }
+        mutually_exclusive = { focus = GLS_keep_status_quo }
+        x = 17
+        y = 10
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2013
+                days = 1
+            }
+            custom_effect_tooltip = GLS_move_capital_to_Yamantau
+            add_to_variable = { order = 5 }
+            set_capital = {
+				state = 1002
+				remember_old_capital = no
+			}
+            1002 = {
+                add_building_construction = {
+                    type = bunker
+                    province = 4265
+                    level = 10
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_keep_status_quo
+        icon = GFX_GLS_keep_status_quo_pic
+        prerequisite = { focus = GLS_question_about_capital }
+        mutually_exclusive = { focus = GLS_follow_orders }
+        x = 19
+        y = 10
+        cost = 5
+        completion_reward = {
+            country_event = {
+                id = GLS.2014
+                days = 1
+            }
+            custom_effect_tooltip = GLS_Keep_Capital_in_Ufa
+            add_to_variable = { freedom = 5 }
+            if = {
+                limit = { has_idea = GLS_kotly_1 }
+                swap_ideas = {
+                    remove_idea = GLS_kotly_1
+                    add_idea =  GLS_kotly_2
+			    }
+            }
+            else_if = {
+                limit = { has_idea = GLS_kotly_2 }
+                swap_ideas = {
+				remove_idea = GLS_kotly_2
+				add_idea =  GLS_kotly_3
+			    }
+            }
+            1001 = {
+                add_building_construction = {
+                    type = bunker
+                    province = 1278
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_expand_radiowork
+        icon = GFX_GLS_expand_radiowork_pic
+        prerequisite = { focus = GLS_keep_status_quo focus = GLS_follow_orders }
+        x = 18
+        y = 11
+        cost = 5
+        completion_reward = {
+            every_controlled_state = {
+                limit = { radar_station < 1 }
+                random_select_amount = 3
+                add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_whip
+        icon = GFX_GLS_whip_pic
+        prerequisite = { focus = GLS_expand_radiowork }
+        mutually_exclusive = { focus = GLS_cake }
+        x = 17
+        y = 13
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = papers }
+                swap_ideas = {
+                    remove_idea = papers
+                    add_idea = radio
+                }
+            }
+            else_if = {
+                limit = { has_idea = internet_law }
+                swap_ideas = {
+                    remove_idea = internet_law
+                    add_idea = radio
+                } 
+            }
+            else_if = {
+                limit = { has_idea = television }
+                swap_ideas = {
+                    remove_idea = television
+                    add_idea = radio
+                } 
+            }
+            add_to_variable = { order = 5 }
+            add_to_variable = { freedom = -5 }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = arms_factory
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_cake
+        icon = GFX_GLS_cake_pic
+        prerequisite = { focus = GLS_expand_radiowork }
+        mutually_exclusive = { focus = GLS_whip }
+        x = 19
+        y = 13
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = papers }
+                swap_ideas = {
+                    remove_idea = papers
+                    add_idea = television
+                }
+            }
+            else_if = {
+                limit = { has_idea = internet_law }
+                swap_ideas = {
+                    remove_idea = internet_law
+                    add_idea = television
+                } 
+            }
+            else_if = {
+                limit = { has_idea = radio }
+                swap_ideas = {
+                    remove_idea = radiio
+                    add_idea = television
+                } 
+            }
+            add_to_variable = { order = -5 }
+            add_to_variable = { freedom = 5 }
+            random_owned_controlled_state = {
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 2
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_who_seed_the_wind
+        icon = GFX_GLS_who_seed_the_wind_pic
+        prerequisite = { focus = GLS_final_solution }
+        prerequisite = { focus = GLS_cake focus = GLS_whip }
+        prerequisite = { focus = GLS_through_fire }
+        prerequisite = { focus = GLS_our_voice }
+        prerequisite = { focus = GLS_mine_the_path }
+        x = 10 
+        y = 15
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_through_fire_idea }
+                swap_ideas = {
+                    remove_idea = GLS_through_fire_idea
+                    add_idea = GLS_through_fire_idea2
+                }
+            }
+        }
+    }
+    focus = {
+        id = GLS_reap_the_the_storm
+        icon = GFX_GLS_reap_the_the_storm_pic
+        prerequisite = { focus = GLS_who_seed_the_wind }
+        x = 10
+        y = 17
+        cost = 5
+        completion_reward = {
+            if = {
+                limit = { has_idea = GLS_memories_of_rodina_5 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_5
+                    add_idea = GLS_memories_of_rodina_7
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_memories_of_rodina_6 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_6
+                    add_idea = GLS_memories_of_rodina_7
+                }
+            }
+            else_if = {
+                limit = { has_idea = GLS_memories_of_rodina_7 }
+                swap_ideas = {
+                    remove_idea = GLS_memories_of_rodina_7
+                    add_idea = GLS_memories_of_rodina_8
+                }
+            }
+        }
+    }
+}

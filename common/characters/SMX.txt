@@ -1,0 +1,16 @@
+characters = {
+	SMX_nikita_ramin = {
+		name = SMX_nikita_ramin
+		portraits={
+			civilian={
+				large=GFX_portrait_SMX_nikita_ramin
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology
+			expire="2085.1.1.1"
+			id=-1
+			desc = SMX_nikita_ramin_desc
+		}
+	}
+}

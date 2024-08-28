@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		MSH_spinning_wheel = {	
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.3
+				production_speed_buildings_factor = 0.15
+				stability_factor = -0.15
+			}
+		}
+	}
+}

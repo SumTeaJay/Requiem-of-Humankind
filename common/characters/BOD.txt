@@ -1,0 +1,17 @@
+characters = {
+	BOD_rodion_samoilov = {
+		name = ARK_admin
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BOD/Portrait_Rodion_Samoilov.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_ROD_SAM_DESC" #use standart desc key pls!
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

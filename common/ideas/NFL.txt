@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		NFL_fantoms = {
+			picture = fantoms
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				offence = 0.25
+				defence = 0.25
+				production_factory_efficiency_gain_factor = -10
+				production_factory_max_efficiency_factor = -10
+				production_lack_of_resource_penalty_factor = -10
+				production_speed_buildings_factor  =-10
+				research_speed_factor = -10
+			}
+		}
+	}
+}

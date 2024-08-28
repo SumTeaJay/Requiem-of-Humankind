@@ -1,0 +1,64 @@
+defined_text = { 
+	name = charge_increase
+	text = {
+		trigger = {
+			NOT = { has_country_flag = gls_2_percent_additive_for_kurchatov_project }
+		}
+		localization_key = "2"
+	}
+	text = {
+		trigger = {
+			has_country_flag = gls_2_percent_additive_for_kurchatov_project
+		}
+		localization_key = "4"
+	}
+}
+defined_text = { 
+	name = charge_number_determinant
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges = 0 }
+		}
+		localization_key = zero_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges = 1 }
+		}
+		localization_key = one_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges > 1 }
+			check_variable = { nuclear_charges < 5 }
+		}
+		localization_key = two_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges > 4 }
+			check_variable = { nuclear_charges < 20 }
+		}
+		localization_key = zero_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges = 21 }
+		}
+		localization_key = one_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges > 21 }
+			check_variable = { nuclear_charges < 25 }
+		}
+		localization_key = two_charges
+	}
+	text = {
+		trigger = {
+			check_variable = { nuclear_charges > 24 }
+			check_variable = { nuclear_charges < 31 }
+		}
+		localization_key = zero_charges
+	}
+}

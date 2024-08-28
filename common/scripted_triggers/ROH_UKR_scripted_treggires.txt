@@ -1,0 +1,8 @@
+ARM_lose_war_Onufrenko = {
+	ARM = {
+		exists = no
+	}
+	IMP = {
+		has_country_flag = Onufrenko_declare_war
+	}
+}

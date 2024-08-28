@@ -1,0 +1,15 @@
+characters = {
+	VOU_nechayev = {
+		portraits={
+			civilian={
+				large="gfx/leaders/VOU/VOU_nechayev.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = VOU_nechayev_desc
+		}
+	}
+}

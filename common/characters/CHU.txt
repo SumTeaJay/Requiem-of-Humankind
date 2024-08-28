@@ -1,0 +1,15 @@
+characters = {
+	CHU_Semen_Shezer = {
+		portraits={
+			civilian={
+				large="gfx/leaders/CHU/semen_shezer.dds"
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = CHU_Semen_Shezer_DESC
+		}
+	}	
+}

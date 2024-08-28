@@ -1,0 +1,10 @@
+Kuban_unification = {
+	priority = 10
+	allowed = {
+		OR = {
+			original_tag = STW
+			original_tag = KUH
+			original_tag = FSR
+		}
+	}
+}

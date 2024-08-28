@@ -1,0 +1,22 @@
+characters = {
+	MGL_Machine = {
+		portraits={
+			civilian={
+				large="gfx/leaders/MGL/Omissia.dds"
+			}
+		}
+		country_leader={
+			ideology=technocracy_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = MGL_Machine_DESC
+		}
+	}
+	MGL_Exclusion_zone = {
+		portraits={
+			civilian={
+				large="gfx/leaders/MGL/Omissia.dds"
+			}
+		}
+	}
+}

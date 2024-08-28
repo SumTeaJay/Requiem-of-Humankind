@@ -1,0 +1,17 @@
+
+characters = {
+	ASR_The_Council_of_Four = {
+		name = ASR_The_Council_of_Four
+		portraits={
+			civilian={
+				large="GFX_portrait_ASR_The_Council_of_Four"
+			}
+		}
+		country_leader={
+			ideology=statesmen_subideology
+			desc = ASR_The_Council_of_Four_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

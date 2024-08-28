@@ -1,0 +1,654 @@
+focus_tree = {
+    id = ORL_phase_2
+    country = {
+		factor = 0
+        modifier = {
+            add = 10
+            tag = ORL
+        }		
+	}
+	default = no
+
+    focus = {
+        id = ORL_Renounce_old_world
+        cost = 5
+        x = 9
+        y = 0
+        ai_will_do = { factor = 10 }
+        available = {
+            ORL = { has_war = no }
+            NOT = {
+                country_exists = ZAK
+                country_exists = SBT
+                country_exists = SMX
+                country_exists = VLR
+                country_exists = MAZ
+                country_exists = TAB
+            }
+        }
+        completion_reward = {
+            add_political_power = 100
+            country_event = {
+				id = ORL.7
+				days = 1
+			}
+        }
+    }
+    focus = {
+        id = ORL_Deal_conservatives
+        cost = 5
+        x = 7
+        y = 1
+        ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_Renounce_old_world }
+        completion_reward = {
+            260 = { add_manpower = -23458 }
+            258 = { add_manpower = -15678 }
+            257 = { add_manpower = -5497 }
+            937 = { add_manpower = -737 }
+        }
+    }
+    focus = {
+        id = ORL_Baptism_fire
+        cost = 5
+        x = 11
+        y = 1
+        ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_Renounce_old_world }
+        completion_reward = {
+            division_template = {
+                name = "Glinkovtsi"
+                is_locked = no
+                priority = 1
+                regiments = {
+                    infantry = { x = 0 y = 0}
+                    infantry = { x = 0 y = 1}
+                    infantry = { x = 0 y = 2}
+                    infantry = { x = 1 y = 0}
+                    infantry = { x = 1 y = 1}
+                    infantry = { x = 1 y = 2}
+                }
+            }
+            260 = {
+                create_unit = {
+                    division = "name = \"Glinkovtsi\" division_template = \"Glinkovtsi\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+                create_unit = {
+                    division = "name = \"Glinkovtsi\" division_template = \"Glinkovtsi\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+                create_unit = {
+                    division = "name = \"Glinkovtsi\" division_template = \"Glinkovtsi\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+                create_unit = {
+                    division = "name = \"Glinkovtsi\" division_template = \"Glinkovtsi\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+            }
+        }
+    }
+    focus = {
+        id = ORL_Accept_cult
+        cost = 5
+        x = 9
+        y = 2
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Baptism_fire 
+        }
+        prerequisite = {
+            focus = ORL_Deal_conservatives
+        }
+        completion_reward = {
+            set_stability = 0.7
+            country_event = {
+				id = ORL.8
+				days = 1
+			}
+        }
+    }
+    focus = {
+        id = ORL_Erect_obelisk
+        cost = 5
+        x = 6
+        y = 3
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Accept_cult
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_victory_cult
+                add_idea = ORL_victory_cultzero
+            }
+        }
+    }
+    focus = {
+        id = ORL_Praise_Diva
+        cost = 5
+        x = 4
+        y = 4
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Erect_obelisk
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_victory_cultzero
+                add_idea = ORL_victory_cultone
+            }
+        }
+    }
+    focus = {
+        id = ORL_Remember_sacrifice
+        cost = 5
+        x = 4
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Praise_Diva
+        }
+        completion_reward = {
+            set_war_support = 0.7
+        }
+    }
+    focus = {
+        id = ORL_Remember_mind
+        cost = 5
+        x = 4
+        y = 6
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Remember_sacrifice
+        }
+        completion_reward = {
+            add_research_slot = 1
+        }
+    }
+    focus = {
+        id = ORL_Remember_honor
+        cost = 5
+        x = 4
+        y = 7
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Remember_mind
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyone
+                add_idea = ORL_chance_for_everyoneV2
+            }
+        }
+    }
+    focus = {
+        id = ORL_Praise_Yar
+        cost = 5
+        x = 6
+        y = 4
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Erect_obelisk
+        }
+        available = {
+            has_completed_focus = ORL_Remember_honor
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_victory_cultone
+                add_idea = ORL_victory_culttwo
+            }
+        }
+    }
+    focus = {
+        id = ORL_Implacability
+        cost = 5
+        x = 6
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Praise_Yar
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV2
+                add_idea = ORL_chance_for_everyoneV3
+            }
+        }
+    }
+    focus = {
+        id = ORL_Fearlessness
+        cost = 5
+        x = 6
+        y = 6
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Implacability
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV3
+                add_idea = ORL_chance_for_everyoneV4
+            }
+        }
+    }
+    focus = {
+        id = ORL_Steadfastness
+        cost = 5
+        x = 6
+        y = 7
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Fearlessness
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV4
+                add_idea = ORL_chance_for_everyoneV5
+            }
+        }
+    }
+    focus = {
+        id = ORL_Praise_Kras
+        cost = 5
+        x = 8
+        y = 4
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Erect_obelisk
+        }
+        available = {
+            has_completed_focus = ORL_Steadfastness
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_victory_culttwo
+                add_idea = ORL_victory_cultthree
+            }
+        }
+    }
+    focus = {
+        id = ORL_Hot_heart_cold_head
+        cost = 5
+        x = 8
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Praise_Kras
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV5
+                add_idea = ORL_chance_for_everyoneV6
+            }
+        }
+    }
+    focus = {
+        id = ORL_Clean_hands
+        cost = 5
+        x = 8
+        y = 6
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Hot_heart_cold_head
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV6
+                add_idea = ORL_chance_for_everyoneV7
+            }
+        }
+    }
+    focus = {
+        id = ORL_Desecrated_death
+        cost = 5
+        x = 8
+        y = 7
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Clean_hands
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_chance_for_everyoneV7
+                add_idea = ORL_chance_for_everyoneV8
+            }
+        }
+    }
+    focus = {
+        id = ORL_Ignite_prime_fire
+        cost = 5
+        x = 6
+        y = 8
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Remember_honor
+        }
+        prerequisite = {
+            focus = ORL_Desecrated_death
+        }
+        prerequisite = {
+            focus = ORL_Steadfastness
+        }
+        completion_reward = {
+            swap_ideas = {
+                remove_idea = ORL_victory_cultthree
+                add_idea = ORL_victory_cultfour
+            }
+            country_event = {
+				id = ORL.9
+				days = 1
+			}
+        }
+    }
+    focus = {
+        id = ORL_Fire_storm
+        cost = 1
+        x = 12
+        y = 3
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Accept_cult
+        }
+        completion_reward = {
+            division_template = {
+                name = "GVARDIA"
+                is_locked = no
+                priority = 1
+                regiments = {
+                    infantry = { x = 0 y = 0}
+                    infantry = { x = 0 y = 1}
+                    infantry = { x = 0 y = 2}
+                    infantry = { x = 1 y = 0}
+                    infantry = { x = 1 y = 1}
+                    infantry = { x = 1 y = 2}
+                    infantry = { x = 2 y = 0}
+                    infantry = { x = 2 y = 1}
+                    infantry = { x = 2 y = 2}
+                    infantry = { x = 3 y = 0}
+                    infantry = { x = 3 y = 1}
+                    infantry = { x = 3 y = 2}
+                    towed_art = { x = 0 y = 3}
+                    towed_art = { x = 1 y = 3}
+                    towed_art = { x = 2 y = 3}
+                    mlrs_art = {x = 3 y = 3}
+                }
+                support = {
+                    engineer = { x = 0 y = 0 }
+                }
+            }
+            258 = {
+                create_unit = {
+                    division = "name = \"GVARDIA\" division_template = \"GVARDIA\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+                create_unit = {
+                    division = "name = \"GVARDIA\" division_template = \"GVARDIA\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1"
+                    OWNER = ROOT 
+                }
+            }
+            country_event = {
+				id = ORL.10
+				days = 1
+			}
+        }
+    }
+    focus = {
+        id = ORL_Northern_frontier
+        cost = 1
+        x = 12
+        y = 4
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Fire_storm
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = RIK
+        completion_reward = {
+            declare_war_on = {
+				target = RIK
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Hanseatic_question
+        cost = 2
+        x = 10
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Northern_frontier
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = MKS
+        will_lead_to_war_with = KMN
+        will_lead_to_war_with = MSH
+        completion_reward = {
+            declare_war_on = {
+				target = MKS
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = KMN
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = MSH
+				type = annex_everything
+			}
+            
+        }
+    }
+    focus = {
+        id = ORL_Road_east
+        cost = 2
+        x = 12
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Northern_frontier
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+            NOT = {
+                country_exists = MKS
+                country_exists = KMN
+                country_exists = MSH
+            }
+        }
+        will_lead_to_war_with = BGR
+        completion_reward = {
+            declare_war_on = {
+				target = BGR
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Bandit_lair
+        cost = 2
+        x = 14
+        y = 5
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Northern_frontier
+        }
+        will_lead_to_war_with = BRD
+        will_lead_to_war_with = WAC
+        completion_reward = {
+            declare_war_on = {
+				target = BRD
+				type = annex_everything
+			}
+            declare_war_on = {
+                target = WAC
+                type = annex_everything
+            }
+        }
+    }
+    focus = {
+        id = ORL_Crush_Vlasovites
+        cost = 5
+        x = 12
+        y = 6
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Hanseatic_question
+        }
+        prerequisite = {
+            focus = ORL_Bandit_lair
+        }
+        prerequisite = {
+            focus = ORL_Road_east
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = IMP
+        will_lead_to_war_with = BSO
+        will_lead_to_war_with = COR
+        will_lead_to_war_with = NOR
+        will_lead_to_war_with = PLR
+        completion_reward = {
+            declare_war_on = {
+				target = IMP
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = BSO
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = COR
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = NOR
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = PLR
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Clay_colossus
+        cost = 5
+        x = 10
+        y = 7
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Crush_Vlasovites
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = ARM
+        completion_reward = {
+            declare_war_on = {
+				target = ARM
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Rzhev_grinder
+        cost = 5
+        x = 14
+        y = 7
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Crush_Vlasovites
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = NAR
+        will_lead_to_war_with = SMK
+        completion_reward = {
+            declare_war_on = {
+				target = NAR
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = SMK
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Cut_path
+        cost = 5
+        x = 12
+        y = 8
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Clay_colossus
+        }
+        prerequisite = {
+            focus = ORL_Rzhev_grinder
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        will_lead_to_war_with = NUC
+        will_lead_to_war_with = VOU
+        completion_reward = {
+            declare_war_on = {
+				target = NUC
+				type = annex_everything
+			}
+            declare_war_on = {
+				target = VOU
+				type = annex_everything
+			}
+        }
+    }
+    focus = {
+        id = ORL_Accept_fate
+        cost = 5
+        x = 9
+        y = 9
+        ai_will_do = { factor = 10 }
+        prerequisite = {
+            focus = ORL_Ignite_prime_fire
+        }
+        prerequisite = {
+            focus = ORL_Cut_path
+        }
+        available = {
+            ORL = {
+                has_war = no
+            }
+        }
+        completion_reward = {
+            add_political_power = 150
+            country_event = {
+				id = ORL.11
+				days = 1
+			}
+        }
+    }
+}

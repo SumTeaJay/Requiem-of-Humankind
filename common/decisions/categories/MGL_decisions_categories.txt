@@ -1,0 +1,4 @@
+MGL_decisions = {
+    allowed = { original_tag = MGL }
+	priority = { base = 5 }	
+}

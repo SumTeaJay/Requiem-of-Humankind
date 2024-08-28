@@ -1,0 +1,15 @@
+characters = {
+	NAR_oleg = {
+		portraits={
+			civilian={
+				large="gfx/leaders/NAR/NAR_oleg.dds"
+			}
+		}
+		country_leader={
+			ideology= militarists_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = NAR_oleg_desc
+		}
+	}
+}

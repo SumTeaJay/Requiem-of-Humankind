@@ -1,0 +1,48 @@
+on_actions = {
+	on_startup = {	
+		effect = {
+			every_country = {
+				if = {
+					limit = { is_ai = no }
+					set_country_flag = opening_screen_show
+					
+					news_event = { id = worldnews.10 days = 44 } # Яркий свет надежды
+					news_event = { id = worldnews.11 days = 278 } # Неизвестный радиосигнал!
+					news_event = { id = worldnews.12 days = 488 } # Выход на связь Хаббла!
+					news_event = { id = worldnews.13 days = 707 } # Замечено НЛО!
+					news_event = { id = worldnews.14 days = 803 } # Открыт бозон Никольского!
+					news_event = { id = worldnews.15 days = 994 } # Радиопереговоры?
+					news_event = { id = worldnews.16 days = 1128 } # Падение спутника!
+					news_event = { id = worldnews.17 days = 1313 } # Слухи о новой болезни!
+					news_event = { id = worldnews.18 days = 1497 } # Распространение новой религии!
+					news_event = { id = worldnews.19 days = 1615 } # Обнаружение архивов “Ленинки”!
+					news_event = { id = worldnews.20 days = 2012 } # Обнаружена новая экзопланета!
+					news_event = { id = worldnews.21 days = 2076 } # Аномальные бури!
+					news_event = { id = worldnews.22 days = 2259 } # Восстановление Москвы!
+					news_event = { id = worldnews.23 days = 2353 } # Падение метеорита!
+					news_event = { id = worldnews.24 days = 2570 } # Открытие нового элемента!
+					news_event = { id = worldnews.25 days = 2844 } # Найден “Черный принц”!
+					news_event = { id = worldnews.26 days = 2960 } # Конец близко?
+					news_event = { id = worldnews.27 days = 3203 } # Бесславный финал
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { original_tag = ODS }
+				FROM = { add_dynamic_modifier = { modifier = ODS_new_land } }
+			}
+		}
+	}
+	on_nuke_drop = {
+		effect = {
+			FROM = {
+				goto_state = {
+	 				add_manpower = -100000
+				}
+			}
+		}
+	}
+}

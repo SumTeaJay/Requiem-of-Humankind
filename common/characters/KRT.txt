@@ -1,0 +1,15 @@
+characters = {
+	KRT_iskajenni_omut = {
+		portraits={
+			civilian={
+				large="gfx/leaders/KRT/iskajenni_omut.dds"
+			}
+		}
+		country_leader={
+			ideology=chthonism_subideology  
+			expire="1965.1.1.1"
+			id=-1
+			desc = KRT_iskajenni_omut_DESC
+		}
+	}	
+}

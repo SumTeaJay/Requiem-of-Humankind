@@ -1,0 +1,15 @@
+characters = {
+	SOD_alexey_trandafil = {
+		portraits={
+			civilian={
+				large="gfx/leaders/SOD/alexey_trandafil.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = SOD_alexey_trandafil_desc
+		}
+	}
+}

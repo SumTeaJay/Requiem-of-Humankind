@@ -1,0 +1,304 @@
+ideas = {
+    country = {
+        ORL_corporative_ethics = {
+            picture = GFX_idea_ORL_corporative_ethics
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.15
+				production_factory_start_efficiency_factor = -0.1
+				offence = 0.05
+				defence = 0.05
+            }
+        }
+        ORL_corporative_ethics_2 = {
+            picture = GFX_idea_ORL_corporative_ethics
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                stability_factor = -0.15
+				production_factory_start_efficiency_factor = -0.1
+				offence = 0.05
+				defence = 0.05
+                political_power_factor = -0.2
+            }
+        }
+        ORL_chance_for_everyone = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.15
+				recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+        ORL_victory_cult = {
+        picture = GFX_idea_ORL_victory_cult
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.05
+            }
+        }
+        ORL_idiots_and_idealists_idea = {
+            picture = GFX_idea_ORL_idiots_and_idealists_idea
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            targeted_modifier = {
+				tag = TAB
+				offence = 0.05
+				defence = 0.05
+			}
+			targeted_modifier = {
+				tag = MAZ
+				offence = 0.05
+				defence = 0.05
+            }
+        }
+        ORL_sectarians_and_traitors_idea = {
+            picture = GFX_idea_ORL_sectarians_and_traitors_idea
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            targeted_modifier = {
+				tag = SMX
+				offence = 0.05
+				defence = 0.05
+			}
+			targeted_modifier = {
+				tag = VLC
+				offence = 0.05
+				defence = 0.05
+			}
+        }
+		ORL_chance_for_everyoneV2 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.10
+				recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+		ORL_chance_for_everyoneV3 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.07
+				recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+		ORL_chance_for_everyoneV4 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.05
+				recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+		ORL_chance_for_everyoneV5 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                army_org_factor = -0.03
+				recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+		ORL_chance_for_everyoneV6 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                recruitable_population = 0.07
+				mobilization_speed = 0.015
+				conscription = 0.005
+            }
+        }
+		ORL_chance_for_everyoneV7 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                recruitable_population = 0.08
+				mobilization_speed = 0.020
+				conscription = 0.006
+            }
+        }
+		ORL_chance_for_everyoneV8 = {
+            picture = GFX_idea_ORL_chance_for_everyone
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+				recruitable_population = 0.10
+				mobilization_speed = 0.025
+				conscription = 0.007
+            }
+        }
+		ORL_victory_cultzero = {
+        picture = GFX_idea_ORL_victory_cultzero
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				production_lack_of_resource_penalty_factor = 0.05
+            }
+        }
+		ORL_victory_cultone = {
+        picture = GFX_idea_ORL_victory_cultone
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.07
+				production_lack_of_resource_penalty_factor = 0.07
+				initiative_factor = 0.05
+            }
+        }
+		ORL_victory_culttwo = {
+        picture = GFX_idea_ORL_victory_culttwo
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.15
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.10
+				production_lack_of_resource_penalty_factor = 0.10
+				initiative_factor = 0.05
+				army_attack_factor = 0.10
+            }
+        }
+		ORL_victory_cultthree = {
+        picture = GFX_idea_ORL_victory_cultthree
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.20
+				stability_factor = 0.10
+				production_factory_efficiency_gain_factor = 0.12
+				production_lack_of_resource_penalty_factor = 0.12
+				initiative_factor = 0.05
+				army_org_factor = 0.10
+				army_attack_factor = 0.10
+            }
+        }
+		ORL_victory_cultfour = {
+        picture = GFX_idea_ORL_victory_cultfour
+        allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+            removal_cost = -1
+            modifier = {
+                war_support_factor = 0.20
+				stability_factor = 0.20
+				production_factory_efficiency_gain_factor = 0.15
+				production_lack_of_resource_penalty_factor = 0.15
+				initiative_factor = 0.07
+				army_org_factor = 0.12
+				army_attack_factor = 0.12
+            }
+        }
+    }
+}

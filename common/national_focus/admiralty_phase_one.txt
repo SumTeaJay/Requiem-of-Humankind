@@ -1,0 +1,397 @@
+﻿focus_tree = {
+	id = admiralty_phase_one
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 15
+			tag = ODS
+		}
+	}
+	default = no
+
+	focus = {
+		id = ODS_perv
+		icon = GFX_Gorod_Prokazhennyh
+		x = 0
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			country_event = {
+					id = ODS.12
+				}
+				add_stability = -0.1
+		}
+	}
+
+	focus = {
+		id = ODS_clear_perimetr
+		icon = GFX_clear_perimetr
+		prerequisite = { focus = ODS_perv }
+		x = -1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.1
+			}
+			army_experience = 100
+		}
+	}
+
+	focus = {
+		id = ODS_garantii_bez
+		icon = GFX_garantii_bez
+		prerequisite = { focus = ODS_perv }
+		x = 1
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+		
+		completion_reward = {
+			country_event = {
+					id = ODS.6
+				}
+			add_war_support = 0.3
+		}
+	}
+
+	focus = {
+		id = ODS_black_fortress
+		icon = GFX_black_fortress
+		prerequisite = { focus = ODS_clear_perimetr }
+		prerequisite = { focus = ODS_garantii_bez }
+		x = 0
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.2
+			}
+			add_timed_idea = {
+				idea = black_perimetr
+				days = 500
+			}
+		}
+	}
+	focus = {
+		id = ODS_Blago
+		icon = GFX_ODS_Blago
+		prerequisite = { focus = ODS_black_fortress }
+		x = 0
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+					id = ODS.11
+				}
+			if = { 
+				limit = { has_idea = doverie_1 }
+				swap_ideas = {
+					remove_idea = doverie_1
+					add_idea = doverie_2
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_Nenavist
+		icon = GFX_ODS_Nenavist
+		prerequisite = { focus = ODS_Blago }
+		x = 0
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+					id = ODS.15
+				}
+			add_stability = 0.05
+		}
+	}
+	focus = {
+		id = ODS_KEB
+		icon = GFX_ODS_KEB
+		prerequisite = { focus = ODS_Blago }
+		x = -3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.13
+			}
+			if = { 
+				limit = { has_idea = dicarstvo }
+				swap_ideas = {
+					remove_idea = dicarstvo
+					add_idea = dicarstvo1
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_realizovt_kazdogo
+		icon = GFX_ODS_Realizovat
+		prerequisite = { focus = ODS_KEB }
+		x = -2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.10
+			}
+			if = { 
+				limit = { has_idea = dicarstvo1 }
+				swap_ideas = {
+					remove_idea = dicarstvo1
+					add_idea = dicarstvo2
+				}
+			}
+			else_if = { 
+				limit = { has_idea = dicarstvo2 }
+				swap_ideas = {
+					remove_idea = dicarstvo2
+					add_idea = dicarstvo3
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_iskorenit_dikc
+		icon = GFX_ODS_Iskor_dick
+		prerequisite = { focus = ODS_KEB }
+		x = -4
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.9
+			}
+			if = { 
+				limit = { has_idea = dicarstvo1 }
+				swap_ideas = {
+					remove_idea = dicarstvo1
+					add_idea = dicarstvo2
+				}
+			}
+			else_if = { 
+				limit = { has_idea = dicarstvo2 }
+				swap_ideas = {
+					remove_idea = dicarstvo2
+					add_idea = dicarstvo3
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_Veni_reshima
+		icon = GFX_ODS_Veni_resh
+		prerequisite = { focus = ODS_realizovt_kazdogo }
+		prerequisite = { focus = ODS_iskorenit_dikc }
+		x = -3
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.4
+			}
+			if = { 
+				limit = { has_idea = dicarstvo3 }
+				swap_ideas = {
+					remove_idea = dicarstvo3
+					add_idea = dicarstvo4
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_osn_KOB
+		icon = GFX_ODS_KOB
+		prerequisite = { focus = ODS_Blago }
+		x = 3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+					id = ODS.3
+				}
+			if = { 
+				limit = { has_idea = doverie_2 }
+				swap_ideas = {
+					remove_idea = doverie_2
+					add_idea = doverie_3
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_new_gracdanin
+		icon = GFX_ODS_New_grazd
+		prerequisite = { focus = ODS_osn_KOB }
+		x = 2
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.7
+			}
+			if = { 
+				limit = { has_idea = doverie_3 }
+				swap_ideas = {
+					remove_idea = doverie_3
+					add_idea = doverie_4
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_4 }
+				swap_ideas = {
+					remove_idea = doverie_4
+					add_idea = doverie_5
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_rostki_blago
+		icon = GFX_ODS_Rostki_blago
+		prerequisite = { focus = ODS_osn_KOB }
+		x = 4
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.8
+			}
+			if = { 
+				limit = { has_idea = doverie_3 }
+				swap_ideas = {
+					remove_idea = doverie_3
+					add_idea = doverie_4
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_4 }
+				swap_ideas = {
+					remove_idea = doverie_4
+					add_idea = doverie_5
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_arterii_rejima
+		icon = GFX_ODS_Arterii_reshima
+		prerequisite = { focus = ODS_new_gracdanin }
+		prerequisite = { focus = ODS_rostki_blago }
+		x = 3
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.5
+			}
+			if = { 
+				limit = { has_idea = doverie_5 }
+				swap_ideas = {
+					remove_idea = doverie_5
+					add_idea = doverie_6
+				}
+			}
+		}
+	}
+	focus = {
+		id = ODS_Gumanizatsiya
+		icon = GFX_ODS_Gumanizatsiya
+		prerequisite = { focus = ODS_Nenavist }
+		prerequisite = { focus = ODS_Veni_reshima }
+		prerequisite = { focus = ODS_arterii_rejima }
+		x = 0
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 1
+		}
+		will_lead_to_war_with = MOD
+		will_lead_to_war_with = SOD
+		will_lead_to_war_with = YWD
+		
+		completion_reward = {
+			country_event = {
+				id = ODS.14
+			}
+			declare_war_on = {
+				target = MOD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = SOD
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = YWD
+				type = annex_everything
+			}
+				
+			load_focus_tree = {
+				tree = admiralty_phase_two
+				keep_completed = no
+			}
+		}
+	}
+}

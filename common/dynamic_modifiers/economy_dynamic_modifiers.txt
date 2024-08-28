@@ -1,0 +1,17 @@
+main_economic_modifier = {
+	enable = { always = yes }
+	production_lack_of_resource_penalty_factor = eco_mod_gpm
+	production_factory_efficiency_gain_factor = eco_mod_gpm
+	production_factory_max_efficiency_factor = eco_mod_gpm
+	production_factory_start_efficiency_factor = eco_mod_pfsef_sf
+	consumer_goods_factor = eco_mod_cgf
+	production_speed_buildings_factor = eco_mod_psbf_mp
+	monthly_population = eco_mod_psbf_mp
+	offence = eco_mod_od
+	defence = eco_mod_od
+	army_speed_factor = eco_mod_asif
+	army_org_factor = eco_mod_aof
+	initiative_factor = eco_mod_asif
+	stability_factor = eco_mod_pfsef_sf
+	political_power_gain = eco_mod_ppg
+}

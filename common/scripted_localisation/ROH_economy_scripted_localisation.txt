@@ -1,0 +1,118 @@
+defined_text = { 
+	name = economic_effects
+	text = {
+		trigger = {
+			check_variable = {
+				production_finances = 5
+			}
+			check_variable = {
+				civil_finances = 5
+			}
+			check_variable = {
+				army_finances = 5
+			}
+		}
+		localization_key = "no_economic_effect"
+	}
+	text = {
+		localization_key = "has_some_economic_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_gpm_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_gpm = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_gpm_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_pfsef_sf_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_pfsef_sf = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_pfsef_sf_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_cgf_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_cgf = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_cgf_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_psbf_mp_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_psbf_mp = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_psbf_mp_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_od_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_od = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_od_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_asif_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_asif = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_asif_effects"
+	}
+}
+defined_text = { 
+	name = eco_mod_ppg_loc
+	text = {
+		trigger = {
+			check_variable = {
+				eco_mod_ppg = 0
+			}
+		}
+		localization_key = ""
+	}
+	text = {
+		localization_key = "eco_mod_ppg_effects"
+	}
+}

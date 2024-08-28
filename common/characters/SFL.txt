@@ -1,0 +1,16 @@
+characters = {
+	SFL_Southern_Omut = {
+		name = SFL_Southern_Omut
+		portraits={
+			civilian={
+				large="GFX_portrait_SFL_Southern_Omut"
+			}
+		}
+		country_leader={
+			ideology=chthonism_subideology
+			desc = SFL_Southern_Omut_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

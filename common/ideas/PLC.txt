@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		PLC_puli_v_magazine = {
+			#picture = 		
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				monthly_population = -0.15
+				stability_factor = -0.3
+			}
+		}
+	}
+}

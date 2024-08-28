@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		DRG_under_the_banner_of_perun = {				#Под знаменем Перуна
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				research_speed_factor = -2
+				local_resources_factor = -0.5
+				production_factory_max_efficiency_factor = -0.75
+				acclimatization_cold_climate_gain_factor = 0.15
+				offence = 0.05
+				defence = 0.05			
+			}
+		}
+	}
+}

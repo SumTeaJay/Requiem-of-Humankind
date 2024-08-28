@@ -1,0 +1,15 @@
+characters = {
+	TAB_alexandr_labeykin = {
+		portraits={
+			civilian={
+				large="gfx/leaders/TAB/alexandr_labeykin.dds"
+			}
+		}
+		country_leader={
+			ideology=humanists_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = TAB_alexandr_labeykin_desc
+		}
+	}
+}

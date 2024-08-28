@@ -1,0 +1,32 @@
+############################
+### 	GLS Triggers 	 ###
+###    by Daniel_Letov   ###
+############################
+
+GLS_defeated_ASR = {
+	651 = { is_owned_by = GLS }
+	729 = { is_owned_by = GLS }
+	NOT = { country_exists = ASR } 
+	country_exists = GLS
+}
+
+UralTreaty_defeated_GLS = {
+	GLS = { has_cosmetic_tag = GLS_URAL_MANDATE }
+	OR = {
+		MOT = { is_in_faction = yes }
+		URA = { is_in_faction = yes }
+	}
+	EDM = { is_in_faction = yes }
+	URC = { is_in_faction = yes }
+	WPK = { is_in_faction = yes }
+	ZAN = { is_in_faction = yes }
+	OCH = { is_in_faction = yes }
+	TAR = { is_in_faction = yes }
+}
+
+GLS_chasing_a_dream_trigger = {
+	GLS = {
+		has_war = no
+		has_completed_focus = GLS_chasing_a_dream
+	}
+}

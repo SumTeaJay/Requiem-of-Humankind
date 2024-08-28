@@ -1,0 +1,257 @@
+ARM_middle_russian_war = {
+###первая фаза###
+	ARM_first_phase_decision = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		visible = { has_country_flag = ARM_first_phase_flag }
+		available = { always = no }
+	}
+	ARM_consulate_gain_power_in_south = { 
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		visible = { has_country_flag = ARM_first_phase_flag }
+		activation = { has_country_flag = ARM_first_phase_flag }
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ARM_first_phase_flag
+				}
+			} 
+		}
+		days_re_enable = 0
+		days_mission_timeout = 40	
+		is_good = no
+		selectable_mission = no
+		timeout_effect = {
+			add_to_variable = { consulate_power = 20 }
+			custom_effect_tooltip = consulate_power_plus_tt
+		}
+	}
+
+	ARM_start_infiltration = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_first_phase_flag } }
+		visible = { has_country_flag = ARM_first_phase_flag }
+		priority = 110
+		days_remove = 20
+		days_re_enable = 20
+		cost = 50
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+	ARM_construct_view_posts = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_first_phase_flag } }
+		visible = { has_country_flag = ARM_first_phase_flag }
+		priority = 110
+		days_remove = 20
+		days_re_enable = 20
+		cost = 50
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+
+	ARM_put_the_bombs = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = { has_country_flag = ARM_first_phase_flag } }
+		visible = { has_country_flag = ARM_first_phase_flag }
+		priority = 110
+		days_remove = 20
+		days_re_enable = 20
+		cost = 50
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+
+	###вторая фаза###
+	ARM_second_phase_decision = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		visible = { has_country_flag = ARM_second_phase_flag }
+		available = { always = no }
+	}
+	ARM_consulate_take_power_in_south = { 
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		activation = { has_country_flag = ARM_second_phase_flag }
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ARM_second_phase_flag
+				}
+			}
+		}
+		visible = { has_country_flag = ARM_second_phase_flag }
+		priority = 110
+		days_re_enable = 0
+		days_mission_timeout = 40
+		is_good = no
+		selectable_mission = no
+
+		timeout_effect = {
+			add_to_variable = { consulate_power = 20 }
+			custom_effect_tooltip = consulate_power_plus_tt
+		}
+	}
+	ARM_destroy_patrols = { #Уничтожить патрули
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		activation = { has_country_flag = ARM_second_phase_flag }
+		available = { hidden_trigger = {has_country_flag = ARM_second_phase_flag } }
+		visible = { has_country_flag = ARM_second_phase_flag }
+		priority = 110
+		days_remove = 30
+		days_re_enable = 30
+		cost = 100
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+	ARM_interfere_radio_conversations = { #Вмешаться в радиопереговоры
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_second_phase_flag } }
+		visible = { has_country_flag = ARM_second_phase_flag }
+		priority = 110
+		days_remove = 30
+		days_re_enable = 30
+		cost = 100
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+	ARM_infiltrate_troops = { #Перевести воинский контингент через границу
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_second_phase_flag } }
+		visible = { has_country_flag = ARM_second_phase_flag }
+		priority = 110
+		days_remove = 30
+		days_re_enable = 30
+		cost = 100
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 10 }
+			custom_effect_tooltip = coalition_power_plus_10_tt
+		}
+	}
+	ARM_send_the_Alpha = { #Направить группу Альфа
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = {
+			original_tag = ARM
+			}
+		available = {
+			hidden_trigger = {
+				has_country_flag = ARM_second_phase_flag 
+			}
+			has_completed_focus = ARM_group_alpha
+		}
+		visible = { has_country_flag = ARM_second_phase_flag }
+		priority = 110
+		days_remove = 30
+		days_re_enable = 30
+		cost = 120
+
+		remove_effect = {
+			add_to_variable = { coalition_power = 15 }
+			subtract_from_variable = { consulate_power = 10 }
+			custom_effect_tooltip = send_alpha_tt
+		}
+	}
+	
+	###третья фаза###
+	ARM_third_phase_decision = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		visible = { has_country_flag = ARM_third_phase_flag }
+		available = { always = no }
+	}
+	ARM_integrate_into_north = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = {
+			hidden_trigger = {
+				has_country_flag = ARM_third_phase_flag
+			}
+		}
+		visible = { has_country_flag = ARM_third_phase_flag }
+		priority = 110
+		days_remove = 80
+		fire_only_once = yes
+		cost = 200
+
+		remove_effect = {
+			IMP = { release_puppet = NOR }
+			ARM = { puppet = NOR }
+		}
+	}
+	ARM_integrate_into_east = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_third_phase_flag } }
+		visible = { has_country_flag = ARM_third_phase_flag }
+		priority = 110
+		days_remove = 80
+		fire_only_once = yes
+		cost = 200
+
+		remove_effect = {
+			IMP = { release_puppet = COR }
+			ARM = { puppet = COR }
+		}
+	}
+	ARM_integrate_into_west = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = ARM }
+		available = { hidden_trigger = {has_country_flag = ARM_third_phase_flag } }
+		visible = { has_country_flag = ARM_third_phase_flag }
+		priority = 110
+		days_remove = 80
+		fire_only_once = yes
+		cost = 200
+
+		remove_effect = {
+			IMP = { release_puppet = PLR }
+			ARM = { puppet = PLR }
+		}
+	}
+	ARM_failed_mission = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { has_country_flag = ARM_third_phase_flag }
+		activation = { has_country_flag = ARM_third_phase_flag }
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = ARM_third_phase_flag
+				}
+			}
+		}
+		visible = { has_country_flag = ARM_third_phase_flag }
+		priority = 110
+		fire_only_once = yes
+		days_mission_timeout = 100
+		is_good = no
+		selectable_mission = no
+
+		timeout_effect = { 
+			ARM = {
+				set_country_flag = ARM_failed_mission_flag
+			}
+		}
+	}
+}

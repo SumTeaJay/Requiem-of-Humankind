@@ -1,0 +1,16 @@
+characters = {
+	EDM_High_Science_Council = {
+		name = EDM_High_Science_Council
+		portraits = {
+			civilian = {
+				large = GFX_portrait_EDM_High_Science_Council
+			}
+		}
+		country_leader = {
+			ideology = technocracy_subideology
+			desc = EDM_High_Science_Council_desc
+			id = -1
+			expire = "2090.1.1.1"
+		}
+	}
+}

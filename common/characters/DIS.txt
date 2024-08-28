@@ -1,0 +1,15 @@
+characters = {
+	DIS_distorted_pool = {
+		portraits={
+			civilian={
+				large=GFX_portrait_DIS_distorted_pool
+			}
+		}
+		country_leader={
+			ideology=chthonism_subideology
+			expire="2000.1.1.1"
+			id=-1
+			desc = DIS_distorted_pool_desc
+		}
+	}
+}

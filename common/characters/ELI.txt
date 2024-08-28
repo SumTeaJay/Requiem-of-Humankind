@@ -1,0 +1,17 @@
+characters = { 
+	ELI_sergey_sobyanov = {
+	
+		name = ELI_sergey_sobyanov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/ELI/CaptainAsphalt.dds"
+			}
+		}
+		country_leader = {
+			ideology = militarists_subideology
+			desc = ELI_sergey_sobyanov_desc
+			id = -1
+			expire = "2090.1.1.1"
+		}
+	}
+}

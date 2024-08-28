@@ -1,0 +1,15 @@
+characters = {
+	ISK_Obshina = {
+		portraits={
+			civilian={
+				large="gfx/leaders/ISK/Obshina.dds"
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = ISK_Obshina_desc
+		}
+	}
+}

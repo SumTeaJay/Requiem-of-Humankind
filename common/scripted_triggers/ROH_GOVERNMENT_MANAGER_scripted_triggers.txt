@@ -1,0 +1,80 @@
+goverment_system_can_be_upgraded = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 1
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_90 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_90_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 90
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_60 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_60_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 60
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_45 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_45_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 45
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_40 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_40_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 40
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_30 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_30_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 30
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_20 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_20_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 20
+			compare = greater_than_or_equals
+		}
+	}
+}
+goverment_system_can_be_upgraded_15 = {
+	custom_trigger_tooltip = {
+		tooltip = goverment_system_can_be_upgraded_15_tt
+		check_variable = {
+			var = ochki_gos_progressa
+			value = 15
+			compare = greater_than_or_equals
+		}
+	}
+}

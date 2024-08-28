@@ -1,0 +1,17 @@
+characters = {
+	BAL_petya = {
+		name = BAL_petya
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAL/BAL_petya.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader={
+			desc = "BAL_petya_desc" #use standart keys pls
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

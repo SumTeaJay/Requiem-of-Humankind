@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		TAR_century_old_enmity = {
+			picture = century_old_enmity
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				command_power_gain_mult = 0.1
+				recruitable_population_factor = 0.1
+				offensive_war_stability_factor = 0.2
+				defence = 0.15
+			}
+		}
+	}
+}

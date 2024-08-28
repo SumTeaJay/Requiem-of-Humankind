@@ -1,0 +1,15 @@
+characters = {
+	WTR_Povolzhskaya_anarkhia = {
+		portraits={
+			civilian={
+				large="GFX_WTR_Povolzhskaya_anarkhia"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = WTR_Povolzhskaya_anarkhia_desc
+		}
+	}
+}

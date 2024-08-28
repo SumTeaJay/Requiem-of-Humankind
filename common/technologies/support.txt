@@ -1,0 +1,990 @@
+technologies = {
+	@2010 = 0
+	@2015 = 4
+	@2025 = 9
+	@2035 = 14
+	@2045 = 19
+
+	tech_support = {
+		enable_equipments = {
+			support_equipment_1
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = tech_standard_bearer
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = tech_rhbz
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = tech_gamekeepers
+			research_cost_coeff = 1
+		}			
+		path = {
+			leads_to_tech = tech_drg
+			research_cost_coeff = 1
+		}	
+		path = {
+			leads_to_tech = tech_field_hospital
+			research_cost_coeff = 1
+		}					
+		path = {
+			leads_to_tech = tech_ghounds
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tech_impulse_silencers
+			research_cost_coeff = 1
+		}
+		research_cost = 1.0
+		start_year = 2010
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2010 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	
+	tech_engineers = {
+
+		enable_subunits = {
+			engineer
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_engineers2 = {
+
+		engineer = {
+			entrenchment  = 2
+			
+			fort = {
+				defence = 0.10
+				attack = 0.10
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_engineers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	tech_engineers3 = {
+
+		engineer = {
+			entrenchment  = 2
+			river = {
+				attack = 0.1	
+				defence = 0.10
+			}
+		}
+
+		path = {
+			leads_to_tech = tech_engineers4
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	tech_engineers4 = {
+
+		engineer = {
+			entrenchment  = 2
+			urban = {
+				attack = 0.1	
+				defence = 0.1
+			}
+		}
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 0 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+			engineers_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}	
+	
+	tech_drg = {
+
+		enable_subunits = {
+			drg
+		}
+		
+		path = {
+			leads_to_tech = tech_drg2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_drg2 = {
+
+		category_drg = {
+			recon = 1
+			defense = 0.04
+			breakthrough = 0.04
+			soft_attack = 0.3
+			hard_attack = 0.1
+		}
+		
+		path = {
+			leads_to_tech = tech_drg3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_drg3 = {
+
+		category_drg = {
+			recon = 1
+			defense = 0.04
+			breakthrough = 0.04
+			soft_attack = 0.3
+			hard_attack = 0.1
+		}
+		path = {
+			leads_to_tech = tech_drg4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_drg4 = {
+
+		category_drg = {
+			recon = 1
+			defense = 0.04
+			breakthrough = 0.04
+			soft_attack = 0.3
+			hard_attack = 0.1
+		}
+
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+			recon_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_ghounds = {
+
+		enable_subunits = {
+			ghounds
+		}
+		
+		path = {
+			leads_to_tech = tech_ghounds2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_ghounds2 = {
+
+		ghounds = {
+			suppression_factor = 0.15
+		}
+		
+		
+		path = {
+			leads_to_tech = tech_ghounds3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	
+	tech_ghounds3 = {
+
+		ghounds = {
+			suppression_factor = 0.15
+		}
+		path = {
+			leads_to_tech = tech_ghounds4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+	tech_ghounds4 = {
+
+		ghounds = {
+			suppression_factor = 0.15
+		}
+
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 4 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+			military_police_tech
+		}
+		
+		ai_will_do = {
+			factor = 0.5
+		}
+	}
+
+
+	tech_standard_bearer = {
+
+		enable_subunits = {
+			standard_bearer
+		}
+		path = {
+			leads_to_tech = tech_standard_bearer2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_standard_bearer2 = {
+
+		standard_bearer = {
+			max_organisation = 1
+			defense = 0.03
+			maximum_speed = 0.02
+		}
+		army_org_factor = 0.05
+		path = {
+			leads_to_tech = tech_standard_bearer3
+			research_cost_coeff = 1
+		}
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_standard_bearer3 = {
+
+		standard_bearer = {
+			max_organisation = 0.5
+			defense = 0.03
+			maximum_speed = 0.02
+		}
+		path = {
+			leads_to_tech = tech_standard_bearer4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_standard_bearer4 = {
+
+		standard_bearer = {
+			max_organisation = 0.5
+			defense = 0.03
+			maximum_speed = 0.02
+		}
+		research_cost = 2
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 6 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_rhbz = {
+		enable_subunits = {
+			rhbz
+		}
+		path = {
+			leads_to_tech = tech_rhbz2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @2015 }
+		}
+		allow = { has_tech = improved_radio_communication }
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_rhbz2 = {
+		rhbz = {
+			recon = 0.5	
+			defense = 0.01
+		}
+		path = {
+			leads_to_tech = tech_rhbz3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_rhbz3 = {
+		rhbz = {
+			recon = 0.5	
+			defense = 0.01
+		}
+		path = {
+			leads_to_tech = tech_rhbz4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_rhbz4 = {
+		rhbz = {
+			recon = 0.5	
+			defense = 0.01
+		}
+		research_cost = 2
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 10 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_gamekeepers = {
+
+		allow = { has_tech = improved_radio_communication }
+
+		enable_subunits = {
+			gamekeepers
+		}
+		
+		path = {
+			leads_to_tech = tech_gamekeepers2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_gamekeepers2 = {
+
+		gamekeepers = {
+			forest = {
+				movement = 0.03
+			}
+			hills = {
+				movement = 0.03
+			}
+			mountain = {
+				movement = 0.03
+			}
+			marsh = {
+				movement = 0.03
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_gamekeepers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2010
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_gamekeepers3 = {
+
+		gamekeepers = {
+			forest = {
+				movement = 0.03
+			}
+			hills = {
+				movement = 0.03
+			}
+			mountain = {
+				movement = 0.03
+			}
+			marsh = {
+				movement = 0.03
+			}
+		}
+		
+		path = {
+			leads_to_tech = tech_gamekeepers4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_gamekeepers4 = {
+
+		gamekeepers = {
+			forest = {
+				movement = 0.03
+			}
+			hills = {
+				movement = 0.03
+			}
+			mountain = {
+				movement = 0.03
+			}
+			marsh = {
+				movement = 0.03
+			}
+		}		
+
+		research_cost = 2
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 12 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
+	tech_impulse_silencers = {	
+		enable_subunits = {
+			pulse_jammers
+		}
+		path = {
+			leads_to_tech = tech_impulse_silencers2
+			research_cost_coeff = 1
+		}
+		allow = { has_tech = portable_EMI_systems }
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_impulse_silencers2 = {
+		pulse_jammers = {
+			ap_attack = 0.05
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = tech_impulse_silencers3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_impulse_silencers3 = {
+		pulse_jammers = {
+			ap_attack = 0.05
+			air_attack = 0.05
+		}
+		path = {
+			leads_to_tech = tech_impulse_silencers4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_impulse_silencers4 = {	
+		pulse_jammers = {
+			ap_attack = 0.05
+			air_attack = 0.05
+		}
+		research_cost = 2
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 14 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	tech_field_hospital = {
+
+		enable_subunits = {
+			field_hospital
+		}
+		
+		path = {
+			leads_to_tech = tech_field_hospital2
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 2
+		start_year = 2015
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @2015 }
+		}
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_field_hospital2 = {
+
+		field_hospital = {
+			casualty_trickleback = 0.10
+			experience_loss_factor = -0.10
+		}
+		
+		path = {
+			leads_to_tech = tech_field_hospital3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @2025 }
+		}
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	tech_field_hospital3 = {
+
+		field_hospital = {
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.10
+		}
+		path = {
+			leads_to_tech = tech_field_hospital4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @2035 }
+		}
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	tech_field_hospital4 = {
+
+		field_hospital = {
+			casualty_trickleback = 0.1
+			experience_loss_factor = -0.10
+		}
+
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = support_folder
+			position = { x = 8 y = @2045 }
+		}
+		
+		categories = {
+			support_tech
+			hospital_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	basic_train = {
+		enable_equipments = {
+			train_equipment_1
+		}
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2010 }
+		}
+
+		path = {
+			leads_to_tech = wartime_train
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	wartime_train = {
+		enable_equipments = {
+			train_equipment_2
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = support_folder
+			position = { x = 2 y = @2025 }
+		}
+		
+		categories = {
+			train_tech
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}

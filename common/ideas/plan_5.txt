@@ -1,0 +1,291 @@
+ideas = {
+
+	country = {
+		DOM_zloy_lenin = {
+			picture = yantarnaya_plesen
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_manpower = -25
+			}
+		}
+		DOM_kopatel_offline = {
+			picture = kopatel_offline
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.5
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.1
+				war_support_factor = -0.15
+			}
+		}
+		aoaoa = {
+			modifier = {
+				weekly_manpower = 250
+				production_speed_buildings_factor = 0.1
+				stability_factor = 0.3
+				war_support_factor = 0.3
+				research_speed_factor = -0.1
+			}
+		}
+		bagrovy_moleben = {
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				weekly_manpower = 250
+			}
+		}
+		besplatnyye_stepi = {
+			modifier = {
+				training_time_factor = -1
+				production_speed_buildings_factor = -1
+			}
+		}
+		black_guard = {
+			modifier = {
+				army_speed_factor = 0.1
+				land_reinforce_rate = 0.05
+				motorized_attack_factor = 0.15
+				command_power_gain_mult = -0.25
+				political_power_factor = -0.25
+			}
+		}
+		blazh_warriors = {
+			modifier = {
+				supply_consumption_factor = -0.2
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				army_speed_factor = 0.1
+			}
+		}
+		chaos_and_awe = {
+			modifier = {
+				army_core_defence_factor = 0.4
+			}
+		}
+		cult_iskazheniya = {
+			modifier = {
+				weekly_manpower = 25
+				production_speed_bunker_factor = 0.5
+				army_core_defence_factor = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		depressed = {
+			modifier = {
+				army_core_defence_factor = 0.2
+				conscription_factor = 0.5
+				army_attack_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+		}
+		expluatatsiya_selkhoza = {
+			modifier = {
+				autonomy_manpower_share = 1
+				monthly_population = 0.7
+			}
+		}
+		expluatatsiya_syryevykh_pridatkov = {
+			modifier = {
+				autonomy_gain_trade_factor = -1
+				extra_trade_to_overlord_factor = 1
+				overlord_trade_cost_factor = -0.8
+			}
+		}
+		expluatatsyya_prom_obyedkov = {
+			modifier = {
+				cic_to_overlord_factor = 0.75
+				mic_to_overlord_factor = 0.75
+			}
+		}
+		gnil_klin = {
+			modifier = {
+				army_speed_factor = 0.05
+				army_attack_factor = 0.2
+				supply_consumption_factor = 0.1
+				stability_factor = 0.05
+				army_defence_factor = -0.1
+			}
+		}
+		gubit_izobiliye = {
+			modifier = {
+				monthly_population = 0.8
+				stability_factor = 0.05
+				war_support_factor = 0.5
+				surrender_limit = -0.25
+				production_speed_buildings_factor = -0.2
+			}
+		}
+		infinity_bzdeniye = {
+			modifier = {
+				army_core_defence_factor = 0.15
+				war_support_factor = 0.5
+				conscription_factor = 0.3
+				production_speed_bunker_factor = 0.2
+				army_org_regain = 0.1
+			}
+		}
+		krugom_vragi = {
+			modifier = {
+				conscription_factor = 0.2
+				stability_factor = 0.1
+				army_org_factor = 0.1
+				production_speed_buildings_factor = 0.5
+			}
+		}
+		land_of_war = {
+			modifier = {
+				experience_gain_army_unit = 0.1
+				conscription_factor = 1
+				political_power_factor = 0.4
+			}
+		}
+		lost_cities = {
+			modifier = {
+				stability_factor = 0.2
+				army_core_defence_factor = 0.2
+				war_support_factor = 0.2
+			}
+		}
+		red_forest = {
+			modifier = {
+				army_core_defence_factor = 0.7
+				conscription_factor = 1
+				stability_factor = 0.1
+			}
+		}
+		rostik = {
+			modifier = {
+				army_core_defence_factor = 0.2
+				production_speed_bunker_factor = 0.2
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				conscription_factor = 1
+			}
+		}
+		satkovian = {
+			modifier = {
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.1
+				production_speed_buildings_factor = 0.5
+				production_factory_max_efficiency_factor = 0.5
+			}
+		}
+		slavianoshiz = {
+			modifier = {
+				org_loss_at_low_org_factor = -0.005
+				army_core_defence_factor = 0.025
+				army_core_attack_factor = 0.025
+				land_night_attack = 0.005
+				max_planning_factor = -0.02
+				stability_factor = -0.05
+			}
+		}
+		tlya_sviat = {
+			modifier = {
+				army_core_defence_factor = 0.5
+				army_attack_factor = 0.2
+				supply_consumption_factor = -1
+				industrial_capacity_factory = 0.2
+				weekly_manpower = 120
+			}
+		}
+		zerno_bessarabii = {
+			modifier = {
+				stability_factor = 0.2
+				production_speed_buildings_factor = 0.2
+				weekly_manpower = 50
+			}
+		}
+		zhest_polnaya = {
+			modifier = {
+				monthly_population = -0.5
+				army_core_defence_factor = 0.1
+				army_attack_factor = 0.1
+				political_power_factor = 0.2
+			}
+		}
+		####
+		free_merc = {
+			modifier = {
+				production_speed_buildings_factor = -0.5
+				industrial_capacity_factory = 0.1
+				conscription_factor = 1
+				army_attack_factor = 0.15
+				army_defence_factor = 0.15
+				political_power_factor = 0.15
+			}
+		}
+		otchayaniy_obrechonnykh = {
+			modifier = {
+				army_core_defence_factor = 0.35
+				conscription_factor = 1
+				surrender_limit = 0.4
+			}
+		}
+		moral_niggilism = {
+			modifier = {
+				army_org_factor = -0.05
+				equipment_capture = 0.2
+				army_attack_factor = 0.1
+				conscription_factor = 0.3
+			}
+		}
+		powers_of_ZVPK = {
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.15
+					#reliability = 0.15
+				}
+				support_equipment = {
+					build_cost_ic = -0.1
+				}
+				artillery_equipment = {
+					build_cost_ic = -0.05
+				}
+				medium_tank_chassis = {
+					build_cost_ic = -0.03
+				}
+			}
+		}
+		heart_of_darkness = {
+			modifier = {
+				political_power_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				industrial_capacity_factory = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+		ochag_kholery = {
+			modifier = {
+				surrender_limit = -0.2
+				political_power_factor = -0.2
+				consumer_goods_factor = -0.3
+				production_speed_buildings_factor = 0.05
+				army_defence_factor = 0.1
+			}
+		}
+	}
+}

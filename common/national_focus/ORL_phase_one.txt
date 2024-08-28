@@ -1,0 +1,559 @@
+focus_tree = {
+	id = ORL_phase_1
+	country = {
+		factor = 0
+        modifier = {
+            add = 10
+            tag = ORL
+        }		
+	}
+	default = no
+
+	focus = {
+		id = ORL_best_in_hell
+		icon = GFX_ORL_best_in_hell
+		cost = 5.00
+		x = 7
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			country_event = ORL.1
+			add_war_support = 0.05
+		}
+	}
+    focus = {
+		id = ORL_first_among_equals
+		icon = GFX_ORL_first_among_equals
+		cost = 5.00
+		x = 5
+		y = 1
+		ai_will_do = { factor = 10 }
+		available = {
+			country_exists = SBT
+			SBT = {
+				has_war = no
+			}
+		}
+        prerequisite = { focus = ORL_best_in_hell }
+		completion_reward = {
+			country_event = ORL.5
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 200
+			}
+			add_equipment_to_stockpile = {
+				type = civilian_clothing
+				amount = 200
+			}
+			939 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}	
+			940 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+    				type = industrial_complex
+    				level = 1
+    				instant_build = yes
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_fortress_of_Tula 
+		icon = GFX_ORL_fortress_of_Tula
+		cost = 5.00
+		x = 5
+		y = 3
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_first_among_equals }
+		available = {
+			country_exists = SBT
+			SBT = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			939 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6262
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_sectarians_and_traitors
+		icon = GFX_ORL_sectarians_and_traitors
+		cost = 5.00
+		x = 5
+		y = 5
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_fortress_of_Tula }
+		available = {
+			country_exists = SBT
+			SBT = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			SBT = {
+				add_ideas = {
+					ORL_sectarians_and_traitors_idea
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_meet_your_fathers
+		icon = GFX_ORL_meet_your_fathers
+		cost = 5.00
+		x = 5
+		y = 7
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_sectarians_and_traitors }
+		available = {
+			country_exists = SBT
+			SBT = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			division_template = {
+            	name = "Первый Отряд"
+            	is_locked = no
+            	priority = 1
+            	regiments = {
+                	infantry = { x = 0 y = 0}
+                    infantry = { x = 0 y = 1}
+                    infantry = { x = 0 y = 2}
+                    infantry = { x = 1 y = 0}
+                    infantry = { x = 1 y = 1}
+                    infantry = { x = 1 y = 2}
+            	}
+			}
+			capital_scope = {
+                create_unit = {
+                	division = "name = \"Первый Отряд\" division_template = \"Первый Отряд\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_veteran_squads 
+		icon = GFX_ORL_veteran_squads
+		cost = 5.00
+		x = 7
+		y = 2
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_best_in_hell }
+		completion_reward = {
+			country_event = ORL.2
+			capital_scope = { 
+				create_unit = {
+                    	division = "name = \"Группа Глинки\" division_template = \"Группа Глинки\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = ROOT
+            	}
+				create_unit = {
+                    	division = "name = \"Группа Глинки\" division_template = \"Группа Глинки\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = ROOT
+            	}
+			}
+		}
+	}
+    focus = {
+		id = ORL_we_cant_forget 
+		icon = GFX_ORL_we_cant_forget
+		cost = 5.00
+		x = 7
+		y = 4
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_veteran_squads }
+		completion_reward = {
+			country_event = ORL.3
+			swap_ideas = {
+				remove_idea = ORL_corporative_ethics
+				add_idea = ORL_corporative_ethics_2
+			}
+		}
+	}
+    focus = {
+		id = ORL_high_priest
+		icon = GFX_ORL_high_priest
+		cost = 5.00
+		x = 7
+		y = 6
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_we_cant_forget }
+		completion_reward = {
+			country_event = ORL.4
+			add_popularity = {
+    			ideology = sacraments
+    			popularity = 0.15
+			}
+			add_manpower = 1000
+			division_template = {
+            	name = "Русич"
+            	is_locked = no
+            	priority = 1
+            	regiments = {
+                	infantry = { x = 0 y = 0}
+                	infantry = { x = 0 y = 1}
+                	infantry = { x = 1 y = 0}
+                	infantry = { x = 1 y = 1}
+            	}
+			}
+			capital_scope = {
+                create_unit = {
+                	division = "name = \"Русич\" division_template = \"Русич\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+				}
+        	}
+		}
+	}
+    focus = {
+		id = ORL_young_blood
+		icon = GFX_ORL_young_blood
+		cost = 5.00
+		x = 9
+		y = 1
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_best_in_hell }
+		available = {
+			country_exists = ZAK
+			ZAK = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			country_event = ORL.6
+			add_manpower = 500
+			935 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			934 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			936 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_threat_from_north
+		icon = GFX_ORL_threat_from_north
+		cost = 5.00
+		x = 9
+		y = 3
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_young_blood }
+		available = {
+			country_exists = ZAK
+			ZAK = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			935 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6428
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 9422
+				}
+			}
+			934 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 3527
+				}
+			}
+			ZAK = {
+				capital_scope = {
+                	create_unit = {
+                		division = "name = \"Новобранцы\" division_template = \"Новобранцы\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = ZAK
+					}
+					create_unit = {
+                		division = "name = \"Новобранцы\" division_template = \"Новобранцы\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    	owner = ZAK
+					}
+        		}
+			}
+		}
+	}
+    focus = {
+		id = ORL_idiots_and_idealists
+		icon = GFX_ORL_idiots_and_idealists
+		cost = 5.00
+		x = 9
+		y = 5
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_threat_from_north }
+		available = {
+			country_exists = ZAK
+			ZAK = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			ZAK = {
+				add_ideas = {
+					ORL_idiots_and_idealists_idea
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_meet_your_sons
+		icon = GFX_ORL_meet_your_sons
+		cost = 5.00
+		x = 9
+		y = 7
+		ai_will_do = { factor = 10 }
+        prerequisite = { focus = ORL_idiots_and_idealists }
+		available = {
+			country_exists = ZAK
+			ZAK = {
+				has_war = no
+			}
+		}
+		completion_reward = {
+			add_manpower = 4000
+		}
+	}
+    focus = {
+		id = ORL_help_squad
+		icon = GFX_ORL_help_squad
+		cost = 5.00
+		x = 6
+		y = 8
+		ai_will_do = { factor = 10 }
+        prerequisite = {
+             focus = ORL_meet_your_fathers
+             focus = ORL_meet_your_sons
+        }
+        prerequisite = { focus = ORL_high_priest }
+        mutually_exclusive = {
+			focus = ORL_help_front
+		}
+		will_lead_to_war_with = VLC
+		will_lead_to_war_with = SMX
+		completion_reward = {
+			end_puppet = ZAK
+			MAZ = {
+				declare_war_on = {
+    				target = ZAK
+    				type = annex_everything
+				}
+			}
+			TAB = {
+				declare_war_on = {
+    				target = ZAK
+    				type = annex_everything
+				}
+			}
+			VLC = {
+				declare_war_on = {
+    				target = SBT
+    				type = annex_everything
+				}
+			}
+			SMX = {
+				declare_war_on = {
+    				target = SBT
+    				type = annex_everything
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_help_front
+		icon = GFX_ORL_help_front
+		cost = 5.00
+		x = 8
+		y = 8
+		ai_will_do = { factor = 10 }
+        prerequisite = {
+             focus = ORL_meet_your_fathers
+             focus = ORL_meet_your_sons
+        }
+        prerequisite = { focus = ORL_high_priest }
+        mutually_exclusive = {
+			focus = ORL_help_squad
+		}
+		will_lead_to_war_with = MAZ
+		will_lead_to_war_with = TAB
+		completion_reward = {
+			end_puppet = SBT
+			MAZ = {
+				declare_war_on = {
+    				target = ZAK
+    				type = annex_everything
+				}
+			}
+			TAB = {
+				declare_war_on = {
+    				target = ZAK
+    				type = annex_everything
+				}
+			}
+			VLC = {
+				declare_war_on = {
+    				target = SBT
+    				type = annex_everything
+				}
+			}
+			SMX = {
+				declare_war_on = {
+    				target = SBT
+    				type = annex_everything
+				}
+			}
+		}
+	}
+    focus = {
+		id = ORL_revenge_for_dead
+		icon = GFX_ORL_revenge_for_dead
+		cost = 5.00
+		x = 7
+		y = 9
+		ai_will_do = { factor = 10 }
+		available = {
+			ORL = {
+				has_war = no
+			}
+			OR = {
+				AND = {
+					has_completed_focus = ORL_help_squad
+					NOT = {
+						country_exists = ZAK
+					}
+				}
+				AND = {
+					has_completed_focus = ORL_help_front
+					NOT = {
+						country_exists = SBT
+					}
+				}
+			}
+		}
+        prerequisite = {
+            focus = ORL_help_squad
+            focus = ORL_help_front
+        }
+		will_lead_to_war_with = MAZ
+		will_lead_to_war_with = TAB
+		will_lead_to_war_with = VLC
+		will_lead_to_war_with = SMX
+		completion_reward = {
+			if = {
+				limit = {
+					has_completed_focus = ORL_help_squad
+				}
+				SBT = {
+					every_owned_state = {
+						add_core_of = ORL
+						remove_core_of = SBT
+					}
+				}
+				223 = {
+					add_core_of = ORL
+					remove_core_of = VLC
+				}
+				205= {
+					add_core_of = ORL
+					remove_core_of = SMX
+				}
+				ORL = {
+					annex_country = {
+						target = SBT
+						transfer_troops = yes
+					}
+					declare_war_on = {
+						target = MAZ
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = TAB
+						type = annex_everything
+					}
+					recruit_character = ORL_Dmitriy_Gusev
+				}
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = ORL_help_front
+				}
+				ZAK = {
+					every_owned_state = {
+						add_core_of = ORL
+					}
+				}
+				MAZ = {
+					every_core_state = {
+						add_core_of = ORL
+						remove_core_of = MAZ						
+					}
+				}
+				TAB = {
+					every_core_state = {
+						add_core_of = ORL
+						remove_core_of = TAB						
+					}
+				}
+				ORL = {
+					annex_country = {
+						target = ZAK
+						transfer_troops = yes
+					}
+					declare_war_on = {
+						target = VLC
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SMX
+						type = annex_everything
+					}
+					recruit_character = ORL_Sergey_Surovov
+				}
+			}
+			hidden_effect = {
+                load_focus_tree = {
+                    tree = ORL_phase_2
+                    keep_completed = no
+                }
+			}
+		}
+	}
+}

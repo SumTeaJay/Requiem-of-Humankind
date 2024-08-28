@@ -1,0 +1,38 @@
+ideas = {
+
+	country = {
+		BLZ_underground_doctor  = {			#Подземный доктор
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = 0.15
+				stability_factor = 0.05
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05			
+			}
+		}
+		BLZ_meaningless_war = {		#Бессмысленная война
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				offence = 0.05
+				defence = 0.05
+				stability_factor = -0.1							
+			}
+		}
+	}
+}

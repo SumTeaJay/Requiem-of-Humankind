@@ -1,0 +1,133 @@
+defined_text = { 
+	name = ods_specializations_of_regions_button_icon
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_industrial_region
+				}
+			}
+		}
+		localization_key = "GFX_specializations_of_regions_industrial_icon"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_resource_region
+				}
+			}
+		}
+		localization_key = "GFX_specializations_of_regions_resource_icon"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_agricultural_region 
+				}
+			}
+		}
+		localization_key = "GFX_specializations_of_regions_agricultural_region_icon"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_research_region
+				}
+			}
+		}
+		localization_key = "GFX_specializations_of_regions_research_region_icon"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				NOT = {
+					OR = { 
+						has_dynamic_modifier = { 
+							modifier = ods_industrial_region
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_resource_region
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_agricultural_region 
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_research_region
+						} 
+					}
+				}
+			}
+		}
+		localization_key = "GFX_specializations_of_regions_icon"
+	}
+}
+
+defined_text = { 
+	name = ods_region_type
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_industrial_region
+				}
+			}
+		}
+		localization_key = "ods_industrial_region"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_resource_region
+				} 
+			}
+		}
+		localization_key = "ods_resource_region"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_agricultural_region 
+				}
+			}
+		}
+		localization_key = "ods_agricultural_region"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				has_dynamic_modifier = { 
+					modifier = ods_research_region
+				} 
+			}
+		}
+		localization_key = "ods_research_region"
+	}
+	text = {
+		trigger = {
+			FROM = { 
+				NOT = {
+					OR = { 
+						has_dynamic_modifier = { 
+							modifier = ods_industrial_region
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_resource_region
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_agricultural_region 
+						} 
+						has_dynamic_modifier = { 
+							modifier = ods_research_region
+						} 
+					}
+				}
+			}
+		}
+		localization_key = "ods_non_region"
+	}
+}

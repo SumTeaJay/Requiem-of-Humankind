@@ -1,0 +1,28 @@
+MGL_decisions = {
+    MGL_reactor_mission = {
+		icon = GFX_decision_eng_trade_unions_support
+		activation = { original_tag = MGL}
+		available = {
+			has_completed_focus = MGL_plutonium_cardiology
+		}
+		is_good = no
+		selectable_mission = no
+		fire_only_once = yes
+		days_mission_timeout = 100
+		timeout_effect = {
+			hidden_effect = {
+                complete_national_focus = MGL_intensive_therapy
+                complete_national_focus = MGL_fatal_allowance
+                add_country_leader_role = {
+                    character = MGL_Exclusion_zone
+                    promote_leader = yes
+                    country_leader = {
+                        ideology = technocracy_subideology
+                        expire = "1965.1.1.1"
+                        traits = { exclusion_zone_trait }
+                    }
+                }
+            }
+        }
+    }
+}

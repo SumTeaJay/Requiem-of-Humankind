@@ -1,0 +1,164 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			#country start-up capital
+			KSK = { set_variable = { black_rubles_budget = 30 } }
+			PLD = { set_variable = { black_rubles_budget = 5000 } }
+			SFR = { set_variable = { black_rubles_budget = 5 } }
+			DRG = { set_variable = { black_rubles_budget = 5 } }
+			ZLG = { set_variable = { black_rubles_budget = 300 } }
+			TTS = { set_variable = { black_rubles_budget = 500 } }
+			LKV = { set_variable = { black_rubles_budget = 500 } }
+			KRT = { set_variable = { black_rubles_budget = 2 } }
+			BSL = { set_variable = { black_rubles_budget = 200 } }
+			SDC = { set_variable = { black_rubles_budget = 5000 } }
+			ARK = { set_variable = { black_rubles_budget = 100 } }
+			SDI = { set_variable = { black_rubles_budget = 50 } }
+			ODJ = { set_variable = { black_rubles_budget = 200 } }	
+			VOZ = { set_variable = { black_rubles_budget = 2000 } }
+			TRO = { set_variable = { black_rubles_budget = 50 } }
+			REN = { set_variable = { black_rubles_budget = 10 } }
+			UFV = { set_variable = { black_rubles_budget = 10 } }
+			MIN = { set_variable = { black_rubles_budget = 200 } }
+			TAG = { set_variable = { black_rubles_budget = 200 } }
+			OKS = { set_variable = { black_rubles_budget = 20 } }
+			VOU = { set_variable = { black_rubles_budget = 5000 } }
+			TAR = { set_variable = { black_rubles_budget = 500 } } 
+			ZAN = { set_variable = { black_rubles_budget = 75 } }
+			URC = { set_variable = { black_rubles_budget = 200 } }
+			WPK = { set_variable = { black_rubles_budget = 400 } }
+			NFL = { set_variable = { black_rubles_budget = 150 } }
+			SFL = { set_variable = { black_rubles_budget = 100 } }
+			ASR = { set_variable = { black_rubles_budget = 5000 } }
+			GLS = { set_variable = { black_rubles_budget = 2000 } }
+			TTL = { set_variable = { black_rubles_budget = 200 } }
+			BL1 = { set_variable = { black_rubles_budget = 400 } }
+			BRB = { set_variable = { black_rubles_budget = 10 } }
+			MOT = { set_variable = { black_rubles_budget = 1000 } }
+			FHS = { set_variable = { black_rubles_budget = 300 } }
+			ADT = { set_variable = { black_rubles_budget = 200 } }
+			OBS = { set_variable = { black_rubles_budget = 10 } }
+			YJY = { set_variable = { black_rubles_budget = 100 } }
+			DRW = { set_variable = { black_rubles_budget = 200 } }
+			PVS = { set_variable = { black_rubles_budget = 1000 } }
+			BGR = { set_variable = { black_rubles_budget = 200 } }
+			OCH = { set_variable = { black_rubles_budget = 40 } }
+			MSH = { set_variable = { black_rubles_budget = 300 } }
+			RIK = { set_variable = { black_rubles_budget = 80 } }
+			SBT = { set_variable = { black_rubles_budget = 300 } }
+			SMX = { set_variable = { black_rubles_budget = 200 } }
+			OLD = { set_variable = { black_rubles_budget = 2 } }
+			NAR = { set_variable = { black_rubles_budget = 500 } }
+			BLT = { set_variable = { black_rubles_budget = 4000 } }
+			NVC = { set_variable = { black_rubles_budget = 600 } }
+			TWD = { set_variable = { black_rubles_budget = 150 } }
+			CHU = { set_variable = { black_rubles_budget = 200 } }
+			AGE = { set_variable = { black_rubles_budget = 500 } }
+			BTC = { set_variable = { black_rubles_budget = 200 } }
+			BLZ = { set_variable = { black_rubles_budget = 200 } }
+			HAR = { set_variable = { black_rubles_budget = 300 } }
+			OBJ = { set_variable = { black_rubles_budget = 400 } }
+			SMK = { set_variable = { black_rubles_budget = 500 } }
+			NOR = { set_variable = { black_rubles_budget = 150 } }
+			IMP = { set_variable = { black_rubles_budget = 400 } }
+			COR = { set_variable = { black_rubles_budget = 200 } }
+			VLC = { set_variable = { black_rubles_budget = 200 } }
+			ORL = { set_variable = { black_rubles_budget = 300 } }
+			BSO = { set_variable = { black_rubles_budget = 300 } }
+			BAR = { set_variable = { black_rubles_budget = 150 } }
+			PLR = { set_variable = { black_rubles_budget = 150 } }
+			CAV = { set_variable = { black_rubles_budget = 150 } }
+			CST = { set_variable = { black_rubles_budget = 200 } }
+			TIP = { set_variable = { black_rubles_budget = 5 } }
+			BAI = { set_variable = { black_rubles_budget = 100 } }
+			LPC = { set_variable = { black_rubles_budget = 500 } }
+			BAL = { set_variable = { black_rubles_budget = 400 } }
+			VOS = { set_variable = { black_rubles_budget = 100 } }
+			MAP = { set_variable = { black_rubles_budget = 100 } }
+			SWR = { set_variable = { black_rubles_budget = 150 } }
+			BGD = { set_variable = { black_rubles_budget = 200 } }
+			WOD = { set_variable = { black_rubles_budget = 400 } }
+			YWD = { set_variable = { black_rubles_budget = 500 } }
+			MOD = { set_variable = { black_rubles_budget = 600 } }
+			COA = { set_variable = { black_rubles_budget = 100 } }
+			SOD = { set_variable = { black_rubles_budget = 200 } }
+			BOD = { set_variable = { black_rubles_budget = 400 } }
+			FUD = { set_variable = { black_rubles_budget = 500 } }
+			VDS = { set_variable = { black_rubles_budget = 400 } }
+			DIB = { set_variable = { black_rubles_budget = 10 } }
+			BAG = { set_variable = { black_rubles_budget = 20 } }
+			MAD = { set_variable = { black_rubles_budget = 50 } }
+			BIH = { set_variable = { black_rubles_budget = 500 } }
+			SUM = { set_variable = { black_rubles_budget = 100 } }
+			BRD = { set_variable = { black_rubles_budget = 2000 } }
+			WAC = { set_variable = { black_rubles_budget = 3000 } }
+			BRI = { set_variable = { black_rubles_budget = 600 } }
+			HAN = { set_variable = { black_rubles_budget = 600 } }
+			AZB = { set_variable = { black_rubles_budget = 500 } }
+			CRW = { set_variable = { black_rubles_budget = 150 } }
+			ECD = { set_variable = { black_rubles_budget = 250 } }
+			STW = { set_variable = { black_rubles_budget = 400 } }
+			DOM = { set_variable = { black_rubles_budget = 1000 } }
+			LUG = { set_variable = { black_rubles_budget = 400 } }
+			GAT = { set_variable = { black_rubles_budget = 200 } }
+			KUH = { set_variable = { black_rubles_budget = 300 } }
+			MKS = { set_variable = { black_rubles_budget = 300 } }
+			ZAK = { set_variable = { black_rubles_budget = 500 } }
+			KMN = { set_variable = { black_rubles_budget = 500 } }
+			PLC = { set_variable = { black_rubles_budget = 200 } }
+			TAB = { set_variable = { black_rubles_budget = 300 } }
+			MAZ = { set_variable = { black_rubles_budget = 400 } }
+			#for init script
+			every_possible_country = {
+				#set slider position if not set in history
+				if = {
+					limit = {
+						NOT = {
+							has_variable = production_finances
+						}
+					}
+					set_variable = {
+						production_finances = 5
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_variable = civil_finances
+						}
+					}
+					set_variable = {
+						civil_finances = 5
+					}
+				}
+				if = {
+					limit = {
+						NOT = {
+							has_variable = army_finances
+						}
+					}
+					set_variable = {
+						army_finances = 5
+					}
+				}
+				#init first week income
+				calc_economic_income = yes
+				#init first week expenses
+				calc_production_finances = yes
+				calc_civil_finances = yes
+				calc_army_finances = yes
+				calc_economic_expenses = yes
+				#init economy modifier
+				add_dynamic_modifier = {
+					modifier = main_economic_modifier
+				}
+				calc_economy_modifier = yes
+			}
+		}
+	}
+	on_weekly = {
+		effect = {
+			economy_tick_effects = yes
+		}
+	}
+}

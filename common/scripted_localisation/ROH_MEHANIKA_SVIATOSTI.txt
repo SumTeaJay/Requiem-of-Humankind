@@ -1,0 +1,84 @@
+defined_text = {
+    name = sviatost   
+    text = {
+        localization_key = "sp_event_sviatost"
+    }
+}
+
+defined_text = {
+    name = sviatost_tekst_okna    
+    text = {
+
+        localization_key = "sp_event_sviatost_tekst_okna"
+    }
+}
+defined_text = {
+    name = sviatost_tekst_ochki  
+    text = {
+
+        localization_key = "sp_event_sviatost_ochki"
+    }
+}
+defined_text = {
+    name = molitva1_tekst
+    text = {
+
+        localization_key = "sp_event_molitva1_tekst"
+    }
+}
+defined_text = {
+    name = molitva2_tekst
+    text = {
+
+        localization_key = "sp_event_molitva2_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva3_tekst
+    text = {
+
+        localization_key = "sp_event_molitva3_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva4_tekst
+    text = {
+
+        localization_key = "sp_event_molitva4_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva5_tekst
+    text = {
+
+        localization_key = "sp_event_molitva5_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva6_tekst
+    text = {
+
+        localization_key = "sp_event_molitva6_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva7_tekst
+    text = {
+
+        localization_key = "sp_event_molitva7_tekst"
+    }
+}
+
+defined_text = {
+    name = molitva8_tekst
+    text = {
+
+        localization_key = "sp_event_molitva8_tekst"
+    }
+}
+

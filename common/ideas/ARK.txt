@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		polyarnaya_grusitnka = {		
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				monthly_population = -0.35
+				research_speed_factor = -0.25
+				surrender_limit = -0.15
+				political_power_gain = -0.15
+				drift_defence_factor = -0.5
+			}
+		}
+	}
+}

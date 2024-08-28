@@ -1,0 +1,801 @@
+technologies = {
+	
+	bba_pre_war_fighter = {	
+		start_year = 2015
+		enable_equipments = { pre_war_fighter_equipment }
+		path = {
+			leads_to_tech = bba_basic_specialized_aircraft
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_mass_airplane
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_prewar_drone
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 2 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Ветка специализированной авиации (центральная ветка)
+
+	bba_basic_specialized_aircraft = {	
+		start_year = 2020
+		enable_equipments = { basic_specialized_airplane_equipment }
+		XOR = { bba_prewar_drone bba_basic_mass_airplane }	
+		path = {
+			leads_to_tech = bba_basic_specialized_bomber
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_specialized_fighter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 4 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_basic_specialized_bomber = {	
+		start_year = 2025
+		enable_equipments = { basic_specialized_bomber_equipment }
+		path = {
+			leads_to_tech = bba_improved_specialized_bomber
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_specialized_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_specialized_bomber = {	
+		start_year = 2030
+		enable_equipments = { improved_specialized_bomber_equipment }
+		path = {
+			leads_to_tech = bba_advanced_specialized_bomber
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_specialized_bomber = {	
+		start_year = 2040
+		enable_equipments = { advanced_specialized_bomber_equipment }
+		path = {
+			leads_to_tech = bba_specialized_bomber_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_specialized_bomber_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { specialized_bomber_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 14 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	bba_basic_specialized_fighter = {	
+		start_year = 2025
+		enable_equipments = { basic_specialized_fighter_equipment }
+		path = {
+			leads_to_tech = bba_improved_specialized_fighter
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_specialized_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_specialized_fighter = {
+		start_year = 2030	
+		enable_equipments = { improved_specialized_fighter_equipment }
+		path = {
+			leads_to_tech = bba_advanced_specialized_fighter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_specialized_fighter = {	
+		start_year = 2040
+		enable_equipments = { advanced_specialized_fighter_equipment }
+		path = {
+			leads_to_tech = bba_specialized_fighter_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_specialized_fighter_of_the_future = {
+		start_year = 2050	
+		enable_equipments = { specialized_fighter_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 24 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	bba_basic_specialized_helicopter = {	
+		start_year = 2030	
+		enable_equipments = { basic_specialized_helicopter_equipment }
+		path = {
+			leads_to_tech = bba_improved_specialized_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_specialized_helicopter = {	
+		start_year = 2040
+		enable_equipments = { improved_specialized_helicopter_equipment }
+		path = {
+			leads_to_tech = bba_specialized_helicopter_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_specialized_helicopter_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { specialized_helicopter_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 19 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Ветка массовой авиации (левая)
+
+	bba_basic_mass_airplane = {	
+		start_year = 2020
+		enable_equipments = { basic_mass_airplane_equipment }
+		research_cost = 2
+
+		path = {
+			leads_to_tech = bba_basic_mass_bomber
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_mass_fighter
+			research_cost_coeff = 1
+		}
+
+		XOR = { bba_basic_specialized_aircraft bba_prewar_drone }
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 4 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_basic_mass_bomber = {
+		start_year = 2025	
+		enable_equipments = { basic_mass_bomber_equipment }
+		path = {
+			leads_to_tech = bba_improved_mass_bomber
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_mass_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -3 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_mass_bomber = {	
+		start_year = 2030
+		enable_equipments = { improved_mass_bomber_equipment }
+		path = {
+			leads_to_tech = bba_advanced_mass_bomber
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -3 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_mass_bomber = {	
+		start_year = 2040
+		enable_equipments = { advanced_mass_bomber_equipment }
+		path = {
+			leads_to_tech = bba_mass_bomber_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -3 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_mass_bomber_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { mass_bomber_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = -3 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_basic_mass_fighter = {	
+		start_year = 2025
+		enable_equipments = { basic_mass_fighter_equipment }
+		path = {
+			leads_to_tech = bba_improved_mass_fighter
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_mass_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_mass_fighter = {	
+		start_year = 2030
+		enable_equipments = { improved_mass_fighter_equipment }
+		path = {
+			leads_to_tech = bba_advanced_mass_fighter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_mass_fighter = {	
+		start_year = 2040
+		enable_equipments = { advanced_mass_fighter_equipment }
+		path = {
+			leads_to_tech = bba_mass_fighter_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_mass_fighter_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { mass_fighter_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_basic_mass_helicopter = {	
+		start_year = 2030
+		enable_equipments = { basic_mass_helicopter_equipment }
+		path = {
+			leads_to_tech = bba_improved_mass_helicopter
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_mass_helicopter = {
+		start_year = 2040	
+		enable_equipments = { improved_mass_helicopter_equipment }
+		path = {
+			leads_to_tech = bba_mass_helicopter_of_the_future
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_mass_helicopter_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { mass_helicopter_of_the_future_equipment }
+		research_cost = 2
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	#Ветка беспилотников (правая ветка)
+	bba_prewar_drone = {	
+		start_year = 2020
+		enable_equipments = { prewar_drone_equipment }
+		research_cost = 2
+		XOR = { bba_basic_specialized_aircraft bba_basic_mass_airplane}
+		path = {
+			leads_to_tech = bba_basic_attack_drone
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = bba_basic_kamikaze_drone
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 34 y = 4 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_basic_attack_drone = {	
+		start_year = 2025
+		enable_equipments = { basic_attack_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_improved_attack_drone
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 31 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_attack_drone = {	
+		start_year = 2030
+		enable_equipments = { improved_attack_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_advanced_attack_drone
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 31 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_attack_drone = {	
+		start_year = 2040
+		enable_equipments = { advanced_attack_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_attack_drone_of_the_future
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 31 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_attack_drone_of_the_future = {	
+		start_year = 2050
+		enable_equipments = { attack_drone_of_the_future_equipment }
+		research_cost = 2
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 31 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	bba_basic_kamikaze_drone = {
+		start_year = 2025		
+		enable_equipments = { basic_kamikaze_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_improved_kamikaze_drone
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 37 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_improved_kamikaze_drone = {	
+		start_year = 2030
+		enable_equipments = { improved_kamikaze_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_advanced_kamikaze_drone
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 37 y = 8 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_advanced_kamikaze_drone = {	
+		start_year = 2040
+		enable_equipments = { advanced_kamikaze_drone_equipment }
+		research_cost = 2
+		path = {
+			leads_to_tech = bba_kamikaze_drone_of_the_future
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 37 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	bba_kamikaze_drone_of_the_future = {
+		start_year = 2050	
+		enable_equipments = { kamikaze_drone_of_the_future_equipment }
+		research_cost = 2
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 37 y = 12 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+characters = {
+	LUG_techno = {
+		portraits={
+			civilian={
+				large="gfx/leaders/LUG/LUG_techno.dds"
+			}
+		}
+		country_leader={
+			ideology=technocracy_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = LUG_techno_desc
+		}
+	}
+}

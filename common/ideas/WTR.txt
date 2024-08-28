@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+		WTR_wild_lands = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			local_resources_factor = -0.15
+			production_factory_max_efficiency_factor = -0.15
+			production_lack_of_resource_penalty_factor = 0.1
+			stability_factor = -0.1
+			war_support_factor = -0.1
+			acclimatization_cold_climate_gain_factor = 0.25
+			army_core_attack_factor = 0.1
+			army_core_defence_factor = 0.1
+				
+			}
+		}
+	}
+}

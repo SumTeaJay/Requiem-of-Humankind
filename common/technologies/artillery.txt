@@ -1,0 +1,543 @@
+technologies = {
+
+	gw_artillery = {
+		start_year = 2015
+		enable_equipments = {
+			pre_war_artillery_equipment
+		}
+		enable_subunits = {
+			stvol_art
+		}
+		enable_subunits = {
+			stvol_art_sup
+		}
+		path = {
+			leads_to_tech = basic_towed_artillery
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_air_defense
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = basic_MLRS
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 0 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+	
+	#Ветка буксируемой артиллерии (левая ветка)
+	basic_towed_artillery = {
+		start_year = 2020
+		enable_equipments = {
+			basic_towed_artillery_equipment
+		}
+		enable_subunits = {
+			towed_art
+		}
+		enable_subunits = {
+			towed_art_sup
+		}
+		path = {
+			leads_to_tech = gerantium_complex
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 2 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	gerantium_complex = {
+		start_year = 2023
+		artillery = {
+			hard_attack = 0.05
+			soft_attack = 0.05			
+		}
+		path = {
+			leads_to_tech = advanced_towed_artillery
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+		artillery = {
+			hard_attack = 0.05
+			ap_attack = 0.05	
+		}
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_towed_artillery = {
+		start_year = 2025
+		enable_equipments = {
+			advanced_towed_artillery_equipment
+		}
+		path = {
+			leads_to_tech = IVD_UMMS_Mfifty
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 6 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	IVD_UMMS_Mfifty = {
+		start_year = 2027
+		artillery = {
+			hard_attack = 0.05
+			soft_attack = 0.05			
+		}
+		path = {
+			leads_to_tech = towed_artillery_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	towed_artillery_of_the_future = {
+		start_year = 2030
+		enable_equipments = {
+			towed_artillery_of_the_future_equipment
+		}
+		path = {
+			leads_to_tech = courtesan_project
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 10 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	courtesan_project = {
+		start_year = 2035
+		artillery = {
+			hard_attack = 0.05
+			soft_attack = 0.05			
+		} 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = -4 y = 12 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	#Ветка ПВО (центральная ветка)
+	basic_air_defense = {
+		enable_equipments = {
+			basic_air_defense_equipment
+		}
+		enable_subunits = {
+			antiair_art
+		}
+		enable_subunits = {
+			anti_air_art_sup
+		}
+		start_year = 2020
+		path = {
+			leads_to_tech = complex_stukach
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	complex_stukach = {
+		artillery = {
+			hard_attack = 0.05
+			soft_attack = 0.05			
+		} 
+		category_anti_air = {
+			hard_attack = 0.05
+			soft_attack = 0.05			
+		} 
+		start_year = 2023
+		path = {
+			leads_to_tech = advanced_air_defense
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_air_defense = {
+		enable_equipments = {
+			advanced_air_defense_equipment
+		}
+		start_year = 2025
+		path = {
+			leads_to_tech = project_rebirth
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	project_rebirth = {
+		category_anti_air = {
+			air_attack = 0.1 		
+		} 
+		start_year = 2027
+		path = {
+			leads_to_tech = concept_development
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	concept_development = {
+		category_anti_air = {
+			air_attack = 0.1  		
+		} 
+		start_year = 2030
+		path = {
+			leads_to_tech = air_defense_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	air_defense_of_the_future = {
+		enable_equipments = {
+			air_defense_of_the_future_equipment
+		}
+		start_year = 2035
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 12 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+
+	#Подветка РСЗО (левая ветка)
+	basic_MLRS = {
+		start_year = 2020
+		enable_equipments = {
+			basic_MLRS_equipment
+		}
+		enable_subunits = {
+			mlrs_art
+		}
+		enable_subunits = {
+			mlrs_art_sup
+		}
+		path = {
+			leads_to_tech = ARBF_shells
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 2 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	ARBF_shells = {
+		category_front_line = {
+			hard_attack = 0.05
+			soft_attack = 0.05		
+		}
+		start_year = 2023
+		path = {
+			leads_to_tech = complex_oko
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 4 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	complex_oko = {
+		category_front_line = {
+			hard_attack = 0.05
+			soft_attack = 0.05		
+		}
+		start_year = 2025
+		path = {
+			leads_to_tech = advanced_MLRS
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 6 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	advanced_MLRS = {
+		start_year = 2027
+		enable_equipments = {
+			advanced_MLRS_equipment
+		}
+		path = {
+			leads_to_tech = chain_project
+			research_cost_coeff = 1
+		}
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 8 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	chain_project = {
+		category_front_line = {
+			hard_attack = 0.05
+			soft_attack = 0.05		
+		}
+		start_year = 2030
+		path = {
+			leads_to_tech = MLRS_of_the_future
+			research_cost_coeff = 1
+		}
+ 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 10 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
+	MLRS_of_the_future = {
+		enable_equipments = {
+			MLRS_of_the_future_equipment
+		}
+		start_year = 2035 
+		research_cost = 1.5
+
+		folder = {
+			name = artillery_folder
+			position = { x = 4 y = 12 }
+		}
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

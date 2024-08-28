@@ -1,0 +1,116 @@
+volga_war = {
+	conflict_escalation_mission = {
+		priority = 999
+		days_mission_timeout = 70
+		selectable_mission = no
+		is_good = no
+		activation = {
+			NAR = {
+				exists = yes
+			}
+			SMK = {
+				exists = yes
+			}
+		}
+		available = {
+			OR = {
+				NAR = {
+					exists = no
+				}
+				SMK = {
+					exists = no
+				}
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						volga_war_cgf < 50
+					}
+				}
+				add_to_variable = {
+					var = volga_war_cgf
+					value = 0.1
+					tooltip = add_volga_war_cgf_10_tt
+				}
+			}
+			else = {
+				custom_effect_tooltip = max_volga_war_tension_tt
+			}
+		}
+	}
+	send_trade_caravan = {
+		days_re_enable = 20
+		cost = 50
+		complete_effect = {
+			subtract_from_variable = {
+				var = volga_war_cgf
+				value = 0.05
+				tooltip = sub_volga_war_cgf_5_tt
+			}
+			clamp_variable = {
+				var = volga_war_cgf
+				min = 0
+			}
+		}
+	}
+	establish_new_trade_connections = {
+		days_re_enable = 40
+		cost = 100
+		complete_effect = {
+			subtract_from_variable = {
+				var = volga_war_cgf
+				value = 0.1
+				tooltip = sub_volga_war_cgf_10_tt
+			}
+			clamp_variable = {
+				var = volga_war_cgf
+				min = 0
+			}
+		}
+	}
+	send_bandit_raid = {
+		days_re_enable = 30
+		available = {
+			has_equipment = {
+				infantry_equipment > 499
+			}
+		}
+		cost = 50
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -500
+			}
+			subtract_from_variable = {
+				var = volga_war_cgf
+				value = 0.1
+				tooltip = sub_volga_war_cgf_10_tt
+			}
+			clamp_variable = {
+				var = volga_war_cgf
+				min = 0
+			}
+		}
+	}
+	extra_shifts = {
+		days_re_enable = 30
+		available = {
+			has_manpower > 999
+		}
+		cost = 50
+		complete_effect = {
+			add_manpower = -1000
+			subtract_from_variable = {
+				var = volga_war_cgf
+				value = 0.1
+				tooltip = sub_volga_war_cgf_10_tt
+			}
+			clamp_variable = {
+				var = volga_war_cgf
+				min = 0
+			}
+		}
+	}
+}

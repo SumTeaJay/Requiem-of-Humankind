@@ -1,0 +1,119 @@
+defined_text = {
+	name = GetSubIdeology
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = technocracy_subideology 
+		}
+		localization_key = technocracy_subideology 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = humanists_subideology
+		}
+		localization_key = humanists_subideology
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = militarists_subideology 
+		}
+		localization_key = militarists_subideology 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = statesmen_subideology 
+		}
+		localization_key = statesmen_subideology 
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = sacraments_subideology 
+		}
+		localization_key = sacraments_subideology 
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = bandits_subideology
+		}
+		localization_key = bandits_subideology
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = chthonism_subideology 
+		}
+		localization_key = chthonism_subideology 
+	}
+	
+	text = {
+		trigger = {
+			has_country_leader_ideology = free_people_subideology  
+		}
+		localization_key = free_people_subideology  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = gelertery  
+		}
+		localization_key = gelertery  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = colloborators  
+		}
+		localization_key = colloborators  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = separatist  
+		}
+		localization_key = separatist  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = peacemakers  
+		}
+		localization_key = peacemakers  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = liquidators  
+		}
+		localization_key = liquidators  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = truefighters  
+		}
+		localization_key = truefighters  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = pagans  
+		}
+		localization_key = pagans  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = victory_cult  
+		}
+		localization_key = victory_cult  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = conception_subideology  
+		}
+		localization_key = conception_subideology  
+	}	
+	text = {
+		trigger = {
+			has_country_leader_ideology = primitivists  
+		}
+		localization_key = primitivists  
+	}	
+} 

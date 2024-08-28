@@ -1,0 +1,15 @@
+characters = {
+	HAN_arsen_rurikovich = {
+		portraits={
+			civilian={
+				large="gfx/leaders/HAN/arsen_rurikovich.dds"
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = HAN_arsen_rurikovich_desc
+		}
+	}
+}

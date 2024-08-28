@@ -1,0 +1,15 @@
+characters = {
+	MAP_sam = {
+		portraits={
+			civilian={
+				large=GFX_portrait_MAP_sam
+			}
+		}
+		country_leader={
+			ideology = separatist
+			desc = MAP_sam_desc
+			expire = "3000.1.1.1"
+			id=-1
+		}
+	}
+}

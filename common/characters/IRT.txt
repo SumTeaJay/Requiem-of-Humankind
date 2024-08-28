@@ -1,0 +1,16 @@
+characters = {
+	IRT_Mikhail_Zheleznyakov = {
+		name = IRT_Mikhail_Zheleznyakov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_IRT_Mikhail_Zheleznyakov
+			}
+		}
+		country_leader = {
+			ideology = technocracy_subideology
+			desc = IRT_Mikhail_Zheleznyakov_desc
+			id = -1
+			expire = "2090.1.1.1"
+		}
+	}
+}

@@ -1,0 +1,17 @@
+characters = {
+	SIL_Varash = {
+        name = SIL_Varash
+		portraits={
+			civilian={
+				large="gfx/leaders/LWV/LWV_i_van.dds"
+			}
+		}
+		country_leader={
+			ideology = sacraments_subideology
+            traits = { pastor }
+			expire = "3333.1.1.1"
+			id =-1
+			desc = SIL_Varash_desc
+		}
+	}
+}

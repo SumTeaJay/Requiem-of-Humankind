@@ -1,0 +1,16 @@
+characters = {
+	RIK_Yaroslav_Negliev = {
+		name = RIK_Yaroslav_Negliev
+		portraits={
+			civilian={
+				large="gfx/leaders/RIK/Yaroslav_Negliev.dds"
+			}
+		}
+		country_leader={
+			ideology=militarists_subideology
+			desc = RIK_Yaroslav_Negliev_desc
+			expire="2965.1.1.1"
+			id=-1
+		}
+	}
+}

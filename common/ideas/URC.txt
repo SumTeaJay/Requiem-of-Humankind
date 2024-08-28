@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		URC_shadows_of_past = {
+            picture = shadows_of_past
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				defence = 0.03
+				war_support_factor = 0.1
+				political_power_factor = -0.1
+				stability_weekly_factor = -0.5
+			}
+		}
+	}
+}

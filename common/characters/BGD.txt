@@ -1,0 +1,17 @@
+characters = {
+	BGD_stepan_tolmutov = {
+		name = BGD_stepan_tolmutov
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BGD/Stepan_Tolmutov.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader={
+			desc = "POLITICS_Stepan_Tolmutov_DESC" #use standart keys pls
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

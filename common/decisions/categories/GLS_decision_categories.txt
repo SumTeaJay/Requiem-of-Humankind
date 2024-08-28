@@ -1,0 +1,66 @@
+GLS_freedom_and_order = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_freedom_and_order_picture
+	scripted_gui = gls_freedom_and_order
+	allowed = { original_tag = GLS }
+	visible = { 
+		has_country_flag = GLS_freedom_and_order_start
+		NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+		NOT = { is_subject = yes }
+	}
+	visible_when_empty = yes
+	priority = { base = 5 }	
+}
+
+GLS_negotiation_process = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_negotiation_process_picture
+	allowed = { original_tag = GLS }
+	visible = { 
+		has_country_flag = GLS_negotiation_process_start
+		NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+		NOT = { is_subject = yes }
+	}
+	priority = { base = 5 }
+	
+	on_map_area = {
+		targets = { 999 251 652 407 406 994 }
+		target_trigger = { 
+			FROM = {
+				NOT = { is_controlled_by = GLS }
+			}
+		}
+		name = negotiation_process_map_category
+		zoom = 150
+	}	
+}
+
+GLS_nuclear_strike = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_nuclear_strike_picture
+	allowed = { 
+		original_tag = GLS 
+		is_ai = no
+	}
+	visible = { 
+		has_country_flag = GLS_nuclear_strike_start
+		NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+		NOT = { is_subject = yes }
+	}
+	#visible_when_empty = yes
+	priority = { base = 5 }	
+}
+
+GLS_kurchatov_project = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_kurchatov_project_picture
+	scripted_gui = gls_kurchatov_project
+	allowed = { original_tag = GLS }
+	visible = { 
+		has_country_flag = GLS_kurchatov_project_start
+		NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+		NOT = { is_subject = yes }
+	}
+	visible_when_empty = yes
+	priority = { base = 5 }		
+}

@@ -1,0 +1,410 @@
+expedition_category = {
+	####################################
+	### DECISIONS OF CREATION SQUADS ###
+	####################################
+	form_search_squad = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100	
+		available = {
+			has_manpower > 500
+		}
+		cost = 50
+		days_remove = 30
+
+		complete_effect = {
+			ROOT = { add_manpower = -500 }
+		}		
+		remove_effect = {
+			custom_effect_tooltip = form_search_squad_tt
+			hidden_effect = {
+				ROOT = { add_to_variable = { search_squad_var = 1 } }
+			}
+		}
+	}
+	form_combat_squad = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100	
+		available = {
+			has_manpower > 500
+			has_army_manpower = { size > 999 }
+		}
+		cost = 50
+		days_remove = 30
+
+		complete_effect = {
+			ROOT = { add_manpower = -500 }		
+		}
+		remove_effect = {
+			custom_effect_tooltip = form_combat_squad_tt
+			hidden_effect = {
+				ROOT = { add_to_variable = { combat_squad_var = 1 } }
+			}	
+		}
+	}
+	#################################
+	### DECISIONS OF SEARCH SQUAD ###
+	#################################
+	check_warehouses = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = at_least_one_search_squad_tt
+				ROOT = { check_variable = { search_squad_var > 0} }
+			}
+		}
+		visible = {
+			ROOT = { check_variable = { search_squad_var > 0} }
+		}
+		cost = 100
+		days_remove = 20
+
+		complete_effect = {
+			custom_effect_tooltip = subtract_from_number_of_search_squads_tt
+			hidden_effect = { 
+				ROOT = { subtract_from_variable = { search_squad_var = 1 } }
+			}
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					country_event = { id = expedition.1 } #Untouchable reserve
+				}
+				50 = {
+					country_event = { id = expedition.2 } #Empty shelves
+				}
+			}
+		}
+	}
+	explore_science_complexes = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = at_least_one_search_squad_tt
+				ROOT = { check_variable = { search_squad_var > 0 } }
+			}
+		}
+		visible = {
+			ROOT = { check_variable = { search_squad_var > 0} }
+		}
+		cost = 75
+		days_remove = 20
+
+		complete_effect = {
+			custom_effect_tooltip = subtract_from_number_of_search_squads_tt
+			hidden_effect = { 
+				ROOT = { subtract_from_variable = { search_squad_var = 1 } }
+			}
+		}
+		remove_effect = {
+			random_list = {
+				34 = {
+					country_event = { id = expedition.3 } #Papers, papers, papers...
+				}
+				33 = {
+					country_event = { id = expedition.4 } #This could be interesting
+				}
+				33 = {
+					country_event = { id = expedition.5 } #It's best not to talk about it...
+				}				
+			}
+		}
+	}
+	check_refinery = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = at_least_one_search_squad_tt
+				ROOT = { check_variable = { search_squad_var > 0 } }
+			}
+		}
+		visible = {
+			ROOT = { check_variable = { search_squad_var > 0} }
+		}
+		cost = 100
+		days_remove = 20
+
+		complete_effect = {
+			custom_effect_tooltip = subtract_from_number_of_search_squads_tt
+			hidden_effect = { 
+				ROOT = { subtract_from_variable = { search_squad_var = 1 } }
+			}
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					country_event = { id = expedition.6 } #Black gold
+				}
+				50 = {
+					country_event = { id = expedition.7 } #Absolute zero
+				}				
+			}
+		}
+	}
+	explore_industrial_zone = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 100
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = at_least_one_search_squad_tt
+				ROOT = { check_variable = { search_squad_var > 0 } }
+			}
+		}
+		visible = {
+			ROOT = { check_variable = { search_squad_var > 0 } }
+		}
+		cost = 150
+		days_remove = 20
+
+		complete_effect = {
+			custom_effect_tooltip = subtract_from_number_of_search_squads_tt
+			hidden_effect = { 
+				ROOT = { subtract_from_variable = { search_squad_var = 1 } }
+			}
+		}
+		remove_effect = {
+			random_list = {
+				34 = {
+					country_event = { id = expedition.8 } #Technical illiteracy
+				}
+				33 = {
+					country_event = { id = expedition.9 } #Production facilities
+				}
+				33 = {
+					country_event = { id = expedition.10 } #Mechanism of war
+				}
+			}
+		}
+	}
+	#################################
+	### DECISIONS OF COMBAT SQUAD ###
+	#################################
+	raid_neighbor_prepare = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = at_least_one_combat_squad_tt
+				ROOT = { check_variable = { combat_squad_var > 0 } }
+			}
+			any_owned_state = {
+				is_fully_controlled_by = ROOT
+				has_ROOT_at_least_1_div_in_current_state_scope = yes
+				any_neighbor_state = {
+					is_fully_controlled_by = FROM
+				}
+			}
+			has_war = no
+			FROM = { has_war = no }
+			NOT = { FROM = { is_ally_with = ROOT } }			
+		}
+		visible = {
+			ROOT = { check_variable = { combat_squad_var > 0 } }
+		}
+		target_array = neighbors_owned
+		target_trigger = {
+			FROM = {
+				is_neighbor_of = ROOT
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				OR = {
+					state = FROM.defender_state_vs_@ROOT
+					AND = {
+						is_owned_and_controlled_by = FROM
+						any_neighbor_state = {
+							has_ROOT_at_least_1_div_in_current_state_scope = yes
+							is_fully_controlled_by = ROOT
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 20
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.8
+				}
+				factor = 0.66
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.6
+				}
+				factor = 0.33
+			}
+			modifier = {
+				strength_ratio = {
+					tag = FROM
+					ratio < 0.4
+				}
+				factor = 0
+			}
+		}
+		
+		cost = 150
+		days_remove = 10
+
+		complete_effect = { # Effect WHEN CLICKED
+			custom_effect_tooltip = subtract_from_number_of_combat_squads_tt
+			hidden_effect = {
+				ROOT = { subtract_from_variable = { combat_squad_var = 1 } }
+				FROM = {
+					random_owned_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								is_fully_controlled_by = ROOT
+								has_ROOT_at_least_1_div_in_current_state_scope = yes
+							}
+						}
+						set_variable = { PREV.defender_state_vs_@ROOT = id }
+					}
+				}
+				random_owned_controlled_state = {
+					limit = {
+						has_ROOT_at_least_1_div_in_current_state_scope = yes
+						any_neighbor_state = {
+							is_fully_controlled_by = FROM
+						}
+					}
+					set_variable = { FROM.attacker_state_vs_@ROOT = id }
+				}
+				set_country_flag = preparing_raid
+			}
+		}
+		remove_effect = { # Effect ON timeout
+			activate_targeted_decision = { target = FROM decision = raid_neighbor_initiate }			
+		}
+	}
+	raid_neighbor_initiate = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { always = no } #Activated from effect
+		fixed_random_seed = no
+		available = {
+			ROOT = {
+				var:FROM.attacker_state_vs_@ROOT = {
+					is_fully_controlled_by = ROOT
+				}
+			}
+			divisions_in_border_state = {
+				state = var:FROM.attacker_state_vs_@ROOT
+				border_state = var:FROM.defender_state_vs_@ROOT
+				size > 0
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = var:FROM.attacker_state_vs_@ROOT
+			}
+		}
+		ai_will_do = {
+			base = 30
+			modifier = {
+				factor = 2
+				strength_ratio = {
+					tag = FROM
+					ratio = 2
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = yes
+				FROM = { has_war = yes }
+				has_non_aggression_pact_with = FROM
+			}
+		}
+		cancel_effect = {
+			clr_country_flag = preparing_raid
+		}
+
+		fire_only_once = yes #Reactivation handled in effect
+		selectable_mission = yes
+		days_mission_timeout = 65
+		
+		timeout_effect = {
+			hidden_effect = {
+				FROM = {
+					clear_variable = attacker_state_vs_@ROOT
+					clear_variable = defender_state_vs_@ROOT
+				}
+				clr_country_flag = preparing_raid
+				remove_targeted_decision = { target = FROM decision = raid_neighbor_initiate }
+				activate_targeted_decision = { target = FROM decision = raid_neighbor_prepare }
+			}
+		}
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = {
+					state = var:FROM.attacker_state_vs_@ROOT
+					num_provinces = 4
+					on_win = expedition_raid.1 #Successful raid
+					on_lose = expedition_raid.2 #Unfortunate raid
+					#on_cancel = expedition_raid.3 #?
+				}
+				defender = {
+					state = var:FROM.defender_state_vs_@ROOT
+					num_provinces = 4
+					on_win = expedition_raid.1 #Successful raid
+					on_lose = expedition_raid.2 #Unfortunate raid
+					#on_cancel = expedition_raid.3 #?
+				}
+			}
+			hidden_effect = {
+				remove_targeted_decision = { target = FROM decision = raid_neighbor_initiate }
+				activate_targeted_decision = { target = FROM decision = raid_neighbor_in_progress }
+			}
+		}
+	}
+	raid_neighbor_in_progress = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { always = no } #Activated from effect
+		available = {
+			NOT = { has_border_war = yes }
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				state = var:FROM.attacker_state_vs_@ROOT
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				is_in_faction_with = FROM
+				has_war_with = FROM
+			}
+		}
+
+		fire_only_once = yes #Reactivation handled in effect
+		days_mission_timeout = 180
+
+		timeout_effect = { #inconclusive battle
+			cancel_border_war = {
+				dont_fire_events = no
+				attacker = var:FROM.attacker_state_vs_@ROOT
+				defender = var:FROM.defender_state_vs_@ROOT
+			}
+			hidden_effect = {
+				FROM = {
+					clear_variable = attacker_state_vs_@ROOT
+					clear_variable = defender_state_vs_@ROOT
+				}
+				clr_country_flag = preparing_raid
+				remove_targeted_decision = { target = FROM decision = raid_neighbor_in_progress }
+				activate_targeted_decision = { target = FROM decision = raid_neighbor_prepare }
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				clr_country_flag = preparing_raid
+				remove_targeted_decision = { target = FROM decision = raid_neighbor_in_progress }
+				activate_targeted_decision = { target = FROM decision = raid_neighbor_prepare }
+			}
+		}
+	}
+}

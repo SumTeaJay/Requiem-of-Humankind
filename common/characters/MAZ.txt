@@ -1,0 +1,16 @@
+characters = {
+	MAZ_Evgeniy_Primakov = {
+        name = MAZ_Evgeniy_Primakov
+		portraits = {
+			civilian = {
+				large = GFX_portrait_MAZ_Evgeniy_Primakov
+			}
+		}
+		country_leader = {
+			ideology = humanists_subideology
+			expire = "2090.1.1.1"
+			id = -1
+			desc = MAZ_Evgeniy_Primakov_desc
+		}
+	}
+}

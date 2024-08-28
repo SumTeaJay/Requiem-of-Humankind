@@ -1,0 +1,66 @@
+LWV_boji_perst = {
+	icon = saf_anti_colonialist_crusade
+	allowed = {
+		original_tag = LWV
+	}
+	visible = {
+		has_country_flag = reshenia_na_boji_perst		
+	}
+	priority = 85
+}
+
+LWV_holiness = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_holiness_picture
+	allowed = { original_tag = LWV }
+	visible_when_empty = yes
+	priority = 85
+	on_map_area = {
+		target_array = owned_states
+		target_trigger = { 
+			any_owned_state = {
+				NOT = { 
+					has_dynamic_modifier = { modifier = integrated_state_others } 
+				}
+			}
+		}
+		name = holiness_map_category
+		zoom = 150
+	}
+}
+
+LWV_unity_in_holiness = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_unity_in_holiness_picture
+	allowed = { original_tag = LWV }
+	visible = { has_country_flag = unity_in_holiness_unlocked }
+	visible_when_empty = yes
+	priority = 85
+}
+
+LWV_balance_of_power_category = {
+	icon = GFX_decision_category_power_struggle
+	
+	allowed = {
+		original_tag = LWV
+	}
+	
+	priority = 90
+	
+	visible = {
+		
+	}
+}
+LWV_war_in_the_shadows = {
+	icon = GFX_decision_category_power_struggle
+
+	allowed = {
+		original_tag = LWV
+	}
+
+	priority = 90
+
+	visible = {
+		has_country_flag = LWV_war_in_the_shadows_flag
+	}
+}

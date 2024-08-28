@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		TTL_days_of_blood = {
+			picture = days_of_blood
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				war_support_factor =0.2
+				army_core_defence_factor =0.05
+				political_power_factor = 0.05
+				monthly_population =-0.05
+			}
+		}
+	}
+}

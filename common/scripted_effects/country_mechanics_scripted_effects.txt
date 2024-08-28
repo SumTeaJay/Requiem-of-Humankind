@@ -1,0 +1,51 @@
+#ODS_consciousness
+calc_common_consciousness = {
+	clamp_variable = {
+		var = central_consciousness
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = state_consciousness
+		min = 0
+		max = 100
+	}
+	set_temp_variable = {
+		t_cc = common_consciousness
+	}
+	set_temp_variable = {
+		t = central_consciousness
+	}
+	add_to_temp_variable = {
+		common_consciousness = state_consciousness
+	}
+	divide_temp_variable = {
+		t = 2
+	}
+	set_variable = {
+		common_consciousness = t
+	}
+	divide_temp_variable = {
+		t = 15
+	}
+	divide_temp_variable = {
+		t_cc = 15
+	}
+	meta_effect = {
+		text = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = ODS_consciousness_idea_[N]
+					}
+				}
+				swap_ideas = {
+					remove_idea = ODS_consciousness_idea_[O]
+					add_idea = ODS_consciousness_idea_[N]
+				}
+			}
+		}
+		O = "[?t_cc|0]"
+		N = "[?t|0]"
+	}
+}

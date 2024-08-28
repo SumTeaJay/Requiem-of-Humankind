@@ -1,0 +1,20 @@
+unique_id = 04_roh_achievements_hard
+
+##############################
+#### List of achievements ####
+####    by Daniel_Letov   ####
+##############################
+
+roh_achievement_the_requiem_of_humankind = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = roh_achievement_the_requiem_of_humankind_tt
+			has_country_flag = roh_achievement_locker #<== Локер для того, чтобы ачивки нельзя было получить
+		}
+	}
+}

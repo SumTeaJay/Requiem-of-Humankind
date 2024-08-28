@@ -1,0 +1,21 @@
+ideas = {
+
+	country = {
+		CHU_the_seal_of_a_new_world = {			#Печать нового мира	
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				fuel_cost = 15
+				fuel_gain = -0.1
+				drift_defence_factor = -0.5
+				stability_factor = -0.15	
+				war_support_factor 	= -0.15			
+			}
+		}
+	}
+}

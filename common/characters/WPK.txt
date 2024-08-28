@@ -1,0 +1,16 @@
+characters = {
+	WPK_Regional_Parliament = {
+		name = WPK_Regional_Parliament
+		portraits={
+			civilian={
+				large="GFX_portrait_WPK_Regional_Parliament"
+			}
+		}
+		country_leader={
+			ideology=humanists_subideology
+			desc = WPK_Regional_Parliament_desc
+			id=-1
+			expire="2043.1.1.1"
+		}
+	}
+}

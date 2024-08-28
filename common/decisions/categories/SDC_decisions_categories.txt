@@ -1,0 +1,15 @@
+SDC_Chess_game = {
+    allowed = { original_tag = SDC }
+    visible = {
+        has_country_flag = chess_game_flag
+    }
+	priority = { base = 5 }	
+}
+SDC_payment = {
+    picture = GFX_payment_picture
+    allowed = { original_tag = SDC }
+    visible = {
+        has_country_flag = payment_flag
+    }
+	priority = { base = 5 }	
+}

@@ -1,0 +1,15 @@
+characters = {
+	OZE_avraam_loskutov = {
+		portraits={
+			civilian={
+				large="gfx/leaders/OZE/avraaam.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = OZE_avraam_loskutov_DESC
+		}
+	}	
+}

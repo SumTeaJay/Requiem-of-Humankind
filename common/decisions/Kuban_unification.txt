@@ -1,0 +1,59 @@
+Kuban_unification = {
+	STW_unification = {
+		visible = { original_tag = STW }
+		available = { 
+			original_tag = STW
+			has_completed_focus = STW_rostov_father
+		}
+		cost = 0
+		priority = 10
+		fire_only_once = yes
+		complete_effect = {
+			STW = {
+				set_cosmetic_tag = STW_south_central
+			}
+			set_capital = {
+				state = 218
+				remember_old_capital = no
+			}
+		}
+	}
+	KUH_unification = {
+		visible = { original_tag = KUH }
+		available = { 
+			original_tag = KUH
+			has_completed_focus = KUH_new_parish
+		} 
+		cost = 0
+		priority = 10
+		fire_only_once = yes
+		complete_effect = {
+			KUH = {
+				set_cosmetic_tag = KUH_south_apostle
+			}
+			set_capital = {
+				state = 218
+				remember_old_capital = no
+			}
+		}
+	}
+	FSR_unification = {
+		visible = { original_tag = FSR }
+		available = { 
+			original_tag = FSR
+			has_completed_focus = FSR_kuban_problem
+		}
+		cost = 0
+		priority = 10
+		fire_only_once = yes
+		complete_effect = {
+			FSR = {
+				set_cosmetic_tag = FSR_kuban_federation
+			}
+			set_capital = {
+				state = 218
+				remember_old_capital = no
+			}
+		}
+	}
+}

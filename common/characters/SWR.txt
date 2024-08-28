@@ -1,0 +1,15 @@
+characters = {
+	SWR_velimud_korneplod = {
+		portraits={
+			civilian={
+				large="gfx/leaders/SWR/velimud_korneplod.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = SWR_velimud_korneplod_desc
+		}
+	}
+}

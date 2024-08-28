@@ -1,0 +1,232 @@
+focus_tree = {
+	id = STW_focus
+	country = {
+		factor = 0
+		modifier = {
+            add = 100
+            tag = STW
+        }
+	}
+	default = no
+
+	focus = {
+		id = STW_big_meeting
+		icon = GFX_STW_big_meeting
+		cost = 3.00
+		x = 2
+		y = 0
+		ai_will_do = { factor = 10 }
+		completion_reward = {
+			add_political_power = 70
+		}
+	}
+	focus = {
+		id = STW_solve_problems
+		icon = GFX_STW_solve_problems
+		cost = 3.00
+		x = 2
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_big_meeting }
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+		}
+	}
+	focus = {
+		id = STW_racket
+		icon = GFX_STW_racket
+		cost = 3.00
+		x = 0
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_solve_problems }
+		completion_reward = {
+			846 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+   					 type = industrial_complex
+    					level = 1
+    					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = STW_gather_brothers
+		icon = GFX_STW_gather_brothers
+		cost = 3.00
+		x = 2
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_solve_problems }
+		completion_reward = {
+			add_manpower = 3000
+		}
+	}
+	focus = {
+		id = STW_trellis_workshop
+		icon = GFX_STW_trellis_workshop
+		cost = 3.00
+		x = 4
+		y = 2
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_solve_problems }
+		completion_reward = {
+			850 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = STW_become_people
+		icon = GFX_STW_become_people
+		cost = 3.00
+		x = 2
+		y = 3
+		ai_will_do = { factor = 10 }
+		available = {
+			custom_trigger_tooltip = {
+  				tooltip = kuban_crisis_tt
+				NOT = {
+					has_global_flag = kuban_crisis
+				}
+			}
+		}
+		prerequisite = {
+			focus = STW_racket
+			focus = STW_gather_brothers
+			focus = STW_trellis_workshop
+		}
+		will_lead_to_war_with = FSR
+		will_lead_to_war_with = KUH
+		completion_reward = {
+			news_event = super.2
+			set_global_flag = kuban_crisis
+			declare_war_on = {
+				target = FSR
+				type = annex_everything	
+			}
+			declare_war_on = {
+				target = KUH
+				type = annex_everything	
+			}
+			KUH = {
+				declare_war_on = {
+					target = FSR
+					type = annex_everything	
+				}
+			}
+		}
+	}
+	focus = {
+		id = STW_rostov_father
+		icon = GFX_STW_rostov_father
+		cost = 3.00
+		x = 8
+		y = 0
+		ai_will_do = { factor = 10 }
+		available = {
+			has_war = no
+			NOT = {
+				country_exists = KUH
+				country_exists = FSR
+			}
+		}
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 100
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 500
+			}
+		}
+	}
+	focus = {
+		id = STW_mine 
+		icon = GFX_STW_mine
+		cost = 3.00
+		x = 6
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_rostov_father }
+		completion_reward = {
+			add_ideas = STW_mine_idea
+			unlock_decision_category_tooltip = expansion_category
+			set_country_flag = end_of_phase_two
+		}
+	}
+	focus = {
+		id = STW_organize_raid
+		icon = GFX_STW_organize_raid
+		cost = 3.00
+		x = 8
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_rostov_father }
+		completion_reward = {
+			create_wargoal = {
+				type = annex_everything
+				target = ECD
+			}
+		}
+	}
+	focus = {
+		id = STW_common_fund
+		icon = GFX_STW_common_fund
+		cost = 3.00
+		x = 10
+		y = 1
+		ai_will_do = { factor = 10 }
+		prerequisite = { focus = STW_rostov_father }
+		completion_reward = {
+			234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			234 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			850 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+
+			218 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}

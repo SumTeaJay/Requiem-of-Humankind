@@ -1,0 +1,159 @@
+ideas = {
+
+	country = {
+		IMP_winners_of_the_first_central_Russian = {
+			picture = winners_of_the_first_central_Russian
+			modifier = {
+				army_attack_factor = 0.02
+				army_defence_factor = 0.02
+				monthly_population = -0.1
+				experience_gain_army_factor = 0.02
+			}
+		}
+		IMP_winners_of_the_first_central_Russian_1 = {
+			picture = winners_of_the_first_central_Russian
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				monthly_population = -0.1
+				experience_gain_army_factor = 0.03
+			}
+		}
+		IMP_winners_of_the_first_central_Russian_2 = {
+			picture = winners_of_the_first_central_Russian
+			modifier = {
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+				monthly_population = -0.05
+				experience_gain_army_factor = 0.03
+			}
+		}
+		IMP_splinter_administration = {
+			picture = splinter_administration
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.1
+				political_power_gain = -1.0
+			}
+		}
+		IMP_splinter_administration_1 = {
+			picture = splinter_administration
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				political_power_gain = -1.0
+			}
+		}
+		IMP_splinter_administration_2 = {
+			picture = splinter_administration
+			modifier = {
+				war_support_factor = -0.15
+				stability_factor = -0.15
+				political_power_gain = -0.5
+			}
+		}
+		IMP_annoying_mistake = {
+			picture = Generic
+			allowed = {
+				has_war_with = ARM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = 0.3
+				initiative_factor = 0.2
+				army_speed_factor = 0.2
+				offence = 0.15
+				defence = 0.15
+				war_support_factor = 0.6
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+		}
+		IMP_second_central_russian_war_idea = {
+			picture = Generic
+			allowed = {
+				has_war_with = ARM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.1
+				initiative_factor = 0.05
+				army_speed_factor = -0.05
+				offence = 0.05
+				defence = 0.05
+				war_support_factor = -0.2
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = 0.1
+				defense_bonus_against = -0.1
+			}
+		}
+		IMP_desparate_situation = {
+			picture = Generic
+			allowed = {
+				has_war_with = ARM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.3
+				initiative_factor = -0.2
+				army_speed_factor = -0.2
+				offence = -0.15
+				defence = -0.15
+				war_support_factor = -0.6
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = -0.5
+				defense_bonus_against = -0.5
+			}
+		}
+		IMP_in_ring_of_enemies = {
+			picture = Generic
+			allowed = {
+				has_war_with = ARM
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				army_org_factor = -0.5
+				initiative_factor = -0.4
+				army_speed_factor = -0.4
+				offence = -0.25
+				defence = -0.25
+				war_support_factor = -0.9
+			}
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = -0.7
+				defense_bonus_against = -0.7
+			}
+		}
+	}
+	hidden_ideas = {
+		IMP_Onufrenko_attack = {
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = ARM
+				attack_bonus_against = 0.5
+				defense_bonus_against = 0.5
+			}
+		}
+	}
+}

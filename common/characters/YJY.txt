@@ -1,0 +1,16 @@
+characters = {
+	YJY_Sovet_karavanov = {
+		name = YJY_Sovet_karavanov
+		portraits={
+			civilian={
+				large="gfx/leaders/YJY/Sovet_karavanov.dds"
+			}
+		}
+		country_leader={
+			ideology=chthonism_subideology
+			desc = YJY_Sovet_karavanov_desc
+			expire="2965.1.1.1"
+			id=-1
+		}
+	}
+}

@@ -1,0 +1,19 @@
+characters = {
+	BTC_iohan_mil = {
+		name = BTC_iohan_mil
+		portraits={
+			civilian={
+				large="gfx/leaders/BTC/iohan_mil.dds"
+			}
+		}
+		country_leader={
+			ideology=free_people_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = BTC_iohan_mil_DESC
+			traits = { 
+				pribalt_nazi 
+			}
+		}
+	}	
+}

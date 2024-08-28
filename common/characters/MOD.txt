@@ -1,0 +1,15 @@
+characters = {
+	MOD_igor_satkov = {
+		portraits={
+			civilian={
+				large="gfx/leaders/MOD/igor_satkov.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = MOD_igor_satkov_desc
+		}
+	}
+}

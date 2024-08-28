@@ -1,0 +1,24 @@
+defined_text = {
+    name = AGE_baltic_separatism_end
+    text = {
+        trigger = {
+            NOT = {
+                has_country_flag = still_their_land_flag
+                has_country_flag = not_their_land_anymore_flag
+            }
+        }
+        localization_key = AGE_baltic_separatism_end_no
+    }
+    text = {
+        trigger = {
+                has_country_flag = still_their_land_flag
+        }
+        localization_key = AGE_baltic_separatism_end_peace
+    }
+    text = {
+        trigger = {
+                has_country_flag = not_their_land_anymore_flag
+        }
+        localization_key = AGE_baltic_separatism_end_slavic
+    }
+}

@@ -1,0 +1,25 @@
+ideas = {
+
+	country = {
+		SBT_syndrome_it = {	
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = 0.1
+				defence = 0.1
+				production_speed_buildings_factor = 0.1
+				stability_factor = -0.3
+				war_support_factor = -0.1
+			}
+		}
+	}
+}

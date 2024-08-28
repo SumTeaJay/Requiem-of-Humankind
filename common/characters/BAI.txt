@@ -1,0 +1,17 @@
+characters = {
+	BAI_pasha = {
+		name = BAI_pasha
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/BAI/BAI_pasha.dds" #REPLACE TO SPRITE!
+			}
+		}
+		country_leader = {
+			desc = "BAI_pasha_desc" #use standart keys pls
+			ideology = militarists_subideology
+			traits = {}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+	}
+}

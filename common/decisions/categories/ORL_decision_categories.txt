@@ -1,0 +1,36 @@
+volga_war = {
+	icon = saf_anti_colonialist_crusade
+	picture = GFX_volga_war_picture
+	visible_when_empty = yes
+	visible  = {
+		NAR = { exists = yes }
+		SMK = { exists = yes }
+	}
+	allowed = {
+		OR = {
+			original_tag = ORL
+			original_tag = VOF
+			original_tag = VOU
+			original_tag = MUC
+			original_tag = NOR
+			original_tag = COR
+			original_tag = BSO
+			original_tag = PIR
+			original_tag = IMP
+			original_tag = SMX
+			original_tag = SBT
+			original_tag = VLC
+			original_tag = MAZ
+			original_tag = TAB
+			original_tag = RIK
+			original_tag = MSH
+			original_tag = BGR
+			original_tag = KMN
+			original_tag = MKS
+			original_tag = MAD
+		}
+	}
+	priority = {
+		base = 5
+	}
+}

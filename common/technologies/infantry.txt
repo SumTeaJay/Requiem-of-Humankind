@@ -1,0 +1,1239 @@
+technologies = {
+
+	@2010 = -1
+	@2020 = 5
+	@2025 = 10
+	@2030 = 15
+	@2035 = 20
+	@2040 = 25
+	@2045 = 30
+	@2050 = 35
+
+	infantry_weapons = {
+
+		enable_equipments = {
+			infantry_equipment_0
+		}
+
+		enable_subunits = {
+			light_infantry
+		}
+		enable_subunits = {
+			rhbz
+		}
+		enable_subunits = {
+			infantry
+		}
+		enable_subunits = {
+			light_infantry
+		}
+		enable_subunits = {
+			rcbd_troop
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons1
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = civilian_clothing
+			research_cost_coeff = 1
+		}	
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2010 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_weapons1 = {
+
+		enable_equipments = {
+			infantry_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = infantry_weapons2
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2020 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	infantry_weapons2 = {
+
+		enable_equipments = {
+			infantry_equipment_2
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = extended_store
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2025 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	extended_store = {
+		category_army = {
+			supply_consumption = -0.05
+		}
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @2025 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	infantry_weapons3 = {
+
+		enable_equipments = {
+			infantry_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = vibronite_muzzle
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	vibronite_muzzle = {
+		category_army = {
+			supply_consumption = -0.05
+		}
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @2030 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+		
+	infantry_weapons4 = {
+
+		enable_equipments = {
+			infantry_equipment_4
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = projectile_acceleration_system
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2035 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	projectile_acceleration_system = {
+		category_army = {
+			supply_consumption = -0.05
+			soft_attack = 0.05
+			ap_attack = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = @2035 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	
+	infantry_weapons5 = {
+
+		enable_equipments = {
+			infantry_equipment_5
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = ebrihalc_forend
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = nanogel_stores
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2040 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ebrihalc_forend = {
+
+		
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 26 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	nanogel_stores = {
+		category_army = {
+			soft_attack = 0.05
+			ap_attack = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+	
+	infantry_weapons6 = {
+
+		enable_equipments = {
+			infantry_equipment_6
+		}
+		
+		path = {
+			leads_to_tech = infantry_weapons7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = curbing_the_Tulip_anomaly
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = plasma_battery
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2045 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	curbing_the_Tulip_anomaly = {
+		category_army = {
+			soft_attack = 0.1
+		}				
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 31 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	plasma_battery = {
+		category_army = {
+			supply_consumption = -0.01
+		}
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 29 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+	
+	
+	infantry_weapons7 = {
+
+		enable_equipments = {
+			infantry_equipment_7
+		}
+		
+		path = {
+			leads_to_tech = plasma_quantization
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = MSWU_Conquest
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = -2 y = @2050 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	plasma_quantization = {
+		category_army = {
+			supply_consumption = -0.01
+		}
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	MSWU_Conquest = {
+		category_army = {
+			soft_attack = 0.15
+			hard_attack = 0.15
+		}
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = 0 y = 36 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+		
+		
+	civilian_clothing = {
+
+		enable_equipments = {
+			infantry_odejda_0
+		}
+		
+		path = {
+			leads_to_tech = old_world_uniforms
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2010 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	old_world_uniforms = {
+
+		enable_equipments = {
+			infantry_odejda_1
+		}
+				
+		path = {
+			leads_to_tech = local_uniform
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2020 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+		
+	local_uniform = {
+
+		enable_equipments = {
+			infantry_odejda_2
+		}
+		
+		path = {
+			leads_to_tech = modern_equipment
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = anti_radin_cloaks
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2025 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	anti_radin_cloaks = {
+		light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		rhbz = {
+			soft_attack = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @2025 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	modern_equipment = {
+
+		enable_equipments = {
+			infantry_odejda_3
+		}
+		
+		path = {
+			leads_to_tech = modular_equipment
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = life_support_systems
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2030 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	life_support_systems = {
+		light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		light_infantry = {
+			soft_attack = 0.05
+		}
+		
+		rhbz = {
+			soft_attack = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @2030 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+		
+	modular_equipment = {
+
+		enable_equipments = {
+			infantry_odejda_4
+		}
+		
+		path = {
+			leads_to_tech = heavy_equipment
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = integrated_communication_systems
+			research_cost_coeff = 1
+		}		
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2035 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	integrated_communication_systems = {
+		light_infantry = {
+			soft_attack = 0.1
+		}
+		light_infantry = {
+			soft_attack = 0.1
+		}		
+		rhbz = {
+			soft_attack = 0.1
+		}
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = @2035 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}	
+	
+	
+	heavy_equipment = {
+
+		enable_equipments = {
+			infantry_odejda_5
+		}
+		
+		path = {
+			leads_to_tech = universal_equipment
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = psi_protectors
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = chimerite_plates
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2040 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	psi_protectors = {
+		light_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		light_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		rhbz = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		land_night_attack = 0.15	
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 24 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	chimerite_plates = {
+		light_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		light_infantry = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		rhbz = {
+			hard_attack = 0.25
+			ap_attack = 1
+		}
+		
+		land_night_attack = 0.15
+		
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 26 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+	
+	universal_equipment = {
+
+		enable_equipments = {
+			infantry_odejda_6
+		}
+		
+		path = {
+			leads_to_tech = sacredness_class_outfit
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = neural_stimulators
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = tafite_injectors
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2045 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	neural_stimulators = {
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		rhbz = {
+			defense = 0.05
+			breakthrough = 0.05
+		}							
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 29 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	tafite_injectors = {
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		rhbz = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2045
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 31 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+	
+	
+	sacredness_class_outfit = {
+
+		enable_equipments = {
+			infantry_odejda_7
+		}
+		
+		path = {
+			leads_to_tech = advanced_life_support_systems
+			research_cost_coeff = 1
+		}		
+		path = {
+			leads_to_tech = fear_suppressors
+			research_cost_coeff = 1
+		}		
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2050 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	advanced_life_support_systems = {
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		rhbz = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 34 }
+		}
+		
+		categories = {
+			infantry_weapons
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}		
+	fear_suppressors = {
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		light_infantry = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		rhbz = {
+			defense = 0.05
+			breakthrough = 0.05
+		}
+		research_cost = 1.5
+		start_year = 2050
+		folder = {
+			name = infantry_folder
+			position = { x = 4 y = 36 }
+		}
+		
+		categories = {
+			infantry_clothing
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}			
+		
+
+	#Ветка грузовиков (самая нижняя)
+	
+	motorised_infantry = {
+
+		enable_subunits = {
+			motopechotanagruzovikah
+		}
+
+		enable_equipments = {
+			motorized_equipment_1
+		}
+				
+		path = {
+			leads_to_tech = motorised_infantry2
+			research_cost_coeff = 1
+		}
+
+
+		research_cost = 1.5
+		start_year = 2010
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2010 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+
+	motorised_infantry2 = {
+
+		enable_equipments = {
+			motorized_equipment_2
+		}
+		path = {
+			leads_to_tech = infantry_fighting_vehicle_1
+			research_cost_coeff = 1
+		}		
+		
+		path = {
+			leads_to_tech = motorised_infantry3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2020
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2020 }
+		}
+		
+		
+
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1		
+			
+		}
+	}
+	
+	
+	motorised_infantry3 = {
+
+
+		enable_equipments = {
+			motorized_equipment_3
+		}
+		
+		path = {
+			leads_to_tech = motorised_infantry4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2025 }
+		}
+		
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+	
+	
+	motorised_infantry4 = {
+
+
+		enable_equipments = {
+			motorized_equipment_4
+		}
+
+		path = {
+			leads_to_tech = motorised_infantry5
+			research_cost_coeff = 1
+		}	
+		
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2030 }
+		}
+		
+
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1					
+		}
+	}
+	
+	motorised_infantry5 = {
+
+
+		enable_equipments = {
+			motorized_equipment_5
+		}
+		
+		research_cost = 1.5
+		start_year = 2040
+		folder = {
+			name = infantry_folder
+			position = { x = 2 y = @2040 }
+		}
+		
+
+		categories = {
+			motorized_equipment
+			infantry_tech
+		}
+		
+		ai_will_do = {
+			factor = 1					
+		}
+	}
+	
+	
+	infantry_fighting_vehicle_1 = {
+
+		enable_equipments = {
+			infantry_fighting_vehicle_1_equipment
+		}
+		enable_subunits = {
+			motopechotanabtr
+		}
+		path = {
+			leads_to_tech = infantry_fighting_vehicle_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+		start_year = 2025
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @2025 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1
+			
+		}
+	}
+
+	infantry_fighting_vehicle_2 = {
+		enable_equipments = {
+			infantry_fighting_vehicle_2_equipment
+		}
+		path = {
+			leads_to_tech = infantry_fighting_vehicle_3
+			research_cost_coeff = 1
+		}
+					
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @2030 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+
+	infantry_fighting_vehicle_3 = {
+		enable_equipments = {
+			infantry_fighting_vehicle_3_equipment
+		}		
+		path = {
+			leads_to_tech = infantry_fighting_vehicle_4
+			research_cost_coeff = 1
+		}
+					
+
+		research_cost = 1.5
+		start_year = 2035
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = @2035 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+
+	infantry_fighting_vehicle_4 = {
+		enable_equipments = {
+			infantry_fighting_vehicle_4_equipment
+		}		
+
+		research_cost = 1.5
+		start_year = 2030
+		folder = {
+			name = infantry_folder
+			position = { x = 6 y = 25 }
+		}
+		
+		categories = {
+			motorized_equipment
+			armor
+			cat_armored_cars
+		}
+		
+		ai_will_do = {
+			factor = 1	
+		}
+	}
+}

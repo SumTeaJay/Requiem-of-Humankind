@@ -1,0 +1,17 @@
+characters={
+	COR_Vremenniy_Sovet={
+		name=COR_Vremenniy_Sovet
+		portraits={
+			civilian={
+				large="gfx/leaders/BRA/Vremenniy_Sovet.dds"
+			}
+		}
+		
+		country_leader={
+			ideology=humanists_subideology
+			expire="3333.1.1.1"
+			id=2
+			desc = Vremenniy_Sovet_desk
+		}
+	}
+}

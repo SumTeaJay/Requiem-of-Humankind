@@ -1,0 +1,16 @@
+characters = {
+	BAG_taruvan = {
+		name = BAG_taruvan
+		portraits={
+			civilian={
+				large="gfx/leaders/BAG/taruvan.dds"
+			}
+		}
+		country_leader={
+			ideology=sacraments_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = BAG_taruvan_desc
+		}
+	}
+}

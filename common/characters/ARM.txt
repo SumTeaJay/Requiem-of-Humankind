@@ -1,0 +1,100 @@
+characters = {
+	ARM_Yuriy_Podolika = {
+		portraits={
+			civilian={
+				large="gfx/leaders/ARM/Yuriy_Podolika.dds"
+			}
+		}
+		country_leader={
+			ideology=statesmen_subideology 
+			expire="3333.1.1.1"
+			id=-1
+			desc = POLITICS_Yuriy_Podolika_DESC
+		}
+	}
+	ARM_michael_onufrenko = {
+		portraits={
+			army={
+				large = GFX_portrait_ARM_Onufrenko
+			}
+			civilian={
+				large = GFX_portrait_ARM_Onufrenko
+			}
+		}
+		field_marshal = {
+			skill = 1
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		country_leader={
+			ideology=militarists_subideology
+			expire="3333.1.1.1"
+			id=-1
+			desc = ARM_michael_onufrenko_desc
+		}
+	}
+	ARM_eduard_varfolomeev = {
+		portraits={
+			army={
+				large="gfx/leaders/ARM/eduard_varfolomeev.dds"
+			}
+		}
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+	ARM_roman_morozov = {
+		portraits={
+			army={
+				large="gfx/leaders/ARM/roman_morozov.dds"
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+		}
+	}	
+	ARM_anatoly_mikhailov = {
+		portraits={
+			army={
+				large="gfx/leaders/ARM/anatoly_mikhailov.dds"
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	ARM_Pavlik_Morozov = {
+		portraits={
+			army={
+				large= GFX_portrait_ARM_Pavlik_Morozov
+			}
+		}
+	}
+	CAR_Pavlik_Morozov = {
+		portraits={
+			army={
+				large= GFX_portrait_ARM_Pavlik_Morozov
+			}
+		}
+		country_leader={
+			ideology=statesmen_subideology
+			expire="3333.1.1.1"
+			id=-1
+			desc = CAR_Pavlik_Morozov_desc
+		}
+	}
+}

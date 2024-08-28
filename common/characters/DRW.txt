@@ -1,0 +1,16 @@
+characters = {
+	DRW_Mikhail_Khamikov = {
+		name = DRW_Mikhail_Khamikov
+		portraits={
+			civilian={
+				large="gfx/leaders/DRW/Mikhail_Khamikov.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			desc = DRW_Mikhail_Khamikov_desc
+			expire="2965.1.1.1"
+			id=-1
+		}
+	}
+}

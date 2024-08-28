@@ -1,0 +1,16 @@
+ideas = {
+
+	country = {
+		SMK_false_messiah = {		#Ложный мессия
+			modifier = {
+				monthly_population = -0.25
+				surrender_limit = -0.05
+				offensive_war_stability_factor = -0.15
+				defensive_war_stability_factor = -0.15
+				war_support_weekly = -0.001
+				stability_weekly_factor = -0.001
+				
+			}
+		}
+	}
+}

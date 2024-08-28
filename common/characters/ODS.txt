@@ -1,0 +1,130 @@
+characters = {
+	ODS_Yehor_Nikitin={
+		name = Yehor_Nikitin
+		portraits = {
+			army = {
+				large = GFX_portrait_ODS_Egor_Nikitin
+			}
+			civilian = {
+				large = GFX_portrait_ODS_Egor_Nikitin
+			}
+		}
+		field_marshal={
+			skill = 5
+			attack_skill = 3
+			defense_skill = 5
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 1
+		}
+		country_leader = {
+			ideology = conception_subideology
+			expire = "2090.1.1.1"
+			id = -1
+			desc = Yehor_Nikitin_desc
+		}
+	}
+	ODS_Vladislav_Vasserman = {
+		name = ODS_Vladislav_Vasserman
+		portraits = {
+			army = {
+				large = GFX_portrait_ODS_Vladislav_Vasserman
+			}
+		}	
+		corps_commander = {
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 3
+			logistics_skill = 1
+			legacy_id = 2
+		}
+	}
+	ODS_Artem_Chigirov = {
+		name = ODS_Artem_Chigirov
+		portraits = {
+			army = {
+				large = GFX_portrait_ODS_Artem_Chigirov
+			}
+		}	
+		corps_commander={
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 3
+			legacy_id = 3
+		}
+	}
+	ODS_Vitalyi_Stoyanov = {
+		name = ODS_Vitalyi_Stoyanov
+		portraits = {
+			army = {
+				large = GFX_portrait_ODS_Vitalyi_Stoyanov
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 0
+			logistics_skill = 1
+			legacy_id = 4
+		}
+	}
+	ODS_Roman_Xan = {
+		name = ODS_Roman_Xan
+		portraits = {
+			army = {
+				large = GFX_portrait_ODS_Roman_Xan
+			}
+		}
+		corps_commander = {
+			skill = 4
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 2
+			legacy_id = 5
+		}
+	}
+	CRI_Audit_of_exploitation = {
+		name = CRI_Audit_of_exploitation
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ODS_Audit_of_exploitation
+			}
+		}
+		country_leader = {
+			ideology = conception_subideology
+			expire = "2090.1.1.1"
+			id = -1
+		}				
+	}
+	KUB_Audit_of_exploitation = {
+		name = KUB_Audit_of_exploitation
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ODS_Audit_of_exploitation
+			}
+		}
+		country_leader = {
+			ideology = conception_subideology
+			expire = "2090.1.1.1"
+			id = -1
+		}				
+	}
+	HER_Audit_of_exploitation = {
+		name = HER_Audit_of_exploitation
+		portraits = {
+			civilian = {
+				large = GFX_portrait_ODS_Audit_of_exploitation
+			}
+		}
+		country_leader = {
+			ideology = conception_subideology
+			expire = "2090.1.1.1"
+			id = -1
+		}				
+	}
+}

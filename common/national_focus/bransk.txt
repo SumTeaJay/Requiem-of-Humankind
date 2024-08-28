@@ -1,0 +1,323 @@
+﻿focus_tree = {
+	id = IMP_phase_one_skeleton
+	
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = IMP
+		}
+	}
+	default = no
+
+	focus = {
+		id = IMP_risen_from_the_ashes
+		icon = GFX_risen_from_the_ashes
+		x = 6
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_command_power = 15
+			add_stability = 0.05
+			add_war_support = 0.03
+			country_event = IMP_phase_one.1
+		}
+		
+	}
+	focus = {
+		id = IMP_Order_inside
+		icon = GFX_Average_Russian_guys
+		prerequisite = { focus = IMP_risen_from_the_ashes }
+		x = 6
+		y = 1
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IMP_splinter_administration
+				add_idea = IMP_splinter_administration_1
+			}
+			country_event = IMP_phase_one.3
+		}
+		
+	}
+	focus = {
+		id = IMP_check_army
+		icon = GFX_check_army
+		prerequisite = { focus = IMP_Order_inside }
+		x = 5
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = statesmen
+				popularity = -0.1
+			}
+			army_experience = -5
+			add_manpower = -1263
+		}
+		
+	}
+	focus = {
+		id = IMP_check_workers
+		icon = GFX_check_workers
+		prerequisite = { focus = IMP_Order_inside }
+		x = 7
+		y = 2
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = statesmen
+				popularity = -0.07
+			}
+			add_manpower = -456
+			swap_ideas = {
+				remove_idea = ignore_social
+				add_idea = suppression_social
+			}
+			country_event = IMP_phase_one.2
+		}
+		
+	}
+	focus = {
+		id = IMP_clean_up
+		icon = GFX_The_Republic_must_fall
+		prerequisite = { focus = IMP_check_workers }
+		prerequisite = { focus = IMP_check_army }
+		x = 6
+		y = 3
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_popularity = {
+				ideology = militarists
+				popularity = -0.02
+			}		
+			add_popularity = {
+				ideology = bandits
+				popularity = -0.05
+			}	
+			BSO = {
+				add_popularity = {
+					ideology = statesmen
+					popularity = -0.1
+				}				
+			}
+		}
+		
+	}
+	focus = {
+		id = IMP_forward_to_the_future
+		icon = GFX_Order_inside
+		prerequisite = { focus = IMP_clean_up }
+		x = 6
+		y = 4
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IMP_splinter_administration_1
+				add_idea = IMP_splinter_administration_2
+			}		
+			add_political_power = 50
+			add_stability = 0.05	
+		}
+		
+	}
+	focus = {
+		id = IMP_improve_infrastructure
+		icon = GFX_New_Logistics
+		prerequisite = { focus = IMP_forward_to_the_future }
+		x = 6
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			895 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		
+	}
+	focus = {
+		id = IMP_make_the_workers_happy
+		icon = GFX_Kuzni
+		prerequisite = { focus = IMP_forward_to_the_future }
+		x = 9
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = hired_labor
+				add_idea = mixed_labour
+			}
+		}
+		
+	}
+	focus = {
+		id = IMP_blaze_of_war
+		icon = GFX_The_Perfect_Blitzkrieg
+		prerequisite = { focus = IMP_make_the_workers_happy }
+		prerequisite = { focus = IMP_improve_infrastructure }
+		prerequisite = { focus = IMP_accept_refugees }
+		x = 6
+		y = 6
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 5
+			air_experience = 5
+			country_event = IMP_phase_one.5
+		}
+		
+	}
+	focus = {
+		id = IMP_accept_refugees
+		icon = GFX_Our_Humanity
+		prerequisite = { focus = IMP_forward_to_the_future }
+		x = 3
+		y = 5
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			895 = { add_manpower = 2000 }
+			country_event = IMP_phase_one.4
+		}
+		
+	}
+	focus = {
+		id = IMP_The_Republic_must_fall
+		icon = GFX_The_Army_That_Will_Be_Great
+		prerequisite = { focus = IMP_blaze_of_war }
+		prerequisite = { focus = IMP_clean_up }
+		x = 6
+		y = 7
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			unlock_decision_category_tooltip = IMP_war
+		}
+		
+	}
+	focus = {
+		id = IMP_Iron_Officers
+		icon = GFX_Iron_Officers
+		prerequisite = { focus = IMP_The_Republic_must_fall }
+		x = 6
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			unlock_decision_tooltip = IMP_train_soldier
+		}
+		
+	}
+	focus = {
+		id = IMP_scorched_earth
+		icon = GFX_Blow_up_traitors_houses
+		prerequisite = { focus = IMP_The_Republic_must_fall }
+		x = 4
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			unlock_decision_tooltip = IMP_scorshed_earth
+			country_event = IMP_phase_one.6
+		}
+		
+	}
+	focus = {
+		id = IMP_The_Perfect_Blitzkrieg
+		icon = GFX_In_the_Heat_of_War
+		prerequisite = { focus = IMP_The_Republic_must_fall }
+		x = 8
+		y = 8
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = IMP_winners_of_the_first_central_Russian
+				add_idea = IMP_winners_of_the_first_central_Russian_1
+			}
+			country_event = IMP_phase_one.7
+		}
+		
+	}
+	focus = {
+		id = IMP_we_are_invincible
+		icon = GFX_The_Power_of_the_Guard
+		prerequisite = { focus = IMP_Iron_Officers }
+		prerequisite = { focus = IMP_scorched_earth }
+		prerequisite = { focus = IMP_The_Perfect_Blitzkrieg }
+		x = 6
+		y = 9
+		cost = 5
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_command_power = 10
+			add_political_power = 50
+			swap_ideas = {
+				remove_idea = IMP_winners_of_the_first_central_Russian_1
+				add_idea = IMP_winners_of_the_first_central_Russian_2
+			}
+			country_event = IMP_phase_one.8
+		}
+		
+	}
+}
+	

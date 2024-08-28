@@ -1,0 +1,93 @@
+opinion_modifiers = {
+	
+	accepted_refugees = {
+		value = -50
+	}
+	returned_refugees = {
+		value = 25
+	}
+	endless_hatred = {
+		value = -100
+	}
+	ARM_fanatics = {
+		value = -100
+	}
+	ARM_traitors = {
+		value = -100
+	}
+	ARM_hatred = {
+		value = -100
+	}
+	non_belivers = {
+		value = -100
+	}
+	crazy_millitarists = {
+		value = -100
+	}
+	archenemy = {
+		value = -100
+	}
+	traitors = {
+		value = -50
+	}
+	interference = {
+		value = -25
+	}
+	oppressors = {
+		value = -100
+	}
+	help = {
+		value = 15
+	}
+	mutual_respect = {
+		value = 25
+	}
+	ORL_battle_brothers = {
+		value = 100
+	}
+	ORL_sectarians = {
+		value = -100
+	}
+	ORL_traitors = {
+		value = -100
+	}
+	ORL_idiots_and_idealists = {
+		value = -100
+	}
+	ORL_faithless = {
+		value = -100
+	}
+	ORL_madmans = {
+		value = -100
+	}
+	american_interventionists = {
+		value = -200
+	}
+	brother_in_arms = {
+		value = 25
+	}
+	warlords = {
+		value = -30
+	}
+	criminal = {
+		value = -100
+	}
+	forced_union = {
+		value = 100
+	}
+	hucksters = {
+		value = -100
+	}
+	bandit_conflicts = {
+		value = -100
+	}
+	faithless = {
+		value = -100
+	}
+	villiums = {
+		value = -100
+	}
+	separatists = {
+		value = -100
+	}
+}

@@ -1,0 +1,1608 @@
+# ╔╗╔╗╔══╗╔══╗───╔══╗╔══╗─╔══╗╔═══╗╔══╗─╔══╗─╔╗──╔╗
+# ║║║║╚═╗║║╔═╝───║╔═╝║╔╗║─║╔╗║║╔══╝║╔╗║─║╔╗║─║║──║║
+# ║║║║──║╚╝║─────║║──║╚╝╚╗║║║║║╚══╗║║║║─║║║║─║╚══╣║
+# ║║╔║──║╔╗║─────║║──║╔═╗║║║║║║╔═╗║║║║║─║║║║─║╔═╗║║
+# ║╚╝║╔═╝║║╚═╗───║╚═╗║╚═╝║║╚╝║║╚═╝║║╚╝║╔╝╚╝╚╗║╚═╝║║
+# ╚══╝╚══╝╚══╝───╚══╝╚═══╝╚══╝╚═══╝╚══╝╚════╝╚═══╩╝
+AGE_their_freedoms = {
+	AGE_conduct_full_scale_raid_1_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			FROM = {
+				is_owned_by = AGE
+				has_dynamic_modifier = { modifier = open_opposition }
+			}
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}			
+		}
+		visible = {
+			FROM = {
+				is_owned_by = AGE
+				has_dynamic_modifier = { modifier = open_opposition }
+			}	
+			has_country_flag = not_their_land_anymore_flag			
+		}
+		target_array = AGE.owned_states
+		state_target = yes
+		cost = 40
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = open_opposition }
+				add_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			army_experience = 5
+			add_to_variable = { var_terrorist_attack = -2 tooltip = var_terrorist_attack_minus_2_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 10 tooltip = var_preventing_terrorist_attack_plus_10_tt }
+		}
+	}
+	AGE_finish_the_survivors_1_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			FROM = {
+				is_owned_by = AGE
+				has_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}			
+		}
+		visible = {
+			FROM = {
+				is_owned_by = AGE
+				has_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			has_country_flag = not_their_land_anymore_flag
+		}
+		target_array = AGE.owned_states
+		state_target = yes
+		cost = 20
+		days_remove = 50
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = clandestine_cells }
+				add_dynamic_modifier = { modifier = resistance_completely_eradicated }
+			}
+			army_experience = 5
+			add_to_variable = { var_terrorist_attack = -1 tooltip = var_terrorist_attack_minus_1_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 5 tooltip = var_preventing_terrorist_attack_plus_5_tt }
+			if = {
+				limit = { 
+					#NOT = { check_variable = { AGE_baltic_separatism_political_power_factor = 0 } } 
+					has_dynamic_modifier = { modifier = AGE_baltic_separatism }
+				}
+				custom_effect_tooltip = AGE_modify_baltic_separatism_ns_intro
+				add_to_variable = { AGE_baltic_separatism_political_power_factor = 0.04 tooltip = political_power_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_monthly_population = 0.05 tooltip = monthly_population_tt }
+				add_to_variable = { AGE_baltic_separatism_conscription_factor = 0.04 tooltip = conscription_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_consumer_goods_factor = -0.03 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_stability_factor = 0.12 tooltip = stability_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_industry_free_repair_factor = 0.15 tooltip = industry_free_repair_factor_tt }
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						check_variable = { AGE_baltic_separatism_political_power_factor = 0 }
+						has_dynamic_modifier = { modifier = AGE_baltic_separatism }
+					}
+					remove_dynamic_modifier = { modifier = AGE_baltic_separatism }
+				}
+			}
+			AGE = { country_event = { id = AGE_clandestine_cells.1 } }
+		}
+	}
+	AGE_conduct_full_scale_raid_2_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			FROM = {
+				OR = {
+					is_owned_by = CHU
+					is_owned_by = HAR
+					is_owned_by = BLZ
+				}
+				has_dynamic_modifier = { modifier = open_opposition }
+			}
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}			
+		}
+		visible = {
+			FROM = {
+				OR = {
+					is_owned_by = CHU
+					is_owned_by = HAR
+					is_owned_by = BLZ
+				}
+				has_dynamic_modifier = { modifier = open_opposition }
+			}
+			AGE = { has_completed_focus = AGE_protect_borders }
+			has_country_flag = not_their_land_anymore_flag
+		}
+		#target_trigger = {
+		#	FROM = {
+		#		OR = {
+		#			is_owned_by = CHU
+		#			is_owned_by = HAR
+		#			is_owned_by = BLZ
+		#		}
+		#	}		
+		#}
+		target_array = AGE.allies
+		state_target = yes
+		cost = 30
+		days_remove = 30
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = open_opposition }
+				add_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			army_experience = 5
+			add_to_variable = { var_terrorist_attack = -2 tooltip = var_terrorist_attack_minus_2_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 10 tooltip = var_preventing_terrorist_attack_plus_10_tt }
+		}
+	}
+	AGE_finish_the_survivors_2_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		available = {
+			FROM = {
+				OR = {
+					is_owned_by = CHU
+					is_owned_by = HAR
+					is_owned_by = BLZ
+				}
+				has_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			divisions_in_state = {
+				size > 0
+				state = FROM
+			}
+		}
+		visible = {
+			FROM = {
+				OR = {
+					is_owned_by = CHU
+					is_owned_by = HAR
+					is_owned_by = BLZ
+				}
+				has_dynamic_modifier = { modifier = clandestine_cells }
+			}
+			AGE = { has_completed_focus = AGE_protect_borders }
+			has_country_flag = not_their_land_anymore_flag
+		}
+		#target_trigger = {
+		#	FROM = {
+		#		OR = {
+		#			is_owned_by = CHU
+		#			is_owned_by = HAR
+		#			is_owned_by = BLZ
+		#		}
+		#	}		
+		#}
+		target_array = AGE.allies
+		state_target = yes
+		cost = 15
+		days_remove = 50
+		remove_effect = {
+			FROM = {
+				remove_dynamic_modifier = { modifier = clandestine_cells }
+				add_dynamic_modifier = { modifier = resistance_completely_eradicated }
+			}
+			army_experience = 5
+			add_to_variable = { var_terrorist_attack = -1 tooltip = var_terrorist_attack_minus_1_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 5 tooltip = var_preventing_terrorist_attack_plus_5_tt }
+			AGE = { country_event = { id = AGE_clandestine_cells.1 } }
+		}
+	}
+	AGE_red_sabres_equip_guns = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			OR = {
+				has_idea = AGE_red_sabres
+				has_idea = AGE_red_sabres_second
+			}		
+			has_country_flag =red_sabres_flag
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment > 249
+			}			
+		}		
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = -250
+			}
+			add_to_variable = { var_terrorist_attack = -2 tooltip = var_terrorist_attack_minus_2_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 10 tooltip = var_preventing_terrorist_attack_plus_10_tt }			
+		}	
+	}
+	AGE_red_sabres_specialization_1_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			OR = {
+				has_idea = AGE_red_sabres
+				has_idea = AGE_red_sabres_second
+			}		
+			has_focus_tree = AGE_phase_1
+		}
+		cost = 50
+		complete_effect = {
+			if = {
+				limit = { has_idea = AGE_red_sabres }
+				swap_ideas = {
+					remove_idea = AGE_red_sabres
+					add_idea = AGE_red_sabres_second
+				}
+			}
+			else = {
+				#limit = { has_idea = AGE_red_sabres_second }
+				swap_ideas = {
+					remove_idea = AGE_red_sabres_second
+					add_idea = AGE_red_sabres
+				}			
+			}
+		}
+	}
+	AGE_red_sabres_specialization_2_phase = {
+		icon = GFX_decision_eng_trade_unions_support
+		visible = {
+			OR = {
+				has_idea = AGE_red_sabres
+				has_idea = AGE_red_sabres_second
+			}
+			has_focus_tree = AGE_phase_2
+		}
+		cost = 100
+		complete_effect = {
+			if = {
+				limit = { has_idea = AGE_red_sabres }
+				swap_ideas = {
+					remove_idea = AGE_red_sabres
+					add_idea = AGE_red_sabres_second
+				}
+			}
+			else = {
+				#limit = { has_idea = AGE_red_sabres_second }
+				swap_ideas = {
+					remove_idea = AGE_red_sabres_second
+					add_idea = AGE_red_sabres
+				}			
+			}
+		}
+	}
+	AGE_baltic_terror = {
+		icon = GFX_decision_eng_trade_unions_support
+		activation = { has_country_flag = baltic_terror_activation }
+		available = { 
+			any_owned_state = {
+				OR = { 
+					NOT = { has_dynamic_modifier = { modifier = open_opposition } }
+					NOT	= { has_dynamic_modifier = { modifier = clandestine_cells } }
+				}
+			}
+			#hidden_trigger = { NOT = { has_country_flag = baltic_terror_activation } }
+		}
+		days_mission_timeout = 60	
+		is_good = yes
+		complete_effect = { clr_country_flag = baltic_terror_activation }
+		timeout_effect = {
+			random_list = {
+				var_terrorist_attack = {
+					random_owned_state = {
+						limit = { NOT = { has_dynamic_modifier = { modifier = resistance_completely_eradicated } } }
+						damage_building = {
+							type = industrial_complex
+							damage = 0.2
+						}
+						AGE = { country_event = { id = AGE_baltic_terror.1 } }
+					}
+				}
+				var_terrorist_attack = {
+					random_owned_state = {
+						limit = { NOT = { has_dynamic_modifier = { modifier = resistance_completely_eradicated } } }
+						damage_building = {
+							type = arms_factory
+							damage = 0.2
+						}
+						AGE = { country_event = { id = AGE_baltic_terror.2 } }
+					}
+				}
+				var_terrorist_attack = {
+					random_owned_state = {
+						limit = { NOT = { has_dynamic_modifier = { modifier = resistance_completely_eradicated } } }
+						damage_building = {
+							type = infrastructure
+							damage = 0.2
+						}
+						AGE = { country_event = { id = AGE_baltic_terror.3 } }
+					}
+				}
+				var_terrorist_attack = {
+					random_owned_state = {
+						limit = { NOT = { has_dynamic_modifier = { modifier = resistance_completely_eradicated } } }
+						damage_building = {
+							type = supply_node
+							damage = 0.2
+						}
+						AGE = { country_event = { id = AGE_baltic_terror.4 } }
+					}
+				}
+				var_terrorist_attack = {
+					random_owned_state = {
+						limit = { NOT = { has_dynamic_modifier = { modifier = resistance_completely_eradicated } } }
+						damage_building = {
+							type = air_base
+							damage = 0.2
+						}
+						AGE = { country_event = { id = AGE_baltic_terror.5 } }
+					}
+				}
+				var_preventing_terrorist_attack = {
+					AGE = { country_event = { id = AGE_baltic_terror.6 } }
+				}				
+			}
+			add_to_variable = { size_days_baltic_terror = 1 }
+		}	
+	}
+	AGE_baltics_are_probing = {
+		icon = GFX_decision_eng_trade_unions_support
+		activation = { has_country_flag = still_their_land_flag }
+		available = { 
+			any_owned_state = {
+				NOT = { 
+					OR = {
+						has_dynamic_modifier = { modifier = open_opposition }
+						has_dynamic_modifier = { modifier = clandestine_cells }
+					}
+				}
+			}
+			hidden_trigger = { NOT = { has_country_flag = still_their_land_flag } }
+		}
+		days_mission_timeout = 45	
+		is_good = yes
+		complete_effect = { clr_country_flag = still_their_land_flag }
+		timeout_effect = {
+			add_to_variable = { var_terrorist_attack = -2 tooltip = var_terrorist_attack_minus_2_tt }
+			add_to_variable = { var_preventing_terrorist_attack = 10 tooltip = var_preventing_terrorist_attack_plus_10_tt }		
+			custom_effect_tooltip = AGE_modify_baltic_separatism_ns_intro
+			if = {
+				limit = { 
+					check_variable = { AGE_baltic_separatism_political_power_factor = 0}
+				}
+				add_to_variable = { AGE_baltic_separatism_political_power_factor = 0.04 tooltip = political_power_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_monthly_population = 0.05 tooltip = monthly_population_tt }
+				add_to_variable = { AGE_baltic_separatism_conscription_factor = 0.04 tooltip = conscription_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_consumer_goods_factor = -0.03 tooltip = consumer_goods_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_stability_factor = 0.12 tooltip = stability_factor_tt }
+				add_to_variable = { AGE_baltic_separatism_industry_free_repair_factor = 0.15 tooltip = industry_free_repair_factor_tt }
+			}
+			hidden_effect = {
+				random_list = {
+					20 = { add_to_variable = { var_808 = 1 } }
+					20 = { add_to_variable = { var_809 = 1 } }
+					20 = { add_to_variable = { var_12 = 1 } }
+					20 = { add_to_variable = { var_13 = 1 } }
+					20 = { add_to_variable = { var_911 = 1 } }
+				}
+				if = {
+					limit = { 
+						check_variable = { var_808 = 3 }
+						808 = { has_dynamic_modifier = { modifier = open_opposition } }
+					}
+					set_variable = { var_808 = 0 }
+					808 = {
+						remove_dynamic_modifier = { modifier = open_opposition }
+						add_dynamic_modifier = { modifier = clandestine_cells }
+					}
+					AGE = { country_event = { id = AGE_baltics_are_probing.1 } }
+				}
+				else_if = {
+					limit = { 
+						check_variable = { var_808 = 3 }
+						809 = { has_dynamic_modifier = { modifier = open_opposition } }
+					}
+					set_variable = { var_809 = 0 }
+					809 = {
+						remove_dynamic_modifier = { modifier = open_opposition }
+						add_dynamic_modifier = { modifier = clandestine_cells }
+					}
+					AGE = { country_event = { id = AGE_baltics_are_probing.1 } }
+				}
+				else_if = {
+					limit = { 
+						check_variable = { var_12 = 3 }
+						12 = { has_dynamic_modifier = { modifier = open_opposition } }
+					}
+					set_variable = { var_12 = 0 }
+					12 = {
+						remove_dynamic_modifier = { modifier = open_opposition }
+						add_dynamic_modifier = { modifier = clandestine_cells }
+					}
+					AGE = { country_event = { id = AGE_baltics_are_probing.1 } }
+				}
+				else_if = {
+					limit = { 
+						check_variable = { var_13 = 3 }
+						13 = { has_dynamic_modifier = { modifier = open_opposition } }
+					}
+					set_variable = { var_13 = 0 }
+					13 = {
+						remove_dynamic_modifier = { modifier = open_opposition }
+						add_dynamic_modifier = { modifier = clandestine_cells }
+					}
+					AGE = { country_event = { id = AGE_baltics_are_probing.1 } }
+				}
+				else_if = {
+					limit = { 
+						check_variable = { var_911 = 3 }
+						911 = { has_dynamic_modifier = { modifier = open_opposition } }
+					}
+					set_variable = { var_911 = 0 }
+					911 = {
+						remove_dynamic_modifier = { modifier = open_opposition }
+						add_dynamic_modifier = { modifier = clandestine_cells }
+					}
+					AGE = { country_event = { id = AGE_baltics_are_probing.1 } }
+				}
+			}
+		}
+	}
+	AGE_war_with_baltosphere = {
+		icon = GFX_decision_eng_trade_unions_support
+		activation = { has_country_flag = war_with_baltosphere_flag }
+		available = { NOT = { has_country_flag = war_with_baltosphere_flag } }
+		days_mission_timeout = 7
+		is_good = yes
+		timeout_effect = {
+			clr_country_flag = war_with_baltosphere_flag
+			AGE = { country_event = { id = AGE.9 } }
+			BTC = {
+				declare_war_on = {
+					target = AGE
+					type = annex_everything
+				}
+			}
+			hidden_effect = {
+				BTC = {
+					division_template = {
+						name = "Baltic militia"
+						division_names_group = BANDIT_INF_01
+						regiments = {
+        					light_infantry = { x = 0 y = 0 }
+							light_infantry = { x = 1 y = 0 }
+						}
+						priority = 1
+					}
+					12 = {
+						create_unit = {
+                    		division = "name = \"Mežabrāļi\" division_template = \"Baltic militia\" start_experience_factor = 0.81 start_equipment_factor = 0.3 start_manpower_factor = 1" 
+                    		owner = BTC
+							allow_spawning_on_enemy_provs = yes
+                		}
+					}
+					13 = {
+						create_unit = {
+                    		division = "name = \"Mežabrāļi\" division_template = \"Baltic militia\" start_experience_factor = 0.81 start_equipment_factor = 0.3 start_manpower_factor = 1" 
+                    		owner = BTC
+							allow_spawning_on_enemy_provs = yes
+                		}
+					}
+				809 = {
+						create_unit = {
+                    		division = "name = \"Miško broliai\" division_template = \"Baltic militia\" start_experience_factor = 0.81 start_equipment_factor = 0.3 start_manpower_factor = 1" 
+                    		owner = BTC
+							allow_spawning_on_enemy_provs = yes
+                		}
+					}
+					911 = {
+						create_unit = {
+                    		division = "name = \"Miško broliai\" division_template = \"Baltic militia\" start_experience_factor = 0.81 start_equipment_factor = 0.3 start_manpower_factor = 1" 
+                    		owner = BTC
+							allow_spawning_on_enemy_provs = yes
+                		}
+					}
+				}
+			}
+		}
+	}
+}
+
+AGE_red_forest = {
+	AGE_red_forest_mission = {
+    	activation = {
+        	AGE = {
+				has_completed_focus = AGE_visit_our_comrades
+			}
+			country_exists = TIP
+    	}
+	    available = {
+    	    NOT = {
+				country_exists = TIP
+			}
+    	}
+    	is_good = yes
+    	days_mission_timeout = 75
+    	selectable_mission = no
+		complete_effect = {
+		}
+    	timeout_effect = {
+        	IF = {
+				limit = {
+					NOT = {
+						TIP = {
+							controls_state = 910
+						}
+					}
+				}
+				910 = {
+					transfer_state_to = TIP
+				}
+			}
+			else_if = {
+				limit = {
+					TIP = {
+							controls_state = 910
+						}
+					NOT = {
+						TIP = {
+							controls_state = 909
+						}
+					}
+				}
+				909 = {
+					transfer_state_to = TIP
+				}
+				set_country_flag = red_forest_flag
+			}
+			else_if = {
+				limit = {
+					TIP = {
+						controls_state = 910
+						controls_state = 909
+					}
+				}
+				TIP = {
+					random_controlled_state = {
+						limit = {
+							any_neighbor_state = {
+								is_owned_by = AGE
+							}
+						}
+						random_neighbor_state = {
+							limit = {
+								is_owned_by = AGE
+							}
+							transfer_state_to = TIP
+						}
+					}
+				}
+				set_country_flag = red_forest_flag
+			}
+    	}
+	}
+	AGE_burn_the_forest = {
+		available = {
+			has_equipment = {
+				basic_MLRS_equipment > 29
+			}
+		}
+		target_trigger = {
+			FROM = {
+				is_owned_by = TIP
+				any_neighbor_state = {
+					is_owned_by = AGE
+				}
+				NOT = {
+					OR = {
+						state = 906
+						state = 206
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = red_forest_flag
+			}
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		cost = 0
+		days_remove = 40
+		cancel_effect = {
+			clr_country_flag = red_forest_flag #Каюсь, затупил немного, в cancel trigger хотел записать#
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -5
+			}
+			FROM = {
+				transfer_state_to = AGE
+				add_core_of = AGE
+			}
+			hidden_effect = {
+				FROM = {
+					remove_core_of = HAR
+				}
+			}
+		}
+	}
+	AGE_burn_the_forest_glubohoje = {
+		available = {
+			has_equipment = {
+				basic_MLRS_equipment > 49
+			}
+		}
+		target_trigger = {
+			IF = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				FROM = {
+					state = 906
+					is_owned_by = TIP
+					any_neighbor_state = {
+						is_owned_by = HAR
+					}
+				}
+			}
+			IF = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				FROM = {
+					state = 906
+					is_owned_by = TIP
+					any_neighbor_state = {
+						is_owned_by = AGE
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = red_forest_flag
+			}
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		cost = 0
+		days_remove = 40
+		complete_effect = {}
+		cancel_effect = {
+			clr_country_flag = red_forest_flag
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -8
+			}
+			IF = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				906 = {
+					transfer_state_to = HAR
+					add_core_of = HAR
+					remove_core_of = TIP
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				906 = {
+					transfer_state_to = AGE
+					add_core_of = AGE
+					remove_core_of = TIP
+				}
+			}
+		}
+	}
+	AGE_burn_the_forest_Minsk = {
+		available = {
+			has_equipment = {
+				basic_MLRS_equipment > 149
+			}
+		}
+		target_trigger = {
+			IF = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				FROM = {
+					state = 206
+					is_owned_by = TIP
+					any_neighbor_state = {
+						is_owned_by = HAR
+					}
+				}
+			}
+			IF = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				FROM = {
+					state = 206
+					is_owned_by = TIP
+					any_neighbor_state = {
+						is_owned_by = AGE
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			hidden_trigger = {
+				has_country_flag = red_forest_flag
+			}
+		}
+		state_target = yes
+		on_map_mode = map_and_decisions_view
+		cost = 0
+		days_remove = 60
+		complete_effect = {}
+		cancel_effect = {
+			clr_country_flag = red_forest_flag
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -20
+			}
+			IF = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				206 = {
+					transfer_state_to = HAR
+					add_core_of = HAR
+					remove_core_of = TIP
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				206 = {
+					transfer_state_to = AGE
+					add_core_of = AGE
+					remove_core_of = TIP
+				}
+			}
+		}
+	}
+	AGE_burn_the_forest_sim = {
+		visible = {
+			has_completed_focus = AGE_scary_Red_Forest
+		}
+		available = {
+			has_equipment = {
+				basic_MLRS_equipment > 199
+			}
+			hidden_trigger = {
+				command_power >39
+			}
+		}
+		cost = 40
+		custom_cost_trigger = {
+    		command_power > 39
+		}
+		custom_cost_text = decision_cost_CP_40_pp_40
+		days_remove = 40
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -40
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -25
+			}
+			declare_war_on = {
+				target = SIM
+				type = annex_everything
+			}
+			SIM = {
+				add_ideas = SIM_fire_of_infidels
+			}
+			hidden_effect = {
+				BLZ = {
+					add_to_war = {
+    					targeted_alliance = AGE
+    					enemy = SIM
+    					hostility_reason = asked_to_join
+					}
+				}
+				HAR = {
+					add_to_war = {
+    					targeted_alliance = AGE
+    					enemy = SIM
+    					hostility_reason = asked_to_join
+					}
+				}
+				CHU = {
+					add_to_war = {
+    					targeted_alliance = AGE
+    					enemy = SIM
+    					hostility_reason = asked_to_join
+					}
+				}
+			}
+		}
+	}
+	AGE_protect_scientistst = {
+		visible = {
+			OR = {
+				has_completed_focus = AGE_complex_Barrier
+				has_completed_focus = AGE_complex_Barrier_slavic
+			}
+		}
+		available = {
+			IF = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				OR = {
+					HAR = {
+						is_neighbor_of = BAI
+					}
+					BLZ = {
+						is_neighbor_of = BAI
+					}
+				}
+			}
+			IF = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				is_neighbor_of = BAI
+			}
+		}
+		cost = 0
+		days_remove = 0
+		fire_only_once = yes
+		remove_effect = {
+			country_event = AGE.18
+			IF = {
+				limit = {
+					has_country_flag = reconciliation_flag
+				}
+				annex_country = {
+    				target = BAI
+    				transfer_troops = yes
+				}
+				907 = {
+					add_core_of = AGE
+					remove_core_of = BAI
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = slavicization_flag
+				}
+				HAR = {
+					annex_country = {
+    				target = BAI
+    				transfer_troops = yes
+					}
+				}
+				907 = {
+					add_core_of = HAR
+					remove_core_of = BAI
+				}
+			}
+		}
+	}
+	AGE_contain_the_forest = {
+		visible = {
+			is_neighbor_of = TIP
+		}
+		available = {
+			has_equipment = {
+				support_equipment > 44
+			}
+		}
+		cost = 40
+		custom_cost_trigger = {
+    		command_power > 29
+		}
+		custom_cost_text = decision_cost_CP_30_pp_40
+		days_remove = 40
+		days_re_enable = 30
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -30
+			}
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+    			mission = AGE_red_forest_mission
+    			days = 60
+			}
+		}
+	}
+}
+
+AGE_south_intervention = {
+	AGE_simon_mission_1 = {
+    	activation = {
+        	AGE = {
+				has_completed_focus = AGE_visit_our_comrades
+			}
+			country_exists = BLZ
+    	}
+	    available = {
+    	    always = no
+    	}
+    	is_good = yes
+    	days_mission_timeout = 70
+    	selectable_mission = no
+		fire_only_once = yes
+		complete_effect = {
+		}
+    	timeout_effect = {
+			SIM = {
+				transfer_state = 11
+				add_timed_idea = {
+					idea = SIM_amber_harvest
+					days = 90
+				}
+			}
+		}
+    }
+	AGE_simon_mission_2 = {
+    	activation = {
+        	11 = {
+				is_controlled_by = SIM
+			}
+			country_exists = BLZ
+    	}
+	    available = {
+    	    815 = {
+				is_controlled_by = AGE
+			}
+    	}
+    	is_good = yes
+    	days_mission_timeout = 60
+    	selectable_mission = no
+		fire_only_once = yes
+    	timeout_effect = {
+			SIM = {
+				transfer_state = 815
+				modify_timed_idea = {
+    				idea = SIM_amber_harvest
+    				days = 90
+				}
+			}
+		}
+    }
+
+	AGE_occupy_Ekabplis = {
+		visible = {
+			has_completed_focus = AGE_chaos_at_the_border
+		}
+		available = {		
+			command_power > 49
+			NOT = {
+				910 = {
+					is_controlled_by = HAR
+				}
+			}
+		}
+
+		cost = 100
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50_pp_100
+		days_remove = 10
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			909 = {
+				transfer_state_to = AGE
+				add_core_of = AGE
+				remove_core_of = HAR
+			}
+		}
+	}
+
+	AGE_occupy_Panevezis = {
+		visible = {
+			country_exists = BLZ
+			has_completed_focus = AGE_chaos_at_the_border
+		}
+		available = {
+			command_power > 49
+			11 = {
+				is_controlled_by = SIM
+			}
+		}
+
+		cost = 100
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 10
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			815 = {
+				transfer_state_to = AGE
+				add_core_of = AGE
+				remove_core_of = BLZ
+			}
+		}
+	}
+	AGE_recapture_Kaunas = {
+		visible = {
+			11 = {
+				is_controlled_by = SIM
+			}
+			815 = {
+				is_controlled_by = AGE
+			}
+			NOT = {
+				country_exists = BLZ
+			}
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = AGE_recapture_flag
+				}
+			}
+			has_completed_focus = AGE_chaos_at_the_border
+			command_power > 24
+			has_equipment = {
+				basic_MLRS_equipment > 99
+			}
+			11 = {
+				is_controlled_by = SIM
+			}
+		}
+
+		cost = 50
+		custom_cost_trigger = {
+    		command_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		days_remove = 20
+		days_re_enable = 25
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -5
+			}
+			start_border_war = {
+    			change_state_after_war = no
+    			attacker = {
+        			state = 815
+        			num_provinces = 4
+        			on_win = AGE_border_conflict.1
+        			on_lose = AGE_border_conflict.2
+        			modifier = 0.1
+        			dig_in_factor = 0
+        			terrain_factor = 0
+    			}	
+    			defender = {
+        			state = 11
+        			num_provinces = 4
+				}
+			}
+		}
+	}
+
+	AGE_recapture_Panevezis = {
+		visible = {
+			815 = {
+				is_controlled_by = SIM
+			}
+			NOT = {
+				country_exists = BLZ
+			}
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = AGE_recapture_flag
+				}
+			}
+			has_completed_focus = AGE_chaos_at_the_border
+			command_power > 24
+			has_equipment = {
+				basic_MLRS_equipment > 99
+			}
+			815 = {
+				is_controlled_by = SIM
+			}
+		}
+
+		cost = 50
+		custom_cost_trigger = {
+    		command_power > 24
+		}
+		custom_cost_text = decision_cost_CP_25_pp_50
+		days_remove = 20
+		days_re_enable = 25
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -25
+			}
+		}
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = basic_MLRS_equipment
+				amount = -5
+			}
+
+			start_border_war = {
+    			change_state_after_war = no
+    			attacker = {
+        			state = 809
+        			num_provinces = 4
+        			on_win = AGE_border_conflict.1
+        			on_lose = AGE_border_conflict.2
+        			modifier = 0.1
+        			dig_in_factor = 0
+        			terrain_factor = 0
+    			}	
+    			defender = {
+        			state = 815
+        			num_provinces = 4
+				}
+			}
+		}
+	}
+}
+
+AGE_help_from_allies = {
+	AGE_help_from_blz_1 = {
+		available = {
+			has_completed_focus = AGE_south_direction
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 350
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 150 
+			}
+		}
+	}
+	AGE_help_from_blz_2 = {
+		available = {
+			has_completed_focus = AGE_help_Zhukovsky
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 350
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 150 
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+   	 			uses = 1
+    			category = hospital_tech
+			}
+		}
+	}
+	AGE_help_from_blz_3 = {
+		available = {
+			has_completed_focus = AGE_our_haters
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 400
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 150 
+			}
+			add_tech_bonus = {
+    			bonus = 0.5
+   	 			uses = 1
+    			category = hospital_tech
+			}
+		}
+	}
+	AGE_help_from_har_1 = {
+		available = {
+			has_completed_focus = AGE_south_east_direction
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 100
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 100 
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 150 
+			}
+		}
+	}
+	AGE_help_from_har_2 = {
+		available = {
+			has_completed_focus = AGE_help_Paramonov
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 150
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 130 
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 180 
+			}
+		}
+	}
+	AGE_help_from_har_3 = {
+		available = {
+			has_completed_focus = AGE_contain_nature
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_manpower = 200
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 160 
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 210 
+			}
+		}
+	}
+	AGE_help_from_chu_1 = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 240
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+			}
+		}
+	}
+	AGE_help_from_chu_2 = {
+		available = {
+			has_completed_focus = AGE_help_Shazer
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_tech_bonus = {
+    			bonus = 0.25
+   	 			uses = 1
+    			category = engineers_tech
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 270
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+			}
+		}
+	}
+	AGE_help_from_chu_3 = {
+		available = {
+			has_completed_focus = AGE_calm_the_despairing
+		}
+
+		cost = 15
+		days_remove = 25
+		fire_only_once = yes
+		remove_effect = {
+			add_tech_bonus = {
+    			bonus = 0.75
+   	 			uses = 1
+    			category = engineers_tech
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 300
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_odejda_0
+				amount = 50
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 50
+			}
+		}
+	}
+}
+
+AGE_partisans = {
+	AGE_destroy_supply_node_klaipeda = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 49
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			188 = {
+				damage_building = {
+    				type = supply_node
+    				damage = 1
+					province = 3288
+				}
+			}
+		}
+	}
+	AGE_destroy_supply_node_kaliningrad = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 49
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			763 = {
+				damage_building = {
+    				type = supply_node
+    				damage = 1
+					province = 6332
+				}
+			}
+			
+		}
+	}
+	AGE_destroy_supply_node_masuria = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 49
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			5 = {
+				damage_building = {
+    				type = supply_node
+    				damage = 1
+					province = 6375
+				}
+			}
+		}
+	}
+	AGE_destroy_supply_node_marijampole = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 49
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 49
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -50
+			}
+		}
+		remove_effect = {
+			814 = {
+				damage_building = {
+    				type = supply_node
+    				damage = 1
+					province = 3254
+				}
+			}
+		}
+	}
+	AGE_destroy_railway_kaliningrad = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 34 
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 34
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -35
+			}
+		}
+		remove_effect = {
+			763 = {
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 6332
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 395
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 3384
+				}
+			}
+		}
+	}
+	AGE_destroy_railway_masuria = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 34
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 34
+		}
+		custom_cost_text = decision_cost_CP_50
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -35
+			}
+		}
+		remove_effect = {
+			5 = {
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 6375
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 9372
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 11386
+				}
+			}
+		}
+	}
+	AGE_destroy_railway_marijampole = {
+		available = {
+			has_completed_focus = AGE_north_east_direction
+			command_power > 34
+		}
+
+		cost = 0
+		custom_cost_trigger = {
+    		command_power > 34
+		}
+		custom_cost_text = decision_cost_CP_35
+		days_remove = 5
+		fire_only_once = yes
+		complete_effect = {
+			hidden_effect = {
+				add_command_power = -35
+			}
+		}
+		remove_effect = {
+			814 = {
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 3254
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 11312
+				}
+				damage_building = {
+    				type = rail_way
+    				damage = 1
+					province = 3272
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		MAZ_broken_trident = {	
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.15
+				offence = 0.1
+				stability_weekly_factor = -0.2
+				war_stability_factor = -0.5
+				war_support_factor = 0.15
+			}
+		}
+	}
+}

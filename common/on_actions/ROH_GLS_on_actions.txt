@@ -1,0 +1,785 @@
+on_actions = {
+	on_startup = {
+		effect = {		
+			set_variable = { ready_charge = 0 }
+			set_variable = { nuclear_charges = 0 }
+		}
+	}
+	on_daily_GLS = {
+		effect = {
+			###################
+			####Выдача идей####
+			###################
+			if = {
+				limit = {
+					check_variable = { order = freedom }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+			}
+
+			########################
+			####Подсчёт перевеса####  
+			########################
+			set_temp_variable = { temp_freedom = freedom }
+			set_temp_variable = { temp_order = order }
+			if = {
+				limit = { check_variable = { order > freedom } }
+				subtract_from_temp_variable = { temp_order = temp_freedom }
+			}			
+			if = {
+				limit = { check_variable = { freedom > order } }
+				subtract_from_temp_variable = { temp_freedom = temp_order }
+			}
+
+			###############
+			####Порядок####
+			###############
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 0 }
+					check_variable = { temp_order < 11 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order
+			}
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 10 }
+					check_variable = { temp_order < 21 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_2
+			}
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 20 }
+					check_variable = { temp_order < 31 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_3
+			}	
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 30 }
+					check_variable = { temp_order < 41 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_4
+			}				
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 40 }
+					check_variable = { temp_order < 51 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_5
+			}
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 50 }
+					check_variable = { temp_order < 61 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_6
+			}
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 60 }
+					check_variable = { temp_order < 71 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_7
+			}				
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 70 }
+					check_variable = { temp_order < 81 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_order_8
+			}
+			if = {
+				limit = {
+					check_variable = { order > freedom }
+					check_variable = { temp_order > 80 }
+					check_variable = { temp_order < 91 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+
+				add_ideas = GLS_order_9
+			}
+
+			###############
+			####Свобода####
+			###############
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 0 }
+					check_variable = { temp_freedom < 11 }
+				}
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom
+			}
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 10 }
+					check_variable = { temp_freedom < 21 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_2
+			}
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 20 }
+					check_variable = { temp_freedom < 31 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_3
+			}	
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 30 }
+					check_variable = { temp_freedom < 41 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_4
+			}				
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 40 }
+					check_variable = { temp_freedom < 51 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_5
+			}
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 50 }
+					check_variable = { temp_freedom < 61 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_6
+			}
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 60 }
+					check_variable = { temp_freedom < 71 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_8
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_7
+			}				
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 70 }
+					check_variable = { temp_freedom < 81 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_9
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_8
+			}
+			if = {
+				limit = {
+					check_variable = { freedom > order }
+					check_variable = { temp_freedom > 80 }
+					check_variable = { temp_freedom < 91 }
+				}
+				remove_ideas = GLS_freedom
+				remove_ideas = GLS_freedom_2
+				remove_ideas = GLS_freedom_3
+				remove_ideas = GLS_freedom_4
+				remove_ideas = GLS_freedom_5
+				remove_ideas = GLS_freedom_6
+				remove_ideas = GLS_freedom_7
+				remove_ideas = GLS_freedom_8
+
+				remove_ideas = GLS_order
+				remove_ideas = GLS_order_2
+				remove_ideas = GLS_order_3
+				remove_ideas = GLS_order_4
+				remove_ideas = GLS_order_5
+				remove_ideas = GLS_order_6
+				remove_ideas = GLS_order_7
+				remove_ideas = GLS_order_8
+				remove_ideas = GLS_order_9
+
+				add_ideas = GLS_freedom_9
+			}
+			
+			############################
+			####Устранение -x и 100+####
+			############################
+			if = {
+				limit = { check_variable = { order < 0 } }
+				set_variable = { order = 0 }
+			}
+			if = {
+				limit = { check_variable = { order > 100 } }
+				set_variable = { order = 100 }
+			}
+			if = {
+				limit = { check_variable = { freedom < 0 } }
+				set_variable = { freedom = 0 }
+			}
+			if = {
+				limit = { check_variable = { freedom > 100 } }
+				set_variable = { freedom = 100 }
+			}
+
+			#########################
+			####Условия ЭндГеймов####
+			#########################
+			if = {
+				limit = { 
+					check_variable = { order = 100 } 
+					NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+				}
+				GLS = { 
+					set_country_flag = GLS_freedom_and_order_endgame
+					load_focus_tree = anarchy_focus_tree
+					remove_ideas = GLS_freedom
+					remove_ideas = GLS_freedom_2
+					remove_ideas = GLS_freedom_3
+					remove_ideas = GLS_freedom_4
+					remove_ideas = GLS_freedom_5
+					remove_ideas = GLS_freedom_6
+					remove_ideas = GLS_freedom_7
+					remove_ideas = GLS_freedom_8
+					remove_ideas = GLS_freedom_9
+					remove_ideas = GLS_order
+					remove_ideas = GLS_order_2
+					remove_ideas = GLS_order_3
+					remove_ideas = GLS_order_4
+					remove_ideas = GLS_order_5
+					remove_ideas = GLS_order_6
+					remove_ideas = GLS_order_7
+					remove_ideas = GLS_order_8
+					remove_ideas = GLS_order_9			
+					country_event = {
+						id = GLS.1111
+						days = 1
+					}					
+					kill_country_leader = yes
+					GLS_anarchy = {
+						promote_character = statesmen_subideology
+					}
+					set_rule = {
+						can_not_declare_war = yes
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = { freedom = 100 }
+					NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+				}
+				GLS = { 
+					set_country_flag = GLS_freedom_and_order_endgame
+					load_focus_tree = anarchy_focus_tree
+					remove_ideas = GLS_freedom
+					remove_ideas = GLS_freedom_2
+					remove_ideas = GLS_freedom_3
+					remove_ideas = GLS_freedom_4
+					remove_ideas = GLS_freedom_5
+					remove_ideas = GLS_freedom_6
+					remove_ideas = GLS_freedom_7
+					remove_ideas = GLS_freedom_8
+					remove_ideas = GLS_freedom_9
+					remove_ideas = GLS_order
+					remove_ideas = GLS_order_2
+					remove_ideas = GLS_order_3
+					remove_ideas = GLS_order_4
+					remove_ideas = GLS_order_5
+					remove_ideas = GLS_order_6
+					remove_ideas = GLS_order_7
+					remove_ideas = GLS_order_8
+					remove_ideas = GLS_order_9				
+					country_event = {
+						id = GLS.2222
+						days = 1
+					}					
+					kill_country_leader = yes
+					GLS_anarchy = {
+						promote_character = statesmen_subideology
+					}
+					set_rule = {
+						can_not_declare_war = yes
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+			if = {
+				limit = {  
+					check_variable = { order = 0 } 
+					NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+				}
+				GLS = { 
+					set_country_flag = GLS_freedom_and_order_endgame
+					load_focus_tree = anarchy_focus_tree
+					remove_ideas = GLS_freedom
+					remove_ideas = GLS_freedom_2
+					remove_ideas = GLS_freedom_3
+					remove_ideas = GLS_freedom_4
+					remove_ideas = GLS_freedom_5
+					remove_ideas = GLS_freedom_6
+					remove_ideas = GLS_freedom_7
+					remove_ideas = GLS_freedom_8
+					remove_ideas = GLS_freedom_9
+					remove_ideas = GLS_order
+					remove_ideas = GLS_order_2
+					remove_ideas = GLS_order_3
+					remove_ideas = GLS_order_4
+					remove_ideas = GLS_order_5
+					remove_ideas = GLS_order_6
+					remove_ideas = GLS_order_7
+					remove_ideas = GLS_order_8
+					remove_ideas = GLS_order_9					
+					country_event = {
+						id = GLS.1100
+						days = 2
+					}
+					kill_country_leader = yes
+					GLS_anarchy = {
+						promote_character = statesmen_subideology
+					}
+					set_rule = {
+						can_not_declare_war = yes
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+			if = {
+				limit = { 
+					check_variable = { freedom = 0 }
+					NOT = { has_country_flag = GLS_freedom_and_order_endgame }
+				}
+				GLS = { 
+					set_country_flag = GLS_freedom_and_order_endgame
+					load_focus_tree = anarchy_focus_tree
+					remove_ideas = GLS_freedom
+					remove_ideas = GLS_freedom_2
+					remove_ideas = GLS_freedom_3
+					remove_ideas = GLS_freedom_4
+					remove_ideas = GLS_freedom_5
+					remove_ideas = GLS_freedom_6
+					remove_ideas = GLS_freedom_7
+					remove_ideas = GLS_freedom_8
+					remove_ideas = GLS_freedom_9
+					remove_ideas = GLS_order
+					remove_ideas = GLS_order_2
+					remove_ideas = GLS_order_3
+					remove_ideas = GLS_order_4
+					remove_ideas = GLS_order_5
+					remove_ideas = GLS_order_6
+					remove_ideas = GLS_order_7
+					remove_ideas = GLS_order_8
+					remove_ideas = GLS_order_9
+					country_event = {
+						id = GLS.2200
+						days = 2
+					}
+					kill_country_leader = yes
+					GLS_anarchy = {
+						promote_character = statesmen_subideology
+					}
+					set_rule = {
+						can_not_declare_war = yes
+					}
+					country_lock_all_division_template = yes
+				}
+			}
+		}
+	}
+	on_weekly_GLS = {
+		effect = {
+			####Еженедельная прибавка в 2/3/4/5 процента####
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = GLS_sharashki
+					}
+				}
+				add_to_variable = { ready_charge = 2 }
+			}
+			else_if = {
+				limit = {
+					has_completed_focus = GLS_sharashki
+				}
+				add_to_variable = { ready_charge = 3 }			
+			}
+			if = { #Если прожали решение
+				limit = { has_country_flag = gls_2_percent_additive_for_kurchatov_project }
+				add_to_variable = { ready_charge = 2 }
+			}
+			####Создание ОМП####
+			if = {
+				limit = { 
+					OR = {
+						check_variable = { ready_charge = 100 }
+						check_variable = { ready_charge > 100 }
+					}
+				}
+				set_variable = { ready_charge = 0 }
+				add_to_variable = { nuclear_charges = 1 }
+			}
+		}
+	}
+	on_monthly_GLS = { ####Очки гос.прогресса за фокусы 3 фазы####
+		effect = {
+			if = {
+				limit = { has_country_flag = ochki_gos_progress_5 }
+				add_to_variable = { ochki_gos_progressa = 5 }
+			}
+			if = {
+				limit = { has_country_flag = ochki_gos_progress_10 }
+				add_to_variable = { ochki_gos_progressa = 5 }
+			}
+			if = {
+				limit = { has_country_flag = ochki_gos_progress_20 }
+				add_to_variable = { ochki_gos_progressa = 10 }
+			}
+			if = {
+				limit = { has_country_flag = ochki_gos_progress_30 }
+				add_to_variable = { ochki_gos_progressa = 10 }
+			}
+		}
+	}
+}

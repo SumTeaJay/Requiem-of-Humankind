@@ -1,0 +1,14 @@
+#AI doesn`t want to trade with anyone
+#Will be reworked later
+accurate_frontline = {
+	enable = {
+		always = yes
+	}
+	reversed = yes
+	#common market access
+	ai_strategy = {
+		type = equipment_market_trade_desire
+		id = ROOT
+		value = -1000
+	}
+}

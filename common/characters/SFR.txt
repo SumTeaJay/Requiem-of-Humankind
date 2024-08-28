@@ -1,0 +1,15 @@
+characters = {
+	SFR_Dmitry_safronov = {
+		portraits={
+			civilian={
+				large="gfx/leaders/SFR/Dmitry_safronov.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology   
+			expire="1965.1.1.1"
+			id=-1
+			desc = SFR_Dmitry_safronov_DESC
+		}
+	}	
+}

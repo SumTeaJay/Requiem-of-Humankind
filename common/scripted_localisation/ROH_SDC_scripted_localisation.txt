@@ -1,0 +1,76 @@
+defined_text = {
+    name = sdc_division_counter
+    text = {
+        trigger = {
+            SDC = {
+                check_variable = {
+                    SDC_divisions_var > 50
+                }
+            }
+        }
+        localization_key = sdc_division_counter_more 
+    }
+    text = {
+        trigger = {
+            SDC = {
+                check_variable = {
+                    SDC_divisions_var > 49
+                    SDC_divisions_var < 51
+                }
+            }
+        }
+        localization_key = sdc_division_counter_equal
+    }
+    text = {
+        trigger = {
+            SDC = {
+                check_variable = {
+                    SDC_divisions_var < 50
+                }
+            }
+        }
+        localization_key = sdc_division_counter_less
+    }
+}
+defined_text = {
+    name = sdc_take_posision_ren_divisions
+    text = {
+        trigger = {
+            SDC = {
+                NOT = {
+                    has_completed_focus = SDC_archangelsk_sever
+                }
+            }
+        }
+        localization_key = 80_percents
+    }
+    text = {
+        trigger = {
+            SDC = {
+                has_completed_focus = SDC_archangelsk_sever
+            }
+        }
+        localization_key = 70_percents
+    }
+}
+defined_text = {
+    name = sdc_take_posision_odj_divisions
+    text = {
+        trigger = {
+            SDC = {
+                NOT = {
+                    has_completed_focus = SDC_Martins_comunications
+                }
+            }
+        }
+        localization_key = 60_percents
+    }
+    text = {
+        trigger = {
+            SDC = {
+                has_completed_focus = SDC_Martins_comunications
+            }
+        }
+        localization_key = 40_percents
+    }
+}

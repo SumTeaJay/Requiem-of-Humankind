@@ -1,0 +1,106 @@
+ideas = {
+
+	country = {
+		Shahti = {
+			picture = gubit_izobiliye
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.05
+			stability_factor = -0.01
+			consumer_goods_factor = -0.02
+			}
+		}
+		Issled_reid = {
+			picture = gubit_izobiliye
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			research_speed_factor = 0.03
+			political_power_gain = 0.05
+			}
+		}
+		Dosmotr_in_Dorogi_reid = {
+			picture = gubit_izobiliye
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			army_core_attack_factor = 0.05
+			army_core_defence_factor = 0.05
+			monthly_population = 0.1
+			conscription = -0.001
+			}
+		}
+		Ukreplenie_gran_1_reid = {
+			picture = gubit_izobiliye
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			army_core_defence_factor = 0.05
+			monthly_population = 0.1
+			conscription_factor = -0.03
+			}
+		}
+		Ukreplenie_gran_2_reid = {
+			picture = gubit_izobiliye
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			stability_factor = 0.1
+			stability_weekly = 0.005
+			army_core_defence_factor = 0.1
+			monthly_population = 0.15
+			conscription_factor = -0.1
+			}
+		}
+		Anti_banditizm = {
+			picture = krugom_vragi
+			allowed = {
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+			monthly_population = 0.05
+			stability_factor = 0.02
+			stability_weekly = 0.01
+			political_power_gain = 0.05
+			}
+		}
+}}
+	

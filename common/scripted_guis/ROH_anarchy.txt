@@ -1,0 +1,15 @@
+scripted_gui = {
+	TNO_Anarchy_Diplomacy = {
+		context_type = selected_country_context
+		parent_window_token = selected_country_view
+		window_name = "TNO_Anarchy_Diplomacy_Container"
+		
+		visible = { RoH_anarchy_visible = yes }
+		
+		properties = {
+			RoH_anarchy = {
+				image = "[GetAnarchyGUIImage]"
+			}			
+		}
+	}
+}

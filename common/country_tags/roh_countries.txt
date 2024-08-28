@@ -1,0 +1,185 @@
+#############################
+### Условные обозначения: ###
+#############################
+
+# <-- Государства, которые будут появляться в будущем
+
+## <-- Государства-кризисы
+
+### Просьба расставлять эти обозначения там, где их нет ###
+### Летову это поможет в будущем с моделями. Заранее спасибо ###
+
+
+
+### Southern_Suburbs ###
+ODS = "countries/_Southern_Suburbs.txt"
+CRI = "countries/_Southern_Suburbs.txt"
+KUB = "countries/_Southern_Suburbs.txt"
+HER = "countries/_Southern_Suburbs.txt"
+CRW = "countries/_Southern_Suburbs.txt"
+SOD = "countries/_Southern_Suburbs.txt"
+BOD = "countries/_Southern_Suburbs.txt"
+MOD = "countries/_Southern_Suburbs.txt"
+WOD = "countries/_Southern_Suburbs.txt"
+YWD = "countries/_Southern_Suburbs.txt"
+AZB = "countries/_Southern_Suburbs.txt"
+KUH = "countries/_Southern_Suburbs.txt"
+STW = "countries/_Southern_Suburbs.txt"
+FSR = "countries/_Southern_Suburbs.txt"
+ECD = "countries/_Southern_Suburbs.txt"
+LUG = "countries/_Southern_Suburbs.txt"
+DOM = "countries/_Southern_Suburbs.txt"
+HAN = "countries/_Southern_Suburbs.txt"
+GAT = "countries/_Southern_Suburbs.txt"
+WAC = "countries/_Southern_Suburbs.txt"
+BRI = "countries/_Southern_Suburbs.txt"
+LWV = "countries/_Southern_Suburbs.txt"
+SVA = "countries/_Southern_Suburbs.txt"
+FUD = "countries/_Southern_Suburbs.txt"
+BRD = "countries/_Southern_Suburbs.txt"
+GUM = "countries/_Southern_Suburbs.txt" #
+BGD = "countries/_Southern_Suburbs.txt"
+COA = "countries/_Southern_Suburbs.txt"
+SWR = "countries/_Southern_Suburbs.txt"
+VDS = "countries/_Southern_Suburbs.txt"
+BIH = "countries/_Southern_Suburbs.txt"
+DIB = "countries/_Southern_Suburbs.txt"
+SUM = "countries/_Southern_Suburbs.txt"
+ARM = "countries/_Southern_Suburbs.txt"
+UKR = "countries/_Southern_Suburbs.txt"
+MAD = "countries/_Southern_Suburbs.txt"
+BAG = "countries/_Southern_Suburbs.txt"
+
+### Baltosphere ###
+LPC = "countries/_Baltosphere.txt"
+BTC = "countries/_Baltosphere.txt"
+BLZ = "countries/_Baltosphere.txt"
+CAV = "countries/_Baltosphere.txt"
+CST = "countries/_Baltosphere.txt"
+TIP = "countries/_Baltosphere.txt"
+BAI = "countries/_Baltosphere.txt"
+SIM = "countries/_Baltosphere.txt"
+HAR = "countries/_Baltosphere.txt"
+AGE = "countries/_Baltosphere.txt"
+VOS = "countries/_Baltosphere.txt"
+SIL = "countries/_Baltosphere.txt" ##
+MAP = "countries/_Baltosphere.txt"
+POP = "countries/_Baltosphere.txt"
+BAL = "countries/_Baltosphere.txt"
+CHU = "countries/_Baltosphere.txt"
+OBJ = "countries/_Baltosphere.txt"
+TWD = "countries/_Baltosphere.txt"
+
+### Central_Russia ###
+BRY = "countries/_Central_Russia.txt"
+VOF = "countries/_Central_Russia.txt"
+PLR = "countries/_Central_Russia.txt"
+NOR = "countries/_Central_Russia.txt"
+COR = "countries/_Central_Russia.txt"
+BSO = "countries/_Central_Russia.txt"
+BAR = "countries/_Central_Russia.txt"
+IMP = "countries/_Central_Russia.txt"
+SMK = "countries/_Central_Russia.txt"
+NAR = "countries/_Central_Russia.txt"
+MAZ = "countries/_Central_Russia.txt"
+ORL = "countries/_Central_Russia.txt"
+ZAK = "countries/_Central_Russia.txt"
+TAB = "countries/_Central_Russia.txt"
+MSH = "countries/_Central_Russia.txt"
+KMN = "countries/_Central_Russia.txt"
+MKS = "countries/_Central_Russia.txt"
+SBT = "countries/_Central_Russia.txt"
+SMX = "countries/_Central_Russia.txt"
+RIK = "countries/_Central_Russia.txt"
+VLC = "countries/_Central_Russia.txt"
+MOS = "countries/_Central_Russia.txt" ##
+VOU = "countries/_Central_Russia.txt"
+MUC = "countries/_Central_Russia.txt"
+CAR = "countries/_Central_Russia.txt"
+
+### Northwest ###
+OKS = "countries/_Northwest.txt"
+KOC = "countries/_Northwest.txt"
+BLT = "countries/_Northwest.txt"
+NVC = "countries/_Northwest.txt"
+OZE = "countries/_Northwest.txt"
+HOT = "countries/_Northwest.txt"
+HOH = "countries/_Northwest.txt"
+OLD = "countries/_Northwest.txt"
+
+### Povolzhye ###
+PVS = "countries/_Povolzhye.txt"
+DRW = "countries/_Povolzhye.txt"
+PLC = "countries/_Povolzhye.txt"
+WTR = "countries/_Povolzhye.txt" ##
+FHS = "countries/_Povolzhye.txt"
+ADT = "countries/_Povolzhye.txt"
+YJY = "countries/_Povolzhye.txt"
+OBS = "countries/_Povolzhye.txt"
+
+### Karelia ###
+BSL = "countries/_Karelia.txt"
+KRT = "countries/_Karelia.txt"
+LKV = "countries/_Karelia.txt"
+KSK = "countries/_Karelia.txt"
+TTS = "countries/_Karelia.txt"
+ZLG = "countries/_Karelia.txt"
+DRG = "countries/_Karelia.txt"
+PLD = "countries/_Karelia.txt"
+SFR = "countries/_Karelia.txt"
+MGL = "countries/_Karelia.txt"
+PMD = "countries/_Karelia.txt"
+NMG = "countries/_Karelia.txt"
+
+### Pomorie ###
+WEC = "countries/_Pomorie.txt" ##
+SAC = "countries/_Pomorie.txt" ##
+SOC = "countries/_Pomorie.txt" ##
+SDC = "countries/_Pomorie.txt"
+TAG = "countries/_Pomorie.txt"
+ARK = "countries/_Pomorie.txt"
+UFV = "countries/_Pomorie.txt"
+SDI = "countries/_Pomorie.txt"
+ODJ = "countries/_Pomorie.txt"
+REN = "countries/_Pomorie.txt"
+POV = "countries/_Pomorie.txt"
+MIN = "countries/_Pomorie.txt"
+TRO = "countries/_Pomorie.txt"
+VOZ = "countries/_Pomorie.txt"
+
+### Ural ###
+ISK = "countries/_Ural.txt"
+NFL = "countries/_Ural.txt"
+SFL = "countries/_Ural.txt"
+GLS = "countries/_Ural.txt"
+TTL = "countries/_Ural.txt"
+BL1 = "countries/_Ural.txt"
+DIS = "countries/_Ural.txt" ##
+URC = "countries/_Ural.txt"
+IRT = "countries/_Ural.txt"
+ASR = "countries/_Ural.txt"
+ZAN = "countries/_Ural.txt"
+WPK = "countries/_Ural.txt"
+SI1 = "countries/_Ural.txt"
+MOT = "countries/_Ural.txt"
+URA = "countries/_Ural.txt"
+TAR = "countries/_Ural.txt"
+EDM = "countries/_Ural.txt"
+OCH = "countries/_Ural.txt"
+BGR = "countries/_Ural.txt"
+REV = "countries/_Ural.txt"
+
+## Kazakstan ###
+BRB = "countries/_MidleAsia.txt"
+KHU = "countries/_MidleAsia.txt"
+SAR = "countries/_MidleAsia.txt"
+
+### Custom ###
+BLS = "countries/_Siberia.txt"
+CHE = "countries/_Siberia.txt"
+
+### Civil war ###
+WOW = "countries/_Southern_Suburbs.txt"
+
+ELI = "countries/_Central_Russia.txt"
+BMB = "countries/_Povolzhye.txt"

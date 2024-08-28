@@ -1,0 +1,160 @@
+leader_traits = {
+	###################
+	#Черта Вараша	  #
+	#A trait of Varash#
+	###################
+	pastor = {
+        random = no
+        stability_factor = 0.2
+        recruitable_population_factor = 0.2
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#################################
+	#Черта анархии в Москве			#
+	#A trait of anarchy in Moscow	#
+	#################################
+	MOS_powerlessness = {
+		random = no
+		political_power_gain = -0.3
+		stability_factor = -0.5
+		monthly_population = -1		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#################################
+	#Черты Охлостенко в БНГВ		#
+	#Okhlostenko's traits in the LWV#
+	#################################
+	New_vera = {
+		random = no
+		political_power_factor = 0.15
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	Absolyut = {
+		random = no
+		war_support_factor = 0.05
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_paranoid = {
+		random = no
+		
+		stability_factor = -0.1
+		drift_defence_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_avtor_sviatosti = {
+		random = no
+		
+		offence = 0.02
+		defence = 0.02
+		weekly_manpower = 50
+		monthly_population = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_defender_of_faith = {
+		random = no
+		
+		justify_war_goal_time = -0.25
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_archiepiskop = {
+		random = no
+		
+		political_power_gain = 0.05
+		war_support_factor = 0.1
+		stability_factor = 0.1
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_fanaticism = {
+		random = no
+		recruitable_population = 0.05
+		max_commander_army_size = 2
+		army_defence_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	LWV_pragmatism = {
+		random = no
+		resistance_growth = -0.1
+		resistance_damage_to_garrison = -0.05
+		non_core_manpower = 0.05
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###############################
+	#Черта анархии в ГЛК		  #
+	#A trait of anarchy in the GLS#
+	###############################
+	GLS_dead_dream = {
+		random = no
+		monthly_population = -1
+		stability_factor = -0.75
+		production_speed_buildings_factor = -0.9
+		surrender_limit = -0.95
+		
+		ai_will_do = {
+			factor = 1
+		}		
+	}	
+
+
+
+	###################################
+	#### Черты Паутов ###
+	###################################
+	multipass_master = {
+		random = no
+		ai_desired_divisions_factor = 0.20
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	###################################
+	#### Черты Мгла ###
+	###################################
+	exclusion_zone_trait = {
+		random = no
+		monthly_population = -1.0
+		research_speed_factor = -1.0
+		consumer_goods_factor = 1.0
+		army_org = -1.0
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	###################################
+	###Черты миноров###
+	###################################
+	dictator = {
+		random = no
+		political_power_gain = 0.02
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

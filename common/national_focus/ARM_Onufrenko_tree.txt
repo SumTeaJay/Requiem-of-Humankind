@@ -1,0 +1,131 @@
+focus_tree = {
+	id = ARM_Onufrenko_tree
+
+    country = {
+        factor = 0
+    }
+
+    default = no
+
+	focus = {
+		id = ARM_dawn_of_traitors
+		icon = GFX_ARM_dawn_of_traitors_pic
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = { 
+			set_war_support = 1
+		}
+	}
+
+	focus = {
+		id = ARM_destroyed_unity
+		icon = GFX_ARM_destroyed_unity_pic
+		cost = 5
+		x = 6
+		y = 2
+		prerequisite = {
+			focus = ARM_dawn_of_traitors
+		}
+		completion_reward = { 
+			set_stability = 0
+		}
+	}
+
+	focus = {
+		id = ARM_no_more
+		icon = GFX_ARM_no_more_pic
+		cost = 5
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = ARM_destroyed_unity
+		}
+		completion_reward = { 
+			add_manpower = 1500
+		}
+	}
+	focus = {
+		id = ARM_no_more_again
+		icon = GFX_ARM_no_more_again_pic
+		cost = 5
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = ARM_destroyed_unity
+		}
+		completion_reward = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 500
+				producer = ARM
+			}
+			add_equipment_to_stockpile = {
+				type = civilian_clothing
+				amount = 500
+				producer = ARM
+			}
+		}
+	}
+	focus = {
+		id = ARM_kill_the_snake
+		icon = GFX_ARM_kill_the_snake_pic
+		cost = 5
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = ARM_no_more
+		}
+		prerequisite = {
+			focus = ARM_no_more_again
+		}
+		will_lead_to_war_with = IMP
+		will_lead_to_war_with = COR
+		will_lead_to_war_with = BSO
+		will_lead_to_war_with = PLR
+		will_lead_to_war_with = NOR
+		completion_reward = { 
+			declare_war_on = {
+				type = annex_everything
+				target = IMP
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = COR
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = BSO
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = PLR
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = NOR
+			}
+			hidden_effect = {
+                load_focus_tree = {
+                	tree = ARM_without_tree
+                	keep_completed = no
+				}
+			}
+			IMP = {
+				set_country_flag = Onufrenko_declare_war
+			}
+			hidden_effect = {
+				IMP = {
+					country_event = {
+						id = ARMnew.20
+					}
+				}
+				ARM = {
+					add_ideas = {
+						ARM_Onufrenko_attack
+					}
+				}
+			}
+		}
+	}
+}

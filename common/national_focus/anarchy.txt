@@ -1,0 +1,63 @@
+focus_tree = {
+	id = anarchy_focus_tree
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = BLS
+		}
+		modifier = {
+			add = 10
+			tag = SIL
+		}
+		modifier = {
+			add = 10
+			tag = WTR
+		}
+		modifier = {
+			add = 10
+			tag = MOS
+		}
+		modifier = {
+			add = 10
+			tag = KRT
+		}
+		modifier = {
+			add = 10
+			tag = NFL
+		}
+		modifier = {
+			add = 10
+			tag = SFL
+		}
+		modifier = {
+			add = 10
+			tag = WEC
+		}
+		modifier = {
+			add = 10
+			tag = SAC
+		}
+		modifier = {
+			add = 10
+			tag = SOC
+		}
+		modifier = {
+			add = 10
+			tag = KSK
+		}
+		modifier = {
+			add = 10
+			tag = BLT
+		}
+		modifier = {
+			add = 10
+			tag = VOS
+		}
+	}
+	default = no
+}
+
+
+
+

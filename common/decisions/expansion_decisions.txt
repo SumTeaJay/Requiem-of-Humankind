@@ -1,0 +1,141 @@
+expansion_category = {
+    unite_motherland = {
+        available = {
+            all_other_country = {
+                exists = no
+            }
+        }
+        priority = 200
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = {
+                    OR = {
+                        has_government = statesmen
+                        has_government = militarists
+                    }
+                }
+                set_cosmetic_tag = motherland_statesmen
+            } 
+            if = {
+                limit = {
+                    OR = {
+                        has_government = humanists
+                        has_government = technocracy
+                        has_government = free_people
+                        has_government = bandits
+                    }
+                }
+                set_cosmetic_tag = motherland_humanists
+            } 
+            if = {
+                limit = {
+                    has_government = sacraments
+                }
+                set_cosmetic_tag = motherland_sacraments           
+            }
+            if = {
+                limit = {
+                    has_government = chthonism
+                }
+                set_cosmetic_tag = motherland_chthonism        
+            }
+        }
+        ai_will_do = { factor = 100 }
+    }
+    start_expansion = {
+        priority = 150
+        available = { 
+            num_divisions > 9
+            has_manpower > 299
+        }
+        cost = 250
+        fire_only_once = yes
+        complete_effect = {
+            set_country_flag = access_to_justifications_of_war
+            custom_effect_tooltip = can_declare_war_tt        
+            hidden_effect = { add_ideas = lower_time_for_justification_of_wargoal }    
+            ROOT = {
+                every_subject_country = {
+                    PREV = {
+                        annex_country = {
+                            target = PREV
+                            transfer_troops = yes
+                        }
+                    }
+                }
+            }
+        }
+        ai_will_do = { factor = 0 }
+    }
+    annex_anarchy = {
+        priority = 100
+        targets = { SIL WTR MOS BLT SOC SAC WEC }
+        targets_dynamic = yes
+        visible = { 
+            ROOT = { is_neighbor_of = FROM }
+        }
+        cost = 200
+        fire_only_once = yes
+        days_remove = 180
+        remove_effect = {
+            ROOT = {
+                annex_country = { target = FROM }
+            }
+            FROM = {
+                every_core_state = {
+                    remove_core_of = FROM
+                    add_core_of = ROOT
+                }
+            }
+        }
+        ai_will_do = { factor = 0 }
+    }
+}
+
+reunification_category = {
+    major_unite_motherland = {
+        available = { all_other_country = { tag = BLS } }
+        priority = 200
+        fire_only_once = yes
+        complete_effect = {
+            if = {
+                limit = { tag = GLS }
+                news_event = super.5
+                add_political_power = 10
+                add_stability = 0.03
+            }
+            if = {
+                limit = { tag = ODS }
+                news_event = super.6
+                add_political_power = 25
+                add_stability = 0.03   
+                add_popularity = {
+                    ideology = sacraments
+                    popularity = 0.05
+                }             
+            }
+            if = {
+                limit = { tag = ARM }
+                news_event = super.7
+                add_political_power = 25
+                add_stability = 0.03   
+                add_popularity = {
+                    ideology = statesmen
+                    popularity = 0.05
+                }                    
+            }
+            if = {
+                limit = { tag = LWV }
+                news_event = super.8
+                add_political_power = 25
+                add_stability = 0.03 
+                add_popularity = {
+                    ideology = sacraments
+                    popularity = 0.05
+                }                
+            }
+        }
+        ai_will_do = { factor = 100 }
+    }    
+}

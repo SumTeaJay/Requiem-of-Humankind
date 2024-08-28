@@ -1,0 +1,222 @@
+scripted_gui = { 
+    ODS_intention = {
+        context_type = decision_category
+		window_name = "ODS_intention_gui"
+		visible = { 
+			always = yes
+		}
+		properties = {		
+			ODS_intention_scale = { frame = Conception_var }
+		}			
+    }
+
+    ODS_specializations_of_regions = {
+		context_type = selected_state_context
+		parent_window_token = selected_state_view
+		window_name = "ODS_specializations_of_regions_gui"
+		visible = {
+			ODS = { has_country_flag = ODS_access_to_specialization_of_regions }
+			FROM = { has_dynamic_modifier = { modifier = ODS_informed_society } }
+		}
+		properties = {
+			ods_specializations_of_regions_button = {
+				image = "[ods_specializations_of_regions_button_icon]"	
+			}
+		}
+		effects = {
+			ods_specializations_of_regions_button_click = {
+				if = {
+					limit = { check_variable = { ods_specializations_of_regions_show_options_var = 0 } }
+					set_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				}
+				else = {
+					set_variable = { ods_specializations_of_regions_show_options_var = 0 }
+				}
+			}
+			ods_industrial_region_button_click = {
+				if = {
+					limit = { 
+						ODS = { check_variable = { black_rubles_budget > 299 } }
+						ODS = { has_political_power > 9 }
+					}
+					ODS = { add_political_power = -10 }
+					ODS = { subtract_from_variable = { black_rubles_budget = 300 } }
+					ODS = { add_to_variable = { Conception_var = 1 } }
+					FROM = {
+						add_dynamic_modifier = { modifier = ods_industrial_region }
+					}
+				}
+			}
+			ods_resource_region_button_click = {
+				if = {
+					limit = { 
+						ODS = { check_variable = { black_rubles_budget > 299 } }
+						ODS = { has_political_power > 9 }
+					}
+					ODS = { add_political_power = -10 }
+					ODS = { subtract_from_variable = { black_rubles_budget = 300 } }
+					ODS = { add_to_variable = { Conception_var = 1 } }
+					FROM = {
+						add_dynamic_modifier = { modifier = ods_resource_region }
+					}
+				}
+			}
+			ods_agricultural_region_button_click = {
+				if = {
+					limit = { 
+						ODS = { check_variable = { black_rubles_budget > 299 } }
+						ODS = { has_political_power > 9 }
+					}
+					ODS = { add_political_power = -10 }
+					ODS = { subtract_from_variable = { black_rubles_budget = 300 } }
+					ODS = { add_to_variable = { Conception_var = 1 } }
+					FROM = {
+						add_dynamic_modifier = { modifier = ods_agricultural_region }
+					}
+				}
+			}
+			ods_research_region_button_click = {
+				if = {
+					limit = { 
+						ODS = { check_variable = { black_rubles_budget > 499 } }
+						ODS = { has_political_power > 9 }
+					}	
+					ODS = { add_political_power = -10 }
+					ODS = { subtract_from_variable = { black_rubles_budget = 500 } }
+					ODS = { add_to_variable = { Conception_var = 1 } }
+					FROM = {
+						add_dynamic_modifier = { modifier = ods_research_region }
+					}
+				}
+			}
+		}
+		triggers = {
+			ods_specializations_of_regions_button_visible = {
+				FROM = {
+					is_owned_by = ODS
+				}
+			}
+			background_1x1_visible = {
+				FROM = {
+					is_owned_by = ODS
+				}
+			}			
+			background_4x1_visible = {
+				check_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				FROM = { 
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { 
+								modifier = ods_industrial_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_resource_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_agricultural_region 
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_research_region
+							} 
+						}
+					}
+				}
+			}
+			ods_industrial_region_button_visible = {
+				check_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				FROM = { 
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { 
+								modifier = ods_industrial_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_resource_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_agricultural_region 
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_research_region
+							} 
+						}
+					}
+				}
+			}
+			ods_resource_region_button_visible = {
+				check_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				FROM = { 
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { 
+								modifier = ods_industrial_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_resource_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_agricultural_region 
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_research_region
+							} 
+						}
+					}
+				}
+			}
+			ods_agricultural_region_button_visible = {
+				check_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				FROM = { 
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { 
+								modifier = ods_industrial_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_resource_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_agricultural_region 
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_research_region
+							} 
+						}
+					}
+				}
+			}
+			ods_research_region_button_visible = {
+				check_variable = { ods_specializations_of_regions_show_options_var = 1 }
+				FROM = { 
+					NOT = {
+						OR = { 
+							has_dynamic_modifier = { 
+								modifier = ods_industrial_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_resource_region
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_agricultural_region 
+							} 
+							has_dynamic_modifier = { 
+								modifier = ods_research_region
+							} 
+						}
+					}
+				}
+			}
+		}
+	}
+	#ODS_consciousness_gui = {
+	#	context_type = decision_category
+	#	dirty = points_consciousness
+	#	dirty = common_consciousness
+	#	visible = {
+	#		always = yes
+	#	}
+	#	properties = {
+	#		
+	#	}
+	#}
+}

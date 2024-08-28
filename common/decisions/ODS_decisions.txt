@@ -1,0 +1,658 @@
+ODS_kuban = {
+	krasnodar_annex = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		visible = {
+			has_country_flag = Kuban_in_fire
+		}
+		available = {
+			has_manpower > 5000
+			has_equipment = {
+				infantry_equipment > 4999
+			}
+			has_equipment = {
+				support_equipment_1 > 4999
+			}
+			has_equipment = {
+				motorized_equipment_1 > 99
+			}			
+		}
+		days_remove = 180
+		complete_effect = {	
+			add_manpower = -5000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment 
+				amount = -5000
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1 
+				amount = -5000
+			}
+			add_equipment_to_stockpile = {
+				type = motorized_equipment_1 
+				amount = -100
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = krasnodar_annex_tt
+			hidden_effect = {
+				random_list = {
+					50 = { 
+						ODS = { 
+							clr_country_flag = Kuban_in_fire 
+							country_event = { id = kuban.2 }
+							annex_country = { 
+								target = ECD 
+								transfer_troops = no 
+							} 
+						} 
+					}
+					50 = { 
+						ODS = { 
+							clr_country_flag = Kuban_in_fire 
+							country_event = { id = kuban.3 } 
+							declare_war_on = { 
+								target = ECD 
+								type = annex_everything 
+							} 
+							KUB = { 
+								declare_war_on = { 
+									target = ECD 
+									type = annex_everything 
+								} 
+							}
+						} 
+					}
+				}
+			}
+		}		
+	}
+}
+
+# ╔══╗╔══╗─╔══╗─╔╗╔╗╔╗╔╗╔╗╔╗╔═══╗╔╗╔╗╔╗╔╗╔═══╗
+# ║╔╗║║╔╗║─║╔╗║─║║║║║║║║║║║║║╔══╝║║║║║║║║║╔══╝
+# ║║║║║║║║─║║║║─║╚╝║║║║║║╚╝║║╚══╗║╚╝║║║║║║╚══╗
+# ║║║║║║║║─║║║║─╚═╗║║║╔║║╔╗║║╔══╝║╔╗║║║╔║║╔══╝
+# ║║║║║╚╝║╔╝╚╝╚╗──║║║╚╝║║║║║║╚══╗║║║║║╚╝║║╚══╗
+# ╚╝╚╝╚══╝╚════╝──╚╝╚══╝╚╝╚╝╚═══╝╚╝╚╝╚══╝╚═══╝
+
+#Сделал Sum Tea Jay
+
+ODS_subordination = {
+	ODS_veil_reinforcement = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			has_manpower > 299
+			custom_trigger_tooltip = {
+				tooltip = has_more_than_three_hundred_black_rubles_tt
+				check_variable = { black_rubles_budget > 299 } 
+			}
+			has_political_power > 9
+			from = { 
+				has_dynamic_modifier = { modifier = ODS_new_land }
+			}
+		}
+		visible = {
+			FROM = {
+				has_dynamic_modifier = { modifier = ODS_new_land }
+			}
+		}
+		target_trigger = {
+			FROM = { 
+				is_fully_controlled_by = ROOT
+				NOT = { 
+					is_core_of = ROOT 
+					has_state_flag = first_level_of_authority
+				} 
+			} 
+		}
+		on_map_mode = decision_view_only
+
+		state_target = yes
+		target_array = ODS.controlled_states
+		fire_only_once = yes
+		days_remove = 21
+		remove_effect = {
+			FROM = {
+				set_state_flag = first_level_of_authority
+				add_dynamic_modifier = { modifier = ODS_reinforced_veil }
+				remove_dynamic_modifier = { modifier = ODS_new_land }
+			}
+			add_to_variable = {
+				var = Conception_var
+				value = 1
+			}		
+			add_manpower = -300
+			add_political_power = -10
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 300
+			}
+		}
+	}
+
+	ODS_focus_on = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = two_hundred_people_in_the_capital_tt	
+				839 = { state_population > 9999 }
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_more_than_two_hundred_black_rubles_tt
+				check_variable = { black_rubles_budget > 199 } 
+			}
+			has_political_power > 9
+		}
+
+		visible = {
+			FROM = { 
+				has_state_flag = first_level_of_authority
+			}
+			NOT = {
+				state = 837
+				state = 838
+				state = 839
+			}
+		}
+		on_map_mode = decision_view_only
+
+		state_target = yes
+		target_array = ODS.controlled_states
+		fire_only_once = yes
+		days_remove = 21
+		remove_effect = {
+			FROM = {
+				clr_state_flag = first_level_of_authority
+				set_state_flag = second_level_of_authority
+				add_dynamic_modifier = { modifier = ODS_focused_eye }
+				remove_dynamic_modifier = { modifier = ODS_reinforced_veil }
+			}
+			add_to_variable = {
+				var = Conception_var
+				value = 1
+			}		
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 200
+			}
+			839 = { add_manpower = -50 }
+			add_manpower = 500	
+			add_political_power = -2 
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 200
+			}
+		}
+	}
+
+	ODS_promoting_mindfulness_in = {
+		icon = GFX_decision_diplo_kuban
+		priority = 100
+		ai_will_do = {
+			base = 100	
+		}
+		available = {
+			custom_trigger_tooltip = { 
+				tooltip = has_more_than_three_hundred_black_rubles_tt
+				check_variable = { black_rubles_budget > 299 } 
+			}
+			has_political_power > 9
+		}
+
+		visible = {
+			FROM = {
+				has_state_flag = second_level_of_authority
+			}
+			NOT = {
+				state = 837
+				state = 838
+				state = 839
+			}
+		}
+		on_map_mode = decision_view_only
+
+		state_target = yes
+		target_array = ODS.controlled_states
+		fire_only_once = yes
+		days_remove = 21
+		remove_effect = {
+			FROM = {
+				add_dynamic_modifier = { modifier = ODS_informed_society }
+				remove_dynamic_modifier = { modifier = ODS_focused_eye }				
+			}
+			add_to_variable = {
+				var = Conception_var
+				value = 1
+			}	
+			add_state_core = FROM
+			add_political_power = -10
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 300
+			}
+		}
+	}
+}
+ODS_consciousness = {
+	#missions
+	cementing_consciousness_mission = {
+		days_mission_timeout = 500
+		allowed = {
+			original_tag = ODS
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		activation = {
+			always = no
+		}
+		fire_only_once = yes
+		timeout_effect = {
+			custom_effect_tooltip = end_consciousness_manipulations
+		}
+	}
+	crumbling_consciousness_mission = {
+		days_mission_timeout = 30
+		allowed = {
+			original_tag = ODS
+		}
+		available = {
+			hidden_trigger = {
+				#cancel mission (it will fire empty complete effect, but wont disturb player with unimportant triggers)
+				NOT = {
+					has_active_mission = cementing_consciousness_mission
+				}
+			}
+		}
+		activation = {
+			#will continiously reactivate mission
+			has_active_mission = cementing_consciousness_mission
+		}
+		timeout_effect = {
+			subtract_from_variable = {
+				var = state_consciousness
+				value = 5
+				tooltip = sub_central_consciousness_5_tt
+			}
+			subtract_from_variable = {
+				var = central_consciousness
+				value = 5
+				tooltip = sub_central_consciousness_5_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	#actions (decisions)
+	consciousness_special_forces = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		visible = {
+			has_active_mission = cementing_consciousness_mission
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 12
+				tooltip = add_state_consciousness_12_tt
+			}
+			subtract_from_variable = {
+				var = central_consciousness
+				value = 2
+				tooltip = sub_central_consciousness_2_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_goods_for_everyone = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 5
+				tooltip = add_state_consciousness_5_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 5
+				tooltip = add_central_consciousness_5_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_collective_hand_settings = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 5
+				tooltip = add_state_consciousness_5_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 5
+				tooltip = add_central_consciousness_5_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_break_mental_limits = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 3
+				tooltip = add_state_consciousness_3_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 7
+				tooltip = add_central_consciousness_7_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_cutting_heads = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 5
+				tooltip = add_state_consciousness_5_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 5
+				tooltip = add_central_consciousness_5_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_mind_instead_of_blood = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 2
+				tooltip = add_state_consciousness_2_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 8
+				tooltip = add_central_consciousness_8_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_self_interest_suffocation = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 12
+				tooltip = add_state_consciousness_12_tt
+			}
+			subtract_from_variable = {
+				var = central_consciousness
+				value = 2
+				tooltip = sub_central_consciousness_2_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_imperfection_in_us = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 21
+		days_re_enable = 90
+		available = {
+			has_no_consciousness_action_active = yes
+		}
+		custom_cost_trigger = {
+			has_any_points_consciousness = yes
+		}
+		custom_cost_text = has_any_points_consciousness_cost_tt
+		complete_effect = {
+			subtract_from_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = sub_points_consciousness_1_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = state_consciousness
+				value = 2
+				tooltip = add_state_consciousness_2_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 8
+				tooltip = add_central_consciousness_8_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	#additional actions (decisions)
+	consciousness_central_propaganda = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 45
+		available = {
+			has_no_consciousness_action_active = yes
+			has_no_points_consciousness = yes
+		}
+		custom_cost_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = has_3000_black_rubles_budget_tt
+				check_variable = {
+					black_rubles_budget > 2999
+				}
+			}
+			has_political_power > 39
+		}
+		custom_cost_text = consciousness_central_propaganda_cost_tt
+		complete_effect = {
+			add_political_power = -40
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 3000
+				tooltip = sub_black_rubles_budget_3000_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = add_points_consciousness_1_tt
+			}
+			add_to_variable = {
+				var = central_consciousness
+				value = 2
+				tooltip = add_central_consciousness_2_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+	consciousness_state_propaganda = {
+		allowed = {
+			original_tag = ODS
+		}
+		days_remove = 45
+		available = {
+			has_no_consciousness_action_active = yes
+			has_no_points_consciousness = yes
+		}
+		custom_cost_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = has_2000_black_rubles_budget_tt
+				check_variable = {
+					black_rubles_budget > 1999
+				}
+			}
+			has_political_power > 59
+		}
+		custom_cost_text = consciousness_state_propaganda_cost_tt
+		complete_effect = {
+			add_political_power = -60
+			subtract_from_variable = {
+				var = black_rubles_budget
+				value = 2000
+				tooltip = sub_black_rubles_budget_2000_tt
+			}
+		}
+		remove_effect = {
+			add_to_variable = {
+				var = Conception_var
+				value = 1
+				tooltip = add_points_consciousness_1_tt
+			}
+			add_to_variable = {
+				var = state_consciousness
+				value = 2
+				tooltip = add_state_consciousness_2_tt
+			}
+			calc_common_consciousness = yes
+		}
+	}
+}

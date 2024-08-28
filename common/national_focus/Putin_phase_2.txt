@@ -1,0 +1,914 @@
+focus_tree = {
+	id = SDC_phase_two
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 100
+            tag = SDC
+        }
+    }
+    default = no
+
+    focus = {
+        id = SDC_facility
+        icon = GFX_facility
+        cost = 5
+        x = 6
+        y = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_popularity = {
+                ideology = sacraments
+                popularity = -0.14
+            }
+            add_stability = 0.05
+            country_event = pautov.14
+        }
+    }
+    focus = {
+        id = SDC_increase_volumes
+        prerequisite = { focus = SDC_facility }
+        icon = GFX_increase_volumes
+        cost = 5
+        x = 4
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            214 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+        }
+            884 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_mobilisation
+        icon = GFX_mobilisation
+        prerequisite = { focus = SDC_facility }
+        cost = 5
+        x = 6
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_ideas = SDC_mobilisation_idea
+        }
+    }
+    focus = {
+        id = SDC_shifting_deadlines
+        icon = GFX_shifting_deadlines
+        prerequisite = { focus = SDC_facility }
+        cost = 5
+        x = 8
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            set_country_flag = payment_flag
+            add_manpower = 2500
+            division_template = {
+                name = "Добровольцы"
+                is_locked = yes
+                priority = 2
+                 regiments = {
+		            infantry = { x = 0 y = 0 }
+		            infantry = { x = 1 y = 0 }
+		            infantry = { x = 2 y = 0 }
+		            infantry = { x = 0 y = 1 }
+	 	            infantry = { x = 1 y = 1 }
+	            }
+            }
+            random_owned_state = {
+                create_unit = { 
+                    division = "name = \"Добровольцы\" division_template = \"Добровольцы\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+                create_unit = {
+                    division = "name = \"Добровольцы\" division_template = \"Добровольцы\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+            custom_effect_tooltip = SDC_shifting_deadlines_tt
+        }
+    }
+    focus = {
+        id = SDC_preemptive_strike
+        icon = GFX_preemptive_strike
+        prerequisite = { focus = SDC_mobilisation }
+        prerequisite = {
+            focus = SDC_increase_volumes
+            focus = SDC_shifting_deadlines
+        }
+        cost = 5
+        x = 6
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            declare_war_on = {
+                target = UFV
+                type = annex_everything
+            }
+            VOZ = {
+                declare_war_on = {
+                    target = UFV
+                    type = annex_everything
+                }
+            }
+            country_event = pautov.15
+        }
+    }
+    focus = {
+        id = SDC_great_chess_game
+        icon = GFX_great_chess_game
+        prerequisite = { focus = SDC_preemptive_strike }
+        available = {
+            has_war = no
+        }
+        cost = 5
+        x = 6
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            set_country_flag = chess_game_flag
+            add_ideas = SDC_accumulation_of_forces
+            give_guarantee = SDI
+            SDI = {
+                give_guarantee = SDC
+            }
+            VOZ = {
+                give_guarantee = REN
+            }
+            REN = {
+                give_guarantee = VOZ
+            }
+            hidden_effect = {
+                SDC_Putin = {
+                    add_country_leader_trait = multipass_master
+                }
+                VOZ_Blazhenny_Zeruil = {
+                    add_country_leader_trait = multipass_master
+                }
+            }
+            custom_effect_tooltip = SDC_great_chess_game_tt
+            country_event = pautov.16
+        }
+    }
+    focus = {
+        id = SDC_hybrid_war
+        icon = GFX_hybrid_war
+        prerequisite = { focus = SDC_great_chess_game }
+        available = {
+            has_war = no
+            country_exists = SDI
+        }
+        cost = 5
+        x = 4
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            custom_effect_tooltip = SDC_hybrid_war_tt
+        }
+    }
+    focus = {
+        id = SDC_stalkers_squads
+        icon = GFX_stalkers_squads
+        prerequisite = { focus = SDC_hybrid_war }
+        available = {
+            hidden_trigger = {
+                has_country_flag = take_posisions_SDI_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = decision_take_posisions_SDI_tt
+            }
+        }
+        cost = 5
+        x = 2
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Korodonniki3
+                add_idea = SDC_Korodonniki4
+            }
+        }
+    }
+    focus = {
+        id = SDC_execution_service
+        icon = GFX_execution_service
+        prerequisite = { focus = SDC_hybrid_war }
+        available = {
+            hidden_trigger = {
+                has_country_flag = take_posisions_SDI_flag
+            }
+            custom_trigger_tooltip = {
+                tooltip = decision_take_posisions_SDI_tt
+            }
+        }
+        cost = 5
+        x = 4
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            division_template = {
+                name = "ФСИН"
+                is_locked = yes
+                priority = 2
+                regiments = {
+		            light_infantry = { x = 0 y = 0 }
+		            light_infantry = { x = 0 y = 1 }
+		            light_infantry = { x = 1 y = 0 }
+		            light_infantry = { x = 1 y = 1 }
+	 	            light_infantry = { x = 2 y = 0 }
+                    light_infantry = { x = 2 y = 1 }
+	            }
+            }
+            random_owned_state = {
+                create_unit = { 
+                    division = "name = \"ФСИН\" division_template = \"ФСИН\" start_experience_factor = 0.8 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+            979 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_science_academy
+        icon = GFX_science_academy
+        prerequisite = { focus = SDC_great_chess_game }
+        cost = 5
+        x = 6
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            custom_effect_tooltip = SDC_science_academy_tt
+            country_event = pautov.17
+        }
+    }
+    focus = {
+        id = SDC_Martins_comunications
+        icon = GFX_Martins_comunications
+        prerequisite = { focus = SDC_science_academy }
+        cost = 5
+        x = 6
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            custom_effect_tooltip = SDC_Martins_comunications_tt
+            country_event = pautov.18
+        }
+    }
+    focus = {
+        id = SDC_national_traitors
+        icon = GFX_national_traitors
+        prerequisite = { focus = SDC_great_chess_game }
+        available = {
+            has_war = no
+            country_exists = REN
+        }
+        cost = 5
+        x = 8
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            custom_effect_tooltip = SDC_national_traitors_tt
+        }
+    }
+    focus = {
+        id = SDC_archangelsk_sever
+        icon = GFX_Arkhangelsk-Sever
+        prerequisite = { focus = SDC_national_traitors }
+        available = {
+            has_war = no
+            country_exists = REN
+        }
+        cost = 5
+        x = 8
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            REN = {
+                add_ideas = REN_activists
+            }
+            custom_effect_tooltip = SDC_archangelsk_sever_tt
+        }
+    }
+    focus = {
+        id = SDC_force_methods
+        icon = GFX_force_methods
+        prerequisite = { focus = SDC_national_traitors }
+        available = {
+            has_war = no
+            country_exists = REN
+        }
+        cost = 5
+        x = 10
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            custom_effect_tooltip = SDC_force_methods_tt
+        }
+    }
+    focus = {
+        id = SDC_special_military_operation
+        icon = GFX_special_military_operation
+        prerequisite = {
+            focus = SDC_stalkers_squads
+            focus = SDC_execution_service
+            focus = SDC_Martins_comunications
+            focus = SDC_archangelsk_sever
+            focus = SDC_force_methods
+        }
+        available = {
+            has_war = no
+            country_exists = VOZ
+            NOT = {
+                country_exists = REN
+            }
+            custom_trigger_tooltip = {
+                tooltip = SDC_special_military_operation_tt
+                has_country_flag = take_posisions_SDI_flag
+                has_country_flag = take_posisions_ODJ_flag
+            }
+        }
+        cost = 5
+        x = 6
+        y = 7
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            declare_war_on = {
+                target = VOZ
+                type = annex_everything
+            }
+            country_event = pautov.19
+            hidden_effect = {
+                if = {
+                    limit = { country_exists = GLS }
+                    country_event = {
+                        id = pautov.20
+                        days = 10
+                    }
+                }
+                if = {
+                    limit = { country_exists = PMD }
+                    country_event = {
+                        id = pautov.21
+                        days = 20
+                    }
+                }
+                if = {
+                    limit = { country_exists = ARM }
+                    country_event = {
+                        id = pautov.22
+                        days = 30
+                    }
+                }
+                if = {
+                    limit = { country_exists = AGE }
+                    country_event = {
+                        id = pautov.23
+                        days = 40
+                    }
+                }                
+            }
+        }
+    }
+    focus = {
+        id = SDC_appoint_Martin
+        icon = GFX_appoint_Martin
+        prerequisite = { focus = SDC_special_military_operation }
+        mutually_exclusive = { focus = SDC_direct_control }
+        available = {
+            has_war = no
+            NOT = {
+                country_exists = VOZ
+            }
+        }
+        cost = 5
+        x = 4
+        y = 8
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_ideas = SDC_Weak_eastern_idea
+        }
+    }
+    focus = {
+        id = SDC_dont_fear_chalanges
+        icon = GFX_dont_fear_chalanges
+        prerequisite = { focus = SDC_appoint_Martin }
+        cost = 5
+        x = 3
+        y = 9
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            if = {
+            limit = { has_idea = SDC_midle_eastern_idea } 
+                swap_ideas = {
+                    remove_idea = SDC_midle_eastern_idea
+                    add_idea = SDC_hight_eastern_idea
+                }
+            }
+            else_if = {
+            limit = { has_idea = SDC_Weak_eastern_idea }
+                swap_ideas = {
+                    remove_idea = SDC_Weak_eastern_idea
+                    add_idea = SDC_midle_eastern_idea
+                }
+            }
+            980 = { 
+                add_core_of = SDC 
+                remove_core_of = REN
+            }
+            947 = { 
+                add_core_of = SDC 
+                remove_core_of = UFV
+
+            }
+            581 = { 
+                add_core_of = SDC 
+                remove_core_of = MIN
+            }
+            add_manpower = 1500
+        }
+    }
+    focus = {
+        id = SDC_science_methods
+        icon = GFX_science_methods
+        prerequisite = { focus = SDC_appoint_Martin }
+        cost = 5
+        x = 5
+        y = 9
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            if = {
+            limit = { has_idea = SDC_midle_eastern_idea } 
+                swap_ideas = {
+                    remove_idea = SDC_midle_eastern_idea
+                    add_idea = SDC_hight_eastern_idea
+                }
+            }
+            else_if = {
+            limit = { has_idea = SDC_Weak_eastern_idea }
+                swap_ideas = {
+                    remove_idea = SDC_Weak_eastern_idea
+                    add_idea = SDC_midle_eastern_idea
+                }
+            }
+            982 = {
+                remove_core_of = VOZ
+                remove_core_of = TRO
+                add_core_of = SDC
+            }
+            825 = {
+                remove_core_of = VOZ
+                add_core_of = SDC
+            }
+            916 = {
+                remove_core_of = VOZ
+                add_core_of = SDC
+            }
+            897 = {
+                remove_core_of = VOZ
+                add_core_of = SDC
+            }
+        }
+    }
+    focus = {
+        id = SDC_integration
+        icon = GFX_integration
+        prerequisite = { focus = SDC_dont_fear_chalanges }
+        prerequisite = { focus = SDC_science_methods }
+        cost = 5
+        x = 4
+        y = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_hight_eastern_idea
+                add_idea = SDC_Martin_integration_eastern_idea
+            }
+            981 = {
+                add_core_of = SDC
+                remove_core_of = VOZ
+                add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            982 = {
+                add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            825 = {
+                add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            581 = {
+                add_building_construction = {
+                    type = radar_station
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            add_popularity = {
+                ideology = technocracy
+                popularity = 0.15
+            }
+            set_party_name = {
+                ideology = technocracy
+                long_name = SDC_science_Council_long
+                name = SDC_science_Council
+            }
+            promote_character = {
+                character = SDC_Martin_Dugin
+                ideology = technocracy_subideology
+            }
+        }
+    }
+    focus = {
+        id = SDC_direct_control
+        icon = GFX_direct_control 
+        prerequisite = { focus = SDC_special_military_operation }
+        mutually_exclusive = { focus = SDC_appoint_Martin }
+        available = {
+            has_war = no
+            NOT = {
+                country_exists = VOZ
+            }
+        }
+        cost = 5
+        x = 8
+        y = 8
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_ideas = SDC_Weak_eastern_idea
+        }
+    }
+    focus = {
+        id = SDC_finish_survivers
+        icon = GFX_finish_survivers
+        prerequisite = { focus = SDC_direct_control }
+        cost = 5
+        x = 7
+        y = 9
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Weak_eastern_idea
+                add_idea = SDC_midle_eastern_idea
+            }
+            980 = {
+                add_core_of = SDC
+                remove_core_of = REN
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_manpower = -2000
+            }
+            947 = {
+                add_core_of = SDC
+                remove_core_of = UFV
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_manpower = -2000
+            }
+            581 = {
+                add_core_of = SDC
+                remove_core_of = MIN
+                add_extra_state_shared_building_slots = 2
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+                add_manpower = -2000
+            }
+        }
+    }
+    focus = {
+        id = SDC_Ural_brigades
+        icon = GFX_Ural_brigades
+        prerequisite = { focus = SDC_direct_control }
+        cost = 5
+        x = 9
+        y = 9
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_midle_eastern_idea
+                add_idea = SDC_hight_eastern_idea
+            }
+            982 = {
+                add_core_of = SDC
+                remove_core_of = TRO
+                remove_core_of = VOZ
+                add_manpower = -2000
+            }
+            825 = {
+                add_core_of = SDC
+                remove_core_of = VOZ
+                add_manpower = -2000
+            }
+            916 = {
+                add_core_of = SDC
+                add_manpower = -2000
+                remove_core_of = VOZ
+            }
+            897 = {
+                add_core_of = SDC
+                add_manpower = -2000
+                remove_core_of = VOZ
+            }
+            division_template = {
+                name = "Uralskaya brigada"
+                is_locked = no
+                force_allow_recruiting = yes
+                priority = 1
+                regiments = {
+                    light_infantry = { x = 0 y = 0 }
+                    light_infantry = { x = 1 y = 0 }
+                    light_infantry = { x = 2 y = 0 }
+                    light_infantry = { x = 0 y = 1 }
+                    light_infantry = { x = 1 y = 1 }
+                    light_infantry = { x = 2 y = 1 }
+                }
+            }
+            capital_scope = {
+                    create_unit = {
+                    division = "name = \"1. Uralskaya brigada\" division_template = \"Uralskaya brigada\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+                    create_unit = {
+                    division = "name = \"1. Uralskaya brigada\" division_template = \"Uralskaya brigada\" start_experience_factor = 0.5 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_peacification
+        icon = GFX_peacification
+        prerequisite = { focus = SDC_finish_survivers }
+        prerequisite = { focus = SDC_Ural_brigades }
+        cost = 5
+        x = 8
+        y = 10
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_hight_eastern_idea
+                add_idea = SDC_Control_integration_eastern_idea
+            }
+            981 = {
+                add_core_of = SDC
+                remove_core_of = VOZ
+                add_manpower = -2000
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13475
+                }
+            }
+            825 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13376
+                }
+            }
+            982 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13465
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13464
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 12502
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13456
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13448
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13438
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13428
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 11098
+                }
+            }
+            581 = {
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13417
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13405
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 13395
+                }
+                add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 10551
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_doomhour
+        icon = GFX_doomhour
+        prerequisite = {
+            focus = SDC_integration
+            focus = SDC_peacification
+        }
+        cost = 5
+        x = 6
+        y = 11
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            country_event = pautov.24
+        }
+    }
+    focus = {
+        id = SDC_KS3
+        icon = GFX_KS-3
+        prerequisite = { focus = SDC_doomhour }
+        cost = 5
+        x = 6
+        y = 12
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            annex_country = {
+                target = WEC
+                transfer_troops = no
+            }
+            annex_country = {
+                target = SAC
+                transfer_troops = no
+            }
+            annex_country = {
+                target = SOC
+                transfer_troops = no
+            }
+            WEC = {
+                every_core_state = {
+                    add_core_of = SDC
+                    remove_core_of = WEC
+                }
+            }
+            985 = {
+                add_core_of = SDC
+                remove_core_of = SAC
+            }
+            986 = {
+                add_core_of = SDC
+                remove_core_of = SOC
+            }
+            country_event = pautov.25
+            hidden_effect = {
+                load_focus_tree = {
+                    tree = SDC_phase_two_five
+                    keep_completed = no
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,129 @@
+﻿defined_text = {
+	name = GetLoserAllies
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetWinnerAllies
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = PEACE_POPUP_COUNTRY_PLURAL
+	}
+	text = {
+		localization_key = PEACE_POPUP_COUNTRY_SINGULAR
+	}
+}
+
+defined_text = {
+	name = GetLoserAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = losing_country_multiple
+		}
+		localization_key = PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+defined_text = {
+	name = GetWinnerAlliesWithHas
+	text = {
+		trigger = {
+			has_global_flag = winning_country_multiple
+		}
+		localization_key = PEACE_POPUP_COUNTRY_PLURAL_HAS
+	}
+	text = {
+		localization_key = PEACE_POPUP_COUNTRY_SINGULAR_HAS
+	}
+}
+
+defined_text = {
+	name = GetWarStatus
+	text = {
+		trigger = {
+			has_global_flag = war_won
+		}
+		localization_key = PEACE_POPUP_WAR_CONCLUSION
+	}
+	text = {
+		trigger = {
+			has_global_flag = war_continuing
+		}
+		localization_key = PEACE_POPUP_WAR_CONTINUING
+	}
+}
+
+
+#### PUT YOUR VARIOUS CATEGORIES/TRIGGERS IN HERE ###
+
+# Refer to the winning country's tag like so "global_event_target:winning_country"
+# and the losing country's tag like so "global_event_target:losing_country"
+
+defined_text = {
+	name = GetWarConclusionLoc
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SMK
+			}
+		}
+		localization_key = PEACE_POPUP_WAR_CONCLUSION_NAR_WIN
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = NAR
+			}
+		}
+		localization_key = PEACE_POPUP_WAR_CONCLUSION_SMK_WIN
+	}
+	##
+	text = {
+		localization_key = PEACE_POPUP_WAR_CONCLUSION_DEFAULT
+	}
+}
+
+defined_text = {
+	name = GetFlavor
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = SMK
+			}
+		}
+		localization_key = PEACE_POPUP_FLAVOR_NAR
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = NAR
+			}
+		}
+		localization_key = PEACE_POPUP_FLAVOR_SMK
+	}
+	text = {
+		trigger = {
+			event_target:losing_country = {
+				original_tag = AGE
+			}
+		}
+		localization_key = PEACE_POPUP_FLAVOR_AGE
+	}
+	##
+	text = {
+		localization_key = PEACE_POPUP_FLAVOR_DEFAULT
+	}
+}

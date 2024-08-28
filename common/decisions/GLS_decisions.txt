@@ -1,0 +1,331 @@
+GLS_freedom_and_order = {
+	talk_to_victor = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		#available = {  }
+		cost = 75
+		days_re_enable = 25
+
+		complete_effect = {
+			custom_effect_tooltip = gls_talk_to_victor_tt
+			hidden_effect = {
+				add_to_variable = { freedom = 5 }
+			}			
+		}		
+	}
+	talk_to_vladimir = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		#available = {  }
+		cost = 75
+		days_re_enable = 25
+
+		complete_effect = {
+			custom_effect_tooltip = gls_talk_to_vladimir_tt
+			hidden_effect = {
+				add_to_variable = { order = 5 }
+			}
+		}		
+	}
+	conduct_an_audit_of_troops = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		#available = {  }
+		cost = 150	
+		days_re_enable = 25
+		
+		complete_effect = {
+			custom_effect_tooltip = gls_conduct_an_audit_of_troops_tt
+			hidden_effect = {
+				subtract_from_variable = { freedom = 10 }
+			}
+		}			
+	}
+	reduce_bureaucratic_burden = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		#available = {  }
+		cost = 150	
+		days_re_enable = 25
+		
+		complete_effect = {
+			custom_effect_tooltip = gls_reduce_bureaucratic_burden_tt
+			hidden_effect = {
+				subtract_from_variable = { order = 10 }
+			}
+		}			
+	}
+	call_to_discipline = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110
+		allowed = { original_tag = GLS }
+		available = { has_completed_focus = GLS_Brains }
+		visible = { has_completed_focus = GLS_Brains }
+		cost = 100
+		days_re_enable = 30
+
+		complete_effect = {
+			custom_effect_tooltip = GLS_call_to_discipline_tt
+			hidden_effect = { 
+				subtract_from_variable = { freedom = 15 }
+				add_to_variable = { order = 15 }
+			}
+		}
+	}
+	remember_the_great_idea = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110
+		allowed = { original_tag = GLS }
+		available = { has_completed_focus = GLS_Number_one }
+		visible = { has_completed_focus = GLS_Number_one }
+		cost = 100
+		days_re_enable = 30
+
+		complete_effect = {
+			custom_effect_tooltip = GLS_remember_the_great_idea_tt
+			hidden_effect = { 
+				subtract_from_variable = { order = 15 }
+				add_to_variable = { freedom = 15 }
+			}
+		}
+	}
+}
+
+GLS_negotiation_process = {
+	gls_deadline = {
+		icon = GFX_decision_eng_trade_unions_support
+		allowed = { original_tag = GLS }
+		activation = { has_country_flag = GLS_negotiation_process_start }
+		available = { 
+			hidden_trigger = {
+				NOT = {
+					country_exists = MOT
+					country_exists = URA
+					country_exists = BL1
+					country_exists = ISK
+				}
+				999 = {
+					is_owned_by = GLS
+				}
+				251 = {
+					is_owned_by = GLS
+				}
+				652 = {
+					is_owned_by = GLS
+				}
+				407 = {
+					is_owned_by = GLS
+				}
+				406 = {
+					is_owned_by = GLS
+				}
+				994 = {
+					is_owned_by = GLS
+				}
+			} 
+		}
+		days_mission_timeout = 310		
+		is_good = no
+		selectable_mission = no
+
+		complete_effect = {
+			clr_country_flag = GLS_negotiation_process_start
+			country_event = { id = GLS.222 days = 1 }
+		}
+		
+		timeout_effect = {
+			custom_effect_tooltip = gls_deadline_tt
+			hidden_effect = {
+				URC = {
+					create_faction = Urals_Treaty
+					add_to_faction = MOT
+					add_to_faction = URA
+					add_to_faction = EDM
+					add_to_faction = URC
+					add_to_faction = WPK
+					add_to_faction = ZAN
+					add_to_faction = OCH
+					add_to_faction = TAR
+				}
+				MOT = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				URA = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				EDM = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				URC = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				WPK = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				ZAN = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				OCH = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				TAR = {
+					declare_war_on = {
+						target = GLS
+						type = annex_everything
+					}
+				}
+				GLS = {
+					clr_country_flag = GLS_negotiation_process_start
+					set_country_flag = GLS_negotiation_process_fail
+					country_event = { id = GLS.111 days = 1 }
+				}
+			}
+		}		
+	}
+}
+
+
+GLS_kurchatov_project = {
+	GLS_allocate_additional_resources = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		available = {  
+			custom_trigger_tooltip = {
+				tooltip = gls_more_that_5000_rubles
+				check_variable = { black_rubles_budget > 4999 }
+			}			
+		}
+		visible= {
+			NOT = { has_country_flag = gls_2_percent_additive_for_kurchatov_project }
+		}
+		cost = 150	
+		days_re_enable = 20
+		
+		complete_effect = {
+			custom_effect_tooltip = gls_allocate_additional_resources_tt
+			hidden_effect = {
+				subtract_from_variable = { black_rubles_budget = 5000 }	
+				country_event = { id = GLS.750 days = 1 }
+			}
+		}
+	}
+	GLS_allocate_additional_staff = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110		
+		allowed = { original_tag = GLS }	
+		available = {  	
+			has_manpower > 3000
+		}
+		cost = 150	
+		days_re_enable = 20
+		
+		complete_effect = {
+			add_manpower = -3000
+			custom_effect_tooltip = gls_allocate_additional_staff_tt
+			hidden_effect = {
+				add_to_variable = { ready_charge = 5 }
+			}
+		}
+	}
+}
+
+GLS_nuclear_strike = {
+	GLS_launch_a_nuclear_strike = {
+		icon = GFX_decision_eng_trade_unions_support
+		priority = 110	
+		cost = 150		
+		allowed = { original_tag = GLS }		
+		visible= {
+			FROM = {
+				has_war_with = GLS
+				has_capitulated = no
+				hidden_trigger = {
+					NOT = { has_country_flag = nuclear_strike_has_been_launched_against_you_lol }	
+				}
+			}
+		}
+		available = { 
+			custom_trigger_tooltip = {
+				tooltip = has_nuclear_charge_tt
+				check_variable = { nuclear_charges > 0 }
+			}
+			FROM = {
+				has_war_with = GLS
+				has_capitulated = no
+				hidden_trigger = {
+					NOT = { has_country_flag = nuclear_strike_has_been_launched_against_you_lol }	
+				}
+			}				
+		}
+		
+		target_array = enemies
+		targets_dynamic = yes
+		target_trigger = {
+			FROM = {
+				has_war_with = GLS
+				has_capitulated = no
+				NOT = { has_country_flag = nuclear_strike_has_been_launched_against_you_lol }		
+			}
+		}
+		
+		ai_will_do = {
+			base = 200
+		}		
+		
+		complete_effect = {
+			custom_effect_tooltip = gls_launch_a_nuclear_strike_tt
+			hidden_effect = {
+				FROM = {
+					capital_scope = {
+						set_temp_variable = { GLOBAL.capital_target_state = THIS }
+					}				
+					set_country_flag = nuclear_strike_has_been_launched_against_you_lol 
+					add_timed_idea = {
+						idea = GLS_death_of_gods
+						days = 70
+					}
+					country_event = { id = GLS.666 days = 1 }
+					country_event = { id = GLS.888 days = 70 } #Ивент, чтобы снять флаг
+				}				
+				GLS = {
+					add_stability = -0.03
+					add_to_variable = { freedom = 20 }
+					subtract_from_variable = { order = 10 }
+					subtract_from_variable = { nuclear_charges = 1 }
+					country_event = { id = GLS.777 days = 1 }
+					launch_nuke = {
+						state = capital_target_state
+						controller = FROM
+						use_nuke = no
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+ideas = {
+
+	country = {
+		HOH_the_essence_of_creation = {		#Суть сотворения
+			picture = Blazhennaya_bratia
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1			
+			modifier = {
+				army_core_defence_factor = 0.25
+				army_core_attack_factor = 0.25
+				surrender_limit = 0.15
+				research_speed_factor = -0.25
+				monthly_population = 0.15
+				
+			}
+		}
+	}
+}

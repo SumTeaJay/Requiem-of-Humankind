@@ -1,0 +1,38 @@
+integration_category = {
+	intergrate_core_territory = {
+		target_array = occupied_countries
+		target_non_existing = yes
+		target_trigger = {
+			FROM = {
+				exists = no
+				check_variable = {
+					num_core_states > 0
+				}
+				all_core_state = {
+					is_controlled_by = ROOT
+				}
+			}
+		}
+		custom_cost_trigger = {
+			has_equipment = {
+				infantry_equipment > 399
+			}
+		}
+		custom_cost_text = decision_cost_400_ie_tt
+		days_remove = 70
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -400
+			}			
+		}
+		remove_effect = {
+			FROM = {
+				every_core_state = {
+					add_core_of = ROOT
+					remove_core_of = PREV
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,265 @@
+scripted_gui = {
+	economy_view = {
+		context_type = player_context
+		parent_window_token = politics_tab
+		window_name = "economy_view"
+		dirty = main_country_gui
+		effects = {
+			economy_button_click = {
+				if = {
+					limit = { 
+						NOT = { 
+							check_variable = {
+								main_country_gui = 9
+							}
+						}
+					}
+					set_variable = {
+						main_country_gui = 9
+					}					
+				}
+				else = {
+					set_variable = {
+						main_country_gui = 0
+					}
+				}
+			}
+		}
+	}
+
+	economy_main = {
+		context_type = player_context	
+		parent_window_token = politics_tab
+		window_name = "economy_container"
+		visible = {
+			check_variable = {
+				main_country_gui = 9
+			}
+		}
+		triggers = {
+			picker_production_visible = {
+				set_temp_variable = {
+					picker_production_x = 30.545
+				}
+				multiply_temp_variable = {
+					picker_production_x = production_finances
+				}
+			}
+			picker_civil_visible = {
+				set_temp_variable = {
+					picker_civil_x = 30.545
+				}
+				multiply_temp_variable = {
+					picker_civil_x = civil_finances
+				}
+			}
+			picker_army_visible = {
+				set_temp_variable = {
+					picker_army_x = 30.545
+				}
+				multiply_temp_variable = {
+					picker_army_x = army_finances
+				}
+			}
+			decrease_production_financing_click_enabled = {
+				check_variable = {
+					production_finances > 0
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = yes
+					}
+					has_5000_rubles = yes
+				}
+			}
+			increase_production_financing_click_enabled = {
+				check_variable = {
+					production_finances < 10
+				}
+				has_5000_rubles = yes
+			}
+			decrease_civil_financing_click_enabled = {
+				check_variable = {
+					civil_finances > 0
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = yes
+					}
+					has_5000_rubles = yes
+				}
+			}
+			increase_civil_financing_click_enabled = {
+				check_variable = {
+					civil_finances < 10
+				}
+				has_5000_rubles = yes
+			}
+			decrease_army_financing_click_enabled = {
+				check_variable = {
+					army_finances > 0
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = yes
+					}
+					has_5000_rubles = yes
+				}
+			}
+			increase_army_financing_click_enabled = {
+				check_variable = {
+					army_finances < 10
+				}
+				has_5000_rubles = yes
+			}
+		}
+		effects = {
+			decrease_production_financing_click = {
+				subtract_from_variable = {
+					var = production_finances
+					value = 1
+					tooltip = production_finances_dec_tt
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = no
+					}
+					custom_effect_tooltip = emergency_finacial_situation_tt
+				}
+				else = {
+					set_temp_variable = {
+						dbudget = 5000
+					}
+					clamp_temp_variable = {
+						var = dbudget
+						max = black_rubles_budget
+					}
+					subtract_from_variable = {
+						var = black_rubles_budget
+						value = dbudget
+						tooltip = budget_neg_change_tt
+					}
+				}
+				calc_production_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+			increase_production_financing_click = {
+				add_to_variable = {
+					var = production_finances 
+					value = 1
+					tooltip = production_finances_inc_tt
+				}
+				subtract_from_variable = {
+					var = black_rubles_budget
+					value = 5000
+					tooltip = budget_neg_change_tt
+				}
+				calc_production_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+			decrease_civil_financing_click = {
+				subtract_from_variable = {
+					var = civil_finances
+					value = 1
+					tooltip = civil_finances_dec_tt
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = no
+					}
+					custom_effect_tooltip = emergency_finacial_situation_tt
+				}
+				else = {
+					set_temp_variable = {
+						dbudget = 5000
+					}
+					clamp_temp_variable = {
+						var = dbudget
+						max = black_rubles_budget
+					}
+					subtract_from_variable = {
+						var = black_rubles_budget
+						value = dbudget
+						tooltip = budget_neg_change_tt
+					}
+				}
+				calc_civil_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+			increase_civil_financing_click = {
+				add_to_variable = {
+					var = civil_finances
+					value = 1
+					tooltip = civil_finances_inc_tt
+				}
+				subtract_from_variable = {
+					var = black_rubles_budget
+					value = 5000
+					tooltip = budget_neg_change_tt
+				}
+				calc_civil_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+			decrease_army_financing_click = {
+				subtract_from_variable = {
+					var = army_finances
+					value = 1
+					tooltip = army_finances_dec_tt
+				}
+				if = {
+					limit = {
+						has_positive_budget_growth = no
+					}
+					custom_effect_tooltip = emergency_finacial_situation_tt
+				}
+				else = {
+					set_temp_variable = {
+						dbudget = 5000
+					}
+					clamp_temp_variable = {
+						var = dbudget
+						max = black_rubles_budget
+					}
+					subtract_from_variable = {
+						var = black_rubles_budget
+						value = dbudget
+						tooltip = budget_neg_change_tt
+					}
+				}
+				calc_army_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+			increase_army_financing_click = {
+				add_to_variable = {
+					var = army_finances
+					value = 1
+					tooltip = army_finances_inc_tt
+				}
+				subtract_from_variable = {
+					var = black_rubles_budget
+					value = 5000
+					tooltip = budget_neg_change_tt
+				}
+				calc_army_finances = yes
+				calc_economic_expenses = yes
+				calc_economy_modifier = yes
+			}
+		}
+		properties = {
+			picker_production = {
+				x = picker_production_x
+			}
+			picker_civil = {
+				x = picker_civil_x
+			}
+			picker_army = {
+				x = picker_army_x
+			}
+		}
+	}	
+} 

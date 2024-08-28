@@ -1,0 +1,190 @@
+calc_economic_income = {
+	#oil income
+	set_variable = {
+		oil_black_rubles = resource@oil
+	}
+	multiply_variable = {
+		oil_black_rubles = 10
+	}
+	#industrial income
+	set_variable = {
+		industrial_black_rubles = num_of_civilian_factories
+	}
+	multiply_variable = {
+		industrial_black_rubles = 5
+	}
+	#no need to use var for population, we already has max_manpower_k
+	#sum all incomes
+	set_variable = {
+		economic_income = oil_black_rubles
+	}
+}
+calc_production_finances = {
+	set_variable = {
+		production_expenses = production_finances
+	}
+	subtract_from_variable = {
+		production_expenses = 5
+	}
+	divide_variable = {
+		production_expenses = 0.125
+	}
+	add_to_variable = {
+		production_expenses = 50
+	}
+	multiply_variable = {
+		production_expenses = num_of_military_factories
+	}
+}
+calc_civil_finances = {
+	set_temp_variable = {
+		cg_ic = num_of_civilian_factories
+	}
+	subtract_from_temp_variable = {
+		cg_ic = num_of_civilian_factories_available_for_projects	#now we got consumer goods industrial complexes
+	}
+	set_variable = {
+		civil_expenses = civil_finances
+	}
+	subtract_from_variable = {
+		civil_expenses = 5
+	}
+	divide_variable = {
+		civil_expenses = 1.25
+	}
+	add_to_variable = {
+		civil_expenses = 5
+	}
+	multiply_variable = {
+		civil_expenses = cg_ic
+	}
+}
+calc_army_finances = {
+	set_variable = {
+		army_expenses = army_finances
+	}
+	subtract_from_variable = {
+		army_expenses = 5
+	}
+	divide_variable = {
+		army_expenses = 0.625
+	}
+	add_to_variable = {
+		army_expenses = 10
+	}
+	multiply_variable = {
+		army_expenses = num_armies
+	}
+}
+calc_economic_expenses = {
+	set_variable = {
+		economic_expenses = production_expenses
+	}
+	add_to_variable = {
+		economic_expenses = civil_expenses
+	}
+	add_to_variable = {
+		economic_expenses = army_expenses
+	}
+}
+calc_economy_modifier = {
+	#relative indexing
+	set_temp_variable = {
+		relative_production_finances = production_finances
+	}
+	subtract_from_temp_variable = {
+		relative_production_finances = 5
+	}
+	set_temp_variable = {
+		relative_civil_finances = civil_finances
+	}
+	subtract_from_temp_variable = {
+		relative_civil_finances = 5
+	}
+	set_temp_variable = {
+		relative_army_finances = army_finances
+	}
+	subtract_from_temp_variable = {
+		relative_army_finances = 5
+	}
+	#applying relativness to economic modifier "matrix"
+	set_variable = {
+		eco_mod_gpm = relative_production_finances
+	}
+	subtract_from_variable = {
+		eco_mod_gpm = relative_civil_finances
+	}
+	multiply_variable = {
+		eco_mod_gpm = 0.02
+	}
+	set_variable = {
+		eco_mod_pfsef_sf = relative_army_finances
+	}
+	multiply_variable = {
+		eco_mod_pfsef_sf = -0.1
+	}
+	set_variable = {
+		eco_mod_cgf = relative_production_finances
+	}
+	multiply_variable = {
+		eco_mod_cgf = 2
+	}
+	subtract_from_variable = {
+		eco_mod_cgf = relative_civil_finances
+	}
+	multiply_variable = {
+		eco_mod_cgf = 0.02
+	}
+	set_variable = {
+		eco_mod_psbf_mp = relative_production_finances
+	}
+	add_to_variable = {
+		eco_mod_psbf_mp = relative_civil_finances
+	}
+	multiply_variable = {
+		eco_mod_psbf_mp = -0.02
+	}
+	set_variable = {
+		eco_mod_od = relative_army_finances
+	}
+	multiply_variable = {
+		eco_mod_od = 0.02
+	}
+	set_variable = {
+		eco_mod_asif = relative_army_finances
+	}
+	multiply_variable = {
+		eco_mod_asif = 0.01
+	}
+	set_variable = {
+		eco_mod_aof = relative_army_finances
+	}
+	multiply_variable = {
+		eco_mod_aof = 0.04
+	}
+	set_variable = {
+		eco_mod_ppg = relative_army_finances
+	}
+	multiply_variable = {
+		eco_mod_ppg = -0.05
+	}
+	#HA! Didn`t expect this? cgf is now fixed by this polysemy magic!
+	subtract_from_variable = {
+		eco_mod_cgf = eco_mod_ppg
+	}
+}
+economy_tick_effects = {
+	#order of effects below is IMPORTANT!
+	calc_economic_income = yes
+	calc_production_finances = yes
+	calc_civil_finances = yes
+	calc_army_finances = yes
+	calc_economic_expenses = yes
+	calc_economy_modifier = yes
+	add_to_variable = {
+		black_rubles_budget = economic_income
+	}
+	subtract_from_variable = {
+		black_rubles_budget = economic_expenses
+	}
+}

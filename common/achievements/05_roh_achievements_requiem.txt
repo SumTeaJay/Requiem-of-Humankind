@@ -1,0 +1,20 @@
+unique_id = 05_roh_achievements_requiem
+
+##############################
+#### List of achievements ####
+####    by Daniel_Letov   ####
+##############################
+
+roh_achievement_a_dying_message = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = roh_achievement_a_dying_message_tt
+			has_country_flag = roh_achievement_locker #<== Локер для того, чтобы ачивки нельзя было получить
+		}
+	}
+}

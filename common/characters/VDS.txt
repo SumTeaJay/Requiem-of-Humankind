@@ -1,0 +1,15 @@
+characters = {
+	VDS_pustovoytenko_valeriy = {
+		portraits={
+			civilian={
+				large="gfx/leaders/VDS/valera.dds"
+			}
+		}
+		country_leader={
+			ideology=statesmen_subideology
+			expire="3333.1.1.1"
+			id=-1
+			desc = VDS_pustovoytenko_valeriy_desc
+		}
+	}
+}

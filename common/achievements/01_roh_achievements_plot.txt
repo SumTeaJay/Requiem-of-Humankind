@@ -1,0 +1,34 @@
+unique_id = 01_roh_achievements_plot
+
+##############################
+#### List of achievements ####
+####    by Daniel_Letov   ####
+##############################
+
+roh_achievement_from_ashes_of_nuclear_fire = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = roh_achievement_from_ashes_of_nuclear_fire_tt
+			has_country_flag = roh_achievement_locker #<== Локер для того, чтобы ачивки нельзя было получить
+		}
+	}
+}
+
+roh_achievement_big_bookworm = {
+	possible = {
+		difficulty > 1
+		has_any_custom_difficulty_setting = no
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		custom_trigger_tooltip = {
+			tooltip = roh_achievement_big_bookworm_tt
+			has_country_flag = roh_achievement_locker
+		}
+	}
+}

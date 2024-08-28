@@ -1,0 +1,27 @@
+ideas = {
+
+	country = {
+		klyatva_of_blood = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.3
+				defensive_war_stability_factor = 0.3
+				offensive_war_stability_factor = 0.3
+				war_support_factor = 0.25
+				offence = 0.1
+				defence = 0.1
+				
+			}
+		}
+	}
+}

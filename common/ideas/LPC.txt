@@ -1,0 +1,29 @@
+ideas = {
+
+	country = {
+		LPC_legion_of_the_doomed = {			#Легион обреченных
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = -0.05
+				attrition = 0.1
+				consumer_goods_factor = 0.05
+				max_command_power = -100
+				command_power_gain = -0.1
+				army_core_defence_factor = -0.05
+				army_core_attack_factor = -0.05
+				mobilization_speed = -0.1
+				
+			}
+		}
+	}
+}

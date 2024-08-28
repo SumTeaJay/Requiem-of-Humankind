@@ -1,0 +1,22 @@
+ideas = {
+
+	country = {
+		DRW_plague_rats = {		#Чумные крысы
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				offence = 0.1
+				army_org_regain = -0.05		
+			}
+		}
+	}
+}

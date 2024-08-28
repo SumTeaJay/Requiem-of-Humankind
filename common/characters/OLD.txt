@@ -1,0 +1,23 @@
+characters = {
+	OLD_daniil_koreniev = {
+		portraits={
+			civilian={
+				large = GFX_portrait_OLD_Daniil_Koreniev
+			}
+		}
+		country_leader={
+			ideology = free_people_subideology  
+			expire="2100.1.1.1"
+			id=-1
+			desc = OLD_daniil_koreniev_desc
+		}
+	}	
+
+	OLD_krulin = {
+		country_leader={
+			ideology = sacraments_subideology  
+			expire="2100.1.1.1"
+			id=-1
+		}		
+	}
+}

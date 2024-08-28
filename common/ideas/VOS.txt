@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+		VOS_bathed_in_blood = {			#Искупая кровью
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org = -0.1
+				army_org_regain = -0.1
+				initiative_factor = -0.1
+				war_support_factor = -0.15
+			}
+		}
+	}
+}

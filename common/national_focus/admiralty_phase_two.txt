@@ -1,0 +1,992 @@
+focus_tree = {
+	id = admiralty_phase_two
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 10
+			tag = ODS
+		}
+	}
+	default = no
+
+	focus = {
+		id = ODS_The_first_triumph_of_the_idea
+		icon = GFX_The_first_triumph_of_the_idea
+		x = 10
+		y = 0
+		cost = 5
+		available = {
+			has_war = no
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+		country_event = {
+						id = ODS.16
+				}
+				add_stability = 0.1
+				add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = ODS_Expand_powers
+		icon = GFX_Expand_powers
+		prerequisite = { focus = ODS_The_first_triumph_of_the_idea }
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.22
+			}
+			add_ideas = OKO
+			hidden_effect = {
+				set_country_flag = ODS_access_to_specialization_of_regions
+				set_country_flag = intension_show
+				set_variable = { Conception_var = 0 }
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Hunting
+		icon = GFX_Hunting
+		prerequisite = { focus = ODS_Expand_powers }
+		x = 4
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.25
+			}
+			capital_scope = {
+				create_unit = {
+					division = "name = \"1. OKO\" division_template = \"OKO\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+				create_unit = {
+					division = "name = \"1. OKO\" division_template = \"OKO\" start_experience_factor = 1 start_equipment_factor = 1 start_manpower_factor = 1"
+					owner = ROOT
+				}
+			}
+			add_stability = 0.05
+		}
+	}
+
+
+	focus = {
+		id = ODS_Burn_the_heads
+		icon = GFX_Burn_the_heads
+		prerequisite = { focus = ODS_Hunting }
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.26
+			}
+			swap_ideas = {
+				remove_idea = OKO
+				add_idea = OKO2
+			}
+		}
+	}
+
+	focus = {
+		id = ODS_Audits
+		icon = GFX_Audits
+		prerequisite = { focus = ODS_Burn_the_heads }
+		x = 3
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.17
+			}
+			add_stability = 0.05
+		}
+	}
+
+	focus = {
+		id = ODS_Purity
+		icon = GFX_Purity
+		prerequisite = { focus = ODS_Burn_the_heads }
+		x = 5
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.18
+			}
+			swap_ideas = {
+				remove_idea = OKO2
+				add_idea = OKO3
+			}
+		}
+	}
+
+	focus = {
+		id = ODS_Prosperity
+		icon = GFX_Prosperity
+		prerequisite = { focus = ODS_Purity }
+		prerequisite = { focus = ODS_Audits }
+		x = 4
+		y = 10
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.19
+			}
+			swap_ideas = {
+				remove_idea = OKO3
+				add_idea = OKO4
+			}
+		}
+	}
+
+	focus = {
+		id = ODS_The_Bridgehead_plan
+		icon = GFX_The_Bridgehead_plan
+		prerequisite = { focus = ODS_The_first_triumph_of_the_idea }
+		x = 8
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+						id = ODS.21
+				}
+				add_timed_idea = {
+					idea = plan3
+					days = 360
+				}
+		}
+	}
+	
+	focus = {
+		id = ODS_Ghosts_of_the_Past
+		icon = GFX_Ghosts_of_the_Past
+		prerequisite = { focus = ODS_The_Bridgehead_plan }
+		x = 8
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+						id = ODS.27
+				}
+			862 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			841 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			839 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			857 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			855 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			858 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			860 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			861 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			192 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Types_of_the_future
+		icon = GFX_Types_of_the_future
+		prerequisite = { focus = ODS_Ghosts_of_the_Past }
+		x = 8
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+						id = ODS.23
+				}
+			862 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			841 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			839 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			857 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			855 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			858 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			860 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			861 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+			192 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Mobilize_the_population
+		icon = GFX_Mobilize_the_population
+		prerequisite = { focus = ODS_Types_of_the_future }
+		x = 7
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = { 
+			if = { 
+				limit = { has_idea = doverie_6 }
+				swap_ideas = {
+					remove_idea = doverie_6
+					add_idea = doverie_7
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_7} 
+				swap_ideas = {
+					remove_idea = doverie_7
+					add_idea = doverie_8
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_5} 
+				swap_ideas = {
+					remove_idea = doverie_5
+					add_idea = doverie_6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Continue_integration
+		icon = GFX_Continue_integration
+		prerequisite = { focus = ODS_Types_of_the_future }
+		x = 9
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.24
+			}
+			if = {
+				limit = { has_idea = dicarstvo4 }
+				swap_ideas = { remove_idea = dicarstvo4 add_idea = dicarstvo5 }
+			}
+			else_if = {
+				limit = { has_idea = dicarstvo5 }
+				swap_ideas = { remove_idea = dicarstvo5 add_idea = dicarstvo6 }
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_EMBAO
+		icon = GFX_EMBAO
+		prerequisite = { focus = ODS_Mobilize_the_population }
+		prerequisite = { focus = ODS_Continue_integration }
+		x = 8
+		y = 10
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = {
+				limit = { has_idea = black_beret }
+				swap_ideas = {
+					remove_idea = black_beret
+					add_idea = black_beret2
+				}
+			}
+			else_if = {
+				limit = { has_idea = black_beret2 }
+				swap_ideas = {
+				remove_idea = black_beret2
+				add_idea = black_beret3
+				}
+			}
+			else_if = {
+				limit = { has_idea = black_beret3 }
+				swap_ideas = {
+				remove_idea = black_beret3
+				add_idea = black_beret4
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Pacification
+		icon = GFX_Pacification
+		prerequisite = { focus = ODS_The_first_triumph_of_the_idea }
+		x = 12
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+		add_political_power = 100
+		}
+	}
+	
+	focus = {
+		id = ODS_Expand_the_powers_of_the_committees
+		icon = GFX_Expand_the_powers_of_the_committees
+		prerequisite = { focus = ODS_Pacification }
+		x = 12
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = { 
+				limit = { has_idea = doverie_6 }
+				swap_ideas = {
+					remove_idea = doverie_6
+					add_idea = doverie_7
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_7} 
+				swap_ideas = {
+					remove_idea = doverie_7
+					add_idea = doverie_8
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_5} 
+				swap_ideas = {
+					remove_idea = doverie_5
+					add_idea = doverie_6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_The_Secret_Police
+		icon = GFX_The_Secret_Police
+		prerequisite = { focus = ODS_Expand_the_powers_of_the_committees }
+		x = 12
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = { 
+				limit = { has_idea = doverie_6 }
+				swap_ideas = {
+					remove_idea = doverie_6
+					add_idea = doverie_7
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_7} 
+				swap_ideas = {
+					remove_idea = doverie_7
+					add_idea = doverie_8
+				}
+			}
+			else_if = { 
+				limit = { has_idea = doverie_5} 
+				swap_ideas = {
+					remove_idea = doverie_5
+					add_idea = doverie_6
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Suppress_the_mercenaries
+		icon = GFX_Suppress_the_mercenaries
+		prerequisite = { focus = ODS_The_Secret_Police }
+		x = 11
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+		will_lead_to_war_with = AZB
+			
+		completion_reward = {
+				declare_war_on = {
+				target = AZB
+				type = annex_everything
+			}
+			
+		}
+	}
+	
+	focus = {
+		id = ODS_Destroy_their_hopes
+		icon = GFX_Destroy_their_hopes
+		prerequisite = { focus = ODS_The_Secret_Police }
+		x = 13
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			country_event = {
+				id = ODS.28
+			}
+			add_political_power = 50
+			add_war_support = 0.2
+		}
+	}
+	
+	focus = {
+		id = ODS_The_Army_of_the_Plan
+		icon = GFX_The_Army_of_the_Plan
+		prerequisite = { focus = ODS_The_first_triumph_of_the_idea }
+		x = 16
+		y = 1
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = {
+				limit = { has_idea = black_beret }
+				swap_ideas = {
+					remove_idea = black_beret
+					add_idea = black_beret2
+				}
+			}
+			else_if = {
+				limit = { has_idea = black_beret2 }
+				swap_ideas = {
+					remove_idea = black_beret2
+					add_idea = black_beret3
+				}
+			}
+			add_tech_bonus = {
+				bonus = 1
+				uses = 2
+				category = infantry_weapons
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = light_air
+			}
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 1
+				category = medium_air
+			}
+			army_experience = 100
+			air_experience = 100
+		}
+	}
+	
+	focus = {
+		id = ODS_Expansion_plan
+		icon = GFX_Expansion_plan
+		prerequisite = { focus = ODS_The_Army_of_the_Plan }
+		x = 16
+		y = 3
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = {
+				limit = { has_idea = black_beret2 }
+				swap_ideas = {
+					remove_idea = black_beret2
+					add_idea = black_beret3
+				}
+			}
+			else_if = {
+				limit = { has_idea = black_beret3 }
+				swap_ideas = {
+					remove_idea = black_beret3
+					add_idea = black_beret4
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Refusal
+		icon = GFX_Refusal
+		prerequisite = { focus = ODS_Expansion_plan }
+		x = 15
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = {
+				limit = {
+					has_tech = infantry_weapons
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_0
+					amount = 2000
+					producer = ODS
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons1
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_1
+					amount = 2000
+					producer = ODS
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons2
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_2
+					amount = 2000
+					producer = ODS
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons3
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_3
+					amount = 2000
+					producer = ODS
+				}
+			}	
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons4
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_4
+					amount = 2000
+					producer = ODS
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons5
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_5
+					amount = 2000
+					producer = ODS
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons6
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_6
+					amount = 2000
+					producer = ODS
+				}
+			}	
+			else_if = {
+				limit = {
+					has_tech = infantry_weapons7
+				}
+				add_equipment_to_stockpile = {
+					type = infantry_equipment_7
+					amount = 2000
+					producer = ODS
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 500
+				producer = ODS
+			}	
+		}
+	}
+	
+	focus = {
+		id = ODS_Adapting_to_combat
+		icon = GFX_Adapting_to_combat
+		prerequisite = { focus = ODS_Refusal }
+		x = 15
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			random_unit_leader = {
+				add_unit_leader_trait = adaptable
+			}
+			random_unit_leader = {
+				add_unit_leader_trait = adaptable
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Squads_of_suppressors
+		icon = GFX_Squads_of_suppressors
+		prerequisite = { focus = ODS_Expansion_plan }
+		x = 17
+		y = 5
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_tech = tech_ghounds }
+				}
+				set_technology = {
+					tech_ghounds = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_ghounds
+				}
+				set_technology = {
+					tech_ghounds = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_ghounds
+				}
+				set_technology = {
+					tech_ghounds = 1
+				}
+			}
+			else_if = {
+				limit = {
+					has_tech = tech_ghounds
+				}
+				set_technology = {
+					tech_ghounds = 1
+				}
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment_1
+				amount = 500
+				producer = ODS
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Heavy_weapons
+		icon = GFX_Heavy_weapons
+		prerequisite = { focus = ODS_Squads_of_suppressors }
+		x = 17
+		y = 7
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+		add_tech_bonus = {
+				bonus = 1
+				uses = 4
+				category = armor
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Operation_Voskhod
+		icon = GFX_Operation_Voskhod
+		prerequisite = { focus = ODS_Heavy_weapons }
+		prerequisite = { focus = ODS_Adapting_to_combat }
+		prerequisite = { focus = ODS_Destroy_their_hopes }
+		prerequisite = { focus = ODS_Suppress_the_mercenaries }
+		x = 14
+		y = 10
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			#Аннекс ебучих маринеток
+			annex_country = {
+				target = CRI
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = HER
+				transfer_troops = yes
+			}
+			annex_country = {
+				target = KUB
+				transfer_troops = yes
+			}
+			#ЗАХВАТ УКРАИНЫ (ой, я имел ввиду Южных Окраин)
+			create_wargoal = {
+				type = annex_everything
+				target = BOD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = FUD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = WOD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = ECD
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = KUH
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = CRW
+			}
+		}
+	}
+	
+	focus = {
+		id = ODS_Our_banner
+		icon = GFX_Our_banner
+		prerequisite = { focus = ODS_Operation_Voskhod }
+		prerequisite = { focus = ODS_EMBAO }
+		prerequisite = { focus = ODS_Prosperity }
+		x = 9
+		y = 12
+		cost = 5
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		ai_will_do = {
+			factor = 10
+		}
+			
+		completion_reward = {
+			hidden_effect = { load_focus_tree = admiralty_phase_three }
+			country_event = {
+				id = ODS.20
+			}
+			if = {
+				limit = { has_idea = dicarstvo4 }
+				swap_ideas = { remove_idea = dicarstvo4 add_idea = dicarstvo5 }
+			}
+			else_if = {
+				limit = { has_idea = dicarstvo5 }
+				swap_ideas = { remove_idea = dicarstvo5 add_idea = dicarstvo6 }
+			}
+		}
+	}
+}
+ 
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

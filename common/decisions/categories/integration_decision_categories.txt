@@ -1,0 +1,14 @@
+integration_category = {
+	icon = GFX_decision_category_integration
+	picture = GFX_decision_integration
+	visible = {
+		NOT = {
+			tag = LWV
+			tag = ODS
+		}
+	}
+	allowed = {
+		always = yes
+	}
+	priority = 85
+}

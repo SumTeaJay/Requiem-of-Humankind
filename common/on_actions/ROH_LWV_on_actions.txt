@@ -1,0 +1,12 @@
+on_actions = {
+    on_monthly_LWV = {
+        effect = {
+            IF = {
+                limit = {
+                    has_country_flag = LWV_war_in_the_shadows_flag
+                }
+                add_to_variable = { points_of_markov = 10 }
+            }
+        }
+    }
+}

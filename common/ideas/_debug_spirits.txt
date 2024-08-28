@@ -1,0 +1,41 @@
+ideas = {
+
+	country = {
+		add_production_efficiency = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 100
+			}
+		}
+		decrease_production_efficiency = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			allowed_civil_war = {
+				always = yes
+			}
+						
+			modifier = {
+				production_factory_efficiency_gain_factor = -100
+			}
+		}
+	}
+	hidden_ideas = {
+		lower_time_for_justification_of_wargoal = {
+			modifier = {
+				justify_war_goal_time = -0.75
+			}			
+		}		
+	}
+
+}

@@ -1,0 +1,98 @@
+has_potential_for_agression = {
+	#manpower related triggers
+	check_variable = {
+		manpower_per_military_factory > 100
+	}
+	#economy related triggers
+	check_variable = {
+		num_of_military_factories > 1
+	}
+	#faction related triggers
+	set_temp_variable = {
+		alliance_delta_strength = alliance_strength_ratio
+	}
+	subtract_from_temp_variable = {
+		alliance_delta_strength = enemies_strength_ratio
+	}
+	OR = {
+		check_variable = {
+			alliance_delta_strength > 0.1
+		}
+		check_variable = {
+			enemies_strength_ratio < 0.75
+		}
+	}
+	surrender_progress < 0.5
+	#equipment related triggers
+	if = {
+		limit = {
+			NOT = { check_variable = { num_target_equipment_in_armies@infantry_equipment = num_equipment_in_armies@infantry_equipment } }
+		}
+		set_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@infantry_equipment
+		}
+		subtract_from_temp_variable = {
+			equipment_shortage = num_equipment_in_armies@infantry_equipment
+		}
+		divide_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@infantry_equipment
+		}
+		check_variable = {
+			equipment_shortage < 0.3
+		}
+	}
+
+	if = {
+		limit = {
+			NOT = { check_variable = { num_target_equipment_in_armies@infantry_odejda = num_equipment_in_armies@infantry_odejda } }
+		}	
+		set_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@infantry_odejda
+		}
+		subtract_from_temp_variable = {
+			equipment_shortage = num_equipment_in_armies@infantry_odejda
+		}
+		divide_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@infantry_odejda
+		}
+		check_variable = {
+			equipment_shortage < 0.2
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { check_variable = { num_target_equipment_in_armies@support_equipment = num_equipment_in_armies@support_equipment } }
+		}		
+		set_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@support_equipment
+		}
+		subtract_from_temp_variable = {
+			equipment_shortage = num_equipment_in_armies@support_equipment
+		}
+		divide_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@support_equipment
+		}
+		check_variable = {
+			equipment_shortage < 0.2
+		}
+	}
+	
+	if = {
+		limit = {
+			NOT = { check_variable = { num_target_equipment_in_armies@artillery_equipment = num_equipment_in_armies@artillery_equipment } }
+		}	
+		set_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@artillery_equipment
+		}
+		subtract_from_temp_variable = {
+			equipment_shortage = num_equipment_in_armies@artillery_equipment
+		}
+		divide_temp_variable = {
+			equipment_shortage = num_target_equipment_in_armies@artillery_equipment
+		}
+		check_variable = {
+			equipment_shortage < 0.1
+		}
+	}
+}

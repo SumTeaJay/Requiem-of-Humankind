@@ -1,0 +1,54 @@
+####################################
+###  Smolensk/NARFRONT Triggers  ###
+###    	  by Daniel_Letov    	 ###
+####################################
+
+Smolensk_war_finished = {
+	AND = {
+		NAR = { 
+			OR = { 
+				exists = no 
+				AND = {
+					has_war = no 
+					controls_state = 242
+					controls_state = 863
+					controls_state = 931					
+				} 
+			}
+		} 
+		SMK = { 
+			OR = { 
+				exists = no
+				AND = {
+					has_war = no 
+					controls_state = 246
+					controls_state = 263					
+				} 
+			}
+		} 
+	}
+}
+
+NARFRONT_win = {
+	NAR = { 
+		has_war = no 
+		controls_state = 242
+		controls_state = 210
+		controls_state = 207
+		controls_state = 931
+	}
+	SMK = { 
+		exists = no 
+	}
+}
+
+SMOLENSK_win = {
+	SMK = { 
+		has_war = no 
+		controls_state = 246
+		controls_state = 263
+	}
+	NAR = { 
+		exists = no 
+	}
+}	

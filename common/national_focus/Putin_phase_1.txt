@@ -1,0 +1,386 @@
+focus_tree = {
+	id = SDC_phase_one
+
+    country = {
+        factor = 0
+
+        modifier = {
+            add = 100
+            tag = SDC
+        }
+    }
+    default = no
+
+    focus = {
+        id = SDC_Visit                 #Визит
+        icon = GFX_Vizit
+        cost = 1
+        x = 6
+        y = 0
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_political_power = 100
+        }
+    }
+    focus = {
+        id = SDC_despite_everything    #Несмотря ни на что
+        icon = GFX_Nesmotrya_ni_na_chto
+        prerequisite = { focus = SDC_Visit }
+        cost = 5
+        x = 6
+        y = 1
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_manpower = 1000
+            division_template = {
+                name = "light_infantry"
+                is_locked = no
+                priority = 1
+                regiments = {
+                    light_infantry = { x = 0 y = 0}
+                    light_infantry = { x = 0 y = 1}
+                    light_infantry = { x = 1 y = 0}
+                    light_infantry = { x = 1 y = 1}
+                }
+            }
+            capital_scope = {
+                    create_unit = {
+                    division = "name = \"1. light_infantry\" division_template = \"light_infantry\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+            country_event = {
+                id = pautov.3
+                days = 1
+            }
+        }   
+    }
+    focus = {
+        id = SDC_problem_cordonik    #Проблема кордонников
+        prerequisite = { focus = SDC_despite_everything }
+        icon = GFX_Problema_kordonnikov
+        cost = 5
+        x = 5
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Korodonniki1
+                add_idea = SDC_Korodonniki2
+            }
+        }
+    }
+    focus = {
+        id = SDC_eradicate_Wiluiem    #Искоренить ввилуимов
+        icon = GFX_Iskorenit_villuimov
+        prerequisite = { focus = SDC_despite_everything }
+        cost = 5
+        x = 7
+        y = 2
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Willuem_influese1
+                add_idea = SDC_Willuem_influese2
+            }
+             country_event = {
+                id = pautov.5
+                days = 1
+            }
+        }
+    }
+    focus = {
+        id = SDC_public_safety_concept   #Концепция общественной безопастности
+        icon = GFX_Kontseptsia_obschestvennoy_bezopasnosti
+        prerequisite = { focus = SDC_problem_cordonik }
+        cost = 5
+        x = 3
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            add_ideas = SDC_public_safety_concept1
+             country_event = {
+                id = pautov.4
+                days = 1
+            }
+        }
+    }
+    focus = {
+        id = SDC_stabilization_situation   #Стабилизация положения
+        icon = GFX_Stabilizatsia_polozhenia
+        prerequisite = { focus = SDC_eradicate_Wiluiem }
+        cost = 5
+        x = 9
+        y = 3
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            997 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            swap_ideas = {
+                remove_idea = SDC_Willuem_influese2
+                add_idea = SDC_Willuem_influese3
+            }
+        }
+    }
+    focus = {
+        id = SDC_expand_influence   #Расширить влияние
+        icon = GFX_Rasshirit_vlianie
+        prerequisite = { focus = SDC_public_safety_concept }
+        cost = 5
+        x = 2
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        will_lead_to_war_with = TAG
+        completion_reward ={
+            declare_war_on = {
+                target = TAG
+                type = annex_everything
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {
+                      is_ai = yes
+                    }
+                    country_event = {
+                        id = scripted_peace.5
+                        days = 90
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_secure_borders   #Обезопасить границы
+        icon = GFX_Obezopasit_granitsy
+        prerequisite = { focus = SDC_public_safety_concept }
+        cost = 5
+        x = 4
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            division_template = {
+                name = "Kordonniki"
+                is_locked = no
+                priority = 1
+                regiments = {
+                    rcbd_troop = { x = 0 y = 0}
+                    rcbd_troop = { x = 0 y = 1}
+                    rcbd_troop = { x = 1 y = 0}
+                    rcbd_troop = { x = 1 y = 1}
+                    rcbd_troop = { x = 0 y = 2}
+                    rcbd_troop = { x = 1 y = 2}
+                }
+            }
+            capital_scope = {
+                    create_unit = {
+                    division = "name = \"1. Kordonniki\" division_template = \"Kordonniki\" start_experience_factor = 0.1 start_equipment_factor = 1 start_manpower_factor = 1" 
+                    owner = ROOT
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_security_service   #Служба безопастности
+        icon = GFX_Sluzhba_bezopasnosti
+        prerequisite = { focus = SDC_stabilization_situation }
+        cost = 5
+        x = 8
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Willuem_influese3
+                add_idea = SDC_Willuem_influese4
+            }
+        }
+    }
+    focus = {
+        id = SDC_rationing   #Нормирование продуктов
+        icon = GFX_Normirovanie_produktov
+        prerequisite = { focus = SDC_stabilization_situation }
+        cost = 5
+        x = 10
+        y = 4
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            871 = {
+                add_extra_state_shared_building_slots = 3
+                add_building_construction = {
+                    type = industrial_complex
+                    level = 3
+                    instant_build = yes
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_march_east   #Марш на восток
+        icon = GFX_Marsh_na_vostok
+        prerequisite = { focus = SDC_expand_influence }
+        available = {
+            has_war = no
+        }
+        cost = 5
+        x = 2
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        will_lead_to_war_with = ARK
+        completion_reward ={
+            declare_war_on = {
+                target = ARK 
+                type = annex_everything
+            }
+            hidden_effect = {
+                IF = {
+                    limit = {
+                      is_ai = yes
+                    }
+                    country_event = {
+                        id = scripted_peace.6
+                        days = 150
+                    }
+                }
+            }
+        }
+    }
+    focus = {
+        id = SDC_everyone_hold_weapon   #Все кто может держать оружие
+        icon = GFX_Vse_kto_mozhet_derzhat_oruzhie
+        prerequisite = { focus = SDC_secure_borders }
+        cost = 5
+        x = 4
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            swap_ideas = {
+                remove_idea = SDC_Korodonniki2
+                add_idea = SDC_Korodonniki3
+            }
+        }
+    }
+    focus = {
+        id = SDC_kill_toilets   #Мочить в сортирах
+        icon = GFX_Mochit_v_sortirakh
+        prerequisite = { focus = SDC_security_service }
+        cost = 5
+        x = 8
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            remove_ideas = SDC_Willuem_influese4
+        }
+    }
+    focus = {
+        id = SDC_oil_needle   #Нефтянная игла
+        icon = GFX_Neftyanaya_igla
+        prerequisite = { focus = SDC_rationing }
+        cost = 5
+        x = 10
+        y = 5
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            remove_ideas = SDC_hunger1
+            871 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            997 = {
+                add_extra_state_shared_building_slots = 1
+                add_building_construction = {
+                    type = arms_factory
+                    level = 1
+                    instant_build = yes
+                }
+            }
+            country_event = {
+                id = pautov.6
+                days = 1
+            }
+        }
+    }
+    focus = {
+        id = SDC_front_stabilization   #Стабилизация фронта
+        icon = GFX_Stabilizatsia_fronta
+        prerequisite = { focus = SDC_oil_needle }
+        prerequisite = { focus = SDC_kill_toilets }
+        prerequisite = { focus = SDC_everyone_hold_weapon }
+        prerequisite = { focus = SDC_march_east  }
+        available = {
+			NOT = { country_exists = ARK }
+            NOT = { country_exists = TAG }
+		}
+        cost = 5
+        x = 6
+        y = 6
+        ai_will_do = {
+            factor = 10
+        }
+        completion_reward ={
+            ARK = {
+                every_core_state = {
+                    add_core_of = SDC
+                    remove_core_of = ARK
+                }
+            }
+            TAG = {
+                every_core_state = {
+                    add_core_of = SDC
+                    remove_core_of = TAG
+                }
+            }
+            add_manpower = 5000
+            set_capital = {
+                state = 214
+                remember_old_capital = no
+            }
+            country_event = {
+                id = pautov.7
+                days = 1
+            }
+            hidden_effect = {
+                load_focus_tree = {
+                    tree = SDC_phase_two
+                    keep_completed = no
+                }
+            }
+        }
+    }
+}

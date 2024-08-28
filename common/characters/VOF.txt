@@ -1,0 +1,16 @@
+characters = {
+    VOF_Shaman = {
+        name = VOF_Shaman
+        portraits={
+			civilian = {
+				large="gfx/leaders/VOF/VOF_Shaman.dds"
+			}
+		}
+        country_leader = {
+			desc = VOF_Shaman_desc
+			ideology = statesmen_subideology
+			expire = "2050.1.1.1"
+			id = -1
+		}
+    }
+}

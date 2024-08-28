@@ -1,0 +1,164 @@
+#Written by Pasha-2033
+defensive_frontline = {
+	enable = {
+		always = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			OR = {
+				has_war_with = ROOT			#we need to fill frontline
+				has_wargoal_against = ROOT	#we need to be prepared for war
+			}
+		}
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			has_war_with = ROOT				#war requires more units than border post
+		}
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			OR = {
+				#filter non-enemy countries
+				has_war_with = ROOT
+				has_wargoal_against = ROOT
+			}
+			strength_ratio = {
+				tag = ROOT					#more powerfull enemy - more chance of breakthrough, prevent this by filling frontline
+				ratio > 2
+			}
+		}
+		value = 50
+	}
+	ai_strategy = {
+		type = front_control
+		priority = 1
+		country_trigger = {
+			has_offensive_war_with = ROOT	#we need defensive actions
+		}
+		ratio = 0.75
+		ordertype = front
+		execution_type = careful
+		manual_attack = no
+		execute_order = yes
+	}
+}
+accurate_frontline = {
+	enable = {
+		has_war = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		priority = 2
+		country_trigger = {
+			has_war_with = ROOT				#we need carefull actions
+		}
+		ratio = 0.5
+		ordertype = front
+		execution_type = careful
+		manual_attack = no
+		execute_order = yes
+	}
+}
+balanced_frontline = {
+	enable = {
+		has_war = yes
+		enemies_strength_ratio < 0.5
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		priority = 3
+		country_trigger = {
+			has_war_with = ROOT				#we need carefull actions
+		}
+		ratio = 0.25
+		ordertype = front
+		execution_type = balanced
+		manual_attack = yes
+		execute_order = yes
+	}
+}
+#we can rush (be a little more agressive if enemies are weaker)
+agrassivly_balanced_frontline = {
+	enable = {
+		has_potential_for_agression = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		priority = 4
+		country_trigger = {
+			has_war_with = ROOT
+		}
+		ratio = 0.1
+		ordertype = front
+		execution_type = rush_weak
+		manual_attack = yes
+		execute_order = yes
+	}
+}
+agressive_frontline = {
+	enable = {
+		OR = {
+			any_neighbor_country = {
+				has_country_flag = agressive_frontline_from_@ROOT
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			has_country_flag = agressive_frontline_from_@ROOT	#agressive plan requires more resourses
+		}
+		value = 50
+	}
+	ai_strategy = {
+		type = front_control
+		priority = 5
+		country_trigger = {
+			has_country_flag = agressive_frontline_from_@ROOT	#agressive plan requires more actions
+		}
+		ratio = -0.25
+		ordertype = front
+		execution_type = rush_weak #may be rush?
+		manual_attack = yes
+		execute_order = yes
+	}
+}
+extreamly_agressive_frontline = {
+	enable = {
+		any_neighbor_country = {
+			has_country_flag = agressive_frontline_from_@ROOT
+		}
+		has_potential_for_agression = yes
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_unit_request
+		country_trigger = {
+			has_country_flag = agressive_frontline_from_@ROOT	#agressive plan requires more resourses
+		}
+		value = 50
+	}
+	ai_strategy = {
+		type = front_control
+		priority = 6
+		country_trigger = {
+			has_country_flag = agressive_frontline_from_@ROOT	#agressive plan requires more actions
+		}
+		ratio = -0.75
+		ordertype = front
+		execution_type = rush
+		manual_attack = yes
+		execute_order = yes
+	}
+}

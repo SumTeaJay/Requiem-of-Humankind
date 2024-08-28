@@ -1,0 +1,15 @@
+characters = {
+	BL1_Slave_Innocent = {
+		portraits={
+			civilian={
+				large="gfx/leaders/BL1/Slave_Innocent.dds"
+			}
+		}
+		country_leader={
+			ideology=sacraments_subideology
+			expire="1965.1.1.1"
+			id=-1
+			desc = BL1_Slave_Innocent_desc
+		}
+	}
+}

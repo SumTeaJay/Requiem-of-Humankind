@@ -1,0 +1,15 @@
+ideas = {
+
+    country = {
+        unite_will_of_the_world = {
+            picture = unite_will_of_the_world
+            modifier = {
+                army_attack_factor = 0.05
+                army_defence_factor = 0.03
+                supply_consumption_factor = -0.1
+                war_support_factor = 0.3
+                planning_speed = 0.15
+            }
+        }
+    }
+}

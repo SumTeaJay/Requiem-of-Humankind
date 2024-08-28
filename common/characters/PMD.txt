@@ -1,0 +1,55 @@
+characters = {
+	PMD_danila_popadeikin = {
+		name = PMD_danila_popadeikin
+		portraits={
+			civilian = {
+				large="gfx/leaders/PMD/PMD_danila_popadeikin.dds"
+			}
+		}
+		country_leader = {
+			ideology = militarists_subideology
+			traits = {
+				dictator
+			}
+			expire = "2050.1.1.1"
+			id = -1
+		}
+		field_marshal = {
+			skill = 3
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 1
+		}
+	}
+	PMD_fiodr_kuznecov = {
+		name = PMD_fiodr_kuznecov
+		corps_commander = {
+			skill = 4
+			attack_skill = 2
+			defense_skill = 5
+			planning_skill = 1
+			logistics_skill = 2
+		}
+	}
+	PMD_roza_shanina = {
+		name = PMD_roza_shanina
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+		}
+	}
+	PMD_nikolai_gulaev = {
+		name = PMD_nikolai_gulaev
+		corps_commander = {
+			skill = 2
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 2
+			logistics_skill = 5
+		}
+	}
+}

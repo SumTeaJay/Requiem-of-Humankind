@@ -1,0 +1,445 @@
+focus_tree = {
+	id = state_liquidation_board_phase_one
+	country = {
+		factor = 0
+		modifier = {
+		add = 100
+		tag = GLS
+		}
+	}
+	default = no
+
+	focus = {
+		id = GLS_old_friends
+		icon = GFX_old_friends
+		x = 6
+		y = 0
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = { 
+			country_event = {
+				id = GLS_phase_one.1
+				days = 1
+			}	
+		}
+	}
+	focus = {
+		id = GLS_young_blood
+		icon = GFX_young_blood
+		x = 6
+		y = 1
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = GLS_old_friends }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.3
+				days = 1
+			}		
+		}
+	}
+	focus = {
+		id = GLS_fall_of_rodina
+		icon = GFX_fall_of_rodina
+		x = 6 
+		y = 2
+		cost = 1
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = GLS_young_blood }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.4
+				days = 1
+			}		
+		}
+	}
+	focus = {
+		id = GLS_our_defence
+		icon = GFX_our_defence
+		x = 4
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = GLS_fall_of_rodina }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.6
+				days = 1
+			}
+			1002 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12130
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12117
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10142
+				}
+			}
+			1001 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10329
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10185
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4311
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11223
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = GLS_planning_horizon
+		icon = GFX_planning_horizon
+		x = 6 
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = GLS_fall_of_rodina }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.7
+				days = 1
+			}
+			1002 = {
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 3
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = GLS_memories_of_rodina
+				add_idea = GLS_memories_of_rodina_1
+			}
+
+		}
+	}
+	focus = {
+		id = GLS_massacre_number_five
+		icon = GFX_massacre_number_five
+		x = 8 
+		y = 3
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = { focus = GLS_fall_of_rodina }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.5
+				days = 1
+			}
+			swap_ideas = {
+				remove_idea = GLS_fathers_and_not_fathers
+				add_idea =  GLS_fathers_and_not_fathers_1
+			}
+		}
+	}
+	focus = {
+		id = GLS_bunches_of_anger
+		icon = GFX_bunches_of_anger
+		x = 6 
+		y = 4
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		prerequisite = { focus = GLS_massacre_number_five }
+		prerequisite = { focus = GLS_planning_horizon }
+		prerequisite = { focus = GLS_our_defence }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.8
+				days = 1
+			}
+			add_timed_idea = {
+				idea = GLS_place_under_sun
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = GLS_children_of_ermak
+		icon = GFX_children_of_ermak
+		x = 6 
+		y = 5
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_bunches_of_anger }
+		will_lead_to_war_with = TTL
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.9
+				days = 1
+			}
+			declare_war_on = {
+				target = TTL
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_end_of_silence
+		icon = GFX_end_of_silence
+		available = { NOT = { country_exists = TTL } }
+		x = 6 
+		y = 6
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_STABILITY }
+		prerequisite = { focus = GLS_children_of_ermak }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.10
+				days = 1
+			}
+			add_stability = 0.02
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = GLS_this_is_what_you_were_taught
+		icon = GFX_this_is_what_you_were_taught
+		x = 6 
+		y = 7
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_end_of_silence}
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.11
+				days = 1
+			}
+			add_timed_idea = {
+				idea = GLS_ural_company
+				days = 180
+			}
+		}
+	}
+	focus = {
+		id = GLS_south_mraz
+		icon = GFX_south_mraz
+		x = 4 
+		y = 8
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_this_is_what_you_were_taught }
+		will_lead_to_war_with = SFL
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.12
+				days = 1
+			}
+			declare_war_on = {
+				target = SFL
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_north_mraz
+		icon = GFX_north_mraz
+		x = 8
+		y = 8
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		available = { 
+			any_neighbor_country = {
+				original_tag = NFL 
+			}
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_this_is_what_you_were_taught }
+		will_lead_to_war_with = NFL
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.13
+				days = 1
+			}
+			declare_war_on = {
+				target = NFL
+				type = annex_everything
+			}
+		}
+	}
+	focus = {
+		id = GLS_repatriation
+		icon = GFX_repatriation
+		x = 6 
+		y = 9
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_MANPOWER }
+		prerequisite = { focus = GLS_south_mraz }
+		prerequisite = { focus = GLS_north_mraz }
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = GLS_memories_of_rodina_1
+				add_idea =  GLS_memories_of_rodina_2
+			}
+			country_event = {
+				id = GLS_phase_one.14
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = GLS_iron_town
+		icon = GFX_iron_town
+		x = 6 
+		y = 10
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_repatriation }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.15
+				days = 1
+			}
+		}
+	}
+	focus = {
+		id = GLS_can_sleep
+		icon = GFX_can_sleep
+		x = 6 
+		y = 11
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_iron_town }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.17
+				days = 1
+			}
+			annex_country = {
+				target = IRT
+				transfer_troops = yes
+			}
+		}
+	}
+	focus = {
+		id = GLS_iron_inside_and_out
+		icon = GFX_iron_inside_and_out
+		x = 6 
+		y = 12
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_INDUSTRY }
+		prerequisite = { focus = GLS_can_sleep }
+		completion_reward = {
+			country_event = {
+				id = GLS_phase_one.18
+				days = 1
+			}
+			add_state_core = 398
+			add_research_slot = 1
+			398 = {
+				add_extra_state_shared_building_slots = 4
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				remove_core_of = IRT
+			}
+		}
+	}
+	focus = {
+		id = GLS_its_every_survivor_for_himself
+		icon = GFX_its_every_survivor_for_himself
+		x = 6 
+		y = 13
+		cost = 5
+		ai_will_do = {
+			base = 10
+		}
+		search_filters = { FOCUS_FILTER_ANNEXATION }
+		prerequisite = { focus = GLS_iron_inside_and_out }
+		will_lead_to_war_with = ASR
+		completion_reward = {
+			declare_war_on = {
+				target = ASR
+				type = annex_everything
+			}
+		}
+	}
+}
