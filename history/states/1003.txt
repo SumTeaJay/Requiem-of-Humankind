@@ -1,0 +1,23 @@
+
+state = {
+	id = 1003
+	name = "STATE_1003"
+	manpower = 10000
+	
+	state_category = rural
+
+	history = {
+		owner = SFL
+		add_core_of = SFL
+		buildings = {
+			infrastructure = 1
+		}
+		victory_points = { 11228 1 }
+	}
+
+	provinces = {
+		11228 1754 
+	}
+
+	local_supplies = 6.0 
+}

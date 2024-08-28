@@ -1,0 +1,27 @@
+
+state={
+	id=205
+	name="STATE_205"
+
+	history={
+		owner = SMX
+		add_core_of = SMX
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		add_core_of = SMX
+		victory_points = {
+			382 3 
+		}
+
+	}
+
+	provinces={
+		274 382 3263 3308 3377 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=10.000
+}

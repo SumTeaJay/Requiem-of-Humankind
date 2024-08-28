@@ -1,0 +1,45 @@
+capital = 975
+
+oob = base #"ODS_1936"
+
+add_ideas = {
+    MGL_Critical_arrhythmia
+    MGL_Cybernetic_soul
+    MGL_Rusted_mechanism_1
+    MGL_Toothless_monolith
+}
+
+load_focus_tree = {
+    tree = MGL_phase_one
+    keep_completed = no
+}
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+    civilian_clothing = 1
+    tech_support = 1
+    gw_artillery = 1
+    instruments_of_any_era = 1
+    infantry_weapons = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+
+set_politics = {
+	ruling_party = technocracy 
+	elections_allowed = no
+}
+
+set_popularities = {
+	technocracy = 98
+	bandits = 1
+	sacraments = 1
+}
+
+recruit_character = MGL_Machine
+recruit_character = MGL_Exclusion_zone
+
+

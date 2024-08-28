@@ -1,0 +1,25 @@
+
+state={
+	id=965
+	name="STATE_965"
+
+	history={
+		owner = BSL
+		add_core_of = BSL
+		victory_points = {
+			6052 1 
+		}
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		6052 6153 9176 9231 
+	}
+	manpower=13000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

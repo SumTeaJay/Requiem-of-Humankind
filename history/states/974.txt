@@ -1,0 +1,28 @@
+
+state = {
+	id = 974
+	name = "STATE_974"
+	manpower = 7000
+	
+	state_category = pastoral
+
+	history = {
+		owner = DRG
+		add_core_of = DRG
+		victory_points = {
+			9165 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		
+		
+		
+	}
+
+	provinces = {
+		9165 98
+	} 
+
+	local_supplies = 6.0 
+}

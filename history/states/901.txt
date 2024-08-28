@@ -1,0 +1,29 @@
+
+state={
+	id=901
+	name="STATE_901"
+	resources={
+		rubber=5
+	}
+
+	history={
+		owner = MUC
+		add_core_of = MUC
+		victory_points = {
+			6346 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		6346 11236 
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

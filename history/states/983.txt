@@ -1,0 +1,26 @@
+
+state={
+	id=983
+	name="STATE_983"
+
+	history={
+		owner = TAG
+		add_core_of = TAG
+		victory_points = {
+			72 3 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		72 75 183 3065 6091 6166 9130 9187 9202 11177 
+	}
+	manpower=25634
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

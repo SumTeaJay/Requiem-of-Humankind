@@ -1,0 +1,19 @@
+state=
+{
+	id=163
+	name="STATE_163"
+	manpower = 18000
+	
+	state_category = enclave
+	
+	history={
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+	} 
+	provinces={	
+		3943 
+	}
+
+	local_supplies=0.0 
+}

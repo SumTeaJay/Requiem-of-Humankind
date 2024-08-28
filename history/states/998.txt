@@ -1,0 +1,26 @@
+
+state={
+	id=998
+	name="STATE_998"
+
+	history={
+		owner = DIS
+		add_core_of = DIS
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			4802 1 
+		}
+
+	}
+
+	provinces={
+		1307 4314 4802 7318 9150 11170 11195 12175 12587 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

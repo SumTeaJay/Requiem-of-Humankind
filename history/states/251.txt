@@ -1,0 +1,31 @@
+
+state={
+	id=251
+	name="STATE_251"
+
+	history={
+		owner = MOT
+		victory_points = {
+			11225 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = MOT
+		victory_points = {
+			3357 1 
+		}
+
+	}
+
+	provinces={
+		338 365 393 497 3216 9243 9365 9391 11225 11348 11377 
+	}
+	manpower=240000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

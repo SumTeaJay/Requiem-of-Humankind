@@ -1,0 +1,45 @@
+
+state={
+	id=218
+	name="STATE_218"
+	manpower = 130000
+	resources={
+		steel=10
+	}
+	
+	state_category = city
+
+	history={
+		owner = FSR
+		add_core_of = FSR
+		victory_points = {
+			9417 10 
+		}
+        victory_points = {
+			585  2
+		}
+        victory_points = {
+			11559  2
+		}
+		buildings = {
+			9417 = {
+				bunker = 3
+			}
+			585 = {
+				bunker = 3
+			}
+			11559 = {
+				bunker = 3
+			}
+			infrastructure = 3 #was: 5
+			arms_factory = 1
+			air_base = 3
+		}
+	}
+
+	provinces={
+		585 9417 11559 
+	}
+
+	local_supplies=3.0 
+}

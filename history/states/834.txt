@@ -1,0 +1,26 @@
+
+state={
+	id=834
+	name="STATE_834"
+
+	history={
+		owner = BSO
+		add_core_of = BSO
+		victory_points = {
+			3225 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		288 3225 6565 9566 11553 
+	}
+	manpower=35000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

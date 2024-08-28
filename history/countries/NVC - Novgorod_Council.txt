@@ -1,0 +1,38 @@
+capital = 925
+
+oob = NVC
+add_manpower = 9660
+add_ideas = NVC_light_of_normality
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 10
+	technocracy = 15
+	humanists = 75
+}
+
+create_country_leader = {
+    name = "Nov_Sovet"
+    desc = "Nov_Sovet_desk"
+    picture = "gfx/leaders/NVC/Nov_Sovet.dds"
+    ideology = humanists_subideology
+    traits = {
+        #
+    }
+}

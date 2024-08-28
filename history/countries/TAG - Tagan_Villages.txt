@@ -1,0 +1,31 @@
+capital = 983
+
+oob = TAG
+add_manpower = 2000
+add_ideas = {
+PAPIN_KURS
+}
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 3
+set_convoys = 0
+
+set_politics = {
+	ruling_party = free_people
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+
+}
+
+recruit_character = Ivan_Taganovich
+

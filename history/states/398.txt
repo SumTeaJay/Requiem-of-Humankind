@@ -1,0 +1,32 @@
+
+state = {
+	id = 398
+	name = "STATE_398"
+	manpower = 301000
+	state_category = city
+	resources={
+		steel=15
+	}
+
+	history = {
+		owner = IRT
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			7375 = {
+				bunker = 3
+			}
+
+		}
+		victory_points = {
+			7375 3
+		}
+		add_core_of = IRT
+	}
+
+	provinces = {
+		7375
+	}
+
+	local_supplies = 0.0 
+}

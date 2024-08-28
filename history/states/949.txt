@@ -1,0 +1,25 @@
+
+state = {
+	id = 949
+	name = "STATE_949"
+	manpower = 30000
+	
+	state_category = rural
+
+	history = {
+		owner = BRD
+		add_core_of = BRD
+		victory_points = {
+			3469     1
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		3469 3567 6591  11412 11475
+	}
+
+	local_supplies = 6.0 
+}

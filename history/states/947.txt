@@ -1,0 +1,21 @@
+
+state={
+	id=947
+	name="STATE_947"
+
+	history={
+		owner = UFV
+		add_core_of = UFV
+		victory_points = {
+			10579 2 
+		}
+	}
+
+	provinces={
+		7712 9121 10579 13314 13382 13384 13388 13396 13397 13404 13406 13407 13408 13409 13414 13421 13423 13425 13427 13430 13437 13442 13450 
+	}
+	manpower=40000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

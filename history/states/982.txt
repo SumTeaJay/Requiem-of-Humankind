@@ -1,0 +1,28 @@
+
+state={
+	id=982
+	name="STATE_982"
+
+	history={
+		owner = TRO
+		add_core_of = TRO
+		victory_points = {
+			13452 3 
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+
+		
+
+	}
+
+	provinces={
+		10723 11098 12502 13428 13432 13438 13443 13444 13445 13446 13448 13451 13452 13453 13456 13463 13465 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

@@ -1,0 +1,41 @@
+
+state={
+	id=1001
+	name="STATE_1001"
+	resources={
+		oil=5
+		rubber=5
+		tungsten=2
+		steel=15
+	}
+
+	history={
+		owner = GLS
+		add_core_of = GLS
+		add_core_of = ASR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			synthetic_refinery = 1
+			anti_air_building = 1
+			air_base = 2
+
+		}
+		victory_points = {
+			10329 2 
+		}
+		victory_points = {
+			1278 5 
+		}
+
+	}
+
+	provinces={
+		1278 10142 10329 11223 12117 12130 
+	}
+	manpower=557580
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=6.000
+}

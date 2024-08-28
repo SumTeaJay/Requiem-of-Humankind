@@ -1,0 +1,79 @@
+division_template = {
+	name = "Свободные балты"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+	}
+	priority = 1
+}
+#балюусь с названиями как могу
+		 
+units = {
+	division = {
+		name = "Pėstininkų brigada “Geležinis Vilkas”" 
+        location = 6314
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Pėstininkų brigada “Vitis”"
+		location = 6314
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Pėstininkų brigada “Šiauliai”"
+		location = 3354
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Pėstininkų brigada “Perkunas”"
+		location = 9731
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Kājnieku bataljons “Riga” "
+		location = 3337
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Kājnieku bataljons “Briviba” "
+		location = 9262
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Kājnieku bataljons “Latvija” "
+		location = 11246 
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Kājnieku bataljons “Liepāja” "
+		location = 3319 
+		division_template = "Свободные балты"
+		start_experience_factor = 0.65
+		start_equipment_factor = 0.4
+		start_manpower_factor = 1.0
+	}
+}

@@ -1,0 +1,73 @@
+division_template = {
+	name = "Bandits"
+
+	division_names_group = BANDIT_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Pervoe_pokolenie_squad"
+	division_names_group = SQUAD_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		rhbz = { x = 0 y = 0 }
+		stvol_art_sup = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Bandits"
+		location = 4354
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 7403
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 273
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Pervoe_pokolenie_squad"
+		location = 1305
+		division_template = "Pervoe_pokolenie_squad"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Pervoe_pokolenie_squad"
+		location = 12216
+		division_template = "Pervoe_pokolenie_squad"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+}

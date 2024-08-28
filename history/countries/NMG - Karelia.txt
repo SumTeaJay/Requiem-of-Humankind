@@ -1,0 +1,35 @@
+capital = 110
+
+set_stability = 1
+set_war_support = 1
+army_experience = 50
+oob = base
+
+# Стартовые технологии
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = militarists 
+	elections_allowed = no
+}
+set_popularities = {
+    militarists = 97
+	statesmen = 3
+}
+
+recruit_character = NMG_Yens_Stoltenberg
+
+
+
+
+
+

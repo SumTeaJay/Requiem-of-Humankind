@@ -1,0 +1,43 @@
+capital = 973
+
+oob = ZLG
+add_manpower = 1000
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 1
+set_convoys = 0
+
+
+add_ideas = ZLG_exceptional_gains
+set_politics = {
+	ruling_party = free_people 
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 60
+	humanists = 15
+	technocracy = 20
+	militarists = 5
+}
+
+
+create_country_leader = {
+    name = "ZLG_Daniil_mihnov"
+    desc = "ZLG_Daniil_mihnov_DESC"
+    picture = "gfx/leaders/ZLG/daniil_mihnov.dds"
+    ideology = free_people_subideology   
+    traits = {
+        #
+    }
+}
+

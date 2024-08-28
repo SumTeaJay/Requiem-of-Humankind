@@ -1,0 +1,27 @@
+
+state={
+	id=191
+	name="STATE_191"
+
+	history={
+		owner = CHU
+		victory_points = {
+			9221 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+		add_core_of = CHU
+		add_claim_by = AGE
+
+	}
+
+	provinces={
+		592 6178 6408 9221 9485
+	}
+	manpower=45000
+	buildings_max_level_factor=1.000
+	local_supplies=0.0 
+	state_category=rural
+}

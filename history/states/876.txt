@@ -1,0 +1,30 @@
+
+state = {
+	id = 876
+	name = "STATE_876"
+	manpower = 10000
+	
+	state_category = rural
+
+	history = {
+		owner = BIH
+		add_core_of = BIH
+		victory_points = {
+			  9491  1
+		}
+		buildings = {
+		
+			infrastructure = 2
+			
+		}
+		
+		
+		
+	}
+
+	provinces = {
+		9491 11530
+	}
+
+	local_supplies = 6.0 
+}

@@ -1,0 +1,34 @@
+
+state={
+	id=1004
+	name="STATE_1004"
+	resources={
+		steel=2
+	}
+
+	history={
+		owner = WPK
+		add_core_of = WPK
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 3
+
+		}
+		victory_points = {
+			123 3 
+		}
+		victory_points = {
+			9283 1 
+		}
+
+	}
+
+	provinces={
+		123 189 390 1336 1365 3127 4326 6025 7346 9283 11111 11352 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

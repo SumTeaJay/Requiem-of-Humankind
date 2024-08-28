@@ -1,0 +1,30 @@
+
+state={
+	id=263
+	name="STATE_263"
+	resources={
+		steel=15
+	}
+
+	history={
+		owner = NAR
+		victory_points = {
+			6154 5 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = NAR
+
+	}
+
+	provinces={
+		8 110 6086 6154 9111 9212 11191 
+	}
+	manpower=16000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=11.000
+}

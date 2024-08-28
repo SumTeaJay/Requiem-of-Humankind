@@ -1,0 +1,29 @@
+
+state={
+	id=884
+	name="STATE_884"
+
+	history={
+		owner = ARK
+		add_core_of = ARK
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		victory_points = {
+			13380 2 
+		}
+
+		
+
+	}
+
+	provinces={
+		87 3081 11042 11089 13312 13377 13379 13380 13389 13391 13393 13400 
+	}
+	manpower=8000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

@@ -1,0 +1,284 @@
+division_template = {
+
+	name = "Liquidation Units"
+	
+	division_names_group = BANDIT_INF_01
+
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+		rcbd_troop = { x = 0 y = 1 }
+		rcbd_troop = { x = 0 y = 2 }
+		rcbd_troop = { x = 0 y = 3 }
+		rcbd_troop = { x = 0 y = 4 }
+		rcbd_troop = { x = 1 y = 0 }
+		rcbd_troop = { x = 1 y = 1 }
+		rcbd_troop = { x = 1 y = 2 }
+		rcbd_troop = { x = 1 y = 3 }
+		stvol_art = { x = 1 y = 4 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		rhbz = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		stvol_art_sup = { x = 0 y = 3 }
+		drg = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	
+	name = "Armored Fist"
+	
+	division_names_group = BANDIT_INF_01
+	
+	regiments = { 
+		OPF = { x = 0 y = 0 }
+		OPF = { x = 0 y = 1 }
+		OPF = { x = 0 y = 2 }
+		OPF = { x = 0 y = 3 }
+		OPF = { x = 0 y = 4 }
+		motopechotanagruzovikah = { x = 1 y = 0 }
+		motopechotanagruzovikah = { x = 1 y = 1 }
+		motopechotanagruzovikah = { x = 1 y = 2 }
+		motopechotanagruzovikah = { x = 1 y = 3 }
+		motopechotanagruzovikah = { x = 1 y = 4 }
+	}
+	
+	support = {
+		field_hospital = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+		stvol_art_sup = { x = 0 y = 2 }
+		anti_air_art_sup = { x = 0 y = 3 }
+		drg = { x = 0 y = 4 }
+	}
+}
+
+units = {
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Liquidation Unit"
+		location = 6380
+		division_template = "Liquidation Units"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	
+	
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+	division = {
+		name = "Armored Fist"
+		location = 6380	
+		division_template = "Armored Fist"
+        start_experience_factor = 1
+        start_equipment_factor = 1
+        start_manpower_factor = 1
+	}
+}

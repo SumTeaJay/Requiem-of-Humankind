@@ -1,0 +1,28 @@
+
+state = {
+	id = 889
+	name = "STATE_889"
+	manpower = 78000
+	
+	state_category = rural
+
+	history = {
+		owner = SWR
+		add_core_of = SWR
+		victory_points = {
+			6522 1
+		}
+		buildings = {
+		
+			infrastructure = 2
+			
+		}
+		
+	}
+
+	provinces = {
+		466 3434 6604 6522
+	}
+
+	local_supplies = 6.0 
+}

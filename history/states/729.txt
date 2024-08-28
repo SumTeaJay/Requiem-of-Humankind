@@ -1,0 +1,30 @@
+
+state={
+	id=729
+	name="STATE_729"
+
+	history={
+		owner = ASR
+		add_core_of = ASR
+		add_core_of = GLS
+		victory_points = {
+			206 1 
+		}
+		victory_points = {
+			12216 2 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+	}
+
+	provinces={
+		206 291 1380 4372 6246 6285 7403 7416 7431 7444 10286 10314 12216 12626 
+	}
+	manpower=130000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

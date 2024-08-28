@@ -1,0 +1,26 @@
+
+state={
+	id=849
+	name="STATE_849"
+
+	history={
+		owner = STW
+		add_core_of = STW
+		victory_points = {
+			9430 2 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		6445 9430 11418 11434 11450 
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

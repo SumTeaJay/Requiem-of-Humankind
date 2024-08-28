@@ -1,0 +1,37 @@
+division_template = {
+	name = "Последователи Харона"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+        light_infantry = { x = 1 y = 0 }
+        light_infantry = { x = 2 y = 0 }
+        light_infantry = { x = 3 y = 0 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Последователи Харона"
+		location = 9319
+		division_template = "Последователи Харона"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Последователи Харона"
+		location = 11304
+		division_template = "Последователи Харона"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Последователи Харона"
+		location = 9331
+		division_template = "Последователи Харона"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+}

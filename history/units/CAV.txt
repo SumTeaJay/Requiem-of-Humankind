@@ -1,0 +1,50 @@
+division_template = {
+	name = "Днепровская гвардия"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        light_infantry = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Гвардия Торицкого"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 1 }
+	}
+    support = {
+        stvol_art_sup = { x = 0 y = 0 }
+    }
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Днепровская гвардия"
+		location = 3378
+		division_template = "Днепровская гвардия"
+		start_experience_factor = 0.55
+        start_equipment_factor = 0.70
+        start_manpower_factor = 0.80
+    }
+    division = {
+		name = "Днепровская гвардия"
+		location = 11241
+		division_template = "Днепровская гвардия"
+		start_experience_factor = 0.55
+        start_equipment_factor = 0.70
+        start_manpower_factor = 0.80
+    }
+    division = {
+		name = "Гвардия Торицкого"
+		location = 11322
+		division_template = "Гвардия Торицкого"
+		start_experience_factor = 0.55
+        start_equipment_factor = 0.70
+        start_manpower_factor = 0.80
+    }
+}

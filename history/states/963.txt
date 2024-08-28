@@ -1,0 +1,27 @@
+
+state={
+	id=963
+	name="STATE_963"
+
+	history={
+		owner = YJY
+		add_core_of = YJY
+		victory_points = {
+			13238 1 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		9592 13237 13238 13239 13240 
+	}
+	manpower=14000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

@@ -1,0 +1,41 @@
+capital = 766
+
+oob = WOD
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+army_experience = 50
+add_manpower = 17000
+add_equipment_to_stockpile = {
+	type = infantry_odejda_0
+	amount = 1500
+	producer = WOD
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_0
+	amount = 1000
+	producer = WOD
+}
+set_politics = {
+	ruling_party = bandits
+	elections_allowed = no
+}
+
+set_popularities = {
+	technocracy = 15
+	chthonism = 10
+	bandits= 75
+}
+
+recruit_character = WOD_tsar
+add_ideas = gubit_izobiliye

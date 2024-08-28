@@ -1,0 +1,31 @@
+
+state={
+	id=227
+	name="STATE_227"
+	resources={
+		steel=15
+	}
+
+	history={
+		owner = DOM
+		add_core_of = DOM
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		victory_points = {
+			6474 5 
+		}
+		victory_points = {
+			13337 5 
+		}
+	}
+
+	provinces={
+		6474 6493 13337 
+	}
+	manpower=202000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=10.000
+}

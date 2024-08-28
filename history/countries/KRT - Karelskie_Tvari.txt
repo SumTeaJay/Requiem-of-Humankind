@@ -1,0 +1,26 @@
+capital = 150
+
+oob = base #"ODS_1936"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	tech_support = 1
+}
+
+set_research_slots = 1
+set_convoys = 0
+
+add_ideas = KRT_amber_dream
+set_politics = {
+	ruling_party = chthonism 
+	elections_allowed = no
+}
+
+set_popularities = {
+	chthonism = 100
+}
+
+recruit_character = KRT_iskajenni_omut
+

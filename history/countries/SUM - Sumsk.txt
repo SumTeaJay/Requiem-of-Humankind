@@ -1,0 +1,46 @@
+capital = 225
+add_manpower = 8000
+
+oob = SUM
+
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 40
+	humanists = 60
+}
+
+add_opinion_modifier = {
+    target = ARM
+    modifier = crazy_millitarists
+}
+ 
+
+create_country_leader = {
+    name = "Dmitry_Ostaiko"
+    desc = "Dmitry_Ostaiko_desc"
+    picture = "gfx/leaders/SUM/Dmitry_Ostaiko.dds"
+    ideology = humanists_subideology
+    traits = {
+        #
+    }
+}
+
+add_ideas = depressed

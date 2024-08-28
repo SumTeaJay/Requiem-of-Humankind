@@ -1,0 +1,26 @@
+
+state={
+	id=873
+	name="STATE_873"
+
+	history={
+		owner = GAT
+		add_core_of = GAT
+		victory_points = {
+			3519 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		449 484 500 509 3478 3519 9488 11459 11476 
+	}
+	manpower=17000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

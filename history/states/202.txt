@@ -1,0 +1,32 @@
+
+state={
+	id=202
+	name="STATE_202"
+	resources={
+		oil=10
+		steel=20
+	}
+
+	history={
+		owner = BIH
+		add_core_of = BIH
+		
+		victory_points = {
+			13350 25 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		525 582 3494 9543 11557 13350 
+	}
+	manpower=57000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

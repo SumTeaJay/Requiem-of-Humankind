@@ -1,0 +1,55 @@
+capital = 869
+
+oob = FUD
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+army_experience = 50
+add_manpower = 32000
+add_equipment_to_stockpile = {
+	type = infantry_odejda_1
+	amount = 2000
+	producer = FUD
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 2000
+	producer = FUD
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 400
+	producer = FUD
+}
+set_politics = {
+	ruling_party = free_people
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+}
+
+ 
+
+create_country_leader = {
+    name = "soviet_old_engeners"
+    desc = "soviet_old_engeners_desc"
+    picture = "gfx/leaders/FUD/soviet_old_engeners.dds"
+    ideology = free_people_subideology
+    traits = {
+        #
+    }
+}
+
+add_ideas = powers_of_ZVPK

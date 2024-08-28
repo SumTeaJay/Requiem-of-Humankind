@@ -1,0 +1,33 @@
+
+state={
+	id=1000
+	name="STATE_1000"
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = NFL
+		add_core_of = NFL
+		add_dynamic_modifier = {
+			modifier = dead_region
+
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			12527 1 
+		}
+
+	}
+
+	provinces={
+		278 4874 10216 12187 12527 
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

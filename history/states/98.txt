@@ -1,0 +1,26 @@
+
+state={
+	id=98
+	name="STATE_98"
+
+	history={
+		owner = PMD
+		add_core_of = PMD
+		victory_points = {
+			13488 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		201 6125 6168 9147 11073 13485 13486 13487 13488 13489 
+	}
+	manpower=14000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=7.000
+}

@@ -1,0 +1,28 @@
+
+state={
+	id=995
+	name="STATE_995"
+
+	history={
+		owner = TAR
+		add_core_of = TAR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+
+		}
+		victory_points = {
+			9308 3 
+		}
+
+	}
+
+	provinces={
+		97 135 143 3056 3091 3135 3190 6077 6113 6158 6180 9033 9043 9136 9159 9185 9200 9209 9308 11027 11035 11143 
+	}
+	manpower=153446
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

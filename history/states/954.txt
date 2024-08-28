@@ -1,0 +1,35 @@
+
+state={
+	id=954
+	name="STATE_954"
+	resources={
+		oil=20
+	}
+
+	history={
+		owner = EDM
+		add_core_of = EDM
+		victory_points = {
+			10301 3 
+		}
+		victory_points = {
+			9385 5
+		}
+		buildings = {
+			arms_factory = 1
+			industrial_complex = 1
+			fuel_silo = 1
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		292 355 403 3214 3328 3348 6119 6308 6323 6352 6368 9385 9401 9514 10301 11339 11389 11496 
+	}
+	manpower=250200
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

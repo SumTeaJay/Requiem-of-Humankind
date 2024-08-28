@@ -1,0 +1,95 @@
+division_template = {
+	name = "Fanatics"
+	division_names_group = BANDIT_INF_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Fanatics"
+		location = 105
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Fanatics"
+		location = 13467
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Fanatics"
+		location = 13467
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13472
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13474
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13479
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13479
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13479
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13479
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Fanatics"
+		location = 13479
+		division_template = "Fanatics"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+}

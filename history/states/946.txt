@@ -1,0 +1,22 @@
+
+state={
+	id=946
+	name="STATE_946"
+
+	history={
+		owner = MOS
+		add_core_of = MOS
+		victory_points = {
+			357 1 
+		}
+
+	}
+
+	provinces={
+		357 3202 3268 3339 3370 6231 6295 6362 6392 11295 
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

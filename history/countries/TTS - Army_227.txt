@@ -1,0 +1,39 @@
+capital = 971
+
+oob = base #"ODS_1936"
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+
+add_ideas = TTS_mutual_cooperation
+set_politics = {
+	ruling_party = militarists 
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 95
+	sacraments = 3
+	statesmen = 2
+}
+
+
+create_country_leader = {
+    name = "TTS_cord_corp"
+    desc = "TTS_cord_corp_DESC"
+    picture = "gfx/leaders/TTS/cord_corp.dds"
+    ideology = militarists_subideology   
+    traits = { }
+}
+

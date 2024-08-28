@@ -1,0 +1,27 @@
+
+state = {
+	id = 844
+	name = "STATE_844"
+	manpower = 30000
+	
+	state_category = rural
+
+	history = {
+		owner = CRW
+		add_core_of = CRW
+		victory_points = {
+			9680  2
+		}
+		buildings = {
+			infrastructure = 2
+			
+		}
+		
+	}
+
+	provinces = {
+		 9677 9680 13274 13275
+	}
+
+	local_supplies = 6.0 
+}

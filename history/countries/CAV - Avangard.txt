@@ -1,0 +1,41 @@
+capital = 904
+
+oob = CAV
+add_manpower = 6600
+add_ideas = {
+	CAV_fallen
+}
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = bandits
+	elections_allowed = no
+}
+
+set_popularities = {
+	bandits = 100
+}
+ 
+
+create_country_leader = {
+    name = "CAV_luka"
+    desc = "CAV_luka_desc"
+    picture = "gfx/leaders/CAV/CAV_luka.dds"
+    ideology = bandits_subideology
+    traits = {
+        #
+    }
+}
+

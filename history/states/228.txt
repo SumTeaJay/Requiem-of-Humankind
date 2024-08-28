@@ -1,0 +1,27 @@
+
+state={
+	id=228
+	name="STATE_228"
+
+	history={
+		owner = WAC
+		victory_points = {
+			523 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = WAC
+
+	}
+
+	provinces={
+		523 547 570 9476 11487 11513 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,35 @@
+
+state={
+	id=895
+	name="STATE_895"
+
+	history={
+		owner = IMP
+		add_core_of = IMP
+		victory_points = {
+			3335 10 
+		}
+		victory_points = {
+			3226 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 1
+			424 = {
+				bunker = 1
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		3226 3335 6411 
+	}
+	manpower=259000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=6.000
+}

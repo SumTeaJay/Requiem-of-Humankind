@@ -1,0 +1,225 @@
+division_template = {
+	name = "Bandits"
+
+	division_names_group = BANDIT_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	 	light_infantry = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Punishers"
+
+	division_names_group = PUNISHER_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	 	infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 2 }
+	 	infantry = { x = 0 y = 3 }
+	}
+	support = {
+		standard_bearer = { x = 0 y = 0 }
+		stvol_art_sup = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+division_template = {
+	name = "Motorized infantry"
+
+	division_names_group = MOTORIZED_INF_01
+
+	regiments = {
+		motopechotanagruzovikah = { x = 0 y = 0 }
+		motopechotanagruzovikah = { x = 1 y = 0 }
+		motopechotanagruzovikah = { x = 0 y = 1 }
+		motopechotanagruzovikah = { x = 1 y = 1 }
+		motopechotanagruzovikah = { x = 0 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		stvol_art_sup = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Bandits"
+		location = 287
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 9242
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6264
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6303
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6293
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6367
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 9399
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 306
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6303
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 11241
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 287
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 9242
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 6264
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 6303
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 6293
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 6367
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Punishers"
+		location = 9399
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Motorized infantry"
+		location = 306
+		division_template = "Motorized infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Motorized infantry"
+		location = 306
+		division_template = "Motorized infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Motorized infantry"
+		location = 11241
+		division_template = "Motorized infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Motorized infantry"
+		location = 11241
+		division_template = "Motorized infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+}

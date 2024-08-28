@@ -1,0 +1,31 @@
+capital = 1004
+
+oob = WPK
+
+add_ideas = WPK_state_forge
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+
+}
+add_manpower = 13000
+set_convoys = 0
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 1000
+}
+set_politics = {
+    ruling_party = humanists
+    last_election = "2000.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 10
+    humanists = 60
+    technocracy = 30
+}
+recruit_character = WPK_Regional_Parliament 

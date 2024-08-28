@@ -1,0 +1,39 @@
+capital = 910
+
+
+oob = HAR
+add_manpower = 14400
+
+add_ideas = {
+	HAR_last_frontier
+}
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+   tech_rhbz = 1
+   basic_MLRS = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+set_politics = {
+	ruling_party = militarists 
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 100
+}
+
+create_country_leader = {
+    name = "HAR_paramonov"
+    desc = "HAR_paramonov_desc"
+    picture = "gfx/leaders/HAR/HAR_paramonov.dds"
+    ideology = militarists_subideology
+    traits = { }
+}

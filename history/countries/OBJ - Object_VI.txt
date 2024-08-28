@@ -1,0 +1,44 @@
+capital = 930
+
+oob = OBJ
+add_manpower = 16750
+
+add_ideas = {
+	OBJ_whats_hidden
+}
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+   tech_impulse_silencers =1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = technocracy
+	elections_allowed = no
+}
+
+set_popularities = {
+	technocracy = 100
+}
+
+ 
+
+
+create_country_leader = {
+    name = "OBJ_sema"
+    desc = "OBJ_sema_desc"
+    picture = "gfx/leaders/OBJ/OBJ_sema.dds"
+    ideology = technocracy_subideology
+    traits = {
+        #
+    }
+}
+

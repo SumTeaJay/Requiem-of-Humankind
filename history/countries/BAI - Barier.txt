@@ -1,0 +1,30 @@
+capital = 907
+oob = BAI
+add_manpower = 800
+add_ideas = {
+	BAI_hes_getting_closer_and_closer
+}
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+set_popularities = {
+	militarists =  100
+}
+
+
+recruit_character = BAI_pasha
+

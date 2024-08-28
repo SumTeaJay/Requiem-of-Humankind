@@ -1,0 +1,31 @@
+capital = 196
+
+oob = base #"HER_1936"
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 1
+set_convoys = 0
+
+set_politics = {
+	ruling_party = sacraments
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 25
+	statesmen = 20
+	sacraments = 55
+}
+
+ 
+add_ideas = expluatatsiya_selkhoza
+recruit_character = HER_Audit_of_exploitation

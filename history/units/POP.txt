@@ -1,0 +1,67 @@
+division_template = {
+	name = "Партизанский отряд"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+        light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Партизанская дивизия"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+        infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	}
+    support = {
+        stvol_art_sup = { x = 0 y = 0 }
+    }
+	priority = 1
+}
+units = {
+	division = {
+		name = "Партизанский отряд “Смуглянка”"
+		location = 9304
+		division_template = "Партизанский отряд"
+		start_experience_factor = 0.50
+        start_equipment_factor = 0.50
+        start_manpower_factor = 0.80
+	}
+    division = {
+		name = "Партизанский отряд"
+		location = 3256
+		division_template = "Партизанский отряд"
+		start_experience_factor = 0.50
+        start_equipment_factor = 0.50
+        start_manpower_factor = 0.80
+	}
+    division = {
+		name = "Партизанский отряд"
+		location = 11341
+		division_template = "Партизанский отряд"
+		start_experience_factor = 0.50
+        start_equipment_factor = 0.50
+        start_manpower_factor = 0.80
+	}
+    division = {
+		name = "Партизанский отряд"
+		location = 3392
+		division_template = "Партизанский отряд"
+		start_experience_factor = 0.50
+        start_equipment_factor = 0.50
+        start_manpower_factor = 0.80
+	}
+    division = {
+		name = "Партизанская дивизия"
+		location = 6306
+		division_template = "Партизанская дивизия"
+		start_experience_factor = 0.75
+        start_equipment_factor = 0.75
+        start_manpower_factor = 0.95
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=923
+	name="STATE_923"
+	resources={
+		steel=6
+	}
+
+	history={
+		owner = KOC
+		add_core_of = KOC
+		victory_points = {
+			9319 1 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+
+		
+
+	}
+
+	provinces={
+		9319 9331 11304 
+	}
+	manpower=7800
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

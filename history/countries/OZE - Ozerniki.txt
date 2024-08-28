@@ -1,0 +1,40 @@
+capital = 926
+
+oob = OZE
+add_manpower = 3800
+
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+   tech_drg = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+add_ideas = OZE_radioactive_swamp
+set_politics = {
+	ruling_party = free_people
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+}
+
+ 
+recruit_character = OZE_avraam_loskutov 
+create_country_leader = {
+    name = "OZE_avraam_loskutov"
+    desc = "OZE_avraam_loskutov_DESC"
+    picture = "gfx/leaders/OZE/avraaam.dds"
+    ideology = free_people_subideology 
+    traits = {
+        #
+    }
+}

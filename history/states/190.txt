@@ -1,0 +1,29 @@
+
+state={
+	id=190
+	name="STATE_190"
+	
+	state_category = pastoral
+	
+	history={
+		victory_points = {
+			9262 3
+		}
+		owner = BTC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+		}
+		add_core_of = BTC
+		add_claim_by = AGE
+	}
+
+	provinces={
+		3319 9262 11246 
+	}
+
+	local_supplies=5.0 
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

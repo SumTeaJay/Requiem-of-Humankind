@@ -1,0 +1,29 @@
+
+state={
+	id=93
+	name="STATE_93"
+
+	history={
+		victory_points = {
+			6557 1 
+		}
+		owner = COA
+		add_core_of = COA
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+		
+
+	}
+
+	provinces={
+		422 513 572 6557 
+	}
+	manpower=25000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,77 @@
+capital = 148
+
+set_stability = 1
+set_war_support = 0.94
+army_experience = 20
+oob = base
+add_ideas = {
+    PMD_preparations_for_war
+    PMD_hunger
+	limited_recruting
+	atheism
+	long_shift
+	labor_service
+	restrain_distortions
+}
+
+add_opinion_modifier = {
+	target = NMG
+	modifier = american_interventionists
+}
+add_opinion_modifier = {
+	target = LKV
+	modifier = brother_in_arms
+}
+add_opinion_modifier = {
+	target = MGL
+	modifier = warlords
+}
+add_opinion_modifier = {
+	target = PLD
+	modifier = warlords
+}
+add_opinion_modifier = {
+	target = DRG
+	modifier = warlords
+}
+add_opinion_modifier = {
+	target = ZLG
+	modifier = warlords
+}
+add_opinion_modifier = {
+	target = SFR
+	modifier = warlords
+}
+
+set_technology = { 
+    infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	civilian_clothing = 1
+	old_world_uniforms = 1
+	gw_artillery = 1
+	tech_support = 1
+	pre_war_OPV = 1
+	bba_pre_war_fighter = 1
+}
+
+set_research_slots = 2
+
+set_politics = {
+	ruling_party = militarists 
+	elections_allowed = no
+}
+set_popularities = {
+    militarists = 100
+}
+
+recruit_character = PMD_danila_popadeikin
+recruit_character = PMD_fiodr_kuznecov
+recruit_character = PMD_roza_shanina
+recruit_character = PMD_nikolai_gulaev
+
+
+
+
+
+

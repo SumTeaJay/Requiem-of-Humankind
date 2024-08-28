@@ -1,0 +1,24 @@
+state = {
+	id = 989
+	name = "STATE_989"
+	manpower = 5000
+	
+	state_category = pastoral
+
+	history = {
+		owner = MOS
+		add_core_of = MOS
+		victory_points = {
+			344 1
+		}
+		buildings = {
+		
+		}
+	}
+
+	provinces = {
+		344 11250 11326
+	} 
+
+	local_supplies = 6.0 
+}

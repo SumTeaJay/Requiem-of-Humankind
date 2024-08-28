@@ -1,0 +1,42 @@
+capital = 991
+oob = BGR
+
+add_ideas = BGR_red_paths
+
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 3
+set_convoys = 0
+set_stability = 0.25
+set_war_support = 0.5
+army_experience = 5
+add_manpower = 38400
+
+add_opinion_modifier = {
+    target = MSH
+    modifier = bandit_conflicts
+}
+add_opinion_modifier = {
+    target = KMN
+    modifier = bandit_conflicts
+}
+add_opinion_modifier = {
+    target = MKS
+    modifier = forced_union
+}
+
+set_politics = {
+    ruling_party = bandits
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 100
+}
+
+recruit_character = BGR_Danil_Borisenko
+recruit_character = BGR_generic_general

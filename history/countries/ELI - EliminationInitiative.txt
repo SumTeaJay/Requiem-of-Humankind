@@ -1,0 +1,106 @@
+capital = 219
+
+#oob = ELI #"ODS_1936"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	civilian_clothing = 1
+	tech_support = 1
+	gw_artillery = 1
+	basic_air_defense = 1
+	instruments_of_any_era = 1
+	motorised_infantry = 1
+}
+
+if = {
+	limit = {
+		NOT = { has_dlc = "No Step Back" }
+	}
+	set_technology = {
+		pre_war_OPV = 1
+		basic_mass_OPF = 1
+	}
+}
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	set_technology = {
+		nsb_pre_war_OPV = 1
+		nsb_basic_mass_OPF = 1
+	}
+}
+
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+	set_technology = {
+		bba_pre_war_fighter = 1
+		bba_basic_specialized_fighter = 1
+		bba_basic_specialized_helicopter = 1
+	}
+}
+IF = {
+	limit = {
+		NOT = { has_dlc = "By Blood Alone" }
+	}
+	set_technology = {
+		pre_war_fighter = 1
+		basic_specialized_aircraft = 1
+		basic_specialized_fighter = 1
+		basic_specialized_helicopter = 1
+	}
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 100
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 60000
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 15000
+}
+add_equipment_to_stockpile = {
+	type = basic_mass_OPF_equipment
+	amount = 2000
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 7000
+}
+add_equipment_to_stockpile = {
+	type = infantry_fighting_vehicle_equipment
+	amount = 2000
+}
+add_equipment_to_stockpile = {
+	type = spec_fighter_airframe
+	amount = 500
+}
+add_equipment_to_stockpile = {
+	type = spec_heli_airframe
+	amount = 700
+}
+add_equipment_to_stockpile = {
+	type = anti_air_equipment
+	amount = 4000
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 4500
+}
+
+recruit_character = ELI_sergey_sobyanov
+

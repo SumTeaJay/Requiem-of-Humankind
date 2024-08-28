@@ -1,0 +1,91 @@
+capital = 193
+add_manpower = 12000
+set_stability = 0.25
+set_war_support = 0.7
+army_experience = 5
+
+oob = ARM
+
+set_country_flag = is_major
+
+add_ideas = { 
+	ARM_blood_on_snow
+}
+
+# Стартовые технологии
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1    
+}
+
+set_research_slots = 3
+set_convoys = 0
+
+load_focus_tree = {
+    tree = ARM_phase_one_tree
+    keep_completed = no
+}
+
+set_politics = {
+	ruling_party = statesmen 
+	elections_allowed = no
+}
+
+set_popularities = {
+	statesmen = 65
+    militarists = 30
+	free_people = 5
+}
+
+add_opinion_modifier = {
+    target = IMP
+    modifier = ARM_hatred
+}
+add_opinion_modifier = {
+    target = SUM
+    modifier = ARM_traitors
+}
+add_opinion_modifier = {
+    target = VDS
+    modifier = ARM_traitors
+}
+add_opinion_modifier = {
+    target = BIH
+    modifier = ARM_fanatics
+}
+add_opinion_modifier = {
+    target = DIB
+    modifier = ARM_fanatics
+}
+add_opinion_modifier = {
+    target = BAG
+    modifier = ARM_fanatics
+}
+create_country_leader = {
+    name = ARM_michael_onufrenko
+    desc = ARM_michael_onufrenko_desc
+    picture = GFX_portrait_ARM_Onufrenko
+    expire = "3333.1.1"
+    ideology = militarists_subideology
+}
+create_country_leader = {
+    name = ARM_Sergey_Rogov
+    #desc = 
+    #picture = 
+    expire = "3333.1.1"
+    ideology = free_people_subideology
+}
+
+recruit_character = ARM_Yuriy_Podolika
+recruit_character = ARM_michael_onufrenko
+recruit_character = ARM_eduard_varfolomeev
+recruit_character = ARM_roman_morozov
+recruit_character = ARM_anatoly_mikhailov
+recruit_character = ARM_Pavlik_Morozov
+
+
+

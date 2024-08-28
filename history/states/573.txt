@@ -1,0 +1,30 @@
+
+state={
+	id=573
+	name="STATE_573"
+	resources={
+		steel=5
+		chromium=2
+		tungsten=2
+	}
+
+	history={
+		victory_points = {
+			10329 1 
+		}
+		owner = SFL
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SFL
+
+	}
+
+	provinces={
+		237 361 3280 4758 7320 10136 11307 
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=7.000
+}

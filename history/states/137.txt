@@ -1,0 +1,25 @@
+
+state={
+	id=137
+	name="STATE_137"
+
+	history={
+		owner = CRW
+		add_core_of = CRW
+		victory_points = {
+			9718 2 
+		}
+		buildings = {
+			infrastructure = 3
+		}
+
+	}
+
+	provinces={
+		3722 6724 9718 13296 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=10.000
+}

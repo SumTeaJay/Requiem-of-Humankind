@@ -1,0 +1,24 @@
+
+state = {
+	id = 921
+	name = "STATE_921"
+	manpower = 183748
+	
+	state_category = rural
+
+	history = {
+		victory_points = {
+			    548 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		
+	}
+
+	provinces = {
+		548 6401
+	}
+
+	local_supplies = 6.0 
+}

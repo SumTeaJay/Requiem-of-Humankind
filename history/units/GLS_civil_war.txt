@@ -1,0 +1,94 @@
+division_template = {
+	name = "Buzoteri"
+	division_names_group = BANDIT_INF_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Buzoteri"
+		location = 3041
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 9155
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 9145
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 3000
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 11203
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 6202
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 108
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 99
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 11179
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Buzoteri"
+		location = 6121
+		division_template = "Buzoteri"
+		start_experience_factor = 0.1
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+}

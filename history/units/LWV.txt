@@ -1,0 +1,83 @@
+division_template = {
+	name = "sviatoe_light_infantry"
+	division_names_group = HOLY_INF_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "bojiya_dlan"
+	division_names_group = HOLY_INF_02
+	regiments = {
+		infantry  = { x = 0 y = 0 }
+		infantry  = { x = 1 y = 0 }
+		infantry  = { x = 0 y = 1 }
+		infantry  = { x = 1 y = 1 }
+	 	infantry  = { x = 0 y = 2 }
+		infantry  = { x = 2 y = 0 }
+		infantry  = { x = 2 y = 1 }
+		infantry  = { x = 2 y = 2 }
+		infantry  = { x = 2 y = 3 }
+	 	infantry  = { x = 2 y = 4 }	
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		stvol_art_sup = { x = 0 y = 1 }	
+		rhbz = { x = 0 y = 3 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "sviatoe_light_infantry"
+		location = 11411
+		division_template = "sviatoe_light_infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.9
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "sviatoe_light_infantry"
+		location = 9494
+		division_template = "sviatoe_light_infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.9
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "sviatoe_light_infantry"
+		location = 9468
+		division_template = "sviatoe_light_infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.9
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "sviatoe_light_infantry"
+		location = 11550
+		division_template = "sviatoe_light_infantry"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.9
+        	start_manpower_factor = 1.0
+	}
+	
+	
+	
+	division = {
+		name = "bojiya_dlan"
+		location = 11479
+		division_template = "bojiya_dlan"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.9
+        	start_manpower_factor = 1.0
+	}
+
+}

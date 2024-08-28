@@ -1,0 +1,51 @@
+division_template = {
+	name = "Кордонники"
+	division_names_group = SDC_CORDONIK_REG
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+		rcbd_troop = { x = 1 y = 0 }
+		rcbd_troop = { x = 0 y = 1 }
+		rcbd_troop = { x = 1 y = 1 }
+        rcbd_troop = { x = 2 y = 0 }
+		rcbd_troop = { x = 2 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Призывники"
+	division_names_group = SDC_CONSСRIPT_REG
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+        light_infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Кордонники"
+		location = 3092
+		division_template = "Кордонники"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Кордонники"
+		location = 3092
+		division_template = "Кордонники"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Призывники"
+		location = 312
+		division_template = "Призывники"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+	}
+}

@@ -1,0 +1,26 @@
+
+state = {
+	id = 973
+	name = "STATE_973"
+	manpower = 22000
+	
+	state_category = pastoral
+
+	history = {
+		owner = ZLG
+		add_core_of = ZLG
+		victory_points = {
+			9123 1
+		}
+		buildings = {
+			industrial_complex = 2
+			infrastructure = 2
+		}
+	}
+
+	provinces = {
+		9162 9123 3121 6181 11088 9115 9217
+	} 
+
+	local_supplies = 6.0 
+}

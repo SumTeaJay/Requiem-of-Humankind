@@ -1,0 +1,38 @@
+capital = 966
+
+oob = base #"ODS_1936"
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+add_ideas = LKV_nuclear_apathy
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+
+set_popularities = {
+	militarists = 68
+	technocracy = 22
+	statesmen = 10
+}
+
+
+create_country_leader = {
+    name = "LKV_adam_kalinin"
+    desc = "LKV_adam_kalinin_DESC"
+    picture = "gfx/leaders/LKV/adam_kalinin.dds"
+    ideology = militarists_subideology   
+    traits = { }
+}
+

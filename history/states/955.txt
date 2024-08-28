@@ -1,0 +1,25 @@
+
+state={
+	id=955
+	name="STATE_955"
+
+	history={
+		owner = PLC
+		add_core_of = PLC
+		victory_points = {
+			6539 1 
+		}
+		buildings = {
+
+		}
+
+	}
+
+	provinces={
+		578 6539 9475 
+	}
+	manpower=11700
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

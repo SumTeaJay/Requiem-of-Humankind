@@ -1,0 +1,30 @@
+
+state={
+	id=871
+	name="STATE_871"
+	resources={
+		oil=50.000
+	}
+
+	history={
+		owner = SDC
+		add_core_of = SDC
+		buildings = {
+			infrastructure = 2
+			synthetic_refinery = 1
+			fuel_silo = 1
+		}
+		victory_points = {
+			312 1
+		}
+
+	}
+
+	provinces={
+		312 3080 3130 3168 6102 9248 11171 
+	}
+	manpower=71000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+	local_supplies=6.000
+}

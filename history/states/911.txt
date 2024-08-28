@@ -1,0 +1,28 @@
+
+state = {
+	id = 911
+	name = "STATE_911"
+	manpower = 16000
+	
+	state_category = pastoral
+
+	history = {
+		owner = AGE
+		add_core_of = AGE
+		victory_points = {
+			    3296 1
+		}
+		buildings = {
+		
+			infrastructure = 2
+			
+		}
+		
+	}
+
+	provinces = {
+		3194 3296 6322 
+	}
+
+	local_supplies = 6.0 
+}

@@ -1,0 +1,46 @@
+capital = 236
+
+#oob = ELI #"ODS_1936"
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+	civilian_clothing = 1
+	tech_support = 1
+	gw_artillery = 1
+	instruments_of_any_era = 1
+	motorised_infantry = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = free_people
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+}
+
+add_equipment_to_stockpile = {
+	type = infantry_equipment
+	amount = 35000
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 3000
+}
+add_equipment_to_stockpile = {
+	type = artillery_equipment
+	amount = 2500
+}
+add_equipment_to_stockpile = {
+	type = motorized_equipment
+	amount = 3000
+}
+
+recruit_character = BMB_ilham_nadyrov
+

@@ -1,0 +1,39 @@
+﻿division_template = {
+	name = "Revoltistskaya banda"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+	}
+}
+units = {
+	division = {
+		name = "1. Revoltistskaya banda"
+		location = 11427
+		division_template = "Revoltistskaya banda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "2. Revoltistskaya banda"
+		location = 6557
+		division_template = "Revoltistskaya banda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "3. Revoltistskaya banda"
+		location = 3457
+		division_template = "Revoltistskaya banda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+	division = {
+		name = "4. Revoltistskaya banda"
+		location = 476
+		division_template = "Revoltistskaya banda"
+		start_experience_factor = 0.5
+		start_equipment_factor = 0.3
+	}
+}

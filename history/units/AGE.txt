@@ -1,0 +1,146 @@
+division_template = {
+	name = "Зеленый полк"
+	division_names_group = AGE_GREEN_REG
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	 	infantry = { x = 0 y = 2 }
+	 	infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Местное ополчение"
+	division_names_group = AGE_LOC_MIL
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Сумрачный дивизион"
+	division_names_group = AGE_TWI_DIV
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+	}
+	is_locked = yes
+	priority = 1
+}
+units = {
+	division = {
+		name = "1-й Зеленый полк"
+		location = 9340
+		division_template = "Зеленый полк"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.45
+		start_manpower_factor = 0.78
+	}
+	division = {
+		name = "2-й Зеленый полк"
+		location = 9340
+		division_template = "Зеленый полк"
+		start_experience_factor = 1.0
+		start_equipment_factor = 0.45
+		start_manpower_factor = 0.78
+	}
+	division = {
+		name = "1-е Местное ополчение"
+		location = 9340
+		division_template = "Местное ополчение"
+		start_experience_factor = 0.41
+        start_equipment_factor = 0.32
+        start_manpower_factor = 0.85
+	}
+	division = {
+		name = "2-е Местное ополчение"
+		location = 3296
+		division_template = "Местное ополчение"
+		start_experience_factor = 0.41
+        start_equipment_factor = 0.32
+        start_manpower_factor = 0.85
+	}
+	division = {
+		name = "3-е Местное ополчение"
+		location = 6222
+		division_template = "Местное ополчение"
+		start_experience_factor = 0.41
+        start_equipment_factor = 0.32
+        start_manpower_factor = 0.85
+	}
+	division = {
+		name = "4-е Местное ополчение"
+		location = 9501
+		division_template = "Местное ополчение"
+		start_experience_factor = 0.41
+        start_equipment_factor = 0.32
+        start_manpower_factor = 0.85
+	}
+	division = {
+		name = "5-е Местное ополчение"
+		location = 3174
+		division_template = "Местное ополчение"
+		start_experience_factor = 0.41
+        start_equipment_factor = 0.32
+        start_manpower_factor = 0.85
+	}
+	division = {
+		name = "1-й Сумрачный дивизион"
+		location = 9340
+		division_template = "Сумрачный дивизион"
+        start_experience_factor = 0.86
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.48
+	}
+	division = {
+		name = "2-й Сумрачный дивизион"
+		location = 9340
+		division_template = "Сумрачный дивизион"
+        start_experience_factor = 0.86
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.48
+	}
+	division = {
+		name = "3-й Сумрачный дивизион"
+		location = 9340
+		division_template = "Сумрачный дивизион"
+        start_experience_factor = 0.86
+        start_equipment_factor = 0.2
+        start_manpower_factor = 0.48
+	}
+}
+
+###Стартовое производство ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "AGE"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = infantry_odejda_0
+			creator = "AGE"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = pre_war_artillery_equipment
+			creator = "AGE"
+		}
+		requested_factories = 1
+		progress = 0
+		efficiency = 20
+	}
+}

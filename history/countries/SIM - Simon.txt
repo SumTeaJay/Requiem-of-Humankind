@@ -1,0 +1,45 @@
+capital = 908
+
+oob = SIM
+add_manpower = 17850
+
+add_ideas = {
+	SIM_insanity_is_the_new_normal
+}
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+set_politics = {
+	ruling_party = chthonism
+	elections_allowed = no
+}
+
+set_popularities = {
+	chthonism = 75
+	technocracy = 10
+	sacraments = 15
+}
+
+ 
+
+create_country_leader = {
+    name = "SIM_ON"
+    desc = "SIM_ON_desc"
+    picture = "gfx/leaders/SIM/SIM_ON.dds"
+    ideology = chthonism_subideology
+    traits = {
+        #
+    }
+}
+

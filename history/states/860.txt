@@ -1,0 +1,32 @@
+
+state = {
+	id = 860
+	name = "STATE_860"
+	manpower = 57000
+	resources={
+		steel=4
+		aluminium=20
+	}
+	
+	state_category = rural
+
+	history = {
+		owner =  MOD
+		add_core_of = MOD
+		victory_points = {
+			9683  1
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+	}
+
+	provinces = {
+		9683 11686 11705
+	}
+
+	local_supplies = 6.0 
+}

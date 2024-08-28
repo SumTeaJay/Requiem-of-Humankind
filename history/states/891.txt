@@ -1,0 +1,31 @@
+
+state={
+	id=891
+	name="STATE_891"
+
+	history={
+		owner = LWV
+		add_core_of = LWV
+		victory_points = {
+			11479 10 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+			industrial_complex = 1
+
+		}
+
+		
+
+	}
+
+	provinces={
+		491 536 6431 9454 9468 9558 11479 13343 13345 13349 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=6.000
+}

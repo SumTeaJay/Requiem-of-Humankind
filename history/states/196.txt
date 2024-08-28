@@ -1,0 +1,27 @@
+
+state={
+	id=196
+	name="STATE_196"
+
+	history={
+		victory_points = {
+			6771 1 
+		}
+		owner = HER
+		add_core_of = HER
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+
+	}
+
+	provinces={
+		568 737 767 3573 6771 9712 
+	}
+	manpower=75000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

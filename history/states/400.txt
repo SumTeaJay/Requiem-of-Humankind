@@ -1,0 +1,29 @@
+
+state={
+	id=400
+	name="STATE_400"
+	resources={
+		aluminium=14.000
+	}
+
+	history={
+		owner = DIS
+		buildings = {
+			infrastructure = 2
+
+		}
+		victory_points = {
+			11192 1 
+		}
+		add_core_of = DIS
+
+	}
+
+	provinces={
+		119 186 3102 3177 3186 6110 6133 6213 9232 11025 11051 11110 11192 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

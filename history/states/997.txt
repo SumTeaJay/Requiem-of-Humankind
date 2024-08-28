@@ -1,0 +1,31 @@
+
+state={
+	id=997
+	name="STATE_997"
+
+	history={
+		owner = URC
+		add_core_of = URC
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+
+		}
+		victory_points = {
+			6124 5 
+		}
+		victory_points = {
+			3027 1 
+		}
+
+	}
+
+	provinces={
+		31 146 272 359 3027 3139 3264 3270 3294 3363 6124 6148 6162 6274 6288 6297 9370 11087 11124 11365 
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

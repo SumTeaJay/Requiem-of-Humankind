@@ -1,0 +1,27 @@
+
+state={
+	id=897
+	name="STATE_897"
+
+	history={
+		owner = VOZ
+		add_core_of = VOZ
+		victory_points = {
+			13471 1 
+		}
+	
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+
+	}
+
+	provinces={
+		105 13467 13471 13472 13474 13479 
+	}
+	manpower=12250
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

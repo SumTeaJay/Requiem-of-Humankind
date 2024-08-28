@@ -1,0 +1,24 @@
+capital = 220
+oob = "BRD"
+# Starting tech
+set_technology = {
+    #Категория пехоты
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+set_politics = {
+	ruling_party = militarists 
+	elections_allowed = no
+}
+set_popularities = {
+	militarists = 100
+}
+recruit_character = BRD_mikhail_tolstoy
+add_ideas = land_of_war

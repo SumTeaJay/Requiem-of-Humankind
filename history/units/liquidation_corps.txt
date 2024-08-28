@@ -1,0 +1,17 @@
+division_template = {
+	name = "Liquidation Corps"
+	division_names_group = BANDIT_INF_01
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+		rcbd_troop = { x = 1 y = 0 }
+		rcbd_troop = { x = 0 y = 1 }
+		rcbd_troop = { x = 1 y = 1 }
+	 	stvol_art = { x = 0 y = 2 }
+	 	stvol_art = { x = 1 y = 2 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+		ghounds = { x = 0 y = 1 }
+	}	
+	priority = 1
+}

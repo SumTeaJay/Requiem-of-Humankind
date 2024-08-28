@@ -1,0 +1,18 @@
+
+state={
+	id=320
+	name="STATE_320"
+	manpower = 286410
+
+	state_category = enclave
+
+	history={
+		buildings = {
+			infrastructure = 3 #was: 5
+		}
+	}
+
+	provinces={ 10149 }
+
+	local_supplies=0.0 
+}

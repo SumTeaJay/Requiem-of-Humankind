@@ -1,0 +1,43 @@
+capital = 94
+
+oob = POP
+add_manpower = 14475
+
+add_ideas = {
+	POP_total_terror
+}
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	humanists = 84
+	free_people = 6
+	technocracy = 10
+}
+
+ 
+
+create_country_leader = {
+    name = "egor_alifenko"
+    desc = "egor_alifenko_desc"
+    picture = "gfx/leaders/POP/POP_egor_alifenko.dds"
+    ideology = humanists_subideology
+    traits = {
+        #
+    }
+}

@@ -1,0 +1,33 @@
+capital = 397
+
+oob = DIS
+add_ideas= DIS_another_mind
+
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+add_manpower = 10000
+
+set_convoys = 0
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 600
+}
+set_politics = {
+    ruling_party = chthonism
+    last_election = "2000.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    chthonism = 100
+}
+
+recruit_character = DIS_distorted_pool 
+

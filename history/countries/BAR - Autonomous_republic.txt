@@ -1,0 +1,25 @@
+capital = 224
+oob = base #"BRA_1936"
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+set_popularities = {
+	humanists = 84
+	free_people = 6
+	technocracy = 10
+}
+
+ 

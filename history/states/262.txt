@@ -1,0 +1,29 @@
+
+state={
+	id=262
+	name="STATE_262"
+	resources={
+		steel=3.000
+		aluminium=2.000
+	}
+
+	history={
+		owner = UFV
+		add_core_of = UFV
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			13373 1 
+		}
+	}
+
+	provinces={
+		154 1295 6016 6177 11200 13311 13373 13385 13386 13387 13392 13394 13399 13403 13410 13420 
+	}
+	manpower=1500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

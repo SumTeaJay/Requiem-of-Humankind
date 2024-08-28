@@ -1,0 +1,33 @@
+
+state={
+	id=814
+	name="STATE_814"
+
+	history={
+		owner = BAL
+		victory_points = {
+			3272 1 
+		}
+		victory_points = {
+			11312 3
+		}
+		victory_points = {
+			3254 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_core_of = BAL
+		add_claim_by = AGE
+
+	}
+
+	provinces={
+		3254 3272 6281 6407 11312 13326 
+	}
+	manpower=54000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,28 @@
+capital = 249
+oob = EDM 
+add_ideas = EDM_human_or_nature
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_convoys = 0
+add_manpower = 40000
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 1500
+}
+set_politics = {
+    ruling_party = technocracy
+    last_election = "2002.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    technocracy = 100
+}
+
+recruit_character = EDM_High_Science_Council

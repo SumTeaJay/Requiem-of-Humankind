@@ -1,0 +1,56 @@
+division_template = {
+	name = "Передовой заслон"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		rcbd_troop = { x = 1 y = 0 }
+	}
+    support = {
+		rhbz = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Передовой заслон"
+        location = 310 
+		division_template = "Передовой заслон"
+		start_experience_factor = 0.6
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.8
+	}
+    division = {
+		name = "Передовой заслон"
+        location = 6459 
+		division_template = "Передовой заслон"
+		start_experience_factor = 0.6
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.8
+	}
+    division = {
+		name = "Передовой заслон"
+        location = 9275 
+		division_template = "Передовой заслон"
+		start_experience_factor = 0.6
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.8
+	}
+    division = {
+		name = "Передовой заслон"
+        location = 13259 
+		division_template = "Передовой заслон"
+		start_experience_factor = 0.6
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.8
+	}
+    division = {
+		name = "Передовой заслон"
+        location = 13303 
+		division_template = "Передовой заслон"
+		start_experience_factor = 0.6
+        start_equipment_factor = 0.5
+        start_manpower_factor = 0.8
+	}
+}

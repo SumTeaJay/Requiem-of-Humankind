@@ -1,0 +1,28 @@
+
+state = {
+	id = 859
+	name = "STATE_859"
+	manpower = 17000
+	
+	state_category = rural
+
+	history = {
+		owner = WOD
+		add_core_of = WOD
+		victory_points = {
+			723 5
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		
+	}
+
+	provinces = {
+		565 723 3707 9716
+	}
+
+	local_supplies = 6.0 
+}

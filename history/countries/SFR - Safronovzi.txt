@@ -1,0 +1,40 @@
+capital = 976
+
+oob = SFR
+add_manpower = 1000
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 1
+set_convoys = 0
+
+
+add_ideas = SFR_forwards_to_the_past
+set_politics = {
+	ruling_party = free_people 
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+}
+
+
+create_country_leader = {
+    name = "SFR_Dmitry_safronov"
+    desc = "SFR_Dmitry_safronov_DESC"
+    picture = "gfx/leaders/SFR/Dmitry_safronov.dds"
+    ideology = primitivists   
+    traits = {
+        #
+    }
+}
+

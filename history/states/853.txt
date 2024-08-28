@@ -1,0 +1,27 @@
+
+state={
+	id=853
+	name="STATE_853"
+
+	history={
+		owner = KUH
+		add_core_of = KUH
+		victory_points = {
+			735 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+		
+
+	}
+
+	provinces={
+		735 9691 9694 13360  9742
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

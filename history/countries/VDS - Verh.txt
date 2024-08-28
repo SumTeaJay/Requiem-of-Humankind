@@ -1,0 +1,35 @@
+capital = 203
+add_manpower = 16000
+
+oob = VDS
+
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = statesmen
+	elections_allowed = no
+}
+
+set_popularities = {
+	statesmen = 100
+}
+
+add_opinion_modifier = {
+    target = ARM
+    modifier = crazy_millitarists
+}
+
+recruit_character = VDS_pustovoytenko_valeriy
+add_ideas = lost_cities

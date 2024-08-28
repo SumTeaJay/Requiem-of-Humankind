@@ -1,0 +1,28 @@
+
+state={
+	id=929
+	name="STATE_929"
+
+	history={
+		owner = HOH
+		add_core_of = HOH
+		victory_points = {
+			11109 1 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+
+		
+
+	}
+
+	provinces={
+		248 320 6225 9234 11109 
+	}
+	manpower=13500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

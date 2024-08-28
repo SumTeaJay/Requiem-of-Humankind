@@ -1,0 +1,26 @@
+
+state={
+	id=837
+	name="STATE_837"
+	resources={
+		oil=20
+	}
+
+	history={
+		owner = ODS
+		add_core_of = ODS
+		buildings = {
+			infrastructure = 2
+			fuel_silo = 1
+			synthetic_refinery = 1
+		}
+	}
+
+	provinces={
+		13270 13279 13284 13285 13292 13293 13294 13332 13333 13334 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=small_island
+	local_supplies=6.000
+}

@@ -1,0 +1,26 @@
+capital = 91
+
+oob = base #"SVA_1936"
+
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = sacraments 
+	elections_allowed = no
+}
+
+set_popularities = {
+	sacraments = 100
+}

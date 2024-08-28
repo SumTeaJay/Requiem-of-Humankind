@@ -1,0 +1,31 @@
+
+state={
+	id=855
+	name="STATE_855"
+
+	history={
+		owner = YWD
+		add_core_of = YWD
+		victory_points = {
+			9635 1 
+		}
+		victory_points = {
+			3701 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		687 3076 9635 13249 13295 13351 13352 13353 
+	}
+	manpower=34000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

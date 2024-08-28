@@ -1,0 +1,32 @@
+division_template = {
+	name = "Озёропоклонники"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	}
+    support = {
+        drg = { x = 0 y = 0 }
+    }
+	priority = 1
+}
+units = {
+	division = {
+		name = "Озёропоклонники"
+		location = 9408
+		division_template = "Озёропоклонники"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.95
+	}
+    division = {
+		name = "Озёропоклонники"
+		location = 3053
+		division_template = "Озёропоклонники"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.95
+	}
+}

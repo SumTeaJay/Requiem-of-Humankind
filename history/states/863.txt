@@ -1,0 +1,26 @@
+
+state={
+	id=863
+	name="STATE_863"
+
+	history={
+		owner = SMK
+		add_core_of = SMK
+		victory_points = {
+			6293 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		354 6293 11234 
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=988
+	name="STATE_988"
+
+	history={
+		owner = VOF
+		add_core_of = VOF
+		victory_points = {
+			6189 10
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		60 81 93 129 160 163 166 3057 3085 3154 3160 3163 6017 6073 6189 9207 11036 11062 11083 11093 11103 11131 11165 11168 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

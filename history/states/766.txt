@@ -1,0 +1,24 @@
+state=
+{
+	id=766
+	name="STATE_766"
+	manpower = 28000
+	
+	state_category = rural
+	
+	history= {
+		victory_points = {
+			 6706 10
+		}
+		add_core_of = WOD
+		owner = WOD
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			
+		}
+	}
+	provinces={	3704 3724 6706 6729 }
+
+	local_supplies=0.0 
+}

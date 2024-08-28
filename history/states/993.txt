@@ -1,0 +1,25 @@
+
+state={
+	id=993
+	name="STATE_993"
+
+	history={
+		owner = SI1
+		add_core_of = SI1
+		victory_points = {
+			9299 1 
+		}
+		buildings = {
+			infrastructure = 1
+		}
+
+	}
+
+	provinces={
+		298 339 9271 9299 11256 11281 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

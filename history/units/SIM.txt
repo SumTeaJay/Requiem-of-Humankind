@@ -1,0 +1,61 @@
+division_template = {
+	name = "Слуги Симона"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+        infantry = { x = 0 y = 0 }
+        infantry = { x = 0 y = 1 }
+        infantry = { x = 0 y = 2 }
+        light_infantry = { x = 1 y = 0 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Слуги Симона"
+        location = 3320
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+    division = {
+		name = "Слуги Симона"
+        location = 9274
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+    division = {
+		name = "Слуги Симона"
+        location = 13281
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+    division = {
+		name = "Слуги Симона"
+        location = 9295 
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+division = {
+		name = "Слуги Симона"
+        location = 6413
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+    division = {
+		name = "Слуги Симона"
+        location = 13206 
+		division_template = "Слуги Симона"
+		start_experience_factor = 0.65
+        start_equipment_factor = 0.45
+        start_manpower_factor = 0.85
+	}
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=581
+	name="STATE_581"
+	resources={
+		steel=8.000
+		chromium=1.000
+	}
+
+	history={
+		owner = MIN
+		victory_points = {
+			7898 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+
+		}
+		add_core_of = MIN
+
+	}
+
+	provinces={
+		7898 10551 12393 13381 13383 13390 13395 13398 13401 13402 13405 13412 13417 
+	}
+	manpower=17000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

@@ -1,0 +1,47 @@
+division_template = {
+	name = "Группа Глинки"
+	division_names_group = ORL_Glinka_group
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 1 }
+	 	infantry = { x = 0 y = 2 }
+	 	infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Группа Глинки"
+		location = 328
+		division_template = "Группа Глинки"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+        start_manpower_factor = 1
+	}
+    division = {
+		name = "Группа Глинки"
+		location = 9355
+		division_template = "Группа Глинки"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+        start_manpower_factor = 1
+	}
+    division = {
+		name = "Группа Глинки"
+		location = 9355
+		division_template = "Группа Глинки"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+        start_manpower_factor = 1
+	}
+    division = {
+		name = "Группа Глинки"
+		location = 3346
+		division_template = "Группа Глинки"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.8
+        start_manpower_factor = 1
+	}
+}

@@ -1,0 +1,32 @@
+
+state={
+	id=925
+	name="STATE_925"
+	resources={
+		aluminium=4
+		tungsten=35
+	}
+
+	history={
+		owner = NVC
+		add_core_of = NVC
+		victory_points = {
+			117 3 
+		}
+		buildings = {
+			air_base = 1
+			industrial_complex = 1
+			infrastructure = 3
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		117 3072 3089 11072 
+	}
+	manpower=52000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

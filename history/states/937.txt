@@ -1,0 +1,27 @@
+
+state={
+	id=937
+	name="STATE_937"
+
+	history={
+		owner = TAB
+		add_core_of = TAB
+		victory_points = {
+			11296 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		313 340 367 471 3332 11296 
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

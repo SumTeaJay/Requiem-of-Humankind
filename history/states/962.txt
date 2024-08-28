@@ -1,0 +1,28 @@
+
+state = {
+	id = 962
+	name = "STATE_962"
+	manpower = 20000
+	resources={
+		oil=5
+		steel=2
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ADT
+		add_core_of = ADT
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+		victory_points = { 477 1 }
+	}
+
+	provinces = {
+		477 3459 3622 11578 6514 6498 615 464 9469 6523
+	} 
+
+	local_supplies = 6.0 
+}

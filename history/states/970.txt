@@ -1,0 +1,25 @@
+
+state = {
+	id = 970
+	name = "STATE_970"
+	manpower = 68000
+	
+	state_category = rural
+
+	history = {
+		owner = KSK
+		add_core_of = KSK
+		victory_points = {
+			11164 1
+		}
+		buildings = {
+		
+		}
+	}
+
+	provinces = {
+		11164 162 30 9223 3026 3153 6045 3156 6179 6137 9112 11030 6128 
+	} 
+
+	local_supplies = 6.0 
+}

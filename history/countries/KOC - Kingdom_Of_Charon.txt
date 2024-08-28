@@ -1,0 +1,36 @@
+capital = 95
+
+oob = KOC
+add_manpower = 6000
+
+# Starting tech
+set_technology = {
+  infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+add_ideas = KOC_fallen_gods
+set_politics = {
+	ruling_party = sacraments
+	elections_allowed = no
+}
+
+set_popularities = {
+	sacraments = 100
+}
+
+recruit_character = KOC_KHARON 
+create_country_leader = {
+    name = "KOC_KHARON"
+    desc = "KOC_KHARON_DESC"
+    picture = "gfx/leaders/KOC/haron.dds"
+    ideology = sacraments_subideology
+    traits = {
+        #
+    }
+}

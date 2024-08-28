@@ -1,0 +1,162 @@
+division_template = {
+	name = "Infantry Corps"
+
+	division_names_group = CORPS_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	 	light_infantry = { x = 0 y = 2 }
+	 	light_infantry = { x = 1 y = 2 }
+	 	light_infantry = { x = 0 y = 3 }
+	 	light_infantry = { x = 1 y = 3 }
+	 	light_infantry = { x = 2 y = 0 }
+	 	infantry = { x = 2 y = 1 }
+	 	infantry = { x = 2 y = 2 }
+	 	infantry = { x = 2 y = 3 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		stvol_art_sup = { x = 0 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Bandits"
+
+	division_names_group = BANDIT_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	 	light_infantry = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Infantry Corps"
+		location = 3580
+		division_template = "Infantry Corps"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Infantry Corps"
+		location = 3580
+		division_template = "Infantry Corps"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Infantry Corps"
+		location = 9449
+		division_template = "Infantry Corps"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Infantry Corps"
+		location = 9449
+		division_template = "Infantry Corps"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Infantry Corps"
+		location = 3469
+		division_template = "Infantry Corps"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 9552
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 11475
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 6591
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 3580
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 9449
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 3469
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 3469
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 3469
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 9449
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Bandits"
+		location = 3580
+		division_template = "Bandits"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1
+        	start_manpower_factor = 1.0
+	}
+}

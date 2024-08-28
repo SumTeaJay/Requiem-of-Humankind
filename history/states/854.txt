@@ -1,0 +1,31 @@
+
+state = {
+	id = 854
+	name = "STATE_854"
+	manpower = 50000
+	resources={
+		oil=10
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = KUH
+		add_core_of = KUH
+		victory_points = {
+			11696 1
+		}
+		buildings = {
+			arms_factory = 2
+			industrial_complex = 3			
+			infrastructure = 2			
+		}
+		
+	}
+
+	provinces = {
+		714 748 6753 9688 9726 11633 11678 11696  
+	}
+
+	local_supplies = 6.0 
+}

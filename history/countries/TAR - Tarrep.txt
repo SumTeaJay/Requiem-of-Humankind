@@ -1,0 +1,31 @@
+capital = 995
+
+oob = TAR
+
+add_ideas = TAR_century_old_enmity 
+
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_convoys = 0
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 1000
+}
+set_politics = {
+    ruling_party = humanists
+    last_election = "1933.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 0
+    humanists = 80
+    free_people = 20
+}
+recruit_character = TAR_Military_Council 

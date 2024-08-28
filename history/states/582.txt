@@ -1,0 +1,27 @@
+state={
+	id=582
+	name="STATE_582"
+
+	history={
+		owner = TTL
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = TTL
+		victory_points = {
+			10256 3
+		}
+		victory_points = { 4261 3 }
+	}
+
+	provinces={
+		4261 1406 4383 12200 7373
+	}
+	manpower=90000
+	buildings_max_level_factor=1.000
+	state_category=rural
+
+	local_supplies=0.0 
+}

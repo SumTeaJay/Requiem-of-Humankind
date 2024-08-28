@@ -1,0 +1,26 @@
+
+state={
+	id=206
+	name="STATE_206"
+
+	history={
+		owner = TIP
+		add_core_of = TIP
+		victory_points = {
+			11370 20 
+		}
+		buildings = {
+			infrastructure = 3
+
+		}
+
+	}
+
+	provinces={
+		277 3267 9236 11216 11370 
+	}
+	manpower=32000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=5.000
+}

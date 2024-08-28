@@ -1,0 +1,28 @@
+
+state={
+	id=91
+	name="STATE_91"
+
+	history={
+		owner = COA
+		add_core_of = COA
+		victory_points = {
+			13348 3 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			air_base = 5
+
+		}
+
+	}
+
+	provinces={
+		438 3483 3562 11427 13346 13348 
+	}
+	manpower=105000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

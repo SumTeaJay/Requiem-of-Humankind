@@ -1,0 +1,25 @@
+
+state={
+	id=931
+	name="STATE_931"
+
+	history={
+		owner = SMK
+		add_core_of = SMK
+		victory_points = {
+			6367 1 
+		}
+		buildings = {
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		287 3235 3344 6264 6303 6367 6400 9242 9287 11272 13256 13329 
+	}
+	manpower=8700
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

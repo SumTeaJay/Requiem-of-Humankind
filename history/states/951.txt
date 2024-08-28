@@ -1,0 +1,34 @@
+
+state={
+	id=951
+	name="STATE_951"
+
+	history={
+		owner = WTR
+		add_core_of = WTR
+		victory_points = {
+			9504 2 
+		}
+		victory_points = {
+			498 2 
+		}
+		victory_points = {
+			11474 1 
+		}
+		buildings = {
+			industrial_complex = 1
+			arms_factory = 1
+		}
+
+		
+
+	}
+
+	provinces={
+		498 520 3503 3555 6503 6527 9459 9474 9504 11447 11474 11484 
+	}
+	manpower=52000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

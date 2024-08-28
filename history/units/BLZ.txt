@@ -1,0 +1,48 @@
+division_template = {
+	name = "Балтославянкий корпус"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 0 y = 3 }
+	}
+    support = {
+		field_hospital = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Балтославянкий корпус “Ковно”"
+        location = 6296
+		division_template = "Балтославянкий корпус"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Балтославянкий корпус"
+        location = 9404
+		division_template = "Балтославянкий корпус"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Балтославянкий корпус"
+        location = 6360
+		division_template = "Балтославянкий корпус"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Балтославянкий корпус “Поневеж”"
+        location = 9438
+		division_template = "Балтославянкий корпус"
+		start_experience_factor = 0.4
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+}

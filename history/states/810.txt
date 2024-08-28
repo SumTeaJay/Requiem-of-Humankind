@@ -1,0 +1,25 @@
+
+state={
+	id=810
+	name="STATE_810"
+
+	history={
+		owner = SIM
+		victory_points = {
+			13206 3 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = SIM
+
+	}
+
+	provinces={
+		3393 13206 13280 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

@@ -1,0 +1,39 @@
+
+state={
+	id=900
+	name="STATE_900"
+
+	history={
+		owner = ZAN
+		add_core_of = ZAN
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			9192 = {
+				bunker = 1
+			}
+			11133 = {
+				bunker = 1
+			}
+			10200 = {
+				bunker = 1
+			}
+			88 = {
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			11193 1 
+		}
+
+	}
+
+	provinces={
+		88 9192 10200 11133 11193 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

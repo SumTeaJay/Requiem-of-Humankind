@@ -1,0 +1,26 @@
+
+state = {
+	id = 877
+	name = "STATE_877"
+	manpower = 183748
+	
+	state_category = rural
+
+	history = {
+		victory_points = {
+			  11898   1
+		}
+		buildings = {
+		
+			infrastructure = 2
+			
+		}
+		
+	}
+
+	provinces = {
+		11898
+	}
+
+	local_supplies = 6.0 
+}

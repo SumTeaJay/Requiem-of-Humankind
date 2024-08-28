@@ -1,0 +1,55 @@
+division_template = {
+	name = "Охрана объекта"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+        infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+	}
+    support = {
+		pulse_jammers = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Охрана объекта"
+		location = 207
+		division_template = "Охрана объекта"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Охрана объекта"
+		location = 9386
+		division_template = "Охрана объекта"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Охрана объекта"
+		location = 13260
+		division_template = "Охрана объекта"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Охрана объекта"
+		location = 6249
+		division_template = "Охрана объекта"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Охрана объекта"
+		location = 3219
+		division_template = "Охрана объекта"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 1.0
+	}
+}

@@ -1,0 +1,26 @@
+
+state={
+	id=920
+	name="STATE_920"
+
+	history={
+		owner = BSL
+		add_core_of = BSL
+		victory_points = {
+			6057 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		3084 6057 13330 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

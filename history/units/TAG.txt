@@ -1,0 +1,29 @@
+division_template = {
+	name = "Сельское ополчение"
+	division_names_group = TAG_REG
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 0 }
+        light_infantry = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Сельское ополчение"
+		location = 72
+		division_template = "Сельское ополчение"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Сельское ополчение"
+		location = 11074
+		division_template = "Сельское ополчение"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1.0
+	}
+}

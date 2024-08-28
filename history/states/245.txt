@@ -1,0 +1,32 @@
+
+state={
+	id=245
+	name="STATE_245"
+	resources={
+		steel=3
+		chromium=2
+		tungsten=1
+	}
+
+	history={
+		owner = MKS
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+		add_core_of = MKS
+		victory_points = {
+			3431 2 
+		}
+
+	}
+
+	provinces={
+		3431 3540 6544 6566 9516 9565 
+	}
+	manpower=10000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=8.000
+}

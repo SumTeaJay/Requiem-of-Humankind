@@ -1,0 +1,30 @@
+
+state={
+	id=1002
+	name="STATE_1002"
+
+	history={
+		owner = GLS
+		add_core_of = GLS
+		add_core_of = ASR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 2
+		}
+		victory_points = {
+			4265 1 
+		}
+		victory_points = {
+			10185 2 
+		}
+	}
+
+	provinces={
+		1258 4265 4311 7300 10185 10226 
+	}
+	manpower=202000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

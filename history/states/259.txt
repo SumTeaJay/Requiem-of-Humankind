@@ -1,0 +1,26 @@
+
+state={
+	id=259
+	name="STATE_259" # Poltava
+	manpower = 22000
+	
+	state_category = rural
+
+	history={
+		victory_points = {
+			6605 1
+		}
+		owner = VDS
+		add_core_of = VDS
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces={
+		 559  6495 6507  6605 9413 9519 3584
+	}
+
+	local_supplies=10.0 
+}

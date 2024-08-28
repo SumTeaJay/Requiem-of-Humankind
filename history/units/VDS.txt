@@ -1,0 +1,39 @@
+division_template = {
+	name = "Prizivnyk"
+	division_names_group = BANDIT_INF_01
+	regiments = {
+        light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 1 y = 1 }
+	 	light_infantry = { x = 0 y = 2 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+	name = "Prizivnyk"
+	location = 488
+	division_template = "Prizivnyk"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1
+	}
+    division = {
+	name = "Prizivnyk"
+	location = 3452
+	division_template = "Prizivnyk"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1
+	}
+    division = {
+	name = "Prizivnyk"
+	location = 11454
+	division_template = "Prizivnyk"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.5
+        start_manpower_factor = 1
+	}
+}

@@ -1,0 +1,37 @@
+
+state={
+	id=399
+	name="STATE_399"
+	resources={
+		steel=2
+		tungsten=2
+	}
+
+	history={
+		owner = URC
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = URC
+		victory_points = {
+			6278 3 
+		}
+		victory_points = {
+			381 1 
+		}
+		victory_points = {
+			12244 1 
+		}
+
+	}
+
+	provinces={
+		305 370 381 3300 4356 4400 6217 6278 6388 7359 9293 11320 12203 12244 
+	}
+	manpower=220000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

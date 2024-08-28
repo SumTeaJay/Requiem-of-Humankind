@@ -1,0 +1,29 @@
+
+state={
+	id=904
+	name="STATE_904"
+
+	history={
+		owner = CAV
+		add_core_of = CAV
+		victory_points = {
+			11322 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+
+		
+
+	}
+
+	provinces={
+		216 294 342 6292 11322 13368 13369 13371 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

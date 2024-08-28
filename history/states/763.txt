@@ -1,0 +1,33 @@
+
+state={
+	id=763
+	name="STATE_763"
+	manpower = 125000
+	state_category = city
+
+	history={
+		owner = LPC
+		
+		victory_points = {
+			6332 10 
+		}
+
+		buildings = {
+			infrastructure = 3 #was: 6
+			industrial_complex = 1
+			arms_factory = 2
+			6332 = {
+				bunker = 1
+			}
+			anti_air_building = 2
+			air_base = 6
+		}
+		add_core_of = LPC
+	}
+
+	provinces={
+		281 348 395 3384 6332 11265
+	}
+
+	local_supplies=0.0 
+}

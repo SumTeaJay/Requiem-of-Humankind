@@ -1,0 +1,58 @@
+load_focus_tree = {
+    tree = state_liquidation_board_phase_one
+    keep_completed = no
+}
+
+# Столица и базовые значения
+capital = 1001
+set_research_slots = 2
+set_stability = 0.7
+set_war_support = 0.5
+army_experience = 10
+add_manpower = 38000
+set_country_flag = is_major
+# Стартовые технологии
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   pre_war_OPV = 1
+   instruments_of_any_era = 1
+}
+
+# Армия и "флот"
+oob = GLS        
+set_convoys = 0
+
+add_ideas = {
+    GLS_fathers_and_not_fathers
+    GLS_memories_of_rodina
+    GLS_kotly
+}
+
+# Внутренняя политика ۩۞۩
+set_politics = {
+    ruling_party = statesmen
+    elections_allowed = no             
+}
+set_popularities = {
+    statesmen = 100                   
+}
+
+# Лидеры, советники, генералы и прочие людишки
+recruit_character = GLS_Iron_Dimon
+recruit_character = GLS_Chiro
+recruit_character = GLS_Ivan_Sykhoy
+recruit_character = GLS_Airat_Kabirov
+recruit_character = GLS_Almaz_Gabbasin
+recruit_character = GLS_Victor_Ryaznov
+recruit_character = GLS_Vladimir_Astafiev
+recruit_character = GLS_Mandate_Parliament
+recruit_character = GLS_anarchy
+
+# Дипломатия
+add_opinion_modifier = {
+    target = ASR
+    modifier = endless_hatred
+}

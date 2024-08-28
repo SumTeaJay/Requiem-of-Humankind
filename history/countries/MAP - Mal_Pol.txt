@@ -1,0 +1,30 @@
+capital = 92
+
+oob = MAP
+add_manpower = 9600
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+    civilian_clothing = 1
+    tech_support = 1
+    pre_war_OPV = 1
+    gw_artillery = 1
+    instruments_of_any_era = 1
+}
+
+set_research_slots = 1
+set_convoys = 0
+
+set_politics = {
+	ruling_party = humanists 
+	elections_allowed = no
+}
+
+set_popularities = {
+	humanists = 75
+	militarists = 25
+}
+
+recruit_character = MAP_sam
+add_ideas = MAP_the_humiliated_and_insulted

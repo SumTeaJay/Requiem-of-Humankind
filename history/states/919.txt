@@ -1,0 +1,26 @@
+
+state={
+	id=919
+	name="STATE_919"
+
+	history={
+		owner = ODJ
+		add_core_of = ODJ
+		victory_points = {
+			13462 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		3147 10207 12530 13308 13457 13462 13470 13477 
+	}
+	manpower=1488
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

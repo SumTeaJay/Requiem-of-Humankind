@@ -1,0 +1,28 @@
+
+state = {
+	id = 976
+	name = "STATE_976"
+	manpower = 5000
+	
+	state_category = pastoral
+
+	history = {
+		owner = SFR
+		add_core_of = SFR
+		victory_points = {
+			11196 2
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		
+		
+		
+	}
+
+	provinces = {
+		11140 6140 11196 9059
+	} 
+
+	local_supplies = 9.0 
+}

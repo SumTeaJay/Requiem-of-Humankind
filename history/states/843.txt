@@ -1,0 +1,27 @@
+
+state={
+	id=843
+	name="STATE_843"
+
+	history={
+		owner = CRI
+		add_core_of = CRI
+		victory_points = {
+			3686 20 
+		}
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			synthetic_refinery = 1
+		}
+
+	}
+
+	provinces={
+		3686 6704 13276 
+	}
+	manpower=78000
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=6.000
+}

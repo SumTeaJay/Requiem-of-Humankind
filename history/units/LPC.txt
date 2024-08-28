@@ -1,0 +1,95 @@
+division_template = {
+	name = "Cavalry Division"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		motopechotanagruzovikah = { x = 0 y = 0 }
+		motopechotanagruzovikah = { x = 0 y = 1 }
+		OPF = { x = 1 y = 1 }
+		OPF = { x = 1 y = 1 }
+	}
+	priority = 1
+    support = {
+        stvol_art_sup = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+	name = "Infantry brigade"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry= { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+        infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+	}
+	priority = 1
+    support = {
+        stvol_art_sup = { x = 0 y = 0 }
+        engineer = { x = 0 y = 1 }
+    }
+}
+division_template = {
+	name = "Baltic division"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry= { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+        light_infantry = { x = 1 y = 1 }
+		light_infantry= { x = 1 y = 2 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "1st Cavalry Division" 
+        location = 6332
+		division_template = "Cavalry Division"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.75
+        start_manpower_factor = 0.75
+	}
+    division = {
+		name = "Bundeswehr Division" 
+        location = 3288
+		division_template = "Infantry brigade"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.80
+        start_manpower_factor = 0.80
+	}
+    division = {
+		name = "Baltic division"
+        location = 6332
+		division_template = "Baltic division"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.85
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Baltic division"
+        location = 395
+		division_template = "Baltic division"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.85
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Baltic division"
+        location = 3384
+		division_template = "Baltic division"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.85
+        start_manpower_factor = 1.0
+	}
+    division = {
+		name = "Baltic division"
+        location = 281
+		division_template = "Baltic division"
+		start_experience_factor = 0.5
+        start_equipment_factor = 0.85
+        start_manpower_factor = 1.0
+	}
+}

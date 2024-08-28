@@ -1,0 +1,27 @@
+
+state={
+	id=207
+	name="STATE_207"
+
+	history={
+		owner = CAV
+		victory_points = {
+			11241 10 
+		}
+		buildings = {
+			industrial_complex = 1
+			infrastructure = 3
+
+		}
+		add_core_of = CAV
+
+	}
+
+	provinces={
+		3331 6220 6371 9241 11220 11241 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=5.000
+}

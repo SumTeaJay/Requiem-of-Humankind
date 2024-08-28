@@ -1,0 +1,31 @@
+
+state={
+	id=980
+	name="STATE_980"
+	resources={
+		steel=5.000
+		tungsten=2.000
+	}
+
+	history={
+		owner = REN
+		add_core_of = REN
+		victory_points = {
+			13441 3 
+		}
+		buildings = {
+
+		}
+
+		
+
+	}
+
+	provinces={
+		6538 9230 13429 13436 13439 13441 13458 13459 13460 
+	}
+	manpower=5400
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

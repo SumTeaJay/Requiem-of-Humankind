@@ -1,0 +1,45 @@
+division_template = {
+	name = "Tvari"
+
+	division_names_group = TVARI_INF_01
+
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+	}
+	priority = 1
+}
+
+units = {
+	division = {
+		name = "Tvari"
+		location = 12527
+		division_template = "Tvari"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Tvari"
+		location = 10216
+		division_template = "Tvari"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 0.5
+        	start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Tvari"
+		location = 4874
+		division_template = "Tvari"
+        start_experience_factor = 0.1
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+	}
+	division = {
+		name = "Tvari"
+		location = 278
+		division_template = "Tvari"
+        	start_experience_factor = 0.1
+        	start_equipment_factor = 1.0
+        	start_manpower_factor = 1.0
+	}
+}

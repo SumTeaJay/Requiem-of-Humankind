@@ -1,0 +1,27 @@
+
+state = {
+	id = 874
+	name = "STATE_874"
+	manpower = 75000
+	
+	state_category = town
+
+	history = {
+		owner = BRI
+		victory_points = {
+			511 5
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		add_core_of = BRI		
+	}
+
+	provinces = {
+		511 3557 6578 11504 
+	}
+
+	local_supplies = 6.0 
+}

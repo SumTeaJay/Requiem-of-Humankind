@@ -1,0 +1,27 @@
+
+state={
+	id=234
+	name="STATE_234"
+
+	history={
+		owner = ECD
+		add_core_of = ECD
+		victory_points = {
+			3734 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		750 3734 3752 6741 6755 6768 9709 11729 13362 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=9.000
+}

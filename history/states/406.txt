@@ -1,0 +1,26 @@
+
+state={
+	id=406
+	name="STATE_406" # Gurev
+	manpower = 40000
+	
+	state_category = wasteland
+
+	history={
+		owner = BL1
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+		add_core_of = BL1
+		victory_points = {
+			3618 3
+		}
+	}
+
+	provinces={
+		554 3618 6615 7322 9453 11442 11455 11469 11591 
+	}
+
+	local_supplies=0.0 
+}

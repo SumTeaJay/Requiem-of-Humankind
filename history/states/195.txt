@@ -1,0 +1,25 @@
+
+state={
+	id=195
+	name="STATE_195"
+	manpower = 1
+	
+	state_category = metropolis
+
+	history={
+		owner = BLT
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = BLT
+		victory_points = {
+			3151 15 
+		}
+	}
+
+	provinces={
+		149 3151
+	}
+
+	local_supplies=11.0 
+}

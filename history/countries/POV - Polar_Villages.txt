@@ -1,0 +1,40 @@
+capital = 825
+
+oob = base #"ODS_1936"
+
+add_ideas = {
+iceanarkhia
+}
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+set_politics = {
+	ruling_party = free_people
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 100
+
+}
+
+
+create_country_leader = {
+    name = "ZAnarkhia"
+    desc = "ZAnarkhia_desc"
+    picture = "gfx/leaders/POV/ZAnarkhia.dds"
+    ideology = free_people_subideology
+    traits = {
+        #
+    }
+}
+

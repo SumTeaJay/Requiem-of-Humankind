@@ -1,0 +1,33 @@
+
+state={
+	id=247
+	name="STATE_247"
+	resources={
+		tungsten=15
+		aluminium=20
+	}
+
+	history={
+		owner = VOU
+		victory_points = {
+			6245 10 
+		}
+		buildings = {
+			infrastructure = 3
+			air_base = 2
+			arms_factory = 1
+			industrial_complex = 2
+
+		}
+		add_core_of = VOU
+
+	}
+
+	provinces={
+		85 150 333 3035 3143 3176 3323 6022 6122 6203 6245 9046 9144 9256 11084 11154 
+	}
+	manpower=207000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

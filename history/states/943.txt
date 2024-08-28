@@ -1,0 +1,26 @@
+
+state={
+	id=943
+	name="STATE_943"
+
+	history={
+		owner = NOR
+		add_core_of = NOR
+		victory_points = {
+			3345 1 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		246 352 3345 11235 11300 11369 
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=248
+	name="STATE_248"
+
+	history={
+		owner = VOU
+		buildings = {
+			infrastructure = 2
+		}
+		victory_points = {
+			2 1 
+		}
+		add_core_of = VOU
+
+	}
+
+	provinces={
+		2 164 3077 6056 6143 9122 9188 11039 11099 11166 
+	}
+	manpower=26000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

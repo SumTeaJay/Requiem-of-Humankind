@@ -1,0 +1,28 @@
+
+state = {
+	id = 838
+	name = "STATE_838"
+	manpower = 2000
+	
+	state_category = small_island
+
+	history = {
+		owner = ODS
+		add_core_of = ODS
+		victory_points = {
+			13282 2 
+		}
+		buildings = {
+			infrastructure = 2
+			
+		}
+		
+		
+	}
+
+	provinces = {
+		13282 13283 
+	}
+
+	local_supplies = 6.0 
+}

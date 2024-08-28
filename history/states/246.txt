@@ -1,0 +1,30 @@
+
+state={
+	id=246
+	name="STATE_246"
+
+	history={
+		owner = NAR
+		victory_points = {
+			11349 10 
+		}
+		victory_points = {
+			11224 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			air_base = 2
+		}
+		add_core_of = NAR
+
+	}
+
+	provinces={
+		187 226 2999 3101 3215 3321 9265 9333 9343 11224 11315 11349 
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

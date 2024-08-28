@@ -1,0 +1,59 @@
+capital = 763
+
+oob = LPC
+add_manpower = 26000
+
+add_ideas = {
+	LPC_legion_of_the_doomed
+}
+
+load_focus_tree = {
+    tree = LPC_placeholder
+    keep_completed = no
+}
+
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+    civilian_clothing = 1
+    tech_support = 1
+    pre_war_OPV = 1
+    gw_artillery = 1
+    instruments_of_any_era = 1
+    engine_1 = 1
+    pre_war_OPV = 1
+    armor_1 = 1
+    support_equipment = 1
+    tech_engineers = 1
+}
+
+set_research_slots = 5
+set_convoys = 0
+
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	humanists = 84
+	free_people = 6
+	technocracy = 10
+}
+add_opinion_modifier = {
+    target = AGE
+    modifier = archenemy
+}
+ 
+
+create_country_leader = {
+    name = "LPC_negosling"
+    desc = "LPC_negosling_desc"
+    picture = "gfx/leaders/LPC/LPC_negosling.dds"
+    ideology = peacemakers
+    traits = {
+        #
+    }
+}
+
+recruit_character = LPC_James_branz 

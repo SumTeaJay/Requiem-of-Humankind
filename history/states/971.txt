@@ -1,0 +1,26 @@
+
+state={
+	id=971
+	name="STATE_971"
+
+	history={
+		owner = TTS
+		add_core_of = TTS
+		victory_points = {
+			86 1 
+		}
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		36 86 176 3008 3067 3189 6029 9195 9198 11045 11181 
+	}
+	manpower=30000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

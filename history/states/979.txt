@@ -1,0 +1,28 @@
+
+state={
+	id=979
+	name="STATE_979"
+
+	history={
+		owner = SDI
+		add_core_of = SDI
+		victory_points = {
+			13447 2 
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 2
+		}
+
+		
+
+	}
+
+	provinces={
+		9099 13309 13310 13416 13422 13426 13435 13447 
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

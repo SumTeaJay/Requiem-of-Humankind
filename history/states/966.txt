@@ -1,0 +1,27 @@
+
+state={
+	id=966
+	name="STATE_966"
+
+	history={
+		owner = LKV
+		add_core_of = LKV
+		victory_points = {
+			94 1 
+		}
+		buildings = {
+			arms_factory = 1
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		94 134 155 170 3071 6021 6096 11054 11096 11175 
+	}
+	manpower=26000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

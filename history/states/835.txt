@@ -1,0 +1,21 @@
+
+state={
+	id=835
+	name="STATE_835"
+
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+		owner = EDM
+		add_core_of = EDM
+	}
+
+	provinces={
+		3382 6404 11273 11319 
+	}
+	manpower=80000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

@@ -1,0 +1,190 @@
+division_template = {
+	name = "OKO"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		ghounds = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		mot_recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "purity"
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+		rcbd_troop = { x = 0 y = 1 }
+		rcbd_troop = { x = 0 y = 2 }
+		rcbd_troop = { x = 1 y = 0 }
+		rcbd_troop = { x = 1 y = 1 }
+		rcbd_troop = { x = 1 y = 2 }
+		rcbd_troop = { x = 2 y = 0 }
+		rcbd_troop = { x = 2 y = 1 }
+		rcbd_troop = { x = 2 y = 2 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		rhbz = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "prosperity"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		motopechotanabtr = { x = 2 y = 0 }
+		motopechotanabtr = { x = 2 y = 1 }
+		motopechotanabtr = { x = 2 y = 2 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		field_hospital = { x = 0 y = 1 }
+		mot_recon = { x = 0 y = 2 }
+	}
+}
+division_template = {
+	name = "black_berets"
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "tank_group"
+	regiments = {
+		motopechotanabtr = { x = 0 y = 0 }
+		motopechotanabtr = { x = 0 y = 1 }
+		motopechotanabtr = { x = 0 y = 2 }
+		OPF = { x = 1 y = 0 }
+		OPF = { x = 1 y = 1 }
+		OPF = { x = 1 y = 2 }
+		OPF = { x = 2 y = 0 }
+		OPF = { x = 2 y = 1 }
+		OPF = { x = 2 y = 2 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1 }
+	}
+}
+division_template = {
+	name = "priazovtsy"
+	regiments = {
+		light_infantry = { x = 0 y = 0 }
+		light_infantry = { x = 0 y = 1 }
+		light_infantry = { x = 0 y = 2 }
+		light_infantry = { x = 1 y = 0 }
+		light_infantry = { x = 1 y = 1 }
+		light_infantry = { x = 2 y = 0 }
+		light_infantry = { x = 2 y = 1 }
+	}
+	support = {
+		stvol_art_sup = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1 }
+	}
+}
+units = {
+	division = {
+		name = "black_berets"
+		location = 13276
+		division_template = "black_berets"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = "black_berets"
+		location = 13278
+		division_template = "black_berets"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = "black_berets"
+		location = 11670
+		division_template = "black_berets"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = "black_berets"
+		location = 11670
+		division_template = "black_berets"
+        start_experience_factor = 0.1
+        start_equipment_factor = 0.65
+        start_manpower_factor = 1.0
+	}
+
+
+	division = {
+		name = "priazovtsy"
+		location = 13307
+		division_template = "priazovtsy"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = "priazovtsy"
+		location = 13307
+		division_template = "priazovtsy"
+        start_experience_factor = 1.0
+        start_equipment_factor = 1.0
+        start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = "prosperity"
+		location = 13356
+		division_template = "prosperity"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = OKO
+		location = 3686
+		division_template = "OKO"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+
+	division = {
+		name = purity
+		location = 13277
+		division_template = "purity"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+		start_manpower_factor = 1.0
+	}
+}

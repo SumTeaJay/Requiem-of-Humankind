@@ -1,0 +1,35 @@
+
+state={
+	id=250
+	name="STATE_250"
+	resources={
+		steel=14.000
+	}
+
+	history={
+		owner = BGR
+
+		
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 3
+
+		}
+		add_core_of = BGR
+		victory_points = {
+			392 3 
+		}
+		victory_points = {
+			6226 1 
+		}
+
+	}
+
+	provinces={
+		286 392 3196 3246 3276 3372 6294 6302 6337 6394 9338 11373 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=8.000
+}

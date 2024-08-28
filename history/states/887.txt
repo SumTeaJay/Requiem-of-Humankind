@@ -1,0 +1,26 @@
+
+state = {
+	id = 887
+	name = "STATE_887"
+	manpower = 183748
+	
+	state_category = rural
+
+	history = {
+		owner = SIL
+		add_core_of = SIL
+		victory_points = {
+			  6232   1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		  6232 6556  9554 11453 
+	}
+
+	local_supplies = 6.0 
+}

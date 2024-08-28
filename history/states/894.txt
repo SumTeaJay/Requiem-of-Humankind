@@ -1,0 +1,26 @@
+
+state={
+	id=894
+	name="STATE_894"
+
+	history={
+		owner = NMG
+		add_core_of = NMG
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			148 5 
+		}
+
+	}
+
+	provinces={
+		11 58 148 190 3003 3054 3138 3179 6074 6152 6155 9175 9211 11026 11058 11102 11112 11152 
+	}
+	manpower=102000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

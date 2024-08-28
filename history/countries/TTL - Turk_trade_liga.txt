@@ -1,0 +1,29 @@
+capital = 582
+
+oob = TTL
+
+add_ideas = TTL_days_of_blood
+
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_convoys = 0
+add_manpower = 9000
+set_politics = {
+    ruling_party = free_people
+    last_election = "1933.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 0
+    statesmen = 0
+    free_people = 100
+}
+
+recruit_character = TTL_Robert_Zaynetdinov

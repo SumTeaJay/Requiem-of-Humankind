@@ -1,0 +1,33 @@
+capital = 225
+add_manpower = 12000
+set_stability = 0.25
+set_war_support = 0.7
+army_experience = 5
+
+oob = base 
+
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1  
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = free_people 
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 45
+    humanists = 35
+	militarists = 10
+	bandits = 5
+	technocracy = 3
+	sacraments = 2
+}
+

@@ -1,0 +1,28 @@
+
+state = {
+	id = 839
+	name = "STATE_839"
+	manpower = 100000
+	
+	state_category = city
+
+	history = {
+		owner = ODS
+		add_core_of = ODS
+		victory_points = {
+			11670 10 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 2
+			industrial_complex = 2
+		}
+		
+	}
+
+	provinces = {
+		11670  
+	}
+
+	local_supplies = 6.0 
+}

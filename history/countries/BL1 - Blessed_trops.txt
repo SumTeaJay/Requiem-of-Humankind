@@ -1,0 +1,30 @@
+capital = 994
+oob = BL1
+
+add_ideas = BL1_true_purpose
+
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+add_manpower = 20000
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 1000
+}
+set_politics = {
+    ruling_party = sacraments
+    elections_allowed = no
+}
+set_popularities = {
+    sacraments = 100
+}
+recruit_character = BL1_Slave_Innocent 

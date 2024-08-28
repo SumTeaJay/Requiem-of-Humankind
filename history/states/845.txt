@@ -1,0 +1,27 @@
+
+state={
+	id=845
+	name="STATE_845"
+
+	history={
+		owner = BOD
+		add_core_of = BOD
+		victory_points = {
+			13340 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		11715 13291 13340 
+	}
+	manpower=90000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

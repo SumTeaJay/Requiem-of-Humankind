@@ -1,0 +1,23 @@
+
+state={
+	id=917
+	name="STATE_917"
+
+	history={
+		owner = BLS
+		add_core_of = BLS
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		1371 1429 4394 7313 10264 12108 12179 12227 12294 
+	}
+	manpower=1
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

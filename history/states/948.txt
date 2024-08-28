@@ -1,0 +1,26 @@
+
+state = {
+	id = 948
+	name = "STATE_948"
+	manpower = 14000
+	
+	state_category = rural
+
+	history = {
+		owner = RIK
+		add_core_of = RIK
+		victory_points = {
+			3387     1
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+	}
+
+	provinces = {
+		283 397 3275 3387  11314 
+	}
+
+	local_supplies = 6.0 
+}

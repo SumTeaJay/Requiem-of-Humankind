@@ -1,0 +1,30 @@
+
+state={
+	id=224
+	name="STATE_224"
+
+	history={
+		owner = IMP
+		add_core_of = IMP
+		victory_points = {
+			11325 1 
+		}
+		victory_points = {
+			13301 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+
+		}
+
+	}
+
+	provinces={
+		315 343 371 398 3364 3390 6305 11229 11298 11325 13300 13301 
+	}
+	manpower=231000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

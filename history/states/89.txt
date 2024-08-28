@@ -1,0 +1,29 @@
+
+state={
+	id=89
+	name="STATE_89"
+
+	history={
+		owner = TAG
+		add_core_of = TAG
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+			arms_factory = 1
+		}
+		victory_points = {
+			11074 2 
+		}
+
+		
+
+	}
+
+	provinces={
+		3064 6088 6193 6199 9101 11061 11074 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

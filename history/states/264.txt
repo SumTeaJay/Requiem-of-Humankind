@@ -1,0 +1,31 @@
+
+state={
+	id=264
+	name="STATE_264"
+	resources={
+		steel=20
+	}
+
+	history={
+		owner = VOF
+		victory_points = {
+			3140 1 
+		}
+		buildings = {
+			infrastructure = 2
+			air_base = 1
+			industrial_complex = 1
+
+		}
+		add_core_of = VOF
+
+	}
+
+	provinces={
+		57 152 172 3140 3142 6131 6169 9082 9107 9184 9190 
+	}
+	manpower=27000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=9.000
+}

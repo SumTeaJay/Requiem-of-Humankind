@@ -1,0 +1,36 @@
+capital = 11
+oob = BLZ
+add_manpower = 9000
+add_ideas = {
+    BLZ_underground_doctor
+    BLZ_meaningless_war
+}
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+   tech_field_hospital = 1
+}
+set_research_slots = 2
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+set_politics = {
+	ruling_party = free_people 
+	elections_allowed = no
+}
+set_popularities = {
+	free_people = 60
+	technocracy = 20
+	humanists = 15
+	militarists = 5
+}
+add_opinion_modifier = {
+    target = AGE
+    modifier = mutual_respect
+}
+recruit_character = BLZ_akim_juk

@@ -1,0 +1,26 @@
+
+state={
+	id=721
+	name="STATE_721"
+
+	history={
+		owner = TAR
+		add_core_of = TAR
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+		victory_points = {
+			73 1 
+		}
+
+	}
+
+	provinces={
+		23 73 175 3017 3066 3112 3167 9065 9180 11075 11158 11180 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

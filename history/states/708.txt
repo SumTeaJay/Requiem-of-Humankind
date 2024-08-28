@@ -1,0 +1,19 @@
+state={
+	id=708
+	name="STATE_708"
+	manpower = 126703
+
+	state_category = small_island
+
+	history={
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		13072 
+	}
+
+	local_supplies=0.0 
+}

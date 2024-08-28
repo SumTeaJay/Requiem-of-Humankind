@@ -1,0 +1,53 @@
+capital = 977
+
+oob = SDC
+add_manpower = 5000
+army_experience = 5
+add_ideas = {
+    SDC_Willuem_influese1
+    SDC_Korodonniki1
+    SDC_hunger1
+}
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 3
+set_convoys = 0
+
+set_politics = {
+	ruling_party = statesmen
+	elections_allowed = no
+}
+
+set_popularities = {
+	statesmen = 85
+    sacraments = 15
+}
+
+add_opinion_modifier = {
+    target = TAG
+    modifier = separatists
+}
+add_opinion_modifier = {
+    target = ARK
+    modifier = separatists
+}
+add_opinion_modifier = {
+    target = VOZ
+    modifier = villiums
+}
+
+recruit_character = SDC_Putin
+recruit_character = SDC_Sergey_Shoigov
+recruit_character = SDC_Valeriy_Gerasov
+recruit_character = SDC_Alexander_Lapinov
+recruit_character = SDC_Cult_of_Spire
+recruit_character = SDC_Martin_Dugin
+recruit_character = SDC_Putin_evil

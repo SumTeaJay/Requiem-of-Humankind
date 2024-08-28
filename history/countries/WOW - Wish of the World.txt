@@ -1,0 +1,8 @@
+set_politics = {
+	ruling_party = sacraments
+	elections_allowed = no
+}
+set_popularities = {
+	sacraments = 100
+}
+set_oob = "WOW"

@@ -1,0 +1,30 @@
+
+state={
+	id=144
+	name="STATE_144"
+	resources={
+		steel=9.000
+		tungsten=15.000
+	}
+
+	history={
+		owner = NMG
+		add_core_of = NMG
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			9126 1 
+		}
+
+	}
+
+	provinces={
+		38 44 91 173 192 3034 3048 3132 3145 6071 6130 6214 9126 11050 11090 11157 
+	}
+	manpower=355251
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

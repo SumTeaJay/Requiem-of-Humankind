@@ -1,0 +1,53 @@
+capital = 895
+add_manpower = 24000
+
+oob = IMP
+
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+
+add_ideas = IMP_winners_of_the_first_central_Russian
+add_ideas = IMP_splinter_administration
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	humanists = 32
+	free_people = 16
+	technocracy = 10
+	chthonism = 0
+	sacraments = 0
+    militarists = 2
+    statesmen = 30
+    bandits = 10
+}
+
+recruit_character = IMP_Dmitry_Milenin
+recruit_character = IMP_Grigoriy_Reznov
+recruit_character = IMP_Aleksey_Dorog
+recruit_character = IMP_Michail_Orlov
+recruit_character = IMP_Nikita_Bartonov
+
+create_faction = IMP_consulate
+add_to_faction = BSO
+add_to_faction = COR
+add_to_faction = NOR
+add_to_faction = PLR
+
+add_opinion_modifier = {
+    target = ARM
+    modifier = ARM_hatred
+}

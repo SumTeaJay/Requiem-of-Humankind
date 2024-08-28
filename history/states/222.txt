@@ -1,0 +1,27 @@
+
+state={
+	id=222
+	name="STATE_222"
+
+	history={
+		owner = ORL
+		add_core_of = ORL
+		victory_points = {
+			9355 10 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		328 384 9355 11214 11283 11310 11337 11368 
+	}
+	manpower=102000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

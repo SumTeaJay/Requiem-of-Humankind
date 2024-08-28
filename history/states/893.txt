@@ -1,0 +1,26 @@
+
+state={
+	id=893
+	name="STATE_893"
+
+	history={
+		owner = IMP
+		add_core_of = IMP
+		victory_points = {
+			3306 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+
+	}
+
+	provinces={
+		3306 6330 6386 
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

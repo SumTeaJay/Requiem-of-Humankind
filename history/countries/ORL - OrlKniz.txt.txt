@@ -1,0 +1,86 @@
+capital = 222
+
+oob = ORL
+add_manpower = 30800
+
+add_ideas = {
+	ORL_corporative_ethics
+	ORL_victory_cult
+	ORL_chance_for_everyone
+}
+
+#Starting tech
+set_technology = {
+	infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 3
+set_convoys = 0
+set_stability = 0.2
+set_war_support = 0.63
+
+load_focus_tree = {
+    tree = ORL_phase_1
+    keep_completed = no
+}
+
+add_opinion_modifier = {
+	target = ZAK
+	modifier = ORL_battle_brothers
+}
+add_opinion_modifier = {
+	target = SBT
+	modifier = ORL_battle_brothers
+}
+add_opinion_modifier = {
+	target = VLC
+	modifier = ORL_sectarians
+}
+add_opinion_modifier = {
+	target = SMX
+	modifier = ORL_traitors 
+}
+add_opinion_modifier = {
+	target = MAZ
+	modifier = ORL_idiots_and_idealists
+}
+add_opinion_modifier = {
+	target = TAB
+	modifier = ORL_idiots_and_idealists
+}
+
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+
+set_popularities = {
+	free_people = 0
+	sacraments = 15
+	humanists = 0
+	chthonism = 0
+	militarists = 80
+	technocracy = 0
+	statesmen = 5
+	bandits = 0
+}
+
+puppet = ZAK
+puppet = SBT
+
+recruit_character = ORL_evgeniy_prihozhiy
+recruit_character = ORL_Anton_Elizarev
+recruit_character = ORL_Volodimir
+recruit_character = ORL_Michail_Mizinov
+recruit_character = ORL_Davor_Sadrich
+#volga war
+add_dynamic_modifier = {
+	modifier = volga_war_cgf_modifier
+}
+set_variable = {
+	volga_war_cgf = 0.1
+}

@@ -1,0 +1,31 @@
+
+state={
+	id=942
+	name="STATE_942"
+	resources={
+		oil=15
+		rubber=5
+	}
+
+	history={
+		owner = MUC
+		victory_points = {
+			121 5 
+		}
+		add_core_of = MUC
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+
+		}
+
+	}
+
+	provinces={
+		121 231 252 3116 3220 6101 6356 9345 11205 
+	}
+	manpower=180000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=6.000
+}

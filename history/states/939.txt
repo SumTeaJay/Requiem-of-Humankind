@@ -1,0 +1,31 @@
+
+state={
+	id=939
+	name="STATE_939"
+	resources={
+		oil=5
+		rubber=5
+	}
+
+	history={
+		owner = SBT
+		add_core_of = SBT
+		victory_points = {
+			6262 10 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		3236 6262 9366 11347 
+	}
+	manpower=210000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

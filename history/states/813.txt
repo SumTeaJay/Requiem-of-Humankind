@@ -1,0 +1,39 @@
+
+state={
+	id=813
+	name="STATE_813"
+
+	history={
+		owner = ZAN
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			9146 = {
+				bunker = 1
+			}
+			45 = {
+				bunker = 1
+			}
+			9114 = {
+				bunker = 1
+			}
+			3146 = {
+				bunker = 1
+			}
+
+		}
+		victory_points = {
+			45 1 
+		}
+		add_core_of = ZAN
+
+	}
+
+	provinces={
+		45 3146 6171 9114 9146 9214 
+	}
+	manpower=15000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

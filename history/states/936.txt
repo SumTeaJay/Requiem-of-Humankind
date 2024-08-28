@@ -1,0 +1,29 @@
+
+state = {
+	id = 936
+	name = "STATE_936"
+	manpower = 35000
+	resources={
+		steel=10
+	}
+	
+	state_category = rural
+
+	history = {
+		owner = ZAK
+		add_core_of = ZAK
+		victory_points = {
+			    3504  1
+		}
+			buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+		}
+	}
+
+	provinces = {
+		437 3504 6494
+	}
+
+	local_supplies = 6.0 
+}

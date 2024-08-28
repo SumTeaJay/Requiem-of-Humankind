@@ -1,0 +1,31 @@
+
+state = {
+	id = 878
+	name = "STATE_878"
+	manpower = 25000
+	
+	state_category = rural
+
+	history = {
+		owner = DIB
+		add_core_of = DIB
+		victory_points = {
+			  504  3
+		}
+		buildings = {
+		
+			infrastructure = 2
+			
+		}
+		
+		
+		
+		
+	}
+
+	provinces = {
+		504 6497 9465
+	}
+
+	local_supplies = 6.0 
+}

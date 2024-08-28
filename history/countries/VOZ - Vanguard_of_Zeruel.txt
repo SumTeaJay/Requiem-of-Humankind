@@ -1,0 +1,77 @@
+capital = 981
+
+oob = VOZ
+
+load_focus_tree = {
+    tree = Zeruil_placeholder
+    keep_completed = no
+}
+
+add_ideas = {
+}
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_stability = 0.56
+set_war_support = 1
+set_research_slots = 3
+set_convoys = 0
+add_manpower = 10000
+
+set_politics = {
+	ruling_party = sacraments
+	elections_allowed = no
+}
+
+set_popularities = {
+	sacraments = 85
+    free_people = 15
+}
+
+add_opinion_modifier = {
+    target = ARK
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = TAG
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = UFV
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target =SDI
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = ODJ 
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = REN
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = MIN
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = TRO
+    modifier = faithless
+}
+add_opinion_modifier = {
+    target = SDC
+    modifier = faithless
+}
+recruit_character = VOZ_Blazhenny_Zeruil
+recruit_character = VOZ_Akexsander_Novodichev
+recruit_character = VOZ_generic_general
+recruit_character = VOZ_generic_field_marshal
+

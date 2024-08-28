@@ -1,0 +1,44 @@
+capital = 257
+
+oob = TAB
+
+
+# Starting tech
+set_technology = {
+	infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+add_manpower = 19200
+
+add_opinion_modifier = {
+	target = ORL
+	modifier = ORL_madmans
+}
+add_opinion_modifier = {
+	target = SBT
+	modifier = ORL_madmans
+}
+add_opinion_modifier = {
+	target = ZAK
+	modifier = ORL_madmans
+}
+
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+
+set_popularities = {
+	humanists = 60
+	bandits = 10
+	free_people = 10
+	militarists = 20
+}
+
+recruit_character = TAB_alexandr_labeykin

@@ -1,0 +1,29 @@
+
+state={
+	id=866
+	name="STATE_866"
+	resources={
+		steel=12
+	}
+
+	history={
+		owner = LUG
+		add_core_of = LUG
+		victory_points = {
+			9461 5 
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 2
+		}
+
+	}
+
+	provinces={
+		6505 6519 9446 9461 13336 
+	}
+	manpower=120000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=6.000
+}

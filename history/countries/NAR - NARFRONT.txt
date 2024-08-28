@@ -1,0 +1,51 @@
+capital = 246
+
+oob = NAR
+add_ideas = {
+	NAR_under_the_banner_of_the_revolution
+}
+if = {
+	limit = {
+		has_start_date < 2022.01.02
+	}
+
+	declare_war_on = {
+		target = SMK
+		type = annex_everything
+	}
+}
+
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_research_slots = 2
+set_convoys = 0
+
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+
+set_popularities = {
+	
+	militarists = 100
+}
+
+ 
+
+create_country_leader = {
+    name = "NAR_oleg"
+    desc = "NAR_oleg_desc"
+    picture = "gfx/leaders/NAR/NAR_oleg.dds"
+    ideology = militarists_subideology
+    traits = {
+        #
+    }
+}
+

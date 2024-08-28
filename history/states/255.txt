@@ -1,0 +1,27 @@
+
+state={
+	id=255
+	name="STATE_255"
+
+	history={
+		owner = MSH
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+
+		}
+		add_core_of = MSH
+		victory_points = {
+			6391 3 
+		}
+
+	}
+
+	provinces={
+		376 6343 6391 9276 9344 11262 11309 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

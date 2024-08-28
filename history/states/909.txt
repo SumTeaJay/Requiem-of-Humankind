@@ -1,0 +1,27 @@
+
+state={
+	id=909
+	name="STATE_909"
+
+	history={
+		owner = HAR
+		add_core_of = HAR
+		victory_points = {
+			11358 1 
+		}
+		buildings = {
+			infrastructure = 2
+
+		}
+		add_claim_by = AGE
+
+	}
+
+	provinces={
+		3255 11358 13303 
+	}
+	manpower=12000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

@@ -1,0 +1,38 @@
+
+state={
+	id=651
+	name="STATE_651"
+	resources={
+		oil=35
+		rubber=5
+	}
+
+	history={
+		owner = ASR
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			arms_factory = 1
+			synthetic_refinery = 1
+			air_base = 3
+
+		}
+		victory_points = {
+			12172 1 
+		}
+		victory_points = {
+			1305 3 
+		}
+		add_core_of = ASR
+		add_core_of = GLS
+
+	}
+
+	provinces={
+		273 1305 3060 3289 4354 7237 9349 12172 
+	}
+	manpower=150000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

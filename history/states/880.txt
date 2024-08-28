@@ -1,0 +1,27 @@
+
+state={
+	id=880
+	name="STATE_880"
+
+	history={
+		owner = MAD
+		add_core_of = MAD
+		victory_points = {
+			3568 1 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			arms_factory = 1
+		}
+
+	}
+
+	provinces={
+		238 546 3542 3568 6589 9506 13302 
+	}
+	manpower=101000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=6.000
+}

@@ -1,0 +1,45 @@
+capital = 265
+
+oob = MKS
+
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_convoys = 0
+set_research_slots = 3
+set_stability = 0.65
+set_war_support = 0.21
+army_experience = 5
+add_manpower = 14400
+
+add_opinion_modifier = {
+    target = MSH
+    modifier = criminal
+}
+add_opinion_modifier = {
+    target = KMN
+    modifier = criminal
+}
+add_opinion_modifier = {
+    target = BGR
+    modifier = forced_union
+}
+
+set_politics = {
+    ruling_party = free_people
+    last_election = "2000.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    free_people = 70
+    bandits = 30
+}
+
+recruit_character = MKS_Varvara_Ivanova
+recruit_character = MKS_generic_general

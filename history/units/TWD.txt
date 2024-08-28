@@ -1,0 +1,78 @@
+division_template = {
+	name = "Сумрачный дивизион"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		rcbd_troop = { x = 0 y = 0 }
+		rcbd_troop = { x = 0 y = 1 }
+		rcbd_troop = { x = 1 y = 0 }
+        rcbd_troop = { x = 1 y = 1 }
+	}
+	priority = 1
+}
+division_template = {
+	name = "Сумрачное ополчение"
+	division_names_group = PEKHOTNAYA_GRUPPA_01
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 1 y = 0 }
+	}
+	priority = 1
+}
+units = {
+	division = {
+		name = "Сумрачный дивизион"
+        location = 3152 
+		division_template = "Сумрачный дивизион"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.1
+        start_manpower_factor = 0.3
+	}
+    division = {
+		name = "Сумрачный дивизион"
+        location = 3152 
+		division_template = "Сумрачный дивизион"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.1
+        start_manpower_factor = 0.3
+	}
+    division = {
+		name = "Сумрачный дивизион"
+        location = 496 
+		division_template = "Сумрачный дивизион"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.1
+        start_manpower_factor = 0.3
+	}
+    division = {
+		name = "Сумрачный дивизион"
+        location = 3074 
+		division_template = "Сумрачный дивизион"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.1
+        start_manpower_factor = 0.3
+	}
+    division = {
+		name = "Сумрачный дивизион"
+        location = 6099 
+		division_template = "Сумрачный дивизион"
+		start_experience_factor = 1.0
+        start_equipment_factor = 0.1
+        start_manpower_factor = 0.3
+	}
+    division = {
+		name = "Сумрачное ополчение"
+        location = 11127 
+		division_template = "Сумрачное ополчение"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 0.9
+	}
+    division = {
+		name = "Сумрачное ополчение"
+        location = 185 
+		division_template = "Сумрачное ополчение"
+		start_experience_factor = 0.3
+        start_equipment_factor = 0.4
+        start_manpower_factor = 0.9
+	}
+}

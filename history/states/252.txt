@@ -1,0 +1,34 @@
+
+state={
+	id=252
+	name="STATE_252"
+	resources={
+		steel=10
+	}
+
+	history={
+		owner = OCH
+		victory_points = {
+			11375 10 
+		}
+		victory_points = {
+			9325 1 
+		}
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			air_base = 1
+
+		}
+		add_core_of = OCH
+	}
+
+	provinces={
+		297 3224 3285 3303 3352 3383 6050 6084 6299 6327 6374 6410 9298 9325 9360 9407 11277 11324 11344 11375 11394 
+	}
+	manpower=300000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

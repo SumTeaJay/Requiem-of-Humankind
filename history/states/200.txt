@@ -1,0 +1,27 @@
+
+state={
+	id=200
+	name="STATE_200"
+
+	history={
+		owner = AZB
+		add_core_of = AZB
+		victory_points = {
+			6596 2 
+		}
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 3
+			arms_factory = 3
+		}
+
+	}
+
+	provinces={
+		429 588 3767 6596 9571 9729 11700 
+	}
+	manpower=60000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

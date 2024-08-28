@@ -1,0 +1,26 @@
+
+state={
+	id=210
+	name="STATE_210"
+
+	history={
+		owner = OBJ
+		buildings = {
+			infrastructure = 2
+		}
+		add_core_of = OBJ
+		add_claim_by = AGE
+		victory_points = {
+			9386 1 
+		}
+
+	}
+
+	provinces={
+		387 9386 11259 13260 
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

@@ -1,0 +1,41 @@
+capital = 239
+
+oob = KMN
+
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_convoys = 0
+set_research_slots = 3
+set_stability = 0.38
+set_war_support = 0.69
+army_experience = 5
+add_manpower = 19200
+
+add_opinion_modifier = {
+    target = BGR
+    modifier = bandit_conflicts
+}
+add_opinion_modifier = {
+    target = MKS
+    modifier = hucksters
+}
+
+set_politics = {
+    ruling_party = bandits
+    last_election = "1933.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 100
+}
+
+recruit_character = KMN_Viktor_Kaminskiy
+recruit_character = KMN_generic_general

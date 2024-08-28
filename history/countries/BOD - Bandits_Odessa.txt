@@ -1,0 +1,43 @@
+capital = 845
+oob = BOD
+# Starting tech
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 2
+set_convoys = 0
+army_experience = 50
+add_manpower = 7000
+add_equipment_to_stockpile = {
+	type = infantry_odejda_1
+	amount = 1500
+	producer = BOD
+}
+add_equipment_to_stockpile = {
+	type = infantry_equipment_1
+	amount = 1500
+	producer = BOD
+}
+add_equipment_to_stockpile = {
+	type = support_equipment_1
+	amount = 200
+	producer = BOD
+}
+add_equipment_to_stockpile = {
+	type = pre_war_artillery_equipment
+	amount = 30
+	producer = BOD
+}
+set_politics = {
+	ruling_party = militarists
+	elections_allowed = no
+}
+set_popularities = {
+	militarists = 100
+}
+add_ideas = gnil_klin
+recruit_character = BOD_rodion_samoilov

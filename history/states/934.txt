@@ -1,0 +1,27 @@
+
+state = {
+	id = 934
+	name = "STATE_934"
+	manpower = 10000
+	
+	state_category = rural
+
+	history = {
+		owner = ZAK
+		add_core_of = ZAK
+		victory_points = {
+			    3527  1
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory =1
+
+		}
+	}
+
+	provinces = {
+		510 3527 6553   
+	}
+
+	local_supplies = 6.0 
+}

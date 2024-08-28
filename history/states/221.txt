@@ -1,0 +1,29 @@
+
+state={
+	id=221
+	name="STATE_221"
+	resources={
+		steel=20
+	}
+
+	history={
+		owner = WAC
+		victory_points = {
+			418 10 
+		}
+		buildings = {
+			infrastructure = 4
+			arms_factory = 2
+			air_base = 5
+		}
+		add_core_of = WAC
+	}
+
+	provinces={
+		418 3508 3531 6530 9556 11397 11461 
+	}
+	manpower=350000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

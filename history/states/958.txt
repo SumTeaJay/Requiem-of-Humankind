@@ -1,0 +1,24 @@
+
+state={
+	id=958
+	name="STATE_958"
+
+	history={
+		owner = DRW
+		add_core_of = DRW
+		victory_points = {
+			499 1 
+		}
+		buildings = {
+		}
+
+	}
+
+	provinces={
+		499 6479 6601 11395 11460 
+	}
+	manpower=11000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

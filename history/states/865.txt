@@ -1,0 +1,26 @@
+
+state={
+	id=865
+	name="STATE_865"
+
+	history={
+		owner = BOD
+		add_core_of = BOD
+		victory_points = {
+			574 1 
+		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
+
+	}
+
+	provinces={
+		574 3755 6597 11546 11683 
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=6.000
+}

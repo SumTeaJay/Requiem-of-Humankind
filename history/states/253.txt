@@ -1,0 +1,26 @@
+
+state={
+	id=253
+	name="STATE_253"
+
+	history={
+		owner = MUC
+		buildings = {
+			infrastructure = 3
+
+		}
+		add_core_of = MUC
+		victory_points = {
+			6247 3 
+		}
+
+	}
+
+	provinces={
+		346 3240 3347 6135 6215 6247 6269 6358 9257 9267 9393 11239 11252 11338 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}

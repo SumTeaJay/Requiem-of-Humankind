@@ -1,0 +1,39 @@
+capital = 997
+
+oob = URC
+
+add_ideas = URC_shadows_of_past
+
+set_technology = {
+   infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+
+set_convoys = 0
+add_manpower = 100000
+add_equipment_to_stockpile = {
+    type = infantry_equipment_0
+    amount = 2000
+}
+add_equipment_to_stockpile = {
+    type = infantry_odejda_0
+    amount = 2000
+}
+set_politics = {
+    ruling_party = humanists
+    last_election = "2000.6.21"
+    election_frequency = 48
+    elections_allowed = no
+}
+set_popularities = {
+    bandits = 0
+    statesmen = 0
+    humanists = 100
+}
+recruit_character = URC_urals_parliament
+
+set_autonomy = { target = ZAN autonomous_state = autonomy_puppet freedom_level = 0 }
+set_autonomy = { target = WPK autonomous_state = autonomy_puppet freedom_level = 0 }

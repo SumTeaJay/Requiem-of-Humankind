@@ -1,0 +1,29 @@
+
+state={
+	id=922
+	name="STATE_922"
+	resources={
+		rubber=2
+	}
+
+	history={
+		owner = OKS
+		add_core_of = OKS
+		victory_points = {
+			70 1 
+		}
+		buildings = {
+			infrastructure = 1
+
+		}
+
+	}
+
+	provinces={
+		70 9164 9197 11059 
+	}
+	manpower=7000
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=6.000
+}

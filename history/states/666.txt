@@ -1,0 +1,31 @@
+
+state={
+	id=666
+	name="STATE_666"
+	resources={
+		tungsten=40.000
+		steel=50.000
+		chromium=25.000
+	}
+
+	history={
+		owner = NMG
+		add_core_of = NMG
+		buildings = {
+			infrastructure = 1
+
+		}
+		victory_points = {
+			11060 1 
+		}
+
+	}
+
+	provinces={
+		61 101 151 3095 6055 6170 6206 6208 9083 9178 9226 11060 11155 11208 
+	}
+	manpower=415327
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

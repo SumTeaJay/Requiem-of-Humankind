@@ -1,0 +1,28 @@
+capital = 214
+oob = ARK
+add_manpower = 7000
+add_ideas = {
+	polyarnaya_grusitnka
+}
+# Starting tech
+set_technology = {
+    infantry_weapons = 1
+   civilian_clothing = 1
+   tech_support = 1
+   pre_war_OPV = 1
+   gw_artillery = 1
+   instruments_of_any_era = 1
+}
+set_research_slots = 3
+set_convoys = 0
+set_stability = 0.75
+set_war_support = 1
+set_politics = {
+	ruling_party = humanists
+	elections_allowed = no
+}
+set_popularities = {
+	humanists = 100
+}
+recruit_character = ARK_admin
+recruit_character = ARC_generic_general

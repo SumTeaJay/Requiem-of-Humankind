@@ -1,0 +1,27 @@
+
+state={
+	id=201
+	name="STATE_201"
+
+	history={
+		victory_points = {
+			11514 3 
+		}
+		owner = COA
+		add_core_of = COA
+		buildings = {
+			infrastructure = 2
+		}
+
+		
+
+	}
+
+	provinces={
+		550 3570 9533 11490 11514 
+	}
+	manpower=35000
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=7.000
+}
