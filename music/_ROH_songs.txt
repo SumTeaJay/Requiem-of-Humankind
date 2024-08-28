@@ -1,0 +1,133 @@
+music_station = "roh_music"
+
+##############
+### PART 1 ###
+##############
+music = {
+	song = "maintheme"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "the_requiem_ost_2"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+		modifier = {
+			factor = 2
+			has_government = humanists
+		}	
+		modifier = {
+			factor = 2
+			tag = GLS
+		}
+	}
+}
+music = {
+	song = "kill_synthwave_in_you"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+music = {
+	song = "technocracy_music"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 2
+			has_government = technocracy
+		}
+	}
+}
+music = {
+	song = "mirage"
+	chance = {
+		modifier = {
+			factor = 1
+		}	
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}
+	}
+}
+music = {
+	song = "pacific_corps"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 0.5
+			has_war = yes
+		}	
+	}
+}
+music = {
+	song = "lullaby_of_sectarians"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+		modifier = {
+			factor = 2
+			has_government = sacraments
+		}	
+	}
+}
+
+##############
+### PART 2 ###
+##############
+music = {
+	song = "soldiers_arent_born"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "system_failure"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "stinking_wind"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "black_yard"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+music = {
+	song = "bastard"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+##################
+### PART 3 ??? ###
+##################

@@ -1,0 +1,32 @@
+music = {
+	name = "Dog_Clanging"
+	file = "Dog_Clanging.ogg"
+}
+music = {
+	name = "Unconscious_Flight"
+	file = "Unconscious_Flight.ogg"
+}
+music = {
+	name = "Dynamics_of_Life"
+	file = "Dynamics_of_Life.ogg"
+}
+music = {
+	name = "Stability_of_Being"
+	file = "Stability_of_Being.ogg"
+}
+music = {
+	name = "ARM_unite_motherland"
+	file = "ARM_unite_motherland.ogg"
+}
+music = {
+	name = "ODS_unite_motherland"
+	file = "ODS_unite_motherland.ogg"
+}
+music = {
+	name = "GLS_unite_motherland"
+	file = "GLS_unite_motherland.ogg"
+}
+music = {
+	name = "LWV_unite_motherland"
+	file = "LWV_unite_motherland.ogg"
+}

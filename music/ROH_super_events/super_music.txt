@@ -1,0 +1,49 @@
+music_station = "roh_superevents"
+music = {
+	song = "Dog_Clanging"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "Unconscious_Flight"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "Dynamics_of_Life"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "Stability_of_Being"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "ARM_unite_motherland"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "ODS_unite_motherland"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "GLS_unite_motherland"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}
+music = {
+	song = "LWV_unite_motherland"
+	chance = {
+		modifier = { factor = 0 }
+	}
+}

@@ -1,0 +1,60 @@
+music = {
+	name = "maintheme"
+	file = "the_requiem_of_humankind_theme.ogg"
+	volume = 0.65
+}
+music = {
+	name = "the_requiem_ost_2"
+	file = "the_requiem_ost_2.ogg"
+	volume = 0.65
+}
+music = {
+	name = "kill_synthwave_in_you"
+	file = "kill_synthwave_in_you.ogg"
+	volume = 0.65
+}
+music = {
+	name = "mirage"
+	file = "mirage.ogg"
+	volume = 0.65
+}
+music = {
+	name = "pacific_corps"
+	file = "pacific_corps.ogg"
+	volume = 0.65
+}
+music = {
+	name = "technocracy_music"
+	file = "technocracy.ogg"
+	volume = 0.65
+}
+music = {
+	name = "lullaby_of_sectarians"
+	file = "lullaby_of_sectarians.ogg"
+	volume = 0.65
+}
+music = {
+	name = "soldiers_arent_born"
+	file = "soldiers_arent_born.ogg"
+	volume = 0.65
+}
+music = {
+	name = "system_failure"
+	file = "system_failure.ogg"
+	volume = 0.65
+}
+music = {
+	name = "stinking_wind"
+	file = "stinking_wind.ogg"
+	volume = 0.65
+}
+music = {
+	name = "black_yard"
+	file = "black_yard.ogg"
+	volume = 0.65
+}
+music = {
+	name = "bastard"
+	file = "bastard.ogg"
+	volume = 0.65
+}
