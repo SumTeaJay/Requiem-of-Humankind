@@ -10,7 +10,6 @@ characters={
 		country_leader={
 			ideology=humanists_subideology
 			expire="3333.1.1.1"
-			id=1
 			desc = Vremenniy_Sovet_desk
 		}
 	}

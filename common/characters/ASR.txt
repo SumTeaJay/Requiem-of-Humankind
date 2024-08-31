@@ -8,7 +8,7 @@ characters = {
 			}
 		}
 		country_leader={
-			ideology=statesmen_subideology
+			ideology=liquidators
 			desc = ASR_The_Council_of_Four_desc
 			id=-1
 			expire="2043.1.1.1"

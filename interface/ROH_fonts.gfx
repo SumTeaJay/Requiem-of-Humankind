@@ -6,7 +6,7 @@ bitmapfonts = {
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
-			O = { 187 112 6 }			
+			O = { 187 112 6 }
 		}
 	}
 
@@ -16,7 +16,7 @@ bitmapfonts = {
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
-			O = { 187 112 6 }			
+			O = { 187 112 6 }
 		}
 	}	
 	
@@ -26,7 +26,27 @@ bitmapfonts = {
 		color = 0xffffffff
 		textcolors = {
 			W = { 255 255 255 }
-			O = { 187 112 6 }			
+			O = { 187 112 6 }
+		}
+	}
+
+	bitmapfont = {
+		name = "bender_30"
+		path = "gfx/fonts/bender_30"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			O = { 187 112 6 }
+		}
+	}
+	
+	bitmapfont = {
+		name = "bender_20"
+		path = "gfx/fonts/bender_20"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			O = { 187 112 6 }
 		}
 	}
 
@@ -37,7 +57,7 @@ bitmapfonts = {
 		textcolors = {
 			W = { 255 255 255 }
 			G = { 67 67 67 }
-			O = { 187 112 6 }			
+			O = { 187 112 6 }
 		}
 	}	
 	

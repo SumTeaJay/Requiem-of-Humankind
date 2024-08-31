@@ -766,19 +766,19 @@ on_actions = {
 		effect = {
 			if = {
 				limit = { has_country_flag = ochki_gos_progress_5 }
-				add_to_variable = { ochki_gos_progressa = 5 }
+				add_to_variable = { reform_points = 5 }
 			}
 			if = {
 				limit = { has_country_flag = ochki_gos_progress_10 }
-				add_to_variable = { ochki_gos_progressa = 5 }
+				add_to_variable = { reform_points = 5 }
 			}
 			if = {
 				limit = { has_country_flag = ochki_gos_progress_20 }
-				add_to_variable = { ochki_gos_progressa = 10 }
+				add_to_variable = { reform_points = 10 }
 			}
 			if = {
 				limit = { has_country_flag = ochki_gos_progress_30 }
-				add_to_variable = { ochki_gos_progressa = 10 }
+				add_to_variable = { reform_points = 10 }
 			}
 		}
 	}

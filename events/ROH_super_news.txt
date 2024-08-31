@@ -32,7 +32,7 @@ news_event = { #Бессознательное бегство
 
 	is_triggered_only = yes
 
-    	option = {
+    option = {
 		name = super.2.a
 		ai_chance = { factor = 1 }
 		if = {

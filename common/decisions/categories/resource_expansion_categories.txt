@@ -1,5 +1,6 @@
 resource_expansion_category = {
 	icon = GFX_decision_category_expedition
+	picture = GFX_decision_category_expedition
 	priority = 10
 	visible = {
 		NOT = {

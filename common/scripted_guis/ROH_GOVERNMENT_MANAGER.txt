@@ -105,7 +105,7 @@ scripted_gui = {
 			}				
 		}
 	}
-	#vars: ochki_gos_progressa
+	#vars: reform_points
 	menshikov_system_tree = {
 		context_type = player_context
 		parent_window_token = politics_tab
@@ -784,7 +784,7 @@ scripted_gui = {
 						}
 					}
 					add_to_variable = { 
-						ochki_gos_progressa_growth = 5 
+						reform_points_growth = 1
 					}
 					add_political_power = 100
 				}
@@ -798,7 +798,7 @@ scripted_gui = {
 					tooltip = select_menshikov_system_tt
 				}
 				subtract_from_variable = {
-					var = ochki_gos_progressa
+					var = reform_points
 					value = 20
 					tooltip = goverment_system_upgrade_20_tt
 				}
@@ -825,7 +825,7 @@ scripted_gui = {
 						add_ideas = materials_science_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -853,7 +853,7 @@ scripted_gui = {
 						add_ideas = dense_layout_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -881,7 +881,7 @@ scripted_gui = {
 						add_ideas = lower_streams_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -909,7 +909,7 @@ scripted_gui = {
 						add_ideas = upper_streams_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -937,7 +937,7 @@ scripted_gui = {
 						add_ideas = our_future_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -965,7 +965,7 @@ scripted_gui = {
 						add_ideas = vocational_technical_schools_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -993,7 +993,7 @@ scripted_gui = {
 						add_ideas = working_faculties_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -1021,7 +1021,7 @@ scripted_gui = {
 						add_ideas = labor_veterans_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -1049,7 +1049,7 @@ scripted_gui = {
 						add_ideas = labor_heros_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -1077,7 +1077,7 @@ scripted_gui = {
 						add_ideas = industrial_cooperation_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1105,7 +1105,7 @@ scripted_gui = {
 						add_ideas = constructed_for_life_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1133,7 +1133,7 @@ scripted_gui = {
 						add_ideas = love_thy_neighbour_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1172,7 +1172,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1200,7 +1200,7 @@ scripted_gui = {
 						add_ideas = strict_regulations_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1228,7 +1228,7 @@ scripted_gui = {
 						add_ideas = flexible_regulations_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1256,7 +1256,7 @@ scripted_gui = {
 						add_ideas = gardening_partnerships_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1298,7 +1298,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 45
 						tooltip = goverment_system_upgrade_45_tt
 					}
@@ -1331,7 +1331,7 @@ scripted_gui = {
 						add_ideas = adversarial_law_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1359,7 +1359,7 @@ scripted_gui = {
 						add_ideas = fair_competition_codex_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1387,7 +1387,7 @@ scripted_gui = {
 						add_ideas = outsourcing_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -1415,7 +1415,7 @@ scripted_gui = {
 						add_ideas = trade_initiative_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 45
 						tooltip = goverment_system_upgrade_45_tt
 					}
@@ -1443,7 +1443,7 @@ scripted_gui = {
 						add_ideas = GOST_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 60
 						tooltip = goverment_system_upgrade_60_tt
 					}
@@ -1471,7 +1471,7 @@ scripted_gui = {
 						add_ideas = fullstack_consumtion_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 60
 						tooltip = goverment_system_upgrade_60_tt
 					}
@@ -1499,7 +1499,7 @@ scripted_gui = {
 						add_ideas = humanism_stronghold_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 90
 						tooltip = goverment_system_upgrade_90_tt
 					}
@@ -2071,7 +2071,7 @@ scripted_gui = {
 						}
 					}
 					add_to_variable = { 
-						ochki_gos_progressa_growth = 5 
+						reform_points_growth = 1
 					}
 					add_political_power = 100
 				}
@@ -2085,7 +2085,7 @@ scripted_gui = {
 					tooltip = select_smoilov_system_tt
 				}
 				subtract_from_variable = {
-					var = ochki_gos_progressa
+					var = reform_points
 					value = 20
 					tooltip = goverment_system_upgrade_20_tt
 				}
@@ -2112,7 +2112,7 @@ scripted_gui = {
 						add_ideas = foundation_of_the_past_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -2140,7 +2140,7 @@ scripted_gui = {
 						add_ideas = behind_the_scenes_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -2168,7 +2168,7 @@ scripted_gui = {
 						add_ideas = without_any_hassle_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -2196,7 +2196,7 @@ scripted_gui = {
 						add_ideas = our_home_is_our_fortress_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -2232,7 +2232,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 40
 						tooltip = goverment_system_upgrade_40_tt
 					}
@@ -2267,7 +2267,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 40
 						tooltip = goverment_system_upgrade_40_tt
 					}
@@ -2302,7 +2302,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -2330,7 +2330,7 @@ scripted_gui = {
 						add_ideas = scraping_down_the_bottom_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -2358,7 +2358,7 @@ scripted_gui = {
 						add_ideas = in_a_blink_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 20
 						tooltip = goverment_system_upgrade_20_tt
 					}
@@ -2386,7 +2386,7 @@ scripted_gui = {
 						add_ideas = oprichnina_hand_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -2422,7 +2422,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 40
 						tooltip = goverment_system_upgrade_40_tt
 					}
@@ -2457,7 +2457,7 @@ scripted_gui = {
 						add_ideas = destroy_anomalies_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -2541,7 +2541,7 @@ scripted_gui = {
 						add_ideas = fighting_for_families_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -2577,7 +2577,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -2605,7 +2605,7 @@ scripted_gui = {
 						add_ideas = from_stones_and_sticks_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -2633,7 +2633,7 @@ scripted_gui = {
 						add_ideas = autonomius_bataries_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 50
 						tooltip = goverment_system_upgrade_50_tt
 					}
@@ -2661,7 +2661,7 @@ scripted_gui = {
 						add_ideas = controlled_bataries_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 50
 						tooltip = goverment_system_upgrade_50_tt
 					}
@@ -2689,7 +2689,7 @@ scripted_gui = {
 						add_ideas = firstborn_of_sparta_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 50
 						tooltip = goverment_system_upgrade_50_tt
 					}
@@ -2717,7 +2717,7 @@ scripted_gui = {
 						add_ideas = nerves_to_the_limit_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 50
 						tooltip = goverment_system_upgrade_50_tt
 					}
@@ -2758,7 +2758,7 @@ scripted_gui = {
 						}
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 50
 						tooltip = goverment_system_upgrade_50_tt
 					}
@@ -2786,7 +2786,7 @@ scripted_gui = {
 						add_ideas = sweat_and_blood_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 60
 						tooltip = goverment_system_upgrade_60_tt
 					}
@@ -3368,7 +3368,7 @@ scripted_gui = {
 						}
 					}
 					add_to_variable = { 
-						ochki_gos_progressa_growth = 5 
+						reform_points_growth = 1
 					}
 					add_political_power = 100
 				}
@@ -3382,7 +3382,7 @@ scripted_gui = {
 					tooltip = select_naumov_system_tt
 				}
 				subtract_from_variable = {
-					var = ochki_gos_progressa
+					var = reform_points
 					value = 20
 					tooltip = goverment_system_upgrade_20_tt
 				}
@@ -3411,7 +3411,7 @@ scripted_gui = {
 						add_political_power = 150
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3442,7 +3442,7 @@ scripted_gui = {
 						add_ideas = existence_essence_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3470,7 +3470,7 @@ scripted_gui = {
 						add_ideas = existence_horror_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3498,7 +3498,7 @@ scripted_gui = {
 						add_ideas = caring_eye_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3526,7 +3526,7 @@ scripted_gui = {
 						add_ideas = interesting_observation_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3554,7 +3554,7 @@ scripted_gui = {
 						add_ideas = technological_revolution_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3582,7 +3582,7 @@ scripted_gui = {
 						add_ideas = cultural_revolution_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3610,7 +3610,7 @@ scripted_gui = {
 						add_ideas = assured_survival_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3638,7 +3638,7 @@ scripted_gui = {
 						add_ideas = proportionate_fee_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3666,7 +3666,7 @@ scripted_gui = {
 						add_ideas = flawless_soldier_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3694,7 +3694,7 @@ scripted_gui = {
 						add_ideas = all_describing_formula_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 45
 						tooltip = goverment_system_upgrade_45_tt
 					}
@@ -3722,7 +3722,7 @@ scripted_gui = {
 						add_ideas = primary_broth_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3750,7 +3750,7 @@ scripted_gui = {
 						add_ideas = flowers_of_life_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3778,7 +3778,7 @@ scripted_gui = {
 						add_ideas = their_life_plans_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3806,7 +3806,7 @@ scripted_gui = {
 						add_ideas = cast_aside_doubts_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3834,7 +3834,7 @@ scripted_gui = {
 						add_ideas = potential_realization_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3862,7 +3862,7 @@ scripted_gui = {
 						add_ideas = order_in_mind_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 60
 						tooltip = goverment_system_upgrade_60_tt
 					}
@@ -3890,7 +3890,7 @@ scripted_gui = {
 						add_ideas = unity_by_blood_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 15
 						tooltip = goverment_system_upgrade_15_tt
 					}
@@ -3918,7 +3918,7 @@ scripted_gui = {
 						add_ideas = man_and_consciousness_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 30
 						tooltip = goverment_system_upgrade_30_tt
 					}
@@ -3946,7 +3946,7 @@ scripted_gui = {
 						add_ideas = cognitive_warfare_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 60
 						tooltip = goverment_system_upgrade_60_tt
 					}
@@ -3974,7 +3974,7 @@ scripted_gui = {
 						add_ideas = body_limits_idea
 					}
 					subtract_from_variable = {
-						var = ochki_gos_progressa
+						var = reform_points
 						value = 90
 						tooltip = goverment_system_upgrade_90_tt
 					}

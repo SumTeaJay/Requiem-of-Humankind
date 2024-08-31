@@ -38,7 +38,7 @@ ODS_consciousness = {
 	#scripted_gui = ODS_consciousness_gui
 	visible_when_empty = yes
 	visible  = {
-		has_completed_focus = ODS_system_reorganisation
+		has_country_flag = ODS_consciousness_unlock	#<- флаг для debug
 	}
 	allowed = { original_tag = ODS }
 	priority = { base = 5 }

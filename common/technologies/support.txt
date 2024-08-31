@@ -428,7 +428,7 @@ technologies = {
 		}
 	}
 	tech_standard_bearer2 = {
-
+		research_cost = 1.5
 		standard_bearer = {
 			max_organisation = 1
 			defense = 0.03
@@ -538,7 +538,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 2025
 		folder = {
 			name = support_folder
@@ -649,7 +649,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 2010
 		folder = {
 			name = support_folder
@@ -770,7 +770,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 1.5
 		start_year = 2025
 		folder = {
 			name = support_folder

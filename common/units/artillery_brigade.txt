@@ -24,13 +24,13 @@ sub_units = {
 
 		essential = {
             artillery_equipment
-			infantry_odejda_0
-			infantry_equipment_0
+			infantry_odejda
+			infantry_equipment
         }
 		need = {
 			artillery_equipment = 12
-			infantry_equipment_0 = 84
-			infantry_odejda_0 = 42
+			infantry_equipment = 84
+			infantry_odejda = 42
 		}
 		manpower = 84
 
@@ -104,14 +104,14 @@ sub_units = {
 		essential = {
             artillery_equipment
 			motorized_equipment
-			infantry_equipment_0
-			infantry_odejda_0
+			infantry_equipment
+			infantry_odejda
         }
 		need = {
 			artillery_equipment = 12
 			motorized_equipment = 12
-			infantry_equipment_0 = 186
-			infantry_odejda_0 = 144
+			infantry_equipment = 186
+			infantry_odejda = 144
 		}
 		manpower = 196
 
@@ -184,13 +184,13 @@ sub_units = {
 
 		essential = {
             anti_air_equipment
-			infantry_equipment_0
-			infantry_odejda_0
+			infantry_equipment
+			infantry_odejda
         }
 		need = {
 			anti_air_equipment = 12
-			infantry_equipment_0 = 48
-			infantry_odejda_0 = 24
+			infantry_equipment = 48
+			infantry_odejda = 24
 		}
 
 		manpower = 48
@@ -264,13 +264,13 @@ sub_units = {
 
 		essential = {
             anti_tank_equipment
-			infantry_equipment_0
-			infantry_odejda_0
+			infantry_equipment
+			infantry_odejda
         }
 		need = {
 			anti_tank_equipment = 12
-			infantry_equipment_0 = 48
-			infantry_odejda_0 = 24
+			infantry_equipment = 48
+			infantry_odejda = 24
 		}
 		manpower = 48
 

@@ -20,7 +20,7 @@ has_any_points_consciousness = {
 	custom_trigger_tooltip = {
 		tooltip = has_any_points_consciousness_tt
 		check_variable = {
-			points_consciousness > 0
+			Conception_var > 0
 		}
 	}
 }

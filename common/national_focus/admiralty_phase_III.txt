@@ -31,6 +31,7 @@ focus_tree = {
 			country_event = ODS.38
 			unlock_decision_category_tooltip = ODS_consciousness
 			activate_mission = cementing_consciousness_mission
+			set_country_flag = ODS_consciousness_unlock	#<- удобно для debug 
 		}		
 	}
 	focus = {

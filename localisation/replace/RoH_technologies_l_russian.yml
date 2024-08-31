@@ -237,6 +237,9 @@
  chain_project_desc:0 ""
 
  #Танки
+nsb_pre_war_OPV: "Довоенный ОБТ"
+nsb_basic_mass_OPF: "Базовый массовый ОБТ"
+
 
  #Ветка двигателей без NSB
 

@@ -424,7 +424,8 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_soziv"
 		texturefile = "gfx/interface/goals/soziv_soveta.dds"			
-	}Type = {
+	}
+	SpriteType = {
 		name = "GFX_dog_clanging"
 		texturefile = "gfx/interface/goals/dog_clanging.dds"
 	}

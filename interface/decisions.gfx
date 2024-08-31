@@ -1939,7 +1939,7 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_decision_integration"
-		texturefile = "gfx/interface/decisions/decision_integration.dds"
+		texturefile = "gfx/interfae/decisions/decision_integration.dds"
 	}	
 	
 	spriteType = {
@@ -2010,5 +2010,9 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_volga_war_picture"
 		texturefile = "gfx/interface/decisions/decision_volga_war.dds"
+	}
+	spriteType = {
+		name = "GFX_resource_expansion_picture"
+		texturefile = "gfx/interface/decisions/decision_resource_expansion.dds"
 	}
 }

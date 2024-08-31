@@ -41,11 +41,11 @@ sub_units = {
 		training_time = 90
 		essential = {
             infantry_equipment
-			infantry_odejda_0
+			infantry_odejda
         }
 		need = {
 			infantry_equipment = 100
-			infantry_odejda_0 = 100
+			infantry_odejda = 100
 		}
 		manpower = 1000
 	}
@@ -87,12 +87,12 @@ sub_units = {
 		training_time = 60
 		essential = {
             infantry_equipment
-			infantry_odejda_0
+			infantry_odejda
         }
 	
 		need = {
 			infantry_equipment = 50
-			infantry_odejda_0 = 50
+			infantry_odejda = 50
 		}
 		manpower = 500
 	}
@@ -135,13 +135,13 @@ sub_units = {
 		essential = {
             infantry_equipment
 			support_equipment
-			infantry_odejda_0
+			infantry_odejda
         }
 	
 		need = {
 			infantry_equipment = 150
 			support_equipment = 25
-			infantry_odejda_0 = 150
+			infantry_odejda = 150
 		}
 		manpower = 1000
 
@@ -177,7 +177,7 @@ sub_units = {
 		need = {
 			infantry_equipment = 102
 			motorized_equipment = 6
-			infantry_odejda_0 = 66
+			infantry_odejda = 66
 		}
 		manpower = 112
 		max_organisation = 70
@@ -243,7 +243,7 @@ sub_units = {
 		essential = {
 			infantry_equipment
 			infantry_fighting_vehicle_equipment
-			infantry_odejda_0
+			infantry_odejda
 		}
 
 		# this is what moves us and sets speed
@@ -252,7 +252,7 @@ sub_units = {
 		need = {
 			infantry_fighting_vehicle_equipment = 2
 			infantry_equipment = 20
-			infantry_odejda_0 = 30
+			infantry_odejda = 30
 		}
 		manpower = 30
 

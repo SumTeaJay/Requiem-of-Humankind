@@ -1,61 +1,6 @@
 add_namespace = kuban
 
 country_event = {
-	id = kuban.1 #Начало войны
-	title = kuban.1.t
-	desc = kuban.1.d
-	#picture =  
-
-	is_triggered_only = no
-	fire_only_once = yes
-	hidden = yes	
-
-	trigger = {
-		Kuban_war_has_not_begun = yes
-	}
-	
-	option = {
-		name = kuban.1.a
-		every_country = { news_event = { id = super.2 days = 1 } }
-		KUH = { 
-			declare_war_on = {
-				target = STW
-				type = annex_everything
-			}
-			add_state_core = 850
-			add_state_core = 848
-			add_state_core = 847
-			add_state_core = 849
-			add_state_core = 218
-		} 
-		FSR = {
-			declare_war_on = {
-				target = KUH
-				type = annex_everything
-			}
-			declare_war_on = {
-				target = STW
-				type = annex_everything
-			}
-			add_state_core = 850
-			add_state_core = 848
-			add_state_core = 847
-			add_state_core = 849
-			add_state_core = 854
-			add_state_core = 853
-		}
-		STW = {
-			add_state_core = 854
-			add_state_core = 853
-			add_state_core = 218
-		}		
-		ODS = {
-			set_country_flag = Kuban_in_fire
-		}
-	}	
-}
-
-country_event = {
 	id = kuban.2 #Решение Адмиралтейства - Аннексия
 	title = kuban.2.t
 	desc = kuban.2.d

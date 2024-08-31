@@ -16,7 +16,6 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=1
 		}
 		country_leader={
 			ideology = colloborators
@@ -39,7 +38,6 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=2
-			legacy_id=1
 		}
 	}
 	IMP_Aleksey_Dorog={
@@ -56,7 +54,6 @@ characters={
 			defense_skill=2
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=1
 		}
 	}
 	IMP_Michail_Orlov={
@@ -73,7 +70,6 @@ characters={
 			defense_skill=3
 			planning_skill=1
 			logistics_skill=1
-			legacy_id=1
 		}
 	}
 	IMP_Nikita_Bartonov={
@@ -90,7 +86,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1
 		}
 	}
 	BSO_Council_generals_consulate = {

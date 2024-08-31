@@ -222,7 +222,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name ="RoH_version_label"
-			position = { x = 9 y = 686 }
+			position = { x = 9 y = 685 }
 			textureFile = ""
 			font = "bender_18"
 			borderSize = {x = 0 y = 0}
@@ -277,7 +277,7 @@ guiTypes = {
 			name = "bugreports_button"
 			position = { x = 1577 y = 683 }
 			quadTextureSprite = "GFX_bugreports_button"
-			web_link = "https://vk.com/requiemofhumankind"
+			web_link = "https://docs.google.com/forms/d/e/1FAIpQLSeuf0Btg6GRExyC1_mLwnK7wP11IZHmXNmh3b1m9-j8AeXl6Q/viewform"
 			buttonText = ""
 			buttonFont = "bender_42"
 		}
@@ -331,7 +331,7 @@ guiTypes = {
 
 		instantTextBoxType = {
 			name ="RoH_version_label"
-			position = { x = 9 y = 686 } 
+			position = { x = 9 y = 685 } 
 			textureFile = ""
 			font = "bender_18"
 			borderSize = {x = 0 y = 0}
@@ -417,7 +417,7 @@ guiTypes = {
 			name = "bugreports_button"
 			position = { x = 1577 y = 683 }
 			quadTextureSprite = "GFX_bugreports_button"
-			web_link = "https://vk.com/requiemofhumankind"
+			web_link = "https://docs.google.com/forms/d/e/1FAIpQLSeuf0Btg6GRExyC1_mLwnK7wP11IZHmXNmh3b1m9-j8AeXl6Q/viewform"
 			buttonText = ""
 			buttonFont = "bender_42"
 		}

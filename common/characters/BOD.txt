@@ -1,9 +1,9 @@
 characters = {
 	BOD_rodion_samoilov = {
-		name = ARK_admin
+		name = BOD_Rodion_Samoilov
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/BOD/Portrait_Rodion_Samoilov.dds" #REPLACE TO SPRITE!
+				large = GFX_portrait_BOD_Rodion_Samoilov 
 			}
 		}
 		country_leader = {

@@ -15,7 +15,6 @@ characters={
 			defense_skill = 3
 			planning_skill = 5
 			logistics_skill = 2
-			legacy_id = 1
 		}
 		country_leader = {
 			ideology = liquidators
@@ -86,7 +85,6 @@ characters={
 			defense_skill=2
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1
 		}
 	}
 	GLS_Vladimir_Astafiev={
@@ -102,7 +100,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=2
-			legacy_id=1
 		}
 	}	
 	GLS_Ivan_Sykhoy={
@@ -118,7 +115,6 @@ characters={
 			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
-			legacy_id=1
 		}
 	}
 	GLS_Airat_Kabirov={
@@ -134,7 +130,6 @@ characters={
 			defense_skill=4
 			planning_skill=3
 			logistics_skill=3
-			legacy_id=1
 		}
 	}
 	GLS_Almaz_Gabbasin={
@@ -150,7 +145,6 @@ characters={
 			defense_skill=2
 			planning_skill=3
 			logistics_skill=4
-			legacy_id=1
 		}
 	}
 }

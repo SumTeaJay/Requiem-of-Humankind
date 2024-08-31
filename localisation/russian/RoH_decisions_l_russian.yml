@@ -10,8 +10,9 @@
 
 #integration
 intergrate_core_territory: "Интеграция регионов [FROM.GetName]"
-decision_cost_400_ie_tt: "£infantry_equipment_text_icon 400"
+decision_cost_400_ie_tt: "£infantry_equipment_text_icon §Y400§!"
 decision_cost_400_ie_tt_blocked: "£infantry_equipment_text_icon §R400§"
+decision_cost_400_ie_tt_tooltip: "Стоимость принятия решения: £infantry_equipment_text_icon §Y400§!"
 
 #volga war
 volga_war: "Волжская война"
@@ -43,6 +44,7 @@ annex_anarchy:0 "Ввести войска на территорию анарх�
 #Объединение Родины
 reunification_category:0 "Объединение Родины"
 major_unite_motherland:0 "Объединить Родину"
+major_annex_anarchy:0 "Ввести войска на территорию анархии"
 
 
 #decisiom_cost

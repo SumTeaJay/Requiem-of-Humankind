@@ -1,6 +1,6 @@
 use_goverment_upgrade = {
 	subtract_from_variable = {
-		var = ochki_gos_progressa
+		var = reform_points
 		value = 1
 		tooltip = use_goverment_upgrade_tt
 	}

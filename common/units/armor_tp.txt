@@ -21,14 +21,14 @@ sub_units = {
 		}
 
 		essential = {
-			pre_war_OPV_equipment
-			infantry_equipment_0
-			infantry_odejda_0
+			pre_war_OPV_equipment_archetype
+			infantry_equipment
+			infantry_odejda
 		}
 		need = {
-			pre_war_OPV_equipment = 4
-			infantry_equipment_0 = 12
-			infantry_odejda_0 = 26
+			pre_war_OPV_equipment_archetype = 4
+			infantry_equipment = 12
+			infantry_odejda = 26
 		}
 		manpower = 26
 		default_morale = 0.3
@@ -93,13 +93,13 @@ sub_units = {
 
 		essential = {
 			basic_specialized_OPF_equipment
-			infantry_equipment_0
-			infantry_odejda_0
+			infantry_equipment
+			infantry_odejda
 		}
 		need = {
 			basic_specialized_OPF_equipment = 4
-			infantry_equipment_0 = 12
-			infantry_odejda_0 = 26
+			infantry_equipment = 12
+			infantry_odejda = 26
 		}
 		manpower = 26
 
@@ -165,12 +165,12 @@ sub_units = {
 
 		essential = {
 			basic_ai_OPF_equipment
-			infantry_equipment_0
+			infantry_equipment
 		}
 		need = {
 			basic_ai_OPF_equipment = 4
-			infantry_equipment_0 = 12
-			infantry_odejda_0 = 26
+			infantry_equipment = 12
+			infantry_odejda = 26
 		}
 		manpower = 26
 		default_morale = 0.3

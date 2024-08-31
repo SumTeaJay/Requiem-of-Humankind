@@ -205,7 +205,24 @@ expedition_category = {
 		target_array = neighbors_owned
 		target_trigger = {
 			FROM = {
-				is_neighbor_of = ROOT
+				AND = {
+					is_neighbor_of = ROOT
+					NOT = {
+						tag = BLS
+						tag = SIL
+						tag = WTR
+						tag = MOS
+						tag = KRT
+						tag = NFL
+						tag = SFL
+						tag = WEC
+						tag = SAC
+						tag = SOC
+						tag = KSK
+						tag = BLT
+						tag = VOS
+					}
+				}
 			}
 		}
 		highlight_states = {

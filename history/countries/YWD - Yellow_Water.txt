@@ -2,8 +2,6 @@ capital = 855
 
 oob = YWD
 
-
-# Starting tech
 set_technology = {
    infantry_weapons = 1
    civilian_clothing = 1
@@ -35,15 +33,5 @@ set_popularities = {
 	bandits = 100
 }
 
- 
-
-create_country_leader = {
-    name = "Vedomiy_Varon"
-    desc = "Vedomiy_Varon_desc"
-    picture = "gfx/leaders/YWD/Vedomiy_Varon.dds"
-    ideology = bandits_subideology
-    traits = {
-        #
-    }
-}
-add_ideas = { zhest_polnaya zerno_bessarabii }
+add_ideas = violent_rituals
+recruit_character = YWD_Vedomiy_Varon

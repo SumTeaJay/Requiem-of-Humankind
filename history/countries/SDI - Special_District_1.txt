@@ -14,7 +14,7 @@ set_technology = {
    instruments_of_any_era = 1
 }
 
-set_research_slots = 5
+set_research_slots = 2
 set_convoys = 0
 
 set_politics = {

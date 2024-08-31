@@ -1,0 +1,16 @@
+characters = {
+	YWD_Vedomiy_Varon = {
+		name = Vedomiy_Varon
+		portraits={
+			civilian={
+				large="gfx/leaders/YWD/Vedomiy_Varon.dds"
+			}
+		}
+		country_leader={
+			ideology=bandits_subideology
+			desc = Vedomiy_Varon_desc
+			expire="2965.1.1.1"
+			id=-1
+		}
+	}
+}

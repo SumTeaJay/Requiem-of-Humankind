@@ -36,12 +36,11 @@ on_actions = {
 			}
 		}
 	}
+	#THIS(ROOT) - country-nukker, FROM - is nuked state
 	on_nuke_drop = {
 		effect = {
 			FROM = {
-				goto_state = {
-	 				add_manpower = -100000
-				}
+				add_manpower = -100000
 			}
 		}
 	}

@@ -1,20 +1,4 @@
 guiTypes = {
-	#containerWindowType = {
-	#	name = "subideology"
-	#	position = { x = 88 y = 305 }
-	#	
-	#	instantTextboxType = {
-	#		name = "subideology"
-	#		position = { x = 9 y = 20 }
-	#		font = "hoi_18mbs"
-	#		text = "[GetSubIdeology]"
-	#		pdx_tooltip = "[GetSubIdeology]"
-	#		maxWidth = 155
-	#		maxHeight = 20
-	#		format = left
-	#		alwaystransparent = yes
-	#	}
-	#}
 	containerWindowType = {
 		name = "subideology_diplo_window"
 		position = { x = 254 y = 132 }

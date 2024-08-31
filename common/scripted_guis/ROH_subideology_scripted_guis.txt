@@ -1,17 +1,4 @@
 scripted_gui = {
-	# submissive_ideology = {
-	# 	context_type = player_context
-	# 	parent_window_token = politics_tab
-	# 	window_name = "subideology"
-
-	# 	ai_enabled = {
-	# 		always = no
-	# 	}
-		
-	# 	visible = {
-	# 		is_ai = no
-	# 	}
-	# }
 	submissive_ideology_diplo = {
 		context_type = selected_country_context
 		parent_window_token = selected_country_view_diplomacy
@@ -22,7 +9,11 @@ scripted_gui = {
 		}
 
 		visible = {
-			always = yes
+			NOT = {
+				tag = BLS
+				tag = SIL
+				tag = WTR
+			}
 		}
 	}
 }
